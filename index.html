@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Best and Worst of the S&P500</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Today's Best and Worst of the S&P500</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.1.12/Recharts.min.js"></script>
+    </head>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        const { useState, useEffect } = React;
+        const { 
+            ResponsiveContainer, LineChart, Line, XAxis, 
+            YAxis, CartesianGrid, Tooltip 
+        } = Recharts;
+
+        const StockChart = ({ data, finalColor, title }) => {
+            if (!data || data.length === 0) return null;
+
+            const prices = data.map(d => d.close);
+            const minPrice = Math.min(...prices);
+            const maxPrice = Math.max(...prices);
+            const padding = (maxPrice - minPrice) * 0.05;
+
+            const gradientId = `lineGradient-${finalColor.replace('#', '')}`;
+            
+            const indexedData = data.map((point, index) => ({
+                ...point,
+                index
+            }));
+
+            const formatPrice = (value) => `$${value.toFixed(2)}`;
+
+            const formatXAxisTick = (date) => {
+                const screenWidth = window.innerWidth;
+                if (screenWidth <= 480) {
+                    return new Date(date).toLocaleDateString('en-US', { month: 'short' });
+                }
+                return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+            };
+
+            return React.createElement('div', { style: { height: '100%' } }, [
+                React.createElement('div', { 
+                    key: 'title',
+                    className: 'chart-title' 
+                }, title),
+                React.createElement(ResponsiveContainer, { 
+                    key: 'chart',
+                    width: "100%", 
+                    height: "95%" 
+                },
+                    React.createElement(LineChart, {
+                        data: indexedData,
+                        margin: { top: 10, right: 5, left: 5, bottom: 10 }
+                    }, [
+                        React.createElement('defs', { key: 'defs' },
+                            React.createElement('linearGradient', { id: gradientId },
+                                React.createElement('stop', {
+                                    offset: ((data.length - 1) / data.length * 100) + '%',
+                                    stopColor: '#666'
+                                }),
+                                React.createElement('stop', {
+                                    offset: '100%',
+                                    stopColor: finalColor
+                                })
+                            )
+                        ),
+                        React.createElement(CartesianGrid, {
+                            key: 'grid',
+                            strokeDasharray: "3 3",
+                            stroke: "#333"
+                        }),
+                        React.createElement(XAxis, {
+                            key: 'xAxis',
+                            dataKey: "date",
+                            stroke: "#666",
+                            tick: { 
+                                fill: '#666',
+                                fontSize: window.innerWidth <= 480 ? 10 : 12
+                            },
+                            tickFormatter: formatXAxisTick,
+                            interval: window.innerWidth <= 480 ? "preserveStartEnd" : "preserveEnd"
+                        }),
+                        React.createElement(YAxis, {
+                            key: 'yAxis',
+                            stroke: "#666",
+                            tick: { 
+                                fill: '#666',
+                                fontSize: window.innerWidth <= 480 ? 10 : 12
+                            },
+                            tickFormatter: formatPrice,
+                            domain: [minPrice - padding, maxPrice + padding],
+                            width: window.innerWidth <= 480 ? 45 : 60
+                        }),
+                        React.createElement(Tooltip, {
+                            key: 'tooltip',
+                            contentStyle: {
+                                backgroundColor: '#222',
+                                border: '1px solid #444',
+                                borderRadius: '4px',
+                                padding: '8px',
+                                fontSize: window.innerWidth <= 480 ? '12px' : '14px'
+                            },
+                            labelFormatter: (date) => new Date(date).toLocaleDateString('en-US', { 
+                                weekday: window.innerWidth <= 480 ? undefined : 'short', 
+                                month: 'short', 
+                                day: 'numeric' 
+                            }),
+                            formatter: (value) => [`$${value.toFixed(2)}`, 'Price']
+                        }),
+                        React.createElement(Line, {
+                            key: 'line',
+                            type: "monotone",
+                            dataKey: "close",
+                            stroke: `url(#${gradientId})`,
+                            dot: false,
+                            strokeWidth: 2,
+                            animationDuration: 500
+                        })
+                    ])
+                )
+            ]);
+        };
+
+        function App() {
+            const [data, setData] = React.useState(null);
+
+            React.useEffect(() => {
+                fetch('market_analysis.json')
+                    .then(response => response.json())
+                    .then(setData)
+                    .catch(console.error);
+            }, []);
+
+            if (!data) return React.createElement('div', { className: 'container' }, 'Loading...');
+
+            return React.createElement('div', { className: 'container' }, [
+                React.createElement('h1', { key: 'title' }, "Today's Best and Worst of the S&P500"),
+                React.createElement('div', { key: 'timestamp', className: 'timestamp' }, data.timestamp),
+                
+                // Top Performer Section
+                React.createElement('div', { 
+                    key: 'top', 
+                    className: 'performer-section', 
+                    style: { 
+                        backgroundColor: '#111',
+                        borderRadius: '8px',
+                        padding: '24px',
+                        marginBottom: '30px',
+                        boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.05)'
+                    }
+                }, [
+                    React.createElement('h2', { key: 'header' }, [
+                        'Best Performer: ',
+                        React.createElement('span', { className: 'positive' },
+                            React.createElement('a', {
+                                href: data.top_performer.wiki_url,
+                                target: '_blank',
+                                style: { color: 'inherit', textDecoration: 'none' }
+                            }, `${data.top_performer.company_name} (${data.top_performer.stock})`)
+                        )
+                    ]),
+                    React.createElement('div', { key: 'info', className: 'stock-line' }, [
+                        `${data.top_performer.stock}: `,
+                        React.createElement('span', { className: 'positive' },
+                            `${data.top_performer.change_percent.toFixed(2)}%`
+                        ),
+                        ` at $${data.top_performer.price}`
+                    ]),
+                    React.createElement('div', { key: 'analysis' }, [
+                        React.createElement('p', { className: 'analysis' }, data.top_performer.analysis),
+                        React.createElement('div', { className: 'article-links' },
+                            data.top_performer.article_urls.map((url, i) =>
+                                React.createElement('a', { key: i, href: url, target: '_blank' }, `[${i + 1}]`)
+                            )
+                        )
+                    ]),
+                    React.createElement('div', { key: 'chart', className: 'chart-container' },
+                        React.createElement(StockChart, {
+                            data: data.top_performer.historical_data,
+                            finalColor: '#00ff00',
+                            title: `${data.top_performer.company_name} (${data.top_performer.stock}) - 1 Year Price History`
+                        })
+                    )
+                ]),
+
+                // Bottom Performer Section
+                React.createElement('div', { 
+                    key: 'bottom', 
+                    className: 'performer-section',
+                    style: { 
+                        backgroundColor: '#111',
+                        borderRadius: '8px',
+                        padding: '24px',
+                        marginBottom: '30px',
+                        boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.05)'
+                    }
+                }, [
+                    React.createElement('h2', { key: 'header' }, [
+                        'Worst Performer: ',
+                        React.createElement('span', { className: 'negative' },
+                            React.createElement('a', {
+                                href: data.bottom_performer.wiki_url,
+                                target: '_blank',
+                                style: { color: 'inherit', textDecoration: 'none' }
+                            }, `${data.bottom_performer.company_name} (${data.bottom_performer.stock})`)
+                        )
+                    ]),
+                    React.createElement('div', { key: 'info', className: 'stock-line' }, [
+                        `${data.bottom_performer.stock}: `,
+                        React.createElement('span', { className: 'negative' },
+                            `${data.bottom_performer.change_percent.toFixed(2)}%`
+                        ),
+                        ` at $${data.bottom_performer.price}`
+                    ]),
+                    React.createElement('div', { key: 'analysis' }, [
+                        React.createElement('p', { className: 'analysis' }, data.bottom_performer.analysis),
+                        React.createElement('div', { className: 'article-links' },
+                            data.bottom_performer.article_urls.map((url, i) =>
+                                React.createElement('a', { key: i, href: url, target: '_blank' }, `[${i + 1}]`)
+                            )
+                        )
+                    ]),
+                    React.createElement('div', { key: 'chart', className: 'chart-container' },
+                        React.createElement(StockChart, {
+                            data: data.bottom_performer.historical_data,
+                            finalColor: '#ff4444',
+                            title: `${data.bottom_performer.company_name} (${data.bottom_performer.stock}) - 1 Year Price History`
+                        })
+                    )
+                ])
+            ]);
+        }
+
+        ReactDOM.render(React.createElement(App), document.getElementById('root'));
+    </script>
+    <div style="text-align: center; padding: 20px;">
+        <a href="/about.html" class="footer-link">About</a>
+    </div>

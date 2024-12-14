@@ -1,0 +1,176 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Typography */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 10px;
+    color: white;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-bottom: 15px;
+    color: white;
+    line-height: 1.2;
+}
+
+/* Sections */
+.performer-section {
+    margin-bottom: min(100px, 15vh);
+    background-color: #111;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.timestamp {
+    color: #888;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    margin: 10px 0 30px 0;
+}
+
+/* Stock Information */
+.stock-line {
+    margin: 10px 0;
+    color: #888;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.company-name {
+    color: #aaa;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.positive {
+    color: #00ff00;
+}
+
+.negative {
+    color: #ff4444;
+}
+
+/* Analysis and Links */
+.analysis {
+    color: white;
+    display: inline;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+.article-links {
+    display: inline;
+    margin-left: 5px;
+}
+
+.article-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.article-links a:hover {
+    text-decoration: underline;
+}
+
+/* Charts */
+.chart-container {
+    height: min(400px, 60vh);
+    margin: 20px 0;
+    background-color: #111;
+    border-radius: 8px;
+    padding: clamp(10px, 3vw, 20px);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.chart-title {
+    color: #888;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    text-align: center;
+    margin-bottom: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    padding: 0 5px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.footer a:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .performer-section {
+        margin: 20px 10px;
+        border-radius: 8px;
+    }
+
+    .chart-container {
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+
+    .stock-line {
+        margin: 8px 0;
+    }
+
+    .article-links {
+        display: block;
+        margin: 5px 0 0 0;
+    }
+
+    .article-links a {
+        display: inline-block;
+        margin: 0 8px 8px 0;
+    }
+
+    .footer {
+        margin-top: 20px;
+    }
+}
