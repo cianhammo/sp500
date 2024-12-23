@@ -1,0 +1,98 @@
+2024-12-23 21:47:59 - INFO - __main__ - Starting SP500 analysis script
+2024-12-23 21:48:00 - INFO - __main__ - Retrieved 502 tickers from SP500 list
+2024-12-23 21:48:00 - INFO - __main__ - Found last two trading days: [datetime.datetime(2024, 12, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2024, 12, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2024-12-23 21:48:00 - INFO - __main__ - Runtime timezone: UTC
+2024-12-23 21:48:00 - INFO - __main__ - Original start: 2024-12-20 16:00:00-05:00 (America/New_York)
+2024-12-23 21:48:00 - INFO - __main__ - Original end: 2024-12-23 16:00:00-05:00 (America/New_York)
+2024-12-23 21:48:00 - INFO - __main__ - UTC start: 2024-12-20 05:00:00+00:00
+2024-12-23 21:48:00 - INFO - __main__ - UTC end: 2024-12-24 05:00:00+00:00
+2024-12-23 21:48:00 - INFO - __main__ - Attempting to fetch data for 502 tickers
+2024-12-23 21:48:01 - INFO - __main__ - Received data for 502 symbols
+2024-12-23 21:48:01 - INFO - __main__ - Sample data structure for GL:
+2024-12-23 21:48:01 - INFO - __main__ - Number of bars: 2
+2024-12-23 21:48:01 - INFO - __main__ - Bar timestamp: 2024-12-20 05:00:00+00:00 (UTC)
+2024-12-23 21:48:01 - INFO - __main__ - Bar timestamp: 2024-12-23 05:00:00+00:00 (UTC)
+2024-12-23 21:48:01 - INFO - __main__ - GL timestamps - Today: 2024-12-23 05:00:00+00:00, Yesterday: 2024-12-20 05:00:00+00:00
+2024-12-23 21:48:01 - INFO - __main__ - DTE timestamps - Today: 2024-12-23 05:00:00+00:00, Yesterday: 2024-12-20 05:00:00+00:00
+2024-12-23 21:48:01 - INFO - __main__ - HST timestamps - Today: 2024-12-23 05:00:00+00:00, Yesterday: 2024-12-20 05:00:00+00:00
+2024-12-23 21:48:01 - INFO - __main__ - KR timestamps - Today: 2024-12-23 05:00:00+00:00, Yesterday: 2024-12-20 05:00:00+00:00
+2024-12-23 21:48:01 - INFO - __main__ - TROW timestamps - Today: 2024-12-23 05:00:00+00:00, Yesterday: 2024-12-20 05:00:00+00:00
+2024-12-23 21:48:01 - INFO - __main__ - Successfully processed 495 stocks
+2024-12-23 21:48:01 - INFO - __main__ - Data issues encountered: 7
+2024-12-23 21:48:01 - INFO - __main__ - Sample of data issues:
+2024-12-23 21:48:01 - INFO - __main__ - FICO: Insufficient data points (1)
+2024-12-23 21:48:01 - INFO - __main__ - ZBRA: Insufficient data points (1)
+2024-12-23 21:48:01 - INFO - __main__ - RVTY: Insufficient data points (1)
+2024-12-23 21:48:01 - INFO - __main__ - TPL: Insufficient data points (1)
+2024-12-23 21:48:01 - INFO - __main__ - MLM: Insufficient data points (1)
+2024-12-23 21:48:01 - INFO - __main__ - Final dataframe contains 495 stocks
+2024-12-23 21:48:01 - INFO - __main__ - Analysis for market close on December 23, 2024
+2024-12-23 21:48:01 - INFO - __main__ - Found 495 stocks with price data
+2024-12-23 21:48:02 - INFO - __main__ - Found Wikipedia URL for AMD: https://en.wikipedia.org/wiki/AMD
+2024-12-23 21:48:04 - INFO - __main__ - Found Wikipedia URL for RMD: https://en.wikipedia.org/wiki/ResMed
+2024-12-23 21:48:06 - INFO - __main__ - Analyzing top performer...
+2024-12-23 21:48:06 - INFO - __main__ - Analyzing Advanced Micro Devices (AMD)
+2024-12-23 21:48:06 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-23 21:48:06 - INFO - __main__ - Searching for articles about AMD
+2024-12-23 21:48:06 - INFO - __main__ - Searching for news about AMD (4.67% change)
+2024-12-23 21:48:07 - INFO - __main__ - Found 5 search results for AMD
+2024-12-23 21:48:07 - INFO - __main__ - Found 5 new URLs to try for AMD
+2024-12-23 21:48:07 - INFO - __main__ - Fetching content from: https://sg.finance.yahoo.com/quote/AMD/news/
+2024-12-23 21:48:08 - WARNING - __main__ - Article content too short (96 chars)
+2024-12-23 21:48:08 - INFO - __main__ - Fetching content from: https://www.gurufocus.com/news/2639630/amd-amd-shares-surge-over-5-amid-strong-motherboard-sales
+2024-12-23 21:48:14 - INFO - __main__ - Successfully extracted article content (400 chars)
+2024-12-23 21:48:14 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/stocks/NASDAQ/AMD/news/
+2024-12-23 21:48:14 - INFO - __main__ - Successfully extracted article content (120 chars)
+2024-12-23 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/
+2024-12-23 21:48:15 - INFO - __main__ - Successfully extracted article content (649 chars)
+2024-12-23 21:48:15 - INFO - __main__ - Fetching content from: https://stockstory.org/nasdaq/amd/why-it-moves-single/why-are-amd-amd-shares-soaring-today-4
+2024-12-23 21:48:15 - INFO - __main__ - Successfully extracted article content (1668 chars)
+2024-12-23 21:48:15 - INFO - __main__ - Added valid article 1 for AMD
+2024-12-23 21:48:15 - INFO - __main__ - Searching for news about AMD (4.67% change)
+2024-12-23 21:48:16 - INFO - __main__ - Found 5 search results for AMD
+2024-12-23 21:48:16 - INFO - __main__ - Found 2 new URLs to try for AMD
+2024-12-23 21:48:16 - INFO - __main__ - Fetching content from: https://www.financecharts.com/stocks/AMD/summary/price
+2024-12-23 21:48:16 - WARNING - __main__ - Article content too short (41 chars)
+2024-12-23 21:48:16 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4745904-amd-stock-operating-income-eps-trajectory-expected-to-improve-reiterate-buy
+2024-12-23 21:48:16 - INFO - __main__ - Successfully extracted article content (1387 chars)
+2024-12-23 21:48:16 - INFO - __main__ - Added valid article 2 for AMD
+2024-12-23 21:48:16 - INFO - __main__ - Searching for news about amd (4.67% change)
+2024-12-23 21:48:16 - INFO - __main__ - Found 5 search results for amd
+2024-12-23 21:48:16 - INFO - __main__ - Found 1 new URLs to try for amd
+2024-12-23 21:48:16 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/livecoverage/stock-market-today-dow-futures-rise-ahead-of-holiday-shortened-trading-week/card/broadcom-amd-and-other-chip-stocks-are-leading-the-s-p-500-higher-TozlyLkeTCt9SDC7i4Rj?mod=home-page
+2024-12-23 21:48:17 - INFO - __main__ - Successfully extracted article content (725 chars)
+2024-12-23 21:48:17 - INFO - __main__ - Added valid article 3 for amd
+2024-12-23 21:48:17 - INFO - __main__ - Found total of 3 valid articles for AMD
+2024-12-23 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-23 21:48:20 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-23 21:48:20 - INFO - __main__ - Top performer analysis complete
+2024-12-23 21:48:20 - INFO - __main__ - Analyzing bottom performer...
+2024-12-23 21:48:20 - INFO - __main__ - Analyzing ResMed (RMD)
+2024-12-23 21:48:20 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-23 21:48:20 - INFO - __main__ - Searching for articles about RMD
+2024-12-23 21:48:20 - INFO - __main__ - Searching for news about RMD (-5.38% change)
+2024-12-23 21:48:20 - INFO - __main__ - Found 5 search results for RMD
+2024-12-23 21:48:20 - INFO - __main__ - Found 5 new URLs to try for RMD
+2024-12-23 21:48:20 - INFO - __main__ - Fetching content from: https://www.schaeffersresearch.com/content/news/2024/12/23/2-sleep-apnea-stocks-in-focus-today
+2024-12-23 21:48:20 - INFO - __main__ - Successfully extracted article content (1216 chars)
+2024-12-23 21:48:20 - INFO - __main__ - Fetching content from: https://www.wsj.com/finance
+2024-12-23 21:48:20 - WARNING - __main__ - Article content too short (43 chars)
+2024-12-23 21:48:20 - INFO - __main__ - Fetching content from: https://simplywall.st/stocks/us/healthcare/nasdaq-dxcm/dexcom
+2024-12-23 21:48:21 - INFO - __main__ - Successfully extracted article content (112 chars)
+2024-12-23 21:48:21 - INFO - __main__ - Fetching content from: https://www.reuters.com/markets/us/wall-st-futures-kick-off-week-higher-after-government-shutdown-averted-2024-12-23/
+2024-12-23 21:48:21 - WARNING - __main__ - Article content too short (43 chars)
+2024-12-23 21:48:21 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/investing/index/ndx
+2024-12-23 21:48:21 - WARNING - __main__ - Article content too short (43 chars)
+2024-12-23 21:48:21 - INFO - __main__ - Added valid article 1 for RMD
+2024-12-23 21:48:21 - INFO - __main__ - Searching for news about RMD (-5.38% change)
+2024-12-23 21:48:21 - INFO - __main__ - Found 5 search results for RMD
+2024-12-23 21:48:21 - WARNING - __main__ - No new URLs found for RMD
+2024-12-23 21:48:21 - INFO - __main__ - Searching for news about rmd (-5.38% change)
+2024-12-23 21:48:22 - INFO - __main__ - Found 5 search results for rmd
+2024-12-23 21:48:22 - WARNING - __main__ - No new URLs found for rmd
+2024-12-23 21:48:22 - INFO - __main__ - Found total of 1 valid articles for RMD
+2024-12-23 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-23 21:48:24 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-23 21:48:24 - INFO - __main__ - Bottom performer analysis complete
+2024-12-23 21:48:24 - INFO - __main__ - Saving results to JSON...
+2024-12-23 21:48:24 - INFO - __main__ - Analysis complete and saved to market_analysis.json
