@@ -1,0 +1,82 @@
+2024-12-30 21:47:49 - INFO - __main__ - Starting SP500 analysis script
+2024-12-30 21:47:49 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2024-12-30 21:47:50 - INFO - __main__ - Found last two trading days: [datetime.datetime(2024, 12, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2024, 12, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2024-12-30 21:47:50 - INFO - __main__ - Runtime timezone: UTC
+2024-12-30 21:47:50 - INFO - __main__ - Original start: 2024-12-27 16:00:00-05:00 (America/New_York)
+2024-12-30 21:47:50 - INFO - __main__ - Original end: 2024-12-30 16:00:00-05:00 (America/New_York)
+2024-12-30 21:47:50 - INFO - __main__ - UTC start: 2024-12-27 05:00:00+00:00
+2024-12-30 21:47:50 - INFO - __main__ - UTC end: 2024-12-31 05:00:00+00:00
+2024-12-30 21:47:50 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2024-12-30 21:47:50 - INFO - __main__ - Received data for 503 symbols
+2024-12-30 21:47:50 - INFO - __main__ - Sample data structure for DHR:
+2024-12-30 21:47:50 - INFO - __main__ - Number of bars: 2
+2024-12-30 21:47:50 - INFO - __main__ - Bar timestamp: 2024-12-27 05:00:00+00:00 (UTC)
+2024-12-30 21:47:50 - INFO - __main__ - Bar timestamp: 2024-12-30 05:00:00+00:00 (UTC)
+2024-12-30 21:47:50 - INFO - __main__ - DHR timestamps - Today: 2024-12-30 05:00:00+00:00, Yesterday: 2024-12-27 05:00:00+00:00
+2024-12-30 21:47:50 - INFO - __main__ - WY timestamps - Today: 2024-12-30 05:00:00+00:00, Yesterday: 2024-12-27 05:00:00+00:00
+2024-12-30 21:47:50 - INFO - __main__ - SWK timestamps - Today: 2024-12-30 05:00:00+00:00, Yesterday: 2024-12-27 05:00:00+00:00
+2024-12-30 21:47:50 - INFO - __main__ - A timestamps - Today: 2024-12-30 05:00:00+00:00, Yesterday: 2024-12-27 05:00:00+00:00
+2024-12-30 21:47:50 - INFO - __main__ - CHRW timestamps - Today: 2024-12-30 05:00:00+00:00, Yesterday: 2024-12-27 05:00:00+00:00
+2024-12-30 21:47:51 - INFO - __main__ - Successfully processed 503 stocks
+2024-12-30 21:47:51 - INFO - __main__ - Data issues encountered: 0
+2024-12-30 21:47:51 - INFO - __main__ - Final dataframe contains 503 stocks
+2024-12-30 21:47:51 - INFO - __main__ - Analysis for market close on December 30, 2024
+2024-12-30 21:47:51 - INFO - __main__ - Found 503 stocks with price data
+2024-12-30 21:47:51 - INFO - __main__ - Found Wikipedia URL for EQT: https://en.wikipedia.org/wiki/EQT_Corporation
+2024-12-30 21:47:53 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2024-12-30 21:47:55 - INFO - __main__ - Analyzing top performer...
+2024-12-30 21:47:55 - INFO - __main__ - Analyzing EQT Corporation (EQT)
+2024-12-30 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-30 21:47:56 - INFO - __main__ - Searching for articles about EQT
+2024-12-30 21:47:56 - INFO - __main__ - Searching for news about EQT (5.05% change)
+2024-12-30 21:47:56 - INFO - __main__ - Found 5 search results for EQT
+2024-12-30 21:47:56 - INFO - __main__ - Found 5 new URLs to try for EQT
+2024-12-30 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/GPJA/
+2024-12-30 21:47:56 - WARNING - __main__ - Article content too short (94 chars)
+2024-12-30 21:47:56 - INFO - __main__ - Fetching content from: https://www.foxbusiness.com/stocks
+2024-12-30 21:47:57 - INFO - __main__ - Successfully extracted article content (807 chars)
+2024-12-30 21:47:57 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4391491-us-natural-gas-surges-by-most-in-more-than-two-years-on-cold-weather-forecasts
+2024-12-30 21:47:57 - INFO - __main__ - Successfully extracted article content (281 chars)
+2024-12-30 21:47:57 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2024/12/30/stocks-making-the-biggest-moves-midday-mstr-ba-nvda.html
+2024-12-30 21:47:59 - INFO - readability.readability - ruthless removal did not work. 
+2024-12-30 21:47:59 - INFO - __main__ - Successfully extracted article content (1979 chars)
+2024-12-30 21:47:59 - INFO - __main__ - Fetching content from: https://es-us.finanzas.yahoo.com/mercados/acciones/en-alza/
+2024-12-30 21:47:59 - INFO - __main__ - Successfully extracted article content (1821 chars)
+2024-12-30 21:47:59 - INFO - __main__ - Added valid article 1 for EQT
+2024-12-30 21:47:59 - INFO - __main__ - Added valid article 2 for EQT
+2024-12-30 21:47:59 - INFO - __main__ - Added valid article 3 for EQT
+2024-12-30 21:47:59 - INFO - __main__ - Found total of 3 valid articles for EQT
+2024-12-30 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-30 21:48:02 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-30 21:48:02 - INFO - __main__ - Top performer analysis complete
+2024-12-30 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2024-12-30 21:48:02 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2024-12-30 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-30 21:48:02 - INFO - __main__ - Searching for articles about SMCI
+2024-12-30 21:48:02 - INFO - __main__ - Searching for news about SMCI (-4.1% change)
+2024-12-30 21:48:02 - INFO - __main__ - Found 5 search results for SMCI
+2024-12-30 21:48:02 - INFO - __main__ - Found 5 new URLs to try for SMCI
+2024-12-30 21:48:02 - INFO - __main__ - Fetching content from: https://www.financecharts.com/stocks/SMCI
+2024-12-30 21:48:02 - WARNING - __main__ - Article content too short (41 chars)
+2024-12-30 21:48:02 - INFO - __main__ - Fetching content from: https://www.aol.com/super-micro-computer-shares-surge-211100927.html
+2024-12-30 21:48:03 - INFO - __main__ - Successfully extracted article content (5121 chars)
+2024-12-30 21:48:03 - INFO - __main__ - Fetching content from: https://www.financecharts.com/stocks/SMCI/summary/employees
+2024-12-30 21:48:03 - WARNING - __main__ - Article content too short (41 chars)
+2024-12-30 21:48:03 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/stocks/NASDAQ/SMCI/competitors-and-alternatives/
+2024-12-30 21:48:03 - INFO - __main__ - Successfully extracted article content (120 chars)
+2024-12-30 21:48:03 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-nasdaq-sp500-boeing-737-tesla-nvidia-stock/
+2024-12-30 21:48:04 - INFO - __main__ - Successfully extracted article content (10088 chars)
+2024-12-30 21:48:04 - INFO - __main__ - Added valid article 1 for SMCI
+2024-12-30 21:48:04 - INFO - __main__ - Added valid article 2 for SMCI
+2024-12-30 21:48:04 - INFO - __main__ - Searching for news about SMCI (-4.1% change)
+2024-12-30 21:48:04 - INFO - __main__ - Found 5 search results for SMCI
+2024-12-30 21:48:04 - WARNING - __main__ - No new URLs found for SMCI
+2024-12-30 21:48:04 - INFO - __main__ - Searching for news about smci (-4.1% change)
+2024-12-30 21:48:04 - INFO - __main__ - Found 5 search results for smci
+2024-12-30 21:48:04 - WARNING - __main__ - No new URLs found for smci
+2024-12-30 21:48:04 - INFO - __main__ - Found total of 2 valid articles for SMCI
+2024-12-30 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-30 21:48:07 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-30 21:48:07 - INFO - __main__ - Bottom performer analysis complete
+2024-12-30 21:48:07 - INFO - __main__ - Saving results to JSON...
+2024-12-30 21:48:07 - INFO - __main__ - Analysis complete and saved to market_analysis.json
