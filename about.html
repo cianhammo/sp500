@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - S&P500 Market Analysis</title>
+    <!-- Add Mermaid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
     <style>
         body {
             background-color: black;
@@ -84,6 +86,14 @@
         .nav a:hover {
             color: white;
         }
+
+        /* Added styles for the diagram */
+        .mermaid {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -94,10 +104,8 @@
     <h1>About This Project</h1>
     
     <div class="card intro">
-        <p>I am fascinated by both market dynamics and LLMs, so I built this tool over the course of a week to experiment at their intersection.  </p>
+        <p>I am fascinated by both market dynamics and LLMs, so I built this tool over the course of a week to experiment at their intersection.</p>
     </div>
-
-
 
     <h2>How It Works</h2>
     <div class="card">
@@ -106,10 +114,24 @@
             <li>Analyzes the S&P 500 stock movements</li>
             <li>Identifies the day's best and worst performers and analyses relevant data</li>
             <li>Searches the web for relevant information on why these stocks performed so unusually</li>
-            <li>Uses an LLM to sumarize the information and generate insights</li>
+            <li>Uses an LLM to sumarize the information and explain insights</li>
         </ul>
+        
+        <!-- Add the diagram here -->
+        <div class="mermaid">
+            flowchart TD
+                FIN[Finance API\n <i>e.g. TSLA: -8%</i>] --> A[Python Statistics\n <i>RSI: 78\nVolatility: 68% above 30-day avg</i>]
+                FIN --> B["Google Search API
+                Search: <i>Tesla news in the last 24 hours</i> 
+                Result: <i>The president has announced that electric
+                 cars are to face a tougher regulatory environment due to..."</i>]
+                A --> C[LLM API]
+                B --> C
+                C --> OUT[<i>'Tesla shares dropped 8% following the announcement of stricter EV \n regulations. Technical indicators are looking bearish, with the stock in\n overbought territory and showing unusually high volatility.'</i>]
+        </div>
     </div>
 
+    <!-- Rest of your content remains the same -->
     <h2>Future Development</h2>
     <div class="card">
         <p>Planned features include:</p>
@@ -125,19 +147,28 @@
         <ul>
             <li>Masters in Theoretical Physics and main author of a <a href="https://pubs.aip.org/aip/adv/article/12/3/035040/2819029/Classical-quantum-localization-in-one-dimensional" target="_blank" rel="noopener noreferrer">published paper</a> in Quantum Chaos </li>
             <li>2+ years experience as a Research Analyst at <a href="https://www.projecteaden.com/" target="_blank" rel="noopener noreferrer">Project Eaden</a>, a food-tech startup </li>
-            <li>Looking for roles in quantitative trading, risk analysis, or other interesting quantitative roles.</li>
             <li>As an Australian citizen, I am eligible for the <a href="https://gdaysf.com/wp-content/uploads/2017/02/E3-visa-infographic.pdf" target="_blank" rel="noopener noreferrer">E3 work authorisation</a>, an incredibly simple visa requiring only a $400 filling fee, and a few weeks processing time.</li>
-            <li>You can find my resume <a href="#" target="_blank" rel="noopener noreferrer">here</a></li>
+            <li>I'm looking for roles in quantitative trading, risk analysis, or other interesting quantitative roles.</li>
+            <li>You can find my resume <a href="Hamilton_Resume.pdf" target="_blank" rel="noopener noreferrer">here</a></li>
         </ul>
     </div>
-
-
-
 
     <h2>Contact</h2>
     <div class="card contact">
         <p>Please reach out if you know of any interesting career opportunities in NYC! 
         <a href="mailto:cianhammo@gmail.com">cianhammo@gmail.com</a></p>
     </div>
+
+    <script>
+        // Initialize Mermaid with dark theme
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                fontSize: '16px'
+            }
+        });
+    </script>
 </body>
 </html>
