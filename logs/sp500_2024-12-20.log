@@ -1,0 +1,76 @@
+2024-12-20 21:47:40 - INFO - __main__ - Starting SP500 analysis script
+2024-12-20 21:47:41 - INFO - __main__ - Retrieved 502 tickers from SP500 list
+2024-12-20 21:47:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2024, 12, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2024, 12, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2024-12-20 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2024-12-20 21:47:41 - INFO - __main__ - Original start: 2024-12-19 16:00:00-05:00 (America/New_York)
+2024-12-20 21:47:41 - INFO - __main__ - Original end: 2024-12-20 16:00:00-05:00 (America/New_York)
+2024-12-20 21:47:41 - INFO - __main__ - UTC start: 2024-12-19 05:00:00+00:00
+2024-12-20 21:47:41 - INFO - __main__ - UTC end: 2024-12-21 05:00:00+00:00
+2024-12-20 21:47:41 - INFO - __main__ - Attempting to fetch data for 502 tickers
+2024-12-20 21:47:42 - INFO - __main__ - Received data for 502 symbols
+2024-12-20 21:47:42 - INFO - __main__ - Sample data structure for CTVA:
+2024-12-20 21:47:42 - INFO - __main__ - Number of bars: 2
+2024-12-20 21:47:42 - INFO - __main__ - Bar timestamp: 2024-12-19 05:00:00+00:00 (UTC)
+2024-12-20 21:47:42 - INFO - __main__ - Bar timestamp: 2024-12-20 05:00:00+00:00 (UTC)
+2024-12-20 21:47:42 - INFO - __main__ - CTVA timestamps - Today: 2024-12-20 05:00:00+00:00, Yesterday: 2024-12-19 05:00:00+00:00
+2024-12-20 21:47:42 - INFO - __main__ - EVRG timestamps - Today: 2024-12-20 05:00:00+00:00, Yesterday: 2024-12-19 05:00:00+00:00
+2024-12-20 21:47:42 - INFO - __main__ - LHX timestamps - Today: 2024-12-20 05:00:00+00:00, Yesterday: 2024-12-19 05:00:00+00:00
+2024-12-20 21:47:42 - INFO - __main__ - PPL timestamps - Today: 2024-12-20 05:00:00+00:00, Yesterday: 2024-12-19 05:00:00+00:00
+2024-12-20 21:47:42 - INFO - __main__ - BF.B timestamps - Today: 2024-12-20 05:00:00+00:00, Yesterday: 2024-12-19 05:00:00+00:00
+2024-12-20 21:47:42 - INFO - __main__ - Successfully processed 502 stocks
+2024-12-20 21:47:42 - INFO - __main__ - Data issues encountered: 0
+2024-12-20 21:47:42 - INFO - __main__ - Final dataframe contains 502 stocks
+2024-12-20 21:47:42 - INFO - __main__ - Analysis for market close on December 20, 2024
+2024-12-20 21:47:42 - INFO - __main__ - Found 502 stocks with price data
+2024-12-20 21:47:43 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2024-12-20 21:47:45 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2024-12-20 21:47:47 - INFO - __main__ - Analyzing top performer...
+2024-12-20 21:47:47 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2024-12-20 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-20 21:47:47 - INFO - __main__ - Searching for articles about PLTR
+2024-12-20 21:47:47 - INFO - __main__ - Searching for news about PLTR (8.58% change)
+2024-12-20 21:47:48 - INFO - __main__ - Found 5 search results for PLTR
+2024-12-20 21:47:48 - INFO - __main__ - Found 5 new URLs to try for PLTR
+2024-12-20 21:47:48 - INFO - __main__ - Fetching content from: https://www.cnbc.com/quotes/PLTR
+2024-12-20 21:47:48 - WARNING - __main__ - Article content too short (64 chars)
+2024-12-20 21:47:48 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/SMCI/
+2024-12-20 21:47:49 - INFO - __main__ - Successfully extracted article content (1850 chars)
+2024-12-20 21:47:49 - INFO - __main__ - Fetching content from: https://www.reddit.com/r/stocks/
+2024-12-20 21:47:49 - INFO - __main__ - Successfully extracted article content (200 chars)
+2024-12-20 21:47:49 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-12192024-8764029
+2024-12-20 21:47:49 - INFO - __main__ - Successfully extracted article content (13264 chars)
+2024-12-20 21:47:49 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/PLTR-Q/pressreleases/30138317/stocks-give-up-early-gains-as-bond-yields-soar/
+2024-12-20 21:47:51 - INFO - __main__ - Successfully extracted article content (7098 chars)
+2024-12-20 21:47:51 - INFO - __main__ - Added valid article 1 for PLTR
+2024-12-20 21:47:51 - INFO - __main__ - Added valid article 2 for PLTR
+2024-12-20 21:47:51 - INFO - __main__ - Added valid article 3 for PLTR
+2024-12-20 21:47:51 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2024-12-20 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-20 21:47:54 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-20 21:47:54 - INFO - __main__ - Top performer analysis complete
+2024-12-20 21:47:54 - INFO - __main__ - Analyzing bottom performer...
+2024-12-20 21:47:54 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2024-12-20 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-20 21:47:54 - INFO - __main__ - Searching for articles about TSLA
+2024-12-20 21:47:54 - INFO - __main__ - Searching for news about TSLA (-3.45% change)
+2024-12-20 21:47:54 - INFO - __main__ - Found 5 search results for TSLA
+2024-12-20 21:47:54 - INFO - __main__ - Found 5 new URLs to try for TSLA
+2024-12-20 21:47:54 - INFO - __main__ - Fetching content from: https://www.investors.com/news/tesla-stock-buy-or-sell-donald-trump-effect-elon-musk/
+2024-12-20 21:47:55 - INFO - __main__ - Successfully extracted article content (16507 chars)
+2024-12-20 21:47:55 - INFO - __main__ - Fetching content from: https://www.morningstar.co.uk/uk/news/258640/is-tesla-stock-a-buy-or-sell-after-massive-post-election-surge-.aspx
+2024-12-20 21:47:56 - INFO - __main__ - Successfully extracted article content (7164 chars)
+2024-12-20 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/AAPL/
+2024-12-20 21:47:57 - INFO - __main__ - Successfully extracted article content (1679 chars)
+2024-12-20 21:47:57 - INFO - __main__ - Fetching content from: https://www.benzinga.com/quote/TSLA/news
+2024-12-20 21:47:58 - WARNING - __main__ - Article content too short (0 chars)
+2024-12-20 21:47:58 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/news/does-2025-hold-tesla-share-075000692.html
+2024-12-20 21:47:58 - INFO - __main__ - Successfully extracted article content (3583 chars)
+2024-12-20 21:47:58 - INFO - __main__ - Added valid article 1 for TSLA
+2024-12-20 21:47:58 - INFO - __main__ - Added valid article 2 for TSLA
+2024-12-20 21:47:58 - INFO - __main__ - Added valid article 3 for TSLA
+2024-12-20 21:47:58 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2024-12-20 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-20 21:48:02 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-20 21:48:02 - INFO - __main__ - Bottom performer analysis complete
+2024-12-20 21:48:02 - INFO - __main__ - Saving results to JSON...
+2024-12-20 21:48:02 - INFO - __main__ - Analysis complete and saved to market_analysis.json

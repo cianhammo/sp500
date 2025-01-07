@@ -1,0 +1,78 @@
+2025-01-03 21:47:36 - INFO - __main__ - Starting SP500 analysis script
+2025-01-03 21:47:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-03 21:47:37 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 1, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 1, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-01-03 21:47:37 - INFO - __main__ - Runtime timezone: UTC
+2025-01-03 21:47:37 - INFO - __main__ - Original start: 2025-01-02 16:00:00-05:00 (America/New_York)
+2025-01-03 21:47:37 - INFO - __main__ - Original end: 2025-01-03 16:00:00-05:00 (America/New_York)
+2025-01-03 21:47:37 - INFO - __main__ - UTC start: 2025-01-02 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - UTC end: 2025-01-04 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-03 21:47:37 - INFO - __main__ - Received data for 503 symbols
+2025-01-03 21:47:37 - INFO - __main__ - Sample data structure for AEE:
+2025-01-03 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-01-03 21:47:37 - INFO - __main__ - Bar timestamp: 2025-01-02 05:00:00+00:00 (UTC)
+2025-01-03 21:47:37 - INFO - __main__ - Bar timestamp: 2025-01-03 05:00:00+00:00 (UTC)
+2025-01-03 21:47:37 - INFO - __main__ - AEE timestamps - Today: 2025-01-03 05:00:00+00:00, Yesterday: 2025-01-02 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - GOOGL timestamps - Today: 2025-01-03 05:00:00+00:00, Yesterday: 2025-01-02 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - KEY timestamps - Today: 2025-01-03 05:00:00+00:00, Yesterday: 2025-01-02 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - SHW timestamps - Today: 2025-01-03 05:00:00+00:00, Yesterday: 2025-01-02 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - ADI timestamps - Today: 2025-01-03 05:00:00+00:00, Yesterday: 2025-01-02 05:00:00+00:00
+2025-01-03 21:47:37 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-03 21:47:37 - INFO - __main__ - Data issues encountered: 0
+2025-01-03 21:47:37 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-03 21:47:37 - INFO - __main__ - Analysis for market close on January 03, 2025
+2025-01-03 21:47:37 - INFO - __main__ - Found 503 stocks with price data
+2025-01-03 21:47:38 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-01-03 21:47:40 - INFO - __main__ - Found Wikipedia URL for DLTR: https://en.wikipedia.org/wiki/Dollar_Tree
+2025-01-03 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-01-03 21:47:42 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-01-03 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-03 21:47:42 - INFO - __main__ - Searching for articles about SMCI
+2025-01-03 21:47:42 - INFO - __main__ - Searching for news about SMCI (10.84% change)
+2025-01-03 21:47:43 - INFO - __main__ - Found 5 search results for SMCI
+2025-01-03 21:47:43 - INFO - __main__ - Found 5 new URLs to try for SMCI
+2025-01-03 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/faraday-future-ffie-drops-11-144144667.html
+2025-01-03 21:47:44 - INFO - __main__ - Successfully extracted article content (2646 chars)
+2025-01-03 21:47:44 - INFO - __main__ - Fetching content from: https://www.yahoo.com/news/m/84691423-1f98-33f3-a76a-9a7f551830a7/super-micro%E2%80%99s-wild-swings.html
+2025-01-03 21:47:44 - INFO - __main__ - Successfully extracted article content (461 chars)
+2025-01-03 21:47:44 - INFO - __main__ - Fetching content from: https://www.aol.com/super-micro-computer-stock-soared-100000211.html
+2025-01-03 21:47:45 - INFO - __main__ - Successfully extracted article content (4706 chars)
+2025-01-03 21:47:45 - INFO - __main__ - Fetching content from: https://www.yahoo.com/finance/news/us-oil-executives-expect-improvements-150154183.html
+2025-01-03 21:47:46 - INFO - __main__ - Successfully extracted article content (3033 chars)
+2025-01-03 21:47:46 - INFO - __main__ - Fetching content from: https://www.yahoo.com/finance/news/tax-return-filing-stress-peaks-150638241.html
+2025-01-03 21:47:46 - INFO - __main__ - Successfully extracted article content (2854 chars)
+2025-01-03 21:47:46 - INFO - __main__ - Added valid article 1 for SMCI
+2025-01-03 21:47:46 - INFO - __main__ - Added valid article 2 for SMCI
+2025-01-03 21:47:46 - INFO - __main__ - Added valid article 3 for SMCI
+2025-01-03 21:47:46 - INFO - __main__ - Found total of 3 valid articles for SMCI
+2025-01-03 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-03 21:47:48 - INFO - __main__ - Using fallback analysis
+2025-01-03 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-03 21:47:50 - INFO - __main__ - Fallback analysis complete
+2025-01-03 21:47:50 - INFO - __main__ - Top performer analysis complete
+2025-01-03 21:47:50 - INFO - __main__ - Analyzing bottom performer...
+2025-01-03 21:47:50 - INFO - __main__ - Analyzing Dollar Tree (DLTR)
+2025-01-03 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-03 21:47:50 - INFO - __main__ - Searching for articles about DLTR
+2025-01-03 21:47:50 - INFO - __main__ - Searching for news about DLTR (-3.99% change)
+2025-01-03 21:47:50 - INFO - __main__ - Found 5 search results for DLTR
+2025-01-03 21:47:50 - INFO - __main__ - Found 5 new URLs to try for DLTR
+2025-01-03 21:47:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/sectors/consumer-defensive/
+2025-01-03 21:47:51 - INFO - __main__ - Successfully extracted article content (10253 chars)
+2025-01-03 21:47:51 - INFO - __main__ - Fetching content from: https://sg.finance.yahoo.com/quote/HRL/news/
+2025-01-03 21:47:52 - WARNING - __main__ - Article content too short (96 chars)
+2025-01-03 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/FL/
+2025-01-03 21:47:53 - WARNING - __main__ - Article content too short (94 chars)
+2025-01-03 21:47:53 - INFO - __main__ - Fetching content from: https://www.aol.com/president-elect-donald-trump-could-095600836.html
+2025-01-03 21:47:55 - INFO - __main__ - Successfully extracted article content (5923 chars)
+2025-01-03 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/AZO/
+2025-01-03 21:47:55 - INFO - __main__ - Successfully extracted article content (1904 chars)
+2025-01-03 21:47:55 - INFO - __main__ - Added valid article 1 for DLTR
+2025-01-03 21:47:55 - INFO - __main__ - Added valid article 2 for DLTR
+2025-01-03 21:47:55 - INFO - __main__ - Added valid article 3 for DLTR
+2025-01-03 21:47:55 - INFO - __main__ - Found total of 3 valid articles for DLTR
+2025-01-03 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-03 21:47:59 - INFO - __main__ - Successfully analyzed using news articles and market context
+2025-01-03 21:47:59 - INFO - __main__ - Bottom performer analysis complete
+2025-01-03 21:47:59 - INFO - __main__ - Saving results to JSON...
+2025-01-03 21:47:59 - INFO - __main__ - Analysis complete and saved to market_analysis.json

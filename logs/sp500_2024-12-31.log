@@ -1,0 +1,78 @@
+2024-12-31 21:47:40 - INFO - __main__ - Starting SP500 analysis script
+2024-12-31 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2024-12-31 21:47:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2024, 12, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2024, 12, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2024-12-31 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2024-12-31 21:47:41 - INFO - __main__ - Original start: 2024-12-30 16:00:00-05:00 (America/New_York)
+2024-12-31 21:47:41 - INFO - __main__ - Original end: 2024-12-31 16:00:00-05:00 (America/New_York)
+2024-12-31 21:47:41 - INFO - __main__ - UTC start: 2024-12-30 05:00:00+00:00
+2024-12-31 21:47:41 - INFO - __main__ - UTC end: 2025-01-01 05:00:00+00:00
+2024-12-31 21:47:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2024-12-31 21:47:42 - INFO - __main__ - Received data for 503 symbols
+2024-12-31 21:47:42 - INFO - __main__ - Sample data structure for CAH:
+2024-12-31 21:47:42 - INFO - __main__ - Number of bars: 2
+2024-12-31 21:47:42 - INFO - __main__ - Bar timestamp: 2024-12-30 05:00:00+00:00 (UTC)
+2024-12-31 21:47:42 - INFO - __main__ - Bar timestamp: 2024-12-31 05:00:00+00:00 (UTC)
+2024-12-31 21:47:42 - INFO - __main__ - CAH timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2024-12-31 21:47:42 - INFO - __main__ - RVTY timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2024-12-31 21:47:42 - INFO - __main__ - WM timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2024-12-31 21:47:42 - INFO - __main__ - BK timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2024-12-31 21:47:42 - INFO - __main__ - COF timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2024-12-31 21:47:42 - INFO - __main__ - Successfully processed 503 stocks
+2024-12-31 21:47:42 - INFO - __main__ - Data issues encountered: 0
+2024-12-31 21:47:42 - INFO - __main__ - Final dataframe contains 503 stocks
+2024-12-31 21:47:42 - INFO - __main__ - Analysis for market close on December 31, 2024
+2024-12-31 21:47:42 - INFO - __main__ - Found 503 stocks with price data
+2024-12-31 21:47:43 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2024-12-31 21:47:45 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2024-12-31 21:47:47 - INFO - __main__ - Analyzing top performer...
+2024-12-31 21:47:47 - INFO - __main__ - Analyzing Moderna (MRNA)
+2024-12-31 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-31 21:47:48 - INFO - __main__ - Searching for articles about MRNA
+2024-12-31 21:47:48 - INFO - __main__ - Searching for news about MRNA (5.51% change)
+2024-12-31 21:47:48 - INFO - __main__ - Found 5 search results for MRNA
+2024-12-31 21:47:48 - INFO - __main__ - Found 5 new URLs to try for MRNA
+2024-12-31 21:47:48 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/419KZ.NX/news/
+2024-12-31 21:47:49 - INFO - __main__ - Successfully extracted article content (1344 chars)
+2024-12-31 21:47:49 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/investing/barrons
+2024-12-31 21:47:49 - WARNING - __main__ - Article content too short (43 chars)
+2024-12-31 21:47:49 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/norwegian-cruise-line-stock-outperforming-nasdaq
+2024-12-31 21:47:49 - INFO - __main__ - Successfully extracted article content (3079 chars)
+2024-12-31 21:47:49 - INFO - __main__ - Fetching content from: https://www.thestreet.com/quote/MRK
+2024-12-31 21:47:49 - WARNING - __main__ - Article content too short (43 chars)
+2024-12-31 21:47:49 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/trump-economy-begins-4-money-moves-boomers-shouldnt-make-until-after-inauguration-day
+2024-12-31 21:47:50 - INFO - __main__ - Successfully extracted article content (5112 chars)
+2024-12-31 21:47:50 - INFO - __main__ - Added valid article 1 for MRNA
+2024-12-31 21:47:50 - INFO - __main__ - Added valid article 2 for MRNA
+2024-12-31 21:47:50 - INFO - __main__ - Added valid article 3 for MRNA
+2024-12-31 21:47:50 - INFO - __main__ - Found total of 3 valid articles for MRNA
+2024-12-31 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-31 21:47:51 - INFO - __main__ - Using fallback analysis
+2024-12-31 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-31 21:47:53 - INFO - __main__ - Fallback analysis complete
+2024-12-31 21:47:53 - INFO - __main__ - Top performer analysis complete
+2024-12-31 21:47:53 - INFO - __main__ - Analyzing bottom performer...
+2024-12-31 21:47:53 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2024-12-31 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-31 21:47:53 - INFO - __main__ - Searching for articles about TSLA
+2024-12-31 21:47:53 - INFO - __main__ - Searching for news about TSLA (-3.27% change)
+2024-12-31 21:47:54 - INFO - __main__ - Found 5 search results for TSLA
+2024-12-31 21:47:54 - INFO - __main__ - Found 5 new URLs to try for TSLA
+2024-12-31 21:47:54 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-tesla-tsla-stock-3/
+2024-12-31 21:47:54 - INFO - __main__ - Successfully extracted article content (5093 chars)
+2024-12-31 21:47:54 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-12302024-8767396
+2024-12-31 21:47:54 - INFO - __main__ - Successfully extracted article content (12170 chars)
+2024-12-31 21:47:54 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/quote/TL0.BE/news/
+2024-12-31 21:47:55 - WARNING - __main__ - Article content too short (96 chars)
+2024-12-31 21:47:55 - INFO - __main__ - Fetching content from: https://www.spreaker.com/podcast/tesla-stock-news-tracker--6196065
+2024-12-31 21:47:57 - INFO - __main__ - Successfully extracted article content (2932 chars)
+2024-12-31 21:47:57 - INFO - __main__ - Fetching content from: https://www.financecharts.com/stocks/TSLA
+2024-12-31 21:47:57 - WARNING - __main__ - Article content too short (41 chars)
+2024-12-31 21:47:57 - INFO - __main__ - Added valid article 1 for TSLA
+2024-12-31 21:47:57 - INFO - __main__ - Added valid article 2 for TSLA
+2024-12-31 21:47:57 - INFO - __main__ - Added valid article 3 for TSLA
+2024-12-31 21:47:57 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2024-12-31 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-31 21:47:59 - INFO - __main__ - Successfully analyzed using news articles and market context
+2024-12-31 21:47:59 - INFO - __main__ - Bottom performer analysis complete
+2024-12-31 21:47:59 - INFO - __main__ - Saving results to JSON...
+2024-12-31 21:48:00 - INFO - __main__ - Analysis complete and saved to market_analysis.json
