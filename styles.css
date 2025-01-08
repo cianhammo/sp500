@@ -140,6 +140,57 @@ h2 {
     text-decoration: none;
 }
 
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 2px dotted #cccccc;
+    cursor: help;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 250px;
+    background-color: #222;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #444;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1000;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -125px;
+    
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    pointer-events: none;
+}
+
+/* Triangle pointer */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #222 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
 /* Mobile Optimizations */
 @media (max-width: 480px) {
     .container {
@@ -172,5 +223,11 @@ h2 {
 
     .footer {
         margin-top: 20px;
+    }
+    .tooltip {
+        position: relative;
+        display: inline;
+        border-bottom: 2px dotted #888;
+        cursor: help;
     }
 }

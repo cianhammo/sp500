@@ -29,21 +29,65 @@
     <!-- <link rel="stylesheet" href="styles.css"> -->
 
     <!-- Add timestamp to external scripts -->
-    <script src="https://unpkg.com/react@18/umd/react.production.min.js?v=1"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js?v=1"></script>
-    <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js?v=1"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.1.12/Recharts.min.js?v=1"></script>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.1.12/Recharts.min.js" crossorigin></script>
 </head>
 
 <body>
     <div id="root"></div>
 
     <script>
-        const { useState, useEffect } = React;
-        const { 
-            ResponsiveContainer, LineChart, Line, XAxis, 
-            YAxis, CartesianGrid, Tooltip 
-        } = Recharts;
+    const { useState, useEffect } = React;
+const { 
+    ResponsiveContainer, LineChart, Line, XAxis, 
+    YAxis, CartesianGrid, Tooltip 
+} = Recharts;
+
+// Add financial terms dictionary
+const financialTerms = {
+    'RSI': 'Relative Strength Index (RSI) is a momentum indicator that measures the speed and magnitude of recent price changes to evaluate overbought or oversold conditions.',
+    'beta': 'Beta measures a stock\'s volatility compared to the overall market. A beta of 1.5 means that when the market grows by 1%, on average the stock grows by 1.5%.',
+    'alpha': 'Alpha represents an investment\'s excess return compared to its benchmark index (in this case, the S&P500). It is calculated over the last 3 years of data. A positive alpha indicates the investment outperformed the S&P500.',
+    'EPS': 'Earnings Per Share (EPS) is a company\'s profit divided by outstanding shares, indicating profitability on a per-share basis.',
+    'P/E ratio': 'Price-to-Earnings ratio compares a company\'s stock price to its earnings per share, indicating how much investors are willing to pay for $1 of earnings.',
+    'market cap': 'Market Capitalization is the total value of a company\'s shares, calculated by multiplying share price by number of shares outstanding.',
+    'volume': 'Trading volume represents the total number of shares traded during a specific period.',
+    'dividend yield': 'Dividend Yield shows how much a company pays in dividends relative to its stock price, expressed as a percentage.'
+};
+
+// Add Analysis Section component
+const AnalysisSection = ({ analysis }) => {
+    if (!analysis) return null;
+
+    const processText = (text) => {
+        const words = text.split(/(\s+)/);
+        return words.map((word, index) => {
+            const lowerWord = word.toLowerCase().replace(/[.,!?]$/, '');
+            for (const [term, definition] of Object.entries(financialTerms)) {
+                if (lowerWord === term.toLowerCase()) {
+                    return React.createElement('span', {
+                        key: `tooltip-${index}`,
+                        className: 'tooltip'
+                    }, [
+                        word,
+                        React.createElement('span', {
+                            key: `tooltiptext-${index}`,
+                            className: 'tooltiptext'
+                        }, definition)
+                    ]);
+                }
+            }
+            return word;
+        });
+    };
+
+    return React.createElement('p', { 
+        className: 'analysis'
+    }, processText(analysis));
+};
+    
 
         const StockChart = ({ data, finalColor, title }) => {
             if (!data || data.length === 0) return null;
@@ -157,11 +201,25 @@
             const [data, setData] = React.useState(null);
 
             React.useEffect(() => {
-                fetch('market_analysis.json')
-                    .then(response => response.json())
-                    .then(setData)
-                    .catch(console.error);
-            }, []);
+    // Add a random number to prevent any caching
+    fetch(`market_analysis.json?nocache=${Math.random()}`, {
+        headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+        }
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(setData)
+        .catch(error => {
+            console.error('Error fetching market data:', error);
+        });
+}, []);
 
             if (!data) return React.createElement('div', { className: 'container' }, 'Loading...');
 
@@ -199,7 +257,7 @@
                         ` at $${data.top_performer.price}`
                     ]),
                     React.createElement('div', { key: 'analysis' }, [
-                        React.createElement('p', { className: 'analysis' }, data.top_performer.analysis),
+                    React.createElement(AnalysisSection, { analysis: data.top_performer.analysis }),
                         React.createElement('div', { className: 'article-links' },
                             data.top_performer.article_urls.map((url, i) =>
                                 React.createElement('a', { key: i, href: url, target: '_blank' }, `[${i + 1}]`)
@@ -245,7 +303,8 @@
                         ` at $${data.bottom_performer.price}`
                     ]),
                     React.createElement('div', { key: 'analysis' }, [
-                        React.createElement('p', { className: 'analysis' }, data.bottom_performer.analysis),
+                    React.createElement(AnalysisSection, { analysis: data.bottom_performer.analysis }),
+
                         React.createElement('div', { className: 'article-links' },
                             data.bottom_performer.article_urls.map((url, i) =>
                                 React.createElement('a', { key: i, href: url, target: '_blank' }, `[${i + 1}]`)
