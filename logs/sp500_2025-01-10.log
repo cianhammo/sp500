@@ -1,0 +1,81 @@
+2025-01-10 12:34:58 - INFO - __main__ - Starting SP500 analysis script
+2025-01-10 12:34:58 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-10 12:34:58 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 1, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 1, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-01-10 12:34:58 - INFO - __main__ - Runtime timezone: UTC
+2025-01-10 12:34:58 - INFO - __main__ - Original start: 2025-01-07 16:00:00-05:00 (America/New_York)
+2025-01-10 12:34:58 - INFO - __main__ - Original end: 2025-01-08 16:00:00-05:00 (America/New_York)
+2025-01-10 12:34:58 - INFO - __main__ - UTC start: 2025-01-07 05:00:00+00:00
+2025-01-10 12:34:58 - INFO - __main__ - UTC end: 2025-01-09 05:00:00+00:00
+2025-01-10 12:34:58 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-10 12:34:59 - INFO - __main__ - Received data for 503 symbols
+2025-01-10 12:34:59 - INFO - __main__ - Sample data structure for EQR:
+2025-01-10 12:34:59 - INFO - __main__ - Number of bars: 3
+2025-01-10 12:34:59 - INFO - __main__ - Bar timestamp: 2025-01-07 05:00:00+00:00 (UTC)
+2025-01-10 12:34:59 - INFO - __main__ - Bar timestamp: 2025-01-08 05:00:00+00:00 (UTC)
+2025-01-10 12:34:59 - INFO - __main__ - Bar timestamp: 2025-01-09 05:00:00+00:00 (UTC)
+2025-01-10 12:34:59 - INFO - __main__ - EQR timestamps - Today: 2025-01-09 05:00:00+00:00, Yesterday: 2025-01-08 05:00:00+00:00
+2025-01-10 12:34:59 - INFO - __main__ - GIS timestamps - Today: 2025-01-09 05:00:00+00:00, Yesterday: 2025-01-08 05:00:00+00:00
+2025-01-10 12:34:59 - INFO - __main__ - J timestamps - Today: 2025-01-09 05:00:00+00:00, Yesterday: 2025-01-08 05:00:00+00:00
+2025-01-10 12:34:59 - INFO - __main__ - META timestamps - Today: 2025-01-09 05:00:00+00:00, Yesterday: 2025-01-08 05:00:00+00:00
+2025-01-10 12:34:59 - INFO - __main__ - APD timestamps - Today: 2025-01-09 05:00:00+00:00, Yesterday: 2025-01-08 05:00:00+00:00
+2025-01-10 12:34:59 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-10 12:34:59 - INFO - __main__ - Data issues encountered: 0
+2025-01-10 12:34:59 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-10 12:34:59 - INFO - __main__ - Analysis for market close on January 08, 2025
+2025-01-10 12:34:59 - INFO - __main__ - Found 503 stocks with price data
+2025-01-10 12:34:59 - INFO - __main__ - Found Wikipedia URL for EQR: https://en.wikipedia.org/wiki/Equity_Residential
+2025-01-10 12:35:02 - INFO - __main__ - Found Wikipedia URL for ZTS: https://en.wikipedia.org/wiki/Zoetis
+2025-01-10 12:35:04 - INFO - __main__ - Analyzing top performer...
+2025-01-10 12:35:04 - INFO - __main__ - Analyzing Equity Residential (EQR)
+2025-01-10 12:35:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-10 12:35:04 - INFO - __main__ - Searching for articles about EQR
+2025-01-10 12:35:04 - INFO - __main__ - Searching for news about Equity Residential
+2025-01-10 12:35:04 - INFO - __main__ - Found 4 search results for Equity Residential
+2025-01-10 12:35:04 - INFO - __main__ - Found 4 new URLs to try for Equity Residential
+2025-01-10 12:35:04 - INFO - __main__ - Fetching content from: https://www.etfdailynews.com/2025/01/07/mizuho-cuts-equity-residential-nyseeqr-price-target-to-74-00/
+2025-01-10 12:35:05 - INFO - __main__ - Successfully extracted article content (4897 chars)
+2025-01-10 12:35:05 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/equity-residential-price-target-lowered-to-74-from-78-at-mizuho-1034194771
+2025-01-10 12:35:07 - INFO - __main__ - Successfully extracted article content (634 chars)
+2025-01-10 12:35:07 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/agree-realty-adc-receives-a-buy-from-stifel-nicolaus-1034200985
+2025-01-10 12:35:09 - INFO - __main__ - Successfully extracted article content (1828 chars)
+2025-01-10 12:35:09 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/realty-income-strong-financial-outlook-and-attractive-dividend-yield-justify-buy-rating-1034205321
+2025-01-10 12:35:12 - INFO - __main__ - Successfully extracted article content (2106 chars)
+2025-01-10 12:35:12 - INFO - __main__ - Added valid article 1 for Equity Residential
+2025-01-10 12:35:12 - INFO - __main__ - Added valid article 2 for Equity Residential
+2025-01-10 12:35:12 - INFO - __main__ - Added valid article 3 for Equity Residential
+2025-01-10 12:35:12 - INFO - __main__ - Found total of 3 valid articles for EQR
+2025-01-10 12:35:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:15 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-01-10 12:35:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:17 - INFO - __main__ - Top performer analysis complete
+2025-01-10 12:35:17 - INFO - __main__ - Analyzing bottom performer...
+2025-01-10 12:35:17 - INFO - __main__ - Analyzing Zoetis (ZTS)
+2025-01-10 12:35:17 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-10 12:35:17 - INFO - __main__ - Searching for articles about ZTS
+2025-01-10 12:35:17 - INFO - __main__ - Searching for news about Zoetis
+2025-01-10 12:35:17 - INFO - __main__ - Found 5 search results for Zoetis
+2025-01-10 12:35:17 - INFO - __main__ - Found 5 new URLs to try for Zoetis
+2025-01-10 12:35:17 - INFO - __main__ - Fetching content from: https://www.benzinga.com/insights/news/25/01/42846670/heres-how-much-you-would-have-made-owning-zoetis-stock-in-the-last-10-years
+2025-01-10 12:35:18 - INFO - __main__ - Successfully extracted article content (841 chars)
+2025-01-10 12:35:18 - INFO - __main__ - Fetching content from: https://www.etfdailynews.com/2025/01/08/zoetis-nysezts-given-new-180-00-price-target-at-stifel-nicolaus/
+2025-01-10 12:35:18 - INFO - __main__ - Successfully extracted article content (4452 chars)
+2025-01-10 12:35:18 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/07/what-factors-have-led-to-zoetis-inc-zts-stock-trading-17-27-below-its-52-week-high/
+2025-01-10 12:35:20 - INFO - __main__ - Successfully extracted article content (3742 chars)
+2025-01-10 12:35:20 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/03/zoetis-inc-zts-stock-greater-than-its-current-valuation/
+2025-01-10 12:35:22 - INFO - __main__ - Successfully extracted article content (3705 chars)
+2025-01-10 12:35:22 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/04/whats-causing-zoetis-inc-zts-stocks-6-66-drop-over-the-last-six-months/
+2025-01-10 12:35:25 - INFO - __main__ - Successfully extracted article content (3717 chars)
+2025-01-10 12:35:25 - INFO - __main__ - Added valid article 1 for Zoetis
+2025-01-10 12:35:25 - INFO - __main__ - Added valid article 2 for Zoetis
+2025-01-10 12:35:25 - INFO - __main__ - Added valid article 3 for Zoetis
+2025-01-10 12:35:25 - INFO - __main__ - Found total of 3 valid articles for ZTS
+2025-01-10 12:35:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:27 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-01-10 12:35:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-10 12:35:29 - INFO - __main__ - Bottom performer analysis complete
+2025-01-10 12:35:29 - INFO - __main__ - Saving results to JSON...
+2025-01-10 12:35:30 - INFO - __main__ - Analysis complete and saved to market_analysis.json
