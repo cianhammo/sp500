@@ -64,7 +64,7 @@ const AnalysisSection = ({ analysis }) => {
     const processText = (text) => {
         const words = text.split(/(\s+)/);
         return words.map((word, index) => {
-            const lowerWord = word.toLowerCase().replace(/[.,!?]$/, '');
+            const lowerWord = word.toLowerCase().replace(/[.,!?()]/g, '');
             for (const [term, definition] of Object.entries(financialTerms)) {
                 if (lowerWord === term.toLowerCase()) {
                     return React.createElement('span', {
