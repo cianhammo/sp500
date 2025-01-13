@@ -1,0 +1,89 @@
+2025-01-13 21:47:46 - INFO - __main__ - Starting SP500 analysis script
+2025-01-13 21:47:46 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-13 21:47:46 - INFO - __main__ - Current NY time: 2025-01-13 16:47:46.315815-05:00
+2025-01-13 21:47:46 - INFO - __main__ - Using trading days for comparison:
+2025-01-13 21:47:46 - INFO - __main__ - Previous day: 2025-01-10 16:00 EST
+2025-01-13 21:47:46 - INFO - __main__ - Today: 2025-01-13 16:00 EST
+2025-01-13 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-01-13 21:47:46 - INFO - __main__ - Original start: 2025-01-10 16:00:00-05:00 (America/New_York)
+2025-01-13 21:47:46 - INFO - __main__ - Original end: 2025-01-13 16:00:00-05:00 (America/New_York)
+2025-01-13 21:47:46 - INFO - __main__ - UTC start: 2025-01-10 05:00:00+00:00
+2025-01-13 21:47:46 - INFO - __main__ - UTC end: 2025-01-14 05:00:00+00:00
+2025-01-13 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-13 21:47:47 - INFO - __main__ - Received data for 503 symbols
+2025-01-13 21:47:47 - INFO - __main__ - Sample data structure for COO:
+2025-01-13 21:47:47 - INFO - __main__ - Number of bars: 2
+2025-01-13 21:47:47 - INFO - __main__ - Bar timestamp: 2025-01-10 05:00:00+00:00 (UTC)
+2025-01-13 21:47:47 - INFO - __main__ - Bar timestamp: 2025-01-13 05:00:00+00:00 (UTC)
+2025-01-13 21:47:47 - INFO - __main__ - 
+DEBUG - COO Data:
+2025-01-13 21:47:47 - INFO - __main__ - Previous trading day (2025-01-10): Close=$90.29, Volume=197967.0
+2025-01-13 21:47:47 - INFO - __main__ - Today (2025-01-13): Close=$91.27, Volume=114902.0
+2025-01-13 21:47:47 - INFO - __main__ - 
+DEBUG - FAST Data:
+2025-01-13 21:47:47 - INFO - __main__ - Previous trading day (2025-01-10): Close=$71.62, Volume=103656.0
+2025-01-13 21:47:47 - INFO - __main__ - Today (2025-01-13): Close=$72.91, Volume=117594.0
+2025-01-13 21:47:47 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-13 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-01-13 21:47:47 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-13 21:47:47 - INFO - __main__ - Analysis for market close on January 13, 2025
+2025-01-13 21:47:47 - INFO - __main__ - Found 503 stocks with price data
+2025-01-13 21:47:48 - INFO - __main__ - Found Wikipedia URL for MOS: https://en.wikipedia.org/wiki/The_Mosaic_Company
+2025-01-13 21:47:51 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-01-13 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-01-13 21:47:53 - INFO - __main__ - Analyzing Mosaic Company (The) (MOS)
+2025-01-13 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-13 21:47:53 - INFO - __main__ - Searching for articles about MOS
+2025-01-13 21:47:53 - INFO - __main__ - Searching for news about Mosaic Company (The)
+2025-01-13 21:47:53 - INFO - __main__ - Found 0 search results for Mosaic Company (The)
+2025-01-13 21:47:53 - WARNING - __main__ - No new URLs found for Mosaic Company (The)
+2025-01-13 21:47:53 - INFO - __main__ - Searching for news about MOS
+2025-01-13 21:47:53 - INFO - __main__ - Found 4 search results for MOS
+2025-01-13 21:47:53 - INFO - __main__ - Found 4 new URLs to try for MOS
+2025-01-13 21:47:53 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/13/whats-causing-mosaic-co-mos-stocks-11-61-drop-over-the-last-six-months/
+2025-01-13 21:47:55 - INFO - __main__ - Successfully extracted article content (3619 chars)
+2025-01-13 21:47:55 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/early-notable-gainers-among-liquid-option-names-on-january-13th-1034222370
+2025-01-13 21:47:55 - INFO - __main__ - Successfully extracted article content (264 chars)
+2025-01-13 21:47:55 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/news/skywater-rallies-51-6-months-164600592.html
+2025-01-13 21:47:56 - INFO - __main__ - Successfully extracted article content (4909 chars)
+2025-01-13 21:47:56 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/constellation-brands-downgraded-by-jefferies-jpmorgan-3809740
+2025-01-13 21:47:58 - INFO - __main__ - Successfully extracted article content (1905 chars)
+2025-01-13 21:47:58 - INFO - __main__ - Added valid article 1 for MOS
+2025-01-13 21:47:58 - INFO - __main__ - Added valid article 2 for MOS
+2025-01-13 21:47:58 - INFO - __main__ - Added valid article 3 for MOS
+2025-01-13 21:47:58 - INFO - __main__ - Found total of 3 valid articles for MOS
+2025-01-13 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:00 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-01-13 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-01-13 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-01-13 21:48:02 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-01-13 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-13 21:48:02 - INFO - __main__ - Searching for articles about MRNA
+2025-01-13 21:48:02 - INFO - __main__ - Searching for news about Moderna
+2025-01-13 21:48:03 - INFO - __main__ - Found 5 search results for Moderna
+2025-01-13 21:48:03 - INFO - __main__ - Found 5 new URLs to try for Moderna
+2025-01-13 21:48:03 - INFO - __main__ - Fetching content from: https://invezz.com/news/2025/01/13/moderna-stock-takes-a-20-hit-heres-why/
+2025-01-13 21:48:03 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-01-13 21:48:03 - INFO - __main__ - Fetching content from: https://247wallst.com/market-news/2025/01/13/stock-markett-oday-nasdaq-down/
+2025-01-13 21:48:03 - INFO - __main__ - Successfully extracted article content (5478 chars)
+2025-01-13 21:48:03 - INFO - __main__ - Fetching content from: https://ca.finance.yahoo.com/news/stock-market-today-dow-pops-tech-weighs-on-nasdaq-as-yields-keep-climbing-210218691.html
+2025-01-13 21:48:04 - INFO - __main__ - Successfully extracted article content (13529 chars)
+2025-01-13 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-pops-higher-tech-weighs-on-nasdaq-as-treasury-yields-keep-climbing-210218602.html
+2025-01-13 21:48:05 - INFO - __main__ - Successfully extracted article content (13459 chars)
+2025-01-13 21:48:05 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/inside-the-market/article-market-movers-stocks-seeing-action-on-monday-jan-13-and-why/
+2025-01-13 21:48:05 - INFO - __main__ - Successfully extracted article content (12064 chars)
+2025-01-13 21:48:05 - INFO - __main__ - Added valid article 1 for Moderna
+2025-01-13 21:48:05 - INFO - __main__ - Added valid article 2 for Moderna
+2025-01-13 21:48:05 - INFO - __main__ - Added valid article 3 for Moderna
+2025-01-13 21:48:05 - INFO - __main__ - Found total of 3 valid articles for MRNA
+2025-01-13 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:07 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-13 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-13 21:48:10 - INFO - __main__ - Bottom performer analysis complete
+2025-01-13 21:48:10 - INFO - __main__ - Saving results to JSON...
+2025-01-13 21:48:11 - INFO - __main__ - Analysis complete and saved to market_analysis.json
