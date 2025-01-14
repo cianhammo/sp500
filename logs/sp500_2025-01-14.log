@@ -89,3 +89,94 @@ DEBUG - EXC Data:
 2025-01-14 21:48:16 - INFO - __main__ - Bottom performer analysis complete
 2025-01-14 21:48:16 - INFO - __main__ - Saving results to JSON...
 2025-01-14 21:48:17 - INFO - __main__ - Analysis complete and saved to market_analysis.json
+2025-01-14 22:03:09 - INFO - __main__ - Starting SP500 analysis script
+2025-01-14 22:03:10 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-14 22:03:10 - INFO - __main__ - Current NY time: 2025-01-14 17:03:10.116132-05:00
+2025-01-14 22:03:10 - INFO - __main__ - Using trading days for comparison:
+2025-01-14 22:03:10 - INFO - __main__ - Previous day: 2025-01-13 16:00 EST
+2025-01-14 22:03:10 - INFO - __main__ - Today: 2025-01-14 16:00 EST
+2025-01-14 22:03:10 - INFO - __main__ - Runtime timezone: UTC
+2025-01-14 22:03:10 - INFO - __main__ - Original start: 2025-01-13 16:00:00-05:00 (America/New_York)
+2025-01-14 22:03:10 - INFO - __main__ - Original end: 2025-01-14 16:00:00-05:00 (America/New_York)
+2025-01-14 22:03:10 - INFO - __main__ - UTC start: 2025-01-13 05:00:00+00:00
+2025-01-14 22:03:10 - INFO - __main__ - UTC end: 2025-01-15 05:00:00+00:00
+2025-01-14 22:03:10 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-14 22:03:11 - INFO - __main__ - Received data for 503 symbols
+2025-01-14 22:03:11 - INFO - __main__ - Sample data structure for ESS:
+2025-01-14 22:03:11 - INFO - __main__ - Number of bars: 2
+2025-01-14 22:03:11 - INFO - __main__ - Bar timestamp: 2025-01-13 05:00:00+00:00 (UTC)
+2025-01-14 22:03:11 - INFO - __main__ - Bar timestamp: 2025-01-14 05:00:00+00:00 (UTC)
+2025-01-14 22:03:11 - INFO - __main__ - 
+DEBUG - ESS Data:
+2025-01-14 22:03:11 - INFO - __main__ - Previous trading day (2025-01-13): Close=$283.035, Volume=50456.0
+2025-01-14 22:03:11 - INFO - __main__ - Today (2025-01-14): Close=$284.66, Volume=25393.0
+2025-01-14 22:03:11 - INFO - __main__ - 
+DEBUG - IP Data:
+2025-01-14 22:03:11 - INFO - __main__ - Previous trading day (2025-01-13): Close=$53.875, Volume=114371.0
+2025-01-14 22:03:11 - INFO - __main__ - Today (2025-01-14): Close=$55.41, Volume=136333.0
+2025-01-14 22:03:11 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-14 22:03:11 - INFO - __main__ - Data issues encountered: 0
+2025-01-14 22:03:11 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-14 22:03:11 - INFO - __main__ - Analysis for market close on January 14, 2025
+2025-01-14 22:03:11 - INFO - __main__ - Found 503 stocks with price data
+2025-01-14 22:03:11 - INFO - __main__ - Found Wikipedia URL for URI: https://en.wikipedia.org/wiki/United_Rentals
+2025-01-14 22:03:13 - INFO - __main__ - Found Wikipedia URL for LLY: https://en.wikipedia.org/wiki/Eli_Lilly_and_Company
+2025-01-14 22:03:15 - INFO - __main__ - Analyzing top performer...
+2025-01-14 22:03:15 - INFO - __main__ - Analyzing United Rentals (URI)
+2025-01-14 22:03:16 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-14 22:03:16 - INFO - __main__ - Searching for articles about URI
+2025-01-14 22:03:16 - INFO - __main__ - Searching for news about United Rentals
+2025-01-14 22:03:17 - INFO - __main__ - Found 4 search results for United Rentals
+2025-01-14 22:03:17 - INFO - __main__ - Found 4 new URLs to try for United Rentals
+2025-01-14 22:03:17 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/h-e-equipment-stock-doubles-164715322.html
+2025-01-14 22:03:17 - INFO - __main__ - Successfully extracted article content (1288 chars)
+2025-01-14 22:03:17 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/top-stock-movers-now-united-165623166.html
+2025-01-14 22:03:17 - INFO - __main__ - Successfully extracted article content (1901 chars)
+2025-01-14 22:03:17 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/news/baird-raised-united-rentals-stock-153757009.html
+2025-01-14 22:03:19 - INFO - __main__ - Successfully extracted article content (1077 chars)
+2025-01-14 22:03:19 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/14/a-game-changing-deal-united-rentals-uri-stuns-investors-with-4-8-billion-acquisition/
+2025-01-14 22:03:19 - INFO - __main__ - Successfully extracted article content (4421 chars)
+2025-01-14 22:03:19 - INFO - __main__ - Added valid article 1 for United Rentals
+2025-01-14 22:03:19 - INFO - __main__ - Added valid article 2 for United Rentals
+2025-01-14 22:03:19 - INFO - __main__ - Added valid article 3 for United Rentals
+2025-01-14 22:03:19 - INFO - __main__ - Found total of 3 valid articles for URI
+2025-01-14 22:03:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:21 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-14 22:03:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:23 - INFO - __main__ - Top performer analysis complete
+2025-01-14 22:03:23 - INFO - __main__ - Analyzing bottom performer...
+2025-01-14 22:03:23 - INFO - __main__ - Analyzing Lilly (Eli) (LLY)
+2025-01-14 22:03:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-14 22:03:23 - INFO - __main__ - Searching for articles about LLY
+2025-01-14 22:03:23 - INFO - __main__ - Searching for news about Lilly (Eli)
+2025-01-14 22:03:23 - INFO - __main__ - Found 1 search results for Lilly (Eli)
+2025-01-14 22:03:23 - INFO - __main__ - Found 1 new URLs to try for Lilly (Eli)
+2025-01-14 22:03:23 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/eli-lilly-falls--6-5-1034227045
+2025-01-14 22:03:23 - WARNING - __main__ - Article content too short (81 chars)
+2025-01-14 22:03:23 - INFO - __main__ - Searching for news about LLY
+2025-01-14 22:03:24 - INFO - __main__ - Found 5 search results for LLY
+2025-01-14 22:03:24 - INFO - __main__ - Found 5 new URLs to try for LLY
+2025-01-14 22:03:24 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/01/14/eli-lilly-lly-stock-price-prediction-and-forecast-2025-2030/
+2025-01-14 22:03:24 - INFO - __main__ - Successfully extracted article content (10054 chars)
+2025-01-14 22:03:24 - INFO - __main__ - Fetching content from: https://www.insidermonkey.com/blog/why-eli-lilly-lly-stock-is-declining-today-1423606/
+2025-01-14 22:03:24 - INFO - __main__ - Successfully extracted article content (5892 chars)
+2025-01-14 22:03:24 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/eli-lilly-lly-stock-declines-224520125.html
+2025-01-14 22:03:25 - INFO - __main__ - Successfully extracted article content (2794 chars)
+2025-01-14 22:03:25 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/top-stock-movers-now-united-165623166.html
+2025-01-14 22:03:25 - INFO - __main__ - Successfully extracted article content (1901 chars)
+2025-01-14 22:03:25 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/eli-lilly-cuts-q4-revenue-151106440.html
+2025-01-14 22:03:26 - INFO - __main__ - Successfully extracted article content (2674 chars)
+2025-01-14 22:03:26 - INFO - __main__ - Added valid article 1 for LLY
+2025-01-14 22:03:26 - INFO - __main__ - Added valid article 2 for LLY
+2025-01-14 22:03:26 - INFO - __main__ - Added valid article 3 for LLY
+2025-01-14 22:03:26 - INFO - __main__ - Found total of 3 valid articles for LLY
+2025-01-14 22:03:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:27 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-01-14 22:03:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-14 22:03:30 - INFO - __main__ - Bottom performer analysis complete
+2025-01-14 22:03:30 - INFO - __main__ - Saving results to JSON...
+2025-01-14 22:03:30 - INFO - __main__ - Analysis complete and saved to market_analysis.json
