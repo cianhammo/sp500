@@ -1,0 +1,86 @@
+2025-01-15 21:47:40 - INFO - __main__ - Starting SP500 analysis script
+2025-01-15 21:47:40 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-15 21:47:40 - INFO - __main__ - Current NY time: 2025-01-15 16:47:40.946265-05:00
+2025-01-15 21:47:41 - INFO - __main__ - Using trading days for comparison:
+2025-01-15 21:47:41 - INFO - __main__ - Previous day: 2025-01-14 16:00 EST
+2025-01-15 21:47:41 - INFO - __main__ - Today: 2025-01-15 16:00 EST
+2025-01-15 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2025-01-15 21:47:41 - INFO - __main__ - Original start: 2025-01-14 16:00:00-05:00 (America/New_York)
+2025-01-15 21:47:41 - INFO - __main__ - Original end: 2025-01-15 16:00:00-05:00 (America/New_York)
+2025-01-15 21:47:41 - INFO - __main__ - UTC start: 2025-01-14 05:00:00+00:00
+2025-01-15 21:47:41 - INFO - __main__ - UTC end: 2025-01-16 05:00:00+00:00
+2025-01-15 21:47:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-15 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-01-15 21:47:41 - INFO - __main__ - Sample data structure for BSX:
+2025-01-15 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-01-15 21:47:41 - INFO - __main__ - Bar timestamp: 2025-01-14 05:00:00+00:00 (UTC)
+2025-01-15 21:47:41 - INFO - __main__ - Bar timestamp: 2025-01-15 05:00:00+00:00 (UTC)
+2025-01-15 21:47:41 - INFO - __main__ - 
+DEBUG - BSX Data:
+2025-01-15 21:47:41 - INFO - __main__ - Previous trading day (2025-01-14): Close=$95.665, Volume=451051.0
+2025-01-15 21:47:41 - INFO - __main__ - Today (2025-01-15): Close=$96.91, Volume=278133.0
+2025-01-15 21:47:41 - INFO - __main__ - 
+DEBUG - ESS Data:
+2025-01-15 21:47:41 - INFO - __main__ - Previous trading day (2025-01-14): Close=$284.66, Volume=25443.0
+2025-01-15 21:47:41 - INFO - __main__ - Today (2025-01-15): Close=$282.955, Volume=32342.0
+2025-01-15 21:47:41 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-15 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-01-15 21:47:41 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-15 21:47:41 - INFO - __main__ - Analysis for market close on January 15, 2025
+2025-01-15 21:47:41 - INFO - __main__ - Found 503 stocks with price data
+2025-01-15 21:47:42 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2025-01-15 21:47:44 - INFO - __main__ - Found Wikipedia URL for LULU: https://en.wikipedia.org/wiki/Lululemon_Athletica
+2025-01-15 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-01-15 21:47:46 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2025-01-15 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-15 21:47:46 - INFO - __main__ - Searching for articles about TSLA
+2025-01-15 21:47:46 - INFO - __main__ - Searching for news about Tesla, Inc.
+2025-01-15 21:47:46 - INFO - __main__ - Found 4 search results for Tesla, Inc.
+2025-01-15 21:47:46 - INFO - __main__ - Found 4 new URLs to try for Tesla, Inc.
+2025-01-15 21:47:46 - INFO - __main__ - Fetching content from: https://www.insidermonkey.com/blog/jim-cramer-on-tesla-inc-tsla-when-they-reported-the-quarter-it-was-bad-1424551/
+2025-01-15 21:47:47 - INFO - __main__ - Successfully extracted article content (5892 chars)
+2025-01-15 21:47:47 - INFO - __main__ - Fetching content from: https://www.yahoo.com/news/m/4c4390f5-5279-30e0-8be4-3255fb169e28/tesla-stock-is-shrugging-off.html
+2025-01-15 21:47:47 - WARNING - __main__ - Article content too short (47 chars)
+2025-01-15 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/tesla-shares-soars-5-barclays-160037278.html
+2025-01-15 21:47:48 - INFO - __main__ - Successfully extracted article content (1462 chars)
+2025-01-15 21:47:48 - INFO - __main__ - Fetching content from: https://oilprice.com/Energy/Energy-General/BYD-Closing-the-Gap-on-Tesla-in-Global-EV-Market-Share.html
+2025-01-15 21:47:48 - INFO - __main__ - Successfully extracted article content (2508 chars)
+2025-01-15 21:47:48 - INFO - __main__ - Added valid article 1 for Tesla, Inc.
+2025-01-15 21:47:48 - INFO - __main__ - Added valid article 2 for Tesla, Inc.
+2025-01-15 21:47:48 - INFO - __main__ - Added valid article 3 for Tesla, Inc.
+2025-01-15 21:47:48 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2025-01-15 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:49 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-01-15 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:51 - INFO - __main__ - Top performer analysis complete
+2025-01-15 21:47:51 - INFO - __main__ - Analyzing bottom performer...
+2025-01-15 21:47:51 - INFO - __main__ - Analyzing Lululemon Athletica (LULU)
+2025-01-15 21:47:51 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-15 21:47:51 - INFO - __main__ - Searching for articles about LULU
+2025-01-15 21:47:51 - INFO - __main__ - Searching for news about Lululemon Athletica
+2025-01-15 21:47:51 - INFO - __main__ - Found 5 search results for Lululemon Athletica
+2025-01-15 21:47:51 - INFO - __main__ - Found 5 new URLs to try for Lululemon Athletica
+2025-01-15 21:47:51 - INFO - __main__ - Fetching content from: https://www.etfdailynews.com/2025/01/15/eastern-bank-trims-stock-holdings-in-lululemon-athletica-inc-nasdaqlulu/
+2025-01-15 21:47:52 - INFO - __main__ - Successfully extracted article content (6248 chars)
+2025-01-15 21:47:52 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/lululemon-athletica-lulu-receives-a-buy-from-morgan-stanley-1034231542
+2025-01-15 21:47:52 - INFO - __main__ - Successfully extracted article content (1976 chars)
+2025-01-15 21:47:52 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/btig-reaffirms-their-buy-rating-on-lululemon-athletica-lulu-1034230174
+2025-01-15 21:47:53 - INFO - __main__ - Successfully extracted article content (1944 chars)
+2025-01-15 21:47:53 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/wells-fargo-sticks-to-its-hold-rating-for-lululemon-athletica-lulu-1034230638
+2025-01-15 21:47:54 - INFO - __main__ - Successfully extracted article content (1934 chars)
+2025-01-15 21:47:54 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/lululemon-price-target-raised-to-420-from-414-at-morgan-stanley-1034231529
+2025-01-15 21:47:55 - INFO - __main__ - Successfully extracted article content (487 chars)
+2025-01-15 21:47:55 - INFO - __main__ - Added valid article 1 for Lululemon Athletica
+2025-01-15 21:47:55 - INFO - __main__ - Added valid article 2 for Lululemon Athletica
+2025-01-15 21:47:55 - INFO - __main__ - Added valid article 3 for Lululemon Athletica
+2025-01-15 21:47:55 - INFO - __main__ - Found total of 3 valid articles for LULU
+2025-01-15 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:56 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-15 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-15 21:47:59 - INFO - __main__ - Bottom performer analysis complete
+2025-01-15 21:47:59 - INFO - __main__ - Saving results to JSON...
+2025-01-15 21:47:59 - INFO - __main__ - Analysis complete and saved to market_analysis.json
