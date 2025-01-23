@@ -1,0 +1,87 @@
+2025-01-23 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-01-23 21:47:43 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-23 21:47:43 - INFO - __main__ - Current NY time: 2025-01-23 16:47:43.105999-05:00
+2025-01-23 21:47:43 - INFO - __main__ - Using trading days for comparison:
+2025-01-23 21:47:43 - INFO - __main__ - Previous day: 2025-01-22 16:00 EST
+2025-01-23 21:47:43 - INFO - __main__ - Today: 2025-01-23 16:00 EST
+2025-01-23 21:47:43 - INFO - __main__ - Runtime timezone: UTC
+2025-01-23 21:47:43 - INFO - __main__ - Original start: 2025-01-22 16:00:00-05:00 (America/New_York)
+2025-01-23 21:47:43 - INFO - __main__ - Original end: 2025-01-23 16:00:00-05:00 (America/New_York)
+2025-01-23 21:47:43 - INFO - __main__ - UTC start: 2025-01-22 05:00:00+00:00
+2025-01-23 21:47:43 - INFO - __main__ - UTC end: 2025-01-24 05:00:00+00:00
+2025-01-23 21:47:43 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-23 21:47:44 - INFO - __main__ - Received data for 503 symbols
+2025-01-23 21:47:44 - INFO - __main__ - Sample data structure for DECK:
+2025-01-23 21:47:44 - INFO - __main__ - Number of bars: 2
+2025-01-23 21:47:44 - INFO - __main__ - Bar timestamp: 2025-01-22 05:00:00+00:00 (UTC)
+2025-01-23 21:47:44 - INFO - __main__ - Bar timestamp: 2025-01-23 05:00:00+00:00 (UTC)
+2025-01-23 21:47:44 - INFO - __main__ - 
+DEBUG - DECK Data:
+2025-01-23 21:47:44 - INFO - __main__ - Previous trading day (2025-01-22): Close=$215.075, Volume=77789.0
+2025-01-23 21:47:44 - INFO - __main__ - Today (2025-01-23): Close=$218.68, Volume=72415.0
+2025-01-23 21:47:44 - INFO - __main__ - 
+DEBUG - MCO Data:
+2025-01-23 21:47:44 - INFO - __main__ - Previous trading day (2025-01-22): Close=$484.605, Volume=16774.0
+2025-01-23 21:47:44 - INFO - __main__ - Today (2025-01-23): Close=$485.97, Volume=17327.0
+2025-01-23 21:47:44 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-23 21:47:44 - INFO - __main__ - Data issues encountered: 0
+2025-01-23 21:47:44 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-23 21:47:44 - INFO - __main__ - Analysis for market close on January 23, 2025
+2025-01-23 21:47:44 - INFO - __main__ - Found 503 stocks with price data
+2025-01-23 21:47:44 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-01-23 21:47:47 - INFO - __main__ - Found Wikipedia URL for EA: https://en.wikipedia.org/wiki/Electronic_Arts
+2025-01-23 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-01-23 21:47:49 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-01-23 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-23 21:47:49 - INFO - __main__ - Searching for articles about MRNA
+2025-01-23 21:47:49 - INFO - __main__ - Searching for news about Moderna
+2025-01-23 21:47:50 - INFO - __main__ - Found 4 search results for Moderna
+2025-01-23 21:47:50 - INFO - __main__ - Found 4 new URLs to try for Moderna
+2025-01-23 21:47:50 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/23/mrna-unveiled-the-shocking-truth-behind-moderna-incs-latest-stock-movements/
+2025-01-23 21:47:51 - INFO - __main__ - Successfully extracted article content (3553 chars)
+2025-01-23 21:47:51 - INFO - __main__ - Fetching content from: https://www.nerdwallet.com/best/investing/online-brokers-for-stock-trading
+2025-01-23 21:47:51 - INFO - __main__ - Successfully extracted article content (19684 chars)
+2025-01-23 21:47:51 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/investing/stock/goog
+2025-01-23 21:47:51 - WARNING - __main__ - Article content too short (43 chars)
+2025-01-23 21:47:51 - INFO - __main__ - Fetching content from: https://www.cnn.com/markets/premarkets
+2025-01-23 21:47:51 - INFO - __main__ - Successfully extracted article content (127 chars)
+2025-01-23 21:47:51 - INFO - __main__ - Added valid article 1 for Moderna
+2025-01-23 21:47:51 - INFO - __main__ - Added valid article 2 for Moderna
+2025-01-23 21:47:51 - INFO - __main__ - Searching for news about MRNA
+2025-01-23 21:47:52 - INFO - __main__ - Found 4 search results for MRNA
+2025-01-23 21:47:52 - WARNING - __main__ - No new URLs found for MRNA
+2025-01-23 21:47:52 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-01-23 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:47:53 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-01-23 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:47:56 - INFO - __main__ - Top performer analysis complete
+2025-01-23 21:47:56 - INFO - __main__ - Analyzing bottom performer...
+2025-01-23 21:47:56 - INFO - __main__ - Analyzing Electronic Arts (EA)
+2025-01-23 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-23 21:47:56 - INFO - __main__ - Searching for articles about EA
+2025-01-23 21:47:56 - INFO - __main__ - Searching for news about Electronic Arts
+2025-01-23 21:47:56 - INFO - __main__ - Found 5 search results for Electronic Arts
+2025-01-23 21:47:56 - INFO - __main__ - Found 5 new URLs to try for Electronic Arts
+2025-01-23 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/electronic-arts-growth-questioned-analyst-185551482.html
+2025-01-23 21:47:57 - INFO - __main__ - Successfully extracted article content (2637 chars)
+2025-01-23 21:47:57 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/those-invested-electronic-arts-nasdaq-110013157.html
+2025-01-23 21:47:57 - INFO - __main__ - Successfully extracted article content (4057 chars)
+2025-01-23 21:47:57 - INFO - __main__ - Fetching content from: https://www.etfdailynews.com/2025/01/23/stifel-nicolaus-has-lowered-expectations-for-electronic-arts-nasdaqea-stock-price/
+2025-01-23 21:47:58 - INFO - __main__ - Successfully extracted article content (5255 chars)
+2025-01-23 21:47:58 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/01/23/why-take-two-interactive-stock-is-sinking-today/
+2025-01-23 21:47:58 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-01-23 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/tesla-electronic-arts-super-micro-153036096.html
+2025-01-23 21:47:59 - INFO - __main__ - Successfully extracted article content (907 chars)
+2025-01-23 21:47:59 - INFO - __main__ - Added valid article 1 for Electronic Arts
+2025-01-23 21:47:59 - INFO - __main__ - Added valid article 2 for Electronic Arts
+2025-01-23 21:47:59 - INFO - __main__ - Added valid article 3 for Electronic Arts
+2025-01-23 21:47:59 - INFO - __main__ - Found total of 3 valid articles for EA
+2025-01-23 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:48:00 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-23 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-23 21:48:03 - INFO - __main__ - Bottom performer analysis complete
+2025-01-23 21:48:03 - INFO - __main__ - Saving results to JSON...
+2025-01-23 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
