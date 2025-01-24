@@ -1,0 +1,91 @@
+2025-01-24 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-01-24 21:47:45 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-24 21:47:45 - INFO - __main__ - Current NY time: 2025-01-24 16:47:45.100854-05:00
+2025-01-24 21:47:45 - INFO - __main__ - Using trading days for comparison:
+2025-01-24 21:47:45 - INFO - __main__ - Previous day: 2025-01-23 16:00 EST
+2025-01-24 21:47:45 - INFO - __main__ - Today: 2025-01-24 16:00 EST
+2025-01-24 21:47:45 - INFO - __main__ - Runtime timezone: UTC
+2025-01-24 21:47:45 - INFO - __main__ - Original start: 2025-01-23 16:00:00-05:00 (America/New_York)
+2025-01-24 21:47:45 - INFO - __main__ - Original end: 2025-01-24 16:00:00-05:00 (America/New_York)
+2025-01-24 21:47:45 - INFO - __main__ - UTC start: 2025-01-23 05:00:00+00:00
+2025-01-24 21:47:45 - INFO - __main__ - UTC end: 2025-01-25 05:00:00+00:00
+2025-01-24 21:47:45 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-24 21:47:45 - INFO - __main__ - Received data for 503 symbols
+2025-01-24 21:47:45 - INFO - __main__ - Sample data structure for KLAC:
+2025-01-24 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-01-24 21:47:45 - INFO - __main__ - Bar timestamp: 2025-01-23 05:00:00+00:00 (UTC)
+2025-01-24 21:47:45 - INFO - __main__ - Bar timestamp: 2025-01-24 05:00:00+00:00 (UTC)
+2025-01-24 21:47:45 - INFO - __main__ - 
+DEBUG - KLAC Data:
+2025-01-24 21:47:45 - INFO - __main__ - Previous trading day (2025-01-23): Close=$761.06, Volume=41198.0
+2025-01-24 21:47:45 - INFO - __main__ - Today (2025-01-24): Close=$749.75, Volume=40012.0
+2025-01-24 21:47:45 - INFO - __main__ - 
+DEBUG - TDG Data:
+2025-01-24 21:47:45 - INFO - __main__ - Previous trading day (2025-01-23): Close=$1349.48, Volume=22639.0
+2025-01-24 21:47:45 - INFO - __main__ - Today (2025-01-24): Close=$1341.05, Volume=13679.0
+2025-01-24 21:47:46 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-24 21:47:46 - INFO - __main__ - Data issues encountered: 0
+2025-01-24 21:47:46 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-24 21:47:46 - INFO - __main__ - Analysis for market close on January 24, 2025
+2025-01-24 21:47:46 - INFO - __main__ - Found 503 stocks with price data
+2025-01-24 21:47:46 - INFO - __main__ - Found Wikipedia URL for NEE: https://en.wikipedia.org/wiki/NextEra_Energy
+2025-01-24 21:47:48 - INFO - __main__ - Found Wikipedia URL for TXN: https://en.wikipedia.org/wiki/Texas_Instruments
+2025-01-24 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-01-24 21:47:50 - INFO - __main__ - Analyzing NextEra Energy (NEE)
+2025-01-24 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-24 21:47:51 - INFO - __main__ - Searching for articles about NEE
+2025-01-24 21:47:51 - INFO - __main__ - Searching for news about NextEra Energy
+2025-01-24 21:47:51 - INFO - __main__ - Found 4 search results for NextEra Energy
+2025-01-24 21:47:51 - INFO - __main__ - Found 4 new URLs to try for NextEra Energy
+2025-01-24 21:47:51 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/23/nextera-energy-partners-lp-nep-stock-price-reaches-15-93-what-factors-are-influencing-this-level/
+2025-01-24 21:47:52 - INFO - __main__ - Successfully extracted article content (3422 chars)
+2025-01-24 21:47:52 - INFO - __main__ - Fetching content from: https://www.insidermonkey.com/blog/why-nextera-nee-stock-is-advancing-today-1432216/
+2025-01-24 21:47:52 - INFO - __main__ - Successfully extracted article content (5892 chars)
+2025-01-24 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-american-express-cf-industries-verizon-and-more-8779761
+2025-01-24 21:47:53 - INFO - __main__ - Successfully extracted article content (1768 chars)
+2025-01-24 21:47:53 - INFO - __main__ - Fetching content from: https://www.timescolonist.com/national-business/stock-market-today-wall-street-edges-back-from-its-record-10124930
+2025-01-24 21:47:53 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-01-24 21:47:53 - INFO - __main__ - Added valid article 1 for NextEra Energy
+2025-01-24 21:47:53 - INFO - __main__ - Added valid article 2 for NextEra Energy
+2025-01-24 21:47:53 - INFO - __main__ - Added valid article 3 for NextEra Energy
+2025-01-24 21:47:53 - INFO - __main__ - Found total of 3 valid articles for NEE
+2025-01-24 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:47:54 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-01-24 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:47:56 - INFO - __main__ - Top performer analysis complete
+2025-01-24 21:47:56 - INFO - __main__ - Analyzing bottom performer...
+2025-01-24 21:47:56 - INFO - __main__ - Analyzing Texas Instruments (TXN)
+2025-01-24 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-24 21:47:56 - INFO - __main__ - Searching for articles about TXN
+2025-01-24 21:47:56 - INFO - __main__ - Searching for news about Texas Instruments
+2025-01-24 21:47:56 - INFO - __main__ - Found 5 search results for Texas Instruments
+2025-01-24 21:47:56 - INFO - __main__ - Found 5 new URLs to try for Texas Instruments
+2025-01-24 21:47:56 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4751849-analog-devices-adi-stock-no-need-to-take-unnecessary-risks
+2025-01-24 21:47:56 - INFO - __main__ - Successfully extracted article content (2117 chars)
+2025-01-24 21:47:56 - INFO - __main__ - Fetching content from: https://www.wfmz.com/business/stock-market-today-wall-street-slips-from-its-record-but-heads-for-a-2nd-straight/article_2e2ebd47-f12d-5257-9b62-466fd22f7bcd.html
+2025-01-24 21:47:56 - INFO - __main__ - Successfully extracted article content (4896 chars)
+2025-01-24 21:47:56 - INFO - __main__ - Fetching content from: https://www.reuters.com/technology/texas-instruments-gives-dour-q1-profit-forecast-shares-fall-2025-01-24/
+2025-01-24 21:47:56 - WARNING - __main__ - Article content too short (43 chars)
+2025-01-24 21:47:56 - INFO - __main__ - Fetching content from: https://www.yahoo.com/news/m/436f2772-07ba-3c03-8b37-ccdd11c46659/stock-market-today-indexes.html
+2025-01-24 21:47:57 - WARNING - __main__ - Article content too short (47 chars)
+2025-01-24 21:47:57 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/livecoverage/stock-market-today-s-p-500-set-to-ease-from-record-high-dow-and-nasdaq-to-slip
+2025-01-24 21:47:57 - WARNING - __main__ - Article content too short (43 chars)
+2025-01-24 21:47:57 - INFO - __main__ - Added valid article 1 for Texas Instruments
+2025-01-24 21:47:57 - INFO - __main__ - Added valid article 2 for Texas Instruments
+2025-01-24 21:47:57 - INFO - __main__ - Searching for news about TXN
+2025-01-24 21:47:57 - INFO - __main__ - Found 4 search results for TXN
+2025-01-24 21:47:57 - INFO - __main__ - Found 2 new URLs to try for TXN
+2025-01-24 21:47:57 - INFO - __main__ - Fetching content from: https://nz.finance.yahoo.com/
+2025-01-24 21:47:58 - INFO - __main__ - Successfully extracted article content (185 chars)
+2025-01-24 21:47:58 - INFO - __main__ - Fetching content from: https://www.metal.com/price/New%20Energy/Lithium
+2025-01-24 21:47:59 - WARNING - __main__ - Article content too short (56 chars)
+2025-01-24 21:47:59 - INFO - __main__ - Found total of 2 valid articles for TXN
+2025-01-24 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:48:00 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-01-24 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-24 21:48:02 - INFO - __main__ - Bottom performer analysis complete
+2025-01-24 21:48:02 - INFO - __main__ - Saving results to JSON...
+2025-01-24 21:48:02 - INFO - __main__ - Analysis complete and saved to market_analysis.json
