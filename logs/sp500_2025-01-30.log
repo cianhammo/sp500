@@ -1,0 +1,87 @@
+2025-01-30 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-01-30 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-30 21:47:35 - INFO - __main__ - Current NY time: 2025-01-30 16:47:35.572289-05:00
+2025-01-30 21:47:35 - INFO - __main__ - Using trading days for comparison:
+2025-01-30 21:47:35 - INFO - __main__ - Previous day: 2025-01-29 16:00 EST
+2025-01-30 21:47:35 - INFO - __main__ - Today: 2025-01-30 16:00 EST
+2025-01-30 21:47:35 - INFO - __main__ - Runtime timezone: UTC
+2025-01-30 21:47:35 - INFO - __main__ - Original start: 2025-01-29 16:00:00-05:00 (America/New_York)
+2025-01-30 21:47:35 - INFO - __main__ - Original end: 2025-01-30 16:00:00-05:00 (America/New_York)
+2025-01-30 21:47:35 - INFO - __main__ - UTC start: 2025-01-29 05:00:00+00:00
+2025-01-30 21:47:35 - INFO - __main__ - UTC end: 2025-01-31 05:00:00+00:00
+2025-01-30 21:47:35 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-30 21:47:36 - INFO - __main__ - Received data for 503 symbols
+2025-01-30 21:47:36 - INFO - __main__ - Sample data structure for PFG:
+2025-01-30 21:47:36 - INFO - __main__ - Number of bars: 2
+2025-01-30 21:47:36 - INFO - __main__ - Bar timestamp: 2025-01-29 05:00:00+00:00 (UTC)
+2025-01-30 21:47:36 - INFO - __main__ - Bar timestamp: 2025-01-30 05:00:00+00:00 (UTC)
+2025-01-30 21:47:36 - INFO - __main__ - 
+DEBUG - PFG Data:
+2025-01-30 21:47:36 - INFO - __main__ - Previous trading day (2025-01-29): Close=$83.35, Volume=39869.0
+2025-01-30 21:47:36 - INFO - __main__ - Today (2025-01-30): Close=$83.54, Volume=36337.0
+2025-01-30 21:47:36 - INFO - __main__ - 
+DEBUG - PWR Data:
+2025-01-30 21:47:36 - INFO - __main__ - Previous trading day (2025-01-29): Close=$297.76, Volume=125614.0
+2025-01-30 21:47:36 - INFO - __main__ - Today (2025-01-30): Close=$309.36, Volume=71614.0
+2025-01-30 21:47:36 - INFO - __main__ - Successfully processed 502 stocks
+2025-01-30 21:47:36 - INFO - __main__ - Data issues encountered: 1
+2025-01-30 21:47:36 - INFO - __main__ - Sample of data issues:
+2025-01-30 21:47:36 - INFO - __main__ - TPL: Missing data for one or both trading days
+2025-01-30 21:47:36 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-01-30 21:47:36 - INFO - __main__ - Analysis for market close on January 30, 2025
+2025-01-30 21:47:36 - INFO - __main__ - Found 502 stocks with price data
+2025-01-30 21:47:36 - INFO - __main__ - Found Wikipedia URL for VST: https://en.wikipedia.org/wiki/Vistra_Corp
+2025-01-30 21:47:39 - INFO - __main__ - Found Wikipedia URL for UPS: https://en.wikipedia.org/wiki/United_Parcel_Service
+2025-01-30 21:47:41 - INFO - __main__ - Analyzing top performer...
+2025-01-30 21:47:41 - INFO - __main__ - Analyzing Vistra Corp. (VST)
+2025-01-30 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-30 21:47:41 - INFO - __main__ - Searching for articles about VST
+2025-01-30 21:47:41 - INFO - __main__ - Searching for news about Vistra Corp.
+2025-01-30 21:47:41 - INFO - __main__ - Found 1 search results for Vistra Corp.
+2025-01-30 21:47:41 - INFO - __main__ - Found 1 new URLs to try for Vistra Corp.
+2025-01-30 21:47:41 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/30/vistra-corp-vsts-stock-surge-what-you-need-to-know/
+2025-01-30 21:47:42 - INFO - __main__ - Successfully extracted article content (3759 chars)
+2025-01-30 21:47:42 - INFO - __main__ - Added valid article 1 for Vistra Corp.
+2025-01-30 21:47:42 - INFO - __main__ - Searching for news about VST
+2025-01-30 21:47:42 - INFO - __main__ - Found 3 search results for VST
+2025-01-30 21:47:42 - INFO - __main__ - Found 2 new URLs to try for VST
+2025-01-30 21:47:42 - INFO - __main__ - Fetching content from: https://www.morningstar.com/funds/XNAS/TRSSX/quote
+2025-01-30 21:47:44 - INFO - __main__ - Successfully extracted article content (905 chars)
+2025-01-30 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/JEF/
+2025-01-30 21:47:44 - INFO - __main__ - Successfully extracted article content (1513 chars)
+2025-01-30 21:47:44 - INFO - __main__ - Added valid article 2 for VST
+2025-01-30 21:47:44 - INFO - __main__ - Added valid article 3 for VST
+2025-01-30 21:47:44 - INFO - __main__ - Found total of 3 valid articles for VST
+2025-01-30 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:46 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-01-30 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:48 - INFO - __main__ - Top performer analysis complete
+2025-01-30 21:47:48 - INFO - __main__ - Analyzing bottom performer...
+2025-01-30 21:47:48 - INFO - __main__ - Analyzing United Parcel Service (UPS)
+2025-01-30 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-30 21:47:49 - INFO - __main__ - Searching for articles about UPS
+2025-01-30 21:47:49 - INFO - __main__ - Searching for news about United Parcel Service
+2025-01-30 21:47:49 - INFO - __main__ - Found 4 search results for United Parcel Service
+2025-01-30 21:47:49 - INFO - __main__ - Found 4 new URLs to try for United Parcel Service
+2025-01-30 21:47:49 - INFO - __main__ - Fetching content from: https://www.newsweek.com/ups-amazon-shares-fall-stock-market-2023670
+2025-01-30 21:47:49 - INFO - __main__ - Successfully extracted article content (3097 chars)
+2025-01-30 21:47:49 - INFO - __main__ - Fetching content from: https://moneymorning.com/2025/01/30/should-you-buy-the-dip-on-ups-stock/
+2025-01-30 21:47:49 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-01-30 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-move-higher-with-apple-earnings-in-the-wings-143104726.html
+2025-01-30 21:47:50 - INFO - __main__ - Successfully extracted article content (19877 chars)
+2025-01-30 21:47:50 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/ups-shares-tumble-14-after-disappointing-2025-revenue-forecast-11738243753722.html
+2025-01-30 21:47:50 - INFO - __main__ - Successfully extracted article content (1919 chars)
+2025-01-30 21:47:50 - INFO - __main__ - Added valid article 1 for United Parcel Service
+2025-01-30 21:47:50 - INFO - __main__ - Added valid article 2 for United Parcel Service
+2025-01-30 21:47:50 - INFO - __main__ - Added valid article 3 for United Parcel Service
+2025-01-30 21:47:50 - INFO - __main__ - Found total of 3 valid articles for UPS
+2025-01-30 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:52 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-30 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-30 21:47:54 - INFO - __main__ - Bottom performer analysis complete
+2025-01-30 21:47:54 - INFO - __main__ - Saving results to JSON...
+2025-01-30 21:47:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
