@@ -1,0 +1,93 @@
+2025-02-05 21:47:38 - INFO - __main__ - Starting SP500 analysis script
+2025-02-05 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-05 21:47:38 - INFO - __main__ - Current NY time: 2025-02-05 16:47:38.589777-05:00
+2025-02-05 21:47:39 - INFO - __main__ - Using trading days for comparison:
+2025-02-05 21:47:39 - INFO - __main__ - Previous day: 2025-02-04 16:00 EST
+2025-02-05 21:47:39 - INFO - __main__ - Today: 2025-02-05 16:00 EST
+2025-02-05 21:47:39 - INFO - __main__ - Runtime timezone: UTC
+2025-02-05 21:47:39 - INFO - __main__ - Original start: 2025-02-04 16:00:00-05:00 (America/New_York)
+2025-02-05 21:47:39 - INFO - __main__ - Original end: 2025-02-05 16:00:00-05:00 (America/New_York)
+2025-02-05 21:47:39 - INFO - __main__ - UTC start: 2025-02-04 05:00:00+00:00
+2025-02-05 21:47:39 - INFO - __main__ - UTC end: 2025-02-06 05:00:00+00:00
+2025-02-05 21:47:39 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-05 21:47:40 - INFO - __main__ - Received data for 503 symbols
+2025-02-05 21:47:40 - INFO - __main__ - Sample data structure for BF.B:
+2025-02-05 21:47:40 - INFO - __main__ - Number of bars: 2
+2025-02-05 21:47:40 - INFO - __main__ - Bar timestamp: 2025-02-04 05:00:00+00:00 (UTC)
+2025-02-05 21:47:40 - INFO - __main__ - Bar timestamp: 2025-02-05 05:00:00+00:00 (UTC)
+2025-02-05 21:47:40 - INFO - __main__ - 
+DEBUG - BF.B Data:
+2025-02-05 21:47:40 - INFO - __main__ - Previous trading day (2025-02-04): Close=$31.685, Volume=121931.0
+2025-02-05 21:47:40 - INFO - __main__ - Today (2025-02-05): Close=$31.13, Volume=120656.0
+2025-02-05 21:47:40 - INFO - __main__ - 
+DEBUG - COF Data:
+2025-02-05 21:47:40 - INFO - __main__ - Previous trading day (2025-02-04): Close=$200.17, Volume=530771.0
+2025-02-05 21:47:40 - INFO - __main__ - Today (2025-02-05): Close=$203.83, Volume=324382.0
+2025-02-05 21:47:40 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-05 21:47:40 - INFO - __main__ - Data issues encountered: 0
+2025-02-05 21:47:40 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-05 21:47:40 - INFO - __main__ - Analysis for market close on February 05, 2025
+2025-02-05 21:47:40 - INFO - __main__ - Found 503 stocks with price data
+2025-02-05 21:47:40 - INFO - __main__ - Found Wikipedia URL for JCI: https://en.wikipedia.org/wiki/Johnson_Controls
+2025-02-05 21:47:43 - INFO - __main__ - Found Wikipedia URL for FMC: https://en.wikipedia.org/wiki/FMC_Corporation
+2025-02-05 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-02-05 21:47:45 - INFO - __main__ - Analyzing Johnson Controls (JCI)
+2025-02-05 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-05 21:47:45 - INFO - __main__ - Searching for articles about JCI
+2025-02-05 21:47:45 - INFO - __main__ - Searching for news about Johnson Controls
+2025-02-05 21:47:45 - INFO - __main__ - Found 4 search results for Johnson Controls
+2025-02-05 21:47:45 - INFO - __main__ - Found 4 new URLs to try for Johnson Controls
+2025-02-05 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/johnson-controls-jci-q1-earnings-170002493.html
+2025-02-05 21:47:46 - INFO - __main__ - Successfully extracted article content (2612 chars)
+2025-02-05 21:47:46 - INFO - __main__ - Fetching content from: https://www.fxempire.com/forecasts/article/nasdaq-100-and-sp-500-nvidia-fiserv-and-johnson-controls-lead-mid-session-gains-1495705
+2025-02-05 21:47:47 - INFO - __main__ - Successfully extracted article content (1681 chars)
+2025-02-05 21:47:47 - INFO - __main__ - Fetching content from: https://www.straitstimes.com/business/companies-markets/us-stocks-wall-st-ends-higher-as-investors-digest-earnings-rate-cut-prospects
+2025-02-05 21:47:47 - INFO - __main__ - Successfully extracted article content (3572 chars)
+2025-02-05 21:47:47 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/indices/XECP/pressreleases/30783262/stocks-pressured-by-weakness-in-megacap-tech-stocks/
+2025-02-05 21:47:49 - INFO - __main__ - Successfully extracted article content (8431 chars)
+2025-02-05 21:47:49 - INFO - __main__ - Added valid article 1 for Johnson Controls
+2025-02-05 21:47:49 - INFO - __main__ - Added valid article 2 for Johnson Controls
+2025-02-05 21:47:49 - INFO - __main__ - Added valid article 3 for Johnson Controls
+2025-02-05 21:47:49 - INFO - __main__ - Found total of 3 valid articles for JCI
+2025-02-05 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:50 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-02-05 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-02-05 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-02-05 21:47:52 - INFO - __main__ - Analyzing FMC Corporation (FMC)
+2025-02-05 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-05 21:47:53 - INFO - __main__ - Searching for articles about FMC
+2025-02-05 21:47:53 - INFO - __main__ - Searching for news about FMC Corporation
+2025-02-05 21:47:53 - INFO - __main__ - Found 4 search results for FMC Corporation
+2025-02-05 21:47:53 - INFO - __main__ - Found 4 new URLs to try for FMC Corporation
+2025-02-05 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fmc-corporation-fmc-biggest-lithium-143840435.html
+2025-02-05 21:47:54 - INFO - __main__ - Successfully extracted article content (5778 chars)
+2025-02-05 21:47:54 - INFO - __main__ - Fetching content from: https://www.benzinga.com/25/02/43503009/fmc-stock-tumbles-as-analysts-warn-of-weak-growth-debt-concerns-and-possible-dividend-cut
+2025-02-05 21:47:54 - INFO - __main__ - Successfully extracted article content (2258 chars)
+2025-02-05 21:47:54 - INFO - __main__ - Fetching content from: https://www.lelezard.com/en/news-21694270.html
+2025-02-05 21:47:54 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-05 21:47:54 - INFO - __main__ - Fetching content from: https://www.tmcnet.com/usubmit/2025/02/05/10142221.htm
+2025-02-05 21:47:54 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-05 21:47:54 - INFO - __main__ - Added valid article 1 for FMC Corporation
+2025-02-05 21:47:54 - INFO - __main__ - Added valid article 2 for FMC Corporation
+2025-02-05 21:47:54 - INFO - __main__ - Searching for news about FMC
+2025-02-05 21:47:54 - INFO - __main__ - Found 5 search results for FMC
+2025-02-05 21:47:54 - INFO - __main__ - Found 3 new URLs to try for FMC
+2025-02-05 21:47:54 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/fmc-corp-fmc-stock-plunges-34-after-disastrous-earnings-1034316620
+2025-02-05 21:47:55 - INFO - __main__ - Successfully extracted article content (2034 chars)
+2025-02-05 21:47:55 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4755173-fmc-may-be-one-of-the-cheapest-dividend-stocks-on-the-market
+2025-02-05 21:47:55 - INFO - __main__ - Successfully extracted article content (1374 chars)
+2025-02-05 21:47:55 - INFO - __main__ - Fetching content from: https://ca.finance.yahoo.com/news/fmc-stock-collapses-33-6-171000452.html
+2025-02-05 21:47:56 - INFO - __main__ - Successfully extracted article content (1731 chars)
+2025-02-05 21:47:56 - INFO - __main__ - Added valid article 3 for FMC
+2025-02-05 21:47:56 - INFO - __main__ - Found total of 3 valid articles for FMC
+2025-02-05 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:47:58 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-02-05 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-05 21:48:00 - INFO - __main__ - Bottom performer analysis complete
+2025-02-05 21:48:00 - INFO - __main__ - Saving results to JSON...
+2025-02-05 21:48:00 - INFO - __main__ - Analysis complete and saved to market_analysis.json
