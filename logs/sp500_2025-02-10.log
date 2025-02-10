@@ -1,0 +1,60 @@
+2025-02-10 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-02-10 21:47:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-10 21:47:42 - INFO - __main__ - Current NY time: 2025-02-10 16:47:42.956541-05:00
+2025-02-10 21:47:43 - INFO - __main__ - Using trading days for comparison:
+2025-02-10 21:47:43 - INFO - __main__ - Previous day: 2025-02-07 16:00 EST
+2025-02-10 21:47:43 - INFO - __main__ - Today: 2025-02-10 16:00 EST
+2025-02-10 21:47:43 - INFO - __main__ - Runtime timezone: UTC
+2025-02-10 21:47:43 - INFO - __main__ - Original start: 2025-02-07 16:00:00-05:00 (America/New_York)
+2025-02-10 21:47:43 - INFO - __main__ - Original end: 2025-02-10 16:00:00-05:00 (America/New_York)
+2025-02-10 21:47:43 - INFO - __main__ - UTC start: 2025-02-07 05:00:00+00:00
+2025-02-10 21:47:43 - INFO - __main__ - UTC end: 2025-02-11 05:00:00+00:00
+2025-02-10 21:47:43 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-10 21:47:43 - INFO - __main__ - Received data for 503 symbols
+2025-02-10 21:47:43 - INFO - __main__ - Sample data structure for LKQ:
+2025-02-10 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-02-10 21:47:43 - INFO - __main__ - Bar timestamp: 2025-02-07 05:00:00+00:00 (UTC)
+2025-02-10 21:47:43 - INFO - __main__ - Bar timestamp: 2025-02-10 05:00:00+00:00 (UTC)
+2025-02-10 21:47:43 - INFO - __main__ - 
+DEBUG - LKQ Data:
+2025-02-10 21:47:43 - INFO - __main__ - Previous trading day (2025-02-07): Close=$37.27, Volume=130564.0
+2025-02-10 21:47:43 - INFO - __main__ - Today (2025-02-10): Close=$37.355, Volume=99028.0
+2025-02-10 21:47:43 - INFO - __main__ - 
+DEBUG - PFG Data:
+2025-02-10 21:47:43 - INFO - __main__ - Previous trading day (2025-02-07): Close=$82.34, Volume=156899.0
+2025-02-10 21:47:43 - INFO - __main__ - Today (2025-02-10): Close=$84.44, Volume=176455.0
+2025-02-10 21:47:43 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-10 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-02-10 21:47:43 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-10 21:47:43 - INFO - __main__ - Analysis for market close on February 10, 2025
+2025-02-10 21:47:43 - INFO - __main__ - Found 503 stocks with price data
+2025-02-10 21:47:44 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-02-10 21:47:46 - INFO - __main__ - Found Wikipedia URL for ON: https://en.wikipedia.org/wiki/Onsemi
+2025-02-10 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-02-10 21:47:48 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-02-10 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-10 21:47:48 - INFO - __main__ - Searching for articles about SMCI
+2025-02-10 21:47:48 - INFO - __main__ - Searching for news about Supermicro
+2025-02-10 21:47:49 - WARNING - __main__ - No valid response from Bing News for Supermicro
+2025-02-10 21:47:49 - WARNING - __main__ - No new URLs found for Supermicro
+2025-02-10 21:47:49 - INFO - __main__ - Searching for news about SMCI
+2025-02-10 21:47:49 - WARNING - __main__ - No valid response from Bing News for SMCI
+2025-02-10 21:47:49 - WARNING - __main__ - No new URLs found for SMCI
+2025-02-10 21:47:49 - INFO - __main__ - Found total of 0 valid articles for SMCI
+2025-02-10 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-10 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-02-10 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-02-10 21:47:52 - INFO - __main__ - Analyzing ON Semiconductor (ON)
+2025-02-10 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-10 21:47:52 - INFO - __main__ - Searching for articles about ON
+2025-02-10 21:47:52 - INFO - __main__ - Searching for news about ON Semiconductor
+2025-02-10 21:47:52 - WARNING - __main__ - No valid response from Bing News for ON Semiconductor
+2025-02-10 21:47:52 - WARNING - __main__ - No new URLs found for ON Semiconductor
+2025-02-10 21:47:52 - INFO - __main__ - Searching for news about ON
+2025-02-10 21:47:53 - WARNING - __main__ - No valid response from Bing News for ON
+2025-02-10 21:47:53 - WARNING - __main__ - No new URLs found for ON
+2025-02-10 21:47:53 - INFO - __main__ - Found total of 0 valid articles for ON
+2025-02-10 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-10 21:47:55 - INFO - __main__ - Bottom performer analysis complete
+2025-02-10 21:47:55 - INFO - __main__ - Saving results to JSON...
+2025-02-10 21:47:55 - INFO - __main__ - Analysis complete and saved to market_analysis.json
