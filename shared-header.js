@@ -1,4 +1,5 @@
 // shared-header.js
+// In shared-header.js, we'll update the index.html link to point to the root path
 document.addEventListener('DOMContentLoaded', function() {
     // Create the header element
     const header = document.createElement('header');
@@ -6,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Get current page from pathname
     const currentPath = window.location.pathname;
-    const currentPage = currentPath.split('/').pop().split('.')[0].toLowerCase();
+    const currentPage = currentPath === '/' ? 'index' : currentPath.split('/').pop().split('.')[0].toLowerCase();
     console.log('Current path:', currentPath);
     console.log('Current page:', currentPage);
     
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </a>
 
                     <a 
-                        href="/index.html"
+                        href="/"
                         style="background-color: ${currentPage === 'index' ? 'rgba(255, 255, 255, 0.1)' : 'transparent'}"
                         class="flex items-center space-x-2 px-3 py-2 text-lg font-medium transition-colors no-underline hover:underline ${
                             currentPage === 'index' ? 'text-white' : 'text-gray-300 hover:text-white'
