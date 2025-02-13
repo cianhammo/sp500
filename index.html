@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add these three meta tags for cache control -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>Today's Best and Worst of the S&P500</title>
 
-
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
 
-    <!-- Add this script before loading CSS -->
+    <!-- Load Tailwind first -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Tailwind -->
     <script>
-        // Simple timestamp for cache busting
-        const timestamp = new Date().getTime();
-        
-        // Add CSS with timestamp
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = `styles.css?v=${timestamp}`;
-        document.head.appendChild(link);
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            }
+        }
     </script>
 
-    <!-- Remove the original CSS link since we're adding it dynamically above -->
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- Load styles -->
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Add timestamp to external scripts -->
+    <!-- Shared Header Script - load directly -->
+    <script src="/shared-header.js"></script>
+
+    <!-- External scripts -->
     <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/prop-types@15.8.1/prop-types.min.js" crossorigin></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.1.12/Recharts.min.js" crossorigin></script>
+
+    <style>
+        .content-container {
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .content-loaded .content-container {
+            opacity: 1;
+        }
+    </style>
 </head>
 
-<body>
-    <div id="root"></div>
+<body data-page="index">
+    <div id="root" class="content-container"></div>
 
     <script>
-    const { useState, useEffect } = React;
-const { 
-    ResponsiveContainer, LineChart, Line, XAxis, 
-    YAxis, CartesianGrid, Tooltip 
-} = Recharts;
+        // Add class to body when everything is loaded
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                document.body.classList.add('content-loaded');
+            }, 100);
+        });
 
+        const { useState, useEffect } = React;
+        const { 
+            ResponsiveContainer, LineChart, Line, XAxis, 
+            YAxis, CartesianGrid, Tooltip 
+        } = Recharts;
 // Add financial terms dictionary
 const financialTerms = {
     'RSI': 'Relative Strength Index (RSI) is a momentum indicator that measures the speed and magnitude of recent price changes to evaluate overbought or oversold conditions.',
@@ -64,7 +81,7 @@ const AnalysisSection = ({ analysis }) => {
     const processText = (text) => {
         const words = text.split(/(\s+)/);
         return words.map((word, index) => {
-            const lowerWord = word.toLowerCase().replace(/[.,!?()]/g, '');
+            const lowerWord = word.toLowerCase().replace(/[.,!?]$/, '');
             for (const [term, definition] of Object.entries(financialTerms)) {
                 if (lowerWord === term.toLowerCase()) {
                     return React.createElement('span', {
@@ -324,6 +341,5 @@ const AnalysisSection = ({ analysis }) => {
 
         ReactDOM.render(React.createElement(App), document.getElementById('root'));
     </script>
-    <div style="text-align: center; padding: 20px;">
-        <a href="/about.html" class="footer-link">About</a>
+
     </div>

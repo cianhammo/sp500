@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's SEC Filings - S&P500</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+    
+    <!-- Shared Header Script -->
+    <script src="/shared-header.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js" crossorigin></script>
+
+    <style>
+        /* Your existing styles remain the same */
+        body {
+            background-color: black;
+            color: white;
+            margin-top: 64px;
+        }
+        
+        .tooltip-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip {
+            visibility: hidden;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 100%;
+            margin-bottom: 8px;
+            padding: 8px 12px;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 4px;
+            white-space: normal;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 10;
+            width: 240px;
+            line-height: 1.4;
+        }
+
+        .tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #333 transparent transparent transparent;
+        }
+
+        .tooltip-container:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body data-page="sec">
+    <div id="root"></div>
+
+    <script>
+        const { useState, useEffect } = React;
+
+        // Filing type descriptions
+        const filingDescriptions = {
+          '10-K': 'A comprehensive annual report that provides a detailed picture of a company\'s business, financial condition, and operations.',
+          '10-Q': 'A quarterly report that includes unaudited financial statements and provides a continuing view of the company\'s financial position.',
+          '8-K': 'A report of unscheduled material events or corporate changes that could be of importance to shareholders.'
+        };
+
+        // Filing type to Wikipedia URL mapping
+        const filingTypeUrls = {
+          '10-K': 'https://en.wikipedia.org/wiki/Form_10-K',
+          '10-Q': 'https://en.wikipedia.org/wiki/Form_10-Q',
+          '8-K': 'https://en.wikipedia.org/wiki/Form_8-K',
+        };
+
+        function SECFilings() {
+          const [filings, setFilings] = React.useState(null);
+          const [error, setError] = React.useState(null);
+
+          React.useEffect(() => {
+            const fetchData = async () => {
+              try {
+                const response = await fetch('sec_filings.json');
+                if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                setFilings(data);
+              } catch (fetchError) {
+                try {
+                  const fileContent = await window.fs.readFile('sec_filings.json', { encoding: 'utf8' });
+                  const data = JSON.parse(fileContent);
+                  setFilings(data);
+                } catch (fsError) {
+                  setError('Failed to load data. Please check the console for details.');
+                }
+              }
+            };
+            
+            fetchData();
+          }, []);
+
+          if (error) {
+            return React.createElement('div', { className: 'p-4 text-red-500' },
+              `Error: ${error}`
+            );
+          }
+
+          if (!filings) {
+            return null;
+        }
+          
+
+          const formatDateTime = (dateTimeStr) => {
+            const date = new Date(dateTimeStr);
+            return date.toLocaleString('en-US', {
+              month: 'short',
+              day: 'numeric',
+              year: 'numeric',
+              hour: 'numeric',
+              minute: '2-digit',
+              hour12: true
+            });
+          };
+
+          const formatNumber = (num) => {
+            return new Intl.NumberFormat('en-US').format(num);
+          };
+
+          return React.createElement('div', { className: 'min-h-screen bg-black text-white' },
+            React.createElement('div', { className: 'max-w-4xl mx-auto p-6' }, [
+              React.createElement('h1', { className: 'text-4xl font-bold mb-2', key: 'title' },
+                'Today\'s S&P500 SEC Filings'
+              ),
+              React.createElement('div', { className: 'text-gray-400 text-sm mb-2', key: 'timestamp' },
+                filings.timestamp
+              ),
+              React.createElement('div', { className: 'text-gray-400 text-sm mb-8', key: 'stats' },
+                `${formatNumber(filings.stats.input_words)} words condensed into ${formatNumber(filings.stats.output_words)}`
+              ),
+              React.createElement('div', { className: 'space-y-6', key: 'filings' },
+                filings.filings.map((filing, index) => 
+                  React.createElement('div', {
+                    key: index,
+                    className: 'bg-neutral-900 rounded-lg p-6 shadow-lg border border-neutral-800'
+                  }, [
+                    React.createElement('div', {
+                      className: 'flex justify-between items-start mb-4 flex-wrap gap-2',
+                      key: 'header'
+                    }, [
+                      React.createElement('div', { key: 'company-info' }, [
+                        React.createElement('h2', { className: 'text-xl font-semibold mb-1' },
+                          React.createElement('a', {
+                            href: filing.wiki_url,
+                            target: '_blank',
+                            rel: 'noopener noreferrer',
+                            className: 'hover:text-blue-400 transition-colors'
+                          }, `${filing.company_name} (${filing.stock})`)
+                        ),
+                        React.createElement('div', { className: 'flex items-center gap-3 text-sm' }, [
+                          React.createElement('div', { className: 'tooltip-container', key: 'filing-type' },
+                            React.createElement('a', {
+                              href: filingTypeUrls[filing.filing_type],
+                              target: '_blank',
+                              rel: 'noopener noreferrer',
+                              className: 'bg-neutral-800 px-2 py-1 rounded hover:bg-neutral-700 transition-colors'
+                            }, filing.filing_type),
+                            React.createElement('div', { className: 'tooltip' },
+                              filingDescriptions[filing.filing_type]
+                            )
+                          ),
+                          React.createElement('span', { className: 'text-gray-400', key: 'filing-time' },
+                            formatDateTime(filing.filing_time)
+                          )
+                        ])
+                      ]),
+                      React.createElement('div', { className: 'flex items-center gap-2', key: 'price-info' }, [
+                        React.createElement('span', { className: 'text-gray-400' },
+                          `Price: $${filing.price}`
+                        ),
+                        React.createElement('span', {
+                          className: filing.change_percent >= 0 ? 'text-green-400' : 'text-red-400'
+                        }, `${filing.change_percent >= 0 ? '+' : ''}${filing.change_percent.toFixed(2)}%`)
+                      ])
+                    ]),
+                    React.createElement('div', { className: 'space-y-2', key: 'summary' },
+                      filing.summary_points.map((point, i) =>
+                        React.createElement('div', {
+                          key: i,
+                          className: 'text-gray-300 text-sm leading-relaxed'
+                        }, point)
+                      )
+                    ),
+                    React.createElement('div', { className: 'mt-4 pt-4 border-t border-neutral-800', key: 'link' },
+                      React.createElement('a', {
+                        href: filing.filing_url,
+                        target: '_blank',
+                        rel: 'noopener noreferrer',
+                        className: 'text-blue-400 hover:text-blue-300 text-sm transition-colors'
+                      }, 'View full filing →')
+                    )
+                  ])
+                )
+              )
+            ])
+          );
+        }
+
+        // Render the app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(React.createElement(SECFilings));
+    </script>
+</body>
+</html>
