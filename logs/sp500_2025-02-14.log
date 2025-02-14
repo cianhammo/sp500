@@ -1,0 +1,60 @@
+2025-02-14 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-02-14 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-14 21:47:38 - INFO - __main__ - Current NY time: 2025-02-14 16:47:38.175341-05:00
+2025-02-14 21:47:38 - INFO - __main__ - Using trading days for comparison:
+2025-02-14 21:47:38 - INFO - __main__ - Previous day: 2025-02-13 16:00 EST
+2025-02-14 21:47:38 - INFO - __main__ - Today: 2025-02-14 16:00 EST
+2025-02-14 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-02-14 21:47:38 - INFO - __main__ - Original start: 2025-02-13 16:00:00-05:00 (America/New_York)
+2025-02-14 21:47:38 - INFO - __main__ - Original end: 2025-02-14 16:00:00-05:00 (America/New_York)
+2025-02-14 21:47:38 - INFO - __main__ - UTC start: 2025-02-13 05:00:00+00:00
+2025-02-14 21:47:38 - INFO - __main__ - UTC end: 2025-02-15 05:00:00+00:00
+2025-02-14 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-14 21:47:39 - INFO - __main__ - Received data for 503 symbols
+2025-02-14 21:47:39 - INFO - __main__ - Sample data structure for KMX:
+2025-02-14 21:47:39 - INFO - __main__ - Number of bars: 2
+2025-02-14 21:47:39 - INFO - __main__ - Bar timestamp: 2025-02-13 05:00:00+00:00 (UTC)
+2025-02-14 21:47:39 - INFO - __main__ - Bar timestamp: 2025-02-14 05:00:00+00:00 (UTC)
+2025-02-14 21:47:39 - INFO - __main__ - 
+DEBUG - KMX Data:
+2025-02-14 21:47:39 - INFO - __main__ - Previous trading day (2025-02-13): Close=$87.63, Volume=82938.0
+2025-02-14 21:47:39 - INFO - __main__ - Today (2025-02-14): Close=$88.93, Volume=64129.0
+2025-02-14 21:47:39 - INFO - __main__ - 
+DEBUG - MCHP Data:
+2025-02-14 21:47:39 - INFO - __main__ - Previous trading day (2025-02-13): Close=$54.28, Volume=316910.0
+2025-02-14 21:47:39 - INFO - __main__ - Today (2025-02-14): Close=$55.78, Volume=407328.0
+2025-02-14 21:47:39 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-14 21:47:39 - INFO - __main__ - Data issues encountered: 0
+2025-02-14 21:47:39 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-14 21:47:39 - INFO - __main__ - Analysis for market close on February 14, 2025
+2025-02-14 21:47:39 - INFO - __main__ - Found 503 stocks with price data
+2025-02-14 21:47:39 - INFO - __main__ - Found Wikipedia URL for ABNB: https://en.wikipedia.org/wiki/Airbnb
+2025-02-14 21:47:42 - INFO - __main__ - Found Wikipedia URL for GDDY: https://en.wikipedia.org/wiki/GoDaddy
+2025-02-14 21:47:44 - INFO - __main__ - Analyzing top performer...
+2025-02-14 21:47:44 - INFO - __main__ - Analyzing Airbnb (ABNB)
+2025-02-14 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-14 21:47:44 - INFO - __main__ - Searching for articles about ABNB
+2025-02-14 21:47:44 - INFO - __main__ - Searching for news about Airbnb
+2025-02-14 21:47:44 - WARNING - __main__ - No valid response from Bing News for Airbnb
+2025-02-14 21:47:44 - WARNING - __main__ - No new URLs found for Airbnb
+2025-02-14 21:47:44 - INFO - __main__ - Searching for news about ABNB
+2025-02-14 21:47:44 - WARNING - __main__ - No valid response from Bing News for ABNB
+2025-02-14 21:47:44 - WARNING - __main__ - No new URLs found for ABNB
+2025-02-14 21:47:44 - INFO - __main__ - Found total of 0 valid articles for ABNB
+2025-02-14 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-14 21:47:47 - INFO - __main__ - Top performer analysis complete
+2025-02-14 21:47:47 - INFO - __main__ - Analyzing bottom performer...
+2025-02-14 21:47:47 - INFO - __main__ - Analyzing GoDaddy (GDDY)
+2025-02-14 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-14 21:47:48 - INFO - __main__ - Searching for articles about GDDY
+2025-02-14 21:47:48 - INFO - __main__ - Searching for news about GoDaddy
+2025-02-14 21:47:48 - WARNING - __main__ - No valid response from Bing News for GoDaddy
+2025-02-14 21:47:48 - WARNING - __main__ - No new URLs found for GoDaddy
+2025-02-14 21:47:48 - INFO - __main__ - Searching for news about GDDY
+2025-02-14 21:47:48 - WARNING - __main__ - No valid response from Bing News for GDDY
+2025-02-14 21:47:48 - WARNING - __main__ - No new URLs found for GDDY
+2025-02-14 21:47:48 - INFO - __main__ - Found total of 0 valid articles for GDDY
+2025-02-14 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-14 21:47:50 - INFO - __main__ - Bottom performer analysis complete
+2025-02-14 21:47:50 - INFO - __main__ - Saving results to JSON...
+2025-02-14 21:47:50 - INFO - __main__ - Analysis complete and saved to market_analysis.json
