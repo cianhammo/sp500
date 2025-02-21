@@ -1,0 +1,73 @@
+name: SEC Filing Analysis
+on:
+  schedule:
+    # Runs at 7:00, 8:00, 9:00, 11:00, 14:00, and 17:00 ET (11:00, 12:00, 13:00, 15:00, 18:00, and 21:00 UTC) Monday-Friday
+    - cron: '0 11 * * 1-5'
+    - cron: '0 12 * * 1-5'
+    - cron: '0 13 * * 1-5'
+    - cron: '0 15 * * 1-5'
+    - cron: '0 18 * * 1-5'
+    - cron: '0 21 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+  checks: write
+
+jobs:
+  analyze_sec_filings:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements_sec.txt
+    
+    - name: Run SEC analysis script
+      env:
+        ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+        ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+        GOOGLE_SEARCH_API_KEY: ${{ secrets.GOOGLE_SEARCH_API_KEY }}
+        GOOGLE_SEARCH_ID: ${{ secrets.GOOGLE_SEARCH_ID }}
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        GITHUB_PAT: ${{ secrets.GH_PAT }}
+      run: |
+        python SEC_main.py
+    
+    - name: Commit and push if changed
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
+        git add output/sec_filings.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update SEC filings analysis and logs" && git push)
+    
+    - name: Checkout public repository
+      uses: actions/checkout@v3
+      with:
+        repository: cianhammo/SEC_code_public
+        token: ${{ secrets.GH_PAT }}
+        path: public-repo
+
+    - name: Copy and push to public repository
+      run: |
+        # Copy only the JSON file
+        cp output/sec_filings.json public-repo/
+        
+        # Configure git in public repository
+        cd public-repo
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/cianhammo/sp500.git
+        
+        # Add and push only the JSON file
+        git add sec_filings.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update SEC filings data" && git push)
