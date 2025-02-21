@@ -9,12 +9,10 @@ on:
     - cron: '0 18 * * 1-5'
     - cron: '0 21 * * 1-5'
   workflow_dispatch:
-
 permissions:
   contents: write
   actions: write
   checks: write
-
 jobs:
   analyze_sec_filings:
     runs-on: ubuntu-latest
@@ -49,25 +47,3 @@ jobs:
         git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
         git add output/sec_filings.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update SEC filings analysis and logs" && git push)
-    
-    - name: Checkout public repository
-      uses: actions/checkout@v3
-      with:
-        repository: cianhammo/SEC_code_public
-        token: ${{ secrets.GH_PAT }}
-        path: public-repo
-
-    - name: Copy and push to public repository
-      run: |
-        # Copy only the JSON file
-        cp output/sec_filings.json public-repo/
-        
-        # Configure git in public repository
-        cd public-repo
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/cianhammo/sp500.git
-        
-        # Add and push only the JSON file
-        git add sec_filings.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update SEC filings data" && git push)
