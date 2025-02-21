@@ -534,8 +534,17 @@ class SECFilingAnalyzer:
                 if attempt == self.max_retries - 1:
                     self.logger.error(f"Failed to summarize chunk after {self.max_retries} attempts: {e}")
                     return None
-                self.logger.info(f"Sleeping for {self.sleep_duration*2} seconds before retry...")
-                sleep(self.sleep_duration * 2)
+                    
+                # If it's a quota error, wait longer
+                if "429" in str(e):
+                    wait_time = 180  # 3 minutes for quota reset
+                    self.logger.info(f"Quota exceeded. Sleeping for {wait_time} seconds before retry...")
+                else:
+                    # Exponential backoff for other errors
+                    wait_time = self.sleep_duration * (2 ** attempt)
+                    self.logger.info(f"Sleeping for {wait_time} seconds before retry...")
+                
+                sleep(wait_time)
 
     def _combine_summaries(self, summaries):
         """
