@@ -346,7 +346,7 @@ def read_sp500_list():
     """Reads the stored list of S&P 500 companies from JSON file"""
     # Get directory where the script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    filename = os.path.join(script_dir, 'sp500_components.json')
+    filename = os.path.join(script_dir, '../sp500_components.json')
     
     print(f"Script directory: {script_dir}")
     print(f"Attempting to read from: {filename}")
