@@ -95,7 +95,7 @@
           React.useEffect(() => {
             const fetchData = async () => {
               try {
-                const response = await fetch('sec_filings.json');
+                const response = await fetch('output/sec_filings.json');
                 if (!response.ok) {
                   throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -103,7 +103,7 @@
                 setFilings(data);
               } catch (fetchError) {
                 try {
-                  const fileContent = await window.fs.readFile('sec_filings.json', { encoding: 'utf8' });
+                  const fileContent = await window.fs.readFile('output/sec_filings.json', { encoding: 'utf8' });
                   const data = JSON.parse(fileContent);
                   setFilings(data);
                 } catch (fsError) {
