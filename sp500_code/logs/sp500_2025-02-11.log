@@ -1,0 +1,60 @@
+2025-02-11 21:47:47 - INFO - __main__ - Starting SP500 analysis script
+2025-02-11 21:47:47 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-11 21:47:47 - INFO - __main__ - Current NY time: 2025-02-11 16:47:47.973212-05:00
+2025-02-11 21:47:48 - INFO - __main__ - Using trading days for comparison:
+2025-02-11 21:47:48 - INFO - __main__ - Previous day: 2025-02-10 16:00 EST
+2025-02-11 21:47:48 - INFO - __main__ - Today: 2025-02-11 16:00 EST
+2025-02-11 21:47:48 - INFO - __main__ - Runtime timezone: UTC
+2025-02-11 21:47:48 - INFO - __main__ - Original start: 2025-02-10 16:00:00-05:00 (America/New_York)
+2025-02-11 21:47:48 - INFO - __main__ - Original end: 2025-02-11 16:00:00-05:00 (America/New_York)
+2025-02-11 21:47:48 - INFO - __main__ - UTC start: 2025-02-10 05:00:00+00:00
+2025-02-11 21:47:48 - INFO - __main__ - UTC end: 2025-02-12 05:00:00+00:00
+2025-02-11 21:47:48 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-11 21:47:49 - INFO - __main__ - Received data for 503 symbols
+2025-02-11 21:47:49 - INFO - __main__ - Sample data structure for BDX:
+2025-02-11 21:47:49 - INFO - __main__ - Number of bars: 2
+2025-02-11 21:47:49 - INFO - __main__ - Bar timestamp: 2025-02-10 05:00:00+00:00 (UTC)
+2025-02-11 21:47:49 - INFO - __main__ - Bar timestamp: 2025-02-11 05:00:00+00:00 (UTC)
+2025-02-11 21:47:49 - INFO - __main__ - 
+DEBUG - BDX Data:
+2025-02-11 21:47:49 - INFO - __main__ - Previous trading day (2025-02-10): Close=$229.48, Volume=94224.0
+2025-02-11 21:47:49 - INFO - __main__ - Today (2025-02-11): Close=$229.51, Volume=75876.0
+2025-02-11 21:47:49 - INFO - __main__ - 
+DEBUG - COR Data:
+2025-02-11 21:47:49 - INFO - __main__ - Previous trading day (2025-02-10): Close=$246.44, Volume=70619.0
+2025-02-11 21:47:49 - INFO - __main__ - Today (2025-02-11): Close=$246.9, Volume=39671.0
+2025-02-11 21:47:49 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-11 21:47:49 - INFO - __main__ - Data issues encountered: 0
+2025-02-11 21:47:49 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-11 21:47:49 - INFO - __main__ - Analysis for market close on February 11, 2025
+2025-02-11 21:47:49 - INFO - __main__ - Found 503 stocks with price data
+2025-02-11 21:47:49 - INFO - __main__ - Found Wikipedia URL for DD: https://en.wikipedia.org/wiki/DuPont
+2025-02-11 21:47:52 - INFO - __main__ - Found Wikipedia URL for FIS: https://en.wikipedia.org/wiki/FIS_(company)
+2025-02-11 21:47:54 - INFO - __main__ - Analyzing top performer...
+2025-02-11 21:47:54 - INFO - __main__ - Analyzing DuPont (DD)
+2025-02-11 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-11 21:47:54 - INFO - __main__ - Searching for articles about DD
+2025-02-11 21:47:54 - INFO - __main__ - Searching for news about DuPont
+2025-02-11 21:47:54 - WARNING - __main__ - No valid response from Bing News for DuPont
+2025-02-11 21:47:54 - WARNING - __main__ - No new URLs found for DuPont
+2025-02-11 21:47:54 - INFO - __main__ - Searching for news about DD
+2025-02-11 21:47:54 - WARNING - __main__ - No valid response from Bing News for DD
+2025-02-11 21:47:54 - WARNING - __main__ - No new URLs found for DD
+2025-02-11 21:47:54 - INFO - __main__ - Found total of 0 valid articles for DD
+2025-02-11 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-11 21:47:57 - INFO - __main__ - Top performer analysis complete
+2025-02-11 21:47:57 - INFO - __main__ - Analyzing bottom performer...
+2025-02-11 21:47:57 - INFO - __main__ - Analyzing Fidelity National Information Services (FIS)
+2025-02-11 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-11 21:47:58 - INFO - __main__ - Searching for articles about FIS
+2025-02-11 21:47:58 - INFO - __main__ - Searching for news about Fidelity National Information Services
+2025-02-11 21:47:58 - WARNING - __main__ - No valid response from Bing News for Fidelity National Information Services
+2025-02-11 21:47:58 - WARNING - __main__ - No new URLs found for Fidelity National Information Services
+2025-02-11 21:47:58 - INFO - __main__ - Searching for news about FIS
+2025-02-11 21:47:58 - WARNING - __main__ - No valid response from Bing News for FIS
+2025-02-11 21:47:58 - WARNING - __main__ - No new URLs found for FIS
+2025-02-11 21:47:58 - INFO - __main__ - Found total of 0 valid articles for FIS
+2025-02-11 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-11 21:48:01 - INFO - __main__ - Bottom performer analysis complete
+2025-02-11 21:48:01 - INFO - __main__ - Saving results to JSON...
+2025-02-11 21:48:01 - INFO - __main__ - Analysis complete and saved to market_analysis.json

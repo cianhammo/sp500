@@ -1,0 +1,90 @@
+2025-01-27 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-01-27 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-27 21:47:35 - INFO - __main__ - Current NY time: 2025-01-27 16:47:35.779408-05:00
+2025-01-27 21:47:36 - INFO - __main__ - Using trading days for comparison:
+2025-01-27 21:47:36 - INFO - __main__ - Previous day: 2025-01-24 16:00 EST
+2025-01-27 21:47:36 - INFO - __main__ - Today: 2025-01-27 16:00 EST
+2025-01-27 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-01-27 21:47:36 - INFO - __main__ - Original start: 2025-01-24 16:00:00-05:00 (America/New_York)
+2025-01-27 21:47:36 - INFO - __main__ - Original end: 2025-01-27 16:00:00-05:00 (America/New_York)
+2025-01-27 21:47:36 - INFO - __main__ - UTC start: 2025-01-24 05:00:00+00:00
+2025-01-27 21:47:36 - INFO - __main__ - UTC end: 2025-01-28 05:00:00+00:00
+2025-01-27 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-27 21:47:36 - INFO - __main__ - Received data for 503 symbols
+2025-01-27 21:47:36 - INFO - __main__ - Sample data structure for COST:
+2025-01-27 21:47:36 - INFO - __main__ - Number of bars: 2
+2025-01-27 21:47:36 - INFO - __main__ - Bar timestamp: 2025-01-24 05:00:00+00:00 (UTC)
+2025-01-27 21:47:36 - INFO - __main__ - Bar timestamp: 2025-01-27 05:00:00+00:00 (UTC)
+2025-01-27 21:47:36 - INFO - __main__ - 
+DEBUG - COST Data:
+2025-01-27 21:47:36 - INFO - __main__ - Previous trading day (2025-01-24): Close=$939.52, Volume=36258.0
+2025-01-27 21:47:36 - INFO - __main__ - Today (2025-01-27): Close=$965.44, Volume=64983.0
+2025-01-27 21:47:36 - INFO - __main__ - 
+DEBUG - CVX Data:
+2025-01-27 21:47:36 - INFO - __main__ - Previous trading day (2025-01-24): Close=$155.69, Volume=216841.0
+2025-01-27 21:47:36 - INFO - __main__ - Today (2025-01-27): Close=$157.26, Volume=255661.0
+2025-01-27 21:47:36 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-27 21:47:36 - INFO - __main__ - Data issues encountered: 0
+2025-01-27 21:47:36 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-27 21:47:36 - INFO - __main__ - Analysis for market close on January 27, 2025
+2025-01-27 21:47:36 - INFO - __main__ - Found 503 stocks with price data
+2025-01-27 21:47:37 - INFO - __main__ - Found Wikipedia URL for AWK: https://en.wikipedia.org/wiki/American_Water_Works
+2025-01-27 21:47:39 - INFO - __main__ - Found Wikipedia URL for VST: https://en.wikipedia.org/wiki/Vistra_Corp
+2025-01-27 21:47:41 - INFO - __main__ - Analyzing top performer...
+2025-01-27 21:47:41 - INFO - __main__ - Analyzing American Water Works (AWK)
+2025-01-27 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-27 21:47:41 - INFO - __main__ - Searching for articles about AWK
+2025-01-27 21:47:41 - INFO - __main__ - Searching for news about American Water Works
+2025-01-27 21:47:41 - INFO - __main__ - Found 4 search results for American Water Works
+2025-01-27 21:47:41 - INFO - __main__ - Found 4 new URLs to try for American Water Works
+2025-01-27 21:47:41 - INFO - __main__ - Fetching content from: https://www.etfdailynews.com/2025/01/27/american-water-works-company-inc-nyseawk-stake-raised-by-janney-montgomery-scott-llc/
+2025-01-27 21:47:42 - INFO - __main__ - Successfully extracted article content (5356 chars)
+2025-01-27 21:47:42 - INFO - __main__ - Fetching content from: https://www.hindustantimes.com/business/deepseek-causes-us-markets-to-plunge-top-gainers-losers-101738009678724.html
+2025-01-27 21:47:42 - INFO - __main__ - Successfully extracted article content (2717 chars)
+2025-01-27 21:47:42 - INFO - __main__ - Fetching content from: https://www.etfdailynews.com/2025/01/27/janney-montgomery-scott-llc-acquires-60189-shares-of-dollar-general-co-nysedg/
+2025-01-27 21:47:42 - INFO - __main__ - Successfully extracted article content (6520 chars)
+2025-01-27 21:47:42 - INFO - __main__ - Fetching content from: https://money.usnews.com/investing/articles/best-water-stocks-and-etfs-to-buy
+2025-01-27 21:47:42 - INFO - __main__ - Successfully extracted article content (8304 chars)
+2025-01-27 21:47:42 - INFO - __main__ - Added valid article 1 for American Water Works
+2025-01-27 21:47:42 - INFO - __main__ - Added valid article 2 for American Water Works
+2025-01-27 21:47:42 - INFO - __main__ - Added valid article 3 for American Water Works
+2025-01-27 21:47:42 - INFO - __main__ - Found total of 3 valid articles for AWK
+2025-01-27 21:47:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:44 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-01-27 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:47 - INFO - __main__ - Top performer analysis complete
+2025-01-27 21:47:47 - INFO - __main__ - Analyzing bottom performer...
+2025-01-27 21:47:47 - INFO - __main__ - Analyzing Vistra Corp. (VST)
+2025-01-27 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-27 21:47:47 - INFO - __main__ - Searching for articles about VST
+2025-01-27 21:47:47 - INFO - __main__ - Searching for news about Vistra Corp.
+2025-01-27 21:47:47 - INFO - __main__ - Found 0 search results for Vistra Corp.
+2025-01-27 21:47:47 - WARNING - __main__ - No new URLs found for Vistra Corp.
+2025-01-27 21:47:47 - INFO - __main__ - Searching for news about VST
+2025-01-27 21:47:47 - INFO - __main__ - Found 5 search results for VST
+2025-01-27 21:47:47 - INFO - __main__ - Found 5 new URLs to try for VST
+2025-01-27 21:47:47 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/vistra-energy-vst-receives-a-buy-from-morgan-stanley-1034273012
+2025-01-27 21:47:47 - INFO - __main__ - Successfully extracted article content (2307 chars)
+2025-01-27 21:47:47 - INFO - __main__ - Fetching content from: https://www.investopedia.com/why-nvidia-stock-is-plummeting-today-deepseek-ai-wall-street-8780814
+2025-01-27 21:47:48 - INFO - __main__ - Successfully extracted article content (2047 chars)
+2025-01-27 21:47:48 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-broadcom-vistra-and-more-8780883
+2025-01-27 21:47:48 - INFO - __main__ - Successfully extracted article content (1900 chars)
+2025-01-27 21:47:48 - INFO - __main__ - Fetching content from: https://www.investopedia.com/why-ai-power-stocks-sold-off-monday-vst-ceg-deepseek-8780980
+2025-01-27 21:47:48 - INFO - __main__ - Successfully extracted article content (2565 chars)
+2025-01-27 21:47:48 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4752150-aes-stock-compelling-risk-reward-opportunity
+2025-01-27 21:47:48 - INFO - readability.readability - ruthless removal did not work. 
+2025-01-27 21:47:48 - WARNING - __main__ - Article content too short (0 chars)
+2025-01-27 21:47:48 - INFO - __main__ - Added valid article 1 for VST
+2025-01-27 21:47:48 - INFO - __main__ - Added valid article 2 for VST
+2025-01-27 21:47:48 - INFO - __main__ - Added valid article 3 for VST
+2025-01-27 21:47:48 - INFO - __main__ - Found total of 3 valid articles for VST
+2025-01-27 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:50 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-27 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-27 21:47:52 - INFO - __main__ - Bottom performer analysis complete
+2025-01-27 21:47:52 - INFO - __main__ - Saving results to JSON...
+2025-01-27 21:47:52 - INFO - __main__ - Analysis complete and saved to market_analysis.json

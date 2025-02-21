@@ -1,0 +1,87 @@
+2024-12-26 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2024-12-26 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2024-12-26 21:47:45 - INFO - __main__ - Found last two trading days: [datetime.datetime(2024, 12, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2024, 12, 24, 13, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2024-12-26 21:47:45 - INFO - __main__ - Runtime timezone: UTC
+2024-12-26 21:47:45 - INFO - __main__ - Original start: 2024-12-24 13:00:00-05:00 (America/New_York)
+2024-12-26 21:47:45 - INFO - __main__ - Original end: 2024-12-26 16:00:00-05:00 (America/New_York)
+2024-12-26 21:47:45 - INFO - __main__ - UTC start: 2024-12-24 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - UTC end: 2024-12-27 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2024-12-26 21:47:45 - INFO - __main__ - Received data for 503 symbols
+2024-12-26 21:47:45 - INFO - __main__ - Sample data structure for CPT:
+2024-12-26 21:47:45 - INFO - __main__ - Number of bars: 2
+2024-12-26 21:47:45 - INFO - __main__ - Bar timestamp: 2024-12-24 05:00:00+00:00 (UTC)
+2024-12-26 21:47:45 - INFO - __main__ - Bar timestamp: 2024-12-26 05:00:00+00:00 (UTC)
+2024-12-26 21:47:45 - INFO - __main__ - CPT timestamps - Today: 2024-12-26 05:00:00+00:00, Yesterday: 2024-12-24 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - NRG timestamps - Today: 2024-12-26 05:00:00+00:00, Yesterday: 2024-12-24 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - RVTY timestamps - Today: 2024-12-26 05:00:00+00:00, Yesterday: 2024-12-24 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - CE timestamps - Today: 2024-12-26 05:00:00+00:00, Yesterday: 2024-12-24 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - CHD timestamps - Today: 2024-12-26 05:00:00+00:00, Yesterday: 2024-12-24 05:00:00+00:00
+2024-12-26 21:47:45 - INFO - __main__ - Successfully processed 501 stocks
+2024-12-26 21:47:45 - INFO - __main__ - Data issues encountered: 2
+2024-12-26 21:47:45 - INFO - __main__ - Sample of data issues:
+2024-12-26 21:47:45 - INFO - __main__ - MTD: Processing error - float division by zero
+2024-12-26 21:47:45 - INFO - __main__ - ERIE: Insufficient data points (1)
+2024-12-26 21:47:45 - INFO - __main__ - Final dataframe contains 501 stocks
+2024-12-26 21:47:45 - INFO - __main__ - Analysis for market close on December 26, 2024
+2024-12-26 21:47:45 - INFO - __main__ - Found 501 stocks with price data
+2024-12-26 21:47:46 - INFO - __main__ - Found Wikipedia URL for WBA: https://en.wikipedia.org/wiki/Walgreens_Boots_Alliance
+2024-12-26 21:47:48 - INFO - __main__ - Found Wikipedia URL for MO: https://en.wikipedia.org/wiki/Altria
+2024-12-26 21:47:50 - INFO - __main__ - Analyzing top performer...
+2024-12-26 21:47:50 - INFO - __main__ - Analyzing Walgreens Boots Alliance (WBA)
+2024-12-26 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-26 21:47:50 - INFO - __main__ - Searching for articles about WBA
+2024-12-26 21:47:50 - INFO - __main__ - Searching for news about WBA (5.27% change)
+2024-12-26 21:47:51 - INFO - __main__ - Found 5 search results for WBA
+2024-12-26 21:47:51 - INFO - __main__ - Found 5 new URLs to try for WBA
+2024-12-26 21:47:51 - INFO - __main__ - Fetching content from: https://www.schaeffersresearch.com/content/live
+2024-12-26 21:47:52 - INFO - __main__ - Successfully extracted article content (3806 chars)
+2024-12-26 21:47:52 - INFO - __main__ - Fetching content from: https://www.foxbusiness.com/stocks
+2024-12-26 21:47:52 - INFO - __main__ - Successfully extracted article content (828 chars)
+2024-12-26 21:47:52 - INFO - __main__ - Fetching content from: https://sg.finance.yahoo.com/quote/BNTX/news/
+2024-12-26 21:47:53 - WARNING - __main__ - Article content too short (96 chars)
+2024-12-26 21:47:53 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/investing/stock/ntrs
+2024-12-26 21:47:53 - WARNING - __main__ - Article content too short (43 chars)
+2024-12-26 21:47:53 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/index/s&p_500
+2024-12-26 21:47:54 - INFO - __main__ - Successfully extracted article content (2835 chars)
+2024-12-26 21:47:54 - INFO - __main__ - Added valid article 1 for WBA
+2024-12-26 21:47:54 - INFO - __main__ - Added valid article 2 for WBA
+2024-12-26 21:47:54 - INFO - __main__ - Added valid article 3 for WBA
+2024-12-26 21:47:54 - INFO - __main__ - Found total of 3 valid articles for WBA
+2024-12-26 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-26 21:47:55 - INFO - __main__ - Using fallback analysis
+2024-12-26 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-26 21:47:57 - INFO - __main__ - Fallback analysis complete
+2024-12-26 21:47:57 - INFO - __main__ - Top performer analysis complete
+2024-12-26 21:47:57 - INFO - __main__ - Analyzing bottom performer...
+2024-12-26 21:47:57 - INFO - __main__ - Analyzing Altria (MO)
+2024-12-26 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2024-12-26 21:47:57 - INFO - __main__ - Searching for articles about MO
+2024-12-26 21:47:57 - INFO - __main__ - Searching for news about MO (-1.79% change)
+2024-12-26 21:47:58 - INFO - __main__ - Found 5 search results for MO
+2024-12-26 21:47:58 - INFO - __main__ - Found 5 new URLs to try for MO
+2024-12-26 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/PM/
+2024-12-26 21:47:59 - WARNING - __main__ - Article content too short (94 chars)
+2024-12-26 21:47:59 - INFO - __main__ - Fetching content from: https://money.usnews.com/investing/stocks/mo-altria-group-inc
+2024-12-26 21:47:59 - INFO - __main__ - Successfully extracted article content (155 chars)
+2024-12-26 21:47:59 - INFO - __main__ - Fetching content from: https://www.kmbc.com/
+2024-12-26 21:47:59 - WARNING - __main__ - Article content too short (91 chars)
+2024-12-26 21:47:59 - INFO - __main__ - Fetching content from: https://www.safeway.com/
+2024-12-26 21:48:00 - INFO - __main__ - Successfully extracted article content (1321 chars)
+2024-12-26 21:48:00 - INFO - __main__ - Fetching content from: https://capis.com/capis-morning-note-12-26-24-stocks-lower-due-to-overnight-sell-off-at-200-a-m-edt/
+2024-12-26 21:48:00 - WARNING - __main__ - Article content too short (33 chars)
+2024-12-26 21:48:00 - INFO - __main__ - Added valid article 1 for MO
+2024-12-26 21:48:00 - INFO - __main__ - Searching for news about MO (-1.79% change)
+2024-12-26 21:48:01 - INFO - __main__ - Found 5 search results for MO
+2024-12-26 21:48:01 - WARNING - __main__ - No new URLs found for MO
+2024-12-26 21:48:01 - INFO - __main__ - Searching for news about mo (-1.79% change)
+2024-12-26 21:48:01 - INFO - __main__ - Found 5 search results for mo
+2024-12-26 21:48:01 - WARNING - __main__ - No new URLs found for mo
+2024-12-26 21:48:01 - INFO - __main__ - Found total of 1 valid articles for MO
+2024-12-26 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-26 21:48:02 - INFO - __main__ - Using fallback analysis
+2024-12-26 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-12-26 21:48:04 - INFO - __main__ - Fallback analysis complete
+2024-12-26 21:48:04 - INFO - __main__ - Bottom performer analysis complete
+2024-12-26 21:48:04 - INFO - __main__ - Saving results to JSON...
+2024-12-26 21:48:04 - INFO - __main__ - Analysis complete and saved to market_analysis.json

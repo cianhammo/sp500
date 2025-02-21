@@ -1,0 +1,87 @@
+2025-02-03 21:47:36 - INFO - __main__ - Starting SP500 analysis script
+2025-02-03 21:47:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-03 21:47:36 - INFO - __main__ - Current NY time: 2025-02-03 16:47:36.464040-05:00
+2025-02-03 21:47:36 - INFO - __main__ - Using trading days for comparison:
+2025-02-03 21:47:36 - INFO - __main__ - Previous day: 2025-01-31 16:00 EST
+2025-02-03 21:47:36 - INFO - __main__ - Today: 2025-02-03 16:00 EST
+2025-02-03 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-02-03 21:47:36 - INFO - __main__ - Original start: 2025-01-31 16:00:00-05:00 (America/New_York)
+2025-02-03 21:47:36 - INFO - __main__ - Original end: 2025-02-03 16:00:00-05:00 (America/New_York)
+2025-02-03 21:47:36 - INFO - __main__ - UTC start: 2025-01-31 05:00:00+00:00
+2025-02-03 21:47:36 - INFO - __main__ - UTC end: 2025-02-04 05:00:00+00:00
+2025-02-03 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-03 21:47:37 - INFO - __main__ - Received data for 503 symbols
+2025-02-03 21:47:37 - INFO - __main__ - Sample data structure for VTR:
+2025-02-03 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-02-03 21:47:37 - INFO - __main__ - Bar timestamp: 2025-01-31 05:00:00+00:00 (UTC)
+2025-02-03 21:47:37 - INFO - __main__ - Bar timestamp: 2025-02-03 05:00:00+00:00 (UTC)
+2025-02-03 21:47:37 - INFO - __main__ - 
+DEBUG - VTR Data:
+2025-02-03 21:47:37 - INFO - __main__ - Previous trading day (2025-01-31): Close=$60.37, Volume=85432.0
+2025-02-03 21:47:37 - INFO - __main__ - Today (2025-02-03): Close=$61.39, Volume=139130.0
+2025-02-03 21:47:37 - INFO - __main__ - 
+DEBUG - ANSS Data:
+2025-02-03 21:47:37 - INFO - __main__ - Previous trading day (2025-01-31): Close=$350.34, Volume=14106.0
+2025-02-03 21:47:37 - INFO - __main__ - Today (2025-02-03): Close=$346.61, Volume=29482.0
+2025-02-03 21:47:37 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-03 21:47:37 - INFO - __main__ - Data issues encountered: 0
+2025-02-03 21:47:37 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-03 21:47:37 - INFO - __main__ - Analysis for market close on February 03, 2025
+2025-02-03 21:47:37 - INFO - __main__ - Found 503 stocks with price data
+2025-02-03 21:47:37 - INFO - __main__ - Found Wikipedia URL for IDXX: https://en.wikipedia.org/wiki/Idexx_Laboratories
+2025-02-03 21:47:40 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-02-03 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-02-03 21:47:42 - INFO - __main__ - Analyzing Idexx Laboratories (IDXX)
+2025-02-03 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-03 21:47:42 - INFO - __main__ - Searching for articles about IDXX
+2025-02-03 21:47:42 - INFO - __main__ - Searching for news about Idexx Laboratories
+2025-02-03 21:47:43 - INFO - __main__ - Found 5 search results for Idexx Laboratories
+2025-02-03 21:47:43 - INFO - __main__ - Found 5 new URLs to try for Idexx Laboratories
+2025-02-03 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/idexx-laboratories-stock-jumps-testing-160500740.html
+2025-02-03 21:47:43 - INFO - __main__ - Successfully extracted article content (1794 chars)
+2025-02-03 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-pet-health-company-idexx-145127050.html
+2025-02-03 21:47:44 - INFO - __main__ - Successfully extracted article content (2711 chars)
+2025-02-03 21:47:44 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/idexx-laboratories-stock-rises-11-following-strong-q4-earnings-and-revenue-growth-1034305265
+2025-02-03 21:47:44 - INFO - __main__ - Successfully extracted article content (961 chars)
+2025-02-03 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/idexx-q4-earnings-revenues-top-135300259.html
+2025-02-03 21:47:45 - INFO - __main__ - Successfully extracted article content (6267 chars)
+2025-02-03 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/top-stock-movers-now-constellation-165143369.html
+2025-02-03 21:47:45 - INFO - __main__ - Successfully extracted article content (1992 chars)
+2025-02-03 21:47:45 - INFO - __main__ - Added valid article 1 for Idexx Laboratories
+2025-02-03 21:47:45 - INFO - __main__ - Added valid article 2 for Idexx Laboratories
+2025-02-03 21:47:45 - INFO - __main__ - Added valid article 3 for Idexx Laboratories
+2025-02-03 21:47:45 - INFO - __main__ - Found total of 3 valid articles for IDXX
+2025-02-03 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:47 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-02-03 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:48 - INFO - __main__ - Top performer analysis complete
+2025-02-03 21:47:48 - INFO - __main__ - Analyzing bottom performer...
+2025-02-03 21:47:48 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-02-03 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-03 21:47:49 - INFO - __main__ - Searching for articles about MRNA
+2025-02-03 21:47:49 - INFO - __main__ - Searching for news about Moderna
+2025-02-03 21:47:49 - INFO - __main__ - Found 3 search results for Moderna
+2025-02-03 21:47:49 - INFO - __main__ - Found 3 new URLs to try for Moderna
+2025-02-03 21:47:49 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/02/03/moderna-inc-mrna-stock-understanding-its-underlying-value/
+2025-02-03 21:47:50 - INFO - __main__ - Successfully extracted article content (3523 chars)
+2025-02-03 21:47:50 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/30739508/stocks-pressured-by-us-tariffs/
+2025-02-03 21:47:52 - INFO - __main__ - Successfully extracted article content (7271 chars)
+2025-02-03 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/034730.KS/
+2025-02-03 21:47:52 - WARNING - __main__ - Article content too short (94 chars)
+2025-02-03 21:47:52 - INFO - __main__ - Added valid article 1 for Moderna
+2025-02-03 21:47:52 - INFO - __main__ - Added valid article 2 for Moderna
+2025-02-03 21:47:52 - INFO - __main__ - Searching for news about MRNA
+2025-02-03 21:47:52 - INFO - __main__ - Found 3 search results for MRNA
+2025-02-03 21:47:52 - INFO - __main__ - Found 1 new URLs to try for MRNA
+2025-02-03 21:47:52 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/quote/4571:JP
+2025-02-03 21:47:54 - INFO - __main__ - Successfully extracted article content (193 chars)
+2025-02-03 21:47:54 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-02-03 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:55 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-02-03 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-03 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-02-03 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-02-03 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json

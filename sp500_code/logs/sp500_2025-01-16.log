@@ -1,0 +1,88 @@
+2025-01-16 21:47:43 - INFO - __main__ - Starting SP500 analysis script
+2025-01-16 21:47:43 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-16 21:47:43 - INFO - __main__ - Current NY time: 2025-01-16 16:47:43.848583-05:00
+2025-01-16 21:47:44 - INFO - __main__ - Using trading days for comparison:
+2025-01-16 21:47:44 - INFO - __main__ - Previous day: 2025-01-15 16:00 EST
+2025-01-16 21:47:44 - INFO - __main__ - Today: 2025-01-16 16:00 EST
+2025-01-16 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-01-16 21:47:44 - INFO - __main__ - Original start: 2025-01-15 16:00:00-05:00 (America/New_York)
+2025-01-16 21:47:44 - INFO - __main__ - Original end: 2025-01-16 16:00:00-05:00 (America/New_York)
+2025-01-16 21:47:44 - INFO - __main__ - UTC start: 2025-01-15 05:00:00+00:00
+2025-01-16 21:47:44 - INFO - __main__ - UTC end: 2025-01-17 05:00:00+00:00
+2025-01-16 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-16 21:47:45 - INFO - __main__ - Received data for 503 symbols
+2025-01-16 21:47:45 - INFO - __main__ - Sample data structure for FFIV:
+2025-01-16 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-01-16 21:47:45 - INFO - __main__ - Bar timestamp: 2025-01-15 05:00:00+00:00 (UTC)
+2025-01-16 21:47:45 - INFO - __main__ - Bar timestamp: 2025-01-16 05:00:00+00:00 (UTC)
+2025-01-16 21:47:45 - INFO - __main__ - 
+DEBUG - FFIV Data:
+2025-01-16 21:47:45 - INFO - __main__ - Previous trading day (2025-01-15): Close=$262.285, Volume=26530.0
+2025-01-16 21:47:45 - INFO - __main__ - Today (2025-01-16): Close=$263.7, Volume=16262.0
+2025-01-16 21:47:45 - INFO - __main__ - 
+DEBUG - GPC Data:
+2025-01-16 21:47:45 - INFO - __main__ - Previous trading day (2025-01-15): Close=$117.385, Volume=62684.0
+2025-01-16 21:47:45 - INFO - __main__ - Today (2025-01-16): Close=$119.32, Volume=116419.0
+2025-01-16 21:47:45 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-16 21:47:45 - INFO - __main__ - Data issues encountered: 0
+2025-01-16 21:47:45 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-16 21:47:45 - INFO - __main__ - Analysis for market close on January 16, 2025
+2025-01-16 21:47:45 - INFO - __main__ - Found 503 stocks with price data
+2025-01-16 21:47:45 - INFO - __main__ - Found Wikipedia URL for DXCM: https://en.wikipedia.org/wiki/Dexcom
+2025-01-16 21:47:48 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-01-16 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-01-16 21:47:50 - INFO - __main__ - Analyzing Dexcom (DXCM)
+2025-01-16 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-16 21:47:50 - INFO - __main__ - Searching for articles about DXCM
+2025-01-16 21:47:50 - INFO - __main__ - Searching for news about Dexcom
+2025-01-16 21:47:50 - INFO - __main__ - Found 5 search results for Dexcom
+2025-01-16 21:47:50 - INFO - __main__ - Found 5 new URLs to try for Dexcom
+2025-01-16 21:47:50 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4395907-dexcom-raised-to-outperform-by-baird
+2025-01-16 21:47:50 - INFO - __main__ - Successfully extracted article content (280 chars)
+2025-01-16 21:47:50 - INFO - __main__ - Fetching content from: https://www.benzinga.com/insights/analyst-ratings/25/01/43038432/expert-outlook-dexcom-through-the-eyes-of-11-analysts
+2025-01-16 21:47:51 - INFO - __main__ - Successfully extracted article content (5814 chars)
+2025-01-16 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/baird-raises-dexcom-stock-outperform-171402896.html
+2025-01-16 21:47:52 - INFO - __main__ - Successfully extracted article content (1188 chars)
+2025-01-16 21:47:52 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/dexcom-s-growth-potential-and-strategic-catalysts-justify-buy-rating-and-new-price-target-1034235140
+2025-01-16 21:47:53 - INFO - __main__ - Successfully extracted article content (1896 chars)
+2025-01-16 21:47:53 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/piper-bullish-on-dexcom-says-time-for-investors-to-come-back-to-the-name-1034236933
+2025-01-16 21:47:54 - INFO - __main__ - Successfully extracted article content (852 chars)
+2025-01-16 21:47:54 - INFO - __main__ - Added valid article 1 for Dexcom
+2025-01-16 21:47:54 - INFO - __main__ - Added valid article 2 for Dexcom
+2025-01-16 21:47:54 - INFO - __main__ - Added valid article 3 for Dexcom
+2025-01-16 21:47:54 - INFO - __main__ - Found total of 3 valid articles for DXCM
+2025-01-16 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:47:55 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-16 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:47:58 - INFO - __main__ - Top performer analysis complete
+2025-01-16 21:47:58 - INFO - __main__ - Analyzing bottom performer...
+2025-01-16 21:47:58 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-01-16 21:47:58 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-16 21:47:59 - INFO - __main__ - Searching for articles about UNH
+2025-01-16 21:47:59 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-01-16 21:47:59 - INFO - __main__ - Found 5 search results for UnitedHealth Group
+2025-01-16 21:47:59 - INFO - __main__ - Found 5 new URLs to try for UnitedHealth Group
+2025-01-16 21:47:59 - INFO - __main__ - Fetching content from: https://www.kiplinger.com/investing/stocks/unitedhealth-unh-worst-dow-jones-stock-earnings
+2025-01-16 21:47:59 - INFO - __main__ - Successfully extracted article content (2773 chars)
+2025-01-16 21:47:59 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-and-nasdaq-to-open-higher-bank-of-america-morgan-stanley-earnings-on-tap/card/unitedhealth-s-stock-selloff-is-cutting-more-than-100-points-off-the-dow-s-price-blY5elUvxnU6udBs7yBQ
+2025-01-16 21:48:00 - INFO - __main__ - Successfully extracted article content (326 chars)
+2025-01-16 21:48:00 - INFO - __main__ - Fetching content from: https://www.morningstar.com/news/marketwatch/20250116201/unitedhealths-stock-dives-after-a-rare-revenue-miss
+2025-01-16 21:48:00 - INFO - __main__ - Successfully extracted article content (5523 chars)
+2025-01-16 21:48:00 - INFO - __main__ - Fetching content from: https://www.morningstar.com/news/marketwatch/20250116211/unitedhealths-stock-dives-after-first-revenue-miss-in-more-than-four-years
+2025-01-16 21:48:01 - INFO - __main__ - Successfully extracted article content (3430 chars)
+2025-01-16 21:48:01 - INFO - __main__ - Fetching content from: https://www.morningstar.com/news/marketwatch/20250116278/unitedhealth-fights-back-blame-drugmakers-for-high-costs-not-the-middlemen
+2025-01-16 21:48:01 - INFO - __main__ - Successfully extracted article content (4870 chars)
+2025-01-16 21:48:01 - INFO - __main__ - Added valid article 1 for UnitedHealth Group
+2025-01-16 21:48:01 - INFO - __main__ - Added valid article 2 for UnitedHealth Group
+2025-01-16 21:48:01 - INFO - __main__ - Added valid article 3 for UnitedHealth Group
+2025-01-16 21:48:01 - INFO - __main__ - Found total of 3 valid articles for UNH
+2025-01-16 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:48:03 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-16 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-16 21:48:05 - INFO - __main__ - Bottom performer analysis complete
+2025-01-16 21:48:05 - INFO - __main__ - Saving results to JSON...
+2025-01-16 21:48:06 - INFO - __main__ - Analysis complete and saved to market_analysis.json

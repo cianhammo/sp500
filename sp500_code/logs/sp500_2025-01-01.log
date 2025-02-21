@@ -1,0 +1,77 @@
+2025-01-01 21:47:54 - INFO - __main__ - Starting SP500 analysis script
+2025-01-01 21:47:54 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-01 21:47:54 - INFO - __main__ - Found last two trading days: [datetime.datetime(2024, 12, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2024, 12, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-01-01 21:47:54 - INFO - __main__ - Runtime timezone: UTC
+2025-01-01 21:47:54 - INFO - __main__ - Original start: 2024-12-30 16:00:00-05:00 (America/New_York)
+2025-01-01 21:47:54 - INFO - __main__ - Original end: 2024-12-31 16:00:00-05:00 (America/New_York)
+2025-01-01 21:47:54 - INFO - __main__ - UTC start: 2024-12-30 05:00:00+00:00
+2025-01-01 21:47:54 - INFO - __main__ - UTC end: 2025-01-01 05:00:00+00:00
+2025-01-01 21:47:54 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-01 21:47:55 - INFO - __main__ - Received data for 503 symbols
+2025-01-01 21:47:55 - INFO - __main__ - Sample data structure for CLX:
+2025-01-01 21:47:55 - INFO - __main__ - Number of bars: 2
+2025-01-01 21:47:55 - INFO - __main__ - Bar timestamp: 2024-12-30 05:00:00+00:00 (UTC)
+2025-01-01 21:47:55 - INFO - __main__ - Bar timestamp: 2024-12-31 05:00:00+00:00 (UTC)
+2025-01-01 21:47:55 - INFO - __main__ - CLX timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2025-01-01 21:47:55 - INFO - __main__ - CME timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2025-01-01 21:47:55 - INFO - __main__ - NUE timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2025-01-01 21:47:55 - INFO - __main__ - LMT timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2025-01-01 21:47:55 - INFO - __main__ - CRL timestamps - Today: 2024-12-31 05:00:00+00:00, Yesterday: 2024-12-30 05:00:00+00:00
+2025-01-01 21:47:56 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-01 21:47:56 - INFO - __main__ - Data issues encountered: 0
+2025-01-01 21:47:56 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-01 21:47:56 - INFO - __main__ - Analysis for market close on December 31, 2024
+2025-01-01 21:47:56 - INFO - __main__ - Found 503 stocks with price data
+2025-01-01 21:47:56 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-01-01 21:47:58 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2025-01-01 21:48:00 - INFO - __main__ - Analyzing top performer...
+2025-01-01 21:48:00 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-01-01 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-01 21:48:01 - INFO - __main__ - Searching for articles about MRNA
+2025-01-01 21:48:01 - INFO - __main__ - Searching for news about MRNA (5.51% change)
+2025-01-01 21:48:01 - INFO - __main__ - Found 5 search results for MRNA
+2025-01-01 21:48:01 - INFO - __main__ - Found 5 new URLs to try for MRNA
+2025-01-01 21:48:01 - INFO - __main__ - Fetching content from: https://stockinvest.us/stock/MRNA
+2025-01-01 21:48:01 - INFO - __main__ - Successfully extracted article content (4649 chars)
+2025-01-01 21:48:01 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/gaza-population-down-by-6-since-start-of-war--palestinian-statistics-bureau-3793394
+2025-01-01 21:48:02 - INFO - __main__ - Successfully extracted article content (1963 chars)
+2025-01-01 21:48:02 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/6-social-security-changes-take-effect-today
+2025-01-01 21:48:03 - INFO - __main__ - Successfully extracted article content (8826 chars)
+2025-01-01 21:48:03 - INFO - __main__ - Fetching content from: https://www.financecharts.com/stocks/NVDA/news
+2025-01-01 21:48:03 - WARNING - __main__ - Article content too short (41 chars)
+2025-01-01 21:48:03 - INFO - __main__ - Fetching content from: https://www.investing.com/news/insider-trading-news/netapp-president-cesar-cernuda-sells-253-million-in-stock-93CH-3793015
+2025-01-01 21:48:04 - INFO - __main__ - Successfully extracted article content (1871 chars)
+2025-01-01 21:48:04 - INFO - __main__ - Added valid article 1 for MRNA
+2025-01-01 21:48:04 - INFO - __main__ - Added valid article 2 for MRNA
+2025-01-01 21:48:04 - INFO - __main__ - Added valid article 3 for MRNA
+2025-01-01 21:48:04 - INFO - __main__ - Found total of 3 valid articles for MRNA
+2025-01-01 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-01 21:48:07 - INFO - __main__ - Successfully analyzed using news articles and market context
+2025-01-01 21:48:07 - INFO - __main__ - Top performer analysis complete
+2025-01-01 21:48:07 - INFO - __main__ - Analyzing bottom performer...
+2025-01-01 21:48:07 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2025-01-01 21:48:07 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-01 21:48:07 - INFO - __main__ - Searching for articles about TSLA
+2025-01-01 21:48:07 - INFO - __main__ - Searching for news about TSLA (-3.27% change)
+2025-01-01 21:48:08 - INFO - __main__ - Found 5 search results for TSLA
+2025-01-01 21:48:08 - INFO - __main__ - Found 5 new URLs to try for TSLA
+2025-01-01 21:48:08 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/3-stocks-estimated-trading-15-040648088.html
+2025-01-01 21:48:08 - INFO - __main__ - Successfully extracted article content (4889 chars)
+2025-01-01 21:48:08 - INFO - __main__ - Fetching content from: https://newsfilter.io/
+2025-01-01 21:48:08 - INFO - readability.readability - ruthless removal did not work. 
+2025-01-01 21:48:09 - WARNING - __main__ - Article content too short (0 chars)
+2025-01-01 21:48:09 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/much-bigger-microstrategys-bitcoin-stash-100000290.html
+2025-01-01 21:48:09 - INFO - __main__ - Successfully extracted article content (4541 chars)
+2025-01-01 21:48:09 - INFO - __main__ - Fetching content from: https://money.usnews.com/investing/articles/most-valuable-tech-companies-in-the-world
+2025-01-01 21:48:10 - INFO - __main__ - Successfully extracted article content (8439 chars)
+2025-01-01 21:48:10 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/TSLA-Q/pressreleases/30259163/history-says-the-nasdaq-will-soar-in-2025-my-top-10-artificial-intelligence-ai-growth-stocks-to-buy-before-it-does/
+2025-01-01 21:48:12 - INFO - __main__ - Successfully extracted article content (12345 chars)
+2025-01-01 21:48:12 - INFO - __main__ - Added valid article 1 for TSLA
+2025-01-01 21:48:12 - INFO - __main__ - Added valid article 2 for TSLA
+2025-01-01 21:48:12 - INFO - __main__ - Added valid article 3 for TSLA
+2025-01-01 21:48:12 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2025-01-01 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-01 21:48:15 - INFO - __main__ - Successfully analyzed using news articles and market context
+2025-01-01 21:48:15 - INFO - __main__ - Bottom performer analysis complete
+2025-01-01 21:48:15 - INFO - __main__ - Saving results to JSON...
+2025-01-01 21:48:15 - INFO - __main__ - Analysis complete and saved to market_analysis.json

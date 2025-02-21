@@ -1,0 +1,89 @@
+2025-01-22 21:47:45 - INFO - __main__ - Starting SP500 analysis script
+2025-01-22 21:47:46 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-22 21:47:46 - INFO - __main__ - Current NY time: 2025-01-22 16:47:46.142600-05:00
+2025-01-22 21:47:46 - INFO - __main__ - Using trading days for comparison:
+2025-01-22 21:47:46 - INFO - __main__ - Previous day: 2025-01-21 16:00 EST
+2025-01-22 21:47:46 - INFO - __main__ - Today: 2025-01-22 16:00 EST
+2025-01-22 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-01-22 21:47:46 - INFO - __main__ - Original start: 2025-01-21 16:00:00-05:00 (America/New_York)
+2025-01-22 21:47:46 - INFO - __main__ - Original end: 2025-01-22 16:00:00-05:00 (America/New_York)
+2025-01-22 21:47:46 - INFO - __main__ - UTC start: 2025-01-21 05:00:00+00:00
+2025-01-22 21:47:46 - INFO - __main__ - UTC end: 2025-01-23 05:00:00+00:00
+2025-01-22 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-22 21:47:47 - INFO - __main__ - Received data for 503 symbols
+2025-01-22 21:47:47 - INFO - __main__ - Sample data structure for UBER:
+2025-01-22 21:47:47 - INFO - __main__ - Number of bars: 2
+2025-01-22 21:47:47 - INFO - __main__ - Bar timestamp: 2025-01-21 05:00:00+00:00 (UTC)
+2025-01-22 21:47:47 - INFO - __main__ - Bar timestamp: 2025-01-22 05:00:00+00:00 (UTC)
+2025-01-22 21:47:47 - INFO - __main__ - 
+DEBUG - UBER Data:
+2025-01-22 21:47:47 - INFO - __main__ - Previous trading day (2025-01-21): Close=$67.75, Volume=1829879.0
+2025-01-22 21:47:47 - INFO - __main__ - Today (2025-01-22): Close=$67.81, Volume=1119947.0
+2025-01-22 21:47:47 - INFO - __main__ - 
+DEBUG - USB Data:
+2025-01-22 21:47:47 - INFO - __main__ - Previous trading day (2025-01-21): Close=$49.32, Volume=545008.0
+2025-01-22 21:47:47 - INFO - __main__ - Today (2025-01-22): Close=$48.63, Volume=307086.0
+2025-01-22 21:47:47 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-22 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-01-22 21:47:47 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-22 21:47:47 - INFO - __main__ - Analysis for market close on January 22, 2025
+2025-01-22 21:47:47 - INFO - __main__ - Found 503 stocks with price data
+2025-01-22 21:47:47 - INFO - __main__ - Found Wikipedia URL for NFLX: https://en.wikipedia.org/wiki/Netflix,_Inc.
+2025-01-22 21:47:50 - INFO - __main__ - Found Wikipedia URL for FSLR: https://en.wikipedia.org/wiki/First_Solar
+2025-01-22 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-01-22 21:47:52 - INFO - __main__ - Analyzing Netflix (NFLX)
+2025-01-22 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-22 21:47:52 - INFO - __main__ - Searching for articles about NFLX
+2025-01-22 21:47:52 - INFO - __main__ - Searching for news about Netflix
+2025-01-22 21:47:52 - INFO - __main__ - Found 5 search results for Netflix
+2025-01-22 21:47:52 - INFO - __main__ - Found 5 new URLs to try for Netflix
+2025-01-22 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/netflix-stock-hits-all-time-high-as-analysts-see-little-pushback-to-price-hikes-8778420
+2025-01-22 21:47:53 - INFO - __main__ - Successfully extracted article content (1935 chars)
+2025-01-22 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-nasdaq-jumps-sp-500-nears-record-as-netflix-stargate-ai-project-invigorate-tech-210416873.html
+2025-01-22 21:47:53 - INFO - __main__ - Successfully extracted article content (1987 chars)
+2025-01-22 21:47:53 - INFO - __main__ - Fetching content from: https://www.washingtonpost.com/business/2025/01/22/netflix-raising-prices-subscribers/
+2025-01-22 21:47:53 - INFO - __main__ - Successfully extracted article content (4069 chars)
+2025-01-22 21:47:53 - INFO - __main__ - Fetching content from: https://www.reviewjournal.com/entertainment/tv/netflix-celebrates-record-numbers-with-another-price-hike-3268769/
+2025-01-22 21:47:53 - INFO - __main__ - Successfully extracted article content (2028 chars)
+2025-01-22 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/netflix-analysts-see-more-upside-145338969.html?fr=sycsrp_catchall
+2025-01-22 21:47:54 - INFO - __main__ - Successfully extracted article content (10099 chars)
+2025-01-22 21:47:54 - INFO - __main__ - Added valid article 1 for Netflix
+2025-01-22 21:47:54 - INFO - __main__ - Added valid article 2 for Netflix
+2025-01-22 21:47:54 - INFO - __main__ - Added valid article 3 for Netflix
+2025-01-22 21:47:54 - INFO - __main__ - Found total of 3 valid articles for NFLX
+2025-01-22 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:47:55 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-01-22 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:47:57 - INFO - __main__ - Top performer analysis complete
+2025-01-22 21:47:57 - INFO - __main__ - Analyzing bottom performer...
+2025-01-22 21:47:57 - INFO - __main__ - Analyzing First Solar (FSLR)
+2025-01-22 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-22 21:47:58 - INFO - __main__ - Searching for articles about FSLR
+2025-01-22 21:47:58 - INFO - __main__ - Searching for news about First Solar
+2025-01-22 21:47:58 - INFO - __main__ - Found 5 search results for First Solar
+2025-01-22 21:47:58 - INFO - __main__ - Found 5 new URLs to try for First Solar
+2025-01-22 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/first-solar-fslr-most-promising-213841900.html
+2025-01-22 21:47:58 - INFO - __main__ - Successfully extracted article content (6452 chars)
+2025-01-22 21:47:58 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-walgreens-stock-plummets-as-doj-files-lawsuit-8777735
+2025-01-22 21:47:59 - INFO - __main__ - Successfully extracted article content (3949 chars)
+2025-01-22 21:47:59 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4751146-shoals-technologies-a-great-risk-reward-play-right-now
+2025-01-22 21:47:59 - INFO - readability.readability - ruthless removal did not work. 
+2025-01-22 21:47:59 - WARNING - __main__ - Article content too short (0 chars)
+2025-01-22 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/3-us-stocks-trading-estimated-100637161.html
+2025-01-22 21:47:59 - INFO - __main__ - Successfully extracted article content (4849 chars)
+2025-01-22 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/3-us-stocks-may-undervalued-140931871.html
+2025-01-22 21:48:00 - INFO - __main__ - Successfully extracted article content (4784 chars)
+2025-01-22 21:48:00 - INFO - __main__ - Added valid article 1 for First Solar
+2025-01-22 21:48:00 - INFO - __main__ - Added valid article 2 for First Solar
+2025-01-22 21:48:00 - INFO - __main__ - Added valid article 3 for First Solar
+2025-01-22 21:48:00 - INFO - __main__ - Found total of 3 valid articles for FSLR
+2025-01-22 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:48:01 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-01-22 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-22 21:48:03 - INFO - __main__ - Bottom performer analysis complete
+2025-01-22 21:48:03 - INFO - __main__ - Saving results to JSON...
+2025-01-22 21:48:04 - INFO - __main__ - Analysis complete and saved to market_analysis.json

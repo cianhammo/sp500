@@ -1,0 +1,76 @@
+2025-01-07 21:47:31 - INFO - __main__ - Starting SP500 analysis script
+2025-01-07 21:47:32 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-07 21:47:32 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 1, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 1, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-01-07 21:47:32 - INFO - __main__ - Runtime timezone: UTC
+2025-01-07 21:47:32 - INFO - __main__ - Original start: 2025-01-06 16:00:00-05:00 (America/New_York)
+2025-01-07 21:47:32 - INFO - __main__ - Original end: 2025-01-07 16:00:00-05:00 (America/New_York)
+2025-01-07 21:47:32 - INFO - __main__ - UTC start: 2025-01-06 05:00:00+00:00
+2025-01-07 21:47:32 - INFO - __main__ - UTC end: 2025-01-08 05:00:00+00:00
+2025-01-07 21:47:32 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-07 21:47:33 - INFO - __main__ - Received data for 503 symbols
+2025-01-07 21:47:33 - INFO - __main__ - Sample data structure for ALGN:
+2025-01-07 21:47:33 - INFO - __main__ - Number of bars: 2
+2025-01-07 21:47:33 - INFO - __main__ - Bar timestamp: 2025-01-06 05:00:00+00:00 (UTC)
+2025-01-07 21:47:33 - INFO - __main__ - Bar timestamp: 2025-01-07 05:00:00+00:00 (UTC)
+2025-01-07 21:47:33 - INFO - __main__ - ALGN timestamps - Today: 2025-01-07 05:00:00+00:00, Yesterday: 2025-01-06 05:00:00+00:00
+2025-01-07 21:47:33 - INFO - __main__ - DG timestamps - Today: 2025-01-07 05:00:00+00:00, Yesterday: 2025-01-06 05:00:00+00:00
+2025-01-07 21:47:33 - INFO - __main__ - LW timestamps - Today: 2025-01-07 05:00:00+00:00, Yesterday: 2025-01-06 05:00:00+00:00
+2025-01-07 21:47:33 - INFO - __main__ - SWKS timestamps - Today: 2025-01-07 05:00:00+00:00, Yesterday: 2025-01-06 05:00:00+00:00
+2025-01-07 21:47:33 - INFO - __main__ - K timestamps - Today: 2025-01-07 05:00:00+00:00, Yesterday: 2025-01-06 05:00:00+00:00
+2025-01-07 21:47:33 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-07 21:47:33 - INFO - __main__ - Data issues encountered: 0
+2025-01-07 21:47:33 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-07 21:47:33 - INFO - __main__ - Analysis for market close on January 07, 2025
+2025-01-07 21:47:33 - INFO - __main__ - Found 503 stocks with price data
+2025-01-07 21:47:34 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-01-07 21:47:36 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-01-07 21:47:38 - INFO - __main__ - Analyzing top performer...
+2025-01-07 21:47:38 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-01-07 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-07 21:47:38 - INFO - __main__ - Searching for articles about MRNA
+2025-01-07 21:47:38 - INFO - __main__ - Searching for news about MRNA (11.67% change)
+2025-01-07 21:47:38 - INFO - __main__ - Found 5 search results for MRNA
+2025-01-07 21:47:38 - INFO - __main__ - Found 5 new URLs to try for MRNA
+2025-01-07 21:47:38 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/moderna-stock-covid-spike/
+2025-01-07 21:47:38 - INFO - __main__ - Successfully extracted article content (2441 chars)
+2025-01-07 21:47:38 - INFO - __main__ - Fetching content from: https://www.investopedia.com/moderna-stock-soars-after-first-us-bird-flu-death-8770441
+2025-01-07 21:47:39 - INFO - __main__ - Successfully extracted article content (1284 chars)
+2025-01-07 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/sectors/healthcare/
+2025-01-07 21:47:39 - INFO - __main__ - Successfully extracted article content (1305 chars)
+2025-01-07 21:47:39 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/why-alphabet-stock-gained-12-january
+2025-01-07 21:47:39 - INFO - __main__ - Successfully extracted article content (4057 chars)
+2025-01-07 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/WULF/news/
+2025-01-07 21:47:40 - WARNING - __main__ - Article content too short (94 chars)
+2025-01-07 21:47:40 - INFO - __main__ - Added valid article 1 for MRNA
+2025-01-07 21:47:40 - INFO - __main__ - Added valid article 2 for MRNA
+2025-01-07 21:47:40 - INFO - __main__ - Added valid article 3 for MRNA
+2025-01-07 21:47:40 - INFO - __main__ - Found total of 3 valid articles for MRNA
+2025-01-07 21:47:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-07 21:47:43 - INFO - __main__ - Successfully analyzed using news articles and market context
+2025-01-07 21:47:43 - INFO - __main__ - Top performer analysis complete
+2025-01-07 21:47:43 - INFO - __main__ - Analyzing bottom performer...
+2025-01-07 21:47:43 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-01-07 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-07 21:47:43 - INFO - __main__ - Searching for articles about PLTR
+2025-01-07 21:47:43 - INFO - __main__ - Searching for news about PLTR (-7.81% change)
+2025-01-07 21:47:43 - INFO - __main__ - Found 5 search results for PLTR
+2025-01-07 21:47:43 - INFO - __main__ - Found 5 new URLs to try for PLTR
+2025-01-07 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/PLUG/
+2025-01-07 21:47:44 - INFO - __main__ - Successfully extracted article content (1615 chars)
+2025-01-07 21:47:44 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/news/palantir-stock-dips-cathie-woods-145420917.html
+2025-01-07 21:47:45 - INFO - __main__ - Successfully extracted article content (1623 chars)
+2025-01-07 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/MARA/
+2025-01-07 21:47:45 - WARNING - __main__ - Article content too short (94 chars)
+2025-01-07 21:47:45 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/news/palantir-plunges-6-cathie-wood-181824411.html
+2025-01-07 21:47:47 - INFO - __main__ - Successfully extracted article content (1739 chars)
+2025-01-07 21:47:47 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-nasdaq-sp500-trump-tariffs-nvidia-chip-stocks/
+2025-01-07 21:47:48 - INFO - __main__ - Successfully extracted article content (11312 chars)
+2025-01-07 21:47:48 - INFO - __main__ - Added valid article 1 for PLTR
+2025-01-07 21:47:48 - INFO - __main__ - Added valid article 2 for PLTR
+2025-01-07 21:47:48 - INFO - __main__ - Added valid article 3 for PLTR
+2025-01-07 21:47:48 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-01-07 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-07 21:47:51 - INFO - __main__ - Successfully analyzed using news articles and market context
+2025-01-07 21:47:51 - INFO - __main__ - Bottom performer analysis complete
+2025-01-07 21:47:51 - INFO - __main__ - Saving results to JSON...
+2025-01-07 21:47:51 - INFO - __main__ - Analysis complete and saved to market_analysis.json

@@ -1,0 +1,68 @@
+2025-02-18 22:05:10 - INFO - __main__ - Starting SP500 analysis script
+2025-02-18 22:05:10 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-18 22:05:10 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 2, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 2, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-02-18 22:05:10 - INFO - __main__ - Runtime timezone: UTC
+2025-02-18 22:05:10 - INFO - __main__ - Original start: 2025-02-14 16:00:00-05:00 (America/New_York)
+2025-02-18 22:05:10 - INFO - __main__ - Original end: 2025-02-18 16:00:00-05:00 (America/New_York)
+2025-02-18 22:05:10 - INFO - __main__ - UTC start: 2025-02-14 05:00:00+00:00
+2025-02-18 22:05:10 - INFO - __main__ - UTC end: 2025-02-19 05:00:00+00:00
+2025-02-18 22:05:10 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-18 22:05:11 - INFO - __main__ - Received data for 503 symbols
+2025-02-18 22:05:11 - INFO - __main__ - Sample data structure for LULU:
+2025-02-18 22:05:11 - INFO - __main__ - Number of bars: 2
+2025-02-18 22:05:11 - INFO - __main__ - Bar timestamp: 2025-02-14 05:00:00+00:00 (UTC)
+2025-02-18 22:05:11 - INFO - __main__ - Bar timestamp: 2025-02-18 05:00:00+00:00 (UTC)
+2025-02-18 22:05:11 - INFO - __main__ - LULU timestamps - Today: 2025-02-18 05:00:00+00:00, Yesterday: 2025-02-14 05:00:00+00:00
+2025-02-18 22:05:11 - INFO - __main__ - STZ timestamps - Today: 2025-02-18 05:00:00+00:00, Yesterday: 2025-02-14 05:00:00+00:00
+2025-02-18 22:05:11 - INFO - __main__ - WM timestamps - Today: 2025-02-18 05:00:00+00:00, Yesterday: 2025-02-14 05:00:00+00:00
+2025-02-18 22:05:11 - INFO - __main__ - BR timestamps - Today: 2025-02-18 05:00:00+00:00, Yesterday: 2025-02-14 05:00:00+00:00
+2025-02-18 22:05:11 - INFO - __main__ - HRL timestamps - Today: 2025-02-18 05:00:00+00:00, Yesterday: 2025-02-14 05:00:00+00:00
+2025-02-18 22:05:11 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-18 22:05:11 - INFO - __main__ - Data issues encountered: 0
+2025-02-18 22:05:11 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-18 22:05:11 - INFO - __main__ - Analysis for market close on February 18, 2025
+2025-02-18 22:05:11 - INFO - __main__ - Found 503 stocks with price data
+2025-02-18 22:05:12 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-02-18 22:05:14 - INFO - __main__ - Found Wikipedia URL for MDT: https://en.wikipedia.org/wiki/Medtronic
+2025-02-18 22:05:16 - INFO - __main__ - Analyzing top performer...
+2025-02-18 22:05:16 - INFO - __main__ - Analyzing Intel (INTC)
+2025-02-18 22:05:16 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-18 22:05:17 - INFO - __main__ - Searching for articles about INTC
+2025-02-18 22:05:17 - INFO - __main__ - Searching for news about Intel
+2025-02-18 22:05:18 - INFO - __main__ - Found 6 recent search results for Intel
+2025-02-18 22:05:18 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-02-18 22:05:18 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-stock-posts-biggest-five-day-gain-in-history-amid-report-of-potential-break-up-211825553.html
+2025-02-18 22:05:19 - INFO - __main__ - Successfully extracted article content (2819 chars)
+2025-02-18 22:05:19 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/02/18/intel-shares-pop-10percent-on-report-of-broadcom-and-taiwan-semi-deals.html
+2025-02-18 22:05:19 - INFO - readability.readability - ruthless removal did not work. 
+2025-02-18 22:05:19 - INFO - __main__ - Successfully extracted article content (846 chars)
+2025-02-18 22:05:19 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intel-stock-price-tsmc-broadcom-353ca9d9
+2025-02-18 22:05:20 - WARNING - __main__ - Article content too short (43 chars)
+2025-02-18 22:05:20 - INFO - __main__ - Found total of 2 valid articles for INTC
+2025-02-18 22:05:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:22 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-02-18 22:05:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:24 - INFO - __main__ - Top performer analysis complete
+2025-02-18 22:05:24 - INFO - __main__ - Analyzing bottom performer...
+2025-02-18 22:05:24 - INFO - __main__ - Analyzing Medtronic (MDT)
+2025-02-18 22:05:24 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-18 22:05:24 - INFO - __main__ - Searching for articles about MDT
+2025-02-18 22:05:24 - INFO - __main__ - Searching for news about Medtronic
+2025-02-18 22:05:27 - INFO - __main__ - Found 6 recent search results for Medtronic
+2025-02-18 22:05:27 - INFO - __main__ - Found 6 URLs to try for MDT
+2025-02-18 22:05:27 - INFO - __main__ - Fetching content from: https://www.investopedia.com/medtronic-stock-slumps-as-sales-miss-estimates-11681346
+2025-02-18 22:05:27 - INFO - __main__ - Successfully extracted article content (1087 chars)
+2025-02-18 22:05:27 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/nike-skims-intel-deals-medtronic-161658041.html
+2025-02-18 22:05:28 - INFO - __main__ - Successfully extracted article content (732 chars)
+2025-02-18 22:05:28 - INFO - __main__ - Fetching content from: https://news.medtronic.com/2025-02-18-Medtronic-reports-third-quarter-fiscal-2025-financial-results
+2025-02-18 22:05:29 - INFO - __main__ - Successfully extracted article content (39437 chars)
+2025-02-18 22:05:29 - INFO - __main__ - Found total of 3 valid articles for MDT
+2025-02-18 22:05:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:34 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-02-18 22:05:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-18 22:05:37 - INFO - __main__ - Bottom performer analysis complete
+2025-02-18 22:05:37 - INFO - __main__ - Saving results to JSON...
+2025-02-18 22:05:41 - INFO - __main__ - Analysis complete and saved to market_analysis.json

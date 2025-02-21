@@ -1,0 +1,86 @@
+2025-01-28 21:47:54 - INFO - __main__ - Starting SP500 analysis script
+2025-01-28 21:47:54 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-01-28 21:47:54 - INFO - __main__ - Current NY time: 2025-01-28 16:47:54.213695-05:00
+2025-01-28 21:47:54 - INFO - __main__ - Using trading days for comparison:
+2025-01-28 21:47:54 - INFO - __main__ - Previous day: 2025-01-27 16:00 EST
+2025-01-28 21:47:54 - INFO - __main__ - Today: 2025-01-28 16:00 EST
+2025-01-28 21:47:54 - INFO - __main__ - Runtime timezone: UTC
+2025-01-28 21:47:54 - INFO - __main__ - Original start: 2025-01-27 16:00:00-05:00 (America/New_York)
+2025-01-28 21:47:54 - INFO - __main__ - Original end: 2025-01-28 16:00:00-05:00 (America/New_York)
+2025-01-28 21:47:54 - INFO - __main__ - UTC start: 2025-01-27 05:00:00+00:00
+2025-01-28 21:47:54 - INFO - __main__ - UTC end: 2025-01-29 05:00:00+00:00
+2025-01-28 21:47:54 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-01-28 21:47:55 - INFO - __main__ - Received data for 503 symbols
+2025-01-28 21:47:55 - INFO - __main__ - Sample data structure for DTE:
+2025-01-28 21:47:55 - INFO - __main__ - Number of bars: 2
+2025-01-28 21:47:55 - INFO - __main__ - Bar timestamp: 2025-01-27 05:00:00+00:00 (UTC)
+2025-01-28 21:47:55 - INFO - __main__ - Bar timestamp: 2025-01-28 05:00:00+00:00 (UTC)
+2025-01-28 21:47:55 - INFO - __main__ - 
+DEBUG - DTE Data:
+2025-01-28 21:47:55 - INFO - __main__ - Previous trading day (2025-01-27): Close=$121.7, Volume=84806.0
+2025-01-28 21:47:55 - INFO - __main__ - Today (2025-01-28): Close=$118.65, Volume=50659.0
+2025-01-28 21:47:55 - INFO - __main__ - 
+DEBUG - GPC Data:
+2025-01-28 21:47:55 - INFO - __main__ - Previous trading day (2025-01-27): Close=$120.16, Volume=92772.0
+2025-01-28 21:47:55 - INFO - __main__ - Today (2025-01-28): Close=$117.27, Volume=87239.0
+2025-01-28 21:47:55 - INFO - __main__ - Successfully processed 503 stocks
+2025-01-28 21:47:55 - INFO - __main__ - Data issues encountered: 0
+2025-01-28 21:47:55 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-01-28 21:47:55 - INFO - __main__ - Analysis for market close on January 28, 2025
+2025-01-28 21:47:55 - INFO - __main__ - Found 503 stocks with price data
+2025-01-28 21:47:56 - INFO - __main__ - Found Wikipedia URL for RCL: https://en.wikipedia.org/wiki/Royal_Caribbean_Group
+2025-01-28 21:47:58 - INFO - __main__ - Found Wikipedia URL for LMT: https://en.wikipedia.org/wiki/Lockheed_Martin
+2025-01-28 21:48:00 - INFO - __main__ - Analyzing top performer...
+2025-01-28 21:48:00 - INFO - __main__ - Analyzing Royal Caribbean Group (RCL)
+2025-01-28 21:48:00 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-28 21:48:01 - INFO - __main__ - Searching for articles about RCL
+2025-01-28 21:48:01 - INFO - __main__ - Searching for news about Royal Caribbean Group
+2025-01-28 21:48:01 - INFO - __main__ - Found 5 search results for Royal Caribbean Group
+2025-01-28 21:48:01 - INFO - __main__ - Found 5 new URLs to try for Royal Caribbean Group
+2025-01-28 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/royal-caribbean-stock-hits-time-160256932.html
+2025-01-28 21:48:02 - INFO - __main__ - Successfully extracted article content (1617 chars)
+2025-01-28 21:48:02 - INFO - __main__ - Fetching content from: https://www.bovnews.com/2025/01/28/whats-behind-the-royal-caribbean-rcl-surge-heres-what-we-know-so-far/
+2025-01-28 21:48:03 - INFO - __main__ - Successfully extracted article content (5146 chars)
+2025-01-28 21:48:03 - INFO - __main__ - Fetching content from: https://cruiseindustrynews.com/cruise-news/2025/01/royal-caribbean-reports-2024-q4-and-full-year-results/
+2025-01-28 21:48:03 - WARNING - __main__ - Article content too short (41 chars)
+2025-01-28 21:48:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/royal-caribbean-group-reports-2024-113000760.html
+2025-01-28 21:48:04 - INFO - __main__ - Successfully extracted article content (44960 chars)
+2025-01-28 21:48:04 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/01/28/why-royal-caribbean-stock-soared-after-huge-news/
+2025-01-28 21:48:05 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-01-28 21:48:05 - INFO - __main__ - Added valid article 1 for Royal Caribbean Group
+2025-01-28 21:48:05 - INFO - __main__ - Added valid article 2 for Royal Caribbean Group
+2025-01-28 21:48:05 - INFO - __main__ - Added valid article 3 for Royal Caribbean Group
+2025-01-28 21:48:05 - INFO - __main__ - Found total of 3 valid articles for RCL
+2025-01-28 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:07 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-28 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:10 - INFO - __main__ - Top performer analysis complete
+2025-01-28 21:48:10 - INFO - __main__ - Analyzing bottom performer...
+2025-01-28 21:48:10 - INFO - __main__ - Analyzing Lockheed Martin (LMT)
+2025-01-28 21:48:10 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-01-28 21:48:10 - INFO - __main__ - Searching for articles about LMT
+2025-01-28 21:48:10 - INFO - __main__ - Searching for news about Lockheed Martin
+2025-01-28 21:48:11 - INFO - __main__ - Found 4 search results for Lockheed Martin
+2025-01-28 21:48:11 - INFO - __main__ - Found 4 new URLs to try for Lockheed Martin
+2025-01-28 21:48:11 - INFO - __main__ - Fetching content from: https://www.kiplinger.com/investing/stocks/is-lockheed-martin-lmt-stock-still-a-buy-after-its-earnings-miss
+2025-01-28 21:48:11 - INFO - __main__ - Successfully extracted article content (2874 chars)
+2025-01-28 21:48:11 - INFO - __main__ - Fetching content from: https://www.businessinsider.com/china-new-stealth-fighter-jet-lockheed-martin-stock-2025-1
+2025-01-28 21:48:11 - INFO - __main__ - Successfully extracted article content (6805 chars)
+2025-01-28 21:48:11 - INFO - __main__ - Fetching content from: https://www.morningstar.com/news/marketwatch/2025012892/lockheed-martins-earnings-weighed-down-by-write-offs-on-classified-programs
+2025-01-28 21:48:11 - INFO - __main__ - Successfully extracted article content (3246 chars)
+2025-01-28 21:48:11 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/30645429/stocks-edge-higher-as-megacap-tech-and-software-stocks-climb/
+2025-01-28 21:48:13 - INFO - __main__ - Successfully extracted article content (7724 chars)
+2025-01-28 21:48:13 - INFO - __main__ - Added valid article 1 for Lockheed Martin
+2025-01-28 21:48:13 - INFO - __main__ - Added valid article 2 for Lockheed Martin
+2025-01-28 21:48:13 - INFO - __main__ - Added valid article 3 for Lockheed Martin
+2025-01-28 21:48:13 - INFO - __main__ - Found total of 3 valid articles for LMT
+2025-01-28 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:14 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-01-28 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-01-28 21:48:16 - INFO - __main__ - Bottom performer analysis complete
+2025-01-28 21:48:16 - INFO - __main__ - Saving results to JSON...
+2025-01-28 21:48:17 - INFO - __main__ - Analysis complete and saved to market_analysis.json

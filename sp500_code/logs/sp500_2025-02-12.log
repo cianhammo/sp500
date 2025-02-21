@@ -1,0 +1,60 @@
+2025-02-12 21:47:43 - INFO - __main__ - Starting SP500 analysis script
+2025-02-12 21:47:43 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-12 21:47:43 - INFO - __main__ - Current NY time: 2025-02-12 16:47:43.410323-05:00
+2025-02-12 21:47:44 - INFO - __main__ - Using trading days for comparison:
+2025-02-12 21:47:44 - INFO - __main__ - Previous day: 2025-02-11 16:00 EST
+2025-02-12 21:47:44 - INFO - __main__ - Today: 2025-02-12 16:00 EST
+2025-02-12 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-02-12 21:47:44 - INFO - __main__ - Original start: 2025-02-11 16:00:00-05:00 (America/New_York)
+2025-02-12 21:47:44 - INFO - __main__ - Original end: 2025-02-12 16:00:00-05:00 (America/New_York)
+2025-02-12 21:47:44 - INFO - __main__ - UTC start: 2025-02-11 05:00:00+00:00
+2025-02-12 21:47:44 - INFO - __main__ - UTC end: 2025-02-13 05:00:00+00:00
+2025-02-12 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-12 21:47:44 - INFO - __main__ - Received data for 503 symbols
+2025-02-12 21:47:44 - INFO - __main__ - Sample data structure for WY:
+2025-02-12 21:47:44 - INFO - __main__ - Number of bars: 2
+2025-02-12 21:47:44 - INFO - __main__ - Bar timestamp: 2025-02-11 05:00:00+00:00 (UTC)
+2025-02-12 21:47:44 - INFO - __main__ - Bar timestamp: 2025-02-12 05:00:00+00:00 (UTC)
+2025-02-12 21:47:44 - INFO - __main__ - 
+DEBUG - WY Data:
+2025-02-12 21:47:44 - INFO - __main__ - Previous trading day (2025-02-11): Close=$29.985, Volume=59650.0
+2025-02-12 21:47:44 - INFO - __main__ - Today (2025-02-12): Close=$29.59, Volume=85235.0
+2025-02-12 21:47:44 - INFO - __main__ - 
+DEBUG - ALGN Data:
+2025-02-12 21:47:44 - INFO - __main__ - Previous trading day (2025-02-11): Close=$210.57, Volume=32393.0
+2025-02-12 21:47:44 - INFO - __main__ - Today (2025-02-12): Close=$205.43, Volume=40365.0
+2025-02-12 21:47:45 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-12 21:47:45 - INFO - __main__ - Data issues encountered: 0
+2025-02-12 21:47:45 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-12 21:47:45 - INFO - __main__ - Analysis for market close on February 12, 2025
+2025-02-12 21:47:45 - INFO - __main__ - Found 503 stocks with price data
+2025-02-12 21:47:45 - INFO - __main__ - Found Wikipedia URL for CVS: https://en.wikipedia.org/wiki/CVS_Health
+2025-02-12 21:47:47 - INFO - __main__ - Found Wikipedia URL for WAB: https://en.wikipedia.org/wiki/Wabtec
+2025-02-12 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-02-12 21:47:49 - INFO - __main__ - Analyzing CVS Health (CVS)
+2025-02-12 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-12 21:47:50 - INFO - __main__ - Searching for articles about CVS
+2025-02-12 21:47:50 - INFO - __main__ - Searching for news about CVS Health
+2025-02-12 21:47:50 - WARNING - __main__ - No valid response from Bing News for CVS Health
+2025-02-12 21:47:50 - WARNING - __main__ - No new URLs found for CVS Health
+2025-02-12 21:47:50 - INFO - __main__ - Searching for news about CVS
+2025-02-12 21:47:50 - WARNING - __main__ - No valid response from Bing News for CVS
+2025-02-12 21:47:50 - WARNING - __main__ - No new URLs found for CVS
+2025-02-12 21:47:50 - INFO - __main__ - Found total of 0 valid articles for CVS
+2025-02-12 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-12 21:47:54 - INFO - __main__ - Top performer analysis complete
+2025-02-12 21:47:54 - INFO - __main__ - Analyzing bottom performer...
+2025-02-12 21:47:54 - INFO - __main__ - Analyzing Wabtec (WAB)
+2025-02-12 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-12 21:47:54 - INFO - __main__ - Searching for articles about WAB
+2025-02-12 21:47:54 - INFO - __main__ - Searching for news about Wabtec
+2025-02-12 21:47:54 - WARNING - __main__ - No valid response from Bing News for Wabtec
+2025-02-12 21:47:54 - WARNING - __main__ - No new URLs found for Wabtec
+2025-02-12 21:47:54 - INFO - __main__ - Searching for news about WAB
+2025-02-12 21:47:54 - WARNING - __main__ - No valid response from Bing News for WAB
+2025-02-12 21:47:54 - WARNING - __main__ - No new URLs found for WAB
+2025-02-12 21:47:54 - INFO - __main__ - Found total of 0 valid articles for WAB
+2025-02-12 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-12 21:47:57 - INFO - __main__ - Bottom performer analysis complete
+2025-02-12 21:47:57 - INFO - __main__ - Saving results to JSON...
+2025-02-12 21:47:57 - INFO - __main__ - Analysis complete and saved to market_analysis.json

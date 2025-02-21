@@ -1,0 +1,91 @@
+2025-02-04 21:47:34 - INFO - __main__ - Starting SP500 analysis script
+2025-02-04 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-04 21:47:35 - INFO - __main__ - Current NY time: 2025-02-04 16:47:35.322654-05:00
+2025-02-04 21:47:35 - INFO - __main__ - Using trading days for comparison:
+2025-02-04 21:47:35 - INFO - __main__ - Previous day: 2025-02-03 16:00 EST
+2025-02-04 21:47:35 - INFO - __main__ - Today: 2025-02-04 16:00 EST
+2025-02-04 21:47:35 - INFO - __main__ - Runtime timezone: UTC
+2025-02-04 21:47:35 - INFO - __main__ - Original start: 2025-02-03 16:00:00-05:00 (America/New_York)
+2025-02-04 21:47:35 - INFO - __main__ - Original end: 2025-02-04 16:00:00-05:00 (America/New_York)
+2025-02-04 21:47:35 - INFO - __main__ - UTC start: 2025-02-03 05:00:00+00:00
+2025-02-04 21:47:35 - INFO - __main__ - UTC end: 2025-02-05 05:00:00+00:00
+2025-02-04 21:47:35 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-04 21:47:36 - INFO - __main__ - Received data for 503 symbols
+2025-02-04 21:47:36 - INFO - __main__ - Sample data structure for HOLX:
+2025-02-04 21:47:36 - INFO - __main__ - Number of bars: 2
+2025-02-04 21:47:36 - INFO - __main__ - Bar timestamp: 2025-02-03 05:00:00+00:00 (UTC)
+2025-02-04 21:47:36 - INFO - __main__ - Bar timestamp: 2025-02-04 05:00:00+00:00 (UTC)
+2025-02-04 21:47:36 - INFO - __main__ - 
+DEBUG - HOLX Data:
+2025-02-04 21:47:36 - INFO - __main__ - Previous trading day (2025-02-03): Close=$71.72, Volume=65394.0
+2025-02-04 21:47:36 - INFO - __main__ - Today (2025-02-04): Close=$71.61, Volume=64840.0
+2025-02-04 21:47:36 - INFO - __main__ - 
+DEBUG - UHS Data:
+2025-02-04 21:47:36 - INFO - __main__ - Previous trading day (2025-02-03): Close=$190.69, Volume=37141.0
+2025-02-04 21:47:36 - INFO - __main__ - Today (2025-02-04): Close=$192.61, Volume=22345.0
+2025-02-04 21:47:36 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-04 21:47:36 - INFO - __main__ - Data issues encountered: 0
+2025-02-04 21:47:36 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-04 21:47:36 - INFO - __main__ - Analysis for market close on February 04, 2025
+2025-02-04 21:47:36 - INFO - __main__ - Found 503 stocks with price data
+2025-02-04 21:47:36 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-02-04 21:47:39 - INFO - __main__ - Found Wikipedia URL for EL: https://en.wikipedia.org/wiki/The_Est%C3%A9e_Lauder_Companies
+2025-02-04 21:47:41 - INFO - __main__ - Analyzing top performer...
+2025-02-04 21:47:41 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-02-04 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-04 21:47:41 - INFO - __main__ - Searching for articles about PLTR
+2025-02-04 21:47:41 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-02-04 21:47:41 - INFO - __main__ - Found 5 search results for Palantir Technologies
+2025-02-04 21:47:41 - INFO - __main__ - Found 5 new URLs to try for Palantir Technologies
+2025-02-04 21:47:41 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/analysts-race-overhaul-palantir-stock-122131560.html
+2025-02-04 21:47:42 - INFO - __main__ - Successfully extracted article content (6073 chars)
+2025-02-04 21:47:42 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-palantir-stock-soared-time-194910012.html
+2025-02-04 21:47:43 - INFO - __main__ - Successfully extracted article content (2146 chars)
+2025-02-04 21:47:43 - INFO - __main__ - Fetching content from: https://www.investing.com/analysis/is-palantir-proving-to-be-the-dark-horse-ai-stock-200656969
+2025-02-04 21:47:43 - INFO - __main__ - Successfully extracted article content (3622 chars)
+2025-02-04 21:47:43 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4754681-rule-of-81-and-then-the-world-maintaining-palantir-with-a-buy
+2025-02-04 21:47:44 - INFO - __main__ - Successfully extracted article content (1353 chars)
+2025-02-04 21:47:44 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4754670-palantir-q4-unprecedented-demand-for-aip-but-stock-overvalued-downgrade-to-sell
+2025-02-04 21:47:44 - INFO - __main__ - Successfully extracted article content (1276 chars)
+2025-02-04 21:47:44 - INFO - __main__ - Added valid article 1 for Palantir Technologies
+2025-02-04 21:47:44 - INFO - __main__ - Added valid article 2 for Palantir Technologies
+2025-02-04 21:47:44 - INFO - __main__ - Added valid article 3 for Palantir Technologies
+2025-02-04 21:47:44 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-02-04 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:46 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-02-04 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:48 - INFO - __main__ - Top performer analysis complete
+2025-02-04 21:47:48 - INFO - __main__ - Analyzing bottom performer...
+2025-02-04 21:47:48 - INFO - __main__ - Analyzing Estée Lauder Companies (The) (EL)
+2025-02-04 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-04 21:47:48 - INFO - __main__ - Searching for articles about EL
+2025-02-04 21:47:48 - INFO - __main__ - Searching for news about Estée Lauder Companies (The)
+2025-02-04 21:47:49 - INFO - __main__ - Found 0 search results for Estée Lauder Companies (The)
+2025-02-04 21:47:49 - WARNING - __main__ - No new URLs found for Estée Lauder Companies (The)
+2025-02-04 21:47:49 - INFO - __main__ - Searching for news about EL
+2025-02-04 21:47:49 - INFO - __main__ - Found 5 search results for EL
+2025-02-04 21:47:49 - INFO - __main__ - Found 5 new URLs to try for EL
+2025-02-04 21:47:49 - INFO - __main__ - Fetching content from: https://www.morningstar.com/news/dow-jones/202502043632/north-american-morning-briefing-trump-tariffs-china-hits-back-with-us-penalties
+2025-02-04 21:47:49 - INFO - __main__ - Successfully extracted article content (9934 chars)
+2025-02-04 21:47:49 - INFO - __main__ - Fetching content from: https://www.morningstar.com/news/dow-jones/202502042928/european-midday-briefing-stocks-drop-as-china-retaliates-against-trump-tariffs
+2025-02-04 21:47:50 - INFO - __main__ - Successfully extracted article content (9986 chars)
+2025-02-04 21:47:50 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/02/04/why-estee-lauder-stock-crashed-on-tuesday/
+2025-02-04 21:47:51 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-02-04 21:47:51 - INFO - __main__ - Fetching content from: https://www.independent.co.uk/news/world/americas/us-politics/trump-tariffs-live-china-mexico-canada-uk-b2691711.html
+2025-02-04 21:47:51 - INFO - __main__ - Successfully extracted article content (7184 chars)
+2025-02-04 21:47:51 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/semler-scientific-stock-rises-after-new-bitcoin-buy-93CH-3848607
+2025-02-04 21:47:51 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-04 21:47:51 - INFO - __main__ - Added valid article 1 for EL
+2025-02-04 21:47:51 - INFO - __main__ - Added valid article 2 for EL
+2025-02-04 21:47:51 - INFO - __main__ - Added valid article 3 for EL
+2025-02-04 21:47:51 - INFO - __main__ - Found total of 3 valid articles for EL
+2025-02-04 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:52 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-02-04 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-04 21:47:55 - INFO - __main__ - Bottom performer analysis complete
+2025-02-04 21:47:55 - INFO - __main__ - Saving results to JSON...
+2025-02-04 21:47:55 - INFO - __main__ - Analysis complete and saved to market_analysis.json
