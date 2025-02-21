@@ -1,0 +1,85 @@
+2025-02-21 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-02-21 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-21 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 2, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 2, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-02-21 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-02-21 21:47:44 - INFO - __main__ - Original start: 2025-02-20 16:00:00-05:00 (America/New_York)
+2025-02-21 21:47:44 - INFO - __main__ - Original end: 2025-02-21 16:00:00-05:00 (America/New_York)
+2025-02-21 21:47:44 - INFO - __main__ - UTC start: 2025-02-20 05:00:00+00:00
+2025-02-21 21:47:44 - INFO - __main__ - UTC end: 2025-02-22 05:00:00+00:00
+2025-02-21 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-21 21:47:45 - INFO - __main__ - Received data for 503 symbols
+2025-02-21 21:47:45 - INFO - __main__ - Sample data structure for BIIB:
+2025-02-21 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-02-21 21:47:45 - INFO - __main__ - Bar timestamp: 2025-02-20 05:00:00+00:00 (UTC)
+2025-02-21 21:47:45 - INFO - __main__ - Bar timestamp: 2025-02-21 05:00:00+00:00 (UTC)
+2025-02-21 21:47:45 - INFO - __main__ - BIIB timestamps - Today: 2025-02-21 05:00:00+00:00, Yesterday: 2025-02-20 05:00:00+00:00
+2025-02-21 21:47:45 - INFO - __main__ - CPB timestamps - Today: 2025-02-21 05:00:00+00:00, Yesterday: 2025-02-20 05:00:00+00:00
+2025-02-21 21:47:45 - INFO - __main__ - DAL timestamps - Today: 2025-02-21 05:00:00+00:00, Yesterday: 2025-02-20 05:00:00+00:00
+2025-02-21 21:47:45 - INFO - __main__ - DXCM timestamps - Today: 2025-02-21 05:00:00+00:00, Yesterday: 2025-02-20 05:00:00+00:00
+2025-02-21 21:47:45 - INFO - __main__ - GPC timestamps - Today: 2025-02-21 05:00:00+00:00, Yesterday: 2025-02-20 05:00:00+00:00
+2025-02-21 21:47:45 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-21 21:47:45 - INFO - __main__ - Data issues encountered: 0
+2025-02-21 21:47:45 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-21 21:47:45 - INFO - __main__ - Analysis for market close on February 21, 2025
+2025-02-21 21:47:45 - INFO - __main__ - Found 503 stocks with price data
+2025-02-21 21:47:45 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-02-21 21:47:48 - INFO - __main__ - Found Wikipedia URL for AKAM: https://en.wikipedia.org/wiki/Akamai_Technologies
+2025-02-21 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-02-21 21:47:50 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-02-21 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-21 21:47:50 - INFO - __main__ - Searching for articles about MRNA
+2025-02-21 21:47:50 - INFO - __main__ - Searching for news about Moderna
+2025-02-21 21:47:51 - INFO - __main__ - Found 6 recent search results for Moderna
+2025-02-21 21:47:51 - INFO - __main__ - Found 6 URLs to try for MRNA
+2025-02-21 21:47:51 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/moderna-stock-rises-amid-new-virus-concerns-93CH-3884337
+2025-02-21 21:47:51 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-21 21:47:51 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/the-fly/new-coronavirus-with-pandemic-potential-found-in-china-daily-mail-says
+2025-02-21 21:47:52 - INFO - __main__ - Successfully extracted article content (437 chars)
+2025-02-21 21:47:52 - INFO - __main__ - Fetching content from: https://www.seattletimes.com/seattle-news/health/franklin-county-wants-health-district-to-stop-offering-covid-vaccines/
+2025-02-21 21:47:52 - ERROR - readability.readability - error getting summary: 
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/readability/readability.py", line 213, in summary
+    self._html(True)
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/readability/readability.py", line 148, in _html
+    self.html = self._parse(self.input)
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/readability/readability.py", line 157, in _parse
+    doc, self.encoding = build_doc(input)
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/readability/htmls.py", line 21, in build_doc
+    doc = lxml.html.document_fromstring(
+  File "/opt/hostedtoolcache/Python/3.10.16/x64/lib/python3.10/site-packages/lxml/html/__init__.py", line 761, in document_fromstring
+    raise etree.ParserError(
+lxml.etree.ParserError: Document is empty
+2025-02-21 21:47:52 - ERROR - __main__ - Failed to fetch article: Document is empty
+2025-02-21 21:47:52 - INFO - __main__ - Fetching content from: https://techcrunch.com/2025/02/21/how-automotive-exec-crystal-brown-founded-circnova-an-ai-drug-discovery-biotech/
+2025-02-21 21:47:52 - INFO - __main__ - Successfully extracted article content (5221 chars)
+2025-02-21 21:47:52 - INFO - __main__ - Fetching content from: https://ca.proactiveinvestors.com/companies/news/1066722/analyst-calls-of-the-week-rivian-block-moderna-bumble-1066722.html
+2025-02-21 21:47:54 - INFO - __main__ - Successfully extracted article content (1960 chars)
+2025-02-21 21:47:54 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/the-fly/moderna-call-volume-above-normal-and-directionally-bullish-13
+2025-02-21 21:47:54 - INFO - __main__ - Successfully extracted article content (383 chars)
+2025-02-21 21:47:54 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-02-21 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-21 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-21 21:47:55 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-02-21 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-21 21:47:57 - INFO - __main__ - Top performer analysis complete
+2025-02-21 21:47:57 - INFO - __main__ - Analyzing bottom performer...
+2025-02-21 21:47:57 - INFO - __main__ - Analyzing Akamai Technologies (AKAM)
+2025-02-21 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-21 21:47:57 - INFO - __main__ - Searching for articles about AKAM
+2025-02-21 21:47:57 - INFO - __main__ - Searching for news about Akamai Technologies
+2025-02-21 21:47:59 - INFO - __main__ - Found 6 recent search results for Akamai Technologies
+2025-02-21 21:47:59 - INFO - __main__ - Found 6 URLs to try for AKAM
+2025-02-21 21:47:59 - INFO - __main__ - Fetching content from: https://www.investopedia.com/akamai-technologies-stock-leads-s-and-p-500-decliners-following-weak-outlook-11684081
+2025-02-21 21:47:59 - INFO - __main__ - Successfully extracted article content (1650 chars)
+2025-02-21 21:47:59 - INFO - __main__ - Fetching content from: https://www.benzinga.com/trading-ideas/movers/25/02/43876846/why-five9-shares-are-trading-higher-by-around-13-here-are-20-stocks-moving-premarket
+2025-02-21 21:47:59 - INFO - __main__ - Successfully extracted article content (3345 chars)
+2025-02-21 21:47:59 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-7eea3bf1
+2025-02-21 21:47:59 - WARNING - __main__ - Article content too short (43 chars)
+2025-02-21 21:47:59 - INFO - __main__ - Found total of 2 valid articles for AKAM
+2025-02-21 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-21 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-21 21:48:00 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-02-21 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-21 21:48:03 - INFO - __main__ - Bottom performer analysis complete
+2025-02-21 21:48:03 - INFO - __main__ - Saving results to JSON...
+2025-02-21 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
