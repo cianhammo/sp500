@@ -1172,7 +1172,7 @@ def save_to_json(timestamp, market_data, top_analysis, bottom_analysis, company_
         }
     }
     
-    with open('market_analysis.json', 'w') as f:
+    with open('output/market_analysis.json', 'w') as f:
         json.dump(analysis_data, f, indent=2)
         
         
