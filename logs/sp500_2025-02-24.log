@@ -1,0 +1,67 @@
+2025-02-24 21:47:34 - INFO - __main__ - Starting SP500 analysis script
+2025-02-24 21:47:34 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-24 21:47:35 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 2, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 2, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-02-24 21:47:35 - INFO - __main__ - Runtime timezone: UTC
+2025-02-24 21:47:35 - INFO - __main__ - Original start: 2025-02-21 16:00:00-05:00 (America/New_York)
+2025-02-24 21:47:35 - INFO - __main__ - Original end: 2025-02-24 16:00:00-05:00 (America/New_York)
+2025-02-24 21:47:35 - INFO - __main__ - UTC start: 2025-02-21 05:00:00+00:00
+2025-02-24 21:47:35 - INFO - __main__ - UTC end: 2025-02-25 05:00:00+00:00
+2025-02-24 21:47:35 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-24 21:47:36 - INFO - __main__ - Received data for 503 symbols
+2025-02-24 21:47:36 - INFO - __main__ - Sample data structure for ADI:
+2025-02-24 21:47:36 - INFO - __main__ - Number of bars: 2
+2025-02-24 21:47:36 - INFO - __main__ - Bar timestamp: 2025-02-21 05:00:00+00:00 (UTC)
+2025-02-24 21:47:36 - INFO - __main__ - Bar timestamp: 2025-02-24 05:00:00+00:00 (UTC)
+2025-02-24 21:47:36 - INFO - __main__ - ADI timestamps - Today: 2025-02-24 05:00:00+00:00, Yesterday: 2025-02-21 05:00:00+00:00
+2025-02-24 21:47:36 - INFO - __main__ - EMR timestamps - Today: 2025-02-24 05:00:00+00:00, Yesterday: 2025-02-21 05:00:00+00:00
+2025-02-24 21:47:36 - INFO - __main__ - UDR timestamps - Today: 2025-02-24 05:00:00+00:00, Yesterday: 2025-02-21 05:00:00+00:00
+2025-02-24 21:47:36 - INFO - __main__ - BMY timestamps - Today: 2025-02-24 05:00:00+00:00, Yesterday: 2025-02-21 05:00:00+00:00
+2025-02-24 21:47:36 - INFO - __main__ - CPRT timestamps - Today: 2025-02-24 05:00:00+00:00, Yesterday: 2025-02-21 05:00:00+00:00
+2025-02-24 21:47:36 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-24 21:47:36 - INFO - __main__ - Data issues encountered: 0
+2025-02-24 21:47:36 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-24 21:47:36 - INFO - __main__ - Analysis for market close on February 24, 2025
+2025-02-24 21:47:36 - INFO - __main__ - Found 503 stocks with price data
+2025-02-24 21:47:36 - INFO - __main__ - Found Wikipedia URL for WBA: https://en.wikipedia.org/wiki/Walgreens_Boots_Alliance
+2025-02-24 21:47:39 - INFO - __main__ - Found Wikipedia URL for WDC: https://en.wikipedia.org/wiki/Western_Digital
+2025-02-24 21:47:41 - INFO - __main__ - Analyzing top performer...
+2025-02-24 21:47:41 - INFO - __main__ - Analyzing Walgreens Boots Alliance (WBA)
+2025-02-24 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-24 21:47:41 - INFO - __main__ - Searching for articles about WBA
+2025-02-24 21:47:41 - INFO - __main__ - Searching for news about Walgreens Boots Alliance
+2025-02-24 21:47:42 - INFO - __main__ - Found 6 recent search results for Walgreens Boots Alliance
+2025-02-24 21:47:42 - INFO - __main__ - Found 6 URLs to try for WBA
+2025-02-24 21:47:42 - INFO - __main__ - Fetching content from: https://www.investopedia.com/walgreens-stock-pops-on-fresh-optimism-about-a-deal-11685528
+2025-02-24 21:47:42 - INFO - __main__ - Successfully extracted article content (1275 chars)
+2025-02-24 21:47:42 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/earnings-season-nvidia-address-deepseek-205749191.html
+2025-02-24 21:47:43 - INFO - __main__ - Successfully extracted article content (1519 chars)
+2025-02-24 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-nvidia-stock-looks-super-cheap-compared-to-other-ai-names-according-to-yahoo-finance-readers-172801714.html
+2025-02-24 21:47:43 - INFO - __main__ - Successfully extracted article content (2174 chars)
+2025-02-24 21:47:43 - INFO - __main__ - Found total of 3 valid articles for WBA
+2025-02-24 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:45 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-02-24 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:47 - INFO - __main__ - Top performer analysis complete
+2025-02-24 21:47:47 - INFO - __main__ - Analyzing bottom performer...
+2025-02-24 21:47:47 - INFO - __main__ - Analyzing Western Digital (WDC)
+2025-02-24 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-24 21:47:48 - INFO - __main__ - Searching for articles about WDC
+2025-02-24 21:47:48 - INFO - __main__ - Searching for news about Western Digital
+2025-02-24 21:47:48 - INFO - __main__ - Found 6 recent search results for Western Digital
+2025-02-24 21:47:48 - INFO - __main__ - Found 6 URLs to try for WDC
+2025-02-24 21:47:48 - INFO - __main__ - Fetching content from: https://www.businesswire.com/news/home/20250223830406/en/Western-Digital-Completes-Planned-Company-Separation
+2025-02-24 21:47:48 - INFO - __main__ - Successfully extracted article content (2667 chars)
+2025-02-24 21:47:48 - INFO - __main__ - Fetching content from: https://www.businesswire.com/news/home/20250224078777/en/Sandisk-Celebrates-Nasdaq-Listing-After-Completing-Separation-from-Western-Digital
+2025-02-24 21:47:49 - INFO - __main__ - Successfully extracted article content (3392 chars)
+2025-02-24 21:47:49 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/western-digital-completes-sandisk-spinoff-3886829
+2025-02-24 21:47:49 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-24 21:47:49 - INFO - __main__ - Found total of 2 valid articles for WDC
+2025-02-24 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:50 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-02-24 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-24 21:47:53 - INFO - __main__ - Bottom performer analysis complete
+2025-02-24 21:47:53 - INFO - __main__ - Saving results to JSON...
+2025-02-24 21:47:53 - INFO - __main__ - Analysis complete and saved to market_analysis.json
