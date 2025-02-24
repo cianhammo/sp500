@@ -53,8 +53,9 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git remote set-url origin https://${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
-        git pull --rebase origin main
         git add output/sec_filings.json
         git add sec_logs/*.log
         git add archive/*.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update SEC filings analysis and logs" && git push)
+        git commit -m "Auto update SEC filings analysis and logs" || echo "No changes to commit"
+        git pull --no-rebase origin main
+        git push origin main
