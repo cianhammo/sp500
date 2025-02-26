@@ -798,14 +798,13 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
         test_mode: Boolean for test mode
     
     Returns:
-        DataFrame with stock price data, formatted market close date string
+        Dictionary mapping tickers to price data, formatted market close date string
     """
     if not filing_tickers:
         logger.warning("No tickers provided for stock movement lookup")
-        return pd.DataFrame(columns=['Price', 'Change_Percent']), None
+        return {}, None
 
     try:
-        
         # Check if market is currently open
         clock = trading_client.get_clock()
         market_open = clock.is_open
@@ -814,6 +813,7 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
         # DEBUG
         logger.info(f"filing_tickers type: {type(filing_tickers)}")
         logger.info(f"filing_data type: {type(filing_data)}")
+        logger.info(f"Market open: {market_open}")
 
         # Create mapping of tickers to filing times
         filing_times = {
@@ -821,9 +821,10 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
             for filing in filing_data 
             if filing['ticker'] in filing_tickers
         }
+        logger.info(f"Number of filing times mapped: {len(filing_times)}")
 
-        # Initialize result DataFrame
-        df = pd.DataFrame(columns=['Price', 'Change_Percent'])
+        # Initialize result dictionary
+        stock_data = {}
 
         # Get the current/last trading day
         calendar_request = GetCalendarRequest(
@@ -832,9 +833,11 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
         )
         calendar = trading_client.get_calendar(calendar_request)
         last_trading_day = calendar[-1].date
+        logger.info(f"Last trading day: {last_trading_day}")
         
         # For each ticker, determine what price data to show
         for ticker in filing_tickers:
+            logger.info(f"Processing ticker: {ticker}")
             try:
                 filing_time = filing_times[ticker]
                 filing_date = filing_time.date()
@@ -845,16 +848,26 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
                     timeframe=TimeFrame.Day,
                     start=(filing_date - timedelta(days=5)).strftime('%Y-%m-%d'),
                     end=current_time.strftime('%Y-%m-%d'),
-                    feed='iex',
+                    feed='iex',  # Consider trying 'sip' if 'iex' fails
                     adjustment='all'
                 )
                 bars = data_client.get_stock_bars(bars_request)
+                
+                # Initialize ticker data with defaults
+                stock_data[ticker] = {
+                    'Price': 0,
+                    'Change_Percent': 0
+                }
                 
                 if not bars.data or ticker not in bars.data:
                     logger.warning(f"No price data available for {ticker}")
                     continue
                 
                 bar_data = bars.data[ticker]
+                logger.info(f"Number of bars for {ticker}: {len(bar_data)}")
+                
+                if len(bar_data) > 0:
+                    logger.info(f"Last bar close for {ticker}: {bar_data[-1].close}")
                 
                 if market_open:
                     # Market is open - show current price vs previous close
@@ -863,8 +876,9 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
                     
                     if prev_close:
                         change_pct = ((latest_price - prev_close) / prev_close) * 100
-                        df.at[ticker, 'Price'] = round(latest_price, 2)
-                        df.at[ticker, 'Change_Percent'] = round(change_pct, 2)
+                        stock_data[ticker]['Price'] = round(latest_price, 2)
+                        stock_data[ticker]['Change_Percent'] = round(change_pct, 2)
+                        logger.info(f"Market open price for {ticker}: {latest_price}, change: {change_pct}%")
                 
                 else:
                     # Market is closed - check filing time
@@ -876,14 +890,16 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
                         
                         if prev_close:
                             change_pct = ((filing_day_close - prev_close) / prev_close) * 100
-                            df.at[ticker, 'Price'] = round(filing_day_close, 2)
-                            df.at[ticker, 'Change_Percent'] = round(change_pct, 2)
+                            stock_data[ticker]['Price'] = round(filing_day_close, 2)
+                            stock_data[ticker]['Change_Percent'] = round(change_pct, 2)
+                            logger.info(f"Same-day filing price for {ticker}: {filing_day_close}, change: {change_pct}%")
                     else:
                         # Filing was outside market hours or on a different day
                         # Show last price but no change
                         latest_price = bar_data[-1].close
-                        df.at[ticker, 'Price'] = round(latest_price, 2)
-                        df.at[ticker, 'Change_Percent'] = None
+                        stock_data[ticker]['Price'] = round(latest_price, 2)
+                        stock_data[ticker]['Change_Percent'] = 0  # Use 0 instead of None for JSON compatibility
+                        logger.info(f"Outside market hours price for {ticker}: {latest_price}")
                 
             except Exception as e:
                 logger.error(f"Error processing price data for {ticker}: {str(e)}")
@@ -895,11 +911,11 @@ def get_stock_movements(trading_client, data_client, filing_tickers, filing_data
         else:
             formatted_date = last_trading_day.strftime("market close on %B %d, %Y")
         
-        return df, formatted_date
+        return stock_data, formatted_date
         
     except Exception as e:
         logger.error(f"Error fetching stock movements: {str(e)}")
-        return pd.DataFrame(columns=['Price', 'Change_Percent']), None
+        return {}, None
     
     
 
