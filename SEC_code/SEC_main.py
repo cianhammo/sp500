@@ -747,43 +747,41 @@ class SECFilingFetcher:
             self.logger.error(f"Error fetching URL: {e}")
             return None
 
-    def get_interesting_filings(self, filings_inputs: list, processed_accessions: set = None) -> list:
+    def get_interesting_filings(self, filings_inputs: list, processed_accessions: set = None, processed_urls: set = None) -> list:
         """
         Filter filings to only include interesting types and unprocessed filings.
-
+    
         Args:
             self: Instance of SECFilingFetcher
             filings_inputs (list): List of filing dictionaries
             processed_accessions (set, optional): Set of already processed accession numbers
-
+            processed_urls (set, optional): Set of already processed filing URLs [NEW PARAMETER]
+    
         Returns:
             list: Filtered list of filings
         """
         if processed_accessions is None:
             processed_accessions = set()
-
+        if processed_urls is None:  # [NEW CODE]
+            processed_urls = set()  # [NEW CODE]
+    
         filtered_filings = []
-
+    
         for filing in filings_inputs:
             # Check filing type
             filing_type = filing["filing_title"].split(" - ")[0]
             if filing_type not in self.allowed_types:
                 continue
-
-            # Skip if already processed
-            if filing['accession_number'] in processed_accessions:
+    
+            # Skip if already processed (check both accession number and URL)
+            if filing['accession_number'] in processed_accessions or filing['link'] in processed_urls:  # [MODIFIED LINE]
                 self.logger.debug(f"Skipping already processed filing: {filing['accession_number']}")
                 continue
-
+    
             filtered_filings.append(filing)
-
+    
         self.logger.info(f"Found {len(filtered_filings)} new interesting filings")
         return filtered_filings
-
-    def _filter_filing_type(self, filing_text):
-        """Check if filing type is in allowed types"""
-        filing_type = filing_text.split(" - ")[0]
-        return filing_type in self.allowed_types
 
 # %%
 def get_stock_movements(trading_client, data_client, filing_tickers, filing_data, test_mode=False):
@@ -996,6 +994,7 @@ def create_output_json(interesting_filings, summary_results, wiki_urls, stock_da
             "filing_type": filing_type,
             "filing_time": filing['filing_date'].isoformat(),
             "filing_url": filing['link'],
+            "accession_number": filing['accession_number'],
             "summary_points": summary_points
         }
         filings.append(filing_entry)
@@ -1227,31 +1226,28 @@ def is_json_from_today(json_path: Path, logger: logging.Logger) -> bool:
     
     
 def get_processed_accessions(existing_filings: dict, logger: logging.Logger) -> set:
-    """
-    Extracts set of processed accession numbers from existing filings.
-    
-    Args:
-        existing_filings (dict): Loaded JSON data
-        logger (logging.Logger): Logger instance
-        
-    Returns:
-        set: Set of accession numbers
-    """
     processed = set()
+    processed_urls = set()
     try:
         for filing in existing_filings.get('filings', []):
+            # Try to get accession number first
             accession = filing.get('accession_number')
             if accession:
                 processed.add(accession)
+            
+            # Also track filing URLs to catch duplicates
+            filing_url = filing.get('filing_url')
+            if filing_url:
+                processed_urls.add(filing_url)
         
-        logger.info(f"Found {len(processed)} previously processed filings")
-        return processed
+        logger.info(f"Found {len(processed)} previously processed accessions and {len(processed_urls)} filing URLs")
+        return processed, processed_urls
         
     except Exception as e:
-        logger.error(f"Error extracting accession numbers: {str(e)}")
-        return set()
+        logger.error(f"Error extracting processed filings: {str(e)}")
+        return set(), set()
     
-def handle_existing_json(config: Config, logger: logging.Logger) -> Tuple[set, bool]:
+def handle_existing_json(config: Config, logger: logging.Logger) -> Tuple[set, set, bool]:
     """
     Handles existing JSON file - checks if from today, archives if old.
     
@@ -1260,14 +1256,14 @@ def handle_existing_json(config: Config, logger: logging.Logger) -> Tuple[set, b
         logger (logging.Logger): Logger instance
         
     Returns:
-        Tuple[set, bool]: Set of processed accessions and whether file is from today
+        Tuple[set, set, bool]: Set of processed accessions, set of processed URLs, and whether file is from today
     """
     output_path = config.OUTPUT_DIR / "sec_filings.json"
     
     try:
         if not output_path.exists():
             logger.info("No existing JSON file found")
-            return set(), False
+            return set(), set(), False
             
         is_today = is_json_from_today(output_path, logger)
         
@@ -1275,7 +1271,8 @@ def handle_existing_json(config: Config, logger: logging.Logger) -> Tuple[set, b
             logger.info("Found JSON file from today")
             with open(output_path, 'r') as f:
                 existing_data = json.load(f)
-            return get_processed_accessions(existing_data, logger), True
+            accessions, urls = get_processed_accessions(existing_data, logger)
+            return accessions, urls, True
             
         else:
             logger.info("Found old JSON file, archiving")
@@ -1285,23 +1282,13 @@ def handle_existing_json(config: Config, logger: logging.Logger) -> Tuple[set, b
             archive_name = f"sec_filings_{datetime.now():%Y%m%d_%H%M%S}.json"
             output_path.rename(archive_dir / archive_name)
             
-            return set(), False
+            return set(), set(), False
             
     except Exception as e:
         logger.error(f"Error handling existing JSON: {str(e)}")
-        return set(), False
+        return set(), set(), False
 
 def merge_with_existing_json(new_filings: list, config: Config, logger: logging.Logger, new_input_words: int, new_output_words: int) -> None:
-    """
-    Merges new filings with existing JSON file from today.
-    
-    Args:
-        new_filings (list): List of new filing entries
-        config (Config): Application configuration
-        logger (logging.Logger): Logger instance
-        new_input_words (int): Word count from new filings' input text
-        new_output_words (int): Word count from new filings' summaries
-    """
     output_path = config.OUTPUT_DIR / "sec_filings.json"
     
     try:
@@ -1311,13 +1298,19 @@ def merge_with_existing_json(new_filings: list, config: Config, logger: logging.
         # Update timestamp
         existing_data['timestamp'] = datetime.now(pytz.timezone('US/Eastern')).strftime('%b %-d, %Y %-I:%M %p EST')
         
+        # Create sets to track existing filings to avoid duplicates
+        existing_urls = {filing['filing_url'] for filing in existing_data['filings']}
+        
+        # Only add new filings that aren't already in the existing data
+        new_unique_filings = [filing for filing in new_filings if filing['filing_url'] not in existing_urls]
+        
         # Update stats by adding new counts to existing ones
         existing_data['stats']['input_words'] += new_input_words
         existing_data['stats']['output_words'] += new_output_words
-        existing_data['stats']['filings_processed'] += len(new_filings)
+        existing_data['stats']['filings_processed'] += len(new_unique_filings)  # Only count unique filings
         
         # Add new filings
-        existing_data['filings'].extend(new_filings)
+        existing_data['filings'].extend(new_unique_filings)
         
         # Sort filings by filing time (newest first)
         existing_data['filings'].sort(key=lambda x: x['filing_time'], reverse=True)
@@ -1326,7 +1319,7 @@ def merge_with_existing_json(new_filings: list, config: Config, logger: logging.
         with open(output_path, 'w') as f:
             json.dump(existing_data, f, indent=4)
             
-        logger.info(f"Successfully merged {len(new_filings)} new filings with existing JSON")
+        logger.info(f"Successfully merged {len(new_unique_filings)} new filings with existing JSON")
         logger.info(f"Cumulative stats - Input words: {existing_data['stats']['input_words']}, " 
                    f"Output words: {existing_data['stats']['output_words']}")
         
@@ -1387,9 +1380,11 @@ def main(test_mode=False):
             
         # Stage 4: Handle existing JSON and get processed accessions
         try:
-            processed_accessions, is_today = handle_existing_json(config, logger)
-            logger.info(f"Found {len(processed_accessions)} previously processed filings today" if is_today 
-                       else "Starting new filing collection for today")
+            processed_accessions, processed_urls, is_today = handle_existing_json(config, logger)
+            if is_today:
+                logger.info(f"Found {len(processed_accessions)} accession numbers and {len(processed_urls)} URLs from previously processed filings")
+            else:
+                logger.info("Starting new filing collection for today")
         except Exception as e:
             logger.error(f"Error handling existing JSON: {str(e)}")
             raise
@@ -1398,7 +1393,7 @@ def main(test_mode=False):
         try:
             logger.info("Fetching SEC filings...")
             filings = fetcher.fetch_recent_filings()
-            interesting_filings = fetcher.get_interesting_filings(filings, processed_accessions)
+            interesting_filings = fetcher.get_interesting_filings(filings, processed_accessions, processed_urls)
             
             if test_mode and interesting_filings:
                 logger.info("Test mode: Processing only first filing")
