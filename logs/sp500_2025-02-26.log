@@ -1,0 +1,80 @@
+2025-02-26 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-02-26 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-26 21:47:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 2, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 2, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-02-26 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-02-26 21:47:38 - INFO - __main__ - Original start: 2025-02-25 16:00:00-05:00 (America/New_York)
+2025-02-26 21:47:38 - INFO - __main__ - Original end: 2025-02-26 16:00:00-05:00 (America/New_York)
+2025-02-26 21:47:38 - INFO - __main__ - UTC start: 2025-02-25 05:00:00+00:00
+2025-02-26 21:47:38 - INFO - __main__ - UTC end: 2025-02-27 05:00:00+00:00
+2025-02-26 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-26 21:47:39 - INFO - __main__ - Received data for 503 symbols
+2025-02-26 21:47:39 - INFO - __main__ - Sample data structure for FOXA:
+2025-02-26 21:47:39 - INFO - __main__ - Number of bars: 2
+2025-02-26 21:47:39 - INFO - __main__ - Bar timestamp: 2025-02-25 05:00:00+00:00 (UTC)
+2025-02-26 21:47:39 - INFO - __main__ - Bar timestamp: 2025-02-26 05:00:00+00:00 (UTC)
+2025-02-26 21:47:39 - INFO - __main__ - FOXA timestamps - Today: 2025-02-26 05:00:00+00:00, Yesterday: 2025-02-25 05:00:00+00:00
+2025-02-26 21:47:39 - INFO - __main__ - ODFL timestamps - Today: 2025-02-26 05:00:00+00:00, Yesterday: 2025-02-25 05:00:00+00:00
+2025-02-26 21:47:39 - INFO - __main__ - WEC timestamps - Today: 2025-02-26 05:00:00+00:00, Yesterday: 2025-02-25 05:00:00+00:00
+2025-02-26 21:47:39 - INFO - __main__ - CRL timestamps - Today: 2025-02-26 05:00:00+00:00, Yesterday: 2025-02-25 05:00:00+00:00
+2025-02-26 21:47:39 - INFO - __main__ - SYK timestamps - Today: 2025-02-26 05:00:00+00:00, Yesterday: 2025-02-25 05:00:00+00:00
+2025-02-26 21:47:39 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-26 21:47:39 - INFO - __main__ - Data issues encountered: 0
+2025-02-26 21:47:39 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-26 21:47:39 - INFO - __main__ - Analysis for market close on February 26, 2025
+2025-02-26 21:47:39 - INFO - __main__ - Found 503 stocks with price data
+2025-02-26 21:47:39 - INFO - __main__ - Found Wikipedia URL for AXON: https://en.wikipedia.org/wiki/Axon_Enterprise
+2025-02-26 21:47:41 - INFO - __main__ - Found Wikipedia URL for CNC: https://en.wikipedia.org/wiki/Centene_Corporation
+2025-02-26 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-02-26 21:47:43 - INFO - __main__ - Analyzing Axon Enterprise (AXON)
+2025-02-26 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-26 21:47:44 - INFO - __main__ - Searching for articles about AXON
+2025-02-26 21:47:44 - INFO - __main__ - Searching for news about Axon Enterprise
+2025-02-26 21:47:44 - INFO - __main__ - Found 6 recent search results for Axon Enterprise
+2025-02-26 21:47:44 - INFO - __main__ - Found 6 URLs to try for AXON
+2025-02-26 21:47:44 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/axon-earnings-stock-price-taser-1474d16b
+2025-02-26 21:47:44 - WARNING - __main__ - Article content too short (43 chars)
+2025-02-26 21:47:44 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-axon-stellantis-and-more-11686783
+2025-02-26 21:47:45 - INFO - __main__ - Successfully extracted article content (1839 chars)
+2025-02-26 21:47:45 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-rise-with-nvidia-earnings-due-super-micro-axon-workday-lead-growth-rebound/
+2025-02-26 21:47:45 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-02-26 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nvidia-tesla-super-micro-computer-141000488.html
+2025-02-26 21:47:46 - INFO - __main__ - Successfully extracted article content (2697 chars)
+2025-02-26 21:47:46 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-5319457b
+2025-02-26 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-02-26 21:47:46 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-super-micro-axon-soar-tesla-hims-dive/
+2025-02-26 21:47:46 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-02-26 21:47:46 - INFO - __main__ - Found total of 2 valid articles for AXON
+2025-02-26 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:47 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-02-26 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:49 - INFO - __main__ - Top performer analysis complete
+2025-02-26 21:47:49 - INFO - __main__ - Analyzing bottom performer...
+2025-02-26 21:47:49 - INFO - __main__ - Analyzing Centene Corporation (CNC)
+2025-02-26 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-26 21:47:50 - INFO - __main__ - Searching for articles about CNC
+2025-02-26 21:47:50 - INFO - __main__ - Searching for news about Centene Corporation
+2025-02-26 21:47:51 - INFO - __main__ - Found 6 recent search results for Centene Corporation
+2025-02-26 21:47:51 - INFO - __main__ - Found 6 URLs to try for CNC
+2025-02-26 21:47:51 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4414215-medicaid-focused-insurers-down-major-budget-cuts-program-seem-likely
+2025-02-26 21:47:51 - INFO - readability.readability - ruthless removal did not work. 
+2025-02-26 21:47:51 - WARNING - __main__ - Article content too short (0 chars)
+2025-02-26 21:47:51 - INFO - __main__ - Fetching content from: https://careers.intulsa.com/job/business-analyst-ii-hedis-and-quality-regulatory-reporting-21799
+2025-02-26 21:47:51 - INFO - __main__ - Successfully extracted article content (2445 chars)
+2025-02-26 21:47:51 - INFO - __main__ - Fetching content from: https://www.investing.com/news/swot-analysis/evolent-healths-swot-analysis-stock-faces-oncology-cost-headwinds-ai-potential-93CH-3893708
+2025-02-26 21:47:51 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-26 21:47:51 - INFO - __main__ - Fetching content from: https://www.linkedin.com/posts/artisstevens_bigbrothersbigsisters-bebig-mentorship-activity-7300549114776219649-_wcg
+2025-02-26 21:47:52 - INFO - __main__ - Successfully extracted article content (1130 chars)
+2025-02-26 21:47:52 - INFO - __main__ - Fetching content from: https://www.streetinsider.com/Business+Wire/Philips%2C+Amerigroup%2C+CareSource+Georgia%2C+and+Peach+State+Health+Plan+to+Address+Maternal+Health+Deserts+in+Georgia+with+Innovative+Remote+Patient+Monitoring+Technologies/24405272.html
+2025-02-26 21:47:52 - WARNING - __main__ - Article content too short (41 chars)
+2025-02-26 21:47:52 - INFO - __main__ - Fetching content from: https://www.stocktitan.net/news/PHG/philips-amerigroup-care-source-georgia-and-peach-state-health-plan-ecxjfxm4zf2x.html
+2025-02-26 21:47:53 - INFO - __main__ - Successfully extracted article content (17974 chars)
+2025-02-26 21:47:53 - INFO - __main__ - Found total of 3 valid articles for CNC
+2025-02-26 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:55 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-02-26 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-26 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-02-26 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-02-26 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
