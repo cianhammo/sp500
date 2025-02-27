@@ -453,3 +453,63 @@
 2025-02-27 13:07:08,737 - sec_monitor - INFO - Cumulative stats - Input words: 2525262, Output words: 1079
 2025-02-27 13:07:08,737 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-02-27 13:07:08,737 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1566794, 'output_words': 457, 'filings_processed': 6}
+2025-02-27 13:27:04,409 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-02-27 13:27:04,409 - sec_monitor - INFO - Loading S&P 500 data...
+2025-02-27 13:27:04,409 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-02-27 13:27:04,410 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-02-27 13:27:04,410 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-02-27 13:27:04,410 - sec_monitor - INFO - Initializing components...
+2025-02-27 13:27:04,410 - sec_monitor - INFO - Initializing components
+2025-02-27 13:27:04,410 - sec_monitor - INFO - SEC fetcher initialized
+2025-02-27 13:27:04,411 - sec_monitor - INFO - Filing analyzer initialized
+2025-02-27 13:27:04,411 - sec_monitor - INFO - Alpaca clients initialized
+2025-02-27 13:27:04,411 - sec_monitor - INFO - All components initialized successfully
+2025-02-27 13:27:04,412 - sec_monitor - INFO - Found JSON file from today
+2025-02-27 13:27:04,412 - sec_monitor - INFO - Found 16 previously processed accessions and 16 filing URLs
+2025-02-27 13:27:04,412 - sec_monitor - INFO - Found 16 accession numbers and 16 URLs from previously processed filings
+2025-02-27 13:27:04,412 - sec_monitor - INFO - Fetching SEC filings...
+2025-02-27 13:27:20,545 - sec_monitor - INFO - No more entries found
+2025-02-27 13:27:20,545 - sec_monitor - INFO - Completed fetching. Found 95 total filings
+2025-02-27 13:27:20,545 - sec_monitor - INFO - Found 3 new interesting filings
+2025-02-27 13:27:20,545 - sec_monitor - INFO - Found 3 new filings to process
+2025-02-27 13:27:20,545 - sec_monitor - INFO - Processing filing 1/3: D
+2025-02-27 13:33:06,003 - sec_monitor - ERROR - Error processing filing D: 400 Request payload size exceeds the limit: 20971520 bytes.
+2025-02-27 13:33:06,003 - sec_monitor - INFO - Processing filing 2/3: VST
+2025-02-27 13:33:37,118 - sec_monitor - INFO - ==================================================
+2025-02-27 13:33:37,118 - sec_monitor - INFO - Processing first chunk
+2025-02-27 13:33:37,118 - sec_monitor - INFO - Timestamp: 2025-02-27 13:33:37
+2025-02-27 13:33:37,263 - sec_monitor - INFO - token percentage = 6%
+2025-02-27 13:33:37,264 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-02-27 13:33:37,264 - sec_monitor - INFO - Timestamp: 2025-02-27 13:33:37
+2025-02-27 13:33:41,291 - sec_monitor - INFO - API call successful
+2025-02-27 13:33:42,292 - sec_monitor - INFO - Processing filing 3/3: VTRS
+2025-02-27 13:34:13,321 - sec_monitor - INFO - ==================================================
+2025-02-27 13:34:13,321 - sec_monitor - INFO - Processing first chunk
+2025-02-27 13:34:13,321 - sec_monitor - INFO - Timestamp: 2025-02-27 13:34:13
+2025-02-27 13:34:13,500 - sec_monitor - INFO - token percentage = 7%
+2025-02-27 13:34:13,500 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-02-27 13:34:13,500 - sec_monitor - INFO - Timestamp: 2025-02-27 13:34:13
+2025-02-27 13:34:20,490 - sec_monitor - INFO - API call successful
+2025-02-27 13:34:21,491 - sec_monitor - INFO - Fetching supplementary data...
+2025-02-27 13:34:21,790 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-02-27 13:34:21,790 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-02-27 13:34:21,790 - sec_monitor - INFO - Market open: False
+2025-02-27 13:34:21,790 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-02-27 13:34:21,812 - sec_monitor - INFO - Last trading day: 2025-02-27
+2025-02-27 13:34:21,812 - sec_monitor - INFO - Processing ticker: D
+2025-02-27 13:34:22,172 - sec_monitor - INFO - Number of bars for D: 3
+2025-02-27 13:34:22,173 - sec_monitor - INFO - Last bar close for D: 57.14
+2025-02-27 13:34:22,173 - sec_monitor - INFO - Outside market hours price for D: 57.14
+2025-02-27 13:34:22,173 - sec_monitor - INFO - Processing ticker: VST
+2025-02-27 13:34:22,198 - sec_monitor - INFO - Number of bars for VST: 3
+2025-02-27 13:34:22,198 - sec_monitor - INFO - Last bar close for VST: 148.155
+2025-02-27 13:34:22,198 - sec_monitor - INFO - Outside market hours price for VST: 148.155
+2025-02-27 13:34:22,198 - sec_monitor - INFO - Processing ticker: VTRS
+2025-02-27 13:34:22,224 - sec_monitor - INFO - Number of bars for VTRS: 3
+2025-02-27 13:34:22,224 - sec_monitor - INFO - Last bar close for VTRS: 11.225
+2025-02-27 13:34:22,224 - sec_monitor - INFO - Outside market hours price for VTRS: 11.225
+2025-02-27 13:34:23,103 - sec_monitor - INFO - Generating final output...
+2025-02-27 13:34:23,104 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-02-27 13:34:23,104 - sec_monitor - INFO - Cumulative stats - Input words: 3553445, Output words: 1267
+2025-02-27 13:34:23,104 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-02-27 13:34:23,104 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1028183, 'output_words': 188, 'filings_processed': 3}
