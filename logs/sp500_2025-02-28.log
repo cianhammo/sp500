@@ -1,0 +1,74 @@
+2025-02-28 21:47:47 - INFO - __main__ - Starting SP500 analysis script
+2025-02-28 21:47:47 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-02-28 21:47:47 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 2, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 2, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-02-28 21:47:47 - INFO - __main__ - Runtime timezone: UTC
+2025-02-28 21:47:47 - INFO - __main__ - Original start: 2025-02-27 16:00:00-05:00 (America/New_York)
+2025-02-28 21:47:47 - INFO - __main__ - Original end: 2025-02-28 16:00:00-05:00 (America/New_York)
+2025-02-28 21:47:47 - INFO - __main__ - UTC start: 2025-02-27 05:00:00+00:00
+2025-02-28 21:47:47 - INFO - __main__ - UTC end: 2025-03-01 05:00:00+00:00
+2025-02-28 21:47:47 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-02-28 21:47:48 - INFO - __main__ - Received data for 503 symbols
+2025-02-28 21:47:48 - INFO - __main__ - Sample data structure for FCX:
+2025-02-28 21:47:48 - INFO - __main__ - Number of bars: 2
+2025-02-28 21:47:48 - INFO - __main__ - Bar timestamp: 2025-02-27 05:00:00+00:00 (UTC)
+2025-02-28 21:47:48 - INFO - __main__ - Bar timestamp: 2025-02-28 05:00:00+00:00 (UTC)
+2025-02-28 21:47:48 - INFO - __main__ - FCX timestamps - Today: 2025-02-28 05:00:00+00:00, Yesterday: 2025-02-27 05:00:00+00:00
+2025-02-28 21:47:48 - INFO - __main__ - GWW timestamps - Today: 2025-02-28 05:00:00+00:00, Yesterday: 2025-02-27 05:00:00+00:00
+2025-02-28 21:47:48 - INFO - __main__ - PFG timestamps - Today: 2025-02-28 05:00:00+00:00, Yesterday: 2025-02-27 05:00:00+00:00
+2025-02-28 21:47:48 - INFO - __main__ - RMD timestamps - Today: 2025-02-28 05:00:00+00:00, Yesterday: 2025-02-27 05:00:00+00:00
+2025-02-28 21:47:48 - INFO - __main__ - GEHC timestamps - Today: 2025-02-28 05:00:00+00:00, Yesterday: 2025-02-27 05:00:00+00:00
+2025-02-28 21:47:48 - INFO - __main__ - Successfully processed 503 stocks
+2025-02-28 21:47:48 - INFO - __main__ - Data issues encountered: 0
+2025-02-28 21:47:48 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-02-28 21:47:48 - INFO - __main__ - Analysis for market close on February 28, 2025
+2025-02-28 21:47:48 - INFO - __main__ - Found 503 stocks with price data
+2025-02-28 21:47:49 - INFO - __main__ - Found Wikipedia URL for AES: https://en.wikipedia.org/wiki/AES_Corporation
+2025-02-28 21:47:51 - INFO - __main__ - Found Wikipedia URL for NTAP: https://en.wikipedia.org/wiki/NetApp
+2025-02-28 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-02-28 21:47:53 - INFO - __main__ - Analyzing AES Corporation (AES)
+2025-02-28 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-28 21:47:54 - INFO - __main__ - Searching for articles about AES
+2025-02-28 21:47:54 - INFO - __main__ - Searching for news about AES Corporation
+2025-02-28 21:47:54 - INFO - __main__ - Found 6 recent search results for AES Corporation
+2025-02-28 21:47:54 - INFO - __main__ - Found 6 URLs to try for AES
+2025-02-28 21:47:54 - INFO - __main__ - Fetching content from: https://www.prnewswire.com/news-releases/aes-achieves-2024-strategic--financial-goals-302388256.html
+2025-02-28 21:47:54 - INFO - __main__ - Successfully extracted article content (51740 chars)
+2025-02-28 21:47:54 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/company-announcements/aes-reports-strong-2024-financial-results-and-growth-outlook
+2025-02-28 21:47:55 - INFO - __main__ - Successfully extracted article content (1623 chars)
+2025-02-28 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jim-cramer-intel-corporation-intc-173301200.html
+2025-02-28 21:47:55 - INFO - __main__ - Successfully extracted article content (4406 chars)
+2025-02-28 21:47:55 - INFO - __main__ - Found total of 3 valid articles for AES
+2025-02-28 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:01 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-02-28 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:04 - INFO - __main__ - Top performer analysis complete
+2025-02-28 21:48:04 - INFO - __main__ - Analyzing bottom performer...
+2025-02-28 21:48:04 - INFO - __main__ - Analyzing NetApp (NTAP)
+2025-02-28 21:48:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-02-28 21:48:05 - INFO - __main__ - Searching for articles about NTAP
+2025-02-28 21:48:05 - INFO - __main__ - Searching for news about NetApp
+2025-02-28 21:48:05 - INFO - __main__ - Found 6 recent search results for NetApp
+2025-02-28 21:48:05 - INFO - __main__ - Found 6 URLs to try for NTAP
+2025-02-28 21:48:05 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/netapp-earnings-stock-price-82114736
+2025-02-28 21:48:05 - WARNING - __main__ - Article content too short (43 chars)
+2025-02-28 21:48:05 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/ntap-earnings-netapp-tumbles-on-execution-slip-ups
+2025-02-28 21:48:06 - INFO - __main__ - Successfully extracted article content (2781 chars)
+2025-02-28 21:48:06 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-2ecf7d1d
+2025-02-28 21:48:06 - WARNING - __main__ - Article content too short (43 chars)
+2025-02-28 21:48:06 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jim-cramer-says-rigetti-computing-153331979.html
+2025-02-28 21:48:06 - INFO - __main__ - Successfully extracted article content (4833 chars)
+2025-02-28 21:48:06 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/investors-may-be-badly-underestimating-this-long-term-tailwind-for-nvidia-151717703.html
+2025-02-28 21:48:07 - INFO - __main__ - Successfully extracted article content (2621 chars)
+2025-02-28 21:48:07 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/nasdaq-sp500-dow-jones-nvidia-stock-inflation-report/
+2025-02-28 21:48:07 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-02-28 21:48:07 - INFO - __main__ - Found total of 3 valid articles for NTAP
+2025-02-28 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:09 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-02-28 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-28 21:48:11 - INFO - __main__ - Bottom performer analysis complete
+2025-02-28 21:48:11 - INFO - __main__ - Saving results to JSON...
+2025-02-28 21:48:11 - INFO - __main__ - Analysis complete and saved to market_analysis.json
