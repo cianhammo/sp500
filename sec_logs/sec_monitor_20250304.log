@@ -179,3 +179,67 @@
 2025-03-04 13:29:39,441 - sec_monitor - INFO - Cumulative stats - Input words: 141253, Output words: 572
 2025-03-04 13:29:39,441 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-03-04 13:29:39,441 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 38323, 'output_words': 89, 'filings_processed': 1}
+2025-03-04 15:19:50,571 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-03-04 15:19:50,572 - sec_monitor - INFO - Loading S&P 500 data...
+2025-03-04 15:19:50,572 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-03-04 15:19:50,572 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-04 15:19:50,572 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-04 15:19:50,572 - sec_monitor - INFO - Initializing components...
+2025-03-04 15:19:50,572 - sec_monitor - INFO - Initializing components
+2025-03-04 15:19:50,572 - sec_monitor - INFO - SEC fetcher initialized
+2025-03-04 15:19:50,573 - sec_monitor - INFO - Filing analyzer initialized
+2025-03-04 15:19:50,573 - sec_monitor - INFO - Alpaca clients initialized
+2025-03-04 15:19:50,573 - sec_monitor - INFO - All components initialized successfully
+2025-03-04 15:19:50,574 - sec_monitor - INFO - Found JSON file from today
+2025-03-04 15:19:50,574 - sec_monitor - INFO - Found 7 previously processed accessions and 7 filing URLs
+2025-03-04 15:19:50,574 - sec_monitor - INFO - Found 7 accession numbers and 7 URLs from previously processed filings
+2025-03-04 15:19:50,574 - sec_monitor - INFO - Fetching SEC filings...
+2025-03-04 15:20:18,594 - sec_monitor - INFO - No more entries found
+2025-03-04 15:20:18,594 - sec_monitor - INFO - Completed fetching. Found 88 total filings
+2025-03-04 15:20:18,594 - sec_monitor - INFO - Found 2 new interesting filings
+2025-03-04 15:20:18,595 - sec_monitor - INFO - Found 2 new filings to process
+2025-03-04 15:20:18,595 - sec_monitor - INFO - Processing filing 1/2: HLT
+2025-03-04 15:20:49,055 - sec_monitor - INFO - ==================================================
+2025-03-04 15:20:49,055 - sec_monitor - INFO - Processing first chunk
+2025-03-04 15:20:49,055 - sec_monitor - INFO - Timestamp: 2025-03-04 15:20:49
+2025-03-04 15:20:49,129 - sec_monitor - INFO - token percentage = 3%
+2025-03-04 15:20:49,129 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-04 15:20:49,129 - sec_monitor - INFO - Timestamp: 2025-03-04 15:20:49
+2025-03-04 15:20:50,589 - sec_monitor - INFO - API call successful
+2025-03-04 15:20:51,590 - sec_monitor - INFO - Processing filing 2/2: SBUX
+2025-03-04 15:21:29,510 - sec_monitor - INFO - ==================================================
+2025-03-04 15:21:29,510 - sec_monitor - INFO - Processing first chunk
+2025-03-04 15:21:29,510 - sec_monitor - INFO - Timestamp: 2025-03-04 15:21:29
+2025-03-04 15:21:29,890 - sec_monitor - INFO - token percentage = 48%
+2025-03-04 15:21:29,890 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-04 15:21:29,891 - sec_monitor - INFO - Timestamp: 2025-03-04 15:21:29
+2025-03-04 15:21:44,516 - sec_monitor - INFO - API call successful
+2025-03-04 15:22:14,546 - sec_monitor - INFO - ==================================================
+2025-03-04 15:22:14,546 - sec_monitor - INFO - Processing last chunk
+2025-03-04 15:22:14,547 - sec_monitor - INFO - Timestamp: 2025-03-04 15:22:14
+2025-03-04 15:22:14,714 - sec_monitor - INFO - token percentage = 34%
+2025-03-04 15:22:14,714 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-04 15:22:14,714 - sec_monitor - INFO - Timestamp: 2025-03-04 15:22:14
+2025-03-04 15:22:25,000 - sec_monitor - INFO - API call successful
+2025-03-04 15:22:25,001 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-03-04 15:22:25,001 - sec_monitor - INFO - Timestamp: 2025-03-04 15:22:25
+2025-03-04 15:22:25,941 - sec_monitor - INFO - Combine API call successful
+2025-03-04 15:22:26,944 - sec_monitor - INFO - Fetching supplementary data...
+2025-03-04 15:22:27,573 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-03-04 15:22:27,573 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-03-04 15:22:27,573 - sec_monitor - INFO - Market open: True
+2025-03-04 15:22:27,573 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-03-04 15:22:27,585 - sec_monitor - INFO - Last trading day: 2025-03-04
+2025-03-04 15:22:27,585 - sec_monitor - INFO - Processing ticker: HLT
+2025-03-04 15:22:27,887 - sec_monitor - INFO - Number of bars for HLT: 3
+2025-03-04 15:22:27,887 - sec_monitor - INFO - Last bar close for HLT: 263.58
+2025-03-04 15:22:27,887 - sec_monitor - INFO - Market open price for HLT: 263.58, change: -0.5020573024801029%
+2025-03-04 15:22:27,887 - sec_monitor - INFO - Processing ticker: SBUX
+2025-03-04 15:22:27,903 - sec_monitor - INFO - Number of bars for SBUX: 3
+2025-03-04 15:22:27,903 - sec_monitor - INFO - Last bar close for SBUX: 115.43
+2025-03-04 15:22:27,904 - sec_monitor - INFO - Market open price for SBUX: 115.43, change: -0.293685756240813%
+2025-03-04 15:22:28,757 - sec_monitor - INFO - Generating final output...
+2025-03-04 15:22:28,758 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-03-04 15:22:28,758 - sec_monitor - INFO - Cumulative stats - Input words: 188664, Output words: 681
+2025-03-04 15:22:28,758 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-03-04 15:22:28,758 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 47411, 'output_words': 109, 'filings_processed': 2}
