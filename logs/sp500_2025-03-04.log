@@ -1,0 +1,68 @@
+2025-03-04 21:47:48 - INFO - __main__ - Starting SP500 analysis script
+2025-03-04 21:47:49 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-04 21:47:49 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-04 21:47:49 - INFO - __main__ - Runtime timezone: UTC
+2025-03-04 21:47:49 - INFO - __main__ - Original start: 2025-03-03 16:00:00-05:00 (America/New_York)
+2025-03-04 21:47:49 - INFO - __main__ - Original end: 2025-03-04 16:00:00-05:00 (America/New_York)
+2025-03-04 21:47:49 - INFO - __main__ - UTC start: 2025-03-03 05:00:00+00:00
+2025-03-04 21:47:49 - INFO - __main__ - UTC end: 2025-03-05 05:00:00+00:00
+2025-03-04 21:47:49 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-04 21:47:49 - INFO - __main__ - Received data for 503 symbols
+2025-03-04 21:47:49 - INFO - __main__ - Sample data structure for CMG:
+2025-03-04 21:47:49 - INFO - __main__ - Number of bars: 2
+2025-03-04 21:47:49 - INFO - __main__ - Bar timestamp: 2025-03-03 05:00:00+00:00 (UTC)
+2025-03-04 21:47:49 - INFO - __main__ - Bar timestamp: 2025-03-04 05:00:00+00:00 (UTC)
+2025-03-04 21:47:49 - INFO - __main__ - CMG timestamps - Today: 2025-03-04 05:00:00+00:00, Yesterday: 2025-03-03 05:00:00+00:00
+2025-03-04 21:47:49 - INFO - __main__ - HES timestamps - Today: 2025-03-04 05:00:00+00:00, Yesterday: 2025-03-03 05:00:00+00:00
+2025-03-04 21:47:49 - INFO - __main__ - KO timestamps - Today: 2025-03-04 05:00:00+00:00, Yesterday: 2025-03-03 05:00:00+00:00
+2025-03-04 21:47:49 - INFO - __main__ - ABNB timestamps - Today: 2025-03-04 05:00:00+00:00, Yesterday: 2025-03-03 05:00:00+00:00
+2025-03-04 21:47:49 - INFO - __main__ - DOW timestamps - Today: 2025-03-04 05:00:00+00:00, Yesterday: 2025-03-03 05:00:00+00:00
+2025-03-04 21:47:50 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-04 21:47:50 - INFO - __main__ - Data issues encountered: 0
+2025-03-04 21:47:50 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-04 21:47:50 - INFO - __main__ - Analysis for market close on March 04, 2025
+2025-03-04 21:47:50 - INFO - __main__ - Found 503 stocks with price data
+2025-03-04 21:47:50 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-03-04 21:47:52 - INFO - __main__ - Found Wikipedia URL for BBY: https://en.wikipedia.org/wiki/Best_Buy
+2025-03-04 21:47:54 - INFO - __main__ - Analyzing top performer...
+2025-03-04 21:47:54 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-03-04 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-04 21:47:55 - INFO - __main__ - Searching for articles about ENPH
+2025-03-04 21:47:55 - INFO - __main__ - Searching for news about Enphase Energy
+2025-03-04 21:47:55 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-03-04 21:47:55 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-03-04 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/trending-stock-enphase-energy-inc-140012280.html
+2025-03-04 21:47:56 - INFO - __main__ - Successfully extracted article content (5555 chars)
+2025-03-04 21:47:56 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-best-buy-walgreens-and-more-11690325
+2025-03-04 21:47:56 - INFO - __main__ - Successfully extracted article content (1881 chars)
+2025-03-04 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/ge-vernova-signs-deal-support-172030501.html
+2025-03-04 21:47:57 - INFO - __main__ - Successfully extracted article content (1275 chars)
+2025-03-04 21:47:57 - INFO - __main__ - Found total of 3 valid articles for ENPH
+2025-03-04 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:48:00 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-03-04 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-03-04 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-03-04 21:48:02 - INFO - __main__ - Analyzing Best Buy (BBY)
+2025-03-04 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-04 21:48:03 - INFO - __main__ - Searching for articles about BBY
+2025-03-04 21:48:03 - INFO - __main__ - Searching for news about Best Buy
+2025-03-04 21:48:03 - INFO - __main__ - Found 6 recent search results for Best Buy
+2025-03-04 21:48:03 - INFO - __main__ - Found 6 URLs to try for BBY
+2025-03-04 21:48:03 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/04/best-buy-bby-q4-2025-earnings.html
+2025-03-04 21:48:03 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-04 21:48:04 - INFO - __main__ - Successfully extracted article content (5757 chars)
+2025-03-04 21:48:04 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/retail-consumer/best-buy-posts-surprise-rise-quarterly-sales-2025-03-04/
+2025-03-04 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-04 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/best-buy-stock-plunges-as-the-chain-braces-for-tariff-impact-160127079.html
+2025-03-04 21:48:04 - INFO - __main__ - Successfully extracted article content (3860 chars)
+2025-03-04 21:48:04 - INFO - __main__ - Found total of 2 valid articles for BBY
+2025-03-04 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:48:06 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-04 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-04 21:48:08 - INFO - __main__ - Bottom performer analysis complete
+2025-03-04 21:48:08 - INFO - __main__ - Saving results to JSON...
+2025-03-04 21:48:09 - INFO - __main__ - Analysis complete and saved to market_analysis.json
