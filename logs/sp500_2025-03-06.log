@@ -1,0 +1,67 @@
+2025-03-06 21:47:38 - INFO - __main__ - Starting SP500 analysis script
+2025-03-06 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-06 21:47:39 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 5, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-06 21:47:39 - INFO - __main__ - Runtime timezone: UTC
+2025-03-06 21:47:39 - INFO - __main__ - Original start: 2025-03-05 16:00:00-05:00 (America/New_York)
+2025-03-06 21:47:39 - INFO - __main__ - Original end: 2025-03-06 16:00:00-05:00 (America/New_York)
+2025-03-06 21:47:39 - INFO - __main__ - UTC start: 2025-03-05 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - UTC end: 2025-03-07 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-06 21:47:39 - INFO - __main__ - Received data for 503 symbols
+2025-03-06 21:47:39 - INFO - __main__ - Sample data structure for ECL:
+2025-03-06 21:47:39 - INFO - __main__ - Number of bars: 2
+2025-03-06 21:47:39 - INFO - __main__ - Bar timestamp: 2025-03-05 05:00:00+00:00 (UTC)
+2025-03-06 21:47:39 - INFO - __main__ - Bar timestamp: 2025-03-06 05:00:00+00:00 (UTC)
+2025-03-06 21:47:39 - INFO - __main__ - ECL timestamps - Today: 2025-03-06 05:00:00+00:00, Yesterday: 2025-03-05 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - EFX timestamps - Today: 2025-03-06 05:00:00+00:00, Yesterday: 2025-03-05 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - IR timestamps - Today: 2025-03-06 05:00:00+00:00, Yesterday: 2025-03-05 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - KEYS timestamps - Today: 2025-03-06 05:00:00+00:00, Yesterday: 2025-03-05 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - MET timestamps - Today: 2025-03-06 05:00:00+00:00, Yesterday: 2025-03-05 05:00:00+00:00
+2025-03-06 21:47:39 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-06 21:47:39 - INFO - __main__ - Data issues encountered: 0
+2025-03-06 21:47:39 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-06 21:47:39 - INFO - __main__ - Analysis for market close on March 06, 2025
+2025-03-06 21:47:39 - INFO - __main__ - Found 503 stocks with price data
+2025-03-06 21:47:40 - INFO - __main__ - Found Wikipedia URL for MKTX: https://en.wikipedia.org/wiki/MarketAxess
+2025-03-06 21:47:42 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-03-06 21:47:44 - INFO - __main__ - Analyzing top performer...
+2025-03-06 21:47:44 - INFO - __main__ - Analyzing MarketAxess (MKTX)
+2025-03-06 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-06 21:47:44 - INFO - __main__ - Searching for articles about MKTX
+2025-03-06 21:47:44 - INFO - __main__ - Searching for news about MarketAxess
+2025-03-06 21:47:45 - INFO - __main__ - Found 6 recent search results for MarketAxess
+2025-03-06 21:47:45 - INFO - __main__ - Found 6 URLs to try for MKTX
+2025-03-06 21:47:45 - INFO - __main__ - Fetching content from: https://www.bridgewater.com/research-and-insights/investing-in-a-new-world-capturing-opportunity-and-weathering-uncertainty
+2025-03-06 21:47:45 - INFO - __main__ - Successfully extracted article content (15231 chars)
+2025-03-06 21:47:45 - INFO - __main__ - Fetching content from: https://www.stocktitan.net/news/MKTX/market-axess-announces-trading-volume-statistics-for-february-8bwq2pvfdspe.html
+2025-03-06 21:47:46 - INFO - __main__ - Successfully extracted article content (25513 chars)
+2025-03-06 21:47:46 - INFO - __main__ - Fetching content from: https://www.businesswire.com/news/home/20250305150497/en/MarketAxess-Announces-Trading-Volume-Statistics-for-February-2025
+2025-03-06 21:47:46 - INFO - __main__ - Successfully extracted article content (16150 chars)
+2025-03-06 21:47:46 - INFO - __main__ - Found total of 3 valid articles for MKTX
+2025-03-06 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:47:51 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-03-06 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:47:55 - INFO - __main__ - Top performer analysis complete
+2025-03-06 21:47:55 - INFO - __main__ - Analyzing bottom performer...
+2025-03-06 21:47:55 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-03-06 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-06 21:47:56 - INFO - __main__ - Searching for articles about PLTR
+2025-03-06 21:47:56 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-03-06 21:47:56 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-03-06 21:47:56 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-03-06 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/heres-the-whopping-amount-of-stock-palantir-ceo-alex-karp-has-dumped-142212250.html
+2025-03-06 21:47:56 - INFO - __main__ - Successfully extracted article content (2726 chars)
+2025-03-06 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-palantir-pltr-shares-getting-200407490.html
+2025-03-06 21:47:57 - INFO - __main__ - Successfully extracted article content (2536 chars)
+2025-03-06 21:47:57 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-tumble-ai-chip-maker-marvell-jd-palantir-trump-tariffs/
+2025-03-06 21:47:57 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-06 21:47:57 - INFO - __main__ - Found total of 2 valid articles for PLTR
+2025-03-06 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:47:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-06 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-06 21:48:01 - INFO - __main__ - Bottom performer analysis complete
+2025-03-06 21:48:01 - INFO - __main__ - Saving results to JSON...
+2025-03-06 21:48:02 - INFO - __main__ - Analysis complete and saved to market_analysis.json
