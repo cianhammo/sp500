@@ -1,0 +1,74 @@
+2025-03-07 21:47:43 - INFO - __main__ - Starting SP500 analysis script
+2025-03-07 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-07 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-07 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-03-07 21:47:44 - INFO - __main__ - Original start: 2025-03-06 16:00:00-05:00 (America/New_York)
+2025-03-07 21:47:44 - INFO - __main__ - Original end: 2025-03-07 16:00:00-05:00 (America/New_York)
+2025-03-07 21:47:44 - INFO - __main__ - UTC start: 2025-03-06 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - UTC end: 2025-03-08 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-07 21:47:44 - INFO - __main__ - Received data for 503 symbols
+2025-03-07 21:47:44 - INFO - __main__ - Sample data structure for COF:
+2025-03-07 21:47:44 - INFO - __main__ - Number of bars: 2
+2025-03-07 21:47:44 - INFO - __main__ - Bar timestamp: 2025-03-06 05:00:00+00:00 (UTC)
+2025-03-07 21:47:44 - INFO - __main__ - Bar timestamp: 2025-03-07 05:00:00+00:00 (UTC)
+2025-03-07 21:47:44 - INFO - __main__ - COF timestamps - Today: 2025-03-07 05:00:00+00:00, Yesterday: 2025-03-06 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - NKE timestamps - Today: 2025-03-07 05:00:00+00:00, Yesterday: 2025-03-06 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - STLD timestamps - Today: 2025-03-07 05:00:00+00:00, Yesterday: 2025-03-06 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - BKNG timestamps - Today: 2025-03-07 05:00:00+00:00, Yesterday: 2025-03-06 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - JNJ timestamps - Today: 2025-03-07 05:00:00+00:00, Yesterday: 2025-03-06 05:00:00+00:00
+2025-03-07 21:47:44 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-07 21:47:44 - INFO - __main__ - Data issues encountered: 0
+2025-03-07 21:47:44 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-07 21:47:44 - INFO - __main__ - Analysis for market close on March 07, 2025
+2025-03-07 21:47:44 - INFO - __main__ - Found 503 stocks with price data
+2025-03-07 21:47:45 - INFO - __main__ - Found Wikipedia URL for AVGO: https://en.wikipedia.org/wiki/Broadcom
+2025-03-07 21:47:47 - INFO - __main__ - Found Wikipedia URL for HPE: https://en.wikipedia.org/wiki/Hewlett_Packard_Enterprise
+2025-03-07 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-03-07 21:47:49 - INFO - __main__ - Analyzing Broadcom (AVGO)
+2025-03-07 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-07 21:47:49 - INFO - __main__ - Searching for articles about AVGO
+2025-03-07 21:47:49 - INFO - __main__ - Searching for news about Broadcom
+2025-03-07 21:47:50 - INFO - __main__ - Found 6 recent search results for Broadcom
+2025-03-07 21:47:50 - INFO - __main__ - Found 6 URLs to try for AVGO
+2025-03-07 21:47:50 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intel-broadcom-stock-deal-chips-2a7ec56c
+2025-03-07 21:47:50 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-07 21:47:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/broadcom-walgreens-goes-private-costco-161718487.html
+2025-03-07 21:47:50 - WARNING - __main__ - Article content too short (0 chars)
+2025-03-07 21:47:50 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/07/broadcom-shares-rise-as-ai-growth-powers-strong-guidance-.html
+2025-03-07 21:47:50 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-07 21:47:50 - INFO - __main__ - Successfully extracted article content (2669 chars)
+2025-03-07 21:47:50 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/avgo-stock-broadcom-shows-ai-chip-demand-still-healthy/
+2025-03-07 21:47:51 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-07 21:47:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/broadcom-stock-jumps-as-results-outlook-show-robust-ai-chip-demand-11692795
+2025-03-07 21:47:51 - INFO - __main__ - Successfully extracted article content (2013 chars)
+2025-03-07 21:47:51 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/broadcom-avgo-earnings-stock-price-4a06d06f
+2025-03-07 21:47:51 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-07 21:47:51 - INFO - __main__ - Found total of 2 valid articles for AVGO
+2025-03-07 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-07 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-07 21:47:52 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-07 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-07 21:47:55 - INFO - __main__ - Top performer analysis complete
+2025-03-07 21:47:55 - INFO - __main__ - Analyzing bottom performer...
+2025-03-07 21:47:55 - INFO - __main__ - Analyzing Hewlett Packard Enterprise (HPE)
+2025-03-07 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-07 21:47:55 - INFO - __main__ - Searching for articles about HPE
+2025-03-07 21:47:55 - INFO - __main__ - Searching for news about Hewlett Packard Enterprise
+2025-03-07 21:47:55 - INFO - __main__ - Found 6 recent search results for Hewlett Packard Enterprise
+2025-03-07 21:47:55 - INFO - __main__ - Found 6 URLs to try for HPE
+2025-03-07 21:47:55 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-hewlett-packard-enterprise-costco-walgreens-and-more-11692901
+2025-03-07 21:47:55 - INFO - __main__ - Successfully extracted article content (1945 chars)
+2025-03-07 21:47:55 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/07/stocks-making-the-biggest-moves-premarket-wba-avgo-gap-hpe.html
+2025-03-07 21:47:57 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-07 21:47:57 - INFO - __main__ - Successfully extracted article content (3473 chars)
+2025-03-07 21:47:57 - INFO - __main__ - Fetching content from: https://www.reuters.com/technology/hewlett-packard-enterprise-shares-tumble-after-us-tariffs-hit-forecasts-2025-03-07/
+2025-03-07 21:47:57 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-07 21:47:57 - INFO - __main__ - Found total of 2 valid articles for HPE
+2025-03-07 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-07 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-07 21:47:58 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-07 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-07 21:48:01 - INFO - __main__ - Bottom performer analysis complete
+2025-03-07 21:48:01 - INFO - __main__ - Saving results to JSON...
+2025-03-07 21:48:01 - INFO - __main__ - Analysis complete and saved to market_analysis.json
