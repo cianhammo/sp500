@@ -1,0 +1,67 @@
+2025-03-11 21:47:38 - INFO - __main__ - Starting SP500 analysis script
+2025-03-11 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-11 21:47:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-11 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-03-11 21:47:38 - INFO - __main__ - Original start: 2025-03-10 16:00:00-04:00 (America/New_York)
+2025-03-11 21:47:38 - INFO - __main__ - Original end: 2025-03-11 16:00:00-04:00 (America/New_York)
+2025-03-11 21:47:38 - INFO - __main__ - UTC start: 2025-03-10 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - UTC end: 2025-03-12 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-11 21:47:38 - INFO - __main__ - Received data for 503 symbols
+2025-03-11 21:47:38 - INFO - __main__ - Sample data structure for CB:
+2025-03-11 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-03-11 21:47:38 - INFO - __main__ - Bar timestamp: 2025-03-10 04:00:00+00:00 (UTC)
+2025-03-11 21:47:38 - INFO - __main__ - Bar timestamp: 2025-03-11 04:00:00+00:00 (UTC)
+2025-03-11 21:47:38 - INFO - __main__ - CB timestamps - Today: 2025-03-11 04:00:00+00:00, Yesterday: 2025-03-10 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - ESS timestamps - Today: 2025-03-11 04:00:00+00:00, Yesterday: 2025-03-10 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - VTR timestamps - Today: 2025-03-11 04:00:00+00:00, Yesterday: 2025-03-10 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - BALL timestamps - Today: 2025-03-11 04:00:00+00:00, Yesterday: 2025-03-10 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - ECL timestamps - Today: 2025-03-11 04:00:00+00:00, Yesterday: 2025-03-10 04:00:00+00:00
+2025-03-11 21:47:38 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-11 21:47:38 - INFO - __main__ - Data issues encountered: 0
+2025-03-11 21:47:38 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-11 21:47:38 - INFO - __main__ - Analysis for market close on March 11, 2025
+2025-03-11 21:47:38 - INFO - __main__ - Found 503 stocks with price data
+2025-03-11 21:47:38 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-03-11 21:47:41 - INFO - __main__ - Found Wikipedia URL for TER: https://en.wikipedia.org/wiki/Teradyne
+2025-03-11 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-03-11 21:47:43 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-03-11 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-11 21:47:43 - INFO - __main__ - Searching for articles about SMCI
+2025-03-11 21:47:43 - INFO - __main__ - Searching for news about Supermicro
+2025-03-11 21:47:43 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-03-11 21:47:43 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-03-11 21:47:43 - INFO - __main__ - Fetching content from: https://www.globenewswire.com/news-release/2025/03/11/3040619/0/en/Eviden-and-Supermicro-join-forces-to-enhance-enterprise-AI-capabilities.html
+2025-03-11 21:47:44 - INFO - __main__ - Successfully extracted article content (4764 chars)
+2025-03-11 21:47:44 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/company-announcements/eviden-and-supermicro-collaborate-to-boost-enterprise-ai
+2025-03-11 21:47:44 - INFO - __main__ - Successfully extracted article content (1304 chars)
+2025-03-11 21:47:44 - INFO - __main__ - Fetching content from: https://www.prnewswire.com/news-releases/supermicro-brings-superior-performance-and-efficiency-to-ai-at-the-edge-302398835.html
+2025-03-11 21:47:44 - INFO - __main__ - Successfully extracted article content (5993 chars)
+2025-03-11 21:47:44 - INFO - __main__ - Found total of 3 valid articles for SMCI
+2025-03-11 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:46 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-11 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:50 - INFO - __main__ - Top performer analysis complete
+2025-03-11 21:47:50 - INFO - __main__ - Analyzing bottom performer...
+2025-03-11 21:47:50 - INFO - __main__ - Analyzing Teradyne (TER)
+2025-03-11 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-11 21:47:50 - INFO - __main__ - Searching for articles about TER
+2025-03-11 21:47:50 - INFO - __main__ - Searching for news about Teradyne
+2025-03-11 21:47:50 - INFO - __main__ - Found 6 recent search results for Teradyne
+2025-03-11 21:47:50 - INFO - __main__ - Found 6 URLs to try for TER
+2025-03-11 21:47:50 - INFO - __main__ - Fetching content from: https://www.investopedia.com/teradyne-stock-plunges-as-firm-warns-about-tariffs-trade-restrictions-11694670
+2025-03-11 21:47:50 - INFO - __main__ - Successfully extracted article content (1589 chars)
+2025-03-11 21:47:50 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/teradyne-stock-worst-performer-s-p-500-26783f3c
+2025-03-11 21:47:50 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-11 21:47:50 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-teradyne-delta-air-lines-tesla-and-more-11694722
+2025-03-11 21:47:50 - INFO - __main__ - Successfully extracted article content (1745 chars)
+2025-03-11 21:47:50 - INFO - __main__ - Found total of 2 valid articles for TER
+2025-03-11 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:52 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-11 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-11 21:47:53 - INFO - __main__ - Bottom performer analysis complete
+2025-03-11 21:47:53 - INFO - __main__ - Saving results to JSON...
+2025-03-11 21:47:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
