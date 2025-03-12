@@ -1,0 +1,68 @@
+2025-03-12 21:47:36 - INFO - __main__ - Starting SP500 analysis script
+2025-03-12 21:47:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-12 21:47:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-12 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-03-12 21:47:36 - INFO - __main__ - Original start: 2025-03-11 16:00:00-04:00 (America/New_York)
+2025-03-12 21:47:36 - INFO - __main__ - Original end: 2025-03-12 16:00:00-04:00 (America/New_York)
+2025-03-12 21:47:36 - INFO - __main__ - UTC start: 2025-03-11 04:00:00+00:00
+2025-03-12 21:47:36 - INFO - __main__ - UTC end: 2025-03-13 04:00:00+00:00
+2025-03-12 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-12 21:47:37 - INFO - __main__ - Received data for 503 symbols
+2025-03-12 21:47:37 - INFO - __main__ - Sample data structure for HON:
+2025-03-12 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-03-12 21:47:37 - INFO - __main__ - Bar timestamp: 2025-03-11 04:00:00+00:00 (UTC)
+2025-03-12 21:47:37 - INFO - __main__ - Bar timestamp: 2025-03-12 04:00:00+00:00 (UTC)
+2025-03-12 21:47:37 - INFO - __main__ - HON timestamps - Today: 2025-03-12 04:00:00+00:00, Yesterday: 2025-03-11 04:00:00+00:00
+2025-03-12 21:47:37 - INFO - __main__ - DECK timestamps - Today: 2025-03-12 04:00:00+00:00, Yesterday: 2025-03-11 04:00:00+00:00
+2025-03-12 21:47:37 - INFO - __main__ - DGX timestamps - Today: 2025-03-12 04:00:00+00:00, Yesterday: 2025-03-11 04:00:00+00:00
+2025-03-12 21:47:37 - INFO - __main__ - EXC timestamps - Today: 2025-03-12 04:00:00+00:00, Yesterday: 2025-03-11 04:00:00+00:00
+2025-03-12 21:47:37 - INFO - __main__ - MPWR timestamps - Today: 2025-03-12 04:00:00+00:00, Yesterday: 2025-03-11 04:00:00+00:00
+2025-03-12 21:47:37 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-12 21:47:37 - INFO - __main__ - Data issues encountered: 0
+2025-03-12 21:47:37 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-12 21:47:37 - INFO - __main__ - Analysis for market close on March 12, 2025
+2025-03-12 21:47:37 - INFO - __main__ - Found 503 stocks with price data
+2025-03-12 21:47:37 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2025-03-12 21:47:40 - INFO - __main__ - Found Wikipedia URL for DLTR: https://en.wikipedia.org/wiki/Dollar_Tree
+2025-03-12 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-03-12 21:47:42 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2025-03-12 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-12 21:47:42 - INFO - __main__ - Searching for articles about TSLA
+2025-03-12 21:47:42 - INFO - __main__ - Searching for news about Tesla, Inc.
+2025-03-12 21:47:43 - INFO - __main__ - Found 6 recent search results for Tesla, Inc.
+2025-03-12 21:47:43 - INFO - __main__ - Found 6 URLs to try for TSLA
+2025-03-12 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-tesla-tsla-stock-rocketing-172255790.html
+2025-03-12 21:47:43 - INFO - __main__ - Successfully extracted article content (3007 chars)
+2025-03-12 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/td-cowen-upgrades-tesla-inc-151233703.html
+2025-03-12 21:47:44 - INFO - __main__ - Successfully extracted article content (4274 chars)
+2025-03-12 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/tesla-stock-gains-despite-worries-141250987.html
+2025-03-12 21:47:45 - INFO - __main__ - Successfully extracted article content (2906 chars)
+2025-03-12 21:47:45 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2025-03-12 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:47:51 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-03-12 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:47:54 - INFO - __main__ - Top performer analysis complete
+2025-03-12 21:47:54 - INFO - __main__ - Analyzing bottom performer...
+2025-03-12 21:47:54 - INFO - __main__ - Analyzing Dollar Tree (DLTR)
+2025-03-12 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-12 21:47:54 - INFO - __main__ - Searching for articles about DLTR
+2025-03-12 21:47:54 - INFO - __main__ - Searching for news about Dollar Tree
+2025-03-12 21:47:54 - INFO - __main__ - Found 6 recent search results for Dollar Tree
+2025-03-12 21:47:54 - INFO - __main__ - Found 6 URLs to try for DLTR
+2025-03-12 21:47:54 - INFO - __main__ - Fetching content from: https://www.simplyrecipes.com/dollar-tree-cooking-concepts-silicone-pot-lid-review-11694627
+2025-03-12 21:47:55 - INFO - __main__ - Successfully extracted article content (2684 chars)
+2025-03-12 21:47:55 - INFO - __main__ - Fetching content from: https://www.youtube.com/watch?v=p4ZYoXuoF4w
+2025-03-12 21:47:55 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-12 21:47:55 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-03-12 21:47:55 - INFO - __main__ - Fetching content from: https://www.dailymail.co.uk/yourmoney/article-14491591/Wendys-offering-FREE-Mint-Frostys-Fries-theres-catch.html
+2025-03-12 21:47:56 - INFO - __main__ - Successfully extracted article content (3109 chars)
+2025-03-12 21:47:56 - INFO - __main__ - Found total of 2 valid articles for DLTR
+2025-03-12 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:48:00 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-03-12 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-12 21:48:04 - INFO - __main__ - Bottom performer analysis complete
+2025-03-12 21:48:04 - INFO - __main__ - Saving results to JSON...
+2025-03-12 21:48:04 - INFO - __main__ - Analysis complete and saved to market_analysis.json
