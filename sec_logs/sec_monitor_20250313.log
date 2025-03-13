@@ -181,3 +181,57 @@
 2025-03-13 11:19:47,943 - sec_monitor - INFO - Generating final output...
 2025-03-13 11:19:47,943 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-03-13 11:19:47,943 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 516144, 'output_words': 866, 'filings_processed': 11}
+2025-03-13 12:38:01,185 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-03-13 12:38:01,185 - sec_monitor - INFO - Loading S&P 500 data...
+2025-03-13 12:38:01,185 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-03-13 12:38:01,185 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-13 12:38:01,185 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-13 12:38:01,185 - sec_monitor - INFO - Initializing components...
+2025-03-13 12:38:01,186 - sec_monitor - INFO - Initializing components
+2025-03-13 12:38:01,186 - sec_monitor - INFO - SEC fetcher initialized
+2025-03-13 12:38:01,186 - sec_monitor - INFO - Filing analyzer initialized
+2025-03-13 12:38:01,186 - sec_monitor - INFO - Alpaca clients initialized
+2025-03-13 12:38:01,186 - sec_monitor - INFO - All components initialized successfully
+2025-03-13 12:38:01,187 - sec_monitor - INFO - Found JSON file from today
+2025-03-13 12:38:01,187 - sec_monitor - INFO - Found 11 previously processed accessions and 11 filing URLs
+2025-03-13 12:38:01,187 - sec_monitor - INFO - Found 11 accession numbers and 11 URLs from previously processed filings
+2025-03-13 12:38:01,187 - sec_monitor - INFO - Fetching SEC filings...
+2025-03-13 12:38:27,011 - sec_monitor - INFO - No more entries found
+2025-03-13 12:38:27,011 - sec_monitor - INFO - Completed fetching. Found 107 total filings
+2025-03-13 12:38:27,011 - sec_monitor - INFO - Found 2 new interesting filings
+2025-03-13 12:38:27,012 - sec_monitor - INFO - Found 2 new filings to process
+2025-03-13 12:38:27,012 - sec_monitor - INFO - Processing filing 1/2: AON
+2025-03-13 12:38:57,744 - sec_monitor - INFO - ==================================================
+2025-03-13 12:38:57,744 - sec_monitor - INFO - Processing first chunk
+2025-03-13 12:38:57,744 - sec_monitor - INFO - Timestamp: 2025-03-13 12:38:57
+2025-03-13 12:38:57,952 - sec_monitor - INFO - token percentage = 4%
+2025-03-13 12:38:57,952 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-13 12:38:57,952 - sec_monitor - INFO - Timestamp: 2025-03-13 12:38:57
+2025-03-13 12:39:01,151 - sec_monitor - INFO - API call successful
+2025-03-13 12:39:02,153 - sec_monitor - INFO - Processing filing 2/2: CI
+2025-03-13 12:39:32,830 - sec_monitor - INFO - ==================================================
+2025-03-13 12:39:32,830 - sec_monitor - INFO - Processing first chunk
+2025-03-13 12:39:32,830 - sec_monitor - INFO - Timestamp: 2025-03-13 12:39:32
+2025-03-13 12:39:33,024 - sec_monitor - INFO - token percentage = 3%
+2025-03-13 12:39:33,024 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-13 12:39:33,024 - sec_monitor - INFO - Timestamp: 2025-03-13 12:39:33
+2025-03-13 12:39:35,486 - sec_monitor - INFO - API call successful
+2025-03-13 12:39:36,488 - sec_monitor - INFO - Fetching supplementary data...
+2025-03-13 12:39:36,743 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-03-13 12:39:36,743 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-03-13 12:39:36,743 - sec_monitor - INFO - Market open: False
+2025-03-13 12:39:36,743 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-03-13 12:39:36,815 - sec_monitor - INFO - Last trading day: 2025-03-13
+2025-03-13 12:39:36,815 - sec_monitor - INFO - Processing ticker: AON
+2025-03-13 12:39:37,508 - sec_monitor - INFO - Number of bars for AON: 3
+2025-03-13 12:39:37,508 - sec_monitor - INFO - Last bar close for AON: 398.13
+2025-03-13 12:39:37,508 - sec_monitor - INFO - Outside market hours price for AON: 398.13
+2025-03-13 12:39:37,508 - sec_monitor - INFO - Processing ticker: CI
+2025-03-13 12:39:37,584 - sec_monitor - INFO - Number of bars for CI: 3
+2025-03-13 12:39:37,584 - sec_monitor - INFO - Last bar close for CI: 311.135
+2025-03-13 12:39:37,584 - sec_monitor - INFO - Outside market hours price for CI: 311.135
+2025-03-13 12:39:38,048 - sec_monitor - INFO - Generating final output...
+2025-03-13 12:39:38,049 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-03-13 12:39:38,049 - sec_monitor - INFO - Cumulative stats - Input words: 526827, Output words: 1058
+2025-03-13 12:39:38,049 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-03-13 12:39:38,049 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 10683, 'output_words': 192, 'filings_processed': 2}
