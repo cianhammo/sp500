@@ -1,0 +1,66 @@
+2025-03-14 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-03-14 21:47:39 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-14 21:47:39 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-14 21:47:39 - INFO - __main__ - Runtime timezone: UTC
+2025-03-14 21:47:39 - INFO - __main__ - Original start: 2025-03-13 16:00:00-04:00 (America/New_York)
+2025-03-14 21:47:39 - INFO - __main__ - Original end: 2025-03-14 16:00:00-04:00 (America/New_York)
+2025-03-14 21:47:39 - INFO - __main__ - UTC start: 2025-03-13 04:00:00+00:00
+2025-03-14 21:47:39 - INFO - __main__ - UTC end: 2025-03-15 04:00:00+00:00
+2025-03-14 21:47:39 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-14 21:47:40 - INFO - __main__ - Received data for 503 symbols
+2025-03-14 21:47:40 - INFO - __main__ - Sample data structure for GWW:
+2025-03-14 21:47:40 - INFO - __main__ - Number of bars: 2
+2025-03-14 21:47:40 - INFO - __main__ - Bar timestamp: 2025-03-13 04:00:00+00:00 (UTC)
+2025-03-14 21:47:40 - INFO - __main__ - Bar timestamp: 2025-03-14 04:00:00+00:00 (UTC)
+2025-03-14 21:47:40 - INFO - __main__ - GWW timestamps - Today: 2025-03-14 04:00:00+00:00, Yesterday: 2025-03-13 04:00:00+00:00
+2025-03-14 21:47:40 - INFO - __main__ - MPC timestamps - Today: 2025-03-14 04:00:00+00:00, Yesterday: 2025-03-13 04:00:00+00:00
+2025-03-14 21:47:40 - INFO - __main__ - VST timestamps - Today: 2025-03-14 04:00:00+00:00, Yesterday: 2025-03-13 04:00:00+00:00
+2025-03-14 21:47:40 - INFO - __main__ - ABBV timestamps - Today: 2025-03-14 04:00:00+00:00, Yesterday: 2025-03-13 04:00:00+00:00
+2025-03-14 21:47:40 - INFO - __main__ - GEV timestamps - Today: 2025-03-14 04:00:00+00:00, Yesterday: 2025-03-13 04:00:00+00:00
+2025-03-14 21:47:40 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-14 21:47:40 - INFO - __main__ - Data issues encountered: 0
+2025-03-14 21:47:40 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-14 21:47:40 - INFO - __main__ - Analysis for market close on March 14, 2025
+2025-03-14 21:47:40 - INFO - __main__ - Found 503 stocks with price data
+2025-03-14 21:47:40 - INFO - __main__ - Found Wikipedia URL for ULTA: https://en.wikipedia.org/wiki/Ulta_Beauty
+2025-03-14 21:47:43 - INFO - __main__ - Found Wikipedia URL for ABT: https://en.wikipedia.org/wiki/Abbott_Laboratories
+2025-03-14 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-03-14 21:47:45 - INFO - __main__ - Analyzing Ulta Beauty (ULTA)
+2025-03-14 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-14 21:47:45 - INFO - __main__ - Searching for articles about ULTA
+2025-03-14 21:47:45 - INFO - __main__ - Searching for news about Ulta Beauty
+2025-03-14 21:47:45 - INFO - __main__ - Found 6 recent search results for Ulta Beauty
+2025-03-14 21:47:45 - INFO - __main__ - Found 6 URLs to try for ULTA
+2025-03-14 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-ulta-beauty-stock-popped-163043186.html
+2025-03-14 21:47:46 - INFO - __main__ - Successfully extracted article content (2468 chars)
+2025-03-14 21:47:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nvidia-ulta-beauty-docusign-ck-130849675.html
+2025-03-14 21:47:46 - INFO - __main__ - Successfully extracted article content (2068 chars)
+2025-03-14 21:47:46 - INFO - __main__ - Fetching content from: https://www.investors.com/news/ulta-stock-ulta-beauty-q4-2024-earnings-peloton-pton-stock-upgrade/
+2025-03-14 21:47:46 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-14 21:47:46 - INFO - __main__ - Found total of 2 valid articles for ULTA
+2025-03-14 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-14 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-14 21:47:49 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-14 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-14 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-03-14 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-03-14 21:47:52 - INFO - __main__ - Analyzing Abbott Laboratories (ABT)
+2025-03-14 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-14 21:47:52 - INFO - __main__ - Searching for articles about ABT
+2025-03-14 21:47:52 - INFO - __main__ - Searching for news about Abbott Laboratories
+2025-03-14 21:47:52 - INFO - __main__ - Found 6 recent search results for Abbott Laboratories
+2025-03-14 21:47:52 - INFO - __main__ - Found 6 URLs to try for ABT
+2025-03-14 21:47:52 - INFO - __main__ - Fetching content from: https://www.chicagobusiness.com/health-care/abbott-labs-reckitt-baby-formula-lawsuit-granted-retrial
+2025-03-14 21:47:55 - INFO - __main__ - Successfully extracted article content (1836 chars)
+2025-03-14 21:47:55 - INFO - __main__ - Fetching content from: https://www.wsj.com/livecoverage/stock-market-today-dow-nasdaq-sp500-03-14-2025/card/stocks-to-watch-friday-docusign-ulta-beauty-compass-c0fIYg6qdD7TFTcvfwIF
+2025-03-14 21:47:55 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-14 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nvidia-ulta-beauty-docusign-ck-130849675.html
+2025-03-14 21:47:56 - INFO - __main__ - Successfully extracted article content (2068 chars)
+2025-03-14 21:47:56 - INFO - __main__ - Found total of 2 valid articles for ABT
+2025-03-14 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-14 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-14 21:47:59 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-03-14 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-14 21:48:03 - INFO - __main__ - Bottom performer analysis complete
+2025-03-14 21:48:03 - INFO - __main__ - Saving results to JSON...
+2025-03-14 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
