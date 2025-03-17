@@ -1,0 +1,67 @@
+2025-03-17 21:47:33 - INFO - __main__ - Starting SP500 analysis script
+2025-03-17 21:47:33 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-17 21:47:34 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-17 21:47:34 - INFO - __main__ - Runtime timezone: UTC
+2025-03-17 21:47:34 - INFO - __main__ - Original start: 2025-03-14 16:00:00-04:00 (America/New_York)
+2025-03-17 21:47:34 - INFO - __main__ - Original end: 2025-03-17 16:00:00-04:00 (America/New_York)
+2025-03-17 21:47:34 - INFO - __main__ - UTC start: 2025-03-14 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - UTC end: 2025-03-18 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-17 21:47:34 - INFO - __main__ - Received data for 503 symbols
+2025-03-17 21:47:34 - INFO - __main__ - Sample data structure for FE:
+2025-03-17 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-03-17 21:47:34 - INFO - __main__ - Bar timestamp: 2025-03-14 04:00:00+00:00 (UTC)
+2025-03-17 21:47:34 - INFO - __main__ - Bar timestamp: 2025-03-17 04:00:00+00:00 (UTC)
+2025-03-17 21:47:34 - INFO - __main__ - FE timestamps - Today: 2025-03-17 04:00:00+00:00, Yesterday: 2025-03-14 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - LVS timestamps - Today: 2025-03-17 04:00:00+00:00, Yesterday: 2025-03-14 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - TT timestamps - Today: 2025-03-17 04:00:00+00:00, Yesterday: 2025-03-14 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - XYL timestamps - Today: 2025-03-17 04:00:00+00:00, Yesterday: 2025-03-14 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - V timestamps - Today: 2025-03-17 04:00:00+00:00, Yesterday: 2025-03-14 04:00:00+00:00
+2025-03-17 21:47:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-17 21:47:34 - INFO - __main__ - Data issues encountered: 0
+2025-03-17 21:47:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-17 21:47:34 - INFO - __main__ - Analysis for market close on March 17, 2025
+2025-03-17 21:47:34 - INFO - __main__ - Found 503 stocks with price data
+2025-03-17 21:47:35 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-03-17 21:47:37 - INFO - __main__ - Found Wikipedia URL for INCY: https://en.wikipedia.org/wiki/Incyte
+2025-03-17 21:47:39 - INFO - __main__ - Analyzing top performer...
+2025-03-17 21:47:39 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-03-17 21:47:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-17 21:47:39 - INFO - __main__ - Searching for articles about ENPH
+2025-03-17 21:47:39 - INFO - __main__ - Searching for news about Enphase Energy
+2025-03-17 21:47:39 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-03-17 21:47:39 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-03-17 21:47:39 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-nasdaq-sp500-weak-retail-sales-scott-bessent-netflix/
+2025-03-17 21:47:40 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-17 21:47:40 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/16/stock-market-today-live-updates.html
+2025-03-17 21:47:40 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-17 21:47:40 - INFO - __main__ - Successfully extracted article content (3203 chars)
+2025-03-17 21:47:40 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/know-beyond-why-enphase-energy-130010637.html
+2025-03-17 21:47:41 - INFO - __main__ - Successfully extracted article content (5581 chars)
+2025-03-17 21:47:41 - INFO - __main__ - Found total of 2 valid articles for ENPH
+2025-03-17 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-17 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-17 21:47:42 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-03-17 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-17 21:47:45 - INFO - __main__ - Top performer analysis complete
+2025-03-17 21:47:45 - INFO - __main__ - Analyzing bottom performer...
+2025-03-17 21:47:45 - INFO - __main__ - Analyzing Incyte (INCY)
+2025-03-17 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-17 21:47:45 - INFO - __main__ - Searching for articles about INCY
+2025-03-17 21:47:45 - INFO - __main__ - Searching for news about Incyte
+2025-03-17 21:47:45 - INFO - __main__ - Found 6 recent search results for Incyte
+2025-03-17 21:47:45 - INFO - __main__ - Found 6 URLs to try for INCY
+2025-03-17 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/oil-pressures-robinhood-incyte-market-180924513.html
+2025-03-17 21:47:46 - INFO - __main__ - Successfully extracted article content (1021 chars)
+2025-03-17 21:47:46 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/incyte-stock-hs-treatment-study/
+2025-03-17 21:47:46 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-17 21:47:46 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-intel-netflix-incyte-and-more-11698185
+2025-03-17 21:47:46 - INFO - __main__ - Successfully extracted article content (1849 chars)
+2025-03-17 21:47:46 - INFO - __main__ - Found total of 2 valid articles for INCY
+2025-03-17 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-17 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-17 21:47:47 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-17 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-17 21:47:49 - INFO - __main__ - Bottom performer analysis complete
+2025-03-17 21:47:49 - INFO - __main__ - Saving results to JSON...
+2025-03-17 21:47:50 - INFO - __main__ - Analysis complete and saved to market_analysis.json
