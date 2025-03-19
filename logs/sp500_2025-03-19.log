@@ -1,0 +1,74 @@
+2025-03-19 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-03-19 21:47:40 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-19 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-19 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-03-19 21:47:40 - INFO - __main__ - Original start: 2025-03-18 16:00:00-04:00 (America/New_York)
+2025-03-19 21:47:40 - INFO - __main__ - Original end: 2025-03-19 16:00:00-04:00 (America/New_York)
+2025-03-19 21:47:40 - INFO - __main__ - UTC start: 2025-03-18 04:00:00+00:00
+2025-03-19 21:47:40 - INFO - __main__ - UTC end: 2025-03-20 04:00:00+00:00
+2025-03-19 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-19 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-03-19 21:47:41 - INFO - __main__ - Sample data structure for XYL:
+2025-03-19 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-03-19 21:47:41 - INFO - __main__ - Bar timestamp: 2025-03-18 04:00:00+00:00 (UTC)
+2025-03-19 21:47:41 - INFO - __main__ - Bar timestamp: 2025-03-19 04:00:00+00:00 (UTC)
+2025-03-19 21:47:41 - INFO - __main__ - XYL timestamps - Today: 2025-03-19 04:00:00+00:00, Yesterday: 2025-03-18 04:00:00+00:00
+2025-03-19 21:47:41 - INFO - __main__ - ACN timestamps - Today: 2025-03-19 04:00:00+00:00, Yesterday: 2025-03-18 04:00:00+00:00
+2025-03-19 21:47:41 - INFO - __main__ - HUBB timestamps - Today: 2025-03-19 04:00:00+00:00, Yesterday: 2025-03-18 04:00:00+00:00
+2025-03-19 21:47:41 - INFO - __main__ - HWM timestamps - Today: 2025-03-19 04:00:00+00:00, Yesterday: 2025-03-18 04:00:00+00:00
+2025-03-19 21:47:41 - INFO - __main__ - QCOM timestamps - Today: 2025-03-19 04:00:00+00:00, Yesterday: 2025-03-18 04:00:00+00:00
+2025-03-19 21:47:41 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-19 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-03-19 21:47:41 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-19 21:47:41 - INFO - __main__ - Analysis for market close on March 19, 2025
+2025-03-19 21:47:41 - INFO - __main__ - Found 503 stocks with price data
+2025-03-19 21:47:41 - INFO - __main__ - Found Wikipedia URL for BA: https://en.wikipedia.org/wiki/Boeing
+2025-03-19 21:47:44 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-03-19 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-03-19 21:47:46 - INFO - __main__ - Analyzing Boeing (BA)
+2025-03-19 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-19 21:47:46 - INFO - __main__ - Searching for articles about BA
+2025-03-19 21:47:46 - INFO - __main__ - Searching for news about Boeing
+2025-03-19 21:47:47 - INFO - __main__ - Found 6 recent search results for Boeing
+2025-03-19 21:47:47 - INFO - __main__ - Found 6 URLs to try for BA
+2025-03-19 21:47:47 - INFO - __main__ - Fetching content from: https://www.investors.com/news/boeing-stock-deliveries-march-2025-ba-stock-price-target-hike/
+2025-03-19 21:47:47 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-19 21:47:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/boeing-stock-outlook-investors-af96015c
+2025-03-19 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-19 21:47:47 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/19/boeing-shares-jump-as-cfo-says-plane-makers-cash-burn-is-easing.html
+2025-03-19 21:47:48 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-19 21:47:48 - INFO - __main__ - Successfully extracted article content (1971 chars)
+2025-03-19 21:47:48 - INFO - __main__ - Fetching content from: https://www.investopedia.com/boeing-stock-surges-as-japan-airlines-order-cfo-comments-on-tariffs-cash-burn-11699629
+2025-03-19 21:47:48 - INFO - __main__ - Successfully extracted article content (1929 chars)
+2025-03-19 21:47:48 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-boeing-tesla-general-mills-and-more-11699744
+2025-03-19 21:47:48 - INFO - __main__ - Successfully extracted article content (1844 chars)
+2025-03-19 21:47:48 - INFO - __main__ - Fetching content from: https://www.nytimes.com/2025/03/19/business/boeing-trump-tariffs.html
+2025-03-19 21:47:48 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-19 21:47:48 - INFO - __main__ - Found total of 3 valid articles for BA
+2025-03-19 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:50 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-19 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-03-19 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-03-19 21:47:52 - INFO - __main__ - Analyzing Intel (INTC)
+2025-03-19 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-19 21:47:53 - INFO - __main__ - Searching for articles about INTC
+2025-03-19 21:47:53 - INFO - __main__ - Searching for news about Intel
+2025-03-19 21:47:53 - INFO - __main__ - Found 6 recent search results for Intel
+2025-03-19 21:47:53 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-03-19 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-intel-stock-sinking-today-193608530.html
+2025-03-19 21:47:54 - INFO - __main__ - Successfully extracted article content (2883 chars)
+2025-03-19 21:47:54 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intels-ceo-just-dropped-bombshell-175141102.html
+2025-03-19 21:47:54 - INFO - __main__ - Successfully extracted article content (1720 chars)
+2025-03-19 21:47:54 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intel-stock-price-today-ceo-83b2fa43
+2025-03-19 21:47:54 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-19 21:47:54 - INFO - __main__ - Found total of 2 valid articles for INTC
+2025-03-19 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:56 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-19 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-19 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-03-19 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-03-19 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
