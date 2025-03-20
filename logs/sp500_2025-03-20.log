@@ -1,0 +1,76 @@
+2025-03-20 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-03-20 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-20 21:47:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-20 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2025-03-20 21:47:41 - INFO - __main__ - Original start: 2025-03-19 16:00:00-04:00 (America/New_York)
+2025-03-20 21:47:41 - INFO - __main__ - Original end: 2025-03-20 16:00:00-04:00 (America/New_York)
+2025-03-20 21:47:41 - INFO - __main__ - UTC start: 2025-03-19 04:00:00+00:00
+2025-03-20 21:47:41 - INFO - __main__ - UTC end: 2025-03-21 04:00:00+00:00
+2025-03-20 21:47:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-20 21:47:43 - INFO - __main__ - Received data for 503 symbols
+2025-03-20 21:47:43 - INFO - __main__ - Sample data structure for HPQ:
+2025-03-20 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-03-20 21:47:43 - INFO - __main__ - Bar timestamp: 2025-03-19 04:00:00+00:00 (UTC)
+2025-03-20 21:47:43 - INFO - __main__ - Bar timestamp: 2025-03-20 04:00:00+00:00 (UTC)
+2025-03-20 21:47:43 - INFO - __main__ - HPQ timestamps - Today: 2025-03-20 04:00:00+00:00, Yesterday: 2025-03-19 04:00:00+00:00
+2025-03-20 21:47:43 - INFO - __main__ - MGM timestamps - Today: 2025-03-20 04:00:00+00:00, Yesterday: 2025-03-19 04:00:00+00:00
+2025-03-20 21:47:43 - INFO - __main__ - TYL timestamps - Today: 2025-03-20 04:00:00+00:00, Yesterday: 2025-03-19 04:00:00+00:00
+2025-03-20 21:47:43 - INFO - __main__ - CTVA timestamps - Today: 2025-03-20 04:00:00+00:00, Yesterday: 2025-03-19 04:00:00+00:00
+2025-03-20 21:47:43 - INFO - __main__ - HST timestamps - Today: 2025-03-20 04:00:00+00:00, Yesterday: 2025-03-19 04:00:00+00:00
+2025-03-20 21:47:43 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-20 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-03-20 21:47:43 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-20 21:47:43 - INFO - __main__ - Analysis for market close on March 20, 2025
+2025-03-20 21:47:43 - INFO - __main__ - Found 503 stocks with price data
+2025-03-20 21:47:44 - INFO - __main__ - Found Wikipedia URL for DRI: https://en.wikipedia.org/wiki/Darden_Restaurants
+2025-03-20 21:47:46 - INFO - __main__ - Found Wikipedia URL for ACN: https://en.wikipedia.org/wiki/Accenture
+2025-03-20 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-03-20 21:47:48 - INFO - __main__ - Analyzing Darden Restaurants (DRI)
+2025-03-20 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-20 21:47:49 - INFO - __main__ - Searching for articles about DRI
+2025-03-20 21:47:49 - INFO - __main__ - Searching for news about Darden Restaurants
+2025-03-20 21:47:50 - INFO - __main__ - Found 6 recent search results for Darden Restaurants
+2025-03-20 21:47:50 - INFO - __main__ - Found 6 URLs to try for DRI
+2025-03-20 21:47:50 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/20/darden-restaurants-dri-q3-2025-earnings.html
+2025-03-20 21:47:51 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-20 21:47:51 - INFO - __main__ - Successfully extracted article content (3481 chars)
+2025-03-20 21:47:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/darden-restaurants-q3-sales-fall-short-as-olive-garden-longhorn-disappoint-11699937
+2025-03-20 21:47:51 - INFO - __main__ - Successfully extracted article content (1825 chars)
+2025-03-20 21:47:51 - INFO - __main__ - Fetching content from: https://qz.com/stocks-watch-micron-nike-darden-fedex-1851771073
+2025-03-20 21:47:51 - INFO - __main__ - Successfully extracted article content (2971 chars)
+2025-03-20 21:47:51 - INFO - __main__ - Found total of 3 valid articles for DRI
+2025-03-20 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:47:53 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-20 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:47:56 - INFO - __main__ - Top performer analysis complete
+2025-03-20 21:47:56 - INFO - __main__ - Analyzing bottom performer...
+2025-03-20 21:47:56 - INFO - __main__ - Analyzing Accenture (ACN)
+2025-03-20 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-20 21:47:57 - INFO - __main__ - Searching for articles about ACN
+2025-03-20 21:47:57 - INFO - __main__ - Searching for news about Accenture
+2025-03-20 21:47:57 - INFO - __main__ - Found 6 recent search results for Accenture
+2025-03-20 21:47:57 - INFO - __main__ - Found 6 URLs to try for ACN
+2025-03-20 21:47:57 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/20/accenture-is-doges-first-corporate-casualty-as-shares-dive-on-warning-contracts-will-be-cut.html
+2025-03-20 21:47:57 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-20 21:47:58 - INFO - __main__ - Successfully extracted article content (2544 chars)
+2025-03-20 21:47:58 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/ibm-stock-doge-government-spending/
+2025-03-20 21:47:58 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-20 21:47:58 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/accenture-stock-price-earnings-742d2f32
+2025-03-20 21:47:58 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-20 21:47:58 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/accenture-stock-news-accenture-earnings-q42024/
+2025-03-20 21:47:58 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-20 21:47:58 - INFO - __main__ - Fetching content from: https://www.investopedia.com/accenture-tops-q2-sales-estimates-but-profit-comes-up-short-11699186
+2025-03-20 21:47:58 - INFO - __main__ - Successfully extracted article content (2143 chars)
+2025-03-20 21:47:58 - INFO - __main__ - Fetching content from: https://investor.accenture.com/~/media/Files/A/Accenture-IR-V3/quarterly-earnings/2025/q2fy25/accentures-second-quarter-fiscal-2025-earnings-release.pdf
+2025-03-20 21:48:00 - INFO - __main__ - Successfully extracted article content (7801 chars)
+2025-03-20 21:48:00 - INFO - __main__ - Found total of 3 valid articles for ACN
+2025-03-20 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:48:03 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-03-20 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-20 21:48:05 - INFO - __main__ - Bottom performer analysis complete
+2025-03-20 21:48:05 - INFO - __main__ - Saving results to JSON...
+2025-03-20 21:48:06 - INFO - __main__ - Analysis complete and saved to market_analysis.json
