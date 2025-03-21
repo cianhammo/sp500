@@ -1,0 +1,74 @@
+2025-03-21 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-03-21 21:47:39 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-21 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-21 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-03-21 21:47:40 - INFO - __main__ - Original start: 2025-03-20 16:00:00-04:00 (America/New_York)
+2025-03-21 21:47:40 - INFO - __main__ - Original end: 2025-03-21 16:00:00-04:00 (America/New_York)
+2025-03-21 21:47:40 - INFO - __main__ - UTC start: 2025-03-20 04:00:00+00:00
+2025-03-21 21:47:40 - INFO - __main__ - UTC end: 2025-03-22 04:00:00+00:00
+2025-03-21 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-21 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-03-21 21:47:41 - INFO - __main__ - Sample data structure for CF:
+2025-03-21 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-03-21 21:47:41 - INFO - __main__ - Bar timestamp: 2025-03-20 04:00:00+00:00 (UTC)
+2025-03-21 21:47:41 - INFO - __main__ - Bar timestamp: 2025-03-21 04:00:00+00:00 (UTC)
+2025-03-21 21:47:41 - INFO - __main__ - CF timestamps - Today: 2025-03-21 04:00:00+00:00, Yesterday: 2025-03-20 04:00:00+00:00
+2025-03-21 21:47:41 - INFO - __main__ - CNP timestamps - Today: 2025-03-21 04:00:00+00:00, Yesterday: 2025-03-20 04:00:00+00:00
+2025-03-21 21:47:41 - INFO - __main__ - HUBB timestamps - Today: 2025-03-21 04:00:00+00:00, Yesterday: 2025-03-20 04:00:00+00:00
+2025-03-21 21:47:41 - INFO - __main__ - UBER timestamps - Today: 2025-03-21 04:00:00+00:00, Yesterday: 2025-03-20 04:00:00+00:00
+2025-03-21 21:47:41 - INFO - __main__ - BKNG timestamps - Today: 2025-03-21 04:00:00+00:00, Yesterday: 2025-03-20 04:00:00+00:00
+2025-03-21 21:47:41 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-21 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-03-21 21:47:41 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-21 21:47:41 - INFO - __main__ - Analysis for market close on March 21, 2025
+2025-03-21 21:47:41 - INFO - __main__ - Found 503 stocks with price data
+2025-03-21 21:47:41 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-03-21 21:47:44 - INFO - __main__ - Found Wikipedia URL for MU: https://en.wikipedia.org/wiki/Micron_Technology
+2025-03-21 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-03-21 21:47:46 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-03-21 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-21 21:47:46 - INFO - __main__ - Searching for articles about SMCI
+2025-03-21 21:47:46 - INFO - __main__ - Searching for news about Supermicro
+2025-03-21 21:47:46 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-03-21 21:47:46 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-03-21 21:47:46 - INFO - __main__ - Fetching content from: https://www.investopedia.com/supermicro-stock-jumps-to-lead-s-and-p-500-gainers-friday-as-jpmorgan-boosts-rating-update-11701217
+2025-03-21 21:47:46 - INFO - __main__ - Successfully extracted article content (2252 chars)
+2025-03-21 21:47:46 - INFO - __main__ - Fetching content from: https://www.investopedia.com/supermicro-stock-jumps-to-lead-s-and-p-500-gainers-friday-as-jpmorgan-boosts-rating-11701217
+2025-03-21 21:47:47 - INFO - __main__ - Successfully extracted article content (2252 chars)
+2025-03-21 21:47:47 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-03212025-11701021
+2025-03-21 21:47:47 - INFO - __main__ - Successfully extracted article content (14015 chars)
+2025-03-21 21:47:47 - INFO - __main__ - Found total of 3 valid articles for SMCI
+2025-03-21 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:47:49 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-21 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:47:53 - INFO - __main__ - Top performer analysis complete
+2025-03-21 21:47:53 - INFO - __main__ - Analyzing bottom performer...
+2025-03-21 21:47:53 - INFO - __main__ - Analyzing Micron Technology (MU)
+2025-03-21 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-21 21:47:53 - INFO - __main__ - Searching for articles about MU
+2025-03-21 21:47:53 - INFO - __main__ - Searching for news about Micron Technology
+2025-03-21 21:47:56 - INFO - __main__ - Found 6 recent search results for Micron Technology
+2025-03-21 21:47:56 - INFO - __main__ - Found 6 URLs to try for MU
+2025-03-21 21:47:56 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/03/21/why-micron-stock-fell-on-friday/
+2025-03-21 21:47:56 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-03-21 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/micron-gives-upbeat-sales-forecast-202305902.html
+2025-03-21 21:47:57 - INFO - __main__ - Successfully extracted article content (2387 chars)
+2025-03-21 21:47:57 - INFO - __main__ - Fetching content from: https://www.thestreet.com/investing/stocks/analysts-rework-micron-stock-price-targets-after-earnings
+2025-03-21 21:47:57 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-21 21:47:57 - INFO - __main__ - Fetching content from: https://www.investopedia.com/micron-stock-falls-but-analysts-are-bullish-despite-gross-margin-fly-in-the-ointment-11701189
+2025-03-21 21:47:57 - INFO - __main__ - Successfully extracted article content (1446 chars)
+2025-03-21 21:47:57 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/q2-2025-micron-technology-inc-125357740.html
+2025-03-21 21:47:58 - INFO - __main__ - Successfully extracted article content (31026 chars)
+2025-03-21 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/nike-fedex-micron-market-minute-150754280.html
+2025-03-21 21:47:58 - INFO - __main__ - Successfully extracted article content (978 chars)
+2025-03-21 21:47:58 - INFO - __main__ - Found total of 3 valid articles for MU
+2025-03-21 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:48:01 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-21 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-21 21:48:05 - INFO - __main__ - Bottom performer analysis complete
+2025-03-21 21:48:05 - INFO - __main__ - Saving results to JSON...
+2025-03-21 21:48:05 - INFO - __main__ - Analysis complete and saved to market_analysis.json
