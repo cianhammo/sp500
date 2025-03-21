@@ -411,3 +411,62 @@
 2025-03-21 15:20:57,134 - sec_monitor - INFO - Cumulative stats - Input words: 1733644, Output words: 904
 2025-03-21 15:20:57,134 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-03-21 15:20:57,134 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 15981, 'output_words': 107, 'filings_processed': 1}
+2025-03-21 18:20:52,718 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-03-21 18:20:52,718 - sec_monitor - INFO - Loading S&P 500 data...
+2025-03-21 18:20:52,718 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-03-21 18:20:52,719 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-21 18:20:52,719 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-21 18:20:52,719 - sec_monitor - INFO - Initializing components...
+2025-03-21 18:20:52,719 - sec_monitor - INFO - Initializing components
+2025-03-21 18:20:52,719 - sec_monitor - INFO - SEC fetcher initialized
+2025-03-21 18:20:52,719 - sec_monitor - INFO - Filing analyzer initialized
+2025-03-21 18:20:52,719 - sec_monitor - INFO - Alpaca clients initialized
+2025-03-21 18:20:52,720 - sec_monitor - INFO - All components initialized successfully
+2025-03-21 18:20:52,720 - sec_monitor - INFO - Found JSON file from today
+2025-03-21 18:20:52,721 - sec_monitor - INFO - Found 12 previously processed accessions and 12 filing URLs
+2025-03-21 18:20:52,721 - sec_monitor - INFO - Found 12 accession numbers and 12 URLs from previously processed filings
+2025-03-21 18:20:52,721 - sec_monitor - INFO - Fetching SEC filings...
+2025-03-21 18:21:53,226 - sec_monitor - INFO - No more entries found
+2025-03-21 18:21:53,226 - sec_monitor - INFO - Completed fetching. Found 37 total filings
+2025-03-21 18:21:53,227 - sec_monitor - INFO - Found 2 new interesting filings
+2025-03-21 18:21:53,227 - sec_monitor - INFO - Found 2 new filings to process
+2025-03-21 18:21:53,227 - sec_monitor - INFO - Processing filing 1/2: GPC
+2025-03-21 18:22:26,425 - sec_monitor - INFO - ==================================================
+2025-03-21 18:22:26,426 - sec_monitor - INFO - Processing first chunk
+2025-03-21 18:22:26,426 - sec_monitor - INFO - Timestamp: 2025-03-21 18:22:26
+2025-03-21 18:22:27,496 - sec_monitor - INFO - token percentage = 31%
+2025-03-21 18:22:27,496 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-21 18:22:27,496 - sec_monitor - INFO - Timestamp: 2025-03-21 18:22:27
+2025-03-21 18:22:37,623 - sec_monitor - INFO - API call successful
+2025-03-21 18:22:38,625 - sec_monitor - INFO - Processing filing 2/2: ETR
+2025-03-21 18:23:11,082 - sec_monitor - INFO - ==================================================
+2025-03-21 18:23:11,082 - sec_monitor - INFO - Processing first chunk
+2025-03-21 18:23:11,082 - sec_monitor - INFO - Timestamp: 2025-03-21 18:23:11
+2025-03-21 18:23:11,568 - sec_monitor - INFO - token percentage = 20%
+2025-03-21 18:23:11,568 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-21 18:23:11,568 - sec_monitor - INFO - Timestamp: 2025-03-21 18:23:11
+2025-03-21 18:23:23,315 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-03-21 18:23:23,316 - sec_monitor - ERROR - Error: 429 Resource has been exhausted (e.g. check quota).
+2025-03-21 18:23:23,316 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-03-21 18:26:23,352 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-03-21 18:26:23,352 - sec_monitor - INFO - Timestamp: 2025-03-21 18:26:23
+2025-03-21 18:26:34,242 - sec_monitor - INFO - API call successful
+2025-03-21 18:26:35,243 - sec_monitor - INFO - Fetching supplementary data...
+2025-03-21 18:26:35,784 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-03-21 18:26:35,784 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-03-21 18:26:35,784 - sec_monitor - INFO - Market open: True
+2025-03-21 18:26:35,784 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-03-21 18:26:35,807 - sec_monitor - INFO - Last trading day: 2025-03-21
+2025-03-21 18:26:35,808 - sec_monitor - INFO - Processing ticker: GPC
+2025-03-21 18:26:36,103 - sec_monitor - INFO - Number of bars for GPC: 4
+2025-03-21 18:26:36,103 - sec_monitor - INFO - Last bar close for GPC: 120.75
+2025-03-21 18:26:36,103 - sec_monitor - INFO - Market open price for GPC: 120.75, change: -3.0821093185648953%
+2025-03-21 18:26:36,104 - sec_monitor - INFO - Processing ticker: ETR
+2025-03-21 18:26:36,135 - sec_monitor - INFO - Number of bars for ETR: 4
+2025-03-21 18:26:36,135 - sec_monitor - INFO - Last bar close for ETR: 84.63
+2025-03-21 18:26:36,135 - sec_monitor - INFO - Market open price for ETR: 84.63, change: -0.0708466170740374%
+2025-03-21 18:26:37,057 - sec_monitor - INFO - Generating final output...
+2025-03-21 18:26:37,058 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-03-21 18:26:37,058 - sec_monitor - INFO - Cumulative stats - Input words: 1908211, Output words: 1049
+2025-03-21 18:26:37,058 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-03-21 18:26:37,058 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 174567, 'output_words': 145, 'filings_processed': 2}
