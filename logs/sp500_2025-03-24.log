@@ -1,0 +1,74 @@
+2025-03-24 21:47:36 - INFO - __main__ - Starting SP500 analysis script
+2025-03-24 21:47:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-24 21:47:37 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-24 21:47:37 - INFO - __main__ - Runtime timezone: UTC
+2025-03-24 21:47:37 - INFO - __main__ - Original start: 2025-03-21 16:00:00-04:00 (America/New_York)
+2025-03-24 21:47:37 - INFO - __main__ - Original end: 2025-03-24 16:00:00-04:00 (America/New_York)
+2025-03-24 21:47:37 - INFO - __main__ - UTC start: 2025-03-21 04:00:00+00:00
+2025-03-24 21:47:37 - INFO - __main__ - UTC end: 2025-03-25 04:00:00+00:00
+2025-03-24 21:47:37 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-24 21:47:38 - INFO - __main__ - Received data for 503 symbols
+2025-03-24 21:47:38 - INFO - __main__ - Sample data structure for VTRS:
+2025-03-24 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-03-24 21:47:38 - INFO - __main__ - Bar timestamp: 2025-03-21 04:00:00+00:00 (UTC)
+2025-03-24 21:47:38 - INFO - __main__ - Bar timestamp: 2025-03-24 04:00:00+00:00 (UTC)
+2025-03-24 21:47:38 - INFO - __main__ - VTRS timestamps - Today: 2025-03-24 04:00:00+00:00, Yesterday: 2025-03-21 04:00:00+00:00
+2025-03-24 21:47:38 - INFO - __main__ - ANSS timestamps - Today: 2025-03-24 04:00:00+00:00, Yesterday: 2025-03-21 04:00:00+00:00
+2025-03-24 21:47:38 - INFO - __main__ - FFIV timestamps - Today: 2025-03-24 04:00:00+00:00, Yesterday: 2025-03-21 04:00:00+00:00
+2025-03-24 21:47:38 - INFO - __main__ - J timestamps - Today: 2025-03-24 04:00:00+00:00, Yesterday: 2025-03-21 04:00:00+00:00
+2025-03-24 21:47:38 - INFO - __main__ - BA timestamps - Today: 2025-03-24 04:00:00+00:00, Yesterday: 2025-03-21 04:00:00+00:00
+2025-03-24 21:47:38 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-24 21:47:38 - INFO - __main__ - Data issues encountered: 0
+2025-03-24 21:47:38 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-24 21:47:38 - INFO - __main__ - Analysis for market close on March 24, 2025
+2025-03-24 21:47:38 - INFO - __main__ - Found 503 stocks with price data
+2025-03-24 21:47:38 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2025-03-24 21:47:41 - INFO - __main__ - Found Wikipedia URL for HRL: https://en.wikipedia.org/wiki/Hormel_Foods
+2025-03-24 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-03-24 21:47:43 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2025-03-24 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-24 21:47:43 - INFO - __main__ - Searching for articles about TSLA
+2025-03-24 21:47:43 - INFO - __main__ - Searching for news about Tesla, Inc.
+2025-03-24 21:47:44 - INFO - __main__ - Found 6 recent search results for Tesla, Inc.
+2025-03-24 21:47:44 - INFO - __main__ - Found 6 URLs to try for TSLA
+2025-03-24 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/tesla-shares-pop-musks-plea-142515270.html
+2025-03-24 21:47:45 - INFO - __main__ - Successfully extracted article content (2553 chars)
+2025-03-24 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-tesla-shares-jumping-today-160839401.html
+2025-03-24 21:47:45 - INFO - __main__ - Successfully extracted article content (1144 chars)
+2025-03-24 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/tesla-surges-10-leads-mag-7-stocks-higher-as-tariff-worries-ease-145205232.html
+2025-03-24 21:47:46 - INFO - __main__ - Successfully extracted article content (1977 chars)
+2025-03-24 21:47:46 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2025-03-24 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:47 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-24 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:49 - INFO - __main__ - Top performer analysis complete
+2025-03-24 21:47:49 - INFO - __main__ - Analyzing bottom performer...
+2025-03-24 21:47:49 - INFO - __main__ - Analyzing Hormel Foods (HRL)
+2025-03-24 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-24 21:47:50 - INFO - __main__ - Searching for articles about HRL
+2025-03-24 21:47:50 - INFO - __main__ - Searching for news about Hormel Foods
+2025-03-24 21:47:50 - INFO - __main__ - Found 6 recent search results for Hormel Foods
+2025-03-24 21:47:50 - INFO - __main__ - Found 6 URLs to try for HRL
+2025-03-24 21:47:50 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-11702208
+2025-03-24 21:47:50 - INFO - __main__ - Successfully extracted article content (3829 chars)
+2025-03-24 21:47:50 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/31548611/should-you-buy-sell-or-hold-tsla-stock-amidst-the-tesla-cybertruck-recall
+2025-03-24 21:47:51 - INFO - __main__ - Successfully extracted article content (296 chars)
+2025-03-24 21:47:51 - INFO - __main__ - Fetching content from: https://www.supermarketperimeter.com/articles/12495-the-hormel-foundation-chairman-rejoins-hormel-board-of-directors
+2025-03-24 21:47:51 - WARNING - __main__ - Article content too short (41 chars)
+2025-03-24 21:47:51 - INFO - __main__ - Fetching content from: https://www.hormelfoods.com/newsroom/updates/new-video-gives-props-to-peanut-farmers/
+2025-03-24 21:47:51 - INFO - __main__ - Successfully extracted article content (968 chars)
+2025-03-24 21:47:51 - INFO - __main__ - Fetching content from: https://accessdubuquejobs.com/job/2nd-shift-manufacturing-production-associate-27/
+2025-03-24 21:47:52 - INFO - __main__ - Successfully extracted article content (2056 chars)
+2025-03-24 21:47:52 - INFO - __main__ - Fetching content from: https://www.moneycontrol.com/news/business/markets/us-stock-market-live-dow-futures-trade-higher-alpha-liveblog-12973990.html
+2025-03-24 21:47:53 - INFO - __main__ - Successfully extracted article content (798 chars)
+2025-03-24 21:47:53 - INFO - __main__ - Found total of 3 valid articles for HRL
+2025-03-24 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:55 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-03-24 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-24 21:47:57 - INFO - __main__ - Bottom performer analysis complete
+2025-03-24 21:47:57 - INFO - __main__ - Saving results to JSON...
+2025-03-24 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
