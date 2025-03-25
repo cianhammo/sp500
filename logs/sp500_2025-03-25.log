@@ -1,0 +1,67 @@
+2025-03-25 21:47:38 - INFO - __main__ - Starting SP500 analysis script
+2025-03-25 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-25 21:47:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-25 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-03-25 21:47:38 - INFO - __main__ - Original start: 2025-03-24 16:00:00-04:00 (America/New_York)
+2025-03-25 21:47:38 - INFO - __main__ - Original end: 2025-03-25 16:00:00-04:00 (America/New_York)
+2025-03-25 21:47:38 - INFO - __main__ - UTC start: 2025-03-24 04:00:00+00:00
+2025-03-25 21:47:38 - INFO - __main__ - UTC end: 2025-03-26 04:00:00+00:00
+2025-03-25 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-25 21:47:40 - INFO - __main__ - Received data for 503 symbols
+2025-03-25 21:47:40 - INFO - __main__ - Sample data structure for YUM:
+2025-03-25 21:47:40 - INFO - __main__ - Number of bars: 2
+2025-03-25 21:47:40 - INFO - __main__ - Bar timestamp: 2025-03-24 04:00:00+00:00 (UTC)
+2025-03-25 21:47:40 - INFO - __main__ - Bar timestamp: 2025-03-25 04:00:00+00:00 (UTC)
+2025-03-25 21:47:40 - INFO - __main__ - YUM timestamps - Today: 2025-03-25 04:00:00+00:00, Yesterday: 2025-03-24 04:00:00+00:00
+2025-03-25 21:47:40 - INFO - __main__ - ENPH timestamps - Today: 2025-03-25 04:00:00+00:00, Yesterday: 2025-03-24 04:00:00+00:00
+2025-03-25 21:47:40 - INFO - __main__ - EOG timestamps - Today: 2025-03-25 04:00:00+00:00, Yesterday: 2025-03-24 04:00:00+00:00
+2025-03-25 21:47:40 - INFO - __main__ - HWM timestamps - Today: 2025-03-25 04:00:00+00:00, Yesterday: 2025-03-24 04:00:00+00:00
+2025-03-25 21:47:40 - INFO - __main__ - IP timestamps - Today: 2025-03-25 04:00:00+00:00, Yesterday: 2025-03-24 04:00:00+00:00
+2025-03-25 21:47:40 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-25 21:47:40 - INFO - __main__ - Data issues encountered: 0
+2025-03-25 21:47:40 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-25 21:47:40 - INFO - __main__ - Analysis for market close on March 25, 2025
+2025-03-25 21:47:40 - INFO - __main__ - Found 503 stocks with price data
+2025-03-25 21:47:40 - INFO - __main__ - Found Wikipedia URL for IP: https://en.wikipedia.org/wiki/International_Paper
+2025-03-25 21:47:43 - INFO - __main__ - Found Wikipedia URL for UPS: https://en.wikipedia.org/wiki/United_Parcel_Service
+2025-03-25 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-03-25 21:47:45 - INFO - __main__ - Analyzing International Paper (IP)
+2025-03-25 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-25 21:47:45 - INFO - __main__ - Searching for articles about IP
+2025-03-25 21:47:45 - INFO - __main__ - Searching for news about International Paper
+2025-03-25 21:47:46 - INFO - __main__ - Found 6 recent search results for International Paper
+2025-03-25 21:47:46 - INFO - __main__ - Found 6 URLs to try for IP
+2025-03-25 21:47:46 - INFO - __main__ - Fetching content from: https://s202.q4cdn.com/314366415/files/doc_presentations/2025/International-Paper-2025-Investor-Day_FINAL.pdf
+2025-03-25 21:48:20 - INFO - __main__ - Successfully extracted article content (1890 chars)
+2025-03-25 21:48:20 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-03252025-11702763
+2025-03-25 21:48:20 - INFO - __main__ - Successfully extracted article content (13967 chars)
+2025-03-25 21:48:20 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/kroger-countersues-rival-albertsons-143527460.html
+2025-03-25 21:48:21 - INFO - __main__ - Successfully extracted article content (2499 chars)
+2025-03-25 21:48:21 - INFO - __main__ - Found total of 3 valid articles for IP
+2025-03-25 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:23 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-03-25 21:48:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:26 - INFO - __main__ - Top performer analysis complete
+2025-03-25 21:48:26 - INFO - __main__ - Analyzing bottom performer...
+2025-03-25 21:48:26 - INFO - __main__ - Analyzing United Parcel Service (UPS)
+2025-03-25 21:48:26 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-25 21:48:27 - INFO - __main__ - Searching for articles about UPS
+2025-03-25 21:48:27 - INFO - __main__ - Searching for news about United Parcel Service
+2025-03-25 21:48:27 - INFO - __main__ - Found 6 recent search results for United Parcel Service
+2025-03-25 21:48:27 - INFO - __main__ - Found 6 URLs to try for UPS
+2025-03-25 21:48:27 - INFO - __main__ - Fetching content from: https://www.investopedia.com/ups-stock-on-track-for-lowest-close-in-nearly-5-years-11703013
+2025-03-25 21:48:27 - INFO - __main__ - Successfully extracted article content (779 chars)
+2025-03-25 21:48:27 - INFO - __main__ - Fetching content from: https://www.investopedia.com/ups-stock-closes-at-lowest-level-in-nearly-5-years-11703013
+2025-03-25 21:48:28 - INFO - __main__ - Successfully extracted article content (779 chars)
+2025-03-25 21:48:28 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/ups-stock-price-target-fedex-e330c871
+2025-03-25 21:48:28 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-25 21:48:28 - INFO - __main__ - Found total of 2 valid articles for UPS
+2025-03-25 21:48:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:29 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-25 21:48:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-25 21:48:31 - INFO - __main__ - Bottom performer analysis complete
+2025-03-25 21:48:31 - INFO - __main__ - Saving results to JSON...
+2025-03-25 21:48:31 - INFO - __main__ - Analysis complete and saved to market_analysis.json
