@@ -1,0 +1,67 @@
+2025-03-26 21:47:21 - INFO - __main__ - Starting SP500 analysis script
+2025-03-26 21:47:21 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-26 21:47:22 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-26 21:47:22 - INFO - __main__ - Runtime timezone: UTC
+2025-03-26 21:47:22 - INFO - __main__ - Original start: 2025-03-25 16:00:00-04:00 (America/New_York)
+2025-03-26 21:47:22 - INFO - __main__ - Original end: 2025-03-26 16:00:00-04:00 (America/New_York)
+2025-03-26 21:47:22 - INFO - __main__ - UTC start: 2025-03-25 04:00:00+00:00
+2025-03-26 21:47:22 - INFO - __main__ - UTC end: 2025-03-27 04:00:00+00:00
+2025-03-26 21:47:22 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-26 21:47:23 - INFO - __main__ - Received data for 503 symbols
+2025-03-26 21:47:23 - INFO - __main__ - Sample data structure for BF.B:
+2025-03-26 21:47:23 - INFO - __main__ - Number of bars: 2
+2025-03-26 21:47:23 - INFO - __main__ - Bar timestamp: 2025-03-25 04:00:00+00:00 (UTC)
+2025-03-26 21:47:23 - INFO - __main__ - Bar timestamp: 2025-03-26 04:00:00+00:00 (UTC)
+2025-03-26 21:47:23 - INFO - __main__ - BF.B timestamps - Today: 2025-03-26 04:00:00+00:00, Yesterday: 2025-03-25 04:00:00+00:00
+2025-03-26 21:47:23 - INFO - __main__ - NWS timestamps - Today: 2025-03-26 04:00:00+00:00, Yesterday: 2025-03-25 04:00:00+00:00
+2025-03-26 21:47:23 - INFO - __main__ - ADBE timestamps - Today: 2025-03-26 04:00:00+00:00, Yesterday: 2025-03-25 04:00:00+00:00
+2025-03-26 21:47:23 - INFO - __main__ - ORCL timestamps - Today: 2025-03-26 04:00:00+00:00, Yesterday: 2025-03-25 04:00:00+00:00
+2025-03-26 21:47:23 - INFO - __main__ - INTC timestamps - Today: 2025-03-26 04:00:00+00:00, Yesterday: 2025-03-25 04:00:00+00:00
+2025-03-26 21:47:23 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-26 21:47:23 - INFO - __main__ - Data issues encountered: 0
+2025-03-26 21:47:23 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-26 21:47:23 - INFO - __main__ - Analysis for market close on March 26, 2025
+2025-03-26 21:47:23 - INFO - __main__ - Found 503 stocks with price data
+2025-03-26 21:47:23 - INFO - __main__ - Found Wikipedia URL for CTAS: https://en.wikipedia.org/wiki/Cintas
+2025-03-26 21:47:25 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-03-26 21:47:27 - INFO - __main__ - Analyzing top performer...
+2025-03-26 21:47:27 - INFO - __main__ - Analyzing Cintas (CTAS)
+2025-03-26 21:47:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-26 21:47:28 - INFO - __main__ - Searching for articles about CTAS
+2025-03-26 21:47:28 - INFO - __main__ - Searching for news about Cintas
+2025-03-26 21:47:28 - INFO - __main__ - Found 6 recent search results for Cintas
+2025-03-26 21:47:28 - INFO - __main__ - Found 6 URLs to try for CTAS
+2025-03-26 21:47:28 - INFO - __main__ - Fetching content from: https://www.investopedia.com/cintas-stock-surges-as-acquisitions-boost-workplace-uniform-supplier-s-results-11703518
+2025-03-26 21:47:28 - INFO - __main__ - Successfully extracted article content (1519 chars)
+2025-03-26 21:47:28 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-ffe822bf
+2025-03-26 21:47:28 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-26 21:47:28 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/26/stocks-making-the-biggest-moves-midday-gme-dltr-ctas.html
+2025-03-26 21:47:30 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-26 21:47:30 - INFO - __main__ - Successfully extracted article content (2198 chars)
+2025-03-26 21:47:30 - INFO - __main__ - Found total of 2 valid articles for CTAS
+2025-03-26 21:47:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-26 21:47:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-26 21:47:31 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-26 21:47:33 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-26 21:47:33 - INFO - __main__ - Top performer analysis complete
+2025-03-26 21:47:33 - INFO - __main__ - Analyzing bottom performer...
+2025-03-26 21:47:33 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-03-26 21:47:33 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-26 21:47:34 - INFO - __main__ - Searching for articles about SMCI
+2025-03-26 21:47:34 - INFO - __main__ - Searching for news about Supermicro
+2025-03-26 21:47:34 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-03-26 21:47:34 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-03-26 21:47:34 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/smci-stock-supermicro-downgraded-to-sell/
+2025-03-26 21:47:34 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-03-26 21:47:34 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4770543-super-micro-computer-bears-need-to-check-out-its-inventory-upgrade
+2025-03-26 21:47:34 - INFO - __main__ - Successfully extracted article content (1833 chars)
+2025-03-26 21:47:34 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-vertiv-dollar-tree-and-more-11703636
+2025-03-26 21:47:34 - INFO - __main__ - Successfully extracted article content (1636 chars)
+2025-03-26 21:47:34 - INFO - __main__ - Found total of 2 valid articles for SMCI
+2025-03-26 21:47:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-26 21:47:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-26 21:47:35 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-03-26 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-26 21:47:38 - INFO - __main__ - Bottom performer analysis complete
+2025-03-26 21:47:38 - INFO - __main__ - Saving results to JSON...
+2025-03-26 21:47:38 - INFO - __main__ - Analysis complete and saved to market_analysis.json
