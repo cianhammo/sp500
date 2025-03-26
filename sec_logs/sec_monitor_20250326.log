@@ -259,3 +259,57 @@
 2025-03-26 12:42:01,201 - sec_monitor - INFO - Cumulative stats - Input words: 968932, Output words: 640
 2025-03-26 12:42:01,201 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-03-26 12:42:01,201 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 94376, 'output_words': 57, 'filings_processed': 1}
+2025-03-26 13:29:53,463 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-03-26 13:29:53,463 - sec_monitor - INFO - Loading S&P 500 data...
+2025-03-26 13:29:53,463 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-03-26 13:29:53,463 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-26 13:29:53,464 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-03-26 13:29:53,464 - sec_monitor - INFO - Initializing components...
+2025-03-26 13:29:53,464 - sec_monitor - INFO - Initializing components
+2025-03-26 13:29:53,464 - sec_monitor - INFO - SEC fetcher initialized
+2025-03-26 13:29:53,464 - sec_monitor - INFO - Filing analyzer initialized
+2025-03-26 13:29:53,464 - sec_monitor - INFO - Alpaca clients initialized
+2025-03-26 13:29:53,464 - sec_monitor - INFO - All components initialized successfully
+2025-03-26 13:29:53,465 - sec_monitor - INFO - Found JSON file from today
+2025-03-26 13:29:53,466 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2025-03-26 13:29:53,466 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2025-03-26 13:29:53,466 - sec_monitor - INFO - Fetching SEC filings...
+2025-03-26 13:30:16,041 - sec_monitor - INFO - No more entries found
+2025-03-26 13:30:16,041 - sec_monitor - INFO - Completed fetching. Found 98 total filings
+2025-03-26 13:30:16,041 - sec_monitor - INFO - Found 2 new interesting filings
+2025-03-26 13:30:16,041 - sec_monitor - INFO - Found 2 new filings to process
+2025-03-26 13:30:16,041 - sec_monitor - INFO - Processing filing 1/2: TRMB
+2025-03-26 13:30:46,661 - sec_monitor - INFO - ==================================================
+2025-03-26 13:30:46,661 - sec_monitor - INFO - Processing first chunk
+2025-03-26 13:30:46,661 - sec_monitor - INFO - Timestamp: 2025-03-26 13:30:46
+2025-03-26 13:30:46,778 - sec_monitor - INFO - token percentage = 4%
+2025-03-26 13:30:46,778 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-26 13:30:46,778 - sec_monitor - INFO - Timestamp: 2025-03-26 13:30:46
+2025-03-26 13:30:50,489 - sec_monitor - INFO - API call successful
+2025-03-26 13:30:51,490 - sec_monitor - INFO - Processing filing 2/2: PAYX
+2025-03-26 13:31:22,799 - sec_monitor - INFO - ==================================================
+2025-03-26 13:31:22,799 - sec_monitor - INFO - Processing first chunk
+2025-03-26 13:31:22,799 - sec_monitor - INFO - Timestamp: 2025-03-26 13:31:22
+2025-03-26 13:31:23,056 - sec_monitor - INFO - token percentage = 8%
+2025-03-26 13:31:23,056 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-03-26 13:31:23,057 - sec_monitor - INFO - Timestamp: 2025-03-26 13:31:23
+2025-03-26 13:31:27,284 - sec_monitor - INFO - API call successful
+2025-03-26 13:31:28,285 - sec_monitor - INFO - Fetching supplementary data...
+2025-03-26 13:31:28,598 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-03-26 13:31:28,598 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-03-26 13:31:28,598 - sec_monitor - INFO - Market open: True
+2025-03-26 13:31:28,598 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-03-26 13:31:28,619 - sec_monitor - INFO - Last trading day: 2025-03-26
+2025-03-26 13:31:28,619 - sec_monitor - INFO - Processing ticker: TRMB
+2025-03-26 13:31:28,790 - sec_monitor - INFO - Number of bars for TRMB: 3
+2025-03-26 13:31:28,791 - sec_monitor - INFO - Last bar close for TRMB: 70.46
+2025-03-26 13:31:28,791 - sec_monitor - INFO - Market open price for TRMB: 70.46, change: -2.24750277469479%
+2025-03-26 13:31:28,791 - sec_monitor - INFO - Processing ticker: PAYX
+2025-03-26 13:31:28,816 - sec_monitor - INFO - Number of bars for PAYX: 3
+2025-03-26 13:31:28,816 - sec_monitor - INFO - Last bar close for PAYX: 144.05
+2025-03-26 13:31:28,816 - sec_monitor - INFO - Market open price for PAYX: 144.05, change: -0.4973406092422455%
+2025-03-26 13:31:29,531 - sec_monitor - INFO - Generating final output...
+2025-03-26 13:31:29,532 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-03-26 13:31:29,532 - sec_monitor - INFO - Cumulative stats - Input words: 984769, Output words: 827
+2025-03-26 13:31:29,532 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-03-26 13:31:29,532 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 15837, 'output_words': 187, 'filings_processed': 2}
