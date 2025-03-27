@@ -1,0 +1,70 @@
+2025-03-27 21:47:27 - INFO - __main__ - Starting SP500 analysis script
+2025-03-27 21:47:28 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-27 21:47:28 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-27 21:47:28 - INFO - __main__ - Runtime timezone: UTC
+2025-03-27 21:47:28 - INFO - __main__ - Original start: 2025-03-26 16:00:00-04:00 (America/New_York)
+2025-03-27 21:47:28 - INFO - __main__ - Original end: 2025-03-27 16:00:00-04:00 (America/New_York)
+2025-03-27 21:47:28 - INFO - __main__ - UTC start: 2025-03-26 04:00:00+00:00
+2025-03-27 21:47:28 - INFO - __main__ - UTC end: 2025-03-28 04:00:00+00:00
+2025-03-27 21:47:28 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-27 21:47:29 - INFO - __main__ - Received data for 503 symbols
+2025-03-27 21:47:29 - INFO - __main__ - Sample data structure for JBL:
+2025-03-27 21:47:29 - INFO - __main__ - Number of bars: 2
+2025-03-27 21:47:29 - INFO - __main__ - Bar timestamp: 2025-03-26 04:00:00+00:00 (UTC)
+2025-03-27 21:47:29 - INFO - __main__ - Bar timestamp: 2025-03-27 04:00:00+00:00 (UTC)
+2025-03-27 21:47:29 - INFO - __main__ - JBL timestamps - Today: 2025-03-27 04:00:00+00:00, Yesterday: 2025-03-26 04:00:00+00:00
+2025-03-27 21:47:29 - INFO - __main__ - PM timestamps - Today: 2025-03-27 04:00:00+00:00, Yesterday: 2025-03-26 04:00:00+00:00
+2025-03-27 21:47:29 - INFO - __main__ - CAH timestamps - Today: 2025-03-27 04:00:00+00:00, Yesterday: 2025-03-26 04:00:00+00:00
+2025-03-27 21:47:29 - INFO - __main__ - IT timestamps - Today: 2025-03-27 04:00:00+00:00, Yesterday: 2025-03-26 04:00:00+00:00
+2025-03-27 21:47:29 - INFO - __main__ - EA timestamps - Today: 2025-03-27 04:00:00+00:00, Yesterday: 2025-03-26 04:00:00+00:00
+2025-03-27 21:47:29 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-27 21:47:29 - INFO - __main__ - Data issues encountered: 0
+2025-03-27 21:47:29 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-27 21:47:29 - INFO - __main__ - Analysis for market close on March 27, 2025
+2025-03-27 21:47:29 - INFO - __main__ - Found 503 stocks with price data
+2025-03-27 21:47:29 - INFO - __main__ - Found Wikipedia URL for DLTR: https://en.wikipedia.org/wiki/Dollar_Tree
+2025-03-27 21:47:32 - INFO - __main__ - Found Wikipedia URL for GM: https://en.wikipedia.org/wiki/General_Motors
+2025-03-27 21:47:34 - INFO - __main__ - Analyzing top performer...
+2025-03-27 21:47:34 - INFO - __main__ - Analyzing Dollar Tree (DLTR)
+2025-03-27 21:47:34 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-27 21:47:34 - INFO - __main__ - Searching for articles about DLTR
+2025-03-27 21:47:34 - INFO - __main__ - Searching for news about Dollar Tree
+2025-03-27 21:47:34 - INFO - __main__ - Found 6 recent search results for Dollar Tree
+2025-03-27 21:47:34 - INFO - __main__ - Found 6 URLs to try for DLTR
+2025-03-27 21:47:34 - INFO - __main__ - Fetching content from: https://www.syracuse.com/business/2025/03/dollar-tree-sells-off-family-dollar-chain-for-much-less-than-it-paid-10-years-ago.html
+2025-03-27 21:47:35 - INFO - __main__ - Successfully extracted article content (4693 chars)
+2025-03-27 21:47:35 - INFO - __main__ - Fetching content from: https://www.dailymail.co.uk/yourmoney/article-14538771/customer-dollar-tree-beauty-dupes-fraction-price-shock.html
+2025-03-27 21:47:36 - INFO - __main__ - Successfully extracted article content (4064 chars)
+2025-03-27 21:47:36 - INFO - __main__ - Fetching content from: https://www.news9.com/story/67e5336f031a13a72aba6bf5/dollar-tree-to-sell-family-dollar-for-1-billion-a-decade-after-buying-it-for-more-than-8-billion
+2025-03-27 21:47:37 - INFO - __main__ - Successfully extracted article content (1861 chars)
+2025-03-27 21:47:37 - INFO - __main__ - Found total of 3 valid articles for DLTR
+2025-03-27 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:39 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-27 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:42 - INFO - __main__ - Top performer analysis complete
+2025-03-27 21:47:42 - INFO - __main__ - Analyzing bottom performer...
+2025-03-27 21:47:42 - INFO - __main__ - Analyzing General Motors (GM)
+2025-03-27 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-27 21:47:42 - INFO - __main__ - Searching for articles about GM
+2025-03-27 21:47:42 - INFO - __main__ - Searching for news about General Motors
+2025-03-27 21:47:42 - INFO - __main__ - Found 6 recent search results for General Motors
+2025-03-27 21:47:42 - INFO - __main__ - Found 6 URLs to try for GM
+2025-03-27 21:47:42 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/27/gm-stock-trump-auto-tariffs.html
+2025-03-27 21:47:43 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-27 21:47:43 - INFO - __main__ - Successfully extracted article content (2903 chars)
+2025-03-27 21:47:43 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/27/stocks-making-the-biggest-moves-premarket-gm-gme-nvda-jef.html
+2025-03-27 21:47:43 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-27 21:47:43 - INFO - __main__ - Successfully extracted article content (3093 chars)
+2025-03-27 21:47:43 - INFO - __main__ - Fetching content from: https://www.nbcnews.com/business/autos/trump-auto-tariffs-gm-cars-trucks-made-in-mexico-canada-rcna198366
+2025-03-27 21:47:44 - INFO - __main__ - Successfully extracted article content (6426 chars)
+2025-03-27 21:47:44 - INFO - __main__ - Found total of 3 valid articles for GM
+2025-03-27 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:46 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-27 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-27 21:47:48 - INFO - __main__ - Bottom performer analysis complete
+2025-03-27 21:47:48 - INFO - __main__ - Saving results to JSON...
+2025-03-27 21:47:48 - INFO - __main__ - Analysis complete and saved to market_analysis.json
