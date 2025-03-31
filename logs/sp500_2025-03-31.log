@@ -1,0 +1,68 @@
+2025-03-31 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-03-31 21:47:45 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-03-31 21:47:45 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 3, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-03-31 21:47:45 - INFO - __main__ - Runtime timezone: UTC
+2025-03-31 21:47:45 - INFO - __main__ - Original start: 2025-03-28 16:00:00-04:00 (America/New_York)
+2025-03-31 21:47:45 - INFO - __main__ - Original end: 2025-03-31 16:00:00-04:00 (America/New_York)
+2025-03-31 21:47:45 - INFO - __main__ - UTC start: 2025-03-28 04:00:00+00:00
+2025-03-31 21:47:45 - INFO - __main__ - UTC end: 2025-04-01 04:00:00+00:00
+2025-03-31 21:47:45 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-03-31 21:47:46 - INFO - __main__ - Received data for 503 symbols
+2025-03-31 21:47:46 - INFO - __main__ - Sample data structure for ALB:
+2025-03-31 21:47:46 - INFO - __main__ - Number of bars: 2
+2025-03-31 21:47:46 - INFO - __main__ - Bar timestamp: 2025-03-28 04:00:00+00:00 (UTC)
+2025-03-31 21:47:46 - INFO - __main__ - Bar timestamp: 2025-03-31 04:00:00+00:00 (UTC)
+2025-03-31 21:47:46 - INFO - __main__ - ALB timestamps - Today: 2025-03-31 04:00:00+00:00, Yesterday: 2025-03-28 04:00:00+00:00
+2025-03-31 21:47:46 - INFO - __main__ - DHR timestamps - Today: 2025-03-31 04:00:00+00:00, Yesterday: 2025-03-28 04:00:00+00:00
+2025-03-31 21:47:46 - INFO - __main__ - PKG timestamps - Today: 2025-03-31 04:00:00+00:00, Yesterday: 2025-03-28 04:00:00+00:00
+2025-03-31 21:47:46 - INFO - __main__ - VICI timestamps - Today: 2025-03-31 04:00:00+00:00, Yesterday: 2025-03-28 04:00:00+00:00
+2025-03-31 21:47:46 - INFO - __main__ - WMB timestamps - Today: 2025-03-31 04:00:00+00:00, Yesterday: 2025-03-28 04:00:00+00:00
+2025-03-31 21:47:47 - INFO - __main__ - Successfully processed 503 stocks
+2025-03-31 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-03-31 21:47:47 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-03-31 21:47:47 - INFO - __main__ - Analysis for market close on March 31, 2025
+2025-03-31 21:47:47 - INFO - __main__ - Found 503 stocks with price data
+2025-03-31 21:47:47 - INFO - __main__ - Found Wikipedia URL for DFS: https://en.wikipedia.org/wiki/Discover_Financial
+2025-03-31 21:47:50 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-03-31 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-03-31 21:47:52 - INFO - __main__ - Analyzing Discover Financial (DFS)
+2025-03-31 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-31 21:47:52 - INFO - __main__ - Searching for articles about DFS
+2025-03-31 21:47:52 - INFO - __main__ - Searching for news about Discover Financial
+2025-03-31 21:47:53 - INFO - __main__ - Found 6 recent search results for Discover Financial
+2025-03-31 21:47:53 - INFO - __main__ - Found 6 URLs to try for DFS
+2025-03-31 21:47:53 - INFO - __main__ - Fetching content from: https://www.investopedia.com/discover-financial-stock-leads-s-and-p-500-gainers-on-retention-of-interim-ceo-11706030
+2025-03-31 21:47:53 - INFO - __main__ - Successfully extracted article content (1269 chars)
+2025-03-31 21:47:53 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-nvidia-moderna-and-more-11706080
+2025-03-31 21:47:53 - INFO - __main__ - Successfully extracted article content (1772 chars)
+2025-03-31 21:47:53 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/03/31/signs-of-a-capital-one-discover-deal-dupont-shops-two-brands-.html
+2025-03-31 21:47:55 - INFO - readability.readability - ruthless removal did not work. 
+2025-03-31 21:47:55 - INFO - __main__ - Successfully extracted article content (5606 chars)
+2025-03-31 21:47:55 - INFO - __main__ - Found total of 3 valid articles for DFS
+2025-03-31 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:47:57 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-03-31 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:48:00 - INFO - __main__ - Top performer analysis complete
+2025-03-31 21:48:00 - INFO - __main__ - Analyzing bottom performer...
+2025-03-31 21:48:00 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-03-31 21:48:00 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-03-31 21:48:00 - INFO - __main__ - Searching for articles about MRNA
+2025-03-31 21:48:00 - INFO - __main__ - Searching for news about Moderna
+2025-03-31 21:48:01 - INFO - __main__ - Found 6 recent search results for Moderna
+2025-03-31 21:48:01 - INFO - __main__ - Found 6 URLs to try for MRNA
+2025-03-31 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/moderna-biotech-stocks-slide-following-resignation-of-fda-official-peter-marks-135722653.html
+2025-03-31 21:48:01 - INFO - __main__ - Successfully extracted article content (3896 chars)
+2025-03-31 21:48:01 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/fda-resignation-peter-marks-biotech-stocks-9a19c2cb
+2025-03-31 21:48:02 - WARNING - __main__ - Article content too short (43 chars)
+2025-03-31 21:48:02 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-nvidia-moderna-and-more-11706080
+2025-03-31 21:48:02 - INFO - __main__ - Successfully extracted article content (1772 chars)
+2025-03-31 21:48:02 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-03-31 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:48:04 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-03-31 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-03-31 21:48:06 - INFO - __main__ - Bottom performer analysis complete
+2025-03-31 21:48:06 - INFO - __main__ - Saving results to JSON...
+2025-03-31 21:48:06 - INFO - __main__ - Analysis complete and saved to market_analysis.json
