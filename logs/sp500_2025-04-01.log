@@ -1,0 +1,73 @@
+2025-04-01 21:47:51 - INFO - __main__ - Starting SP500 analysis script
+2025-04-01 21:47:51 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-01 21:47:52 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 3, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-01 21:47:52 - INFO - __main__ - Runtime timezone: UTC
+2025-04-01 21:47:52 - INFO - __main__ - Original start: 2025-03-31 16:00:00-04:00 (America/New_York)
+2025-04-01 21:47:52 - INFO - __main__ - Original end: 2025-04-01 16:00:00-04:00 (America/New_York)
+2025-04-01 21:47:52 - INFO - __main__ - UTC start: 2025-03-31 04:00:00+00:00
+2025-04-01 21:47:52 - INFO - __main__ - UTC end: 2025-04-02 04:00:00+00:00
+2025-04-01 21:47:52 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-01 21:47:53 - INFO - __main__ - Received data for 503 symbols
+2025-04-01 21:47:53 - INFO - __main__ - Sample data structure for SNA:
+2025-04-01 21:47:53 - INFO - __main__ - Number of bars: 2
+2025-04-01 21:47:53 - INFO - __main__ - Bar timestamp: 2025-03-31 04:00:00+00:00 (UTC)
+2025-04-01 21:47:53 - INFO - __main__ - Bar timestamp: 2025-04-01 04:00:00+00:00 (UTC)
+2025-04-01 21:47:53 - INFO - __main__ - SNA timestamps - Today: 2025-04-01 04:00:00+00:00, Yesterday: 2025-03-31 04:00:00+00:00
+2025-04-01 21:47:53 - INFO - __main__ - CBRE timestamps - Today: 2025-04-01 04:00:00+00:00, Yesterday: 2025-03-31 04:00:00+00:00
+2025-04-01 21:47:53 - INFO - __main__ - INTC timestamps - Today: 2025-04-01 04:00:00+00:00, Yesterday: 2025-03-31 04:00:00+00:00
+2025-04-01 21:47:53 - INFO - __main__ - MMM timestamps - Today: 2025-04-01 04:00:00+00:00, Yesterday: 2025-03-31 04:00:00+00:00
+2025-04-01 21:47:53 - INFO - __main__ - HST timestamps - Today: 2025-04-01 04:00:00+00:00, Yesterday: 2025-03-31 04:00:00+00:00
+2025-04-01 21:47:53 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-01 21:47:53 - INFO - __main__ - Data issues encountered: 0
+2025-04-01 21:47:53 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-01 21:47:53 - INFO - __main__ - Analysis for market close on April 01, 2025
+2025-04-01 21:47:53 - INFO - __main__ - Found 503 stocks with price data
+2025-04-01 21:47:54 - INFO - __main__ - Found Wikipedia URL for VST: https://en.wikipedia.org/wiki/Vistra_Corp
+2025-04-01 21:47:56 - INFO - __main__ - Found Wikipedia URL for JNJ: https://en.wikipedia.org/wiki/Johnson_%26_Johnson
+2025-04-01 21:47:58 - INFO - __main__ - Analyzing top performer...
+2025-04-01 21:47:58 - INFO - __main__ - Analyzing Vistra Corp. (VST)
+2025-04-01 21:47:58 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-01 21:47:59 - INFO - __main__ - Searching for articles about VST
+2025-04-01 21:47:59 - INFO - __main__ - Searching for news about Vistra Corp.
+2025-04-01 21:47:59 - INFO - __main__ - Found 6 recent search results for Vistra Corp.
+2025-04-01 21:47:59 - INFO - __main__ - Found 6 URLs to try for VST
+2025-04-01 21:47:59 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/vistra-corp-stock-outperforms-competitors-on-strong-trading-day-3008e7c1-a903265e487a
+2025-04-01 21:47:59 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-01 21:47:59 - INFO - __main__ - Fetching content from: https://sg.finance.yahoo.com/news/vistra-corp-vst-trending-stock-130016961.html
+2025-04-01 21:48:00 - INFO - __main__ - Successfully extracted article content (5549 chars)
+2025-04-01 21:48:00 - INFO - __main__ - Fetching content from: https://www.zacks.com/stock/news/2437966/vistra-corp-vst-is-a-trending-stock-facts-to-know-before-betting-on-it?cid=CS-ZC-FT-tale_of_the_tape|most_searched_stocks-2437966
+2025-04-01 21:48:01 - INFO - __main__ - Successfully extracted article content (5341 chars)
+2025-04-01 21:48:01 - INFO - __main__ - Found total of 2 valid articles for VST
+2025-04-01 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:02 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-04-01 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:05 - INFO - __main__ - Top performer analysis complete
+2025-04-01 21:48:05 - INFO - __main__ - Analyzing bottom performer...
+2025-04-01 21:48:05 - INFO - __main__ - Analyzing Johnson & Johnson (JNJ)
+2025-04-01 21:48:05 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-01 21:48:05 - INFO - __main__ - Searching for articles about JNJ
+2025-04-01 21:48:05 - INFO - __main__ - Searching for news about Johnson & Johnson
+2025-04-01 21:48:05 - INFO - __main__ - Found 6 recent search results for Johnson & Johnson
+2025-04-01 21:48:05 - INFO - __main__ - Found 6 URLs to try for JNJ
+2025-04-01 21:48:05 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-johnson-johnson-stock-sinking-183812084.html
+2025-04-01 21:48:06 - INFO - __main__ - Successfully extracted article content (2407 chars)
+2025-04-01 21:48:06 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/johnson-johnson-stock-bankruptcy-talc-lawsuits/
+2025-04-01 21:48:06 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-04-01 21:48:06 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/jnj-stock-price-talc-reject-8f3538b8
+2025-04-01 21:48:06 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-01 21:48:06 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/healthcare-pharmaceuticals/jj-shares-fall-after-judge-rejects-10-billion-talc-settlement-2025-04-01/
+2025-04-01 21:48:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-01 21:48:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/j-j-shares-fall-judge-111105279.html
+2025-04-01 21:48:07 - INFO - __main__ - Successfully extracted article content (1966 chars)
+2025-04-01 21:48:07 - INFO - __main__ - Fetching content from: https://uk.finance.yahoo.com/news/tesla-moderna-newsmax-johnson-johnson-travis-perkins-trending-tickers-112716327.html
+2025-04-01 21:48:08 - INFO - __main__ - Successfully extracted article content (5563 chars)
+2025-04-01 21:48:08 - INFO - __main__ - Found total of 3 valid articles for JNJ
+2025-04-01 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:10 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-04-01 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-01 21:48:12 - INFO - __main__ - Bottom performer analysis complete
+2025-04-01 21:48:12 - INFO - __main__ - Saving results to JSON...
+2025-04-01 21:48:13 - INFO - __main__ - Analysis complete and saved to market_analysis.json
