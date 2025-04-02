@@ -1,0 +1,74 @@
+2025-04-02 21:47:45 - INFO - __main__ - Starting SP500 analysis script
+2025-04-02 21:47:45 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-02 21:47:46 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-02 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-04-02 21:47:46 - INFO - __main__ - Original start: 2025-04-01 16:00:00-04:00 (America/New_York)
+2025-04-02 21:47:46 - INFO - __main__ - Original end: 2025-04-02 16:00:00-04:00 (America/New_York)
+2025-04-02 21:47:46 - INFO - __main__ - UTC start: 2025-04-01 04:00:00+00:00
+2025-04-02 21:47:46 - INFO - __main__ - UTC end: 2025-04-03 04:00:00+00:00
+2025-04-02 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-02 21:47:47 - INFO - __main__ - Received data for 503 symbols
+2025-04-02 21:47:47 - INFO - __main__ - Sample data structure for HD:
+2025-04-02 21:47:47 - INFO - __main__ - Number of bars: 2
+2025-04-02 21:47:47 - INFO - __main__ - Bar timestamp: 2025-04-01 04:00:00+00:00 (UTC)
+2025-04-02 21:47:47 - INFO - __main__ - Bar timestamp: 2025-04-02 04:00:00+00:00 (UTC)
+2025-04-02 21:47:47 - INFO - __main__ - HD timestamps - Today: 2025-04-02 04:00:00+00:00, Yesterday: 2025-04-01 04:00:00+00:00
+2025-04-02 21:47:47 - INFO - __main__ - ROP timestamps - Today: 2025-04-02 04:00:00+00:00, Yesterday: 2025-04-01 04:00:00+00:00
+2025-04-02 21:47:47 - INFO - __main__ - STLD timestamps - Today: 2025-04-02 04:00:00+00:00, Yesterday: 2025-04-01 04:00:00+00:00
+2025-04-02 21:47:47 - INFO - __main__ - EL timestamps - Today: 2025-04-02 04:00:00+00:00, Yesterday: 2025-04-01 04:00:00+00:00
+2025-04-02 21:47:47 - INFO - __main__ - FANG timestamps - Today: 2025-04-02 04:00:00+00:00, Yesterday: 2025-04-01 04:00:00+00:00
+2025-04-02 21:47:47 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-02 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-04-02 21:47:47 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-02 21:47:47 - INFO - __main__ - Analysis for market close on April 02, 2025
+2025-04-02 21:47:47 - INFO - __main__ - Found 503 stocks with price data
+2025-04-02 21:47:48 - INFO - __main__ - Found Wikipedia URL for LDOS: https://en.wikipedia.org/wiki/Leidos
+2025-04-02 21:47:50 - INFO - __main__ - Found Wikipedia URL for HSY: https://en.wikipedia.org/wiki/The_Hershey_Company
+2025-04-02 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-04-02 21:47:52 - INFO - __main__ - Analyzing Leidos (LDOS)
+2025-04-02 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-02 21:47:52 - INFO - __main__ - Searching for articles about LDOS
+2025-04-02 21:47:52 - INFO - __main__ - Searching for news about Leidos
+2025-04-02 21:47:53 - INFO - __main__ - Found 6 recent search results for Leidos
+2025-04-02 21:47:53 - INFO - __main__ - Found 6 URLs to try for LDOS
+2025-04-02 21:47:53 - INFO - __main__ - Fetching content from: https://www.businessinsider.com/deloitte-doge-consulting-crackdown-contracts-cuts-big-four-2025-4
+2025-04-02 21:47:53 - INFO - __main__ - Successfully extracted article content (3742 chars)
+2025-04-02 21:47:53 - INFO - __main__ - Fetching content from: https://www.investors.com/news/elon-musk-doge-trump-white-house-advisor-step-down-spacex-defense-tesla-stock/
+2025-04-02 21:47:53 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-04-02 21:47:53 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/04/02/trade-war-immunity-these-stocks-make-most-of-their-sales-in-the-us.html
+2025-04-02 21:47:54 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-02 21:47:54 - INFO - __main__ - Successfully extracted article content (3460 chars)
+2025-04-02 21:47:54 - INFO - __main__ - Found total of 2 valid articles for LDOS
+2025-04-02 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-02 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-02 21:47:55 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-02 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-02 21:47:58 - INFO - __main__ - Top performer analysis complete
+2025-04-02 21:47:58 - INFO - __main__ - Analyzing bottom performer...
+2025-04-02 21:47:58 - INFO - __main__ - Analyzing Hershey Company (The) (HSY)
+2025-04-02 21:47:58 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-02 21:47:58 - INFO - __main__ - Searching for articles about HSY
+2025-04-02 21:47:58 - INFO - __main__ - Searching for news about Hershey Company (The)
+2025-04-02 21:47:59 - INFO - __main__ - Found 0 recent search results for Hershey Company (The)
+2025-04-02 21:47:59 - INFO - __main__ - Searching for news about HSY
+2025-04-02 21:47:59 - INFO - __main__ - Found 6 recent search results for HSY
+2025-04-02 21:47:59 - INFO - __main__ - Found 6 URLs to try for HSY
+2025-04-02 21:47:59 - INFO - __main__ - Fetching content from: https://www.prnewswire.com/news-releases/reeses-brand-pranked-fans-on-april-foolsnow-theyre-revealing-the-real-treat-pbj-big-cups-302417429.html
+2025-04-02 21:47:59 - INFO - __main__ - Successfully extracted article content (3531 chars)
+2025-04-02 21:47:59 - INFO - __main__ - Fetching content from: https://www.thestreet.com/retail/lowes-makes-a-major-costco-target-style-change
+2025-04-02 21:47:59 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-02 21:47:59 - INFO - __main__ - Fetching content from: https://www.thestreet.com/retail/costco-adds-to-food-court-menu-launches-new-house-brand-items
+2025-04-02 21:47:59 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-02 21:47:59 - INFO - __main__ - Fetching content from: https://www.thestreet.com/restaurants/popular-starbucks-rival-adding-1000-new-locations
+2025-04-02 21:47:59 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-02 21:47:59 - INFO - __main__ - Fetching content from: https://www.investing.com/news/cryptocurrency-news/could-tariffs-prove-to-be-a-bullish-factor-for-bitcoin-price-experts-weigh-in-3962616
+2025-04-02 21:47:59 - WARNING - __main__ - Article content too short (41 chars)
+2025-04-02 21:47:59 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/deutsche-bank-downgrades-altria-on-valuation-regulatory-risks-3963299
+2025-04-02 21:47:59 - WARNING - __main__ - Article content too short (41 chars)
+2025-04-02 21:47:59 - INFO - __main__ - Found total of 1 valid articles for HSY
+2025-04-02 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-02 21:48:00 - INFO - __main__ - Found 0 relevant articles out of 1 total
+2025-04-02 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-02 21:48:03 - INFO - __main__ - Bottom performer analysis complete
+2025-04-02 21:48:03 - INFO - __main__ - Saving results to JSON...
+2025-04-02 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
