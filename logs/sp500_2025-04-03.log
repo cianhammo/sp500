@@ -1,0 +1,66 @@
+2025-04-03 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-04-03 21:47:43 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-03 21:47:43 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-03 21:47:43 - INFO - __main__ - Runtime timezone: UTC
+2025-04-03 21:47:43 - INFO - __main__ - Original start: 2025-04-02 16:00:00-04:00 (America/New_York)
+2025-04-03 21:47:43 - INFO - __main__ - Original end: 2025-04-03 16:00:00-04:00 (America/New_York)
+2025-04-03 21:47:43 - INFO - __main__ - UTC start: 2025-04-02 04:00:00+00:00
+2025-04-03 21:47:43 - INFO - __main__ - UTC end: 2025-04-04 04:00:00+00:00
+2025-04-03 21:47:43 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-03 21:47:44 - INFO - __main__ - Received data for 503 symbols
+2025-04-03 21:47:44 - INFO - __main__ - Sample data structure for MTCH:
+2025-04-03 21:47:44 - INFO - __main__ - Number of bars: 2
+2025-04-03 21:47:44 - INFO - __main__ - Bar timestamp: 2025-04-02 04:00:00+00:00 (UTC)
+2025-04-03 21:47:44 - INFO - __main__ - Bar timestamp: 2025-04-03 04:00:00+00:00 (UTC)
+2025-04-03 21:47:44 - INFO - __main__ - MTCH timestamps - Today: 2025-04-03 04:00:00+00:00, Yesterday: 2025-04-02 04:00:00+00:00
+2025-04-03 21:47:44 - INFO - __main__ - PEP timestamps - Today: 2025-04-03 04:00:00+00:00, Yesterday: 2025-04-02 04:00:00+00:00
+2025-04-03 21:47:44 - INFO - __main__ - AMGN timestamps - Today: 2025-04-03 04:00:00+00:00, Yesterday: 2025-04-02 04:00:00+00:00
+2025-04-03 21:47:44 - INFO - __main__ - COF timestamps - Today: 2025-04-03 04:00:00+00:00, Yesterday: 2025-04-02 04:00:00+00:00
+2025-04-03 21:47:44 - INFO - __main__ - CRWD timestamps - Today: 2025-04-03 04:00:00+00:00, Yesterday: 2025-04-02 04:00:00+00:00
+2025-04-03 21:47:45 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-03 21:47:45 - INFO - __main__ - Data issues encountered: 0
+2025-04-03 21:47:45 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-03 21:47:45 - INFO - __main__ - Analysis for market close on April 03, 2025
+2025-04-03 21:47:45 - INFO - __main__ - Found 503 stocks with price data
+2025-04-03 21:47:45 - INFO - __main__ - Found Wikipedia URL for LW: https://en.wikipedia.org/wiki/Lamb_Weston
+2025-04-03 21:47:47 - INFO - __main__ - Found Wikipedia URL for DELL: https://en.wikipedia.org/wiki/Dell_Technologies
+2025-04-03 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-04-03 21:47:49 - INFO - __main__ - Analyzing Lamb Weston (LW)
+2025-04-03 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-03 21:47:50 - INFO - __main__ - Searching for articles about LW
+2025-04-03 21:47:50 - INFO - __main__ - Searching for news about Lamb Weston
+2025-04-03 21:47:50 - INFO - __main__ - Found 6 recent search results for Lamb Weston
+2025-04-03 21:47:50 - INFO - __main__ - Found 6 URLs to try for LW
+2025-04-03 21:47:50 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/lamb-weston-sba-communications-stocks-tariffs-0ed3e457
+2025-04-03 21:47:51 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-03 21:47:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-apple-target-lamb-weston-and-more-11708472
+2025-04-03 21:47:51 - INFO - __main__ - Successfully extracted article content (1288 chars)
+2025-04-03 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/medical-device-stocks-oil-futures-171557446.html
+2025-04-03 21:47:52 - INFO - __main__ - Successfully extracted article content (975 chars)
+2025-04-03 21:47:52 - INFO - __main__ - Found total of 2 valid articles for LW
+2025-04-03 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-03 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-03 21:47:53 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-04-03 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-03 21:47:56 - INFO - __main__ - Top performer analysis complete
+2025-04-03 21:47:56 - INFO - __main__ - Analyzing bottom performer...
+2025-04-03 21:47:56 - INFO - __main__ - Analyzing Dell Technologies (DELL)
+2025-04-03 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-03 21:47:56 - INFO - __main__ - Searching for articles about DELL
+2025-04-03 21:47:56 - INFO - __main__ - Searching for news about Dell Technologies
+2025-04-03 21:47:57 - INFO - __main__ - Found 6 recent search results for Dell Technologies
+2025-04-03 21:47:57 - INFO - __main__ - Found 6 URLs to try for DELL
+2025-04-03 21:47:57 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/dell-technologies-becomes-oversold
+2025-04-03 21:47:57 - INFO - __main__ - Successfully extracted article content (1387 chars)
+2025-04-03 21:47:57 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/how-dells-stock-performance-compared-other-technology-stocks
+2025-04-03 21:47:57 - INFO - __main__ - Successfully extracted article content (2732 chars)
+2025-04-03 21:47:57 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-04-03/smartphone-and-hardware-makers-caught-in-trump-s-tariff-storm
+2025-04-03 21:47:58 - INFO - __main__ - Successfully extracted article content (511 chars)
+2025-04-03 21:47:58 - INFO - __main__ - Found total of 2 valid articles for DELL
+2025-04-03 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-03 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-03 21:47:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-04-03 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-03 21:48:01 - INFO - __main__ - Bottom performer analysis complete
+2025-04-03 21:48:01 - INFO - __main__ - Saving results to JSON...
+2025-04-03 21:48:02 - INFO - __main__ - Analysis complete and saved to market_analysis.json
