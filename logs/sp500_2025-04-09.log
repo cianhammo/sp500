@@ -1,0 +1,75 @@
+2025-04-09 21:47:34 - INFO - __main__ - Starting SP500 analysis script
+2025-04-09 21:47:34 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-09 21:47:34 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-09 21:47:34 - INFO - __main__ - Runtime timezone: UTC
+2025-04-09 21:47:34 - INFO - __main__ - Original start: 2025-04-08 16:00:00-04:00 (America/New_York)
+2025-04-09 21:47:34 - INFO - __main__ - Original end: 2025-04-09 16:00:00-04:00 (America/New_York)
+2025-04-09 21:47:34 - INFO - __main__ - UTC start: 2025-04-08 04:00:00+00:00
+2025-04-09 21:47:34 - INFO - __main__ - UTC end: 2025-04-10 04:00:00+00:00
+2025-04-09 21:47:34 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-09 21:47:38 - INFO - __main__ - Received data for 503 symbols
+2025-04-09 21:47:38 - INFO - __main__ - Sample data structure for GIS:
+2025-04-09 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-04-09 21:47:38 - INFO - __main__ - Bar timestamp: 2025-04-08 04:00:00+00:00 (UTC)
+2025-04-09 21:47:38 - INFO - __main__ - Bar timestamp: 2025-04-09 04:00:00+00:00 (UTC)
+2025-04-09 21:47:38 - INFO - __main__ - GIS timestamps - Today: 2025-04-09 04:00:00+00:00, Yesterday: 2025-04-08 04:00:00+00:00
+2025-04-09 21:47:38 - INFO - __main__ - MET timestamps - Today: 2025-04-09 04:00:00+00:00, Yesterday: 2025-04-08 04:00:00+00:00
+2025-04-09 21:47:38 - INFO - __main__ - PNW timestamps - Today: 2025-04-09 04:00:00+00:00, Yesterday: 2025-04-08 04:00:00+00:00
+2025-04-09 21:47:38 - INFO - __main__ - APTV timestamps - Today: 2025-04-09 04:00:00+00:00, Yesterday: 2025-04-08 04:00:00+00:00
+2025-04-09 21:47:38 - INFO - __main__ - BLDR timestamps - Today: 2025-04-09 04:00:00+00:00, Yesterday: 2025-04-08 04:00:00+00:00
+2025-04-09 21:47:38 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-09 21:47:38 - INFO - __main__ - Data issues encountered: 0
+2025-04-09 21:47:38 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-09 21:47:38 - INFO - __main__ - Analysis for market close on April 09, 2025
+2025-04-09 21:47:38 - INFO - __main__ - Found 503 stocks with price data
+2025-04-09 21:47:38 - INFO - __main__ - Found Wikipedia URL for MCHP: https://en.wikipedia.org/wiki/Microchip_Technology
+2025-04-09 21:47:41 - INFO - __main__ - Found Wikipedia URL for DG: https://en.wikipedia.org/wiki/Dollar_General
+2025-04-09 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-04-09 21:47:43 - INFO - __main__ - Analyzing Microchip Technology (MCHP)
+2025-04-09 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-09 21:47:43 - INFO - __main__ - Searching for articles about MCHP
+2025-04-09 21:47:43 - INFO - __main__ - Searching for news about Microchip Technology
+2025-04-09 21:47:44 - INFO - __main__ - Found 6 recent search results for Microchip Technology
+2025-04-09 21:47:44 - INFO - __main__ - Found 6 URLs to try for MCHP
+2025-04-09 21:47:44 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/04/09/united-air-microchip-lead-stocks-posting-large-reversals-on-trump-tariff-pause.html
+2025-04-09 21:47:44 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-09 21:47:44 - INFO - __main__ - Successfully extracted article content (3782 chars)
+2025-04-09 21:47:44 - INFO - __main__ - Fetching content from: https://www.perplexity.ai/finance
+2025-04-09 21:47:44 - WARNING - __main__ - Article content too short (41 chars)
+2025-04-09 21:47:44 - INFO - __main__ - Fetching content from: https://www.benzinga.com/25/04/44720006/markets-take-off-as-trump-announces-90-day-tariff-pause-for-non-retaliating-nations-slaps-china-with-125-duty
+2025-04-09 21:47:44 - INFO - __main__ - Successfully extracted article content (3278 chars)
+2025-04-09 21:47:44 - INFO - __main__ - Found total of 2 valid articles for MCHP
+2025-04-09 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-09 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-09 21:47:46 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-09 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-09 21:47:48 - INFO - __main__ - Top performer analysis complete
+2025-04-09 21:47:48 - INFO - __main__ - Analyzing bottom performer...
+2025-04-09 21:47:48 - INFO - __main__ - Analyzing Dollar General (DG)
+2025-04-09 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-09 21:47:49 - INFO - __main__ - Searching for articles about DG
+2025-04-09 21:47:49 - INFO - __main__ - Searching for news about Dollar General
+2025-04-09 21:47:49 - INFO - __main__ - Found 6 recent search results for Dollar General
+2025-04-09 21:47:49 - INFO - __main__ - Found 6 URLs to try for DG
+2025-04-09 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/amd-downgraded-dollar-general-upgraded-133520598.html
+2025-04-09 21:47:50 - WARNING - __main__ - Article content too short (98 chars)
+2025-04-09 21:47:50 - INFO - __main__ - Fetching content from: https://news.ycombinator.com/item?id=43632459
+2025-04-09 21:47:50 - WARNING - __main__ - Article content too short (0 chars)
+2025-04-09 21:47:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/1-wall-street-favorite-stock-130304939.html
+2025-04-09 21:47:51 - INFO - __main__ - Successfully extracted article content (3920 chars)
+2025-04-09 21:47:51 - INFO - __main__ - Fetching content from: https://www.youtube.com/watch?v=lHULZV-Lcp8
+2025-04-09 21:47:51 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-09 21:47:51 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-04-09 21:47:51 - INFO - __main__ - Fetching content from: https://www.youtube.com/watch?v=HBeqqnaEfuA
+2025-04-09 21:47:52 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-09 21:47:52 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-04-09 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/shareholders-urged-transparency-policy-changes-182227569.html
+2025-04-09 21:47:53 - INFO - __main__ - Successfully extracted article content (3131 chars)
+2025-04-09 21:47:53 - INFO - __main__ - Found total of 2 valid articles for DG
+2025-04-09 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-09 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-09 21:47:54 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-09 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-09 21:47:56 - INFO - __main__ - Bottom performer analysis complete
+2025-04-09 21:47:56 - INFO - __main__ - Saving results to JSON...
+2025-04-09 21:47:56 - INFO - __main__ - Analysis complete and saved to market_analysis.json
