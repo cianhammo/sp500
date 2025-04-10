@@ -1,0 +1,75 @@
+2025-04-10 21:47:22 - INFO - __main__ - Starting SP500 analysis script
+2025-04-10 21:47:23 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-10 21:47:23 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-10 21:47:23 - INFO - __main__ - Runtime timezone: UTC
+2025-04-10 21:47:23 - INFO - __main__ - Original start: 2025-04-09 16:00:00-04:00 (America/New_York)
+2025-04-10 21:47:23 - INFO - __main__ - Original end: 2025-04-10 16:00:00-04:00 (America/New_York)
+2025-04-10 21:47:23 - INFO - __main__ - UTC start: 2025-04-09 04:00:00+00:00
+2025-04-10 21:47:23 - INFO - __main__ - UTC end: 2025-04-11 04:00:00+00:00
+2025-04-10 21:47:23 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-10 21:47:24 - INFO - __main__ - Received data for 503 symbols
+2025-04-10 21:47:24 - INFO - __main__ - Sample data structure for EIX:
+2025-04-10 21:47:24 - INFO - __main__ - Number of bars: 2
+2025-04-10 21:47:24 - INFO - __main__ - Bar timestamp: 2025-04-09 04:00:00+00:00 (UTC)
+2025-04-10 21:47:24 - INFO - __main__ - Bar timestamp: 2025-04-10 04:00:00+00:00 (UTC)
+2025-04-10 21:47:24 - INFO - __main__ - EIX timestamps - Today: 2025-04-10 04:00:00+00:00, Yesterday: 2025-04-09 04:00:00+00:00
+2025-04-10 21:47:24 - INFO - __main__ - GD timestamps - Today: 2025-04-10 04:00:00+00:00, Yesterday: 2025-04-09 04:00:00+00:00
+2025-04-10 21:47:24 - INFO - __main__ - HWM timestamps - Today: 2025-04-10 04:00:00+00:00, Yesterday: 2025-04-09 04:00:00+00:00
+2025-04-10 21:47:24 - INFO - __main__ - AVB timestamps - Today: 2025-04-10 04:00:00+00:00, Yesterday: 2025-04-09 04:00:00+00:00
+2025-04-10 21:47:24 - INFO - __main__ - BSX timestamps - Today: 2025-04-10 04:00:00+00:00, Yesterday: 2025-04-09 04:00:00+00:00
+2025-04-10 21:47:24 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-10 21:47:24 - INFO - __main__ - Data issues encountered: 0
+2025-04-10 21:47:24 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-10 21:47:24 - INFO - __main__ - Analysis for market close on April 10, 2025
+2025-04-10 21:47:24 - INFO - __main__ - Found 503 stocks with price data
+2025-04-10 21:47:25 - INFO - __main__ - Found Wikipedia URL for NEM: https://en.wikipedia.org/wiki/Newmont
+2025-04-10 21:47:27 - INFO - __main__ - Found Wikipedia URL for CRL: https://en.wikipedia.org/wiki/Charles_River_Laboratories
+2025-04-10 21:47:29 - INFO - __main__ - Analyzing top performer...
+2025-04-10 21:47:29 - INFO - __main__ - Analyzing Newmont (NEM)
+2025-04-10 21:47:29 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-10 21:47:29 - INFO - __main__ - Searching for articles about NEM
+2025-04-10 21:47:29 - INFO - __main__ - Searching for news about Newmont
+2025-04-10 21:47:29 - INFO - __main__ - Found 6 recent search results for Newmont
+2025-04-10 21:47:29 - INFO - __main__ - Found 6 URLs to try for NEM
+2025-04-10 21:47:29 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today04102025-11712593
+2025-04-10 21:47:39 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.investopedia.com', port=443): Read timed out. (read timeout=10)
+2025-04-10 21:47:39 - INFO - __main__ - Fetching content from: https://www.investors.com/news/gold-prices-gld-stock-gold-stocks/
+2025-04-10 21:47:40 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-04-10 21:47:40 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-carmax-tesla-nvidia-and-more-11712819
+2025-04-10 21:47:46 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-10 21:47:46 - WARNING - __main__ - Article content too short (23 chars)
+2025-04-10 21:47:46 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/04/10/asia-markets-live-trump-tariff-pause-rally.html
+2025-04-10 21:47:47 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-10 21:47:47 - INFO - __main__ - Successfully extracted article content (2819 chars)
+2025-04-10 21:47:47 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/stocks-soar-president-trump-pauses-reciprocal-tariffs
+2025-04-10 21:47:47 - INFO - __main__ - Successfully extracted article content (10961 chars)
+2025-04-10 21:47:47 - INFO - __main__ - Fetching content from: https://www.investors.com/news/economy/cpi-inflation-march-federal-reserve-jobless-claims-sp-500/
+2025-04-10 21:47:47 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-04-10 21:47:47 - INFO - __main__ - Found total of 2 valid articles for NEM
+2025-04-10 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:49 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-04-10 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-04-10 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-04-10 21:47:52 - INFO - __main__ - Analyzing Charles River Laboratories (CRL)
+2025-04-10 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-10 21:47:52 - INFO - __main__ - Searching for articles about CRL
+2025-04-10 21:47:52 - INFO - __main__ - Searching for news about Charles River Laboratories
+2025-04-10 21:47:52 - INFO - __main__ - Found 6 recent search results for Charles River Laboratories
+2025-04-10 21:47:52 - INFO - __main__ - Found 6 URLs to try for CRL
+2025-04-10 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oil-returns-losses-market-concerns-091846342.html
+2025-04-10 21:47:53 - INFO - __main__ - Successfully extracted article content (2629 chars)
+2025-04-10 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/apple-nvidia-meta-more-magnificent-162000781.html
+2025-04-10 21:47:53 - INFO - __main__ - Successfully extracted article content (2047 chars)
+2025-04-10 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/logitech-withdraws-fiscal-2026-outlook-201614081.html
+2025-04-10 21:47:54 - INFO - __main__ - Successfully extracted article content (1162 chars)
+2025-04-10 21:47:54 - INFO - __main__ - Found total of 3 valid articles for CRL
+2025-04-10 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:56 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-04-10 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-10 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-04-10 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-04-10 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
