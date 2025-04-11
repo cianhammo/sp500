@@ -1,0 +1,74 @@
+2025-04-11 21:47:31 - INFO - __main__ - Starting SP500 analysis script
+2025-04-11 21:47:31 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-11 21:47:32 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-11 21:47:32 - INFO - __main__ - Runtime timezone: UTC
+2025-04-11 21:47:32 - INFO - __main__ - Original start: 2025-04-10 16:00:00-04:00 (America/New_York)
+2025-04-11 21:47:32 - INFO - __main__ - Original end: 2025-04-11 16:00:00-04:00 (America/New_York)
+2025-04-11 21:47:32 - INFO - __main__ - UTC start: 2025-04-10 04:00:00+00:00
+2025-04-11 21:47:32 - INFO - __main__ - UTC end: 2025-04-12 04:00:00+00:00
+2025-04-11 21:47:32 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-11 21:47:34 - INFO - __main__ - Received data for 503 symbols
+2025-04-11 21:47:34 - INFO - __main__ - Sample data structure for NOW:
+2025-04-11 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-04-11 21:47:34 - INFO - __main__ - Bar timestamp: 2025-04-10 04:00:00+00:00 (UTC)
+2025-04-11 21:47:34 - INFO - __main__ - Bar timestamp: 2025-04-11 04:00:00+00:00 (UTC)
+2025-04-11 21:47:34 - INFO - __main__ - NOW timestamps - Today: 2025-04-11 04:00:00+00:00, Yesterday: 2025-04-10 04:00:00+00:00
+2025-04-11 21:47:34 - INFO - __main__ - PCAR timestamps - Today: 2025-04-11 04:00:00+00:00, Yesterday: 2025-04-10 04:00:00+00:00
+2025-04-11 21:47:34 - INFO - __main__ - SYK timestamps - Today: 2025-04-11 04:00:00+00:00, Yesterday: 2025-04-10 04:00:00+00:00
+2025-04-11 21:47:34 - INFO - __main__ - WM timestamps - Today: 2025-04-11 04:00:00+00:00, Yesterday: 2025-04-10 04:00:00+00:00
+2025-04-11 21:47:34 - INFO - __main__ - HBAN timestamps - Today: 2025-04-11 04:00:00+00:00, Yesterday: 2025-04-10 04:00:00+00:00
+2025-04-11 21:47:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-11 21:47:34 - INFO - __main__ - Data issues encountered: 0
+2025-04-11 21:47:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-11 21:47:34 - INFO - __main__ - Analysis for market close on April 11, 2025
+2025-04-11 21:47:34 - INFO - __main__ - Found 503 stocks with price data
+2025-04-11 21:47:34 - INFO - __main__ - Found Wikipedia URL for MPWR: https://en.wikipedia.org/wiki/Monolithic_Power_Systems
+2025-04-11 21:47:36 - INFO - __main__ - Found Wikipedia URL for TXN: https://en.wikipedia.org/wiki/Texas_Instruments
+2025-04-11 21:47:38 - INFO - __main__ - Analyzing top performer...
+2025-04-11 21:47:38 - INFO - __main__ - Analyzing Monolithic Power Systems (MPWR)
+2025-04-11 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-11 21:47:39 - INFO - __main__ - Searching for articles about MPWR
+2025-04-11 21:47:39 - INFO - __main__ - Searching for news about Monolithic Power Systems
+2025-04-11 21:47:39 - INFO - __main__ - Found 6 recent search results for Monolithic Power Systems
+2025-04-11 21:47:39 - INFO - __main__ - Found 6 URLs to try for MPWR
+2025-04-11 21:47:39 - INFO - __main__ - Fetching content from: https://www.investors.com/etfs-and-funds/sectors/sp500-u-s-stocks-are-at-chinas-mercy-you-likely-own-some-of-them/
+2025-04-11 21:47:39 - INFO - __main__ - Successfully extracted article content (3839 chars)
+2025-04-11 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/ai-chips-amd-powers-google-113737152.html
+2025-04-11 21:47:39 - INFO - __main__ - Successfully extracted article content (2089 chars)
+2025-04-11 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/monolithic-power-systems-inc-mpwr-122845708.html
+2025-04-11 21:47:40 - INFO - __main__ - Successfully extracted article content (8649 chars)
+2025-04-11 21:47:40 - INFO - __main__ - Found total of 3 valid articles for MPWR
+2025-04-11 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:42 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-04-11 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:45 - INFO - __main__ - Top performer analysis complete
+2025-04-11 21:47:45 - INFO - __main__ - Analyzing bottom performer...
+2025-04-11 21:47:45 - INFO - __main__ - Analyzing Texas Instruments (TXN)
+2025-04-11 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-11 21:47:45 - INFO - __main__ - Searching for articles about TXN
+2025-04-11 21:47:45 - INFO - __main__ - Searching for news about Texas Instruments
+2025-04-11 21:47:45 - INFO - __main__ - Found 6 recent search results for Texas Instruments
+2025-04-11 21:47:45 - INFO - __main__ - Found 6 URLs to try for TXN
+2025-04-11 21:47:45 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/texas-instruments-stock-price-chip-002cca49
+2025-04-11 21:47:45 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-11 21:47:45 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-newmont-texas-instruments-intel-and-more-11713617
+2025-04-11 21:47:46 - INFO - __main__ - Successfully extracted article content (1673 chars)
+2025-04-11 21:47:46 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-dbdf269c
+2025-04-11 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-11 21:47:46 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-04-11/texas-instruments-intel-sink-as-china-tariffs-hit-us-made-chips
+2025-04-11 21:47:46 - INFO - __main__ - Successfully extracted article content (411 chars)
+2025-04-11 21:47:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/gold-us-chipmakers-morgan-stanley-161704927.html
+2025-04-11 21:47:47 - INFO - __main__ - Successfully extracted article content (1070 chars)
+2025-04-11 21:47:47 - INFO - __main__ - Fetching content from: https://www.tomshardware.com/tech-industry/chinas-new-semiconductor-rule-spares-taiwan-fabs-punishes-intel-globalfoundries-and-texas-instruments
+2025-04-11 21:47:47 - INFO - __main__ - Successfully extracted article content (3581 chars)
+2025-04-11 21:47:47 - INFO - __main__ - Found total of 3 valid articles for TXN
+2025-04-11 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:49 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-04-11 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-11 21:47:51 - INFO - __main__ - Bottom performer analysis complete
+2025-04-11 21:47:51 - INFO - __main__ - Saving results to JSON...
+2025-04-11 21:47:52 - INFO - __main__ - Analysis complete and saved to market_analysis.json
