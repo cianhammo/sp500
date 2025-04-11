@@ -199,3 +199,67 @@
 2025-04-11 11:23:31,051 - sec_monitor - INFO - Generating final output...
 2025-04-11 11:23:31,051 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-04-11 11:23:31,052 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 582168, 'output_words': 712, 'filings_processed': 9}
+2025-04-11 12:38:41,172 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-04-11 12:38:41,172 - sec_monitor - INFO - Loading S&P 500 data...
+2025-04-11 12:38:41,172 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-04-11 12:38:41,173 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-04-11 12:38:41,173 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-04-11 12:38:41,173 - sec_monitor - INFO - Initializing components...
+2025-04-11 12:38:41,173 - sec_monitor - INFO - Initializing components
+2025-04-11 12:38:41,173 - sec_monitor - INFO - SEC fetcher initialized
+2025-04-11 12:38:41,173 - sec_monitor - INFO - Filing analyzer initialized
+2025-04-11 12:38:41,174 - sec_monitor - INFO - Alpaca clients initialized
+2025-04-11 12:38:41,174 - sec_monitor - INFO - All components initialized successfully
+2025-04-11 12:38:41,175 - sec_monitor - INFO - Found JSON file from today
+2025-04-11 12:38:41,175 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2025-04-11 12:38:41,175 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2025-04-11 12:38:41,175 - sec_monitor - INFO - Fetching SEC filings...
+2025-04-11 12:39:05,765 - sec_monitor - INFO - No more entries found
+2025-04-11 12:39:05,765 - sec_monitor - INFO - Completed fetching. Found 68 total filings
+2025-04-11 12:39:05,765 - sec_monitor - INFO - Found 2 new interesting filings
+2025-04-11 12:39:05,765 - sec_monitor - INFO - Found 2 new filings to process
+2025-04-11 12:39:05,766 - sec_monitor - INFO - Processing filing 1/2: WBD
+2025-04-11 12:39:41,010 - sec_monitor - INFO - ==================================================
+2025-04-11 12:39:41,010 - sec_monitor - INFO - Processing first chunk
+2025-04-11 12:39:41,010 - sec_monitor - INFO - Timestamp: 2025-04-11 12:39:41
+2025-04-11 12:39:41,645 - sec_monitor - INFO - token percentage = 50%
+2025-04-11 12:39:41,645 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-04-11 12:39:41,645 - sec_monitor - INFO - Timestamp: 2025-04-11 12:39:41
+2025-04-11 12:40:00,450 - sec_monitor - INFO - API call successful
+2025-04-11 12:40:30,480 - sec_monitor - INFO - ==================================================
+2025-04-11 12:40:30,481 - sec_monitor - INFO - Processing last chunk
+2025-04-11 12:40:30,481 - sec_monitor - INFO - Timestamp: 2025-04-11 12:40:30
+2025-04-11 12:40:30,607 - sec_monitor - INFO - token percentage = 4%
+2025-04-11 12:40:30,607 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-04-11 12:40:30,607 - sec_monitor - INFO - Timestamp: 2025-04-11 12:40:30
+2025-04-11 12:40:33,822 - sec_monitor - INFO - API call successful
+2025-04-11 12:40:33,823 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-04-11 12:40:33,823 - sec_monitor - INFO - Timestamp: 2025-04-11 12:40:33
+2025-04-11 12:40:34,779 - sec_monitor - INFO - Combine API call successful
+2025-04-11 12:40:35,780 - sec_monitor - INFO - Processing filing 2/2: FAST
+2025-04-11 12:41:06,947 - sec_monitor - INFO - ==================================================
+2025-04-11 12:41:06,947 - sec_monitor - INFO - Processing first chunk
+2025-04-11 12:41:06,947 - sec_monitor - INFO - Timestamp: 2025-04-11 12:41:06
+2025-04-11 12:41:07,177 - sec_monitor - INFO - token percentage = 6%
+2025-04-11 12:41:07,178 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-04-11 12:41:07,178 - sec_monitor - INFO - Timestamp: 2025-04-11 12:41:07
+2025-04-11 12:41:11,424 - sec_monitor - INFO - API call successful
+2025-04-11 12:41:12,425 - sec_monitor - INFO - Fetching supplementary data...
+2025-04-11 12:41:12,807 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-04-11 12:41:12,807 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-04-11 12:41:12,807 - sec_monitor - INFO - Market open: False
+2025-04-11 12:41:12,807 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-04-11 12:41:12,818 - sec_monitor - INFO - Last trading day: 2025-04-11
+2025-04-11 12:41:12,818 - sec_monitor - INFO - Processing ticker: WBD
+2025-04-11 12:41:13,173 - sec_monitor - INFO - Number of bars for WBD: 4
+2025-04-11 12:41:13,173 - sec_monitor - INFO - Last bar close for WBD: 8.1
+2025-04-11 12:41:13,173 - sec_monitor - INFO - Outside market hours price for WBD: 8.1
+2025-04-11 12:41:13,174 - sec_monitor - INFO - Processing ticker: FAST
+2025-04-11 12:41:13,199 - sec_monitor - INFO - Number of bars for FAST: 4
+2025-04-11 12:41:13,199 - sec_monitor - INFO - Last bar close for FAST: 75.8
+2025-04-11 12:41:13,199 - sec_monitor - INFO - Outside market hours price for FAST: 75.8
+2025-04-11 12:41:13,697 - sec_monitor - INFO - Generating final output...
+2025-04-11 12:41:13,698 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-04-11 12:41:13,698 - sec_monitor - INFO - Cumulative stats - Input words: 624807, Output words: 870
+2025-04-11 12:41:13,698 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-04-11 12:41:13,698 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 42639, 'output_words': 158, 'filings_processed': 2}
