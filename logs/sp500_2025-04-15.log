@@ -1,0 +1,75 @@
+2025-04-15 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-04-15 21:47:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-15 21:47:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-15 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-04-15 21:47:36 - INFO - __main__ - Original start: 2025-04-14 16:00:00-04:00 (America/New_York)
+2025-04-15 21:47:36 - INFO - __main__ - Original end: 2025-04-15 16:00:00-04:00 (America/New_York)
+2025-04-15 21:47:36 - INFO - __main__ - UTC start: 2025-04-14 04:00:00+00:00
+2025-04-15 21:47:36 - INFO - __main__ - UTC end: 2025-04-16 04:00:00+00:00
+2025-04-15 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-15 21:47:37 - INFO - __main__ - Received data for 503 symbols
+2025-04-15 21:47:37 - INFO - __main__ - Sample data structure for NWS:
+2025-04-15 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-04-15 21:47:37 - INFO - __main__ - Bar timestamp: 2025-04-14 04:00:00+00:00 (UTC)
+2025-04-15 21:47:37 - INFO - __main__ - Bar timestamp: 2025-04-15 04:00:00+00:00 (UTC)
+2025-04-15 21:47:37 - INFO - __main__ - NWS timestamps - Today: 2025-04-15 04:00:00+00:00, Yesterday: 2025-04-14 04:00:00+00:00
+2025-04-15 21:47:37 - INFO - __main__ - TSN timestamps - Today: 2025-04-15 04:00:00+00:00, Yesterday: 2025-04-14 04:00:00+00:00
+2025-04-15 21:47:37 - INFO - __main__ - CB timestamps - Today: 2025-04-15 04:00:00+00:00, Yesterday: 2025-04-14 04:00:00+00:00
+2025-04-15 21:47:37 - INFO - __main__ - DOV timestamps - Today: 2025-04-15 04:00:00+00:00, Yesterday: 2025-04-14 04:00:00+00:00
+2025-04-15 21:47:37 - INFO - __main__ - GM timestamps - Today: 2025-04-15 04:00:00+00:00, Yesterday: 2025-04-14 04:00:00+00:00
+2025-04-15 21:47:37 - INFO - __main__ - Successfully processed 502 stocks
+2025-04-15 21:47:37 - INFO - __main__ - Data issues encountered: 1
+2025-04-15 21:47:37 - INFO - __main__ - Sample of data issues:
+2025-04-15 21:47:37 - INFO - __main__ - TPL: Insufficient data points (1)
+2025-04-15 21:47:37 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-04-15 21:47:37 - INFO - __main__ - Analysis for market close on April 15, 2025
+2025-04-15 21:47:37 - INFO - __main__ - Found 502 stocks with price data
+2025-04-15 21:47:37 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-04-15 21:47:40 - INFO - __main__ - Found Wikipedia URL for ALB: https://en.wikipedia.org/wiki/Albemarle_Corporation
+2025-04-15 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-04-15 21:47:42 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-04-15 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-15 21:47:42 - INFO - __main__ - Searching for articles about PLTR
+2025-04-15 21:47:42 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-04-15 21:47:42 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-04-15 21:47:42 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-04-15 21:47:42 - INFO - __main__ - Fetching content from: https://www.investopedia.com/palantir-stock-extends-gains-after-nato-deal-11715614
+2025-04-15 21:47:42 - INFO - __main__ - Successfully extracted article content (379 chars)
+2025-04-15 21:47:42 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-technologies-inc-pltr-powers-172042868.html
+2025-04-15 21:47:43 - INFO - __main__ - Successfully extracted article content (4525 chars)
+2025-04-15 21:47:43 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/31885884/down-26-from-its-ytd-high-is-palantir-stock-a-buy-now
+2025-04-15 21:47:43 - INFO - __main__ - Successfully extracted article content (296 chars)
+2025-04-15 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-revenue-rises-29-2024-174724830.html
+2025-04-15 21:47:43 - INFO - __main__ - Successfully extracted article content (2972 chars)
+2025-04-15 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantirs-ai-enters-defense-spotlight-134024232.html
+2025-04-15 21:47:44 - INFO - __main__ - Successfully extracted article content (1022 chars)
+2025-04-15 21:47:44 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/pltr-quantitative-stock-analysis-83
+2025-04-15 21:47:44 - INFO - __main__ - Successfully extracted article content (2533 chars)
+2025-04-15 21:47:44 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-04-15 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:46 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-04-15 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:48 - INFO - __main__ - Top performer analysis complete
+2025-04-15 21:47:48 - INFO - __main__ - Analyzing bottom performer...
+2025-04-15 21:47:48 - INFO - __main__ - Analyzing Albemarle Corporation (ALB)
+2025-04-15 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-15 21:47:49 - INFO - __main__ - Searching for articles about ALB
+2025-04-15 21:47:49 - INFO - __main__ - Searching for news about Albemarle Corporation
+2025-04-15 21:47:49 - INFO - __main__ - Found 6 recent search results for Albemarle Corporation
+2025-04-15 21:47:49 - INFO - __main__ - Found 6 URLs to try for ALB
+2025-04-15 21:47:49 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/lobbying-update-530000-albemarle-corporation-lobbying-was-just-disclosed
+2025-04-15 21:47:49 - INFO - __main__ - Successfully extracted article content (4308 chars)
+2025-04-15 21:47:49 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/robert-w-baird-remains-a-hold-on-albemarle-alb-1034585443
+2025-04-15 21:47:50 - INFO - __main__ - Successfully extracted article content (659 chars)
+2025-04-15 21:47:50 - INFO - __main__ - Fetching content from: https://markets.businessinsider.com/news/stocks/albemarle-price-target-lowered-to-60-from-77-at-baird-1034585511
+2025-04-15 21:47:52 - INFO - __main__ - Successfully extracted article content (540 chars)
+2025-04-15 21:47:52 - INFO - __main__ - Found total of 2 valid articles for ALB
+2025-04-15 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:54 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-15 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-15 21:47:56 - INFO - __main__ - Bottom performer analysis complete
+2025-04-15 21:47:56 - INFO - __main__ - Saving results to JSON...
+2025-04-15 21:47:56 - INFO - __main__ - Analysis complete and saved to market_analysis.json
