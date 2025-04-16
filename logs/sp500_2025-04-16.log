@@ -1,0 +1,70 @@
+2025-04-16 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-04-16 21:47:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-16 21:47:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-16 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-04-16 21:47:36 - INFO - __main__ - Original start: 2025-04-15 16:00:00-04:00 (America/New_York)
+2025-04-16 21:47:36 - INFO - __main__ - Original end: 2025-04-16 16:00:00-04:00 (America/New_York)
+2025-04-16 21:47:36 - INFO - __main__ - UTC start: 2025-04-15 04:00:00+00:00
+2025-04-16 21:47:36 - INFO - __main__ - UTC end: 2025-04-17 04:00:00+00:00
+2025-04-16 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-16 21:47:37 - INFO - __main__ - Received data for 503 symbols
+2025-04-16 21:47:37 - INFO - __main__ - Sample data structure for TRGP:
+2025-04-16 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-04-16 21:47:37 - INFO - __main__ - Bar timestamp: 2025-04-15 04:00:00+00:00 (UTC)
+2025-04-16 21:47:37 - INFO - __main__ - Bar timestamp: 2025-04-16 04:00:00+00:00 (UTC)
+2025-04-16 21:47:37 - INFO - __main__ - TRGP timestamps - Today: 2025-04-16 04:00:00+00:00, Yesterday: 2025-04-15 04:00:00+00:00
+2025-04-16 21:47:37 - INFO - __main__ - VLTO timestamps - Today: 2025-04-16 04:00:00+00:00, Yesterday: 2025-04-15 04:00:00+00:00
+2025-04-16 21:47:37 - INFO - __main__ - WELL timestamps - Today: 2025-04-16 04:00:00+00:00, Yesterday: 2025-04-15 04:00:00+00:00
+2025-04-16 21:47:37 - INFO - __main__ - EPAM timestamps - Today: 2025-04-16 04:00:00+00:00, Yesterday: 2025-04-15 04:00:00+00:00
+2025-04-16 21:47:37 - INFO - __main__ - JBL timestamps - Today: 2025-04-16 04:00:00+00:00, Yesterday: 2025-04-15 04:00:00+00:00
+2025-04-16 21:47:37 - INFO - __main__ - Successfully processed 502 stocks
+2025-04-16 21:47:37 - INFO - __main__ - Data issues encountered: 1
+2025-04-16 21:47:37 - INFO - __main__ - Sample of data issues:
+2025-04-16 21:47:37 - INFO - __main__ - TPL: Processing error - float division by zero
+2025-04-16 21:47:37 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-04-16 21:47:38 - INFO - __main__ - Analysis for market close on April 16, 2025
+2025-04-16 21:47:38 - INFO - __main__ - Found 502 stocks with price data
+2025-04-16 21:47:38 - INFO - __main__ - Found Wikipedia URL for APA: https://en.wikipedia.org/wiki/APA_Corporation
+2025-04-16 21:47:40 - INFO - __main__ - Found Wikipedia URL for JBHT: https://en.wikipedia.org/wiki/J._B._Hunt
+2025-04-16 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-04-16 21:47:42 - INFO - __main__ - Analyzing APA Corporation (APA)
+2025-04-16 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-16 21:47:43 - INFO - __main__ - Searching for articles about APA
+2025-04-16 21:47:43 - INFO - __main__ - Searching for news about APA Corporation
+2025-04-16 21:47:43 - INFO - __main__ - Found 6 recent search results for APA Corporation
+2025-04-16 21:47:43 - INFO - __main__ - Found 6 URLs to try for APA
+2025-04-16 21:47:43 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/04/15/stock-market-today-live-updates.html
+2025-04-16 21:47:43 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-16 21:47:44 - INFO - __main__ - Successfully extracted article content (3032 chars)
+2025-04-16 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/apas-nasdaq-apa-dividend-0-113759968.html
+2025-04-16 21:47:44 - INFO - __main__ - Successfully extracted article content (3577 chars)
+2025-04-16 21:47:44 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4775497-apa-has-become-undervalued-considering-its-top-permian-assets-and-the-granmorgu-project
+2025-04-16 21:47:45 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-16 21:47:45 - WARNING - __main__ - Article content too short (0 chars)
+2025-04-16 21:47:45 - INFO - __main__ - Found total of 2 valid articles for APA
+2025-04-16 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-16 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-16 21:47:47 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-16 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-16 21:47:49 - INFO - __main__ - Top performer analysis complete
+2025-04-16 21:47:49 - INFO - __main__ - Analyzing bottom performer...
+2025-04-16 21:47:49 - INFO - __main__ - Analyzing J.B. Hunt (JBHT)
+2025-04-16 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-16 21:47:49 - INFO - __main__ - Searching for articles about JBHT
+2025-04-16 21:47:49 - INFO - __main__ - Searching for news about J.B. Hunt
+2025-04-16 21:47:49 - INFO - __main__ - Found 6 recent search results for J.B. Hunt
+2025-04-16 21:47:49 - INFO - __main__ - Found 6 URLs to try for JBHT
+2025-04-16 21:47:49 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/trade-war-earnings-jb-hunt-stock-61672ffb
+2025-04-16 21:47:50 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-16 21:47:50 - INFO - __main__ - Fetching content from: https://www.businessinsider.com/jbhunt-stock-earnings-us-freight-recession-truck-trump-trade-tariffs-2025-4
+2025-04-16 21:47:50 - INFO - __main__ - Successfully extracted article content (2263 chars)
+2025-04-16 21:47:50 - INFO - __main__ - Fetching content from: https://www.moneycontrol.com/news/business/markets/us-stock-markets-live-updates-dow-jones-nasdaq-s-p-500-16-april-2025-alpha-liveblog-12996086.html
+2025-04-16 21:47:51 - INFO - __main__ - Successfully extracted article content (1374 chars)
+2025-04-16 21:47:51 - INFO - __main__ - Found total of 2 valid articles for JBHT
+2025-04-16 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-16 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-16 21:47:52 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-16 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-16 21:47:54 - INFO - __main__ - Bottom performer analysis complete
+2025-04-16 21:47:54 - INFO - __main__ - Saving results to JSON...
+2025-04-16 21:47:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
