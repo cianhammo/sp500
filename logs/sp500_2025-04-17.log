@@ -1,0 +1,66 @@
+2025-04-17 21:47:33 - INFO - __main__ - Starting SP500 analysis script
+2025-04-17 21:47:34 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-17 21:47:34 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-17 21:47:34 - INFO - __main__ - Runtime timezone: UTC
+2025-04-17 21:47:34 - INFO - __main__ - Original start: 2025-04-16 16:00:00-04:00 (America/New_York)
+2025-04-17 21:47:34 - INFO - __main__ - Original end: 2025-04-17 16:00:00-04:00 (America/New_York)
+2025-04-17 21:47:34 - INFO - __main__ - UTC start: 2025-04-16 04:00:00+00:00
+2025-04-17 21:47:34 - INFO - __main__ - UTC end: 2025-04-18 04:00:00+00:00
+2025-04-17 21:47:34 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-17 21:47:36 - INFO - __main__ - Received data for 503 symbols
+2025-04-17 21:47:36 - INFO - __main__ - Sample data structure for GD:
+2025-04-17 21:47:36 - INFO - __main__ - Number of bars: 2
+2025-04-17 21:47:36 - INFO - __main__ - Bar timestamp: 2025-04-16 04:00:00+00:00 (UTC)
+2025-04-17 21:47:36 - INFO - __main__ - Bar timestamp: 2025-04-17 04:00:00+00:00 (UTC)
+2025-04-17 21:47:36 - INFO - __main__ - GD timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-17 21:47:36 - INFO - __main__ - O timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-17 21:47:36 - INFO - __main__ - TER timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-17 21:47:36 - INFO - __main__ - ETR timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-17 21:47:36 - INFO - __main__ - AON timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-17 21:47:36 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-17 21:47:36 - INFO - __main__ - Data issues encountered: 0
+2025-04-17 21:47:36 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-17 21:47:36 - INFO - __main__ - Analysis for market close on April 17, 2025
+2025-04-17 21:47:36 - INFO - __main__ - Found 503 stocks with price data
+2025-04-17 21:47:36 - INFO - __main__ - Found Wikipedia URL for LLY: https://en.wikipedia.org/wiki/Eli_Lilly_and_Company
+2025-04-17 21:47:38 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-04-17 21:47:40 - INFO - __main__ - Analyzing top performer...
+2025-04-17 21:47:40 - INFO - __main__ - Analyzing Lilly (Eli) (LLY)
+2025-04-17 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-17 21:47:41 - INFO - __main__ - Searching for articles about LLY
+2025-04-17 21:47:41 - INFO - __main__ - Searching for news about Lilly (Eli)
+2025-04-17 21:47:42 - INFO - __main__ - Found 6 recent search results for Lilly (Eli)
+2025-04-17 21:47:42 - INFO - __main__ - Found 6 URLs to try for LLY
+2025-04-17 21:47:42 - INFO - __main__ - Fetching content from: https://www.stocktitan.net/news/LLY/lilly-s-oral-glp-1-orforglipron-demonstrated-statistically-p1afx0spcdn9.html
+2025-04-17 21:47:42 - INFO - __main__ - Successfully extracted article content (12294 chars)
+2025-04-17 21:47:42 - INFO - __main__ - Fetching content from: https://www.stocktitan.net/news/LLY/lilly-confirms-date-and-conference-call-for-first-quarter-2025-mdaq729rjycu.html
+2025-04-17 21:47:43 - INFO - __main__ - Successfully extracted article content (2805 chars)
+2025-04-17 21:47:43 - INFO - __main__ - Fetching content from: https://www.pharmalive.com/lilly-skyrockets-on-injectable-like-efficacy-for-oral-glp-1-in-phase-iii-diabetes-trial/
+2025-04-17 21:47:43 - WARNING - __main__ - Article content too short (41 chars)
+2025-04-17 21:47:43 - INFO - __main__ - Found total of 2 valid articles for LLY
+2025-04-17 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-17 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-17 21:47:45 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-17 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-17 21:47:47 - INFO - __main__ - Top performer analysis complete
+2025-04-17 21:47:47 - INFO - __main__ - Analyzing bottom performer...
+2025-04-17 21:47:47 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-04-17 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-17 21:47:48 - INFO - __main__ - Searching for articles about UNH
+2025-04-17 21:47:48 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-04-17 21:47:49 - INFO - __main__ - Found 6 recent search results for UnitedHealth Group
+2025-04-17 21:47:49 - INFO - __main__ - Found 6 URLs to try for UNH
+2025-04-17 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/unitedhealth-stock-is-crushing-the-dow-heres-the-math-behind-the-slide-182139643.html
+2025-04-17 21:47:49 - INFO - __main__ - Successfully extracted article content (4467 chars)
+2025-04-17 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/unitedhealth-stock-craters-as-ceo-calls-disappointing-results-unusual-and-unacceptable-131137884.html
+2025-04-17 21:47:50 - INFO - __main__ - Successfully extracted article content (4360 chars)
+2025-04-17 21:47:50 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/united-health-unh-earnings-stock-price-b66e5659
+2025-04-17 21:47:50 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-17 21:47:50 - INFO - __main__ - Found total of 2 valid articles for UNH
+2025-04-17 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-17 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-17 21:47:51 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-04-17 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-17 21:47:54 - INFO - __main__ - Bottom performer analysis complete
+2025-04-17 21:47:54 - INFO - __main__ - Saving results to JSON...
+2025-04-17 21:47:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
