@@ -1,0 +1,69 @@
+2025-04-18 21:47:27 - INFO - __main__ - Starting SP500 analysis script
+2025-04-18 21:47:27 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-18 21:47:28 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-18 21:47:28 - INFO - __main__ - Runtime timezone: UTC
+2025-04-18 21:47:28 - INFO - __main__ - Original start: 2025-04-16 16:00:00-04:00 (America/New_York)
+2025-04-18 21:47:28 - INFO - __main__ - Original end: 2025-04-17 16:00:00-04:00 (America/New_York)
+2025-04-18 21:47:28 - INFO - __main__ - UTC start: 2025-04-16 04:00:00+00:00
+2025-04-18 21:47:28 - INFO - __main__ - UTC end: 2025-04-18 04:00:00+00:00
+2025-04-18 21:47:28 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-18 21:47:29 - INFO - __main__ - Received data for 503 symbols
+2025-04-18 21:47:29 - INFO - __main__ - Sample data structure for BAC:
+2025-04-18 21:47:29 - INFO - __main__ - Number of bars: 2
+2025-04-18 21:47:29 - INFO - __main__ - Bar timestamp: 2025-04-16 04:00:00+00:00 (UTC)
+2025-04-18 21:47:29 - INFO - __main__ - Bar timestamp: 2025-04-17 04:00:00+00:00 (UTC)
+2025-04-18 21:47:29 - INFO - __main__ - BAC timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-18 21:47:29 - INFO - __main__ - FCX timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-18 21:47:29 - INFO - __main__ - RJF timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-18 21:47:29 - INFO - __main__ - T timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-18 21:47:29 - INFO - __main__ - EXPE timestamps - Today: 2025-04-17 04:00:00+00:00, Yesterday: 2025-04-16 04:00:00+00:00
+2025-04-18 21:47:29 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-18 21:47:29 - INFO - __main__ - Data issues encountered: 0
+2025-04-18 21:47:29 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-18 21:47:29 - INFO - __main__ - Analysis for market close on April 17, 2025
+2025-04-18 21:47:29 - INFO - __main__ - Found 503 stocks with price data
+2025-04-18 21:47:30 - INFO - __main__ - Found Wikipedia URL for LLY: https://en.wikipedia.org/wiki/Eli_Lilly_and_Company
+2025-04-18 21:47:32 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-04-18 21:47:34 - INFO - __main__ - Analyzing top performer...
+2025-04-18 21:47:34 - INFO - __main__ - Analyzing Lilly (Eli) (LLY)
+2025-04-18 21:47:34 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-18 21:47:34 - INFO - __main__ - Searching for articles about LLY
+2025-04-18 21:47:34 - INFO - __main__ - Searching for news about Lilly (Eli)
+2025-04-18 21:47:34 - INFO - __main__ - Found 2 recent search results for Lilly (Eli)
+2025-04-18 21:47:34 - INFO - __main__ - Found 2 URLs to try for LLY
+2025-04-18 21:47:34 - INFO - __main__ - Fetching content from: https://finviz.com/news/26726/eli-lilly-and-company-lly-one-of-the-best-long-term-stocks-to-buy-according-to-billionaires
+2025-04-18 21:47:35 - INFO - __main__ - Successfully extracted article content (6262 chars)
+2025-04-18 21:47:35 - INFO - __main__ - Fetching content from: https://www.fishbowlapp.com/post/for-all-those-claiming-that-ice-will-only-be-picking-up-undocumented-immigrants-i-present-this-kafkaesque-nightmare
+2025-04-18 21:47:35 - WARNING - __main__ - Article content too short (41 chars)
+2025-04-18 21:47:35 - INFO - __main__ - Found total of 1 valid articles for LLY
+2025-04-18 21:47:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-18 21:47:35 - INFO - __main__ - Found 1 relevant articles out of 1 total
+2025-04-18 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-18 21:47:38 - INFO - __main__ - Top performer analysis complete
+2025-04-18 21:47:38 - INFO - __main__ - Analyzing bottom performer...
+2025-04-18 21:47:38 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-04-18 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-18 21:47:38 - INFO - __main__ - Searching for articles about UNH
+2025-04-18 21:47:38 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-04-18 21:47:38 - INFO - __main__ - Found 6 recent search results for UnitedHealth Group
+2025-04-18 21:47:38 - INFO - __main__ - Found 6 URLs to try for UNH
+2025-04-18 21:47:38 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/healthcare-pharmaceuticals/unitedhealth-was-reliable-earnings-performer-until-its-shocking-thursday-results-2025-04-17/
+2025-04-18 21:47:39 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-18 21:47:39 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/unitedhealth-stock-unh-dow-trump-medicare-advantage-60b244fd
+2025-04-18 21:47:39 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-18 21:47:39 - INFO - __main__ - Fetching content from: https://www.politico.com/newsletters/politico-pulse/2025/04/18/medicare-advantage-state-of-play-00296990
+2025-04-18 21:47:39 - WARNING - __main__ - Article content too short (41 chars)
+2025-04-18 21:47:39 - INFO - __main__ - Fetching content from: https://www.foxbusiness.com/sports/wwe-legend-hulk-hogans-real-american-beer-launches-walmart-less-than-1-year-after-launch
+2025-04-18 21:47:39 - INFO - __main__ - Successfully extracted article content (2647 chars)
+2025-04-18 21:47:39 - INFO - __main__ - Fetching content from: https://6abc.com/post/is-us-stock-market-open-good-friday-asian-markets-are-mostly-higher-wall-street-stuck-trade-war-doldrums/16196308/
+2025-04-18 21:47:40 - INFO - __main__ - Successfully extracted article content (4693 chars)
+2025-04-18 21:47:40 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-netflix-earnings-palantir-mercadolibre/
+2025-04-18 21:47:40 - INFO - __main__ - Successfully extracted article content (368 chars)
+2025-04-18 21:47:40 - INFO - __main__ - Found total of 2 valid articles for UNH
+2025-04-18 21:47:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-18 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-18 21:47:41 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-18 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-18 21:47:44 - INFO - __main__ - Bottom performer analysis complete
+2025-04-18 21:47:44 - INFO - __main__ - Saving results to JSON...
+2025-04-18 21:47:44 - INFO - __main__ - Analysis complete and saved to market_analysis.json
