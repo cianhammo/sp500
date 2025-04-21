@@ -1,0 +1,68 @@
+2025-04-21 21:47:31 - INFO - __main__ - Starting SP500 analysis script
+2025-04-21 21:47:31 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-21 21:47:32 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-21 21:47:32 - INFO - __main__ - Runtime timezone: UTC
+2025-04-21 21:47:32 - INFO - __main__ - Original start: 2025-04-17 16:00:00-04:00 (America/New_York)
+2025-04-21 21:47:32 - INFO - __main__ - Original end: 2025-04-21 16:00:00-04:00 (America/New_York)
+2025-04-21 21:47:32 - INFO - __main__ - UTC start: 2025-04-17 04:00:00+00:00
+2025-04-21 21:47:32 - INFO - __main__ - UTC end: 2025-04-22 04:00:00+00:00
+2025-04-21 21:47:32 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-21 21:47:33 - INFO - __main__ - Received data for 503 symbols
+2025-04-21 21:47:33 - INFO - __main__ - Sample data structure for INTC:
+2025-04-21 21:47:33 - INFO - __main__ - Number of bars: 2
+2025-04-21 21:47:33 - INFO - __main__ - Bar timestamp: 2025-04-17 04:00:00+00:00 (UTC)
+2025-04-21 21:47:33 - INFO - __main__ - Bar timestamp: 2025-04-21 04:00:00+00:00 (UTC)
+2025-04-21 21:47:33 - INFO - __main__ - INTC timestamps - Today: 2025-04-21 04:00:00+00:00, Yesterday: 2025-04-17 04:00:00+00:00
+2025-04-21 21:47:33 - INFO - __main__ - UBER timestamps - Today: 2025-04-21 04:00:00+00:00, Yesterday: 2025-04-17 04:00:00+00:00
+2025-04-21 21:47:33 - INFO - __main__ - CMS timestamps - Today: 2025-04-21 04:00:00+00:00, Yesterday: 2025-04-17 04:00:00+00:00
+2025-04-21 21:47:33 - INFO - __main__ - DASH timestamps - Today: 2025-04-21 04:00:00+00:00, Yesterday: 2025-04-17 04:00:00+00:00
+2025-04-21 21:47:33 - INFO - __main__ - ERIE timestamps - Today: 2025-04-21 04:00:00+00:00, Yesterday: 2025-04-17 04:00:00+00:00
+2025-04-21 21:47:33 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-21 21:47:33 - INFO - __main__ - Data issues encountered: 0
+2025-04-21 21:47:33 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-21 21:47:33 - INFO - __main__ - Analysis for market close on April 21, 2025
+2025-04-21 21:47:33 - INFO - __main__ - Found 503 stocks with price data
+2025-04-21 21:47:34 - INFO - __main__ - Found Wikipedia URL for DFS: https://en.wikipedia.org/wiki/Discover_Financial
+2025-04-21 21:47:36 - INFO - __main__ - Found Wikipedia URL for UHS: https://en.wikipedia.org/wiki/Universal_Health_Services
+2025-04-21 21:47:38 - INFO - __main__ - Analyzing top performer...
+2025-04-21 21:47:38 - INFO - __main__ - Analyzing Discover Financial (DFS)
+2025-04-21 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-21 21:47:39 - INFO - __main__ - Searching for articles about DFS
+2025-04-21 21:47:39 - INFO - __main__ - Searching for news about Discover Financial
+2025-04-21 21:47:39 - INFO - __main__ - Found 6 recent search results for Discover Financial
+2025-04-21 21:47:39 - INFO - __main__ - Found 6 URLs to try for DFS
+2025-04-21 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/capital-one-stock-surges-discover-113403395.html
+2025-04-21 21:47:39 - INFO - __main__ - Successfully extracted article content (1727 chars)
+2025-04-21 21:47:39 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/04/21/what-the-discover-merger-approval-means-for-capital-one-and-2-other-financials.html
+2025-04-21 21:47:40 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-21 21:47:40 - INFO - __main__ - Successfully extracted article content (6196 chars)
+2025-04-21 21:47:40 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/capital-one-discover-stock-price-merger-banks-45b00e88
+2025-04-21 21:47:40 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-21 21:47:40 - INFO - __main__ - Found total of 2 valid articles for DFS
+2025-04-21 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:41 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-04-21 21:47:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:43 - INFO - __main__ - Top performer analysis complete
+2025-04-21 21:47:43 - INFO - __main__ - Analyzing bottom performer...
+2025-04-21 21:47:43 - INFO - __main__ - Analyzing Universal Health Services (UHS)
+2025-04-21 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-21 21:47:44 - INFO - __main__ - Searching for articles about UHS
+2025-04-21 21:47:44 - INFO - __main__ - Searching for news about Universal Health Services
+2025-04-21 21:47:44 - INFO - __main__ - Found 6 recent search results for Universal Health Services
+2025-04-21 21:47:44 - INFO - __main__ - Found 6 URLs to try for UHS
+2025-04-21 21:47:44 - INFO - __main__ - Fetching content from: https://www.moneycontrol.com/news/business/markets/us-stock-markets-live-updates-dow-jones-nasdaq-s-p-500-21-april-2025-2-alpha-liveblog-13000092.html
+2025-04-21 21:47:45 - INFO - __main__ - Successfully extracted article content (1251 chars)
+2025-04-21 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/unitedhealthcare-the-bad-news-continues-after-last-weeks-disastrous-earnings-report-173456853.html
+2025-04-21 21:47:46 - INFO - __main__ - Successfully extracted article content (2073 chars)
+2025-04-21 21:47:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/capital-one-stock-surges-discover-113403395.html
+2025-04-21 21:47:46 - INFO - __main__ - Successfully extracted article content (1727 chars)
+2025-04-21 21:47:46 - INFO - __main__ - Found total of 3 valid articles for UHS
+2025-04-21 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:48 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-04-21 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-21 21:47:51 - INFO - __main__ - Bottom performer analysis complete
+2025-04-21 21:47:51 - INFO - __main__ - Saving results to JSON...
+2025-04-21 21:47:51 - INFO - __main__ - Analysis complete and saved to market_analysis.json
