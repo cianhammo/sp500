@@ -1,0 +1,67 @@
+2025-04-22 21:47:19 - INFO - __main__ - Starting SP500 analysis script
+2025-04-22 21:47:19 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-22 21:47:20 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-22 21:47:20 - INFO - __main__ - Runtime timezone: UTC
+2025-04-22 21:47:20 - INFO - __main__ - Original start: 2025-04-21 16:00:00-04:00 (America/New_York)
+2025-04-22 21:47:20 - INFO - __main__ - Original end: 2025-04-22 16:00:00-04:00 (America/New_York)
+2025-04-22 21:47:20 - INFO - __main__ - UTC start: 2025-04-21 04:00:00+00:00
+2025-04-22 21:47:20 - INFO - __main__ - UTC end: 2025-04-23 04:00:00+00:00
+2025-04-22 21:47:20 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-22 21:47:22 - INFO - __main__ - Received data for 503 symbols
+2025-04-22 21:47:22 - INFO - __main__ - Sample data structure for IP:
+2025-04-22 21:47:22 - INFO - __main__ - Number of bars: 2
+2025-04-22 21:47:22 - INFO - __main__ - Bar timestamp: 2025-04-21 04:00:00+00:00 (UTC)
+2025-04-22 21:47:22 - INFO - __main__ - Bar timestamp: 2025-04-22 04:00:00+00:00 (UTC)
+2025-04-22 21:47:22 - INFO - __main__ - IP timestamps - Today: 2025-04-22 04:00:00+00:00, Yesterday: 2025-04-21 04:00:00+00:00
+2025-04-22 21:47:22 - INFO - __main__ - MPC timestamps - Today: 2025-04-22 04:00:00+00:00, Yesterday: 2025-04-21 04:00:00+00:00
+2025-04-22 21:47:22 - INFO - __main__ - NWSA timestamps - Today: 2025-04-22 04:00:00+00:00, Yesterday: 2025-04-21 04:00:00+00:00
+2025-04-22 21:47:22 - INFO - __main__ - VMC timestamps - Today: 2025-04-22 04:00:00+00:00, Yesterday: 2025-04-21 04:00:00+00:00
+2025-04-22 21:47:22 - INFO - __main__ - EXPE timestamps - Today: 2025-04-22 04:00:00+00:00, Yesterday: 2025-04-21 04:00:00+00:00
+2025-04-22 21:47:22 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-22 21:47:22 - INFO - __main__ - Data issues encountered: 0
+2025-04-22 21:47:22 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-22 21:47:22 - INFO - __main__ - Analysis for market close on April 22, 2025
+2025-04-22 21:47:22 - INFO - __main__ - Found 503 stocks with price data
+2025-04-22 21:47:22 - INFO - __main__ - Found Wikipedia URL for EFX: https://en.wikipedia.org/wiki/Equifax
+2025-04-22 21:47:25 - INFO - __main__ - Found Wikipedia URL for NOC: https://en.wikipedia.org/wiki/Northrop_Grumman
+2025-04-22 21:47:27 - INFO - __main__ - Analyzing top performer...
+2025-04-22 21:47:27 - INFO - __main__ - Analyzing Equifax (EFX)
+2025-04-22 21:47:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-22 21:47:27 - INFO - __main__ - Searching for articles about EFX
+2025-04-22 21:47:27 - INFO - __main__ - Searching for news about Equifax
+2025-04-22 21:47:27 - INFO - __main__ - Found 6 recent search results for Equifax
+2025-04-22 21:47:27 - INFO - __main__ - Found 6 URLs to try for EFX
+2025-04-22 21:47:27 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-3m-tesla-equifax-and-more-11719665
+2025-04-22 21:47:27 - INFO - __main__ - Successfully extracted article content (1933 chars)
+2025-04-22 21:47:27 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/top-stock-movers-now-3m-155906810.html
+2025-04-22 21:47:28 - INFO - __main__ - Successfully extracted article content (1986 chars)
+2025-04-22 21:47:28 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/equifaxs-quarterly-profit-lifted-better-122251473.html
+2025-04-22 21:47:28 - INFO - __main__ - Successfully extracted article content (1811 chars)
+2025-04-22 21:47:28 - INFO - __main__ - Found total of 3 valid articles for EFX
+2025-04-22 21:47:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:30 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-04-22 21:47:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:32 - INFO - __main__ - Top performer analysis complete
+2025-04-22 21:47:32 - INFO - __main__ - Analyzing bottom performer...
+2025-04-22 21:47:32 - INFO - __main__ - Analyzing Northrop Grumman (NOC)
+2025-04-22 21:47:32 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-22 21:47:32 - INFO - __main__ - Searching for articles about NOC
+2025-04-22 21:47:32 - INFO - __main__ - Searching for news about Northrop Grumman
+2025-04-22 21:47:33 - INFO - __main__ - Found 6 recent search results for Northrop Grumman
+2025-04-22 21:47:33 - INFO - __main__ - Found 6 URLs to try for NOC
+2025-04-22 21:47:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-northrop-grumman-stock-plummeting-164608222.html
+2025-04-22 21:47:33 - INFO - __main__ - Successfully extracted article content (3375 chars)
+2025-04-22 21:47:34 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/northrop-grumman-earnings-stock-price-bf7a1988
+2025-04-22 21:47:34 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-22 21:47:34 - INFO - __main__ - Fetching content from: https://investor.northropgrumman.com/static-files/07bc8da8-0898-42d2-ad68-bd5ac592a204
+2025-04-22 21:47:35 - INFO - __main__ - Successfully extracted article content (11143 chars)
+2025-04-22 21:47:35 - INFO - __main__ - Found total of 2 valid articles for NOC
+2025-04-22 21:47:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:38 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-04-22 21:47:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-22 21:47:40 - INFO - __main__ - Bottom performer analysis complete
+2025-04-22 21:47:40 - INFO - __main__ - Saving results to JSON...
+2025-04-22 21:47:40 - INFO - __main__ - Analysis complete and saved to market_analysis.json
