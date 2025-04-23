@@ -1,0 +1,68 @@
+2025-04-23 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-04-23 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-23 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-23 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-04-23 21:47:44 - INFO - __main__ - Original start: 2025-04-22 16:00:00-04:00 (America/New_York)
+2025-04-23 21:47:44 - INFO - __main__ - Original end: 2025-04-23 16:00:00-04:00 (America/New_York)
+2025-04-23 21:47:44 - INFO - __main__ - UTC start: 2025-04-22 04:00:00+00:00
+2025-04-23 21:47:44 - INFO - __main__ - UTC end: 2025-04-24 04:00:00+00:00
+2025-04-23 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-23 21:47:46 - INFO - __main__ - Received data for 503 symbols
+2025-04-23 21:47:46 - INFO - __main__ - Sample data structure for INTU:
+2025-04-23 21:47:46 - INFO - __main__ - Number of bars: 2
+2025-04-23 21:47:46 - INFO - __main__ - Bar timestamp: 2025-04-22 04:00:00+00:00 (UTC)
+2025-04-23 21:47:46 - INFO - __main__ - Bar timestamp: 2025-04-23 04:00:00+00:00 (UTC)
+2025-04-23 21:47:46 - INFO - __main__ - INTU timestamps - Today: 2025-04-23 04:00:00+00:00, Yesterday: 2025-04-22 04:00:00+00:00
+2025-04-23 21:47:46 - INFO - __main__ - NVR timestamps - Today: 2025-04-23 04:00:00+00:00, Yesterday: 2025-04-22 04:00:00+00:00
+2025-04-23 21:47:46 - INFO - __main__ - ORCL timestamps - Today: 2025-04-23 04:00:00+00:00, Yesterday: 2025-04-22 04:00:00+00:00
+2025-04-23 21:47:46 - INFO - __main__ - WBA timestamps - Today: 2025-04-23 04:00:00+00:00, Yesterday: 2025-04-22 04:00:00+00:00
+2025-04-23 21:47:46 - INFO - __main__ - CPRT timestamps - Today: 2025-04-23 04:00:00+00:00, Yesterday: 2025-04-22 04:00:00+00:00
+2025-04-23 21:47:46 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-23 21:47:46 - INFO - __main__ - Data issues encountered: 0
+2025-04-23 21:47:46 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-23 21:47:46 - INFO - __main__ - Analysis for market close on April 23, 2025
+2025-04-23 21:47:46 - INFO - __main__ - Found 503 stocks with price data
+2025-04-23 21:47:46 - INFO - __main__ - Found Wikipedia URL for APH: https://en.wikipedia.org/wiki/Amphenol
+2025-04-23 21:47:48 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-04-23 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-04-23 21:47:50 - INFO - __main__ - Analyzing Amphenol (APH)
+2025-04-23 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-23 21:47:50 - INFO - __main__ - Searching for articles about APH
+2025-04-23 21:47:50 - INFO - __main__ - Searching for news about Amphenol
+2025-04-23 21:47:51 - INFO - __main__ - Found 6 recent search results for Amphenol
+2025-04-23 21:47:51 - INFO - __main__ - Found 6 URLs to try for APH
+2025-04-23 21:47:51 - INFO - __main__ - Fetching content from: https://s21.q4cdn.com/564806605/files/doc_financials/2025/q1/2025_04_23-PR-1Q-2025-Results.pdf
+2025-04-23 21:47:57 - INFO - __main__ - Successfully extracted article content (7678 chars)
+2025-04-23 21:47:57 - INFO - __main__ - Fetching content from: https://www.investopedia.com/boeing-stock-surges-on-narrower-than-expected-loss-11718693
+2025-04-23 21:47:57 - INFO - __main__ - Successfully extracted article content (2009 chars)
+2025-04-23 21:47:57 - INFO - __main__ - Fetching content from: https://www.investopedia.com/ge-vernova-q1-fy2025-earnings-11718770
+2025-04-23 21:47:57 - INFO - __main__ - Successfully extracted article content (1521 chars)
+2025-04-23 21:47:57 - INFO - __main__ - Found total of 3 valid articles for APH
+2025-04-23 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:00 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-04-23 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-04-23 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-04-23 21:48:02 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-04-23 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-23 21:48:02 - INFO - __main__ - Searching for articles about ENPH
+2025-04-23 21:48:02 - INFO - __main__ - Searching for news about Enphase Energy
+2025-04-23 21:48:02 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-04-23 21:48:02 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-04-23 21:48:02 - INFO - __main__ - Fetching content from: https://www.investopedia.com/enphase-energy-stock-sinks-on-weaker-than-expected-results-expected-tariffs-hit-11720283
+2025-04-23 21:48:03 - INFO - __main__ - Successfully extracted article content (1252 chars)
+2025-04-23 21:48:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/enphase-earnings-bullish-duolingo-call-182214451.html
+2025-04-23 21:48:03 - INFO - __main__ - Successfully extracted article content (1023 chars)
+2025-04-23 21:48:03 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-boeing-enphase-and-more-11720502
+2025-04-23 21:48:04 - INFO - __main__ - Successfully extracted article content (2314 chars)
+2025-04-23 21:48:04 - INFO - __main__ - Found total of 3 valid articles for ENPH
+2025-04-23 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:06 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-04-23 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-23 21:48:08 - INFO - __main__ - Bottom performer analysis complete
+2025-04-23 21:48:08 - INFO - __main__ - Saving results to JSON...
+2025-04-23 21:48:08 - INFO - __main__ - Analysis complete and saved to market_analysis.json
