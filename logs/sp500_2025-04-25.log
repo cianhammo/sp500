@@ -1,0 +1,66 @@
+2025-04-25 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-04-25 21:47:37 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-25 21:47:37 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-25 21:47:37 - INFO - __main__ - Runtime timezone: UTC
+2025-04-25 21:47:37 - INFO - __main__ - Original start: 2025-04-24 16:00:00-04:00 (America/New_York)
+2025-04-25 21:47:37 - INFO - __main__ - Original end: 2025-04-25 16:00:00-04:00 (America/New_York)
+2025-04-25 21:47:37 - INFO - __main__ - UTC start: 2025-04-24 04:00:00+00:00
+2025-04-25 21:47:37 - INFO - __main__ - UTC end: 2025-04-26 04:00:00+00:00
+2025-04-25 21:47:37 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-25 21:47:38 - INFO - __main__ - Received data for 503 symbols
+2025-04-25 21:47:38 - INFO - __main__ - Sample data structure for WY:
+2025-04-25 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-04-25 21:47:38 - INFO - __main__ - Bar timestamp: 2025-04-24 04:00:00+00:00 (UTC)
+2025-04-25 21:47:38 - INFO - __main__ - Bar timestamp: 2025-04-25 04:00:00+00:00 (UTC)
+2025-04-25 21:47:38 - INFO - __main__ - WY timestamps - Today: 2025-04-25 04:00:00+00:00, Yesterday: 2025-04-24 04:00:00+00:00
+2025-04-25 21:47:38 - INFO - __main__ - ADM timestamps - Today: 2025-04-25 04:00:00+00:00, Yesterday: 2025-04-24 04:00:00+00:00
+2025-04-25 21:47:38 - INFO - __main__ - BBY timestamps - Today: 2025-04-25 04:00:00+00:00, Yesterday: 2025-04-24 04:00:00+00:00
+2025-04-25 21:47:38 - INFO - __main__ - CMCSA timestamps - Today: 2025-04-25 04:00:00+00:00, Yesterday: 2025-04-24 04:00:00+00:00
+2025-04-25 21:47:38 - INFO - __main__ - FAST timestamps - Today: 2025-04-25 04:00:00+00:00, Yesterday: 2025-04-24 04:00:00+00:00
+2025-04-25 21:47:38 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-25 21:47:38 - INFO - __main__ - Data issues encountered: 0
+2025-04-25 21:47:38 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-25 21:47:38 - INFO - __main__ - Analysis for market close on April 25, 2025
+2025-04-25 21:47:38 - INFO - __main__ - Found 503 stocks with price data
+2025-04-25 21:47:39 - INFO - __main__ - Found Wikipedia URL for CHTR: https://en.wikipedia.org/wiki/Charter_Communications
+2025-04-25 21:47:41 - INFO - __main__ - Found Wikipedia URL for ERIE: https://en.wikipedia.org/wiki/Erie_Insurance_Group
+2025-04-25 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-04-25 21:47:43 - INFO - __main__ - Analyzing Charter Communications (CHTR)
+2025-04-25 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-25 21:47:43 - INFO - __main__ - Searching for articles about CHTR
+2025-04-25 21:47:43 - INFO - __main__ - Searching for news about Charter Communications
+2025-04-25 21:47:44 - INFO - __main__ - Found 6 recent search results for Charter Communications
+2025-04-25 21:47:44 - INFO - __main__ - Found 6 URLs to try for CHTR
+2025-04-25 21:47:44 - INFO - __main__ - Fetching content from: https://corporate.charter.com/newsroom/charter-announces-first-quarter-2025-results
+2025-04-25 21:47:44 - INFO - __main__ - Successfully extracted article content (44884 chars)
+2025-04-25 21:47:44 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/charter-communications-earnings-stock-price-f79773ad
+2025-04-25 21:47:44 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-25 21:47:44 - INFO - __main__ - Fetching content from: https://www.hollywoodreporter.com/business/business-news/charter-pay-tv-subscribers-2-1236200637/
+2025-04-25 21:47:45 - INFO - __main__ - Successfully extracted article content (3516 chars)
+2025-04-25 21:47:45 - INFO - __main__ - Found total of 2 valid articles for CHTR
+2025-04-25 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:47:48 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-04-25 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-04-25 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-04-25 21:47:52 - INFO - __main__ - Analyzing Erie Indemnity (ERIE)
+2025-04-25 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-25 21:47:52 - INFO - __main__ - Searching for articles about ERIE
+2025-04-25 21:47:52 - INFO - __main__ - Searching for news about Erie Indemnity
+2025-04-25 21:47:52 - INFO - __main__ - Found 6 recent search results for Erie Indemnity
+2025-04-25 21:47:52 - INFO - __main__ - Found 6 URLs to try for ERIE
+2025-04-25 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/meet-historically-boring-asset-risen-140000570.html
+2025-04-25 21:47:53 - INFO - __main__ - Successfully extracted article content (5650 chars)
+2025-04-25 21:47:53 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/nasdaq-sp500-dow-jones-google-alphabet-googl-stock/
+2025-04-25 21:47:53 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-04-25 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/miner-grupo-mexico-posts-17-135730313.html
+2025-04-25 21:47:54 - INFO - __main__ - Successfully extracted article content (2066 chars)
+2025-04-25 21:47:54 - INFO - __main__ - Found total of 2 valid articles for ERIE
+2025-04-25 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:47:55 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-04-25 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-25 21:47:57 - INFO - __main__ - Bottom performer analysis complete
+2025-04-25 21:47:57 - INFO - __main__ - Saving results to JSON...
+2025-04-25 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
