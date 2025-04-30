@@ -1,0 +1,67 @@
+2025-04-29 21:47:49 - INFO - __main__ - Starting SP500 analysis script
+2025-04-29 21:47:49 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-29 21:47:50 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-29 21:47:50 - INFO - __main__ - Runtime timezone: UTC
+2025-04-29 21:47:50 - INFO - __main__ - Original start: 2025-04-28 16:00:00-04:00 (America/New_York)
+2025-04-29 21:47:50 - INFO - __main__ - Original end: 2025-04-29 16:00:00-04:00 (America/New_York)
+2025-04-29 21:47:50 - INFO - __main__ - UTC start: 2025-04-28 04:00:00+00:00
+2025-04-29 21:47:50 - INFO - __main__ - UTC end: 2025-04-30 04:00:00+00:00
+2025-04-29 21:47:50 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-29 21:47:51 - INFO - __main__ - Received data for 503 symbols
+2025-04-29 21:47:51 - INFO - __main__ - Sample data structure for LIN:
+2025-04-29 21:47:51 - INFO - __main__ - Number of bars: 2
+2025-04-29 21:47:51 - INFO - __main__ - Bar timestamp: 2025-04-28 04:00:00+00:00 (UTC)
+2025-04-29 21:47:51 - INFO - __main__ - Bar timestamp: 2025-04-29 04:00:00+00:00 (UTC)
+2025-04-29 21:47:51 - INFO - __main__ - LIN timestamps - Today: 2025-04-29 04:00:00+00:00, Yesterday: 2025-04-28 04:00:00+00:00
+2025-04-29 21:47:51 - INFO - __main__ - CMS timestamps - Today: 2025-04-29 04:00:00+00:00, Yesterday: 2025-04-28 04:00:00+00:00
+2025-04-29 21:47:51 - INFO - __main__ - WBD timestamps - Today: 2025-04-29 04:00:00+00:00, Yesterday: 2025-04-28 04:00:00+00:00
+2025-04-29 21:47:51 - INFO - __main__ - INVH timestamps - Today: 2025-04-29 04:00:00+00:00, Yesterday: 2025-04-28 04:00:00+00:00
+2025-04-29 21:47:51 - INFO - __main__ - RCL timestamps - Today: 2025-04-29 04:00:00+00:00, Yesterday: 2025-04-28 04:00:00+00:00
+2025-04-29 21:47:51 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-29 21:47:51 - INFO - __main__ - Data issues encountered: 0
+2025-04-29 21:47:51 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-29 21:47:51 - INFO - __main__ - Analysis for market close on April 29, 2025
+2025-04-29 21:47:51 - INFO - __main__ - Found 503 stocks with price data
+2025-04-29 21:47:51 - INFO - __main__ - Found Wikipedia URL for SBAC: https://en.wikipedia.org/wiki/SBA_Communications
+2025-04-29 21:47:54 - INFO - __main__ - Found Wikipedia URL for NXPI: https://en.wikipedia.org/wiki/NXP_Semiconductors
+2025-04-29 21:47:56 - INFO - __main__ - Analyzing top performer...
+2025-04-29 21:47:56 - INFO - __main__ - Analyzing SBA Communications (SBAC)
+2025-04-29 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-29 21:47:56 - INFO - __main__ - Searching for articles about SBAC
+2025-04-29 21:47:56 - INFO - __main__ - Searching for news about SBA Communications
+2025-04-29 21:47:56 - INFO - __main__ - Found 6 recent search results for SBA Communications
+2025-04-29 21:47:56 - INFO - __main__ - Found 6 URLs to try for SBAC
+2025-04-29 21:47:56 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/sba-communications-corp-stock-outperforms-competitors-on-strong-trading-day-6e0ad68b-c66f31c5fb1a
+2025-04-29 21:47:56 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-29 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/sba-communications-q1-affo-revenues-140100190.html
+2025-04-29 21:47:57 - INFO - __main__ - Successfully extracted article content (5629 chars)
+2025-04-29 21:47:57 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/sba-communications-nasdaqgs-sbac-reports-173201406.html
+2025-04-29 21:47:57 - INFO - __main__ - Successfully extracted article content (3576 chars)
+2025-04-29 21:47:57 - INFO - __main__ - Found total of 2 valid articles for SBAC
+2025-04-29 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:47:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-04-29 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:48:01 - INFO - __main__ - Top performer analysis complete
+2025-04-29 21:48:01 - INFO - __main__ - Analyzing bottom performer...
+2025-04-29 21:48:01 - INFO - __main__ - Analyzing NXP Semiconductors (NXPI)
+2025-04-29 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-29 21:48:02 - INFO - __main__ - Searching for articles about NXPI
+2025-04-29 21:48:02 - INFO - __main__ - Searching for news about NXP Semiconductors
+2025-04-29 21:48:02 - INFO - __main__ - Found 6 recent search results for NXP Semiconductors
+2025-04-29 21:48:02 - INFO - __main__ - Found 6 URLs to try for NXPI
+2025-04-29 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nxp-announces-ceo-warns-very-204910577.html
+2025-04-29 21:48:02 - INFO - __main__ - Successfully extracted article content (3415 chars)
+2025-04-29 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/earnings-season-meets-upheaval-trump-122200416.html
+2025-04-29 21:48:03 - INFO - __main__ - Successfully extracted article content (5839 chars)
+2025-04-29 21:48:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-attracts-interest-test-chips-160310406.html
+2025-04-29 21:48:03 - INFO - __main__ - Successfully extracted article content (2557 chars)
+2025-04-29 21:48:03 - INFO - __main__ - Found total of 3 valid articles for NXPI
+2025-04-29 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:48:05 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-04-29 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-29 21:48:07 - INFO - __main__ - Bottom performer analysis complete
+2025-04-29 21:48:07 - INFO - __main__ - Saving results to JSON...
+2025-04-29 21:48:07 - INFO - __main__ - Analysis complete and saved to market_analysis.json
