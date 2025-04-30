@@ -1,0 +1,75 @@
+2025-04-30 21:47:29 - INFO - __main__ - Starting SP500 analysis script
+2025-04-30 21:47:29 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-04-30 21:47:29 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 4, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-04-30 21:47:29 - INFO - __main__ - Runtime timezone: UTC
+2025-04-30 21:47:29 - INFO - __main__ - Original start: 2025-04-29 16:00:00-04:00 (America/New_York)
+2025-04-30 21:47:29 - INFO - __main__ - Original end: 2025-04-30 16:00:00-04:00 (America/New_York)
+2025-04-30 21:47:29 - INFO - __main__ - UTC start: 2025-04-29 04:00:00+00:00
+2025-04-30 21:47:29 - INFO - __main__ - UTC end: 2025-05-01 04:00:00+00:00
+2025-04-30 21:47:29 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-04-30 21:47:30 - INFO - __main__ - Received data for 503 symbols
+2025-04-30 21:47:30 - INFO - __main__ - Sample data structure for KIM:
+2025-04-30 21:47:30 - INFO - __main__ - Number of bars: 2
+2025-04-30 21:47:30 - INFO - __main__ - Bar timestamp: 2025-04-29 04:00:00+00:00 (UTC)
+2025-04-30 21:47:30 - INFO - __main__ - Bar timestamp: 2025-04-30 04:00:00+00:00 (UTC)
+2025-04-30 21:47:30 - INFO - __main__ - KIM timestamps - Today: 2025-04-30 04:00:00+00:00, Yesterday: 2025-04-29 04:00:00+00:00
+2025-04-30 21:47:30 - INFO - __main__ - K timestamps - Today: 2025-04-30 04:00:00+00:00, Yesterday: 2025-04-29 04:00:00+00:00
+2025-04-30 21:47:30 - INFO - __main__ - MKTX timestamps - Today: 2025-04-30 04:00:00+00:00, Yesterday: 2025-04-29 04:00:00+00:00
+2025-04-30 21:47:30 - INFO - __main__ - SPGI timestamps - Today: 2025-04-30 04:00:00+00:00, Yesterday: 2025-04-29 04:00:00+00:00
+2025-04-30 21:47:30 - INFO - __main__ - UDR timestamps - Today: 2025-04-30 04:00:00+00:00, Yesterday: 2025-04-29 04:00:00+00:00
+2025-04-30 21:47:30 - INFO - __main__ - Successfully processed 503 stocks
+2025-04-30 21:47:30 - INFO - __main__ - Data issues encountered: 0
+2025-04-30 21:47:30 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-04-30 21:47:30 - INFO - __main__ - Analysis for market close on April 30, 2025
+2025-04-30 21:47:30 - INFO - __main__ - Found 503 stocks with price data
+2025-04-30 21:47:31 - INFO - __main__ - Found Wikipedia URL for STX: https://en.wikipedia.org/wiki/Seagate_Technology
+2025-04-30 21:47:33 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-04-30 21:47:35 - INFO - __main__ - Analyzing top performer...
+2025-04-30 21:47:35 - INFO - __main__ - Analyzing Seagate Technology (STX)
+2025-04-30 21:47:35 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-30 21:47:35 - INFO - __main__ - Searching for articles about STX
+2025-04-30 21:47:35 - INFO - __main__ - Searching for news about Seagate Technology
+2025-04-30 21:47:35 - INFO - __main__ - Found 6 recent search results for Seagate Technology
+2025-04-30 21:47:35 - INFO - __main__ - Found 6 URLs to try for STX
+2025-04-30 21:47:35 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/seagate-technology-stock-earnings-tariffs-eee8a2e4
+2025-04-30 21:47:36 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-30 21:47:36 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4437607-biggest-stock-movers-wednesday-sbux-smci-and-more
+2025-04-30 21:47:36 - INFO - readability.readability - ruthless removal did not work. 
+2025-04-30 21:47:36 - WARNING - __main__ - Article content too short (0 chars)
+2025-04-30 21:47:36 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/q3-2025-seagate-technology-holdings-130758336.html
+2025-04-30 21:47:36 - INFO - __main__ - Successfully extracted article content (39386 chars)
+2025-04-30 21:47:36 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-f57499ca
+2025-04-30 21:47:36 - WARNING - __main__ - Article content too short (43 chars)
+2025-04-30 21:47:36 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/meta-beats-q1-estimates-offers-strong-q2-outlook-despite-fears-of-tariff-influenced-ad-slowdown-201326639.html
+2025-04-30 21:47:37 - INFO - __main__ - Successfully extracted article content (2586 chars)
+2025-04-30 21:47:37 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/stocks-fall-weak-economic-reports-spark-growth-concerns
+2025-04-30 21:47:37 - INFO - __main__ - Successfully extracted article content (10660 chars)
+2025-04-30 21:47:37 - INFO - __main__ - Found total of 3 valid articles for STX
+2025-04-30 21:47:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:41 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-04-30 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:45 - INFO - __main__ - Top performer analysis complete
+2025-04-30 21:47:45 - INFO - __main__ - Analyzing bottom performer...
+2025-04-30 21:47:45 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-04-30 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-04-30 21:47:45 - INFO - __main__ - Searching for articles about SMCI
+2025-04-30 21:47:45 - INFO - __main__ - Searching for news about Supermicro
+2025-04-30 21:47:45 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-04-30 21:47:45 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-04-30 21:47:45 - INFO - __main__ - Fetching content from: https://www.investopedia.com/supermicro-stock-dives-as-weak-preliminary-results-raise-credibility-concerns-jpmorgan-says-11724895
+2025-04-30 21:47:45 - INFO - __main__ - Successfully extracted article content (2205 chars)
+2025-04-30 21:47:45 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-super-micro-computer-snap-mondelez-and-more-11724905
+2025-04-30 21:47:45 - INFO - __main__ - Successfully extracted article content (1874 chars)
+2025-04-30 21:47:45 - INFO - __main__ - Fetching content from: https://www.investopedia.com/starbucks-stock-drops-after-latest-results-disappoint-11724788
+2025-04-30 21:47:46 - INFO - __main__ - Successfully extracted article content (1581 chars)
+2025-04-30 21:47:46 - INFO - __main__ - Found total of 3 valid articles for SMCI
+2025-04-30 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:47 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-04-30 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-04-30 21:47:49 - INFO - __main__ - Bottom performer analysis complete
+2025-04-30 21:47:49 - INFO - __main__ - Saving results to JSON...
+2025-04-30 21:47:49 - INFO - __main__ - Analysis complete and saved to market_analysis.json
