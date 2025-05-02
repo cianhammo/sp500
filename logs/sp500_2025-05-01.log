@@ -1,0 +1,74 @@
+2025-05-01 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-05-01 21:47:40 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-01 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 4, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-01 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-05-01 21:47:40 - INFO - __main__ - Original start: 2025-04-30 16:00:00-04:00 (America/New_York)
+2025-05-01 21:47:40 - INFO - __main__ - Original end: 2025-05-01 16:00:00-04:00 (America/New_York)
+2025-05-01 21:47:40 - INFO - __main__ - UTC start: 2025-04-30 04:00:00+00:00
+2025-05-01 21:47:40 - INFO - __main__ - UTC end: 2025-05-02 04:00:00+00:00
+2025-05-01 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-01 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-05-01 21:47:41 - INFO - __main__ - Sample data structure for JNJ:
+2025-05-01 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-05-01 21:47:41 - INFO - __main__ - Bar timestamp: 2025-04-30 04:00:00+00:00 (UTC)
+2025-05-01 21:47:41 - INFO - __main__ - Bar timestamp: 2025-05-01 04:00:00+00:00 (UTC)
+2025-05-01 21:47:41 - INFO - __main__ - JNJ timestamps - Today: 2025-05-01 04:00:00+00:00, Yesterday: 2025-04-30 04:00:00+00:00
+2025-05-01 21:47:41 - INFO - __main__ - PODD timestamps - Today: 2025-05-01 04:00:00+00:00, Yesterday: 2025-04-30 04:00:00+00:00
+2025-05-01 21:47:41 - INFO - __main__ - MDT timestamps - Today: 2025-05-01 04:00:00+00:00, Yesterday: 2025-04-30 04:00:00+00:00
+2025-05-01 21:47:41 - INFO - __main__ - MMC timestamps - Today: 2025-05-01 04:00:00+00:00, Yesterday: 2025-04-30 04:00:00+00:00
+2025-05-01 21:47:41 - INFO - __main__ - VRTX timestamps - Today: 2025-05-01 04:00:00+00:00, Yesterday: 2025-04-30 04:00:00+00:00
+2025-05-01 21:47:41 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-01 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-05-01 21:47:41 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-01 21:47:41 - INFO - __main__ - Analysis for market close on May 01, 2025
+2025-05-01 21:47:41 - INFO - __main__ - Found 503 stocks with price data
+2025-05-01 21:47:41 - INFO - __main__ - Found Wikipedia URL for CARR: https://en.wikipedia.org/wiki/Carrier_Global
+2025-05-01 21:47:43 - INFO - __main__ - Found Wikipedia URL for BDX: https://en.wikipedia.org/wiki/BD_(company)
+2025-05-01 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-05-01 21:47:45 - INFO - __main__ - Analyzing Carrier Global (CARR)
+2025-05-01 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-01 21:47:46 - INFO - __main__ - Searching for articles about CARR
+2025-05-01 21:47:46 - INFO - __main__ - Searching for news about Carrier Global
+2025-05-01 21:47:46 - INFO - __main__ - Found 6 recent search results for Carrier Global
+2025-05-01 21:47:46 - INFO - __main__ - Found 6 URLs to try for CARR
+2025-05-01 21:47:46 - INFO - __main__ - Fetching content from: https://jobs.carrier.com/en/job/hyderabad/logistics-analytics/29289/80637064608
+2025-05-01 21:47:46 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='jobs.carrier.com', port=443): Max retries exceeded with url: /en/job/hyderabad/logistics-analytics/29289/80637064608 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))
+2025-05-01 21:47:46 - INFO - __main__ - Fetching content from: https://jobs.carrier.com/en/job/hyderabad/network-design-and-warehousing/29289/80637064560
+2025-05-01 21:47:46 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='jobs.carrier.com', port=443): Max retries exceeded with url: /en/job/hyderabad/network-design-and-warehousing/29289/80637064560 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1017)')))
+2025-05-01 21:47:46 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-index-rises-after-strong-start-to-big-tech-earnings-11726544
+2025-05-01 21:47:46 - INFO - __main__ - Successfully extracted article content (3205 chars)
+2025-05-01 21:47:46 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/us/us-house-votes-bar-california-2035-electric-vehicle-plan-2025-05-01/
+2025-05-01 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-01 21:47:46 - INFO - __main__ - Fetching content from: https://www.reuters.com/legal/trump-administration-sues-michigan-block-planned-climate-change-lawsuit-2025-05-01/
+2025-05-01 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-01 21:47:46 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/05/01/stocks-making-the-biggest-moves-midday-meta-qcom-lly-cvs-and-more.html
+2025-05-01 21:47:47 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-01 21:47:47 - INFO - __main__ - Successfully extracted article content (4342 chars)
+2025-05-01 21:47:47 - INFO - __main__ - Found total of 2 valid articles for CARR
+2025-05-01 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:48 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-01 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:50 - INFO - __main__ - Top performer analysis complete
+2025-05-01 21:47:50 - INFO - __main__ - Analyzing bottom performer...
+2025-05-01 21:47:50 - INFO - __main__ - Analyzing Becton Dickinson (BDX)
+2025-05-01 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-01 21:47:50 - INFO - __main__ - Searching for articles about BDX
+2025-05-01 21:47:50 - INFO - __main__ - Searching for news about Becton Dickinson
+2025-05-01 21:47:50 - INFO - __main__ - Found 6 recent search results for Becton Dickinson
+2025-05-01 21:47:50 - INFO - __main__ - Found 6 URLs to try for BDX
+2025-05-01 21:47:50 - INFO - __main__ - Fetching content from: https://news.bd.com/2025-05-01-BD-Reports-Second-Quarter-Fiscal-2025-Financial-Results
+2025-05-01 21:47:51 - INFO - __main__ - Successfully extracted article content (47758 chars)
+2025-05-01 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/medical-device-maker-becton-dickinson-114833334.html
+2025-05-01 21:47:52 - INFO - __main__ - Successfully extracted article content (2013 chars)
+2025-05-01 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-microsoft-meta-platforms-roblox-and-more-11725706
+2025-05-01 21:47:52 - INFO - __main__ - Successfully extracted article content (1648 chars)
+2025-05-01 21:47:52 - INFO - __main__ - Found total of 3 valid articles for BDX
+2025-05-01 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:56 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-05-01 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-01 21:47:59 - INFO - __main__ - Bottom performer analysis complete
+2025-05-01 21:47:59 - INFO - __main__ - Saving results to JSON...
+2025-05-01 21:47:59 - INFO - __main__ - Analysis complete and saved to market_analysis.json
