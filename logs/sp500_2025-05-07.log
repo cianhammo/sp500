@@ -1,0 +1,66 @@
+2025-05-07 21:47:50 - INFO - __main__ - Starting SP500 analysis script
+2025-05-07 21:47:50 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-07 21:47:51 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-07 21:47:51 - INFO - __main__ - Runtime timezone: UTC
+2025-05-07 21:47:51 - INFO - __main__ - Original start: 2025-05-06 16:00:00-04:00 (America/New_York)
+2025-05-07 21:47:51 - INFO - __main__ - Original end: 2025-05-07 16:00:00-04:00 (America/New_York)
+2025-05-07 21:47:51 - INFO - __main__ - UTC start: 2025-05-06 04:00:00+00:00
+2025-05-07 21:47:51 - INFO - __main__ - UTC end: 2025-05-08 04:00:00+00:00
+2025-05-07 21:47:51 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-07 21:47:52 - INFO - __main__ - Received data for 503 symbols
+2025-05-07 21:47:52 - INFO - __main__ - Sample data structure for LII:
+2025-05-07 21:47:52 - INFO - __main__ - Number of bars: 2
+2025-05-07 21:47:52 - INFO - __main__ - Bar timestamp: 2025-05-06 04:00:00+00:00 (UTC)
+2025-05-07 21:47:52 - INFO - __main__ - Bar timestamp: 2025-05-07 04:00:00+00:00 (UTC)
+2025-05-07 21:47:52 - INFO - __main__ - LII timestamps - Today: 2025-05-07 04:00:00+00:00, Yesterday: 2025-05-06 04:00:00+00:00
+2025-05-07 21:47:52 - INFO - __main__ - LVS timestamps - Today: 2025-05-07 04:00:00+00:00, Yesterday: 2025-05-06 04:00:00+00:00
+2025-05-07 21:47:52 - INFO - __main__ - TFC timestamps - Today: 2025-05-07 04:00:00+00:00, Yesterday: 2025-05-06 04:00:00+00:00
+2025-05-07 21:47:52 - INFO - __main__ - EXC timestamps - Today: 2025-05-07 04:00:00+00:00, Yesterday: 2025-05-06 04:00:00+00:00
+2025-05-07 21:47:52 - INFO - __main__ - BRO timestamps - Today: 2025-05-07 04:00:00+00:00, Yesterday: 2025-05-06 04:00:00+00:00
+2025-05-07 21:47:52 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-07 21:47:52 - INFO - __main__ - Data issues encountered: 0
+2025-05-07 21:47:52 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-07 21:47:52 - INFO - __main__ - Analysis for market close on May 07, 2025
+2025-05-07 21:47:52 - INFO - __main__ - Found 503 stocks with price data
+2025-05-07 21:47:53 - INFO - __main__ - Found Wikipedia URL for CRL: https://en.wikipedia.org/wiki/Charles_River_Laboratories
+2025-05-07 21:47:55 - INFO - __main__ - Found Wikipedia URL for GOOG: https://en.wikipedia.org/wiki/Alphabet_Inc.
+2025-05-07 21:47:57 - INFO - __main__ - Analyzing top performer...
+2025-05-07 21:47:57 - INFO - __main__ - Analyzing Charles River Laboratories (CRL)
+2025-05-07 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-07 21:47:57 - INFO - __main__ - Searching for articles about CRL
+2025-05-07 21:47:57 - INFO - __main__ - Searching for news about Charles River Laboratories
+2025-05-07 21:47:57 - INFO - __main__ - Found 6 recent search results for Charles River Laboratories
+2025-05-07 21:47:57 - INFO - __main__ - Found 6 URLs to try for CRL
+2025-05-07 21:47:57 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-moves-now-charles-river-labs-disney-supermicro-and-more-11729911
+2025-05-07 21:47:58 - INFO - __main__ - Successfully extracted article content (1978 chars)
+2025-05-07 21:47:58 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-63332b14
+2025-05-07 21:47:58 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-07 21:47:58 - INFO - __main__ - Fetching content from: https://www.investopedia.com/why-google-parent-alphabet-s-stock-is-tumbling-wednesday-11729976
+2025-05-07 21:47:58 - INFO - __main__ - Successfully extracted article content (1442 chars)
+2025-05-07 21:47:58 - INFO - __main__ - Found total of 2 valid articles for CRL
+2025-05-07 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-07 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-07 21:48:00 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-05-07 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-07 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-05-07 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-05-07 21:48:02 - INFO - __main__ - Analyzing Alphabet Inc. (Class C) (GOOG)
+2025-05-07 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-07 21:48:03 - INFO - __main__ - Searching for articles about GOOG
+2025-05-07 21:48:03 - INFO - __main__ - Searching for news about Alphabet Inc. (Class C)
+2025-05-07 21:48:03 - INFO - __main__ - Found 6 recent search results for Alphabet Inc. (Class C)
+2025-05-07 21:48:03 - INFO - __main__ - Found 6 URLs to try for GOOG
+2025-05-07 21:48:03 - INFO - __main__ - Fetching content from: https://www.facebook.com/joshrinconofficial/photos/just-in-google-stock-falls-8-today-on-report-apple-plans-to-integrate-ai-search-/651442584320803/
+2025-05-07 21:48:03 - WARNING - __main__ - Article content too short (35 chars)
+2025-05-07 21:48:03 - INFO - __main__ - Fetching content from: https://www.fxempire.com/stocks/isou
+2025-05-07 21:48:04 - INFO - __main__ - Successfully extracted article content (2584 chars)
+2025-05-07 21:48:04 - INFO - __main__ - Fetching content from: https://www.fxempire.com/stocks/tgen
+2025-05-07 21:48:04 - INFO - __main__ - Successfully extracted article content (2584 chars)
+2025-05-07 21:48:04 - INFO - __main__ - Found total of 2 valid articles for GOOG
+2025-05-07 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-07 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-07 21:48:06 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-05-07 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-07 21:48:08 - INFO - __main__ - Bottom performer analysis complete
+2025-05-07 21:48:08 - INFO - __main__ - Saving results to JSON...
+2025-05-07 21:48:08 - INFO - __main__ - Analysis complete and saved to market_analysis.json
