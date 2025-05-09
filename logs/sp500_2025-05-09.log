@@ -1,0 +1,67 @@
+2025-05-09 21:48:09 - INFO - __main__ - Starting SP500 analysis script
+2025-05-09 21:48:09 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-09 21:48:09 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-09 21:48:09 - INFO - __main__ - Runtime timezone: UTC
+2025-05-09 21:48:09 - INFO - __main__ - Original start: 2025-05-08 16:00:00-04:00 (America/New_York)
+2025-05-09 21:48:09 - INFO - __main__ - Original end: 2025-05-09 16:00:00-04:00 (America/New_York)
+2025-05-09 21:48:09 - INFO - __main__ - UTC start: 2025-05-08 04:00:00+00:00
+2025-05-09 21:48:09 - INFO - __main__ - UTC end: 2025-05-10 04:00:00+00:00
+2025-05-09 21:48:09 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-09 21:48:11 - INFO - __main__ - Received data for 503 symbols
+2025-05-09 21:48:11 - INFO - __main__ - Sample data structure for FI:
+2025-05-09 21:48:11 - INFO - __main__ - Number of bars: 2
+2025-05-09 21:48:11 - INFO - __main__ - Bar timestamp: 2025-05-08 04:00:00+00:00 (UTC)
+2025-05-09 21:48:11 - INFO - __main__ - Bar timestamp: 2025-05-09 04:00:00+00:00 (UTC)
+2025-05-09 21:48:11 - INFO - __main__ - FI timestamps - Today: 2025-05-09 04:00:00+00:00, Yesterday: 2025-05-08 04:00:00+00:00
+2025-05-09 21:48:11 - INFO - __main__ - IQV timestamps - Today: 2025-05-09 04:00:00+00:00, Yesterday: 2025-05-08 04:00:00+00:00
+2025-05-09 21:48:11 - INFO - __main__ - TPL timestamps - Today: 2025-05-09 04:00:00+00:00, Yesterday: 2025-05-08 04:00:00+00:00
+2025-05-09 21:48:11 - INFO - __main__ - FCX timestamps - Today: 2025-05-09 04:00:00+00:00, Yesterday: 2025-05-08 04:00:00+00:00
+2025-05-09 21:48:11 - INFO - __main__ - TRV timestamps - Today: 2025-05-09 04:00:00+00:00, Yesterday: 2025-05-08 04:00:00+00:00
+2025-05-09 21:48:11 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-09 21:48:11 - INFO - __main__ - Data issues encountered: 0
+2025-05-09 21:48:11 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-09 21:48:11 - INFO - __main__ - Analysis for market close on May 09, 2025
+2025-05-09 21:48:11 - INFO - __main__ - Found 503 stocks with price data
+2025-05-09 21:48:11 - INFO - __main__ - Found Wikipedia URL for PODD: https://en.wikipedia.org/wiki/Dexcom
+2025-05-09 21:48:14 - INFO - __main__ - Found Wikipedia URL for AKAM: https://en.wikipedia.org/wiki/Akamai_Technologies
+2025-05-09 21:48:16 - INFO - __main__ - Analyzing top performer...
+2025-05-09 21:48:16 - INFO - __main__ - Analyzing Insulet Corporation (PODD)
+2025-05-09 21:48:16 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-09 21:48:17 - INFO - __main__ - Searching for articles about PODD
+2025-05-09 21:48:17 - INFO - __main__ - Searching for news about Insulet Corporation
+2025-05-09 21:48:17 - INFO - __main__ - Found 6 recent search results for Insulet Corporation
+2025-05-09 21:48:17 - INFO - __main__ - Found 6 URLs to try for PODD
+2025-05-09 21:48:17 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-monster-beverage-insulet-and-more-11731772
+2025-05-09 21:48:17 - INFO - __main__ - Successfully extracted article content (1964 chars)
+2025-05-09 21:48:17 - INFO - __main__ - Fetching content from: https://www.investopedia.com/affirm-stock-drops-on-soft-current-quarter-revenue-outlook-11731568
+2025-05-09 21:48:17 - INFO - __main__ - Successfully extracted article content (1459 chars)
+2025-05-09 21:48:17 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-stock-set-to-end-the-week-down-amid-investor-concerns-over-lofty-valuation-151514370.html
+2025-05-09 21:48:18 - INFO - __main__ - Successfully extracted article content (4639 chars)
+2025-05-09 21:48:18 - INFO - __main__ - Found total of 3 valid articles for PODD
+2025-05-09 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:21 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-05-09 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:23 - INFO - __main__ - Top performer analysis complete
+2025-05-09 21:48:23 - INFO - __main__ - Analyzing bottom performer...
+2025-05-09 21:48:23 - INFO - __main__ - Analyzing Akamai Technologies (AKAM)
+2025-05-09 21:48:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-09 21:48:23 - INFO - __main__ - Searching for articles about AKAM
+2025-05-09 21:48:23 - INFO - __main__ - Searching for news about Akamai Technologies
+2025-05-09 21:48:23 - INFO - __main__ - Found 6 recent search results for Akamai Technologies
+2025-05-09 21:48:23 - INFO - __main__ - Found 6 URLs to try for AKAM
+2025-05-09 21:48:23 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/akamai-q1-earnings-surpass-estimates-155500751.html
+2025-05-09 21:48:24 - INFO - __main__ - Successfully extracted article content (5290 chars)
+2025-05-09 21:48:24 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/akamai-technologies-inc-stock-underperforms-friday-when-compared-to-competitors-b0edde1c-8f37ea5c6f79
+2025-05-09 21:48:24 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-09 21:48:24 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/q1-2025-akamai-technologies-inc-125303691.html
+2025-05-09 21:48:27 - INFO - __main__ - Successfully extracted article content (50805 chars)
+2025-05-09 21:48:27 - INFO - __main__ - Found total of 2 valid articles for AKAM
+2025-05-09 21:48:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:31 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-09 21:48:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-09 21:48:34 - INFO - __main__ - Bottom performer analysis complete
+2025-05-09 21:48:34 - INFO - __main__ - Saving results to JSON...
+2025-05-09 21:48:35 - INFO - __main__ - Analysis complete and saved to market_analysis.json
