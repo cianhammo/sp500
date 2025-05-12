@@ -1,0 +1,78 @@
+2025-05-12 21:47:47 - INFO - __main__ - Starting SP500 analysis script
+2025-05-12 21:47:47 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-12 21:47:48 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-12 21:47:48 - INFO - __main__ - Runtime timezone: UTC
+2025-05-12 21:47:48 - INFO - __main__ - Original start: 2025-05-09 16:00:00-04:00 (America/New_York)
+2025-05-12 21:47:48 - INFO - __main__ - Original end: 2025-05-12 16:00:00-04:00 (America/New_York)
+2025-05-12 21:47:48 - INFO - __main__ - UTC start: 2025-05-09 04:00:00+00:00
+2025-05-12 21:47:48 - INFO - __main__ - UTC end: 2025-05-13 04:00:00+00:00
+2025-05-12 21:47:48 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-12 21:47:49 - INFO - __main__ - Received data for 503 symbols
+2025-05-12 21:47:49 - INFO - __main__ - Sample data structure for MAA:
+2025-05-12 21:47:49 - INFO - __main__ - Number of bars: 2
+2025-05-12 21:47:49 - INFO - __main__ - Bar timestamp: 2025-05-09 04:00:00+00:00 (UTC)
+2025-05-12 21:47:49 - INFO - __main__ - Bar timestamp: 2025-05-12 04:00:00+00:00 (UTC)
+2025-05-12 21:47:49 - INFO - __main__ - MAA timestamps - Today: 2025-05-12 04:00:00+00:00, Yesterday: 2025-05-09 04:00:00+00:00
+2025-05-12 21:47:49 - INFO - __main__ - CTAS timestamps - Today: 2025-05-12 04:00:00+00:00, Yesterday: 2025-05-09 04:00:00+00:00
+2025-05-12 21:47:49 - INFO - __main__ - GD timestamps - Today: 2025-05-12 04:00:00+00:00, Yesterday: 2025-05-09 04:00:00+00:00
+2025-05-12 21:47:49 - INFO - __main__ - JNPR timestamps - Today: 2025-05-12 04:00:00+00:00, Yesterday: 2025-05-09 04:00:00+00:00
+2025-05-12 21:47:49 - INFO - __main__ - XOM timestamps - Today: 2025-05-12 04:00:00+00:00, Yesterday: 2025-05-09 04:00:00+00:00
+2025-05-12 21:47:49 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-12 21:47:49 - INFO - __main__ - Data issues encountered: 0
+2025-05-12 21:47:49 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-12 21:47:49 - INFO - __main__ - Analysis for market close on May 12, 2025
+2025-05-12 21:47:49 - INFO - __main__ - Found 503 stocks with price data
+2025-05-12 21:47:49 - INFO - __main__ - Found Wikipedia URL for NRG: https://en.wikipedia.org/wiki/NRG_Energy
+2025-05-12 21:47:51 - INFO - __main__ - Found Wikipedia URL for NEM: https://en.wikipedia.org/wiki/Newmont
+2025-05-12 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-05-12 21:47:53 - INFO - __main__ - Analyzing NRG Energy (NRG)
+2025-05-12 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-12 21:47:54 - INFO - __main__ - Searching for articles about NRG
+2025-05-12 21:47:54 - INFO - __main__ - Searching for news about NRG Energy
+2025-05-12 21:47:54 - INFO - __main__ - Found 6 recent search results for NRG Energy
+2025-05-12 21:47:54 - INFO - __main__ - Found 6 URLs to try for NRG
+2025-05-12 21:47:54 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/nrg-energy-stock-natural-gas-acquisition-90679732
+2025-05-12 21:47:54 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:47:54 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-apple-nrg-energy-newmont-and-more-11732963
+2025-05-12 21:47:55 - INFO - __main__ - Successfully extracted article content (1895 chars)
+2025-05-12 21:47:55 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/energy/nrg-energy-buy-power-generation-assets-ls-power-12-billion-deal-2025-05-12/
+2025-05-12 21:47:55 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:47:55 - INFO - __main__ - Fetching content from: https://www.businesswire.com/news/home/20250512012040/en/NRG-Energy-Inc.-to-Acquire-Premier-Power-Portfolio-from-LS-Power-Transforming-Generation-Fleet-for-Growing-Demand
+2025-05-12 21:47:55 - INFO - __main__ - Successfully extracted article content (16660 chars)
+2025-05-12 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/retail-gains-wayfair-upgrade-nrg-182049772.html
+2025-05-12 21:47:56 - INFO - __main__ - Successfully extracted article content (963 chars)
+2025-05-12 21:47:56 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-05-12/nrg-energy-acquire-gas-power-assets-from-ls-for-12-billion
+2025-05-12 21:47:56 - INFO - __main__ - Successfully extracted article content (193 chars)
+2025-05-12 21:47:56 - INFO - __main__ - Found total of 3 valid articles for NRG
+2025-05-12 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-12 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-12 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-12 21:47:59 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-05-12 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-12 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-05-12 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-05-12 21:48:02 - INFO - __main__ - Analyzing Newmont (NEM)
+2025-05-12 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-12 21:48:03 - INFO - __main__ - Searching for articles about NEM
+2025-05-12 21:48:03 - INFO - __main__ - Searching for news about Newmont
+2025-05-12 21:48:03 - INFO - __main__ - Found 6 recent search results for Newmont
+2025-05-12 21:48:03 - INFO - __main__ - Found 6 URLs to try for NEM
+2025-05-12 21:48:03 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-apple-nrg-energy-newmont-and-more-11732963
+2025-05-12 21:48:03 - INFO - __main__ - Successfully extracted article content (1895 chars)
+2025-05-12 21:48:03 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/gold-price-newmont-stock-1827e186
+2025-05-12 21:48:03 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:48:03 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/newmont-stock-gold-prices-1827e186
+2025-05-12 21:48:03 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:48:03 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-66443cec
+2025-05-12 21:48:03 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:48:03 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/20-stocks-of-companies-showing-excellent-earnings-season-trends-even-as-the-economy-cools-2947a7ff
+2025-05-12 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:48:04 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/barrick-mining-ticker-gold-copper-4126f893
+2025-05-12 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-12 21:48:04 - INFO - __main__ - Found total of 1 valid articles for NEM
+2025-05-12 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-12 21:48:04 - INFO - __main__ - Found 1 relevant articles out of 1 total
+2025-05-12 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-12 21:48:06 - INFO - __main__ - Bottom performer analysis complete
+2025-05-12 21:48:06 - INFO - __main__ - Saving results to JSON...
+2025-05-12 21:48:06 - INFO - __main__ - Analysis complete and saved to market_analysis.json
