@@ -1,0 +1,72 @@
+2025-05-15 21:47:45 - INFO - __main__ - Starting SP500 analysis script
+2025-05-15 21:47:45 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-15 21:47:46 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-15 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-05-15 21:47:46 - INFO - __main__ - Original start: 2025-05-14 16:00:00-04:00 (America/New_York)
+2025-05-15 21:47:46 - INFO - __main__ - Original end: 2025-05-15 16:00:00-04:00 (America/New_York)
+2025-05-15 21:47:46 - INFO - __main__ - UTC start: 2025-05-14 04:00:00+00:00
+2025-05-15 21:47:46 - INFO - __main__ - UTC end: 2025-05-16 04:00:00+00:00
+2025-05-15 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-15 21:47:46 - INFO - __main__ - Received data for 503 symbols
+2025-05-15 21:47:46 - INFO - __main__ - Sample data structure for ISRG:
+2025-05-15 21:47:46 - INFO - __main__ - Number of bars: 2
+2025-05-15 21:47:46 - INFO - __main__ - Bar timestamp: 2025-05-14 04:00:00+00:00 (UTC)
+2025-05-15 21:47:46 - INFO - __main__ - Bar timestamp: 2025-05-15 04:00:00+00:00 (UTC)
+2025-05-15 21:47:46 - INFO - __main__ - ISRG timestamps - Today: 2025-05-15 04:00:00+00:00, Yesterday: 2025-05-14 04:00:00+00:00
+2025-05-15 21:47:46 - INFO - __main__ - ORLY timestamps - Today: 2025-05-15 04:00:00+00:00, Yesterday: 2025-05-14 04:00:00+00:00
+2025-05-15 21:47:46 - INFO - __main__ - PM timestamps - Today: 2025-05-15 04:00:00+00:00, Yesterday: 2025-05-14 04:00:00+00:00
+2025-05-15 21:47:46 - INFO - __main__ - REG timestamps - Today: 2025-05-15 04:00:00+00:00, Yesterday: 2025-05-14 04:00:00+00:00
+2025-05-15 21:47:46 - INFO - __main__ - ACGL timestamps - Today: 2025-05-15 04:00:00+00:00, Yesterday: 2025-05-14 04:00:00+00:00
+2025-05-15 21:47:47 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-15 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-05-15 21:47:47 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-15 21:47:47 - INFO - __main__ - Analysis for market close on May 15, 2025
+2025-05-15 21:47:47 - INFO - __main__ - Found 503 stocks with price data
+2025-05-15 21:47:47 - INFO - __main__ - Found Wikipedia URL for STE: https://en.wikipedia.org/wiki/Steris
+2025-05-15 21:47:49 - INFO - __main__ - Found Wikipedia URL for FI: https://en.wikipedia.org/wiki/Fiserv
+2025-05-15 21:47:51 - INFO - __main__ - Analyzing top performer...
+2025-05-15 21:47:51 - INFO - __main__ - Analyzing Steris (STE)
+2025-05-15 21:47:51 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-15 21:47:51 - INFO - __main__ - Searching for articles about STE
+2025-05-15 21:47:51 - INFO - __main__ - Searching for news about Steris
+2025-05-15 21:47:52 - INFO - __main__ - Found 6 recent search results for Steris
+2025-05-15 21:47:52 - INFO - __main__ - Found 6 URLs to try for STE
+2025-05-15 21:47:52 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/steris-earnings-stock-market-s-p-500-ed9b493c
+2025-05-15 21:47:52 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-15 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/deere-second-quarter-2025-financial-results-just-the-numbers-11733835
+2025-05-15 21:47:52 - INFO - __main__ - Successfully extracted article content (611 chars)
+2025-05-15 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/walmart-first-quarter-2026-financial-results-just-the-numbers-11734740
+2025-05-15 21:47:52 - INFO - __main__ - Successfully extracted article content (442 chars)
+2025-05-15 21:47:52 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/sp-500-movers-unh-ste
+2025-05-15 21:47:52 - INFO - __main__ - Successfully extracted article content (663 chars)
+2025-05-15 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-unitedhealth-group-walmart-deere-and-more-11735453
+2025-05-15 21:47:53 - INFO - __main__ - Successfully extracted article content (1810 chars)
+2025-05-15 21:47:53 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-market-movers-44aa06e6
+2025-05-15 21:47:53 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-15 21:47:53 - INFO - __main__ - Found total of 2 valid articles for STE
+2025-05-15 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-15 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-15 21:47:54 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-15 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-15 21:47:56 - INFO - __main__ - Top performer analysis complete
+2025-05-15 21:47:56 - INFO - __main__ - Analyzing bottom performer...
+2025-05-15 21:47:56 - INFO - __main__ - Analyzing Fiserv (FI)
+2025-05-15 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-15 21:47:56 - INFO - __main__ - Searching for articles about FI
+2025-05-15 21:47:56 - INFO - __main__ - Searching for news about Fiserv
+2025-05-15 21:47:56 - INFO - __main__ - Found 6 recent search results for Fiserv
+2025-05-15 21:47:56 - INFO - __main__ - Found 6 URLs to try for FI
+2025-05-15 21:47:56 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/fiserv-stock-sinks-after-2q-clover-growth-projection-93CH-4048633
+2025-05-15 21:47:56 - WARNING - __main__ - Article content too short (41 chars)
+2025-05-15 21:47:56 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/fiserv-enters-oversold-territory-fi
+2025-05-15 21:47:57 - INFO - __main__ - Successfully extracted article content (1373 chars)
+2025-05-15 21:47:57 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/the-fly/fiserv-comments-concerning-but-selloff-seems-overblown-says-baird
+2025-05-15 21:47:57 - INFO - __main__ - Successfully extracted article content (903 chars)
+2025-05-15 21:47:57 - INFO - __main__ - Found total of 2 valid articles for FI
+2025-05-15 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-15 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-15 21:47:58 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-15 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-15 21:48:01 - INFO - __main__ - Bottom performer analysis complete
+2025-05-15 21:48:01 - INFO - __main__ - Saving results to JSON...
+2025-05-15 21:48:01 - INFO - __main__ - Analysis complete and saved to market_analysis.json
