@@ -1,0 +1,67 @@
+2025-05-16 21:47:48 - INFO - __main__ - Starting SP500 analysis script
+2025-05-16 21:47:48 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-16 21:47:48 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-16 21:47:48 - INFO - __main__ - Runtime timezone: UTC
+2025-05-16 21:47:48 - INFO - __main__ - Original start: 2025-05-15 16:00:00-04:00 (America/New_York)
+2025-05-16 21:47:48 - INFO - __main__ - Original end: 2025-05-16 16:00:00-04:00 (America/New_York)
+2025-05-16 21:47:48 - INFO - __main__ - UTC start: 2025-05-15 04:00:00+00:00
+2025-05-16 21:47:48 - INFO - __main__ - UTC end: 2025-05-17 04:00:00+00:00
+2025-05-16 21:47:48 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-16 21:47:49 - INFO - __main__ - Received data for 503 symbols
+2025-05-16 21:47:49 - INFO - __main__ - Sample data structure for ABBV:
+2025-05-16 21:47:49 - INFO - __main__ - Number of bars: 2
+2025-05-16 21:47:49 - INFO - __main__ - Bar timestamp: 2025-05-15 04:00:00+00:00 (UTC)
+2025-05-16 21:47:49 - INFO - __main__ - Bar timestamp: 2025-05-16 04:00:00+00:00 (UTC)
+2025-05-16 21:47:49 - INFO - __main__ - ABBV timestamps - Today: 2025-05-16 04:00:00+00:00, Yesterday: 2025-05-15 04:00:00+00:00
+2025-05-16 21:47:49 - INFO - __main__ - AWK timestamps - Today: 2025-05-16 04:00:00+00:00, Yesterday: 2025-05-15 04:00:00+00:00
+2025-05-16 21:47:49 - INFO - __main__ - GPC timestamps - Today: 2025-05-16 04:00:00+00:00, Yesterday: 2025-05-15 04:00:00+00:00
+2025-05-16 21:47:49 - INFO - __main__ - RTX timestamps - Today: 2025-05-16 04:00:00+00:00, Yesterday: 2025-05-15 04:00:00+00:00
+2025-05-16 21:47:49 - INFO - __main__ - C timestamps - Today: 2025-05-16 04:00:00+00:00, Yesterday: 2025-05-15 04:00:00+00:00
+2025-05-16 21:47:49 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-16 21:47:49 - INFO - __main__ - Data issues encountered: 0
+2025-05-16 21:47:49 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-16 21:47:49 - INFO - __main__ - Analysis for market close on May 16, 2025
+2025-05-16 21:47:49 - INFO - __main__ - Found 503 stocks with price data
+2025-05-16 21:47:50 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-05-16 21:47:52 - INFO - __main__ - Found Wikipedia URL for AMAT: https://en.wikipedia.org/wiki/Applied_Materials
+2025-05-16 21:47:54 - INFO - __main__ - Analyzing top performer...
+2025-05-16 21:47:54 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-05-16 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-16 21:47:54 - INFO - __main__ - Searching for articles about UNH
+2025-05-16 21:47:54 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-05-16 21:47:54 - INFO - __main__ - Found 6 recent search results for UnitedHealth Group
+2025-05-16 21:47:54 - INFO - __main__ - Found 6 URLs to try for UNH
+2025-05-16 21:47:54 - INFO - __main__ - Fetching content from: https://www.investopedia.com/watch-these-unitedhealth-levels-as-stock-rebounds-after-plunging-to-5-year-low-11736213
+2025-05-16 21:47:55 - INFO - __main__ - Successfully extracted article content (3452 chars)
+2025-05-16 21:47:55 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/05/16/tanking-unitedhealth-shares-see-some-insiders-step-in-to-buy.html
+2025-05-16 21:47:55 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-16 21:47:55 - INFO - __main__ - Successfully extracted article content (1686 chars)
+2025-05-16 21:47:55 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/05/16/why-unitedhealth-stock-is-crashing-this-week/
+2025-05-16 21:47:55 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-05-16 21:47:55 - INFO - __main__ - Found total of 2 valid articles for UNH
+2025-05-16 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-16 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-16 21:47:57 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-16 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-16 21:48:00 - INFO - __main__ - Top performer analysis complete
+2025-05-16 21:48:00 - INFO - __main__ - Analyzing bottom performer...
+2025-05-16 21:48:00 - INFO - __main__ - Analyzing Applied Materials (AMAT)
+2025-05-16 21:48:00 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-16 21:48:01 - INFO - __main__ - Searching for articles about AMAT
+2025-05-16 21:48:01 - INFO - __main__ - Searching for news about Applied Materials
+2025-05-16 21:48:01 - INFO - __main__ - Found 6 recent search results for Applied Materials
+2025-05-16 21:48:01 - INFO - __main__ - Found 6 URLs to try for AMAT
+2025-05-16 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/applied-materials-shares-tumble-q2-122222617.html
+2025-05-16 21:48:02 - INFO - __main__ - Successfully extracted article content (1852 chars)
+2025-05-16 21:48:02 - INFO - __main__ - Fetching content from: https://www.investopedia.com/watch-these-applied-materials-price-levels-as-stock-drops-on-china-sales-slump-11736160
+2025-05-16 21:48:02 - INFO - __main__ - Successfully extracted article content (3838 chars)
+2025-05-16 21:48:02 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-05-15/applied-materials-gives-tepid-forecast-as-trade-war-takes-toll
+2025-05-16 21:48:03 - INFO - __main__ - Successfully extracted article content (504 chars)
+2025-05-16 21:48:03 - INFO - __main__ - Found total of 2 valid articles for AMAT
+2025-05-16 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-16 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-16 21:48:04 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-16 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-16 21:48:06 - INFO - __main__ - Bottom performer analysis complete
+2025-05-16 21:48:06 - INFO - __main__ - Saving results to JSON...
+2025-05-16 21:48:07 - INFO - __main__ - Analysis complete and saved to market_analysis.json
