@@ -312,3 +312,626 @@
 2025-05-19 18:32:04,437 - sec_monitor - INFO - Cumulative stats - Input words: 360900, Output words: 638
 2025-05-19 18:32:04,437 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-05-19 18:32:04,437 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 162784, 'output_words': 9, 'filings_processed': 1}
+2025-05-19 21:11:22,721 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-05-19 21:11:22,721 - sec_monitor - INFO - Loading S&P 500 data...
+2025-05-19 21:11:22,721 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-05-19 21:11:22,722 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-05-19 21:11:22,722 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-05-19 21:11:22,722 - sec_monitor - INFO - Initializing components...
+2025-05-19 21:11:22,722 - sec_monitor - INFO - Initializing components
+2025-05-19 21:11:22,722 - sec_monitor - INFO - SEC fetcher initialized
+2025-05-19 21:11:22,722 - sec_monitor - INFO - Filing analyzer initialized
+2025-05-19 21:11:22,723 - sec_monitor - INFO - Alpaca clients initialized
+2025-05-19 21:11:22,723 - sec_monitor - INFO - All components initialized successfully
+2025-05-19 21:11:22,724 - sec_monitor - INFO - Found JSON file from today
+2025-05-19 21:11:22,724 - sec_monitor - INFO - Found 8 previously processed accessions and 8 filing URLs
+2025-05-19 21:11:22,724 - sec_monitor - INFO - Found 8 accession numbers and 8 URLs from previously processed filings
+2025-05-19 21:11:22,724 - sec_monitor - INFO - Fetching SEC filings...
+2025-05-19 21:11:37,992 - sec_monitor - INFO - No more entries found
+2025-05-19 21:11:37,992 - sec_monitor - INFO - Completed fetching. Found 176 total filings
+2025-05-19 21:11:37,993 - sec_monitor - INFO - Found 16 new interesting filings
+2025-05-19 21:11:37,993 - sec_monitor - INFO - Found 16 new filings to process
+2025-05-19 21:11:37,993 - sec_monitor - INFO - Processing filing 1/16: FTV
+2025-05-19 21:12:10,871 - sec_monitor - INFO - ==================================================
+2025-05-19 21:12:10,871 - sec_monitor - INFO - Processing first chunk
+2025-05-19 21:12:10,871 - sec_monitor - INFO - Timestamp: 2025-05-19 21:12:10
+2025-05-19 21:12:11,667 - sec_monitor - INFO - token percentage = 29%
+2025-05-19 21:12:11,667 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:12:11,667 - sec_monitor - INFO - Timestamp: 2025-05-19 21:12:11
+2025-05-19 21:12:26,083 - sec_monitor - INFO - API call successful
+2025-05-19 21:12:27,085 - sec_monitor - INFO - Processing filing 2/16: ORLY
+2025-05-19 21:12:57,791 - sec_monitor - INFO - ==================================================
+2025-05-19 21:12:57,791 - sec_monitor - INFO - Processing first chunk
+2025-05-19 21:12:57,791 - sec_monitor - INFO - Timestamp: 2025-05-19 21:12:57
+2025-05-19 21:12:57,981 - sec_monitor - INFO - token percentage = 5%
+2025-05-19 21:12:57,981 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:12:57,981 - sec_monitor - INFO - Timestamp: 2025-05-19 21:12:57
+2025-05-19 21:12:58,123 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:12:58,123 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-05-19 21:12:58,123 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:15:58,184 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:15:58,184 - sec_monitor - INFO - Timestamp: 2025-05-19 21:15:58
+2025-05-19 21:16:08,253 - sec_monitor - INFO - API call successful
+2025-05-19 21:16:09,255 - sec_monitor - INFO - Processing filing 3/16: LUV
+2025-05-19 21:18:29,521 - sec_monitor - INFO - ==================================================
+2025-05-19 21:18:29,522 - sec_monitor - INFO - Processing first chunk
+2025-05-19 21:18:29,522 - sec_monitor - INFO - Timestamp: 2025-05-19 21:18:29
+2025-05-19 21:18:30,055 - sec_monitor - INFO - token percentage = 43%
+2025-05-19 21:18:30,055 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:18:30,055 - sec_monitor - INFO - Timestamp: 2025-05-19 21:18:30
+2025-05-19 21:18:45,465 - sec_monitor - INFO - API call successful
+2025-05-19 21:19:15,495 - sec_monitor - INFO - ==================================================
+2025-05-19 21:19:15,495 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:19:15,496 - sec_monitor - INFO - Timestamp: 2025-05-19 21:19:15
+2025-05-19 21:19:15,794 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:19:15,795 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:19:15,795 - sec_monitor - INFO - Timestamp: 2025-05-19 21:19:15
+2025-05-19 21:20:21,938 - sec_monitor - INFO - API call successful
+2025-05-19 21:20:51,963 - sec_monitor - INFO - ==================================================
+2025-05-19 21:20:51,963 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:20:51,963 - sec_monitor - INFO - Timestamp: 2025-05-19 21:20:51
+2025-05-19 21:20:52,280 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:20:52,280 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:20:52,280 - sec_monitor - INFO - Timestamp: 2025-05-19 21:20:52
+2025-05-19 21:20:52,681 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:20:52,681 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 7
+}
+]
+2025-05-19 21:20:52,681 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:23:52,759 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:23:52,759 - sec_monitor - INFO - Timestamp: 2025-05-19 21:23:52
+2025-05-19 21:24:23,049 - sec_monitor - INFO - API call successful
+2025-05-19 21:24:53,079 - sec_monitor - INFO - ==================================================
+2025-05-19 21:24:53,079 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:24:53,079 - sec_monitor - INFO - Timestamp: 2025-05-19 21:24:53
+2025-05-19 21:24:53,421 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:24:53,421 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:24:53,421 - sec_monitor - INFO - Timestamp: 2025-05-19 21:24:53
+2025-05-19 21:24:53,748 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:24:53,748 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-05-19 21:24:53,749 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:27:53,777 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:27:53,777 - sec_monitor - INFO - Timestamp: 2025-05-19 21:27:53
+2025-05-19 21:28:11,075 - sec_monitor - INFO - API call successful
+2025-05-19 21:28:41,105 - sec_monitor - INFO - ==================================================
+2025-05-19 21:28:41,106 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:28:41,106 - sec_monitor - INFO - Timestamp: 2025-05-19 21:28:41
+2025-05-19 21:28:41,428 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:28:41,428 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:28:41,428 - sec_monitor - INFO - Timestamp: 2025-05-19 21:28:41
+2025-05-19 21:28:41,733 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:28:41,733 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-05-19 21:28:41,733 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:31:41,759 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:31:41,759 - sec_monitor - INFO - Timestamp: 2025-05-19 21:31:41
+2025-05-19 21:31:58,920 - sec_monitor - INFO - API call successful
+2025-05-19 21:32:28,927 - sec_monitor - INFO - ==================================================
+2025-05-19 21:32:28,927 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:32:28,927 - sec_monitor - INFO - Timestamp: 2025-05-19 21:32:28
+2025-05-19 21:32:29,330 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:32:29,330 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:32:29,330 - sec_monitor - INFO - Timestamp: 2025-05-19 21:32:29
+2025-05-19 21:32:29,758 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:32:29,758 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-05-19 21:32:29,758 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:35:29,767 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:35:29,767 - sec_monitor - INFO - Timestamp: 2025-05-19 21:35:29
+2025-05-19 21:35:46,708 - sec_monitor - INFO - API call successful
+2025-05-19 21:36:16,738 - sec_monitor - INFO - ==================================================
+2025-05-19 21:36:16,738 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:36:16,738 - sec_monitor - INFO - Timestamp: 2025-05-19 21:36:16
+2025-05-19 21:36:17,172 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:36:17,172 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:36:17,172 - sec_monitor - INFO - Timestamp: 2025-05-19 21:36:17
+2025-05-19 21:36:17,547 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:36:17,547 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 42
+}
+]
+2025-05-19 21:36:17,547 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:39:17,569 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:39:17,569 - sec_monitor - INFO - Timestamp: 2025-05-19 21:39:17
+2025-05-19 21:39:34,642 - sec_monitor - INFO - API call successful
+2025-05-19 21:40:04,650 - sec_monitor - INFO - ==================================================
+2025-05-19 21:40:04,650 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:40:04,651 - sec_monitor - INFO - Timestamp: 2025-05-19 21:40:04
+2025-05-19 21:40:05,049 - sec_monitor - INFO - token percentage = 50%
+2025-05-19 21:40:05,049 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:40:05,049 - sec_monitor - INFO - Timestamp: 2025-05-19 21:40:05
+2025-05-19 21:40:22,000 - sec_monitor - INFO - API call successful
+2025-05-19 21:40:52,031 - sec_monitor - INFO - ==================================================
+2025-05-19 21:40:52,031 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:40:52,031 - sec_monitor - INFO - Timestamp: 2025-05-19 21:40:52
+2025-05-19 21:40:52,407 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:40:52,407 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:40:52,407 - sec_monitor - INFO - Timestamp: 2025-05-19 21:40:52
+2025-05-19 21:41:12,248 - sec_monitor - INFO - API call successful
+2025-05-19 21:41:42,269 - sec_monitor - INFO - ==================================================
+2025-05-19 21:41:42,270 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:41:42,270 - sec_monitor - INFO - Timestamp: 2025-05-19 21:41:42
+2025-05-19 21:41:42,567 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:41:42,567 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:41:42,567 - sec_monitor - INFO - Timestamp: 2025-05-19 21:41:42
+2025-05-19 21:41:59,670 - sec_monitor - INFO - API call successful
+2025-05-19 21:42:29,686 - sec_monitor - INFO - ==================================================
+2025-05-19 21:42:29,687 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:42:29,687 - sec_monitor - INFO - Timestamp: 2025-05-19 21:42:29
+2025-05-19 21:42:30,024 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:42:30,025 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:42:30,025 - sec_monitor - INFO - Timestamp: 2025-05-19 21:42:30
+2025-05-19 21:42:30,393 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:42:30,393 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 29
+}
+]
+2025-05-19 21:42:30,393 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:45:30,471 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:45:30,471 - sec_monitor - INFO - Timestamp: 2025-05-19 21:45:30
+2025-05-19 21:45:51,224 - sec_monitor - INFO - API call successful
+2025-05-19 21:46:21,255 - sec_monitor - INFO - ==================================================
+2025-05-19 21:46:21,255 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:46:21,255 - sec_monitor - INFO - Timestamp: 2025-05-19 21:46:21
+2025-05-19 21:46:21,525 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:46:21,525 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:46:21,525 - sec_monitor - INFO - Timestamp: 2025-05-19 21:46:21
+2025-05-19 21:46:21,772 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:46:21,772 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2025-05-19 21:46:21,772 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:49:21,855 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:49:21,855 - sec_monitor - INFO - Timestamp: 2025-05-19 21:49:21
+2025-05-19 21:49:40,129 - sec_monitor - INFO - API call successful
+2025-05-19 21:50:10,153 - sec_monitor - INFO - ==================================================
+2025-05-19 21:50:10,154 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:50:10,154 - sec_monitor - INFO - Timestamp: 2025-05-19 21:50:10
+2025-05-19 21:50:10,540 - sec_monitor - INFO - token percentage = 48%
+2025-05-19 21:50:10,540 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:50:10,540 - sec_monitor - INFO - Timestamp: 2025-05-19 21:50:10
+2025-05-19 21:50:10,892 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:50:10,892 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-05-19 21:50:10,893 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:53:10,983 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:53:10,983 - sec_monitor - INFO - Timestamp: 2025-05-19 21:53:10
+2025-05-19 21:53:37,226 - sec_monitor - INFO - API call successful
+2025-05-19 21:54:07,256 - sec_monitor - INFO - ==================================================
+2025-05-19 21:54:07,257 - sec_monitor - INFO - Processing middle chunk
+2025-05-19 21:54:07,257 - sec_monitor - INFO - Timestamp: 2025-05-19 21:54:07
+2025-05-19 21:54:07,608 - sec_monitor - INFO - token percentage = 51%
+2025-05-19 21:54:07,608 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:54:07,608 - sec_monitor - INFO - Timestamp: 2025-05-19 21:54:07
+2025-05-19 21:54:07,936 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:54:07,936 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2025-05-19 21:54:07,937 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 21:57:08,034 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 21:57:08,034 - sec_monitor - INFO - Timestamp: 2025-05-19 21:57:08
+2025-05-19 21:57:26,692 - sec_monitor - INFO - API call successful
+2025-05-19 21:57:56,721 - sec_monitor - INFO - ==================================================
+2025-05-19 21:57:56,721 - sec_monitor - INFO - Processing last chunk
+2025-05-19 21:57:56,722 - sec_monitor - INFO - Timestamp: 2025-05-19 21:57:56
+2025-05-19 21:57:57,070 - sec_monitor - INFO - token percentage = 40%
+2025-05-19 21:57:57,071 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 21:57:57,071 - sec_monitor - INFO - Timestamp: 2025-05-19 21:57:57
+2025-05-19 21:57:57,430 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-19 21:57:57,430 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-05-19 21:57:57,430 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-19 22:00:57,527 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-19 22:00:57,527 - sec_monitor - INFO - Timestamp: 2025-05-19 22:00:57
+2025-05-19 22:01:11,425 - sec_monitor - INFO - API call successful
+2025-05-19 22:01:11,425 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-05-19 22:01:11,425 - sec_monitor - INFO - Timestamp: 2025-05-19 22:01:11
+2025-05-19 22:01:11,513 - sec_monitor - INFO - Combine API call failed - Attempt 1
+2025-05-19 22:01:11,513 - sec_monitor - INFO - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-05-19 22:01:11,513 - sec_monitor - INFO - Sleeping for 30 seconds before retry...
+2025-05-19 22:01:41,543 - sec_monitor - INFO - Making combine API call - Attempt 2/3
+2025-05-19 22:01:41,543 - sec_monitor - INFO - Timestamp: 2025-05-19 22:01:41
+2025-05-19 22:01:42,754 - sec_monitor - INFO - Combine API call successful
+2025-05-19 22:01:43,755 - sec_monitor - INFO - Processing filing 4/16: MMC
+2025-05-19 22:02:14,264 - sec_monitor - INFO - ==================================================
+2025-05-19 22:02:14,264 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:02:14,265 - sec_monitor - INFO - Timestamp: 2025-05-19 22:02:14
+2025-05-19 22:02:14,387 - sec_monitor - INFO - token percentage = 4%
+2025-05-19 22:02:14,387 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:02:14,388 - sec_monitor - INFO - Timestamp: 2025-05-19 22:02:14
+2025-05-19 22:02:21,115 - sec_monitor - INFO - API call successful
+2025-05-19 22:02:22,117 - sec_monitor - INFO - Processing filing 5/16: LUV
+2025-05-19 22:02:53,579 - sec_monitor - INFO - ==================================================
+2025-05-19 22:02:53,579 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:02:53,580 - sec_monitor - INFO - Timestamp: 2025-05-19 22:02:53
+2025-05-19 22:02:53,755 - sec_monitor - INFO - token percentage = 23%
+2025-05-19 22:02:53,756 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:02:53,756 - sec_monitor - INFO - Timestamp: 2025-05-19 22:02:53
+2025-05-19 22:03:08,599 - sec_monitor - INFO - API call successful
+2025-05-19 22:03:09,600 - sec_monitor - INFO - Processing filing 6/16: EXR
+2025-05-19 22:03:39,975 - sec_monitor - INFO - ==================================================
+2025-05-19 22:03:39,975 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:03:39,975 - sec_monitor - INFO - Timestamp: 2025-05-19 22:03:39
+2025-05-19 22:03:40,076 - sec_monitor - INFO - token percentage = 3%
+2025-05-19 22:03:40,076 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:03:40,076 - sec_monitor - INFO - Timestamp: 2025-05-19 22:03:40
+2025-05-19 22:03:42,888 - sec_monitor - INFO - API call successful
+2025-05-19 22:03:43,889 - sec_monitor - INFO - Processing filing 7/16: PFE
+2025-05-19 22:04:16,703 - sec_monitor - INFO - ==================================================
+2025-05-19 22:04:16,703 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:04:16,703 - sec_monitor - INFO - Timestamp: 2025-05-19 22:04:16
+2025-05-19 22:04:17,433 - sec_monitor - INFO - token percentage = 28%
+2025-05-19 22:04:17,433 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:04:17,433 - sec_monitor - INFO - Timestamp: 2025-05-19 22:04:17
+2025-05-19 22:04:28,044 - sec_monitor - INFO - API call successful
+2025-05-19 22:04:29,046 - sec_monitor - INFO - Processing filing 8/16: VRTX
+2025-05-19 22:04:59,414 - sec_monitor - INFO - ==================================================
+2025-05-19 22:04:59,414 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:04:59,414 - sec_monitor - INFO - Timestamp: 2025-05-19 22:04:59
+2025-05-19 22:04:59,511 - sec_monitor - INFO - token percentage = 2%
+2025-05-19 22:04:59,511 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:04:59,511 - sec_monitor - INFO - Timestamp: 2025-05-19 22:04:59
+2025-05-19 22:05:02,363 - sec_monitor - INFO - API call successful
+2025-05-19 22:05:03,365 - sec_monitor - INFO - Processing filing 9/16: COR
+2025-05-19 22:05:35,295 - sec_monitor - INFO - ==================================================
+2025-05-19 22:05:35,295 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:05:35,295 - sec_monitor - INFO - Timestamp: 2025-05-19 22:05:35
+2025-05-19 22:05:35,594 - sec_monitor - INFO - token percentage = 11%
+2025-05-19 22:05:35,594 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:05:35,594 - sec_monitor - INFO - Timestamp: 2025-05-19 22:05:35
+2025-05-19 22:05:41,208 - sec_monitor - INFO - API call successful
+2025-05-19 22:05:42,210 - sec_monitor - INFO - Processing filing 10/16: AWK
+2025-05-19 22:06:13,575 - sec_monitor - INFO - ==================================================
+2025-05-19 22:06:13,575 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:06:13,575 - sec_monitor - INFO - Timestamp: 2025-05-19 22:06:13
+2025-05-19 22:06:13,918 - sec_monitor - INFO - token percentage = 14%
+2025-05-19 22:06:13,918 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:06:13,918 - sec_monitor - INFO - Timestamp: 2025-05-19 22:06:13
+2025-05-19 22:06:24,582 - sec_monitor - INFO - API call successful
+2025-05-19 22:06:25,584 - sec_monitor - INFO - Processing filing 11/16: INVH
+2025-05-19 22:06:56,051 - sec_monitor - INFO - ==================================================
+2025-05-19 22:06:56,052 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:06:56,052 - sec_monitor - INFO - Timestamp: 2025-05-19 22:06:56
+2025-05-19 22:06:56,132 - sec_monitor - INFO - token percentage = 2%
+2025-05-19 22:06:56,132 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:06:56,132 - sec_monitor - INFO - Timestamp: 2025-05-19 22:06:56
+2025-05-19 22:06:59,216 - sec_monitor - INFO - API call successful
+2025-05-19 22:07:00,217 - sec_monitor - INFO - Processing filing 12/16: MSI
+2025-05-19 22:07:30,526 - sec_monitor - INFO - ==================================================
+2025-05-19 22:07:30,526 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:07:30,526 - sec_monitor - INFO - Timestamp: 2025-05-19 22:07:30
+2025-05-19 22:07:30,606 - sec_monitor - INFO - token percentage = 2%
+2025-05-19 22:07:30,606 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:07:30,606 - sec_monitor - INFO - Timestamp: 2025-05-19 22:07:30
+2025-05-19 22:07:32,401 - sec_monitor - INFO - API call successful
+2025-05-19 22:07:33,403 - sec_monitor - INFO - Processing filing 13/16: AKAM
+2025-05-19 22:08:06,263 - sec_monitor - INFO - ==================================================
+2025-05-19 22:08:06,263 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:08:06,263 - sec_monitor - INFO - Timestamp: 2025-05-19 22:08:06
+2025-05-19 22:08:06,829 - sec_monitor - INFO - token percentage = 25%
+2025-05-19 22:08:06,829 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:08:06,829 - sec_monitor - INFO - Timestamp: 2025-05-19 22:08:06
+2025-05-19 22:08:18,242 - sec_monitor - INFO - API call successful
+2025-05-19 22:08:19,243 - sec_monitor - INFO - Processing filing 14/16: EQIX
+2025-05-19 22:08:52,252 - sec_monitor - INFO - ==================================================
+2025-05-19 22:08:52,252 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:08:52,252 - sec_monitor - INFO - Timestamp: 2025-05-19 22:08:52
+2025-05-19 22:08:53,037 - sec_monitor - INFO - token percentage = 26%
+2025-05-19 22:08:53,037 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:08:53,038 - sec_monitor - INFO - Timestamp: 2025-05-19 22:08:53
+2025-05-19 22:09:04,905 - sec_monitor - INFO - API call successful
+2025-05-19 22:09:05,907 - sec_monitor - INFO - Processing filing 15/16: PPL
+2025-05-19 22:09:36,432 - sec_monitor - INFO - ==================================================
+2025-05-19 22:09:36,432 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:09:36,432 - sec_monitor - INFO - Timestamp: 2025-05-19 22:09:36
+2025-05-19 22:09:36,530 - sec_monitor - INFO - token percentage = 3%
+2025-05-19 22:09:36,531 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:09:36,531 - sec_monitor - INFO - Timestamp: 2025-05-19 22:09:36
+2025-05-19 22:09:41,071 - sec_monitor - INFO - API call successful
+2025-05-19 22:09:42,073 - sec_monitor - INFO - Processing filing 16/16: BG
+2025-05-19 22:10:12,514 - sec_monitor - INFO - ==================================================
+2025-05-19 22:10:12,515 - sec_monitor - INFO - Processing first chunk
+2025-05-19 22:10:12,515 - sec_monitor - INFO - Timestamp: 2025-05-19 22:10:12
+2025-05-19 22:10:12,623 - sec_monitor - INFO - token percentage = 3%
+2025-05-19 22:10:12,623 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-19 22:10:12,623 - sec_monitor - INFO - Timestamp: 2025-05-19 22:10:12
+2025-05-19 22:10:16,288 - sec_monitor - INFO - API call successful
+2025-05-19 22:10:17,289 - sec_monitor - INFO - Fetching supplementary data...
+2025-05-19 22:10:17,767 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-05-19 22:10:17,768 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-05-19 22:10:17,768 - sec_monitor - INFO - Market open: False
+2025-05-19 22:10:17,768 - sec_monitor - INFO - Number of filing times mapped: 15
+2025-05-19 22:10:17,790 - sec_monitor - INFO - Last trading day: 2025-05-19
+2025-05-19 22:10:17,790 - sec_monitor - INFO - Processing ticker: FTV
+2025-05-19 22:10:18,160 - sec_monitor - INFO - Number of bars for FTV: 3
+2025-05-19 22:10:18,161 - sec_monitor - INFO - Last bar close for FTV: 73.18
+2025-05-19 22:10:18,161 - sec_monitor - INFO - Outside market hours price for FTV: 73.18
+2025-05-19 22:10:18,161 - sec_monitor - INFO - Processing ticker: ORLY
+2025-05-19 22:10:18,188 - sec_monitor - INFO - Number of bars for ORLY: 3
+2025-05-19 22:10:18,189 - sec_monitor - INFO - Last bar close for ORLY: 1380.94
+2025-05-19 22:10:18,189 - sec_monitor - INFO - Outside market hours price for ORLY: 1380.94
+2025-05-19 22:10:18,189 - sec_monitor - INFO - Processing ticker: LUV
+2025-05-19 22:10:18,219 - sec_monitor - INFO - Number of bars for LUV: 3
+2025-05-19 22:10:18,219 - sec_monitor - INFO - Last bar close for LUV: 32.68
+2025-05-19 22:10:18,219 - sec_monitor - INFO - Outside market hours price for LUV: 32.68
+2025-05-19 22:10:18,219 - sec_monitor - INFO - Processing ticker: MMC
+2025-05-19 22:10:18,243 - sec_monitor - INFO - Number of bars for MMC: 3
+2025-05-19 22:10:18,243 - sec_monitor - INFO - Last bar close for MMC: 231.43
+2025-05-19 22:10:18,243 - sec_monitor - INFO - Outside market hours price for MMC: 231.43
+2025-05-19 22:10:18,243 - sec_monitor - INFO - Processing ticker: LUV
+2025-05-19 22:10:18,271 - sec_monitor - INFO - Number of bars for LUV: 3
+2025-05-19 22:10:18,271 - sec_monitor - INFO - Last bar close for LUV: 32.68
+2025-05-19 22:10:18,271 - sec_monitor - INFO - Outside market hours price for LUV: 32.68
+2025-05-19 22:10:18,271 - sec_monitor - INFO - Processing ticker: EXR
+2025-05-19 22:10:18,299 - sec_monitor - INFO - Number of bars for EXR: 3
+2025-05-19 22:10:18,299 - sec_monitor - INFO - Last bar close for EXR: 151.83
+2025-05-19 22:10:18,299 - sec_monitor - INFO - Outside market hours price for EXR: 151.83
+2025-05-19 22:10:18,299 - sec_monitor - INFO - Processing ticker: PFE
+2025-05-19 22:10:18,326 - sec_monitor - INFO - Number of bars for PFE: 3
+2025-05-19 22:10:18,326 - sec_monitor - INFO - Last bar close for PFE: 22.835
+2025-05-19 22:10:18,327 - sec_monitor - INFO - Outside market hours price for PFE: 22.835
+2025-05-19 22:10:18,327 - sec_monitor - INFO - Processing ticker: VRTX
+2025-05-19 22:10:18,349 - sec_monitor - INFO - Number of bars for VRTX: 3
+2025-05-19 22:10:18,349 - sec_monitor - INFO - Last bar close for VRTX: 438.64
+2025-05-19 22:10:18,350 - sec_monitor - INFO - Outside market hours price for VRTX: 438.64
+2025-05-19 22:10:18,350 - sec_monitor - INFO - Processing ticker: COR
+2025-05-19 22:10:18,376 - sec_monitor - INFO - Number of bars for COR: 3
+2025-05-19 22:10:18,376 - sec_monitor - INFO - Last bar close for COR: 290.25
+2025-05-19 22:10:18,376 - sec_monitor - INFO - Outside market hours price for COR: 290.25
+2025-05-19 22:10:18,376 - sec_monitor - INFO - Processing ticker: AWK
+2025-05-19 22:10:18,399 - sec_monitor - INFO - Number of bars for AWK: 3
+2025-05-19 22:10:18,400 - sec_monitor - INFO - Last bar close for AWK: 142.52
+2025-05-19 22:10:18,400 - sec_monitor - INFO - Outside market hours price for AWK: 142.52
+2025-05-19 22:10:18,400 - sec_monitor - INFO - Processing ticker: INVH
+2025-05-19 22:10:18,426 - sec_monitor - INFO - Number of bars for INVH: 3
+2025-05-19 22:10:18,426 - sec_monitor - INFO - Last bar close for INVH: 34.44
+2025-05-19 22:10:18,426 - sec_monitor - INFO - Outside market hours price for INVH: 34.44
+2025-05-19 22:10:18,426 - sec_monitor - INFO - Processing ticker: MSI
+2025-05-19 22:10:18,452 - sec_monitor - INFO - Number of bars for MSI: 3
+2025-05-19 22:10:18,452 - sec_monitor - INFO - Last bar close for MSI: 423.945
+2025-05-19 22:10:18,452 - sec_monitor - INFO - Outside market hours price for MSI: 423.945
+2025-05-19 22:10:18,453 - sec_monitor - INFO - Processing ticker: AKAM
+2025-05-19 22:10:18,479 - sec_monitor - INFO - Number of bars for AKAM: 3
+2025-05-19 22:10:18,480 - sec_monitor - INFO - Last bar close for AKAM: 78.02
+2025-05-19 22:10:18,480 - sec_monitor - INFO - Outside market hours price for AKAM: 78.02
+2025-05-19 22:10:18,480 - sec_monitor - INFO - Processing ticker: EQIX
+2025-05-19 22:10:18,504 - sec_monitor - INFO - Number of bars for EQIX: 3
+2025-05-19 22:10:18,504 - sec_monitor - INFO - Last bar close for EQIX: 876.25
+2025-05-19 22:10:18,504 - sec_monitor - INFO - Outside market hours price for EQIX: 876.25
+2025-05-19 22:10:18,504 - sec_monitor - INFO - Processing ticker: PPL
+2025-05-19 22:10:18,528 - sec_monitor - INFO - Number of bars for PPL: 3
+2025-05-19 22:10:18,528 - sec_monitor - INFO - Last bar close for PPL: 34.85
+2025-05-19 22:10:18,528 - sec_monitor - INFO - Outside market hours price for PPL: 34.85
+2025-05-19 22:10:18,528 - sec_monitor - INFO - Processing ticker: BG
+2025-05-19 22:10:18,556 - sec_monitor - INFO - Number of bars for BG: 3
+2025-05-19 22:10:18,556 - sec_monitor - INFO - Last bar close for BG: 81.48
+2025-05-19 22:10:18,556 - sec_monitor - INFO - Outside market hours price for BG: 81.48
+2025-05-19 22:10:24,593 - sec_monitor - INFO - Generating final output...
+2025-05-19 22:10:24,594 - sec_monitor - INFO - Successfully merged 16 new filings with existing JSON
+2025-05-19 22:10:24,594 - sec_monitor - INFO - Cumulative stats - Input words: 1280781, Output words: 1913
+2025-05-19 22:10:24,594 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-05-19 22:10:24,594 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 919881, 'output_words': 1275, 'filings_processed': 16}
