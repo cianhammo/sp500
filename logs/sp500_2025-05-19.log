@@ -1,0 +1,67 @@
+2025-05-19 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-05-19 21:47:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-19 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-19 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-05-19 21:47:42 - INFO - __main__ - Original start: 2025-05-16 16:00:00-04:00 (America/New_York)
+2025-05-19 21:47:42 - INFO - __main__ - Original end: 2025-05-19 16:00:00-04:00 (America/New_York)
+2025-05-19 21:47:42 - INFO - __main__ - UTC start: 2025-05-16 04:00:00+00:00
+2025-05-19 21:47:42 - INFO - __main__ - UTC end: 2025-05-20 04:00:00+00:00
+2025-05-19 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-19 21:47:43 - INFO - __main__ - Received data for 503 symbols
+2025-05-19 21:47:43 - INFO - __main__ - Sample data structure for EL:
+2025-05-19 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-05-19 21:47:43 - INFO - __main__ - Bar timestamp: 2025-05-16 04:00:00+00:00 (UTC)
+2025-05-19 21:47:43 - INFO - __main__ - Bar timestamp: 2025-05-19 04:00:00+00:00 (UTC)
+2025-05-19 21:47:43 - INFO - __main__ - EL timestamps - Today: 2025-05-19 04:00:00+00:00, Yesterday: 2025-05-16 04:00:00+00:00
+2025-05-19 21:47:43 - INFO - __main__ - FCX timestamps - Today: 2025-05-19 04:00:00+00:00, Yesterday: 2025-05-16 04:00:00+00:00
+2025-05-19 21:47:43 - INFO - __main__ - INCY timestamps - Today: 2025-05-19 04:00:00+00:00, Yesterday: 2025-05-16 04:00:00+00:00
+2025-05-19 21:47:43 - INFO - __main__ - TMO timestamps - Today: 2025-05-19 04:00:00+00:00, Yesterday: 2025-05-16 04:00:00+00:00
+2025-05-19 21:47:43 - INFO - __main__ - VRTX timestamps - Today: 2025-05-19 04:00:00+00:00, Yesterday: 2025-05-16 04:00:00+00:00
+2025-05-19 21:47:43 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-19 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-05-19 21:47:43 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-19 21:47:43 - INFO - __main__ - Analysis for market close on May 19, 2025
+2025-05-19 21:47:43 - INFO - __main__ - Found 503 stocks with price data
+2025-05-19 21:47:44 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-05-19 21:47:46 - INFO - __main__ - Found Wikipedia URL for FSLR: https://en.wikipedia.org/wiki/First_Solar
+2025-05-19 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-05-19 21:47:48 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-05-19 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-19 21:47:48 - INFO - __main__ - Searching for articles about UNH
+2025-05-19 21:47:48 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-05-19 21:47:49 - INFO - __main__ - Found 6 recent search results for UnitedHealth Group
+2025-05-19 21:47:49 - INFO - __main__ - Found 6 URLs to try for UNH
+2025-05-19 21:47:49 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/unitedhealth-insiders-buy-stock-484fe0ce
+2025-05-19 21:47:49 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-19 21:47:49 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/05/19/stocks-making-the-biggest-moves-midday-unh-tsla-baba.html
+2025-05-19 21:47:50 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-19 21:47:50 - INFO - __main__ - Successfully extracted article content (1797 chars)
+2025-05-19 21:47:50 - INFO - __main__ - Fetching content from: https://www.usatoday.com/story/money/investing/2025/05/19/unitedhealth-worst-sp-500-stocks-2025/83665890007/
+2025-05-19 21:47:50 - INFO - __main__ - Successfully extracted article content (5787 chars)
+2025-05-19 21:47:50 - INFO - __main__ - Found total of 2 valid articles for UNH
+2025-05-19 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-19 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-19 21:47:52 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-05-19 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-19 21:47:54 - INFO - __main__ - Top performer analysis complete
+2025-05-19 21:47:54 - INFO - __main__ - Analyzing bottom performer...
+2025-05-19 21:47:54 - INFO - __main__ - Analyzing First Solar (FSLR)
+2025-05-19 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-19 21:47:54 - INFO - __main__ - Searching for articles about FSLR
+2025-05-19 21:47:54 - INFO - __main__ - Searching for news about First Solar
+2025-05-19 21:47:54 - INFO - __main__ - Found 6 recent search results for First Solar
+2025-05-19 21:47:54 - INFO - __main__ - Found 6 URLs to try for FSLR
+2025-05-19 21:47:54 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-05-19/solar-companies-slump-as-gop-targets-earlier-end-to-tax-credits
+2025-05-19 21:47:54 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-05-19 21:47:54 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/solar-stocks-tumble-amid-tax-165200288.html
+2025-05-19 21:47:56 - INFO - __main__ - Successfully extracted article content (2110 chars)
+2025-05-19 21:47:56 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/the-fly/solar-stocks-slip-as-conservatives-fight-to-end-ira-tax-credits-sooner
+2025-05-19 21:47:56 - INFO - __main__ - Successfully extracted article content (1613 chars)
+2025-05-19 21:47:56 - INFO - __main__ - Found total of 2 valid articles for FSLR
+2025-05-19 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-19 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-19 21:47:57 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-19 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-19 21:47:59 - INFO - __main__ - Bottom performer analysis complete
+2025-05-19 21:47:59 - INFO - __main__ - Saving results to JSON...
+2025-05-19 21:48:00 - INFO - __main__ - Analysis complete and saved to market_analysis.json
