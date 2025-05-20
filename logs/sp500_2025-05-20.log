@@ -1,0 +1,67 @@
+2025-05-20 21:47:46 - INFO - __main__ - Starting SP500 analysis script
+2025-05-20 21:47:46 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-20 21:47:47 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-20 21:47:47 - INFO - __main__ - Runtime timezone: UTC
+2025-05-20 21:47:47 - INFO - __main__ - Original start: 2025-05-19 16:00:00-04:00 (America/New_York)
+2025-05-20 21:47:47 - INFO - __main__ - Original end: 2025-05-20 16:00:00-04:00 (America/New_York)
+2025-05-20 21:47:47 - INFO - __main__ - UTC start: 2025-05-19 04:00:00+00:00
+2025-05-20 21:47:47 - INFO - __main__ - UTC end: 2025-05-21 04:00:00+00:00
+2025-05-20 21:47:47 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-20 21:47:48 - INFO - __main__ - Received data for 503 symbols
+2025-05-20 21:47:48 - INFO - __main__ - Sample data structure for DAL:
+2025-05-20 21:47:48 - INFO - __main__ - Number of bars: 2
+2025-05-20 21:47:48 - INFO - __main__ - Bar timestamp: 2025-05-19 04:00:00+00:00 (UTC)
+2025-05-20 21:47:48 - INFO - __main__ - Bar timestamp: 2025-05-20 04:00:00+00:00 (UTC)
+2025-05-20 21:47:48 - INFO - __main__ - DAL timestamps - Today: 2025-05-20 04:00:00+00:00, Yesterday: 2025-05-19 04:00:00+00:00
+2025-05-20 21:47:48 - INFO - __main__ - ED timestamps - Today: 2025-05-20 04:00:00+00:00, Yesterday: 2025-05-19 04:00:00+00:00
+2025-05-20 21:47:48 - INFO - __main__ - FDX timestamps - Today: 2025-05-20 04:00:00+00:00, Yesterday: 2025-05-19 04:00:00+00:00
+2025-05-20 21:47:48 - INFO - __main__ - ALB timestamps - Today: 2025-05-20 04:00:00+00:00, Yesterday: 2025-05-19 04:00:00+00:00
+2025-05-20 21:47:48 - INFO - __main__ - DUK timestamps - Today: 2025-05-20 04:00:00+00:00, Yesterday: 2025-05-19 04:00:00+00:00
+2025-05-20 21:47:48 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-20 21:47:48 - INFO - __main__ - Data issues encountered: 0
+2025-05-20 21:47:48 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-20 21:47:48 - INFO - __main__ - Analysis for market close on May 20, 2025
+2025-05-20 21:47:48 - INFO - __main__ - Found 503 stocks with price data
+2025-05-20 21:47:48 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-05-20 21:47:51 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2025-05-20 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-05-20 21:47:53 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-05-20 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-20 21:47:53 - INFO - __main__ - Searching for articles about MRNA
+2025-05-20 21:47:53 - INFO - __main__ - Searching for news about Moderna
+2025-05-20 21:47:54 - INFO - __main__ - Found 6 recent search results for Moderna
+2025-05-20 21:47:54 - INFO - __main__ - Found 6 URLs to try for MRNA
+2025-05-20 21:47:54 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/moderna-stock-price-fda-covid-shots-dba688e6
+2025-05-20 21:47:54 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-20 21:47:54 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-viking-moderna-uber-technologies-and-more-11738357
+2025-05-20 21:47:54 - INFO - __main__ - Successfully extracted article content (1784 chars)
+2025-05-20 21:47:54 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/moderna-vaccine-stocks-fda-covid-vaccine-approvals/
+2025-05-20 21:47:54 - INFO - __main__ - Successfully extracted article content (3644 chars)
+2025-05-20 21:47:54 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-05-20 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-20 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-20 21:48:00 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-20 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-20 21:48:03 - INFO - __main__ - Top performer analysis complete
+2025-05-20 21:48:03 - INFO - __main__ - Analyzing bottom performer...
+2025-05-20 21:48:03 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2025-05-20 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-20 21:48:03 - INFO - __main__ - Searching for articles about FICO
+2025-05-20 21:48:03 - INFO - __main__ - Searching for news about Fair Isaac
+2025-05-20 21:48:04 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2025-05-20 21:48:04 - INFO - __main__ - Found 6 URLs to try for FICO
+2025-05-20 21:48:04 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/fair-isaac-stock-fico-leads-the-sp-500-lower-falling-10-on-no-news
+2025-05-20 21:48:04 - INFO - __main__ - Successfully extracted article content (1932 chars)
+2025-05-20 21:48:04 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4450578-fair-isaac-stock-slumps-with-no-obvious-news-equifax-and-transunion-also-slip
+2025-05-20 21:48:04 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-20 21:48:04 - WARNING - __main__ - Article content too short (0 chars)
+2025-05-20 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/trump-downplays-salt-cap-hike-134052392.html
+2025-05-20 21:48:05 - INFO - __main__ - Successfully extracted article content (5836 chars)
+2025-05-20 21:48:05 - INFO - __main__ - Found total of 2 valid articles for FICO
+2025-05-20 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-20 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-20 21:48:07 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-05-20 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-20 21:48:09 - INFO - __main__ - Bottom performer analysis complete
+2025-05-20 21:48:09 - INFO - __main__ - Saving results to JSON...
+2025-05-20 21:48:09 - INFO - __main__ - Analysis complete and saved to market_analysis.json
