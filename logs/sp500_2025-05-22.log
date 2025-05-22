@@ -1,0 +1,73 @@
+2025-05-22 21:47:29 - INFO - __main__ - Starting SP500 analysis script
+2025-05-22 21:47:29 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-22 21:47:30 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-22 21:47:30 - INFO - __main__ - Runtime timezone: UTC
+2025-05-22 21:47:30 - INFO - __main__ - Original start: 2025-05-21 16:00:00-04:00 (America/New_York)
+2025-05-22 21:47:30 - INFO - __main__ - Original end: 2025-05-22 16:00:00-04:00 (America/New_York)
+2025-05-22 21:47:30 - INFO - __main__ - UTC start: 2025-05-21 04:00:00+00:00
+2025-05-22 21:47:30 - INFO - __main__ - UTC end: 2025-05-23 04:00:00+00:00
+2025-05-22 21:47:30 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-22 21:47:31 - INFO - __main__ - Received data for 503 symbols
+2025-05-22 21:47:31 - INFO - __main__ - Sample data structure for AES:
+2025-05-22 21:47:31 - INFO - __main__ - Number of bars: 2
+2025-05-22 21:47:31 - INFO - __main__ - Bar timestamp: 2025-05-21 04:00:00+00:00 (UTC)
+2025-05-22 21:47:31 - INFO - __main__ - Bar timestamp: 2025-05-22 04:00:00+00:00 (UTC)
+2025-05-22 21:47:31 - INFO - __main__ - AES timestamps - Today: 2025-05-22 04:00:00+00:00, Yesterday: 2025-05-21 04:00:00+00:00
+2025-05-22 21:47:31 - INFO - __main__ - EG timestamps - Today: 2025-05-22 04:00:00+00:00, Yesterday: 2025-05-21 04:00:00+00:00
+2025-05-22 21:47:31 - INFO - __main__ - FITB timestamps - Today: 2025-05-22 04:00:00+00:00, Yesterday: 2025-05-21 04:00:00+00:00
+2025-05-22 21:47:31 - INFO - __main__ - QCOM timestamps - Today: 2025-05-22 04:00:00+00:00, Yesterday: 2025-05-21 04:00:00+00:00
+2025-05-22 21:47:31 - INFO - __main__ - ATO timestamps - Today: 2025-05-22 04:00:00+00:00, Yesterday: 2025-05-21 04:00:00+00:00
+2025-05-22 21:47:31 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-22 21:47:31 - INFO - __main__ - Data issues encountered: 0
+2025-05-22 21:47:31 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-22 21:47:31 - INFO - __main__ - Analysis for market close on May 22, 2025
+2025-05-22 21:47:31 - INFO - __main__ - Found 503 stocks with price data
+2025-05-22 21:47:31 - INFO - __main__ - Found Wikipedia URL for COIN: https://en.wikipedia.org/wiki/Coinbase
+2025-05-22 21:47:33 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-05-22 21:47:35 - INFO - __main__ - Analyzing top performer...
+2025-05-22 21:47:35 - INFO - __main__ - Analyzing Coinbase (COIN)
+2025-05-22 21:47:35 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-22 21:47:36 - INFO - __main__ - Searching for articles about COIN
+2025-05-22 21:47:36 - INFO - __main__ - Searching for news about Coinbase
+2025-05-22 21:47:36 - INFO - __main__ - Found 6 recent search results for Coinbase
+2025-05-22 21:47:36 - INFO - __main__ - Found 6 URLs to try for COIN
+2025-05-22 21:47:36 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-enphase-energy-humana-coinbase-and-more-11740038
+2025-05-22 21:47:37 - INFO - __main__ - Successfully extracted article content (1731 chars)
+2025-05-22 21:47:37 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-coinbase-stock-climbs-as-cryptocurrency-prices-surge-11740308
+2025-05-22 21:47:37 - INFO - __main__ - Successfully extracted article content (3528 chars)
+2025-05-22 21:47:37 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/coinbase-robinhood-crypto-stocks-bitcoin-4f096de8
+2025-05-22 21:47:37 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-22 21:47:37 - INFO - __main__ - Found total of 2 valid articles for COIN
+2025-05-22 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:38 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-05-22 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:41 - INFO - __main__ - Top performer analysis complete
+2025-05-22 21:47:41 - INFO - __main__ - Analyzing bottom performer...
+2025-05-22 21:47:41 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-05-22 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-22 21:47:42 - INFO - __main__ - Searching for articles about ENPH
+2025-05-22 21:47:42 - INFO - __main__ - Searching for news about Enphase Energy
+2025-05-22 21:47:42 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-05-22 21:47:42 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-05-22 21:47:42 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-enphase-energy-humana-coinbase-and-more-11740038
+2025-05-22 21:47:42 - INFO - __main__ - Successfully extracted article content (1731 chars)
+2025-05-22 21:47:42 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/trumps-tax-bill-solar-stocks-8176183a
+2025-05-22 21:47:42 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-22 21:47:42 - INFO - __main__ - Fetching content from: https://www.reuters.com/sustainability/climate-energy/solar-stocks-plummet-after-trumps-tax-bill-advances-us-house-2025-05-22/
+2025-05-22 21:47:43 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-22 21:47:43 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-ceaa0ad0
+2025-05-22 21:47:43 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-22 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/solar-stocks-plummet-trumps-tax-124543790.html
+2025-05-22 21:47:43 - INFO - __main__ - Successfully extracted article content (1900 chars)
+2025-05-22 21:47:43 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-coinbase-stock-climbs-as-cryptocurrency-prices-surge-11740308
+2025-05-22 21:47:43 - INFO - __main__ - Successfully extracted article content (3528 chars)
+2025-05-22 21:47:43 - INFO - __main__ - Found total of 3 valid articles for ENPH
+2025-05-22 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:46 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-05-22 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-22 21:47:49 - INFO - __main__ - Bottom performer analysis complete
+2025-05-22 21:47:49 - INFO - __main__ - Saving results to JSON...
+2025-05-22 21:47:49 - INFO - __main__ - Analysis complete and saved to market_analysis.json
