@@ -1,0 +1,70 @@
+2025-05-23 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-05-23 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-23 21:47:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-23 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-05-23 21:47:38 - INFO - __main__ - Original start: 2025-05-22 16:00:00-04:00 (America/New_York)
+2025-05-23 21:47:38 - INFO - __main__ - Original end: 2025-05-23 16:00:00-04:00 (America/New_York)
+2025-05-23 21:47:38 - INFO - __main__ - UTC start: 2025-05-22 04:00:00+00:00
+2025-05-23 21:47:38 - INFO - __main__ - UTC end: 2025-05-24 04:00:00+00:00
+2025-05-23 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-23 21:47:38 - INFO - __main__ - Received data for 503 symbols
+2025-05-23 21:47:38 - INFO - __main__ - Sample data structure for HON:
+2025-05-23 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-05-23 21:47:38 - INFO - __main__ - Bar timestamp: 2025-05-22 04:00:00+00:00 (UTC)
+2025-05-23 21:47:38 - INFO - __main__ - Bar timestamp: 2025-05-23 04:00:00+00:00 (UTC)
+2025-05-23 21:47:38 - INFO - __main__ - HON timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-23 21:47:38 - INFO - __main__ - JCI timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-23 21:47:38 - INFO - __main__ - MPC timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-23 21:47:38 - INFO - __main__ - BRO timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-23 21:47:38 - INFO - __main__ - EQT timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-23 21:47:39 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-23 21:47:39 - INFO - __main__ - Data issues encountered: 0
+2025-05-23 21:47:39 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-23 21:47:39 - INFO - __main__ - Analysis for market close on May 23, 2025
+2025-05-23 21:47:39 - INFO - __main__ - Found 503 stocks with price data
+2025-05-23 21:47:39 - INFO - __main__ - Found Wikipedia URL for INTU: https://en.wikipedia.org/wiki/Intuit
+2025-05-23 21:47:41 - INFO - __main__ - Found Wikipedia URL for DECK: https://en.wikipedia.org/wiki/Deckers_Brands
+2025-05-23 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-05-23 21:47:43 - INFO - __main__ - Analyzing Intuit (INTU)
+2025-05-23 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-23 21:47:43 - INFO - __main__ - Searching for articles about INTU
+2025-05-23 21:47:43 - INFO - __main__ - Searching for news about Intuit
+2025-05-23 21:47:44 - INFO - __main__ - Found 6 recent search results for Intuit
+2025-05-23 21:47:44 - INFO - __main__ - Found 6 URLs to try for INTU
+2025-05-23 21:47:44 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/05/23/intuit-shares-pop-9percent-on-earnings-beat-rosy-guidance.html
+2025-05-23 21:47:44 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-23 21:47:44 - INFO - __main__ - Successfully extracted article content (2276 chars)
+2025-05-23 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/turbotax-maker-intuits-stock-soars-154538638.html
+2025-05-23 21:47:44 - INFO - __main__ - Successfully extracted article content (1869 chars)
+2025-05-23 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/stellantis-apple-fall-tariff-threats-133726420.html
+2025-05-23 21:47:45 - INFO - __main__ - Successfully extracted article content (6439 chars)
+2025-05-23 21:47:45 - INFO - __main__ - Found total of 3 valid articles for INTU
+2025-05-23 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:47 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-05-23 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:49 - INFO - __main__ - Top performer analysis complete
+2025-05-23 21:47:49 - INFO - __main__ - Analyzing bottom performer...
+2025-05-23 21:47:49 - INFO - __main__ - Analyzing Deckers Brands (DECK)
+2025-05-23 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-23 21:47:50 - INFO - __main__ - Searching for articles about DECK
+2025-05-23 21:47:50 - INFO - __main__ - Searching for news about Deckers Brands
+2025-05-23 21:47:50 - INFO - __main__ - Found 6 recent search results for Deckers Brands
+2025-05-23 21:47:50 - INFO - __main__ - Found 6 URLs to try for DECK
+2025-05-23 21:47:50 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-05232025-11740754
+2025-05-23 21:47:50 - INFO - __main__ - Successfully extracted article content (13842 chars)
+2025-05-23 21:47:50 - INFO - __main__ - Fetching content from: https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-may-23-2025-11740613
+2025-05-23 21:47:50 - INFO - __main__ - Successfully extracted article content (3310 chars)
+2025-05-23 21:47:50 - INFO - __main__ - Fetching content from: https://www.pbs.org/newshour/economy/global-markets-tumble-after-trump-announces-tariffs-against-european-union-apple
+2025-05-23 21:47:51 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-23 21:47:51 - INFO - __main__ - Successfully extracted article content (4792 chars)
+2025-05-23 21:47:51 - INFO - __main__ - Found total of 3 valid articles for DECK
+2025-05-23 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:54 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-05-23 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-23 21:47:57 - INFO - __main__ - Bottom performer analysis complete
+2025-05-23 21:47:57 - INFO - __main__ - Saving results to JSON...
+2025-05-23 21:47:57 - INFO - __main__ - Analysis complete and saved to market_analysis.json
