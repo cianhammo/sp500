@@ -1,0 +1,66 @@
+2025-05-26 21:47:21 - INFO - __main__ - Starting SP500 analysis script
+2025-05-26 21:47:21 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-26 21:47:21 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-26 21:47:21 - INFO - __main__ - Runtime timezone: UTC
+2025-05-26 21:47:21 - INFO - __main__ - Original start: 2025-05-22 16:00:00-04:00 (America/New_York)
+2025-05-26 21:47:21 - INFO - __main__ - Original end: 2025-05-23 16:00:00-04:00 (America/New_York)
+2025-05-26 21:47:21 - INFO - __main__ - UTC start: 2025-05-22 04:00:00+00:00
+2025-05-26 21:47:21 - INFO - __main__ - UTC end: 2025-05-24 04:00:00+00:00
+2025-05-26 21:47:21 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-26 21:47:22 - INFO - __main__ - Received data for 503 symbols
+2025-05-26 21:47:22 - INFO - __main__ - Sample data structure for ICE:
+2025-05-26 21:47:22 - INFO - __main__ - Number of bars: 2
+2025-05-26 21:47:22 - INFO - __main__ - Bar timestamp: 2025-05-22 04:00:00+00:00 (UTC)
+2025-05-26 21:47:22 - INFO - __main__ - Bar timestamp: 2025-05-23 04:00:00+00:00 (UTC)
+2025-05-26 21:47:22 - INFO - __main__ - ICE timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-26 21:47:22 - INFO - __main__ - KMI timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-26 21:47:22 - INFO - __main__ - MET timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-26 21:47:22 - INFO - __main__ - STLD timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-26 21:47:22 - INFO - __main__ - YUM timestamps - Today: 2025-05-23 04:00:00+00:00, Yesterday: 2025-05-22 04:00:00+00:00
+2025-05-26 21:47:22 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-26 21:47:22 - INFO - __main__ - Data issues encountered: 0
+2025-05-26 21:47:22 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-26 21:47:22 - INFO - __main__ - Analysis for market close on May 23, 2025
+2025-05-26 21:47:22 - INFO - __main__ - Found 503 stocks with price data
+2025-05-26 21:47:23 - INFO - __main__ - Found Wikipedia URL for INTU: https://en.wikipedia.org/wiki/Intuit
+2025-05-26 21:47:25 - INFO - __main__ - Found Wikipedia URL for DECK: https://en.wikipedia.org/wiki/Deckers_Brands
+2025-05-26 21:47:27 - INFO - __main__ - Analyzing top performer...
+2025-05-26 21:47:27 - INFO - __main__ - Analyzing Intuit (INTU)
+2025-05-26 21:47:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-26 21:47:27 - INFO - __main__ - Searching for articles about INTU
+2025-05-26 21:47:27 - INFO - __main__ - Searching for news about Intuit
+2025-05-26 21:47:28 - INFO - __main__ - Found 6 recent search results for Intuit
+2025-05-26 21:47:28 - INFO - __main__ - Found 6 URLs to try for INTU
+2025-05-26 21:47:28 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-05-26/meituan-achieves-solid-sales-growth-on-global-expansion
+2025-05-26 21:47:28 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-05-26 21:47:28 - INFO - __main__ - Fetching content from: https://analyticsindiamag.com/deep-tech/faceless-robots-are-taking-over-the-future-of-work/
+2025-05-26 21:47:28 - INFO - __main__ - Successfully extracted article content (6274 chars)
+2025-05-26 21:47:28 - INFO - __main__ - Fetching content from: https://www.pcmag.com/news/home-security-camera-deals-memorial-day-2025-sales
+2025-05-26 21:47:28 - INFO - __main__ - Successfully extracted article content (10489 chars)
+2025-05-26 21:47:28 - INFO - __main__ - Found total of 2 valid articles for INTU
+2025-05-26 21:47:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-26 21:47:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-26 21:47:30 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-05-26 21:47:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-26 21:47:32 - INFO - __main__ - Top performer analysis complete
+2025-05-26 21:47:32 - INFO - __main__ - Analyzing bottom performer...
+2025-05-26 21:47:32 - INFO - __main__ - Analyzing Deckers Brands (DECK)
+2025-05-26 21:47:32 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-26 21:47:32 - INFO - __main__ - Searching for articles about DECK
+2025-05-26 21:47:32 - INFO - __main__ - Searching for news about Deckers Brands
+2025-05-26 21:47:33 - INFO - __main__ - Found 6 recent search results for Deckers Brands
+2025-05-26 21:47:33 - INFO - __main__ - Found 6 URLs to try for DECK
+2025-05-26 21:47:33 - INFO - __main__ - Fetching content from: https://www.marketscreener.com/quote/stock/DECKERS-OUTDOOR-CORPORATI-16402770/news/Deckers-Brands-Appoints-Cynthia-L-Davis-as-Chair-of-the-Board-Michael-F-Devine-III-to-Retire-fro-50066252/
+2025-05-26 21:47:33 - INFO - __main__ - Successfully extracted article content (6194 chars)
+2025-05-26 21:47:33 - INFO - __main__ - Fetching content from: https://turismo.cadiz.es/efdefsshop/entertainment-news/red-carpet/chrissy-teigen-tony-awards-2021-red-carpet-silver-dress-1203184783/%22%3Ca
+2025-05-26 21:47:35 - INFO - __main__ - Successfully extracted article content (166 chars)
+2025-05-26 21:47:35 - INFO - __main__ - Fetching content from: https://be.fashionjobs.com/en-be/entreprise/distec-international,141637,103809.html
+2025-05-26 21:47:35 - INFO - __main__ - Successfully extracted article content (865 chars)
+2025-05-26 21:47:35 - INFO - __main__ - Found total of 2 valid articles for DECK
+2025-05-26 21:47:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-26 21:47:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-26 21:47:36 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-05-26 21:47:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-26 21:47:39 - INFO - __main__ - Bottom performer analysis complete
+2025-05-26 21:47:39 - INFO - __main__ - Saving results to JSON...
+2025-05-26 21:47:39 - INFO - __main__ - Analysis complete and saved to market_analysis.json
