@@ -1,0 +1,76 @@
+2025-05-27 21:47:38 - INFO - __main__ - Starting SP500 analysis script
+2025-05-27 21:47:39 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-27 21:47:39 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-27 21:47:39 - INFO - __main__ - Runtime timezone: UTC
+2025-05-27 21:47:39 - INFO - __main__ - Original start: 2025-05-23 16:00:00-04:00 (America/New_York)
+2025-05-27 21:47:39 - INFO - __main__ - Original end: 2025-05-27 16:00:00-04:00 (America/New_York)
+2025-05-27 21:47:39 - INFO - __main__ - UTC start: 2025-05-23 04:00:00+00:00
+2025-05-27 21:47:39 - INFO - __main__ - UTC end: 2025-05-28 04:00:00+00:00
+2025-05-27 21:47:39 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-27 21:47:40 - INFO - __main__ - Received data for 503 symbols
+2025-05-27 21:47:40 - INFO - __main__ - Sample data structure for BALL:
+2025-05-27 21:47:40 - INFO - __main__ - Number of bars: 2
+2025-05-27 21:47:40 - INFO - __main__ - Bar timestamp: 2025-05-23 04:00:00+00:00 (UTC)
+2025-05-27 21:47:40 - INFO - __main__ - Bar timestamp: 2025-05-27 04:00:00+00:00 (UTC)
+2025-05-27 21:47:40 - INFO - __main__ - BALL timestamps - Today: 2025-05-27 04:00:00+00:00, Yesterday: 2025-05-23 04:00:00+00:00
+2025-05-27 21:47:40 - INFO - __main__ - BKNG timestamps - Today: 2025-05-27 04:00:00+00:00, Yesterday: 2025-05-23 04:00:00+00:00
+2025-05-27 21:47:40 - INFO - __main__ - KMX timestamps - Today: 2025-05-27 04:00:00+00:00, Yesterday: 2025-05-23 04:00:00+00:00
+2025-05-27 21:47:40 - INFO - __main__ - PGR timestamps - Today: 2025-05-27 04:00:00+00:00, Yesterday: 2025-05-23 04:00:00+00:00
+2025-05-27 21:47:40 - INFO - __main__ - ARE timestamps - Today: 2025-05-27 04:00:00+00:00, Yesterday: 2025-05-23 04:00:00+00:00
+2025-05-27 21:47:40 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-27 21:47:40 - INFO - __main__ - Data issues encountered: 0
+2025-05-27 21:47:40 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-27 21:47:40 - INFO - __main__ - Analysis for market close on May 27, 2025
+2025-05-27 21:47:40 - INFO - __main__ - Found 503 stocks with price data
+2025-05-27 21:47:41 - INFO - __main__ - Found Wikipedia URL for HOLX: https://en.wikipedia.org/wiki/Hologic
+2025-05-27 21:47:43 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2025-05-27 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-05-27 21:47:45 - INFO - __main__ - Analyzing Hologic (HOLX)
+2025-05-27 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-27 21:47:46 - INFO - __main__ - Searching for articles about HOLX
+2025-05-27 21:47:46 - INFO - __main__ - Searching for news about Hologic
+2025-05-27 21:47:46 - INFO - __main__ - Found 6 recent search results for Hologic
+2025-05-27 21:47:46 - INFO - __main__ - Found 6 URLs to try for HOLX
+2025-05-27 21:47:46 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/hologic-stock-buyout-offer-tpg-blackstone-6d8bc584
+2025-05-27 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-27 21:47:46 - INFO - __main__ - Fetching content from: https://www.ft.com/content/f4d12c75-1a54-4d8c-8aa6-f863cbdc4aab
+2025-05-27 21:47:47 - INFO - __main__ - Successfully extracted article content (123 chars)
+2025-05-27 21:47:47 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-salesforce-crm-infa-crwv-nvda/
+2025-05-27 21:47:47 - INFO - __main__ - Successfully extracted article content (374 chars)
+2025-05-27 21:47:47 - INFO - __main__ - Fetching content from: https://www.perplexity.ai/finance
+2025-05-27 21:47:47 - INFO - __main__ - Successfully extracted article content (350 chars)
+2025-05-27 21:47:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-30ea8623
+2025-05-27 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-27 21:47:47 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/healthcare-pharmaceuticals/hologic-rejects-16-billion-take-private-proposal-tpg-blackstone-financial-times-2025-05-27/
+2025-05-27 21:47:48 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-27 21:47:48 - INFO - __main__ - Found total of 0 valid articles for HOLX
+2025-05-27 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-27 21:47:50 - INFO - __main__ - Top performer analysis complete
+2025-05-27 21:47:50 - INFO - __main__ - Analyzing bottom performer...
+2025-05-27 21:47:50 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2025-05-27 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-27 21:47:51 - INFO - __main__ - Searching for articles about FICO
+2025-05-27 21:47:51 - INFO - __main__ - Searching for news about Fair Isaac
+2025-05-27 21:47:51 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2025-05-27 21:47:51 - INFO - __main__ - Found 6 URLs to try for FICO
+2025-05-27 21:47:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/fico-stock-leads-s-and-p-500-decliners-again-11742306
+2025-05-27 21:47:51 - INFO - __main__ - Successfully extracted article content (1129 chars)
+2025-05-27 21:47:51 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/fair-isaac-fico-stock-prices-pulte-0e6d7cb4
+2025-05-27 21:47:51 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-27 21:47:51 - INFO - __main__ - Fetching content from: https://x.com/pulte/status/1927362114894585944
+2025-05-27 21:47:52 - INFO - __main__ - Successfully extracted article content (171 chars)
+2025-05-27 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-autozone-newmont-and-more-11742215
+2025-05-27 21:47:52 - INFO - __main__ - Successfully extracted article content (1631 chars)
+2025-05-27 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/watch-these-s-and-p-500-levels-as-benchmark-index-looks-to-snap-4-day-losing-streak-11742008
+2025-05-27 21:47:52 - INFO - __main__ - Successfully extracted article content (3584 chars)
+2025-05-27 21:47:52 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-salesforce-crm-infa-crwv-nvda/
+2025-05-27 21:47:53 - INFO - __main__ - Successfully extracted article content (374 chars)
+2025-05-27 21:47:53 - INFO - __main__ - Found total of 3 valid articles for FICO
+2025-05-27 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-27 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-27 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-27 21:47:55 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-05-27 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-27 21:47:57 - INFO - __main__ - Bottom performer analysis complete
+2025-05-27 21:47:57 - INFO - __main__ - Saving results to JSON...
+2025-05-27 21:47:57 - INFO - __main__ - Analysis complete and saved to market_analysis.json
