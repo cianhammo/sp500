@@ -1,0 +1,204 @@
+2025-05-28 11:10:31,657 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-05-28 11:10:31,657 - sec_monitor - INFO - Loading S&P 500 data...
+2025-05-28 11:10:31,657 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-05-28 11:10:31,657 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-05-28 11:10:31,657 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-05-28 11:10:31,657 - sec_monitor - INFO - Initializing components...
+2025-05-28 11:10:31,658 - sec_monitor - INFO - Initializing components
+2025-05-28 11:10:31,658 - sec_monitor - INFO - SEC fetcher initialized
+2025-05-28 11:10:31,658 - sec_monitor - INFO - Filing analyzer initialized
+2025-05-28 11:10:31,658 - sec_monitor - INFO - Alpaca clients initialized
+2025-05-28 11:10:31,658 - sec_monitor - INFO - All components initialized successfully
+2025-05-28 11:10:31,659 - sec_monitor - INFO - Found old JSON file, archiving
+2025-05-28 11:10:31,659 - sec_monitor - INFO - Starting new filing collection for today
+2025-05-28 11:10:31,659 - sec_monitor - INFO - Fetching SEC filings...
+2025-05-28 11:10:45,870 - sec_monitor - INFO - No more entries found
+2025-05-28 11:10:45,870 - sec_monitor - INFO - Completed fetching. Found 92 total filings
+2025-05-28 11:10:45,870 - sec_monitor - INFO - Found 8 new interesting filings
+2025-05-28 11:10:45,870 - sec_monitor - INFO - Found 8 new filings to process
+2025-05-28 11:10:45,870 - sec_monitor - INFO - Processing filing 1/8: HON
+2025-05-28 11:11:16,717 - sec_monitor - INFO - ==================================================
+2025-05-28 11:11:16,718 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:11:16,718 - sec_monitor - INFO - Timestamp: 2025-05-28 11:11:16
+2025-05-28 11:11:16,950 - sec_monitor - INFO - token percentage = 5%
+2025-05-28 11:11:16,950 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:11:16,950 - sec_monitor - INFO - Timestamp: 2025-05-28 11:11:16
+2025-05-28 11:11:49,326 - sec_monitor - INFO - API call successful
+2025-05-28 11:11:50,328 - sec_monitor - INFO - Processing filing 2/8: FMC
+2025-05-28 11:12:21,835 - sec_monitor - INFO - ==================================================
+2025-05-28 11:12:21,835 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:12:21,835 - sec_monitor - INFO - Timestamp: 2025-05-28 11:12:21
+2025-05-28 11:12:22,254 - sec_monitor - INFO - token percentage = 14%
+2025-05-28 11:12:22,255 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:12:22,255 - sec_monitor - INFO - Timestamp: 2025-05-28 11:12:22
+2025-05-28 11:12:36,605 - sec_monitor - INFO - API call successful
+2025-05-28 11:12:37,607 - sec_monitor - INFO - Processing filing 3/8: ELV
+2025-05-28 11:13:08,011 - sec_monitor - INFO - ==================================================
+2025-05-28 11:13:08,011 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:13:08,011 - sec_monitor - INFO - Timestamp: 2025-05-28 11:13:08
+2025-05-28 11:13:08,110 - sec_monitor - INFO - token percentage = 2%
+2025-05-28 11:13:08,110 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:13:08,111 - sec_monitor - INFO - Timestamp: 2025-05-28 11:13:08
+2025-05-28 11:13:10,680 - sec_monitor - INFO - API call successful
+2025-05-28 11:13:11,681 - sec_monitor - INFO - Processing filing 4/8: HD
+2025-05-28 11:14:02,077 - sec_monitor - INFO - ==================================================
+2025-05-28 11:14:02,078 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:14:02,078 - sec_monitor - INFO - Timestamp: 2025-05-28 11:14:02
+2025-05-28 11:14:02,632 - sec_monitor - INFO - token percentage = 59%
+2025-05-28 11:14:02,633 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:14:02,633 - sec_monitor - INFO - Timestamp: 2025-05-28 11:14:02
+2025-05-28 11:14:23,640 - sec_monitor - INFO - API call successful
+2025-05-28 11:14:53,671 - sec_monitor - INFO - ==================================================
+2025-05-28 11:14:53,671 - sec_monitor - INFO - Processing middle chunk
+2025-05-28 11:14:53,671 - sec_monitor - INFO - Timestamp: 2025-05-28 11:14:53
+2025-05-28 11:14:54,366 - sec_monitor - INFO - token percentage = 44%
+2025-05-28 11:14:54,366 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:14:54,366 - sec_monitor - INFO - Timestamp: 2025-05-28 11:14:54
+2025-05-28 11:14:55,049 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-28 11:14:55,049 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-05-28 11:14:55,049 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-28 11:17:55,140 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-28 11:17:55,140 - sec_monitor - INFO - Timestamp: 2025-05-28 11:17:55
+2025-05-28 11:18:11,013 - sec_monitor - INFO - API call successful
+2025-05-28 11:18:41,019 - sec_monitor - INFO - ==================================================
+2025-05-28 11:18:41,019 - sec_monitor - INFO - Processing middle chunk
+2025-05-28 11:18:41,019 - sec_monitor - INFO - Timestamp: 2025-05-28 11:18:41
+2025-05-28 11:18:41,600 - sec_monitor - INFO - token percentage = 42%
+2025-05-28 11:18:41,601 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:18:41,601 - sec_monitor - INFO - Timestamp: 2025-05-28 11:18:41
+2025-05-28 11:18:55,880 - sec_monitor - INFO - API call successful
+2025-05-28 11:19:25,911 - sec_monitor - INFO - ==================================================
+2025-05-28 11:19:25,911 - sec_monitor - INFO - Processing middle chunk
+2025-05-28 11:19:25,911 - sec_monitor - INFO - Timestamp: 2025-05-28 11:19:25
+2025-05-28 11:19:26,419 - sec_monitor - INFO - token percentage = 54%
+2025-05-28 11:19:26,420 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:19:26,420 - sec_monitor - INFO - Timestamp: 2025-05-28 11:19:26
+2025-05-28 11:19:45,561 - sec_monitor - INFO - API call successful
+2025-05-28 11:20:15,591 - sec_monitor - INFO - ==================================================
+2025-05-28 11:20:15,592 - sec_monitor - INFO - Processing last chunk
+2025-05-28 11:20:15,592 - sec_monitor - INFO - Timestamp: 2025-05-28 11:20:15
+2025-05-28 11:20:15,706 - sec_monitor - INFO - token percentage = 5%
+2025-05-28 11:20:15,707 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:20:15,707 - sec_monitor - INFO - Timestamp: 2025-05-28 11:20:15
+2025-05-28 11:20:15,864 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-05-28 11:20:15,865 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-05-28 11:20:15,865 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-05-28 11:23:15,891 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-05-28 11:23:15,892 - sec_monitor - INFO - Timestamp: 2025-05-28 11:23:15
+2025-05-28 11:23:22,143 - sec_monitor - INFO - API call successful
+2025-05-28 11:23:22,143 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-05-28 11:23:22,143 - sec_monitor - INFO - Timestamp: 2025-05-28 11:23:22
+2025-05-28 11:23:23,335 - sec_monitor - INFO - Combine API call successful
+2025-05-28 11:23:24,337 - sec_monitor - INFO - Processing filing 5/8: ROST
+2025-05-28 11:23:55,017 - sec_monitor - INFO - ==================================================
+2025-05-28 11:23:55,017 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:23:55,018 - sec_monitor - INFO - Timestamp: 2025-05-28 11:23:55
+2025-05-28 11:23:55,125 - sec_monitor - INFO - token percentage = 2%
+2025-05-28 11:23:55,125 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:23:55,126 - sec_monitor - INFO - Timestamp: 2025-05-28 11:23:55
+2025-05-28 11:23:58,032 - sec_monitor - INFO - API call successful
+2025-05-28 11:23:59,033 - sec_monitor - INFO - Processing filing 6/8: NOC
+2025-05-28 11:24:29,413 - sec_monitor - INFO - ==================================================
+2025-05-28 11:24:29,414 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:24:29,414 - sec_monitor - INFO - Timestamp: 2025-05-28 11:24:29
+2025-05-28 11:24:29,509 - sec_monitor - INFO - token percentage = 2%
+2025-05-28 11:24:29,510 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:24:29,510 - sec_monitor - INFO - Timestamp: 2025-05-28 11:24:29
+2025-05-28 11:24:32,838 - sec_monitor - INFO - API call successful
+2025-05-28 11:24:33,839 - sec_monitor - INFO - Processing filing 7/8: EQIX
+2025-05-28 11:25:04,431 - sec_monitor - INFO - ==================================================
+2025-05-28 11:25:04,431 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:25:04,431 - sec_monitor - INFO - Timestamp: 2025-05-28 11:25:04
+2025-05-28 11:25:04,581 - sec_monitor - INFO - token percentage = 3%
+2025-05-28 11:25:04,581 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:25:04,581 - sec_monitor - INFO - Timestamp: 2025-05-28 11:25:04
+2025-05-28 11:25:08,410 - sec_monitor - INFO - API call successful
+2025-05-28 11:25:09,412 - sec_monitor - INFO - Processing filing 8/8: BLDR
+2025-05-28 11:25:40,522 - sec_monitor - INFO - ==================================================
+2025-05-28 11:25:40,522 - sec_monitor - INFO - Processing first chunk
+2025-05-28 11:25:40,522 - sec_monitor - INFO - Timestamp: 2025-05-28 11:25:40
+2025-05-28 11:25:40,835 - sec_monitor - INFO - token percentage = 8%
+2025-05-28 11:25:40,836 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-05-28 11:25:40,836 - sec_monitor - INFO - Timestamp: 2025-05-28 11:25:40
+2025-05-28 11:25:49,110 - sec_monitor - INFO - API call successful
+2025-05-28 11:25:50,112 - sec_monitor - INFO - Fetching supplementary data...
+2025-05-28 11:25:50,383 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-05-28 11:25:50,383 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-05-28 11:25:50,383 - sec_monitor - INFO - Market open: False
+2025-05-28 11:25:50,383 - sec_monitor - INFO - Number of filing times mapped: 8
+2025-05-28 11:25:50,392 - sec_monitor - INFO - Last trading day: 2025-05-28
+2025-05-28 11:25:50,392 - sec_monitor - INFO - Processing ticker: HON
+2025-05-28 11:25:50,749 - sec_monitor - INFO - Number of bars for HON: 2
+2025-05-28 11:25:50,749 - sec_monitor - INFO - Last bar close for HON: 226.37
+2025-05-28 11:25:50,749 - sec_monitor - INFO - Outside market hours price for HON: 226.37
+2025-05-28 11:25:50,750 - sec_monitor - INFO - Processing ticker: FMC
+2025-05-28 11:25:50,766 - sec_monitor - INFO - Number of bars for FMC: 2
+2025-05-28 11:25:50,766 - sec_monitor - INFO - Last bar close for FMC: 39.015
+2025-05-28 11:25:50,766 - sec_monitor - INFO - Outside market hours price for FMC: 39.015
+2025-05-28 11:25:50,766 - sec_monitor - INFO - Processing ticker: ELV
+2025-05-28 11:25:50,779 - sec_monitor - INFO - Number of bars for ELV: 2
+2025-05-28 11:25:50,779 - sec_monitor - INFO - Last bar close for ELV: 375.67
+2025-05-28 11:25:50,779 - sec_monitor - INFO - Outside market hours price for ELV: 375.67
+2025-05-28 11:25:50,780 - sec_monitor - INFO - Processing ticker: HD
+2025-05-28 11:25:50,794 - sec_monitor - INFO - Number of bars for HD: 3
+2025-05-28 11:25:50,794 - sec_monitor - INFO - Last bar close for HD: 370.27
+2025-05-28 11:25:50,795 - sec_monitor - INFO - Outside market hours price for HD: 370.27
+2025-05-28 11:25:50,795 - sec_monitor - INFO - Processing ticker: ROST
+2025-05-28 11:25:50,811 - sec_monitor - INFO - Number of bars for ROST: 3
+2025-05-28 11:25:50,811 - sec_monitor - INFO - Last bar close for ROST: 141.25
+2025-05-28 11:25:50,811 - sec_monitor - INFO - Outside market hours price for ROST: 141.25
+2025-05-28 11:25:50,811 - sec_monitor - INFO - Processing ticker: NOC
+2025-05-28 11:25:50,822 - sec_monitor - INFO - Number of bars for NOC: 3
+2025-05-28 11:25:50,822 - sec_monitor - INFO - Last bar close for NOC: 475.46
+2025-05-28 11:25:50,823 - sec_monitor - INFO - Outside market hours price for NOC: 475.46
+2025-05-28 11:25:50,823 - sec_monitor - INFO - Processing ticker: EQIX
+2025-05-28 11:25:50,836 - sec_monitor - INFO - Number of bars for EQIX: 3
+2025-05-28 11:25:50,837 - sec_monitor - INFO - Last bar close for EQIX: 875.725
+2025-05-28 11:25:50,837 - sec_monitor - INFO - Outside market hours price for EQIX: 875.725
+2025-05-28 11:25:50,837 - sec_monitor - INFO - Processing ticker: BLDR
+2025-05-28 11:25:50,849 - sec_monitor - INFO - Number of bars for BLDR: 3
+2025-05-28 11:25:50,849 - sec_monitor - INFO - Last bar close for BLDR: 111.5
+2025-05-28 11:25:50,849 - sec_monitor - INFO - Outside market hours price for BLDR: 111.5
+2025-05-28 11:25:53,165 - sec_monitor - INFO - Generating final output...
+2025-05-28 11:25:53,166 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-05-28 11:25:53,166 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 292143, 'output_words': 613, 'filings_processed': 8}
