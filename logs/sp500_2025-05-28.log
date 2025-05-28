@@ -1,0 +1,74 @@
+2025-05-28 21:47:48 - INFO - __main__ - Starting SP500 analysis script
+2025-05-28 21:47:48 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-28 21:47:48 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-28 21:47:48 - INFO - __main__ - Runtime timezone: UTC
+2025-05-28 21:47:48 - INFO - __main__ - Original start: 2025-05-27 16:00:00-04:00 (America/New_York)
+2025-05-28 21:47:48 - INFO - __main__ - Original end: 2025-05-28 16:00:00-04:00 (America/New_York)
+2025-05-28 21:47:48 - INFO - __main__ - UTC start: 2025-05-27 04:00:00+00:00
+2025-05-28 21:47:48 - INFO - __main__ - UTC end: 2025-05-29 04:00:00+00:00
+2025-05-28 21:47:48 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-28 21:47:49 - INFO - __main__ - Received data for 503 symbols
+2025-05-28 21:47:49 - INFO - __main__ - Sample data structure for KVUE:
+2025-05-28 21:47:49 - INFO - __main__ - Number of bars: 2
+2025-05-28 21:47:49 - INFO - __main__ - Bar timestamp: 2025-05-27 04:00:00+00:00 (UTC)
+2025-05-28 21:47:49 - INFO - __main__ - Bar timestamp: 2025-05-28 04:00:00+00:00 (UTC)
+2025-05-28 21:47:49 - INFO - __main__ - KVUE timestamps - Today: 2025-05-28 04:00:00+00:00, Yesterday: 2025-05-27 04:00:00+00:00
+2025-05-28 21:47:49 - INFO - __main__ - MSFT timestamps - Today: 2025-05-28 04:00:00+00:00, Yesterday: 2025-05-27 04:00:00+00:00
+2025-05-28 21:47:49 - INFO - __main__ - NKE timestamps - Today: 2025-05-28 04:00:00+00:00, Yesterday: 2025-05-27 04:00:00+00:00
+2025-05-28 21:47:49 - INFO - __main__ - DHI timestamps - Today: 2025-05-28 04:00:00+00:00, Yesterday: 2025-05-27 04:00:00+00:00
+2025-05-28 21:47:49 - INFO - __main__ - JNPR timestamps - Today: 2025-05-28 04:00:00+00:00, Yesterday: 2025-05-27 04:00:00+00:00
+2025-05-28 21:47:49 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-28 21:47:49 - INFO - __main__ - Data issues encountered: 0
+2025-05-28 21:47:49 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-28 21:47:49 - INFO - __main__ - Analysis for market close on May 28, 2025
+2025-05-28 21:47:49 - INFO - __main__ - Found 503 stocks with price data
+2025-05-28 21:47:50 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2025-05-28 21:47:52 - INFO - __main__ - Found Wikipedia URL for CDNS: https://en.wikipedia.org/wiki/Cadence_Design_Systems
+2025-05-28 21:47:54 - INFO - __main__ - Analyzing top performer...
+2025-05-28 21:47:54 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2025-05-28 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-28 21:47:54 - INFO - __main__ - Searching for articles about FICO
+2025-05-28 21:47:54 - INFO - __main__ - Searching for news about Fair Isaac
+2025-05-28 21:47:54 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2025-05-28 21:47:54 - INFO - __main__ - Found 6 URLs to try for FICO
+2025-05-28 21:47:54 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/05/28/baird-upgrades-credit-scoring-stock-after-plunging-on-regulatory-concern.html
+2025-05-28 21:47:55 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-28 21:47:55 - INFO - __main__ - Successfully extracted article content (1959 chars)
+2025-05-28 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-heavy-insider-sales-ceo-124804199.html
+2025-05-28 21:47:56 - INFO - __main__ - Successfully extracted article content (1426 chars)
+2025-05-28 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/1-top-cryptocurrency-buy-soars-111500004.html
+2025-05-28 21:47:56 - INFO - __main__ - Successfully extracted article content (5614 chars)
+2025-05-28 21:47:56 - INFO - __main__ - Found total of 3 valid articles for FICO
+2025-05-28 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:47:59 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-05-28 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:48:01 - INFO - __main__ - Top performer analysis complete
+2025-05-28 21:48:01 - INFO - __main__ - Analyzing bottom performer...
+2025-05-28 21:48:01 - INFO - __main__ - Analyzing Cadence Design Systems (CDNS)
+2025-05-28 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-28 21:48:01 - INFO - __main__ - Searching for articles about CDNS
+2025-05-28 21:48:01 - INFO - __main__ - Searching for news about Cadence Design Systems
+2025-05-28 21:48:01 - INFO - __main__ - Found 6 recent search results for Cadence Design Systems
+2025-05-28 21:48:01 - INFO - __main__ - Found 6 URLs to try for CDNS
+2025-05-28 21:48:01 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/trump-chips-cadence-synopsys-stock-china-62ee6ad4
+2025-05-28 21:48:01 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-28 21:48:01 - INFO - __main__ - Fetching content from: https://www.ft.com/content/2c0db765-03ac-4820-8a02-806469848bee
+2025-05-28 21:48:02 - INFO - __main__ - Successfully extracted article content (136 chars)
+2025-05-28 21:48:02 - INFO - __main__ - Fetching content from: https://www.tradingview.com/news/reuters.com,2025:newsml_L2N3S010Z:0-indexes-end-down-ahead-of-nvidia-results-chip-designers-fall-late/
+2025-05-28 21:48:03 - INFO - __main__ - Successfully extracted article content (2393 chars)
+2025-05-28 21:48:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gamestop-pulls-trigger-discloses-513-134733260.html
+2025-05-28 21:48:03 - INFO - __main__ - Successfully extracted article content (2579 chars)
+2025-05-28 21:48:03 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/cadence-design-systems-inc-stock-underperforms-wednesday-when-compared-to-competitors-3e81746a-f3248af04bb0
+2025-05-28 21:48:03 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-28 21:48:03 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/05/28/why-cadence-design-systems-plunged-late-in-the-day/
+2025-05-28 21:48:03 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-05-28 21:48:03 - INFO - __main__ - Found total of 2 valid articles for CDNS
+2025-05-28 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:48:05 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-05-28 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-28 21:48:07 - INFO - __main__ - Bottom performer analysis complete
+2025-05-28 21:48:07 - INFO - __main__ - Saving results to JSON...
+2025-05-28 21:48:07 - INFO - __main__ - Analysis complete and saved to market_analysis.json
