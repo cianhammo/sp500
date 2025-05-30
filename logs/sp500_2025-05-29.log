@@ -1,0 +1,74 @@
+2025-05-29 21:47:55 - INFO - __main__ - Starting SP500 analysis script
+2025-05-29 21:47:55 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-29 21:47:55 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-29 21:47:55 - INFO - __main__ - Runtime timezone: UTC
+2025-05-29 21:47:55 - INFO - __main__ - Original start: 2025-05-28 16:00:00-04:00 (America/New_York)
+2025-05-29 21:47:55 - INFO - __main__ - Original end: 2025-05-29 16:00:00-04:00 (America/New_York)
+2025-05-29 21:47:55 - INFO - __main__ - UTC start: 2025-05-28 04:00:00+00:00
+2025-05-29 21:47:55 - INFO - __main__ - UTC end: 2025-05-30 04:00:00+00:00
+2025-05-29 21:47:55 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-29 21:47:56 - INFO - __main__ - Received data for 503 symbols
+2025-05-29 21:47:56 - INFO - __main__ - Sample data structure for DD:
+2025-05-29 21:47:56 - INFO - __main__ - Number of bars: 2
+2025-05-29 21:47:56 - INFO - __main__ - Bar timestamp: 2025-05-28 04:00:00+00:00 (UTC)
+2025-05-29 21:47:56 - INFO - __main__ - Bar timestamp: 2025-05-29 04:00:00+00:00 (UTC)
+2025-05-29 21:47:56 - INFO - __main__ - DD timestamps - Today: 2025-05-29 04:00:00+00:00, Yesterday: 2025-05-28 04:00:00+00:00
+2025-05-29 21:47:56 - INFO - __main__ - LNT timestamps - Today: 2025-05-29 04:00:00+00:00, Yesterday: 2025-05-28 04:00:00+00:00
+2025-05-29 21:47:56 - INFO - __main__ - STT timestamps - Today: 2025-05-29 04:00:00+00:00, Yesterday: 2025-05-28 04:00:00+00:00
+2025-05-29 21:47:56 - INFO - __main__ - AWK timestamps - Today: 2025-05-29 04:00:00+00:00, Yesterday: 2025-05-28 04:00:00+00:00
+2025-05-29 21:47:56 - INFO - __main__ - ES timestamps - Today: 2025-05-29 04:00:00+00:00, Yesterday: 2025-05-28 04:00:00+00:00
+2025-05-29 21:47:56 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-29 21:47:56 - INFO - __main__ - Data issues encountered: 0
+2025-05-29 21:47:56 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-29 21:47:56 - INFO - __main__ - Analysis for market close on May 29, 2025
+2025-05-29 21:47:56 - INFO - __main__ - Found 503 stocks with price data
+2025-05-29 21:47:56 - INFO - __main__ - Found Wikipedia URL for NDSN: https://en.wikipedia.org/wiki/Nordson_Corporation
+2025-05-29 21:47:59 - INFO - __main__ - Found Wikipedia URL for HPQ: https://en.wikipedia.org/wiki/HP_Inc.
+2025-05-29 21:48:01 - INFO - __main__ - Analyzing top performer...
+2025-05-29 21:48:01 - INFO - __main__ - Analyzing Nordson Corporation (NDSN)
+2025-05-29 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-29 21:48:01 - INFO - __main__ - Searching for articles about NDSN
+2025-05-29 21:48:01 - INFO - __main__ - Searching for news about Nordson Corporation
+2025-05-29 21:48:01 - INFO - __main__ - Found 6 recent search results for Nordson Corporation
+2025-05-29 21:48:01 - INFO - __main__ - Found 6 URLs to try for NDSN
+2025-05-29 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-meridian-contrarian-fund-holding-140049754.html
+2025-05-29 21:48:02 - INFO - __main__ - Successfully extracted article content (2997 chars)
+2025-05-29 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/best-buy-stock-sinks-after-it-cuts-guidance-due-to-trumps-tariffs-112933106.html
+2025-05-29 21:48:02 - INFO - __main__ - Successfully extracted article content (4507 chars)
+2025-05-29 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-as-wall-street-weighs-trump-tariff-block-nvidia-earnings-133026362.html
+2025-05-29 21:48:03 - INFO - __main__ - Successfully extracted article content (1710 chars)
+2025-05-29 21:48:03 - INFO - __main__ - Found total of 3 valid articles for NDSN
+2025-05-29 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:05 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-05-29 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:07 - INFO - __main__ - Top performer analysis complete
+2025-05-29 21:48:07 - INFO - __main__ - Analyzing bottom performer...
+2025-05-29 21:48:07 - INFO - __main__ - Analyzing HP Inc. (HPQ)
+2025-05-29 21:48:07 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-29 21:48:08 - INFO - __main__ - Searching for articles about HPQ
+2025-05-29 21:48:08 - INFO - __main__ - Searching for news about HP Inc.
+2025-05-29 21:48:08 - INFO - __main__ - Found 6 recent search results for HP Inc.
+2025-05-29 21:48:08 - INFO - __main__ - Found 6 URLs to try for HPQ
+2025-05-29 21:48:08 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-6e3e19cb
+2025-05-29 21:48:08 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-29 21:48:08 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-05-28/hp-profit-outlook-falls-short-on-tariffs-costs-economy
+2025-05-29 21:48:08 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-05-29 21:48:08 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-hp-best-buy-and-more-11744420
+2025-05-29 21:48:09 - INFO - __main__ - Successfully extracted article content (1878 chars)
+2025-05-29 21:48:09 - INFO - __main__ - Fetching content from: https://docs.publicnow.com/viewDoc.aspx?filename=14461\EXT\4132186FAA8E4E685CC0B493F36FC8FD478F1820_A778636FC5F9BAC49ED15ED905495C90CD782BAB.PDF
+2025-05-29 21:48:09 - WARNING - __main__ - Article content too short (41 chars)
+2025-05-29 21:48:09 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4453277-biggest-stock-movers-thursday-nvda-ai-and-more
+2025-05-29 21:48:09 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-29 21:48:09 - WARNING - __main__ - Article content too short (0 chars)
+2025-05-29 21:48:09 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/AVGO/
+2025-05-29 21:48:09 - INFO - __main__ - Successfully extracted article content (2050 chars)
+2025-05-29 21:48:09 - INFO - __main__ - Found total of 2 valid articles for HPQ
+2025-05-29 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:11 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-05-29 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-05-29 21:48:13 - INFO - __main__ - Bottom performer analysis complete
+2025-05-29 21:48:13 - INFO - __main__ - Saving results to JSON...
+2025-05-29 21:48:13 - INFO - __main__ - Analysis complete and saved to market_analysis.json
