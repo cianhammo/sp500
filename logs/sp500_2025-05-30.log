@@ -1,0 +1,83 @@
+2025-05-30 21:47:32 - INFO - __main__ - Starting SP500 analysis script
+2025-05-30 21:47:32 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-05-30 21:47:33 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 5, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-05-30 21:47:33 - INFO - __main__ - Runtime timezone: UTC
+2025-05-30 21:47:33 - INFO - __main__ - Original start: 2025-05-29 16:00:00-04:00 (America/New_York)
+2025-05-30 21:47:33 - INFO - __main__ - Original end: 2025-05-30 16:00:00-04:00 (America/New_York)
+2025-05-30 21:47:33 - INFO - __main__ - UTC start: 2025-05-29 04:00:00+00:00
+2025-05-30 21:47:33 - INFO - __main__ - UTC end: 2025-05-31 04:00:00+00:00
+2025-05-30 21:47:33 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-05-30 21:47:34 - INFO - __main__ - Received data for 503 symbols
+2025-05-30 21:47:34 - INFO - __main__ - Sample data structure for CHD:
+2025-05-30 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-05-30 21:47:34 - INFO - __main__ - Bar timestamp: 2025-05-29 04:00:00+00:00 (UTC)
+2025-05-30 21:47:34 - INFO - __main__ - Bar timestamp: 2025-05-30 04:00:00+00:00 (UTC)
+2025-05-30 21:47:34 - INFO - __main__ - CHD timestamps - Today: 2025-05-30 04:00:00+00:00, Yesterday: 2025-05-29 04:00:00+00:00
+2025-05-30 21:47:34 - INFO - __main__ - MSFT timestamps - Today: 2025-05-30 04:00:00+00:00, Yesterday: 2025-05-29 04:00:00+00:00
+2025-05-30 21:47:34 - INFO - __main__ - VICI timestamps - Today: 2025-05-30 04:00:00+00:00, Yesterday: 2025-05-29 04:00:00+00:00
+2025-05-30 21:47:34 - INFO - __main__ - ANSS timestamps - Today: 2025-05-30 04:00:00+00:00, Yesterday: 2025-05-29 04:00:00+00:00
+2025-05-30 21:47:34 - INFO - __main__ - ES timestamps - Today: 2025-05-30 04:00:00+00:00, Yesterday: 2025-05-29 04:00:00+00:00
+2025-05-30 21:47:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-05-30 21:47:34 - INFO - __main__ - Data issues encountered: 0
+2025-05-30 21:47:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-05-30 21:47:34 - INFO - __main__ - Analysis for market close on May 30, 2025
+2025-05-30 21:47:34 - INFO - __main__ - Found 503 stocks with price data
+2025-05-30 21:47:34 - INFO - __main__ - Found Wikipedia URL for ULTA: https://en.wikipedia.org/wiki/Ulta_Beauty
+2025-05-30 21:47:37 - INFO - __main__ - Found Wikipedia URL for REGN: https://en.wikipedia.org/wiki/Regeneron_Pharmaceuticals
+2025-05-30 21:47:39 - INFO - __main__ - Analyzing top performer...
+2025-05-30 21:47:39 - INFO - __main__ - Analyzing Ulta Beauty (ULTA)
+2025-05-30 21:47:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-30 21:47:39 - INFO - __main__ - Searching for articles about ULTA
+2025-05-30 21:47:39 - INFO - __main__ - Searching for news about Ulta Beauty
+2025-05-30 21:47:39 - INFO - __main__ - Found 6 recent search results for Ulta Beauty
+2025-05-30 21:47:39 - INFO - __main__ - Found 6 URLs to try for ULTA
+2025-05-30 21:47:39 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-regeneron-ulta-beauty-cooper-and-more-11745329
+2025-05-30 21:47:40 - INFO - __main__ - Successfully extracted article content (1980 chars)
+2025-05-30 21:47:40 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/05/30/stocks-making-the-biggest-moves-premarket-ulta-abnb-gap-aeo.html
+2025-05-30 21:47:40 - INFO - readability.readability - ruthless removal did not work. 
+2025-05-30 21:47:40 - INFO - __main__ - Successfully extracted article content (3209 chars)
+2025-05-30 21:47:40 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/ulta-stock-jumps-beauty-product-140110397.html
+2025-05-30 21:47:40 - INFO - __main__ - Successfully extracted article content (1753 chars)
+2025-05-30 21:47:40 - INFO - __main__ - Found total of 3 valid articles for ULTA
+2025-05-30 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:41 - ERROR - __main__ - Error getting relevance score for article: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:41 - ERROR - __main__ - Error getting relevance score for article: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:41 - ERROR - __main__ - Error getting relevance score for article: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:41 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-05-30 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:41 - ERROR - __main__ - Analysis failed for ULTA: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:41 - INFO - __main__ - Top performer analysis complete
+2025-05-30 21:47:41 - INFO - __main__ - Analyzing bottom performer...
+2025-05-30 21:47:41 - INFO - __main__ - Analyzing Regeneron Pharmaceuticals (REGN)
+2025-05-30 21:47:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-05-30 21:47:41 - INFO - __main__ - Searching for articles about REGN
+2025-05-30 21:47:41 - INFO - __main__ - Searching for news about Regeneron Pharmaceuticals
+2025-05-30 21:47:41 - INFO - __main__ - Found 6 recent search results for Regeneron Pharmaceuticals
+2025-05-30 21:47:41 - INFO - __main__ - Found 6 URLs to try for REGN
+2025-05-30 21:47:41 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/regeneron-stock-sanofi-stock-copd-treatment-failure/
+2025-05-30 21:47:42 - INFO - __main__ - Successfully extracted article content (2231 chars)
+2025-05-30 21:47:42 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/regeneron-stock-price-drug-trial-f4bee573
+2025-05-30 21:47:42 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-30 21:47:42 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/healthcare-pharmaceuticals/regeneron-shares-slide-mixed-trial-data-smokers-lung-drug-2025-05-30/
+2025-05-30 21:47:42 - WARNING - __main__ - Article content too short (43 chars)
+2025-05-30 21:47:42 - INFO - __main__ - Fetching content from: https://www.investopedia.com/copd-drug-developed-by-regeneron-sanofi-fails-key-test-11745193
+2025-05-30 21:47:43 - INFO - __main__ - Successfully extracted article content (1561 chars)
+2025-05-30 21:47:43 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-regeneron-ulta-beauty-cooper-and-more-11745329
+2025-05-30 21:47:43 - INFO - __main__ - Successfully extracted article content (1980 chars)
+2025-05-30 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/m/ce3e1177-238b-38c7-a4b6-d2a356f18904/regeneron-pharmaceuticals.html
+2025-05-30 21:47:43 - INFO - __main__ - Successfully extracted article content (122 chars)
+2025-05-30 21:47:43 - INFO - __main__ - Found total of 3 valid articles for REGN
+2025-05-30 21:47:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:43 - ERROR - __main__ - Error getting relevance score for article: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:43 - ERROR - __main__ - Error getting relevance score for article: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:44 - ERROR - __main__ - Error getting relevance score for article: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:44 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-05-30 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2025-05-30 21:47:44 - ERROR - __main__ - Analysis failed for REGN: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-05-30 21:47:44 - INFO - __main__ - Bottom performer analysis complete
+2025-05-30 21:47:44 - INFO - __main__ - Saving results to JSON...
+2025-05-30 21:47:44 - INFO - __main__ - Analysis complete and saved to market_analysis.json
