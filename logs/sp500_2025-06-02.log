@@ -1,0 +1,72 @@
+2025-06-02 21:47:56 - INFO - __main__ - Starting SP500 analysis script
+2025-06-02 21:47:56 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-02 21:47:56 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 5, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-02 21:47:56 - INFO - __main__ - Runtime timezone: UTC
+2025-06-02 21:47:56 - INFO - __main__ - Original start: 2025-05-30 16:00:00-04:00 (America/New_York)
+2025-06-02 21:47:56 - INFO - __main__ - Original end: 2025-06-02 16:00:00-04:00 (America/New_York)
+2025-06-02 21:47:56 - INFO - __main__ - UTC start: 2025-05-30 04:00:00+00:00
+2025-06-02 21:47:56 - INFO - __main__ - UTC end: 2025-06-03 04:00:00+00:00
+2025-06-02 21:47:56 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-02 21:47:57 - INFO - __main__ - Received data for 503 symbols
+2025-06-02 21:47:57 - INFO - __main__ - Sample data structure for CVX:
+2025-06-02 21:47:57 - INFO - __main__ - Number of bars: 2
+2025-06-02 21:47:57 - INFO - __main__ - Bar timestamp: 2025-05-30 04:00:00+00:00 (UTC)
+2025-06-02 21:47:57 - INFO - __main__ - Bar timestamp: 2025-06-02 04:00:00+00:00 (UTC)
+2025-06-02 21:47:57 - INFO - __main__ - CVX timestamps - Today: 2025-06-02 04:00:00+00:00, Yesterday: 2025-05-30 04:00:00+00:00
+2025-06-02 21:47:57 - INFO - __main__ - GLW timestamps - Today: 2025-06-02 04:00:00+00:00, Yesterday: 2025-05-30 04:00:00+00:00
+2025-06-02 21:47:57 - INFO - __main__ - MSI timestamps - Today: 2025-06-02 04:00:00+00:00, Yesterday: 2025-05-30 04:00:00+00:00
+2025-06-02 21:47:57 - INFO - __main__ - PEP timestamps - Today: 2025-06-02 04:00:00+00:00, Yesterday: 2025-05-30 04:00:00+00:00
+2025-06-02 21:47:57 - INFO - __main__ - WFC timestamps - Today: 2025-06-02 04:00:00+00:00, Yesterday: 2025-05-30 04:00:00+00:00
+2025-06-02 21:47:57 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-02 21:47:57 - INFO - __main__ - Data issues encountered: 0
+2025-06-02 21:47:57 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-02 21:47:57 - INFO - __main__ - Analysis for market close on June 02, 2025
+2025-06-02 21:47:57 - INFO - __main__ - Found 503 stocks with price data
+2025-06-02 21:47:57 - INFO - __main__ - Found Wikipedia URL for STLD: https://en.wikipedia.org/wiki/Steel_Dynamics
+2025-06-02 21:47:59 - INFO - __main__ - Found Wikipedia URL for FSLR: https://en.wikipedia.org/wiki/First_Solar
+2025-06-02 21:48:01 - INFO - __main__ - Analyzing top performer...
+2025-06-02 21:48:01 - INFO - __main__ - Analyzing Steel Dynamics (STLD)
+2025-06-02 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-02 21:48:02 - INFO - __main__ - Searching for articles about STLD
+2025-06-02 21:48:02 - INFO - __main__ - Searching for news about Steel Dynamics
+2025-06-02 21:48:02 - INFO - __main__ - Found 6 recent search results for Steel Dynamics
+2025-06-02 21:48:02 - INFO - __main__ - Found 6 URLs to try for STLD
+2025-06-02 21:48:02 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/02/stocks-making-the-biggest-moves-midday-tsla-bntx-dkng-stld-and-more.html
+2025-06-02 21:48:02 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-02 21:48:02 - INFO - __main__ - Successfully extracted article content (2133 chars)
+2025-06-02 21:48:02 - INFO - __main__ - Fetching content from: https://www.investopedia.com/why-these-steel-stocks-are-off-to-a-hot-start-monday-11746194
+2025-06-02 21:48:02 - INFO - __main__ - Successfully extracted article content (1865 chars)
+2025-06-02 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/commodities-watch-steel-stocks-oil-150902505.html
+2025-06-02 21:48:03 - INFO - __main__ - Successfully extracted article content (1195 chars)
+2025-06-02 21:48:03 - INFO - __main__ - Found total of 3 valid articles for STLD
+2025-06-02 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-02 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-02 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-02 21:48:05 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-02 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-02 21:48:07 - INFO - __main__ - Top performer analysis complete
+2025-06-02 21:48:07 - INFO - __main__ - Analyzing bottom performer...
+2025-06-02 21:48:07 - INFO - __main__ - Analyzing First Solar (FSLR)
+2025-06-02 21:48:07 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-02 21:48:07 - INFO - __main__ - Searching for articles about FSLR
+2025-06-02 21:48:07 - INFO - __main__ - Searching for news about First Solar
+2025-06-02 21:48:07 - INFO - __main__ - Found 6 recent search results for First Solar
+2025-06-02 21:48:07 - INFO - __main__ - Found 6 URLs to try for FSLR
+2025-06-02 21:48:07 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/first-solar-stock-price-renewables-c881ae14
+2025-06-02 21:48:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-02 21:48:07 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/stock-market-today-dow-jones-dips-as-dow-jones-nasdaq-sp500-treasury-secretary-bessent-debt-steel-stocks-pop-on-trump-tariff-move-live-coverage/
+2025-06-02 21:48:07 - INFO - __main__ - Successfully extracted article content (347 chars)
+2025-06-02 21:48:07 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/20-stocks-primed-for-rapid-growth-while-trading-at-half-of-nvidias-valuation-c0a26f75
+2025-06-02 21:48:08 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-02 21:48:08 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4454153-biggest-stock-movers-monday-us-steel-stocks-and-more
+2025-06-02 21:48:08 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-02 21:48:08 - WARNING - __main__ - Article content too short (0 chars)
+2025-06-02 21:48:08 - INFO - __main__ - Fetching content from: https://www.atacarnet.in/video/first-solar-stock
+2025-06-02 21:48:09 - INFO - __main__ - Successfully extracted article content (145 chars)
+2025-06-02 21:48:09 - INFO - __main__ - Fetching content from: https://www.marketscreener.com/quote/stock/FIRST-SOLAR-INC-37008/news/Mizuho-Adjusts-Price-Target-on-First-Solar-to-275-From-251-Maintains-Outperform-Rating-50128974/
+2025-06-02 21:48:11 - INFO - __main__ - Successfully extracted article content (123 chars)
+2025-06-02 21:48:11 - INFO - __main__ - Found total of 0 valid articles for FSLR
+2025-06-02 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-02 21:48:13 - INFO - __main__ - Bottom performer analysis complete
+2025-06-02 21:48:13 - INFO - __main__ - Saving results to JSON...
+2025-06-02 21:48:13 - INFO - __main__ - Analysis complete and saved to market_analysis.json
