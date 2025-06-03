@@ -1,0 +1,68 @@
+2025-06-03 21:47:48 - INFO - __main__ - Starting SP500 analysis script
+2025-06-03 21:47:48 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-03 21:47:48 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-03 21:47:48 - INFO - __main__ - Runtime timezone: UTC
+2025-06-03 21:47:48 - INFO - __main__ - Original start: 2025-06-02 16:00:00-04:00 (America/New_York)
+2025-06-03 21:47:48 - INFO - __main__ - Original end: 2025-06-03 16:00:00-04:00 (America/New_York)
+2025-06-03 21:47:48 - INFO - __main__ - UTC start: 2025-06-02 04:00:00+00:00
+2025-06-03 21:47:48 - INFO - __main__ - UTC end: 2025-06-04 04:00:00+00:00
+2025-06-03 21:47:48 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-03 21:47:49 - INFO - __main__ - Received data for 503 symbols
+2025-06-03 21:47:49 - INFO - __main__ - Sample data structure for HSIC:
+2025-06-03 21:47:49 - INFO - __main__ - Number of bars: 2
+2025-06-03 21:47:49 - INFO - __main__ - Bar timestamp: 2025-06-02 04:00:00+00:00 (UTC)
+2025-06-03 21:47:49 - INFO - __main__ - Bar timestamp: 2025-06-03 04:00:00+00:00 (UTC)
+2025-06-03 21:47:49 - INFO - __main__ - HSIC timestamps - Today: 2025-06-03 04:00:00+00:00, Yesterday: 2025-06-02 04:00:00+00:00
+2025-06-03 21:47:49 - INFO - __main__ - JPM timestamps - Today: 2025-06-03 04:00:00+00:00, Yesterday: 2025-06-02 04:00:00+00:00
+2025-06-03 21:47:49 - INFO - __main__ - APO timestamps - Today: 2025-06-03 04:00:00+00:00, Yesterday: 2025-06-02 04:00:00+00:00
+2025-06-03 21:47:49 - INFO - __main__ - EOG timestamps - Today: 2025-06-03 04:00:00+00:00, Yesterday: 2025-06-02 04:00:00+00:00
+2025-06-03 21:47:49 - INFO - __main__ - EXE timestamps - Today: 2025-06-03 04:00:00+00:00, Yesterday: 2025-06-02 04:00:00+00:00
+2025-06-03 21:47:50 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-03 21:47:50 - INFO - __main__ - Data issues encountered: 0
+2025-06-03 21:47:50 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-03 21:47:50 - INFO - __main__ - Analysis for market close on June 03, 2025
+2025-06-03 21:47:50 - INFO - __main__ - Found 503 stocks with price data
+2025-06-03 21:47:50 - INFO - __main__ - Found Wikipedia URL for DG: https://en.wikipedia.org/wiki/Dollar_General
+2025-06-03 21:47:52 - INFO - __main__ - Found Wikipedia URL for KVUE: https://en.wikipedia.org/wiki/Kenvue
+2025-06-03 21:47:54 - INFO - __main__ - Analyzing top performer...
+2025-06-03 21:47:54 - INFO - __main__ - Analyzing Dollar General (DG)
+2025-06-03 21:47:54 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-03 21:47:55 - INFO - __main__ - Searching for articles about DG
+2025-06-03 21:47:55 - INFO - __main__ - Searching for news about Dollar General
+2025-06-03 21:47:55 - INFO - __main__ - Found 6 recent search results for Dollar General
+2025-06-03 21:47:55 - INFO - __main__ - Found 6 URLs to try for DG
+2025-06-03 21:47:55 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/03/dollar-general-dg-q1-2025-earnings.html
+2025-06-03 21:47:55 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-03 21:47:55 - INFO - __main__ - Successfully extracted article content (5522 chars)
+2025-06-03 21:47:55 - INFO - __main__ - Fetching content from: https://investor.dollargeneral.com/websites/dollargeneral/English/2120/us-press-release.html?airportNewsID=dd76acc9-6326-4950-be4b-08e18c6a3d8b
+2025-06-03 21:47:57 - INFO - __main__ - Successfully extracted article content (26725 chars)
+2025-06-03 21:47:57 - INFO - __main__ - Fetching content from: https://www.npr.org/2025/06/03/nx-s1-5422266/dollar-general-earnings-prices-tariffs
+2025-06-03 21:47:58 - INFO - __main__ - Successfully extracted article content (3219 chars)
+2025-06-03 21:47:58 - INFO - __main__ - Found total of 3 valid articles for DG
+2025-06-03 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:03 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-03 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:06 - INFO - __main__ - Top performer analysis complete
+2025-06-03 21:48:06 - INFO - __main__ - Analyzing bottom performer...
+2025-06-03 21:48:06 - INFO - __main__ - Analyzing Kenvue (KVUE)
+2025-06-03 21:48:06 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-03 21:48:06 - INFO - __main__ - Searching for articles about KVUE
+2025-06-03 21:48:06 - INFO - __main__ - Searching for news about Kenvue
+2025-06-03 21:48:06 - INFO - __main__ - Found 6 recent search results for Kenvue
+2025-06-03 21:48:06 - INFO - __main__ - Found 6 URLs to try for KVUE
+2025-06-03 21:48:06 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-06032025-11747070
+2025-06-03 21:48:07 - INFO - __main__ - Successfully extracted article content (14343 chars)
+2025-06-03 21:48:07 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/us-stock-futures-dip-investors-await-trade-negotiations-2025-06-03/
+2025-06-03 21:48:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-03 21:48:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nvidia-1-trillion-rally-traders-101151832.html
+2025-06-03 21:48:08 - INFO - __main__ - Successfully extracted article content (5848 chars)
+2025-06-03 21:48:08 - INFO - __main__ - Found total of 2 valid articles for KVUE
+2025-06-03 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:10 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-06-03 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-03 21:48:14 - INFO - __main__ - Bottom performer analysis complete
+2025-06-03 21:48:14 - INFO - __main__ - Saving results to JSON...
+2025-06-03 21:48:14 - INFO - __main__ - Analysis complete and saved to market_analysis.json
