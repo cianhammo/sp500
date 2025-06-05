@@ -1,0 +1,79 @@
+2025-06-05 21:47:40 - INFO - __main__ - Starting SP500 analysis script
+2025-06-05 21:47:40 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-05 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 5, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-05 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-06-05 21:47:40 - INFO - __main__ - Original start: 2025-06-04 16:00:00-04:00 (America/New_York)
+2025-06-05 21:47:40 - INFO - __main__ - Original end: 2025-06-05 16:00:00-04:00 (America/New_York)
+2025-06-05 21:47:40 - INFO - __main__ - UTC start: 2025-06-04 04:00:00+00:00
+2025-06-05 21:47:40 - INFO - __main__ - UTC end: 2025-06-06 04:00:00+00:00
+2025-06-05 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-05 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-06-05 21:47:41 - INFO - __main__ - Sample data structure for IEX:
+2025-06-05 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-06-05 21:47:41 - INFO - __main__ - Bar timestamp: 2025-06-04 04:00:00+00:00 (UTC)
+2025-06-05 21:47:41 - INFO - __main__ - Bar timestamp: 2025-06-05 04:00:00+00:00 (UTC)
+2025-06-05 21:47:41 - INFO - __main__ - IEX timestamps - Today: 2025-06-05 04:00:00+00:00, Yesterday: 2025-06-04 04:00:00+00:00
+2025-06-05 21:47:41 - INFO - __main__ - PNR timestamps - Today: 2025-06-05 04:00:00+00:00, Yesterday: 2025-06-04 04:00:00+00:00
+2025-06-05 21:47:41 - INFO - __main__ - EBAY timestamps - Today: 2025-06-05 04:00:00+00:00, Yesterday: 2025-06-04 04:00:00+00:00
+2025-06-05 21:47:41 - INFO - __main__ - EIX timestamps - Today: 2025-06-05 04:00:00+00:00, Yesterday: 2025-06-04 04:00:00+00:00
+2025-06-05 21:47:41 - INFO - __main__ - AME timestamps - Today: 2025-06-05 04:00:00+00:00, Yesterday: 2025-06-04 04:00:00+00:00
+2025-06-05 21:47:42 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-05 21:47:42 - INFO - __main__ - Data issues encountered: 0
+2025-06-05 21:47:42 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-05 21:47:42 - INFO - __main__ - Analysis for market close on June 05, 2025
+2025-06-05 21:47:42 - INFO - __main__ - Found 503 stocks with price data
+2025-06-05 21:47:42 - INFO - __main__ - Found Wikipedia URL for DLTR: https://en.wikipedia.org/wiki/Dollar_Tree
+2025-06-05 21:47:44 - INFO - __main__ - Found Wikipedia URL for BF.B: https://en.wikipedia.org/wiki/Brown%E2%80%93Forman
+2025-06-05 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-06-05 21:47:46 - INFO - __main__ - Analyzing Dollar Tree (DLTR)
+2025-06-05 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-05 21:47:46 - INFO - __main__ - Searching for articles about DLTR
+2025-06-05 21:47:46 - INFO - __main__ - Searching for news about Dollar Tree
+2025-06-05 21:47:47 - INFO - __main__ - Found 6 recent search results for Dollar Tree
+2025-06-05 21:47:47 - INFO - __main__ - Found 6 URLs to try for DLTR
+2025-06-05 21:47:47 - INFO - __main__ - Fetching content from: https://www.thestreet.com/retail/dollar-tree-raises-red-flag-about-unexpected-customer-behavior
+2025-06-05 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-05 21:47:47 - INFO - __main__ - Fetching content from: https://www.investors.com/news/dollar-stores-retail-earnings-dollar-general-dg-stock/
+2025-06-05 21:47:47 - INFO - __main__ - Successfully extracted article content (408 chars)
+2025-06-05 21:47:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/rich-dollar-stores-economy-0ee24724
+2025-06-05 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-05 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-dollar-tree-inc-dltr-095140606.html
+2025-06-05 21:47:48 - INFO - __main__ - Successfully extracted article content (1460 chars)
+2025-06-05 21:47:48 - INFO - __main__ - Fetching content from: https://www.investopedia.com/brown-forman-stock-plunges-as-jack-daniel-s-maker-warns-of-economic-challenges-11748799
+2025-06-05 21:47:48 - INFO - __main__ - Successfully extracted article content (1517 chars)
+2025-06-05 21:47:48 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-06-04/stock-market-today-dow-s-p-live-updates
+2025-06-05 21:47:48 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-06-05 21:47:48 - INFO - __main__ - Found total of 2 valid articles for DLTR
+2025-06-05 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-05 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-05 21:47:50 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-06-05 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-05 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-06-05 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-06-05 21:47:52 - INFO - __main__ - Analyzing Brown–Forman (BF.B)
+2025-06-05 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-05 21:47:52 - INFO - __main__ - Searching for articles about BF.B
+2025-06-05 21:47:52 - INFO - __main__ - Searching for news about Brown–Forman
+2025-06-05 21:47:53 - INFO - __main__ - Found 6 recent search results for Brown–Forman
+2025-06-05 21:47:53 - INFO - __main__ - Found 6 URLs to try for BF.B
+2025-06-05 21:47:53 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/05/brown-forman-warns-of-tariff-uncertainty.html
+2025-06-05 21:47:53 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-05 21:47:53 - INFO - __main__ - Successfully extracted article content (2647 chars)
+2025-06-05 21:47:53 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/jack-daniels-brown-forman-stock-price-earnings-dfd166eb
+2025-06-05 21:47:53 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-05 21:47:53 - INFO - __main__ - Fetching content from: https://investors.brown-forman.com/investors/news-releases/press-release/2025/Brown-Forman-Reports-Fiscal-2025-Results/default.aspx
+2025-06-05 21:47:53 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-06-05 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/brown-formans-weak-q4-truth-154659081.html
+2025-06-05 21:47:54 - INFO - __main__ - Successfully extracted article content (3818 chars)
+2025-06-05 21:47:54 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/earnings/jack-daniels-maker-brown-forman-forecasts-organic-sales-decline-fff12f22?gaa_at=eafs&gaa_n=ASWzDAhn11F7iTz_uZZK4wSTrf311JoXiyhEuxtdfK0Y9KUT01TvJ2wMBlNf&gaa_ts=68421304&gaa_sig=8DJXh61Z_YBZy7V5EMtj1lFDwKCA8cvjnudt7hx220MgvXFptIAYAkZR-o8PpMsxGG7TU-LCnYb-8UxvTgrO1Q%3D%3D
+2025-06-05 21:47:54 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-05 21:47:54 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/retail-consumer/jack-daniels-maker-brown-forman-forecasts-annual-revenue-profit-drop-tariff-woes-2025-06-05/
+2025-06-05 21:47:54 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-05 21:47:54 - INFO - __main__ - Found total of 2 valid articles for BF.B
+2025-06-05 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-05 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-05 21:47:56 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-06-05 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-05 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-06-05 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-06-05 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
