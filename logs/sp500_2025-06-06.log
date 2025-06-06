@@ -1,0 +1,74 @@
+2025-06-06 21:47:26 - INFO - __main__ - Starting SP500 analysis script
+2025-06-06 21:47:26 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-06 21:47:27 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 5, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-06 21:47:27 - INFO - __main__ - Runtime timezone: UTC
+2025-06-06 21:47:27 - INFO - __main__ - Original start: 2025-06-05 16:00:00-04:00 (America/New_York)
+2025-06-06 21:47:27 - INFO - __main__ - Original end: 2025-06-06 16:00:00-04:00 (America/New_York)
+2025-06-06 21:47:27 - INFO - __main__ - UTC start: 2025-06-05 04:00:00+00:00
+2025-06-06 21:47:27 - INFO - __main__ - UTC end: 2025-06-07 04:00:00+00:00
+2025-06-06 21:47:27 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-06 21:47:29 - INFO - __main__ - Received data for 503 symbols
+2025-06-06 21:47:29 - INFO - __main__ - Sample data structure for TGT:
+2025-06-06 21:47:29 - INFO - __main__ - Number of bars: 2
+2025-06-06 21:47:29 - INFO - __main__ - Bar timestamp: 2025-06-05 04:00:00+00:00 (UTC)
+2025-06-06 21:47:29 - INFO - __main__ - Bar timestamp: 2025-06-06 04:00:00+00:00 (UTC)
+2025-06-06 21:47:29 - INFO - __main__ - TGT timestamps - Today: 2025-06-06 04:00:00+00:00, Yesterday: 2025-06-05 04:00:00+00:00
+2025-06-06 21:47:29 - INFO - __main__ - GWW timestamps - Today: 2025-06-06 04:00:00+00:00, Yesterday: 2025-06-05 04:00:00+00:00
+2025-06-06 21:47:29 - INFO - __main__ - EMN timestamps - Today: 2025-06-06 04:00:00+00:00, Yesterday: 2025-06-05 04:00:00+00:00
+2025-06-06 21:47:29 - INFO - __main__ - BX timestamps - Today: 2025-06-06 04:00:00+00:00, Yesterday: 2025-06-05 04:00:00+00:00
+2025-06-06 21:47:29 - INFO - __main__ - EXPD timestamps - Today: 2025-06-06 04:00:00+00:00, Yesterday: 2025-06-05 04:00:00+00:00
+2025-06-06 21:47:29 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-06 21:47:29 - INFO - __main__ - Data issues encountered: 0
+2025-06-06 21:47:29 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-06 21:47:29 - INFO - __main__ - Analysis for market close on June 06, 2025
+2025-06-06 21:47:29 - INFO - __main__ - Found 503 stocks with price data
+2025-06-06 21:47:29 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-06-06 21:47:31 - INFO - __main__ - Found Wikipedia URL for LULU: https://en.wikipedia.org/wiki/Lululemon
+2025-06-06 21:47:33 - INFO - __main__ - Analyzing top performer...
+2025-06-06 21:47:33 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-06-06 21:47:33 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-06 21:47:34 - INFO - __main__ - Searching for articles about PLTR
+2025-06-06 21:47:34 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-06-06 21:47:34 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-06-06 21:47:34 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-06-06 21:47:34 - INFO - __main__ - Fetching content from: https://www.investors.com/etfs-and-funds/mutual-funds/best-mutual-funds-invest-billions-broadcom-stock-meta-nvidia-palantir/
+2025-06-06 21:47:35 - INFO - __main__ - Successfully extracted article content (4679 chars)
+2025-06-06 21:47:35 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/06/06/better-ai-stock-c3ai-vs-palantir/
+2025-06-06 21:47:35 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-06-06 21:47:35 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/palantir-super-micro-computer-stocks-rise-as-broadcom-posts-strong-ai-revenue-c1115ea1
+2025-06-06 21:47:35 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-06 21:47:35 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/06/06/could-bigbearai-stock-turn-a-25000-investment-into/
+2025-06-06 21:47:35 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-06-06 21:47:35 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-ceo-warns-ai-race-121730566.html
+2025-06-06 21:47:36 - INFO - __main__ - Successfully extracted article content (1290 chars)
+2025-06-06 21:47:36 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-technologies-nasdaqgs-pltr-partners-173240789.html
+2025-06-06 21:47:37 - INFO - __main__ - Successfully extracted article content (2867 chars)
+2025-06-06 21:47:37 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-06-06 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:39 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-06-06 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:42 - INFO - __main__ - Top performer analysis complete
+2025-06-06 21:47:42 - INFO - __main__ - Analyzing bottom performer...
+2025-06-06 21:47:42 - INFO - __main__ - Analyzing Lululemon Athletica (LULU)
+2025-06-06 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-06 21:47:42 - INFO - __main__ - Searching for articles about LULU
+2025-06-06 21:47:42 - INFO - __main__ - Searching for news about Lululemon Athletica
+2025-06-06 21:47:42 - INFO - __main__ - Found 6 recent search results for Lululemon Athletica
+2025-06-06 21:47:42 - INFO - __main__ - Found 6 URLs to try for LULU
+2025-06-06 21:47:42 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/lululemon-stock-dives-earnings-guidance-140040171.html
+2025-06-06 21:47:44 - INFO - __main__ - Successfully extracted article content (3580 chars)
+2025-06-06 21:47:44 - INFO - __main__ - Fetching content from: https://www.investopedia.com/lululemon-stock-slumps-20-as-q2-full-year-profit-forecasts-disappoint-11749579
+2025-06-06 21:47:44 - INFO - __main__ - Successfully extracted article content (2473 chars)
+2025-06-06 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/lululemon-stock-plunges-as-companys-profit-outlook-misses-forecasts-on-tariff-consumer-worries-205103185.html
+2025-06-06 21:47:45 - INFO - __main__ - Successfully extracted article content (4010 chars)
+2025-06-06 21:47:45 - INFO - __main__ - Found total of 3 valid articles for LULU
+2025-06-06 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:47 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-06 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-06 21:47:49 - INFO - __main__ - Bottom performer analysis complete
+2025-06-06 21:47:49 - INFO - __main__ - Saving results to JSON...
+2025-06-06 21:47:50 - INFO - __main__ - Analysis complete and saved to market_analysis.json
