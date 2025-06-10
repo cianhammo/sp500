@@ -1,0 +1,75 @@
+2025-06-10 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-06-10 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-10 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-10 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-06-10 21:47:42 - INFO - __main__ - Original start: 2025-06-09 16:00:00-04:00 (America/New_York)
+2025-06-10 21:47:42 - INFO - __main__ - Original end: 2025-06-10 16:00:00-04:00 (America/New_York)
+2025-06-10 21:47:42 - INFO - __main__ - UTC start: 2025-06-09 04:00:00+00:00
+2025-06-10 21:47:42 - INFO - __main__ - UTC end: 2025-06-11 04:00:00+00:00
+2025-06-10 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-10 21:47:43 - INFO - __main__ - Received data for 503 symbols
+2025-06-10 21:47:43 - INFO - __main__ - Sample data structure for AXP:
+2025-06-10 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-06-10 21:47:43 - INFO - __main__ - Bar timestamp: 2025-06-09 04:00:00+00:00 (UTC)
+2025-06-10 21:47:43 - INFO - __main__ - Bar timestamp: 2025-06-10 04:00:00+00:00 (UTC)
+2025-06-10 21:47:43 - INFO - __main__ - AXP timestamps - Today: 2025-06-10 04:00:00+00:00, Yesterday: 2025-06-09 04:00:00+00:00
+2025-06-10 21:47:43 - INFO - __main__ - BEN timestamps - Today: 2025-06-10 04:00:00+00:00, Yesterday: 2025-06-09 04:00:00+00:00
+2025-06-10 21:47:43 - INFO - __main__ - BLK timestamps - Today: 2025-06-10 04:00:00+00:00, Yesterday: 2025-06-09 04:00:00+00:00
+2025-06-10 21:47:43 - INFO - __main__ - GM timestamps - Today: 2025-06-10 04:00:00+00:00, Yesterday: 2025-06-09 04:00:00+00:00
+2025-06-10 21:47:43 - INFO - __main__ - MOS timestamps - Today: 2025-06-10 04:00:00+00:00, Yesterday: 2025-06-09 04:00:00+00:00
+2025-06-10 21:47:43 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-10 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-06-10 21:47:43 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-10 21:47:43 - INFO - __main__ - Analysis for market close on June 10, 2025
+2025-06-10 21:47:43 - INFO - __main__ - Found 503 stocks with price data
+2025-06-10 21:47:43 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-06-10 21:47:46 - INFO - __main__ - Found Wikipedia URL for SJM: https://en.wikipedia.org/wiki/The_J.M._Smucker_Company
+2025-06-10 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-06-10 21:47:48 - INFO - __main__ - Analyzing Intel (INTC)
+2025-06-10 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-10 21:47:48 - INFO - __main__ - Searching for articles about INTC
+2025-06-10 21:47:48 - INFO - __main__ - Searching for news about Intel
+2025-06-10 21:47:49 - INFO - __main__ - Found 6 recent search results for Intel
+2025-06-10 21:47:49 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-06-10 21:47:49 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/intel-stock-nasdaqintc-blasts-up-as-mac-support-dies
+2025-06-10 21:47:49 - INFO - __main__ - Successfully extracted article content (2649 chars)
+2025-06-10 21:47:49 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/grab-the-bull-by-the-horns-says-investor-about-intel-stock
+2025-06-10 21:47:50 - INFO - __main__ - Successfully extracted article content (3756 chars)
+2025-06-10 21:47:50 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/tipranks-all-star-analyst-who-is-the-best-on-intel-stock
+2025-06-10 21:47:50 - INFO - __main__ - Successfully extracted article content (1772 chars)
+2025-06-10 21:47:50 - INFO - __main__ - Found total of 3 valid articles for INTC
+2025-06-10 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:47:52 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-06-10 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:47:55 - INFO - __main__ - Top performer analysis complete
+2025-06-10 21:47:55 - INFO - __main__ - Analyzing bottom performer...
+2025-06-10 21:47:55 - INFO - __main__ - Analyzing J.M. Smucker Company (The) (SJM)
+2025-06-10 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-10 21:47:56 - INFO - __main__ - Searching for articles about SJM
+2025-06-10 21:47:56 - INFO - __main__ - Searching for news about J.M. Smucker Company (The)
+2025-06-10 21:47:56 - INFO - __main__ - Found 6 recent search results for J.M. Smucker Company (The)
+2025-06-10 21:47:56 - INFO - __main__ - Found 6 URLs to try for SJM
+2025-06-10 21:47:56 - INFO - __main__ - Fetching content from: https://cbonds.com/news/3439855/
+2025-06-10 21:47:56 - WARNING - __main__ - Article content too short (41 chars)
+2025-06-10 21:47:56 - INFO - __main__ - Fetching content from: https://quantisnow.com/insight/the-jm-smucker-company-filed-sec-form-8k-results-of-operations-and-financial-condition-6079632
+2025-06-10 21:47:57 - INFO - __main__ - Successfully extracted article content (3199 chars)
+2025-06-10 21:47:57 - INFO - __main__ - Fetching content from: https://www.streetinsider.com/SEC+Filings/Form+8-K+J+M+SMUCKER+Co+For%3A+Jun+10/24917434.html
+2025-06-10 21:47:57 - WARNING - __main__ - Article content too short (41 chars)
+2025-06-10 21:47:57 - INFO - __main__ - Fetching content from: https://kyjobs.usnlx.com/scottsville-ky/intern-operations-engineering-scottsville-ky-spring-2026/20D3130A390E482C88A7F9098D946AB1/job/
+2025-06-10 21:47:58 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-10 21:47:58 - WARNING - __main__ - Article content too short (0 chars)
+2025-06-10 21:47:58 - INFO - __main__ - Fetching content from: https://m.ticker.com/Stock-Market-News-Today/Stocks-On-Hold-as-China-U.S.-Talks-Stall,-Small-Businesses-to-Bear-Brunt-of-Tariff-Driven-Hikes-/Jun%2010-2025/T-33139
+2025-06-10 21:47:59 - INFO - __main__ - Successfully extracted article content (3735 chars)
+2025-06-10 21:47:59 - INFO - __main__ - Fetching content from: https://coinunited.io/learn/en/price-predictions/the-j-m-smucker-company-sjm
+2025-06-10 21:47:59 - INFO - __main__ - Successfully extracted article content (16883 chars)
+2025-06-10 21:47:59 - INFO - __main__ - Found total of 3 valid articles for SJM
+2025-06-10 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:48:02 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-06-10 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-10 21:48:04 - INFO - __main__ - Bottom performer analysis complete
+2025-06-10 21:48:04 - INFO - __main__ - Saving results to JSON...
+2025-06-10 21:48:05 - INFO - __main__ - Analysis complete and saved to market_analysis.json
