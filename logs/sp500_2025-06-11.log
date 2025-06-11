@@ -1,0 +1,67 @@
+2025-06-11 21:47:33 - INFO - __main__ - Starting SP500 analysis script
+2025-06-11 21:47:33 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-11 21:47:33 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-11 21:47:33 - INFO - __main__ - Runtime timezone: UTC
+2025-06-11 21:47:33 - INFO - __main__ - Original start: 2025-06-10 16:00:00-04:00 (America/New_York)
+2025-06-11 21:47:33 - INFO - __main__ - Original end: 2025-06-11 16:00:00-04:00 (America/New_York)
+2025-06-11 21:47:33 - INFO - __main__ - UTC start: 2025-06-10 04:00:00+00:00
+2025-06-11 21:47:33 - INFO - __main__ - UTC end: 2025-06-12 04:00:00+00:00
+2025-06-11 21:47:33 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-11 21:47:34 - INFO - __main__ - Received data for 503 symbols
+2025-06-11 21:47:34 - INFO - __main__ - Sample data structure for EIX:
+2025-06-11 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-06-11 21:47:34 - INFO - __main__ - Bar timestamp: 2025-06-10 04:00:00+00:00 (UTC)
+2025-06-11 21:47:34 - INFO - __main__ - Bar timestamp: 2025-06-11 04:00:00+00:00 (UTC)
+2025-06-11 21:47:34 - INFO - __main__ - EIX timestamps - Today: 2025-06-11 04:00:00+00:00, Yesterday: 2025-06-10 04:00:00+00:00
+2025-06-11 21:47:34 - INFO - __main__ - DUK timestamps - Today: 2025-06-11 04:00:00+00:00, Yesterday: 2025-06-10 04:00:00+00:00
+2025-06-11 21:47:34 - INFO - __main__ - EA timestamps - Today: 2025-06-11 04:00:00+00:00, Yesterday: 2025-06-10 04:00:00+00:00
+2025-06-11 21:47:34 - INFO - __main__ - GILD timestamps - Today: 2025-06-11 04:00:00+00:00, Yesterday: 2025-06-10 04:00:00+00:00
+2025-06-11 21:47:34 - INFO - __main__ - JNPR timestamps - Today: 2025-06-11 04:00:00+00:00, Yesterday: 2025-06-10 04:00:00+00:00
+2025-06-11 21:47:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-11 21:47:34 - INFO - __main__ - Data issues encountered: 0
+2025-06-11 21:47:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-11 21:47:34 - INFO - __main__ - Analysis for market close on June 11, 2025
+2025-06-11 21:47:34 - INFO - __main__ - Found 503 stocks with price data
+2025-06-11 21:47:35 - INFO - __main__ - Found Wikipedia URL for WBD: https://en.wikipedia.org/wiki/Warner_Bros._Discovery
+2025-06-11 21:47:37 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-06-11 21:47:39 - INFO - __main__ - Analyzing top performer...
+2025-06-11 21:47:39 - INFO - __main__ - Analyzing Warner Bros. Discovery (WBD)
+2025-06-11 21:47:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-11 21:47:39 - INFO - __main__ - Searching for articles about WBD
+2025-06-11 21:47:39 - INFO - __main__ - Searching for news about Warner Bros. Discovery
+2025-06-11 21:47:39 - INFO - __main__ - Found 6 recent search results for Warner Bros. Discovery
+2025-06-11 21:47:39 - INFO - __main__ - Found 6 URLs to try for WBD
+2025-06-11 21:47:39 - INFO - __main__ - Fetching content from: https://variety.com/2025/biz/news/warner-bros-discovery-split-what-happens-next-questions-1236428372/
+2025-06-11 21:47:39 - INFO - __main__ - Successfully extracted article content (5822 chars)
+2025-06-11 21:47:39 - INFO - __main__ - Fetching content from: https://www.hollywoodreporter.com/business/business-news/nbcuniversal-warner-bros-discovery-spinoff-versant-1236262097/
+2025-06-11 21:47:39 - INFO - __main__ - Successfully extracted article content (7244 chars)
+2025-06-11 21:47:39 - INFO - __main__ - Fetching content from: https://www.hollywoodreporter.com/business/business-news/hbo-max-international-countries-launches-july-90-markets-1236231624/
+2025-06-11 21:47:40 - INFO - __main__ - Successfully extracted article content (4574 chars)
+2025-06-11 21:47:40 - INFO - __main__ - Found total of 3 valid articles for WBD
+2025-06-11 21:47:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:42 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-11 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:46 - INFO - __main__ - Top performer analysis complete
+2025-06-11 21:47:46 - INFO - __main__ - Analyzing bottom performer...
+2025-06-11 21:47:46 - INFO - __main__ - Analyzing Intel (INTC)
+2025-06-11 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-11 21:47:46 - INFO - __main__ - Searching for articles about INTC
+2025-06-11 21:47:46 - INFO - __main__ - Searching for news about Intel
+2025-06-11 21:47:46 - INFO - __main__ - Found 6 recent search results for Intel
+2025-06-11 21:47:46 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-06-11 21:47:46 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/intel-or-amd-billionaire-israel-englander-doubles-down-on-one-ai-chip-stock
+2025-06-11 21:47:46 - INFO - __main__ - Successfully extracted article content (8336 chars)
+2025-06-11 21:47:46 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4457298-intel-stock-falls-while-some-analysts-see-recovery-others-remain-cautious
+2025-06-11 21:47:46 - INFO - __main__ - Successfully extracted article content (267 chars)
+2025-06-11 21:47:46 - INFO - __main__ - Fetching content from: https://www.pcgamer.com/hardware/processors/ex-intel-engineers-are-developing-the-biggest-baddest-cpu-in-the-world-by-targeting-ipc-not-clockspeed-or-core-counts/
+2025-06-11 21:47:46 - INFO - __main__ - Successfully extracted article content (5716 chars)
+2025-06-11 21:47:46 - INFO - __main__ - Found total of 2 valid articles for INTC
+2025-06-11 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:48 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-06-11 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-11 21:47:50 - INFO - __main__ - Bottom performer analysis complete
+2025-06-11 21:47:50 - INFO - __main__ - Saving results to JSON...
+2025-06-11 21:47:51 - INFO - __main__ - Analysis complete and saved to market_analysis.json
