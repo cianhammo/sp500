@@ -1,0 +1,81 @@
+2025-06-12 21:47:55 - INFO - __main__ - Starting SP500 analysis script
+2025-06-12 21:47:55 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-12 21:47:56 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-12 21:47:56 - INFO - __main__ - Runtime timezone: UTC
+2025-06-12 21:47:56 - INFO - __main__ - Original start: 2025-06-11 16:00:00-04:00 (America/New_York)
+2025-06-12 21:47:56 - INFO - __main__ - Original end: 2025-06-12 16:00:00-04:00 (America/New_York)
+2025-06-12 21:47:56 - INFO - __main__ - UTC start: 2025-06-11 04:00:00+00:00
+2025-06-12 21:47:56 - INFO - __main__ - UTC end: 2025-06-13 04:00:00+00:00
+2025-06-12 21:47:56 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-12 21:47:58 - INFO - __main__ - Received data for 503 symbols
+2025-06-12 21:47:58 - INFO - __main__ - Sample data structure for EXE:
+2025-06-12 21:47:58 - INFO - __main__ - Number of bars: 2
+2025-06-12 21:47:58 - INFO - __main__ - Bar timestamp: 2025-06-11 04:00:00+00:00 (UTC)
+2025-06-12 21:47:58 - INFO - __main__ - Bar timestamp: 2025-06-12 04:00:00+00:00 (UTC)
+2025-06-12 21:47:58 - INFO - __main__ - EXE timestamps - Today: 2025-06-12 04:00:00+00:00, Yesterday: 2025-06-11 04:00:00+00:00
+2025-06-12 21:47:58 - INFO - __main__ - GIS timestamps - Today: 2025-06-12 04:00:00+00:00, Yesterday: 2025-06-11 04:00:00+00:00
+2025-06-12 21:47:58 - INFO - __main__ - IP timestamps - Today: 2025-06-12 04:00:00+00:00, Yesterday: 2025-06-11 04:00:00+00:00
+2025-06-12 21:47:58 - INFO - __main__ - SNA timestamps - Today: 2025-06-12 04:00:00+00:00, Yesterday: 2025-06-11 04:00:00+00:00
+2025-06-12 21:47:58 - INFO - __main__ - CAT timestamps - Today: 2025-06-12 04:00:00+00:00, Yesterday: 2025-06-11 04:00:00+00:00
+2025-06-12 21:47:58 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-12 21:47:58 - INFO - __main__ - Data issues encountered: 0
+2025-06-12 21:47:58 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-12 21:47:58 - INFO - __main__ - Analysis for market close on June 12, 2025
+2025-06-12 21:47:58 - INFO - __main__ - Found 503 stocks with price data
+2025-06-12 21:47:59 - INFO - __main__ - Found Wikipedia URL for ORCL: https://en.wikipedia.org/wiki/Oracle_Corporation
+2025-06-12 21:48:01 - INFO - __main__ - Found Wikipedia URL for BA: https://en.wikipedia.org/wiki/Boeing
+2025-06-12 21:48:03 - INFO - __main__ - Analyzing top performer...
+2025-06-12 21:48:03 - INFO - __main__ - Analyzing Oracle Corporation (ORCL)
+2025-06-12 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-12 21:48:05 - INFO - __main__ - Searching for articles about ORCL
+2025-06-12 21:48:05 - INFO - __main__ - Searching for news about Oracle Corporation
+2025-06-12 21:48:05 - INFO - __main__ - Found 6 recent search results for Oracle Corporation
+2025-06-12 21:48:05 - INFO - __main__ - Found 6 URLs to try for ORCL
+2025-06-12 21:48:05 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/oracle-shares-soar-ai-cloud-demand-propels-revenue-forecast-2025-06-12/
+2025-06-12 21:48:05 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-12 21:48:05 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-stock-touches-all-time-high-after-earnings-beat-165224247.html
+2025-06-12 21:48:06 - INFO - __main__ - Successfully extracted article content (3631 chars)
+2025-06-12 21:48:06 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4457586-analysts-eye-bright-fy26-outlook-for-oracle-on-cloud-rpo-growth
+2025-06-12 21:48:06 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-12 21:48:06 - WARNING - __main__ - Article content too short (0 chars)
+2025-06-12 21:48:06 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-sees-dramatically-higher-sales-224325821.html
+2025-06-12 21:48:07 - INFO - __main__ - Successfully extracted article content (4512 chars)
+2025-06-12 21:48:07 - INFO - __main__ - Fetching content from: https://www.investopedia.com/oracles-stunning-targets-have-wall-street-analysts-growing-more-bullish-11753392
+2025-06-12 21:48:07 - INFO - __main__ - Successfully extracted article content (1420 chars)
+2025-06-12 21:48:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jp-morgan-maintains-2025-forecast-125127584.html
+2025-06-12 21:48:08 - INFO - __main__ - Successfully extracted article content (2065 chars)
+2025-06-12 21:48:08 - INFO - __main__ - Found total of 3 valid articles for ORCL
+2025-06-12 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:10 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-12 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:13 - INFO - __main__ - Top performer analysis complete
+2025-06-12 21:48:13 - INFO - __main__ - Analyzing bottom performer...
+2025-06-12 21:48:13 - INFO - __main__ - Analyzing Boeing (BA)
+2025-06-12 21:48:13 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-12 21:48:13 - INFO - __main__ - Searching for articles about BA
+2025-06-12 21:48:13 - INFO - __main__ - Searching for news about Boeing
+2025-06-12 21:48:13 - INFO - __main__ - Found 6 recent search results for Boeing
+2025-06-12 21:48:13 - INFO - __main__ - Found 6 URLs to try for BA
+2025-06-12 21:48:13 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/aerospace-defense/boeing-shares-fall-after-plane-crashes-india-2025-06-12/
+2025-06-12 21:48:13 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-12 21:48:13 - INFO - __main__ - Fetching content from: https://www.businessinsider.com/air-india-boeing-787-crashes-shortly-after-takeoff-2025-6
+2025-06-12 21:48:14 - INFO - __main__ - Successfully extracted article content (4663 chars)
+2025-06-12 21:48:14 - INFO - __main__ - Fetching content from: https://fortune.com/2025/06/12/boeing-stock-india-air-crash-dreamliner-safety-whistleblower/
+2025-06-12 21:48:14 - INFO - __main__ - Successfully extracted article content (129 chars)
+2025-06-12 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/boeing-stock-plummets-after-deadly-air-india-plane-crash-124203497.html
+2025-06-12 21:48:14 - INFO - __main__ - Successfully extracted article content (2947 chars)
+2025-06-12 21:48:14 - INFO - __main__ - Fetching content from: https://www.investopedia.com/boeing-stock-drops-as-787-8-plane-crashes-in-india-11753132
+2025-06-12 21:48:15 - INFO - __main__ - Successfully extracted article content (2475 chars)
+2025-06-12 21:48:15 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/boeing-stock-plummets-after-air-india-plane-crash-120138157.html
+2025-06-12 21:48:15 - INFO - __main__ - Successfully extracted article content (2947 chars)
+2025-06-12 21:48:15 - INFO - __main__ - Found total of 3 valid articles for BA
+2025-06-12 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:18 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-12 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-12 21:48:20 - INFO - __main__ - Bottom performer analysis complete
+2025-06-12 21:48:20 - INFO - __main__ - Saving results to JSON...
+2025-06-12 21:48:20 - INFO - __main__ - Analysis complete and saved to market_analysis.json
