@@ -1,0 +1,73 @@
+2025-06-13 21:48:24 - INFO - __main__ - Starting SP500 analysis script
+2025-06-13 21:48:24 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-13 21:48:25 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-13 21:48:25 - INFO - __main__ - Runtime timezone: UTC
+2025-06-13 21:48:25 - INFO - __main__ - Original start: 2025-06-12 16:00:00-04:00 (America/New_York)
+2025-06-13 21:48:25 - INFO - __main__ - Original end: 2025-06-13 16:00:00-04:00 (America/New_York)
+2025-06-13 21:48:25 - INFO - __main__ - UTC start: 2025-06-12 04:00:00+00:00
+2025-06-13 21:48:25 - INFO - __main__ - UTC end: 2025-06-14 04:00:00+00:00
+2025-06-13 21:48:25 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-13 21:48:26 - INFO - __main__ - Received data for 503 symbols
+2025-06-13 21:48:26 - INFO - __main__ - Sample data structure for AIZ:
+2025-06-13 21:48:26 - INFO - __main__ - Number of bars: 2
+2025-06-13 21:48:26 - INFO - __main__ - Bar timestamp: 2025-06-12 04:00:00+00:00 (UTC)
+2025-06-13 21:48:26 - INFO - __main__ - Bar timestamp: 2025-06-13 04:00:00+00:00 (UTC)
+2025-06-13 21:48:26 - INFO - __main__ - AIZ timestamps - Today: 2025-06-13 04:00:00+00:00, Yesterday: 2025-06-12 04:00:00+00:00
+2025-06-13 21:48:26 - INFO - __main__ - GPN timestamps - Today: 2025-06-13 04:00:00+00:00, Yesterday: 2025-06-12 04:00:00+00:00
+2025-06-13 21:48:26 - INFO - __main__ - AAPL timestamps - Today: 2025-06-13 04:00:00+00:00, Yesterday: 2025-06-12 04:00:00+00:00
+2025-06-13 21:48:26 - INFO - __main__ - ALGN timestamps - Today: 2025-06-13 04:00:00+00:00, Yesterday: 2025-06-12 04:00:00+00:00
+2025-06-13 21:48:26 - INFO - __main__ - KDP timestamps - Today: 2025-06-13 04:00:00+00:00, Yesterday: 2025-06-12 04:00:00+00:00
+2025-06-13 21:48:26 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-13 21:48:26 - INFO - __main__ - Data issues encountered: 0
+2025-06-13 21:48:26 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-13 21:48:26 - INFO - __main__ - Analysis for market close on June 13, 2025
+2025-06-13 21:48:26 - INFO - __main__ - Found 503 stocks with price data
+2025-06-13 21:48:27 - INFO - __main__ - Found Wikipedia URL for ORCL: https://en.wikipedia.org/wiki/Oracle_Corporation
+2025-06-13 21:48:29 - INFO - __main__ - Found Wikipedia URL for CPAY: https://en.wikipedia.org/wiki/Corpay
+2025-06-13 21:48:31 - INFO - __main__ - Analyzing top performer...
+2025-06-13 21:48:31 - INFO - __main__ - Analyzing Oracle Corporation (ORCL)
+2025-06-13 21:48:31 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-13 21:48:32 - INFO - __main__ - Searching for articles about ORCL
+2025-06-13 21:48:32 - INFO - __main__ - Searching for news about Oracle Corporation
+2025-06-13 21:48:32 - INFO - __main__ - Found 6 recent search results for Oracle Corporation
+2025-06-13 21:48:32 - INFO - __main__ - Found 6 URLs to try for ORCL
+2025-06-13 21:48:32 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/bmo-upgrades-oracle-sees-double-144824764.html
+2025-06-13 21:48:33 - INFO - __main__ - Successfully extracted article content (2021 chars)
+2025-06-13 21:48:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-stock-surges-second-straight-181417670.html
+2025-06-13 21:48:33 - INFO - __main__ - Successfully extracted article content (1203 chars)
+2025-06-13 21:48:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-nyse-orcl-expands-cloud-171507084.html
+2025-06-13 21:48:35 - INFO - __main__ - Successfully extracted article content (2973 chars)
+2025-06-13 21:48:35 - INFO - __main__ - Found total of 3 valid articles for ORCL
+2025-06-13 21:48:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:37 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-13 21:48:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:39 - INFO - __main__ - Top performer analysis complete
+2025-06-13 21:48:39 - INFO - __main__ - Analyzing bottom performer...
+2025-06-13 21:48:39 - INFO - __main__ - Analyzing Corpay (CPAY)
+2025-06-13 21:48:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-13 21:48:40 - INFO - __main__ - Searching for articles about CPAY
+2025-06-13 21:48:40 - INFO - __main__ - Searching for news about Corpay
+2025-06-13 21:48:40 - INFO - __main__ - Found 6 recent search results for Corpay
+2025-06-13 21:48:40 - INFO - __main__ - Found 6 URLs to try for CPAY
+2025-06-13 21:48:40 - INFO - __main__ - Fetching content from: https://www.cfo.com/news/cfos-on-the-move-naveen-chopra-roblox-chris-monroe-texas-roadhouse-martin-layding-vera-bradley/750623/
+2025-06-13 21:48:40 - INFO - __main__ - Successfully extracted article content (4539 chars)
+2025-06-13 21:48:40 - INFO - __main__ - Fetching content from: https://financialpost.com/commodities/energy/oil-gas/oil-prices-israel-iran-canadian-dollars-petrocurrency
+2025-06-13 21:48:41 - INFO - __main__ - Successfully extracted article content (289 chars)
+2025-06-13 21:48:41 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/middle-east/view-stocks-oil-sell-off-israel-strikes-iran-2025-06-13/
+2025-06-13 21:48:41 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-13 21:48:41 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-06-13/dollar-s-haven-status-faces-a-key-test-after-israel-strikes-iran
+2025-06-13 21:48:41 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-06-13 21:48:41 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/dollar-haven-status-faces-key-044329586.html
+2025-06-13 21:48:41 - INFO - __main__ - Successfully extracted article content (4559 chars)
+2025-06-13 21:48:41 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/corpay-inc-stock-underperforms-friday-when-compared-to-competitors-22ed6884-4904d60eef10
+2025-06-13 21:48:41 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-13 21:48:41 - INFO - __main__ - Found total of 2 valid articles for CPAY
+2025-06-13 21:48:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:43 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-06-13 21:48:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-13 21:48:46 - INFO - __main__ - Bottom performer analysis complete
+2025-06-13 21:48:46 - INFO - __main__ - Saving results to JSON...
+2025-06-13 21:48:46 - INFO - __main__ - Analysis complete and saved to market_analysis.json
