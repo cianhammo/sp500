@@ -1,0 +1,73 @@
+2025-06-17 21:49:15 - INFO - __main__ - Starting SP500 analysis script
+2025-06-17 21:49:16 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-17 21:49:16 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-17 21:49:16 - INFO - __main__ - Runtime timezone: UTC
+2025-06-17 21:49:16 - INFO - __main__ - Original start: 2025-06-16 16:00:00-04:00 (America/New_York)
+2025-06-17 21:49:16 - INFO - __main__ - Original end: 2025-06-17 16:00:00-04:00 (America/New_York)
+2025-06-17 21:49:16 - INFO - __main__ - UTC start: 2025-06-16 04:00:00+00:00
+2025-06-17 21:49:16 - INFO - __main__ - UTC end: 2025-06-18 04:00:00+00:00
+2025-06-17 21:49:16 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-17 21:49:17 - INFO - __main__ - Received data for 503 symbols
+2025-06-17 21:49:17 - INFO - __main__ - Sample data structure for BRO:
+2025-06-17 21:49:17 - INFO - __main__ - Number of bars: 2
+2025-06-17 21:49:17 - INFO - __main__ - Bar timestamp: 2025-06-16 04:00:00+00:00 (UTC)
+2025-06-17 21:49:17 - INFO - __main__ - Bar timestamp: 2025-06-17 04:00:00+00:00 (UTC)
+2025-06-17 21:49:17 - INFO - __main__ - BRO timestamps - Today: 2025-06-17 04:00:00+00:00, Yesterday: 2025-06-16 04:00:00+00:00
+2025-06-17 21:49:17 - INFO - __main__ - COP timestamps - Today: 2025-06-17 04:00:00+00:00, Yesterday: 2025-06-16 04:00:00+00:00
+2025-06-17 21:49:17 - INFO - __main__ - AOS timestamps - Today: 2025-06-17 04:00:00+00:00, Yesterday: 2025-06-16 04:00:00+00:00
+2025-06-17 21:49:17 - INFO - __main__ - MHK timestamps - Today: 2025-06-17 04:00:00+00:00, Yesterday: 2025-06-16 04:00:00+00:00
+2025-06-17 21:49:17 - INFO - __main__ - PNW timestamps - Today: 2025-06-17 04:00:00+00:00, Yesterday: 2025-06-16 04:00:00+00:00
+2025-06-17 21:49:17 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-17 21:49:17 - INFO - __main__ - Data issues encountered: 0
+2025-06-17 21:49:17 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-17 21:49:17 - INFO - __main__ - Analysis for market close on June 17, 2025
+2025-06-17 21:49:17 - INFO - __main__ - Found 503 stocks with price data
+2025-06-17 21:49:17 - INFO - __main__ - Found Wikipedia URL for JBL: https://en.wikipedia.org/wiki/Jabil
+2025-06-17 21:49:20 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-06-17 21:49:22 - INFO - __main__ - Analyzing top performer...
+2025-06-17 21:49:22 - INFO - __main__ - Analyzing Jabil (JBL)
+2025-06-17 21:49:22 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-17 21:49:22 - INFO - __main__ - Searching for articles about JBL
+2025-06-17 21:49:22 - INFO - __main__ - Searching for news about Jabil
+2025-06-17 21:49:22 - INFO - __main__ - Found 6 recent search results for Jabil
+2025-06-17 21:49:22 - INFO - __main__ - Found 6 URLs to try for JBL
+2025-06-17 21:49:22 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/jabil-earnings-jetblue-cuts-jpmorgan-145217089.html
+2025-06-17 21:49:23 - INFO - __main__ - Successfully extracted article content (1320 chars)
+2025-06-17 21:49:23 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/jabil-earnings-stock-price-9f00e869
+2025-06-17 21:49:23 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-17 21:49:23 - INFO - __main__ - Fetching content from: https://investors.jabil.com/news/news-details/2025/Jabil-Posts-Third-Quarter-Results/default.aspx
+2025-06-17 21:49:23 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-06-17 21:49:23 - INFO - __main__ - Fetching content from: https://www.investopedia.com/jabil-stock-leads-s-and-p-500-gainers-sets-all-time-high-as-results-top-estimates-11755984
+2025-06-17 21:49:23 - INFO - __main__ - Successfully extracted article content (1424 chars)
+2025-06-17 21:49:23 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-enphase-energy-t-mobile-us-jabil-and-more-11756102
+2025-06-17 21:49:24 - INFO - __main__ - Successfully extracted article content (1412 chars)
+2025-06-17 21:49:24 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/apple-supplier-jabil-raises-annual-125350290.html
+2025-06-17 21:49:24 - INFO - __main__ - Successfully extracted article content (1326 chars)
+2025-06-17 21:49:24 - INFO - __main__ - Found total of 3 valid articles for JBL
+2025-06-17 21:49:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:29 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-17 21:49:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:32 - INFO - __main__ - Top performer analysis complete
+2025-06-17 21:49:32 - INFO - __main__ - Analyzing bottom performer...
+2025-06-17 21:49:32 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-06-17 21:49:32 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-17 21:49:32 - INFO - __main__ - Searching for articles about ENPH
+2025-06-17 21:49:32 - INFO - __main__ - Searching for news about Enphase Energy
+2025-06-17 21:49:32 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-06-17 21:49:32 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-06-17 21:49:32 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-enphase-energy-t-mobile-us-jabil-and-more-11756102
+2025-06-17 21:49:32 - INFO - __main__ - Successfully extracted article content (1412 chars)
+2025-06-17 21:49:32 - INFO - __main__ - Fetching content from: https://www.forbes.com/sites/greatspeculations/2025/06/17/enph-stock-down-60--brutal-year-gets-worse-as-tax-credits-face-axe/
+2025-06-17 21:49:33 - INFO - __main__ - Successfully extracted article content (3915 chars)
+2025-06-17 21:49:33 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/sunrun-first-solar-enphase-stock-senate-tax-credits-3fcf2923
+2025-06-17 21:49:33 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-17 21:49:33 - INFO - __main__ - Found total of 2 valid articles for ENPH
+2025-06-17 21:49:33 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:34 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-06-17 21:49:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-17 21:49:37 - INFO - __main__ - Bottom performer analysis complete
+2025-06-17 21:49:37 - INFO - __main__ - Saving results to JSON...
+2025-06-17 21:49:37 - INFO - __main__ - Analysis complete and saved to market_analysis.json
