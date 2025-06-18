@@ -1,0 +1,77 @@
+2025-06-18 21:47:46 - INFO - __main__ - Starting SP500 analysis script
+2025-06-18 21:47:46 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-18 21:47:47 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-18 21:47:47 - INFO - __main__ - Runtime timezone: UTC
+2025-06-18 21:47:47 - INFO - __main__ - Original start: 2025-06-17 16:00:00-04:00 (America/New_York)
+2025-06-18 21:47:47 - INFO - __main__ - Original end: 2025-06-18 16:00:00-04:00 (America/New_York)
+2025-06-18 21:47:47 - INFO - __main__ - UTC start: 2025-06-17 04:00:00+00:00
+2025-06-18 21:47:47 - INFO - __main__ - UTC end: 2025-06-19 04:00:00+00:00
+2025-06-18 21:47:47 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-18 21:47:48 - INFO - __main__ - Received data for 503 symbols
+2025-06-18 21:47:48 - INFO - __main__ - Sample data structure for LKQ:
+2025-06-18 21:47:48 - INFO - __main__ - Number of bars: 2
+2025-06-18 21:47:48 - INFO - __main__ - Bar timestamp: 2025-06-17 04:00:00+00:00 (UTC)
+2025-06-18 21:47:48 - INFO - __main__ - Bar timestamp: 2025-06-18 04:00:00+00:00 (UTC)
+2025-06-18 21:47:48 - INFO - __main__ - LKQ timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-18 21:47:48 - INFO - __main__ - NKE timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-18 21:47:48 - INFO - __main__ - PFG timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-18 21:47:48 - INFO - __main__ - CARR timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-18 21:47:48 - INFO - __main__ - HD timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-18 21:47:48 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-18 21:47:48 - INFO - __main__ - Data issues encountered: 0
+2025-06-18 21:47:48 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-18 21:47:48 - INFO - __main__ - Analysis for market close on June 18, 2025
+2025-06-18 21:47:48 - INFO - __main__ - Found 503 stocks with price data
+2025-06-18 21:47:48 - INFO - __main__ - Found Wikipedia URL for COIN: https://en.wikipedia.org/wiki/Coinbase
+2025-06-18 21:47:51 - INFO - __main__ - Found Wikipedia URL for MA: https://en.wikipedia.org/wiki/Mastercard
+2025-06-18 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-06-18 21:47:53 - INFO - __main__ - Analyzing Coinbase (COIN)
+2025-06-18 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-18 21:47:53 - INFO - __main__ - Searching for articles about COIN
+2025-06-18 21:47:53 - INFO - __main__ - Searching for news about Coinbase
+2025-06-18 21:47:53 - INFO - __main__ - Found 6 recent search results for Coinbase
+2025-06-18 21:47:53 - INFO - __main__ - Found 6 URLs to try for COIN
+2025-06-18 21:47:53 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/18/shares-of-coinbase-circle-surge-after-stablecoin-bill-passes-senate.html
+2025-06-18 21:47:54 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-18 21:47:54 - INFO - __main__ - Successfully extracted article content (3206 chars)
+2025-06-18 21:47:54 - INFO - __main__ - Fetching content from: https://www.investopedia.com/coinbase-global-stock-leads-s-and-p-500-gainers-as-senate-passes-stablecoin-bill-11757163
+2025-06-18 21:47:54 - INFO - __main__ - Successfully extracted article content (857 chars)
+2025-06-18 21:47:54 - INFO - __main__ - Fetching content from: https://www.coinbase.com/blog/powering-the-future-of-ecommerce-introducing-coinbase-payments
+2025-06-18 21:47:54 - WARNING - __main__ - Article content too short (41 chars)
+2025-06-18 21:47:54 - INFO - __main__ - Found total of 2 valid articles for COIN
+2025-06-18 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:47:56 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-06-18 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:47:58 - INFO - __main__ - Top performer analysis complete
+2025-06-18 21:47:58 - INFO - __main__ - Analyzing bottom performer...
+2025-06-18 21:47:58 - INFO - __main__ - Analyzing Mastercard (MA)
+2025-06-18 21:47:58 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-18 21:47:58 - INFO - __main__ - Searching for articles about MA
+2025-06-18 21:47:58 - INFO - __main__ - Searching for news about Mastercard
+2025-06-18 21:47:58 - INFO - __main__ - Found 6 recent search results for Mastercard
+2025-06-18 21:47:58 - INFO - __main__ - Found 6 URLs to try for MA
+2025-06-18 21:47:58 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4459492-visa-mastercard-stocks-slide-coinbase-jumps-after-stablecoin-bill-passes-senate
+2025-06-18 21:47:58 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-18 21:47:58 - WARNING - __main__ - Article content too short (70 chars)
+2025-06-18 21:47:58 - INFO - __main__ - Fetching content from: https://www.carnival.com/carnival-rewards/earn
+2025-06-18 21:47:59 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-18 21:47:59 - WARNING - __main__ - Article content too short (0 chars)
+2025-06-18 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/aew-ceo-tony-khan-the-breakup-of-warner-bros-discovery-wont-affect-our-business-130538944.html
+2025-06-18 21:47:59 - INFO - __main__ - Successfully extracted article content (2579 chars)
+2025-06-18 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/qualcomm-qcom-executes-2-4bn-132538770.html
+2025-06-18 21:48:00 - INFO - __main__ - Successfully extracted article content (6436 chars)
+2025-06-18 21:48:00 - INFO - __main__ - Fetching content from: https://www.youtube.com/watch?v=e0kTr0PrSho
+2025-06-18 21:48:01 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-18 21:48:01 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-06-18 21:48:01 - INFO - __main__ - Fetching content from: https://www.moneycontrol.com/news/business/markets/us-stock-markets-live-updates-dow-jones-nasdaq-s-p-500-18-june-2025-alpha-liveblog-13139772.html
+2025-06-18 21:48:02 - INFO - __main__ - Successfully extracted article content (1254 chars)
+2025-06-18 21:48:02 - INFO - __main__ - Found total of 3 valid articles for MA
+2025-06-18 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:48:04 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-06-18 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-18 21:48:06 - INFO - __main__ - Bottom performer analysis complete
+2025-06-18 21:48:06 - INFO - __main__ - Saving results to JSON...
+2025-06-18 21:48:07 - INFO - __main__ - Analysis complete and saved to market_analysis.json
