@@ -1,0 +1,67 @@
+2025-06-19 21:47:31 - INFO - __main__ - Starting SP500 analysis script
+2025-06-19 21:47:31 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-19 21:47:32 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-19 21:47:32 - INFO - __main__ - Runtime timezone: UTC
+2025-06-19 21:47:32 - INFO - __main__ - Original start: 2025-06-17 16:00:00-04:00 (America/New_York)
+2025-06-19 21:47:32 - INFO - __main__ - Original end: 2025-06-18 16:00:00-04:00 (America/New_York)
+2025-06-19 21:47:32 - INFO - __main__ - UTC start: 2025-06-17 04:00:00+00:00
+2025-06-19 21:47:32 - INFO - __main__ - UTC end: 2025-06-19 04:00:00+00:00
+2025-06-19 21:47:32 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-19 21:47:33 - INFO - __main__ - Received data for 503 symbols
+2025-06-19 21:47:33 - INFO - __main__ - Sample data structure for NEE:
+2025-06-19 21:47:33 - INFO - __main__ - Number of bars: 2
+2025-06-19 21:47:33 - INFO - __main__ - Bar timestamp: 2025-06-17 04:00:00+00:00 (UTC)
+2025-06-19 21:47:33 - INFO - __main__ - Bar timestamp: 2025-06-18 04:00:00+00:00 (UTC)
+2025-06-19 21:47:33 - INFO - __main__ - NEE timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-19 21:47:33 - INFO - __main__ - PFG timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-19 21:47:33 - INFO - __main__ - PTC timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-19 21:47:33 - INFO - __main__ - RL timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-19 21:47:33 - INFO - __main__ - EXR timestamps - Today: 2025-06-18 04:00:00+00:00, Yesterday: 2025-06-17 04:00:00+00:00
+2025-06-19 21:47:33 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-19 21:47:33 - INFO - __main__ - Data issues encountered: 0
+2025-06-19 21:47:33 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-19 21:47:33 - INFO - __main__ - Analysis for market close on June 18, 2025
+2025-06-19 21:47:33 - INFO - __main__ - Found 503 stocks with price data
+2025-06-19 21:47:33 - INFO - __main__ - Found Wikipedia URL for COIN: https://en.wikipedia.org/wiki/Coinbase
+2025-06-19 21:47:36 - INFO - __main__ - Found Wikipedia URL for MA: https://en.wikipedia.org/wiki/Mastercard
+2025-06-19 21:47:38 - INFO - __main__ - Analyzing top performer...
+2025-06-19 21:47:38 - INFO - __main__ - Analyzing Coinbase (COIN)
+2025-06-19 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-19 21:47:38 - INFO - __main__ - Searching for articles about COIN
+2025-06-19 21:47:38 - INFO - __main__ - Searching for news about Coinbase
+2025-06-19 21:47:39 - INFO - __main__ - Found 6 recent search results for Coinbase
+2025-06-19 21:47:39 - INFO - __main__ - Found 6 URLs to try for COIN
+2025-06-19 21:47:39 - INFO - __main__ - Fetching content from: https://www.investopedia.com/is-the-stock-market-open-on-juneteenth-here-s-the-summer-trading-schedule-11752980
+2025-06-19 21:47:39 - INFO - __main__ - Successfully extracted article content (959 chars)
+2025-06-19 21:47:39 - INFO - __main__ - Fetching content from: https://www.citationneeded.news/issue-86/
+2025-06-19 21:47:39 - INFO - __main__ - Successfully extracted article content (17705 chars)
+2025-06-19 21:47:39 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/palantir-coinbase-seagate-stocks-tariffs-market-525a85f6
+2025-06-19 21:47:40 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-19 21:47:40 - INFO - __main__ - Found total of 2 valid articles for COIN
+2025-06-19 21:47:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-19 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-19 21:47:42 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-06-19 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-19 21:47:45 - INFO - __main__ - Top performer analysis complete
+2025-06-19 21:47:45 - INFO - __main__ - Analyzing bottom performer...
+2025-06-19 21:47:45 - INFO - __main__ - Analyzing Mastercard (MA)
+2025-06-19 21:47:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-19 21:47:45 - INFO - __main__ - Searching for articles about MA
+2025-06-19 21:47:45 - INFO - __main__ - Searching for news about Mastercard
+2025-06-19 21:47:46 - INFO - __main__ - Found 6 recent search results for Mastercard
+2025-06-19 21:47:46 - INFO - __main__ - Found 6 URLs to try for MA
+2025-06-19 21:47:46 - INFO - __main__ - Fetching content from: https://newsroom.bmo.com/2025-06-19-BMO-to-Acquire-Burgundy-Asset-Management
+2025-06-19 21:47:46 - INFO - __main__ - Successfully extracted article content (8843 chars)
+2025-06-19 21:47:46 - INFO - __main__ - Fetching content from: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Gurgaon-India/Lead-Software-Engineer_R-249236
+2025-06-19 21:47:46 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-19 21:47:46 - WARNING - __main__ - Article content too short (0 chars)
+2025-06-19 21:47:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/the-fed-is-looking-ahead--but-not-too-far-100053570.html
+2025-06-19 21:47:47 - INFO - __main__ - Successfully extracted article content (2652 chars)
+2025-06-19 21:47:47 - INFO - __main__ - Found total of 2 valid articles for MA
+2025-06-19 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-19 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-19 21:47:49 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-06-19 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-19 21:47:52 - INFO - __main__ - Bottom performer analysis complete
+2025-06-19 21:47:52 - INFO - __main__ - Saving results to JSON...
+2025-06-19 21:47:52 - INFO - __main__ - Analysis complete and saved to market_analysis.json
