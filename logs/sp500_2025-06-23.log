@@ -1,0 +1,67 @@
+2025-06-23 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-06-23 21:47:39 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-23 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-23 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-06-23 21:47:40 - INFO - __main__ - Original start: 2025-06-20 16:00:00-04:00 (America/New_York)
+2025-06-23 21:47:40 - INFO - __main__ - Original end: 2025-06-23 16:00:00-04:00 (America/New_York)
+2025-06-23 21:47:40 - INFO - __main__ - UTC start: 2025-06-20 04:00:00+00:00
+2025-06-23 21:47:40 - INFO - __main__ - UTC end: 2025-06-24 04:00:00+00:00
+2025-06-23 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-23 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-06-23 21:47:41 - INFO - __main__ - Sample data structure for CTAS:
+2025-06-23 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-06-23 21:47:41 - INFO - __main__ - Bar timestamp: 2025-06-20 04:00:00+00:00 (UTC)
+2025-06-23 21:47:41 - INFO - __main__ - Bar timestamp: 2025-06-23 04:00:00+00:00 (UTC)
+2025-06-23 21:47:41 - INFO - __main__ - CTAS timestamps - Today: 2025-06-23 04:00:00+00:00, Yesterday: 2025-06-20 04:00:00+00:00
+2025-06-23 21:47:41 - INFO - __main__ - MLM timestamps - Today: 2025-06-23 04:00:00+00:00, Yesterday: 2025-06-20 04:00:00+00:00
+2025-06-23 21:47:41 - INFO - __main__ - ROK timestamps - Today: 2025-06-23 04:00:00+00:00, Yesterday: 2025-06-20 04:00:00+00:00
+2025-06-23 21:47:41 - INFO - __main__ - RVTY timestamps - Today: 2025-06-23 04:00:00+00:00, Yesterday: 2025-06-20 04:00:00+00:00
+2025-06-23 21:47:41 - INFO - __main__ - ETR timestamps - Today: 2025-06-23 04:00:00+00:00, Yesterday: 2025-06-20 04:00:00+00:00
+2025-06-23 21:47:41 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-23 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-06-23 21:47:41 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-23 21:47:41 - INFO - __main__ - Analysis for market close on June 23, 2025
+2025-06-23 21:47:41 - INFO - __main__ - Found 503 stocks with price data
+2025-06-23 21:47:41 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2025-06-23 21:47:43 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-06-23 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-06-23 21:47:45 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2025-06-23 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-23 21:47:46 - INFO - __main__ - Searching for articles about TSLA
+2025-06-23 21:47:46 - INFO - __main__ - Searching for news about Tesla, Inc.
+2025-06-23 21:47:46 - INFO - __main__ - Found 6 recent search results for Tesla, Inc.
+2025-06-23 21:47:46 - INFO - __main__ - Found 6 URLs to try for TSLA
+2025-06-23 21:47:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/tesla-stock-jumps-robotaxi-rollout-155122530.html
+2025-06-23 21:47:47 - INFO - __main__ - Successfully extracted article content (3494 chars)
+2025-06-23 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/tesla-stock-pops-nearly-10-after-foundational-robotaxi-launch-in-austin-143838929.html
+2025-06-23 21:47:47 - INFO - __main__ - Successfully extracted article content (4104 chars)
+2025-06-23 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/tesla-inc-tsla-bear-case-145406385.html
+2025-06-23 21:47:48 - INFO - __main__ - Successfully extracted article content (3479 chars)
+2025-06-23 21:47:48 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2025-06-23 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:50 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-23 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-06-23 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-06-23 21:47:52 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-06-23 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-23 21:47:53 - INFO - __main__ - Searching for articles about SMCI
+2025-06-23 21:47:53 - INFO - __main__ - Searching for news about Supermicro
+2025-06-23 21:47:53 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-06-23 21:47:53 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-06-23 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/supermicro-stock-drops-company-announces-145344670.html
+2025-06-23 21:47:53 - INFO - __main__ - Successfully extracted article content (1838 chars)
+2025-06-23 21:47:53 - INFO - __main__ - Fetching content from: https://ir.supermicro.com/news/news-details/2025/Supermicro-Announces-Proposed-Offering-of-2-0-Billion-of-Convertible-Senior-Notes-due-2030/default.aspx
+2025-06-23 21:47:54 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-06-23 21:47:54 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/supermicro-drops-hard-2-3b-184917170.html
+2025-06-23 21:47:54 - INFO - __main__ - Successfully extracted article content (1608 chars)
+2025-06-23 21:47:54 - INFO - __main__ - Found total of 2 valid articles for SMCI
+2025-06-23 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:56 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-06-23 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-23 21:47:57 - INFO - __main__ - Bottom performer analysis complete
+2025-06-23 21:47:57 - INFO - __main__ - Saving results to JSON...
+2025-06-23 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
