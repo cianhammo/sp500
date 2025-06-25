@@ -1,0 +1,73 @@
+2025-06-24 21:47:32 - INFO - __main__ - Starting SP500 analysis script
+2025-06-24 21:47:32 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-24 21:47:33 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-24 21:47:33 - INFO - __main__ - Runtime timezone: UTC
+2025-06-24 21:47:33 - INFO - __main__ - Original start: 2025-06-23 16:00:00-04:00 (America/New_York)
+2025-06-24 21:47:33 - INFO - __main__ - Original end: 2025-06-24 16:00:00-04:00 (America/New_York)
+2025-06-24 21:47:33 - INFO - __main__ - UTC start: 2025-06-23 04:00:00+00:00
+2025-06-24 21:47:33 - INFO - __main__ - UTC end: 2025-06-25 04:00:00+00:00
+2025-06-24 21:47:33 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-24 21:47:34 - INFO - __main__ - Received data for 503 symbols
+2025-06-24 21:47:34 - INFO - __main__ - Sample data structure for CPT:
+2025-06-24 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-06-24 21:47:34 - INFO - __main__ - Bar timestamp: 2025-06-23 04:00:00+00:00 (UTC)
+2025-06-24 21:47:34 - INFO - __main__ - Bar timestamp: 2025-06-24 04:00:00+00:00 (UTC)
+2025-06-24 21:47:34 - INFO - __main__ - CPT timestamps - Today: 2025-06-24 04:00:00+00:00, Yesterday: 2025-06-23 04:00:00+00:00
+2025-06-24 21:47:34 - INFO - __main__ - CVX timestamps - Today: 2025-06-24 04:00:00+00:00, Yesterday: 2025-06-23 04:00:00+00:00
+2025-06-24 21:47:34 - INFO - __main__ - ICE timestamps - Today: 2025-06-24 04:00:00+00:00, Yesterday: 2025-06-23 04:00:00+00:00
+2025-06-24 21:47:34 - INFO - __main__ - MKC timestamps - Today: 2025-06-24 04:00:00+00:00, Yesterday: 2025-06-23 04:00:00+00:00
+2025-06-24 21:47:34 - INFO - __main__ - STX timestamps - Today: 2025-06-24 04:00:00+00:00, Yesterday: 2025-06-23 04:00:00+00:00
+2025-06-24 21:47:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-24 21:47:34 - INFO - __main__ - Data issues encountered: 0
+2025-06-24 21:47:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-24 21:47:34 - INFO - __main__ - Analysis for market close on June 24, 2025
+2025-06-24 21:47:34 - INFO - __main__ - Found 503 stocks with price data
+2025-06-24 21:47:34 - INFO - __main__ - Found Wikipedia URL for COIN: https://en.wikipedia.org/wiki/Coinbase
+2025-06-24 21:47:37 - INFO - __main__ - Found Wikipedia URL for OXY: https://en.wikipedia.org/wiki/Occidental_Petroleum
+2025-06-24 21:47:39 - INFO - __main__ - Analyzing top performer...
+2025-06-24 21:47:39 - INFO - __main__ - Analyzing Coinbase (COIN)
+2025-06-24 21:47:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-24 21:47:39 - INFO - __main__ - Searching for articles about COIN
+2025-06-24 21:47:39 - INFO - __main__ - Searching for news about Coinbase
+2025-06-24 21:47:39 - INFO - __main__ - Found 6 recent search results for Coinbase
+2025-06-24 21:47:39 - INFO - __main__ - Found 6 URLs to try for COIN
+2025-06-24 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/coinbase-price-target-raised-421-170825663.html
+2025-06-24 21:47:40 - INFO - __main__ - Successfully extracted article content (895 chars)
+2025-06-24 21:47:40 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-23deb530
+2025-06-24 21:47:40 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-24 21:47:40 - INFO - __main__ - Fetching content from: https://www.investopedia.com/coinbase-stock-leads-s-and-p-500-gainers-as-crypto-trading-platform-keeps-rallying-11760215
+2025-06-24 21:47:40 - INFO - __main__ - Successfully extracted article content (1017 chars)
+2025-06-24 21:47:40 - INFO - __main__ - Found total of 2 valid articles for COIN
+2025-06-24 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:41 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-06-24 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:44 - INFO - __main__ - Top performer analysis complete
+2025-06-24 21:47:44 - INFO - __main__ - Analyzing bottom performer...
+2025-06-24 21:47:44 - INFO - __main__ - Analyzing Occidental Petroleum (OXY)
+2025-06-24 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-24 21:47:44 - INFO - __main__ - Searching for articles about OXY
+2025-06-24 21:47:44 - INFO - __main__ - Searching for news about Occidental Petroleum
+2025-06-24 21:47:44 - INFO - __main__ - Found 6 recent search results for Occidental Petroleum
+2025-06-24 21:47:44 - INFO - __main__ - Found 6 URLs to try for OXY
+2025-06-24 21:47:44 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/06/24/if-iran-closes-strait-of-hormzz-3-us-oil-stocks/
+2025-06-24 21:47:45 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-06-24 21:47:45 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-23deb530
+2025-06-24 21:47:45 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-24 21:47:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/2-quantum-computing-stocks-could-103000861.html
+2025-06-24 21:47:45 - INFO - __main__ - Successfully extracted article content (5719 chars)
+2025-06-24 21:47:45 - INFO - __main__ - Fetching content from: https://www.investopedia.com/stock-market-today-11759095
+2025-06-24 21:47:46 - INFO - __main__ - Successfully extracted article content (45020 chars)
+2025-06-24 21:47:46 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/newsletters/2025-06-24/stocks-are-within-reach-of-records-on-shaky-ceasefire
+2025-06-24 21:47:46 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-06-24 21:47:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/stock-split-watch-nvidia-next-101700840.html
+2025-06-24 21:47:47 - INFO - __main__ - Successfully extracted article content (5358 chars)
+2025-06-24 21:47:47 - INFO - __main__ - Found total of 3 valid articles for OXY
+2025-06-24 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:52 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-06-24 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-24 21:47:54 - INFO - __main__ - Bottom performer analysis complete
+2025-06-24 21:47:54 - INFO - __main__ - Saving results to JSON...
+2025-06-24 21:47:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
