@@ -1,0 +1,69 @@
+2025-06-26 21:48:07 - INFO - __main__ - Starting SP500 analysis script
+2025-06-26 21:48:07 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-26 21:48:08 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-26 21:48:08 - INFO - __main__ - Runtime timezone: UTC
+2025-06-26 21:48:08 - INFO - __main__ - Original start: 2025-06-25 16:00:00-04:00 (America/New_York)
+2025-06-26 21:48:08 - INFO - __main__ - Original end: 2025-06-26 16:00:00-04:00 (America/New_York)
+2025-06-26 21:48:08 - INFO - __main__ - UTC start: 2025-06-25 04:00:00+00:00
+2025-06-26 21:48:08 - INFO - __main__ - UTC end: 2025-06-27 04:00:00+00:00
+2025-06-26 21:48:08 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-26 21:48:09 - INFO - __main__ - Received data for 503 symbols
+2025-06-26 21:48:09 - INFO - __main__ - Sample data structure for AKAM:
+2025-06-26 21:48:09 - INFO - __main__ - Number of bars: 2
+2025-06-26 21:48:09 - INFO - __main__ - Bar timestamp: 2025-06-25 04:00:00+00:00 (UTC)
+2025-06-26 21:48:09 - INFO - __main__ - Bar timestamp: 2025-06-26 04:00:00+00:00 (UTC)
+2025-06-26 21:48:09 - INFO - __main__ - AKAM timestamps - Today: 2025-06-26 04:00:00+00:00, Yesterday: 2025-06-25 04:00:00+00:00
+2025-06-26 21:48:09 - INFO - __main__ - AMZN timestamps - Today: 2025-06-26 04:00:00+00:00, Yesterday: 2025-06-25 04:00:00+00:00
+2025-06-26 21:48:09 - INFO - __main__ - PAYC timestamps - Today: 2025-06-26 04:00:00+00:00, Yesterday: 2025-06-25 04:00:00+00:00
+2025-06-26 21:48:09 - INFO - __main__ - ROL timestamps - Today: 2025-06-26 04:00:00+00:00, Yesterday: 2025-06-25 04:00:00+00:00
+2025-06-26 21:48:09 - INFO - __main__ - DE timestamps - Today: 2025-06-26 04:00:00+00:00, Yesterday: 2025-06-25 04:00:00+00:00
+2025-06-26 21:48:09 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-26 21:48:09 - INFO - __main__ - Data issues encountered: 0
+2025-06-26 21:48:09 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-26 21:48:09 - INFO - __main__ - Analysis for market close on June 26, 2025
+2025-06-26 21:48:09 - INFO - __main__ - Found 503 stocks with price data
+2025-06-26 21:48:09 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-06-26 21:48:12 - INFO - __main__ - Found Wikipedia URL for EQIX: https://en.wikipedia.org/wiki/Equinix
+2025-06-26 21:48:14 - INFO - __main__ - Analyzing top performer...
+2025-06-26 21:48:14 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-06-26 21:48:14 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-26 21:48:15 - INFO - __main__ - Searching for articles about ENPH
+2025-06-26 21:48:15 - INFO - __main__ - Searching for news about Enphase Energy
+2025-06-26 21:48:15 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-06-26 21:48:15 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-06-26 21:48:15 - INFO - __main__ - Fetching content from: https://www.investopedia.com/enphase-energy-leads-s-and-p-500-gainers-on-solar-tax-credit-news-11761791
+2025-06-26 21:48:15 - INFO - __main__ - Successfully extracted article content (1213 chars)
+2025-06-26 21:48:15 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-enphase-energy-mccormick-equinix-and-more-11761760
+2025-06-26 21:48:16 - INFO - __main__ - Successfully extracted article content (1871 chars)
+2025-06-26 21:48:16 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/enphase-energy-leads-p-500-172534025.html
+2025-06-26 21:48:16 - INFO - __main__ - Successfully extracted article content (1258 chars)
+2025-06-26 21:48:16 - INFO - __main__ - Found total of 3 valid articles for ENPH
+2025-06-26 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:19 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-26 21:48:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:21 - INFO - __main__ - Top performer analysis complete
+2025-06-26 21:48:21 - INFO - __main__ - Analyzing bottom performer...
+2025-06-26 21:48:21 - INFO - __main__ - Analyzing Equinix (EQIX)
+2025-06-26 21:48:21 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-26 21:48:22 - INFO - __main__ - Searching for articles about EQIX
+2025-06-26 21:48:22 - INFO - __main__ - Searching for news about Equinix
+2025-06-26 21:48:22 - INFO - __main__ - Found 6 recent search results for Equinix
+2025-06-26 21:48:22 - INFO - __main__ - Found 6 URLs to try for EQIX
+2025-06-26 21:48:22 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-enphase-energy-mccormick-equinix-and-more-11761760
+2025-06-26 21:48:22 - INFO - __main__ - Successfully extracted article content (1871 chars)
+2025-06-26 21:48:22 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/equinix-shares-fall-revenue-capital-160946730.html
+2025-06-26 21:48:24 - INFO - __main__ - Successfully extracted article content (1234 chars)
+2025-06-26 21:48:24 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/26/stocks-making-the-biggest-moves-midday-mu-penn-eqix.html
+2025-06-26 21:48:24 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-26 21:48:24 - INFO - __main__ - Successfully extracted article content (3083 chars)
+2025-06-26 21:48:24 - INFO - __main__ - Found total of 3 valid articles for EQIX
+2025-06-26 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:26 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-26 21:48:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-26 21:48:28 - INFO - __main__ - Bottom performer analysis complete
+2025-06-26 21:48:28 - INFO - __main__ - Saving results to JSON...
+2025-06-26 21:48:29 - INFO - __main__ - Analysis complete and saved to market_analysis.json
