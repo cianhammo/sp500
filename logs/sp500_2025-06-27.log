@@ -1,0 +1,74 @@
+2025-06-27 21:47:54 - INFO - __main__ - Starting SP500 analysis script
+2025-06-27 21:47:54 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-27 21:47:55 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-27 21:47:55 - INFO - __main__ - Runtime timezone: UTC
+2025-06-27 21:47:55 - INFO - __main__ - Original start: 2025-06-26 16:00:00-04:00 (America/New_York)
+2025-06-27 21:47:55 - INFO - __main__ - Original end: 2025-06-27 16:00:00-04:00 (America/New_York)
+2025-06-27 21:47:55 - INFO - __main__ - UTC start: 2025-06-26 04:00:00+00:00
+2025-06-27 21:47:55 - INFO - __main__ - UTC end: 2025-06-28 04:00:00+00:00
+2025-06-27 21:47:55 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-27 21:47:56 - INFO - __main__ - Received data for 503 symbols
+2025-06-27 21:47:56 - INFO - __main__ - Sample data structure for AIZ:
+2025-06-27 21:47:56 - INFO - __main__ - Number of bars: 2
+2025-06-27 21:47:56 - INFO - __main__ - Bar timestamp: 2025-06-26 04:00:00+00:00 (UTC)
+2025-06-27 21:47:56 - INFO - __main__ - Bar timestamp: 2025-06-27 04:00:00+00:00 (UTC)
+2025-06-27 21:47:56 - INFO - __main__ - AIZ timestamps - Today: 2025-06-27 04:00:00+00:00, Yesterday: 2025-06-26 04:00:00+00:00
+2025-06-27 21:47:56 - INFO - __main__ - NEE timestamps - Today: 2025-06-27 04:00:00+00:00, Yesterday: 2025-06-26 04:00:00+00:00
+2025-06-27 21:47:56 - INFO - __main__ - WBA timestamps - Today: 2025-06-27 04:00:00+00:00, Yesterday: 2025-06-26 04:00:00+00:00
+2025-06-27 21:47:56 - INFO - __main__ - INTU timestamps - Today: 2025-06-27 04:00:00+00:00, Yesterday: 2025-06-26 04:00:00+00:00
+2025-06-27 21:47:56 - INFO - __main__ - JBL timestamps - Today: 2025-06-27 04:00:00+00:00, Yesterday: 2025-06-26 04:00:00+00:00
+2025-06-27 21:47:56 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-27 21:47:56 - INFO - __main__ - Data issues encountered: 0
+2025-06-27 21:47:56 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-27 21:47:56 - INFO - __main__ - Analysis for market close on June 27, 2025
+2025-06-27 21:47:56 - INFO - __main__ - Found 503 stocks with price data
+2025-06-27 21:47:57 - INFO - __main__ - Found Wikipedia URL for NKE: https://en.wikipedia.org/wiki/Nike,_Inc.
+2025-06-27 21:47:59 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-06-27 21:48:01 - INFO - __main__ - Analyzing top performer...
+2025-06-27 21:48:01 - INFO - __main__ - Analyzing Nike, Inc. (NKE)
+2025-06-27 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-27 21:48:02 - INFO - __main__ - Searching for articles about NKE
+2025-06-27 21:48:02 - INFO - __main__ - Searching for news about Nike, Inc.
+2025-06-27 21:48:02 - INFO - __main__ - Found 6 recent search results for Nike, Inc.
+2025-06-27 21:48:02 - INFO - __main__ - Found 6 URLs to try for NKE
+2025-06-27 21:48:02 - INFO - __main__ - Fetching content from: https://www.ft.com/content/535415c9-4ee7-42c2-9656-4c1096d66d13
+2025-06-27 21:48:03 - INFO - __main__ - Successfully extracted article content (123 chars)
+2025-06-27 21:48:03 - INFO - __main__ - Fetching content from: https://www.fastcompany.com/91359723/nike-stock-price-today-shares-rise-despite-tariffs-revenue-drop
+2025-06-27 21:48:03 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-27 21:48:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/wall-street-saying-nike-ahead-142526216.html
+2025-06-27 21:48:04 - INFO - __main__ - Successfully extracted article content (4296 chars)
+2025-06-27 21:48:04 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/originals/nike-the-mother-of-all-comebacks-might-have-just-began/
+2025-06-27 21:48:04 - INFO - __main__ - Successfully extracted article content (5005 chars)
+2025-06-27 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/us-china-deal-fuels-stock-172401158.html
+2025-06-27 21:48:05 - INFO - __main__ - Successfully extracted article content (996 chars)
+2025-06-27 21:48:05 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/nikes-stock-is-headed-for-a-swoosh-shaped-recovery-after-years-of-pain-analyst-says-c5109e1f
+2025-06-27 21:48:05 - WARNING - __main__ - Article content too short (43 chars)
+2025-06-27 21:48:05 - INFO - __main__ - Found total of 3 valid articles for NKE
+2025-06-27 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:08 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-27 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:11 - INFO - __main__ - Top performer analysis complete
+2025-06-27 21:48:11 - INFO - __main__ - Analyzing bottom performer...
+2025-06-27 21:48:11 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-06-27 21:48:11 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-27 21:48:11 - INFO - __main__ - Searching for articles about PLTR
+2025-06-27 21:48:11 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-06-27 21:48:11 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-06-27 21:48:11 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-06-27 21:48:11 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/prediction-1-stock-worth-more-113000153.html
+2025-06-27 21:48:13 - INFO - __main__ - Successfully extracted article content (7292 chars)
+2025-06-27 21:48:13 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-palantir-stock-sinking-today-165321805.html
+2025-06-27 21:48:14 - INFO - __main__ - Successfully extracted article content (3471 chars)
+2025-06-27 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-technologies-inc-pltr-ve-184411805.html
+2025-06-27 21:48:14 - INFO - __main__ - Successfully extracted article content (2492 chars)
+2025-06-27 21:48:14 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-06-27 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:17 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-06-27 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-27 21:48:19 - INFO - __main__ - Bottom performer analysis complete
+2025-06-27 21:48:19 - INFO - __main__ - Saving results to JSON...
+2025-06-27 21:48:20 - INFO - __main__ - Analysis complete and saved to market_analysis.json
