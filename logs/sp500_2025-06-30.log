@@ -1,0 +1,71 @@
+2025-06-30 21:48:03 - INFO - __main__ - Starting SP500 analysis script
+2025-06-30 21:48:03 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-06-30 21:48:04 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 6, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-06-30 21:48:04 - INFO - __main__ - Runtime timezone: UTC
+2025-06-30 21:48:04 - INFO - __main__ - Original start: 2025-06-27 16:00:00-04:00 (America/New_York)
+2025-06-30 21:48:04 - INFO - __main__ - Original end: 2025-06-30 16:00:00-04:00 (America/New_York)
+2025-06-30 21:48:04 - INFO - __main__ - UTC start: 2025-06-27 04:00:00+00:00
+2025-06-30 21:48:04 - INFO - __main__ - UTC end: 2025-07-01 04:00:00+00:00
+2025-06-30 21:48:04 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-06-30 21:48:05 - INFO - __main__ - Received data for 503 symbols
+2025-06-30 21:48:05 - INFO - __main__ - Sample data structure for CMS:
+2025-06-30 21:48:05 - INFO - __main__ - Number of bars: 2
+2025-06-30 21:48:05 - INFO - __main__ - Bar timestamp: 2025-06-27 04:00:00+00:00 (UTC)
+2025-06-30 21:48:05 - INFO - __main__ - Bar timestamp: 2025-06-30 04:00:00+00:00 (UTC)
+2025-06-30 21:48:05 - INFO - __main__ - CMS timestamps - Today: 2025-06-30 04:00:00+00:00, Yesterday: 2025-06-27 04:00:00+00:00
+2025-06-30 21:48:05 - INFO - __main__ - TSLA timestamps - Today: 2025-06-30 04:00:00+00:00, Yesterday: 2025-06-27 04:00:00+00:00
+2025-06-30 21:48:05 - INFO - __main__ - CSCO timestamps - Today: 2025-06-30 04:00:00+00:00, Yesterday: 2025-06-27 04:00:00+00:00
+2025-06-30 21:48:05 - INFO - __main__ - HES timestamps - Today: 2025-06-30 04:00:00+00:00, Yesterday: 2025-06-27 04:00:00+00:00
+2025-06-30 21:48:05 - INFO - __main__ - PCG timestamps - Today: 2025-06-30 04:00:00+00:00, Yesterday: 2025-06-27 04:00:00+00:00
+2025-06-30 21:48:05 - INFO - __main__ - Successfully processed 503 stocks
+2025-06-30 21:48:05 - INFO - __main__ - Data issues encountered: 0
+2025-06-30 21:48:05 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-06-30 21:48:05 - INFO - __main__ - Analysis for market close on June 30, 2025
+2025-06-30 21:48:05 - INFO - __main__ - Found 503 stocks with price data
+2025-06-30 21:48:06 - INFO - __main__ - Found Wikipedia URL for HPE: https://en.wikipedia.org/wiki/Hewlett_Packard_Enterprise
+2025-06-30 21:48:08 - INFO - __main__ - Found Wikipedia URL for FTV: https://en.wikipedia.org/wiki/Fortive
+2025-06-30 21:48:10 - INFO - __main__ - Analyzing top performer...
+2025-06-30 21:48:10 - INFO - __main__ - Analyzing Hewlett Packard Enterprise (HPE)
+2025-06-30 21:48:10 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-30 21:48:11 - INFO - __main__ - Searching for articles about HPE
+2025-06-30 21:48:11 - INFO - __main__ - Searching for news about Hewlett Packard Enterprise
+2025-06-30 21:48:11 - INFO - __main__ - Found 6 recent search results for Hewlett Packard Enterprise
+2025-06-30 21:48:11 - INFO - __main__ - Found 6 URLs to try for HPE
+2025-06-30 21:48:11 - INFO - __main__ - Fetching content from: https://www.investopedia.com/hewlett-packard-enterprise-juniper-networks-stocks-jump-as-doj-approves-deal-11763421
+2025-06-30 21:48:12 - INFO - __main__ - Successfully extracted article content (1926 chars)
+2025-06-30 21:48:12 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/30/stocks-making-the-biggest-moves-premarket-meta-mrna-hpe-jnpr.html
+2025-06-30 21:48:13 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-30 21:48:13 - INFO - __main__ - Successfully extracted article content (1946 chars)
+2025-06-30 21:48:13 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/30/stocks-making-the-biggest-moves-midday-hpe-hood-pltr-orcl.html
+2025-06-30 21:48:13 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-30 21:48:13 - INFO - __main__ - Successfully extracted article content (3790 chars)
+2025-06-30 21:48:13 - INFO - __main__ - Found total of 3 valid articles for HPE
+2025-06-30 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:16 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-06-30 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:18 - INFO - __main__ - Top performer analysis complete
+2025-06-30 21:48:18 - INFO - __main__ - Analyzing bottom performer...
+2025-06-30 21:48:18 - INFO - __main__ - Analyzing Fortive (FTV)
+2025-06-30 21:48:19 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-06-30 21:48:19 - INFO - __main__ - Searching for articles about FTV
+2025-06-30 21:48:19 - INFO - __main__ - Searching for news about Fortive
+2025-06-30 21:48:19 - INFO - __main__ - Found 6 recent search results for Fortive
+2025-06-30 21:48:19 - INFO - __main__ - Found 6 URLs to try for FTV
+2025-06-30 21:48:19 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/ralliant-completes-separation-fortive-launches-100100766.html
+2025-06-30 21:48:20 - INFO - __main__ - Successfully extracted article content (7759 chars)
+2025-06-30 21:48:20 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fortive-announces-completion-ralliant-separation-100000131.html
+2025-06-30 21:48:20 - INFO - __main__ - Successfully extracted article content (12380 chars)
+2025-06-30 21:48:20 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/06/30/stocks-making-the-biggest-moves-midday-hpe-hood-pltr-orcl.html
+2025-06-30 21:48:21 - INFO - readability.readability - ruthless removal did not work. 
+2025-06-30 21:48:21 - INFO - __main__ - Successfully extracted article content (3790 chars)
+2025-06-30 21:48:21 - INFO - __main__ - Found total of 3 valid articles for FTV
+2025-06-30 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:24 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-06-30 21:48:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-06-30 21:48:27 - INFO - __main__ - Bottom performer analysis complete
+2025-06-30 21:48:27 - INFO - __main__ - Saving results to JSON...
+2025-06-30 21:48:27 - INFO - __main__ - Analysis complete and saved to market_analysis.json
