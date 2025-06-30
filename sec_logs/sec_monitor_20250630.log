@@ -447,3 +447,56 @@
 2025-06-30 13:09:40,489 - sec_monitor - INFO - Cumulative stats - Input words: 396328, Output words: 467
 2025-06-30 13:09:40,489 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-06-30 13:09:40,489 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 376553, 'output_words': 364, 'filings_processed': 5}
+2025-06-30 13:35:01,871 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-06-30 13:35:01,871 - sec_monitor - INFO - Loading S&P 500 data...
+2025-06-30 13:35:01,871 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-06-30 13:35:01,872 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-06-30 13:35:01,872 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-06-30 13:35:01,872 - sec_monitor - INFO - Initializing components...
+2025-06-30 13:35:01,872 - sec_monitor - INFO - Initializing components
+2025-06-30 13:35:01,872 - sec_monitor - INFO - SEC fetcher initialized
+2025-06-30 13:35:01,872 - sec_monitor - INFO - Filing analyzer initialized
+2025-06-30 13:35:01,872 - sec_monitor - INFO - Alpaca clients initialized
+2025-06-30 13:35:01,873 - sec_monitor - INFO - All components initialized successfully
+2025-06-30 13:35:01,873 - sec_monitor - INFO - Found JSON file from today
+2025-06-30 13:35:01,874 - sec_monitor - INFO - Found 6 previously processed accessions and 6 filing URLs
+2025-06-30 13:35:01,874 - sec_monitor - INFO - Found 6 accession numbers and 6 URLs from previously processed filings
+2025-06-30 13:35:01,874 - sec_monitor - INFO - Fetching SEC filings...
+2025-06-30 13:35:05,225 - sec_monitor - INFO - Reached old filing, stopping. Found 15 total filings
+2025-06-30 13:35:05,225 - sec_monitor - INFO - Found 2 new interesting filings
+2025-06-30 13:35:05,226 - sec_monitor - INFO - Found 2 new filings to process
+2025-06-30 13:35:05,226 - sec_monitor - INFO - Processing filing 1/2: TDG
+2025-06-30 13:35:36,686 - sec_monitor - INFO - ==================================================
+2025-06-30 13:35:36,686 - sec_monitor - INFO - Processing first chunk
+2025-06-30 13:35:36,686 - sec_monitor - INFO - Timestamp: 2025-06-30 13:35:36
+2025-06-30 13:35:36,915 - sec_monitor - INFO - token percentage = 13%
+2025-06-30 13:35:36,916 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-06-30 13:35:36,916 - sec_monitor - INFO - Timestamp: 2025-06-30 13:35:36
+2025-06-30 13:35:45,871 - sec_monitor - INFO - API call successful
+2025-06-30 13:35:46,872 - sec_monitor - INFO - Processing filing 2/2: EQR
+2025-06-30 13:36:17,358 - sec_monitor - INFO - ==================================================
+2025-06-30 13:36:17,359 - sec_monitor - INFO - Processing first chunk
+2025-06-30 13:36:17,359 - sec_monitor - INFO - Timestamp: 2025-06-30 13:36:17
+2025-06-30 13:36:17,524 - sec_monitor - INFO - token percentage = 3%
+2025-06-30 13:36:17,524 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-06-30 13:36:17,524 - sec_monitor - INFO - Timestamp: 2025-06-30 13:36:17
+2025-06-30 13:36:22,517 - sec_monitor - INFO - API call successful
+2025-06-30 13:36:23,518 - sec_monitor - INFO - Fetching supplementary data...
+2025-06-30 13:36:24,138 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-06-30 13:36:24,139 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-06-30 13:36:24,139 - sec_monitor - INFO - Market open: True
+2025-06-30 13:36:24,139 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-06-30 13:36:24,147 - sec_monitor - INFO - Last trading day: 2025-06-30
+2025-06-30 13:36:24,147 - sec_monitor - INFO - Processing ticker: TDG
+2025-06-30 13:36:24,661 - sec_monitor - INFO - Number of bars for TDG: 3
+2025-06-30 13:36:24,661 - sec_monitor - INFO - Last bar close for TDG: 1503.0
+2025-06-30 13:36:24,661 - sec_monitor - INFO - Market open price for TDG: 1503.0, change: 1.8730958101893422%
+2025-06-30 13:36:24,661 - sec_monitor - INFO - Processing ticker: EQR
+2025-06-30 13:36:24,694 - sec_monitor - INFO - Number of bars for EQR: 3
+2025-06-30 13:36:24,694 - sec_monitor - INFO - Last bar close for EQR: 67.35
+2025-06-30 13:36:24,695 - sec_monitor - INFO - Market open price for EQR: 67.35, change: -0.1630595908686621%
+2025-06-30 13:36:25,183 - sec_monitor - INFO - Generating final output...
+2025-06-30 13:36:25,184 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-06-30 13:36:25,184 - sec_monitor - INFO - Cumulative stats - Input words: 412241, Output words: 636
+2025-06-30 13:36:25,184 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-06-30 13:36:25,184 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 15913, 'output_words': 169, 'filings_processed': 2}
