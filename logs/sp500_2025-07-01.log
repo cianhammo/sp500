@@ -1,0 +1,66 @@
+2025-07-01 21:48:47 - INFO - __main__ - Starting SP500 analysis script
+2025-07-01 21:48:48 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-01 21:48:48 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 6, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-01 21:48:48 - INFO - __main__ - Runtime timezone: UTC
+2025-07-01 21:48:48 - INFO - __main__ - Original start: 2025-06-30 16:00:00-04:00 (America/New_York)
+2025-07-01 21:48:48 - INFO - __main__ - Original end: 2025-07-01 16:00:00-04:00 (America/New_York)
+2025-07-01 21:48:48 - INFO - __main__ - UTC start: 2025-06-30 04:00:00+00:00
+2025-07-01 21:48:48 - INFO - __main__ - UTC end: 2025-07-02 04:00:00+00:00
+2025-07-01 21:48:48 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-01 21:48:50 - INFO - __main__ - Received data for 503 symbols
+2025-07-01 21:48:50 - INFO - __main__ - Sample data structure for FCX:
+2025-07-01 21:48:50 - INFO - __main__ - Number of bars: 2
+2025-07-01 21:48:50 - INFO - __main__ - Bar timestamp: 2025-06-30 04:00:00+00:00 (UTC)
+2025-07-01 21:48:50 - INFO - __main__ - Bar timestamp: 2025-07-01 04:00:00+00:00 (UTC)
+2025-07-01 21:48:50 - INFO - __main__ - FCX timestamps - Today: 2025-07-01 04:00:00+00:00, Yesterday: 2025-06-30 04:00:00+00:00
+2025-07-01 21:48:50 - INFO - __main__ - LMT timestamps - Today: 2025-07-01 04:00:00+00:00, Yesterday: 2025-06-30 04:00:00+00:00
+2025-07-01 21:48:50 - INFO - __main__ - PLTR timestamps - Today: 2025-07-01 04:00:00+00:00, Yesterday: 2025-06-30 04:00:00+00:00
+2025-07-01 21:48:50 - INFO - __main__ - IFF timestamps - Today: 2025-07-01 04:00:00+00:00, Yesterday: 2025-06-30 04:00:00+00:00
+2025-07-01 21:48:50 - INFO - __main__ - MSI timestamps - Today: 2025-07-01 04:00:00+00:00, Yesterday: 2025-06-30 04:00:00+00:00
+2025-07-01 21:48:50 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-01 21:48:50 - INFO - __main__ - Data issues encountered: 0
+2025-07-01 21:48:50 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-01 21:48:50 - INFO - __main__ - Analysis for market close on July 01, 2025
+2025-07-01 21:48:50 - INFO - __main__ - Found 503 stocks with price data
+2025-07-01 21:48:50 - INFO - __main__ - Found Wikipedia URL for LVS: https://en.wikipedia.org/wiki/Las_Vegas_Sands
+2025-07-01 21:48:53 - INFO - __main__ - Found Wikipedia URL for WMB: https://en.wikipedia.org/wiki/Williams_Companies
+2025-07-01 21:48:55 - INFO - __main__ - Analyzing top performer...
+2025-07-01 21:48:55 - INFO - __main__ - Analyzing Las Vegas Sands (LVS)
+2025-07-01 21:48:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-01 21:48:55 - INFO - __main__ - Searching for articles about LVS
+2025-07-01 21:48:55 - INFO - __main__ - Searching for news about Las Vegas Sands
+2025-07-01 21:48:56 - INFO - __main__ - Found 6 recent search results for Las Vegas Sands
+2025-07-01 21:48:56 - INFO - __main__ - Found 6 URLs to try for LVS
+2025-07-01 21:48:56 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-ba92d390
+2025-07-01 21:48:56 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-01 21:48:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/constellation-brands-astrazeneca-casino-stocks-155710141.html
+2025-07-01 21:48:57 - INFO - __main__ - Successfully extracted article content (5335 chars)
+2025-07-01 21:48:57 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-wynn-resorts-hasbro-and-more-11764435
+2025-07-01 21:48:57 - INFO - __main__ - Successfully extracted article content (1860 chars)
+2025-07-01 21:48:57 - INFO - __main__ - Found total of 2 valid articles for LVS
+2025-07-01 21:48:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-01 21:48:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-01 21:48:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-07-01 21:49:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-01 21:49:02 - INFO - __main__ - Top performer analysis complete
+2025-07-01 21:49:02 - INFO - __main__ - Analyzing bottom performer...
+2025-07-01 21:49:02 - INFO - __main__ - Analyzing Williams Companies (WMB)
+2025-07-01 21:49:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-01 21:49:03 - INFO - __main__ - Searching for articles about WMB
+2025-07-01 21:49:03 - INFO - __main__ - Searching for news about Williams Companies
+2025-07-01 21:49:03 - INFO - __main__ - Found 6 recent search results for Williams Companies
+2025-07-01 21:49:03 - INFO - __main__ - Found 6 URLs to try for WMB
+2025-07-01 21:49:03 - INFO - __main__ - Fetching content from: https://www.yahoo.com/news/bolt-ceo-says-unlimited-pto-162813353.html
+2025-07-01 21:49:03 - INFO - __main__ - Successfully extracted article content (2783 chars)
+2025-07-01 21:49:03 - INFO - __main__ - Fetching content from: https://uk.investing.com/news/analyst-ratings/ubs-reiterates-buy-rating-on-williams-companies-stock-with-74-target-93CH-4154282
+2025-07-01 21:49:03 - WARNING - __main__ - Article content too short (41 chars)
+2025-07-01 21:49:03 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/filing-williams-companies-inc-the-nysewmb-shares-bought-by-sumitomo-mitsui-ds-asset-management-company-ltd-2025-07-01/
+2025-07-01 21:49:04 - INFO - __main__ - Successfully extracted article content (6814 chars)
+2025-07-01 21:49:04 - INFO - __main__ - Found total of 2 valid articles for WMB
+2025-07-01 21:49:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-01 21:49:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-01 21:49:06 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-07-01 21:49:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-01 21:49:08 - INFO - __main__ - Bottom performer analysis complete
+2025-07-01 21:49:08 - INFO - __main__ - Saving results to JSON...
+2025-07-01 21:49:09 - INFO - __main__ - Analysis complete and saved to market_analysis.json
