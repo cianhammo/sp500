@@ -1,0 +1,69 @@
+2025-07-03 21:48:01 - INFO - __main__ - Starting SP500 analysis script
+2025-07-03 21:48:01 - INFO - __main__ - Retrieved 502 tickers from SP500 list
+2025-07-03 21:48:01 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 3, 13, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-03 21:48:01 - INFO - __main__ - Runtime timezone: UTC
+2025-07-03 21:48:01 - INFO - __main__ - Original start: 2025-07-02 16:00:00-04:00 (America/New_York)
+2025-07-03 21:48:01 - INFO - __main__ - Original end: 2025-07-03 13:00:00-04:00 (America/New_York)
+2025-07-03 21:48:01 - INFO - __main__ - UTC start: 2025-07-02 04:00:00+00:00
+2025-07-03 21:48:01 - INFO - __main__ - UTC end: 2025-07-04 04:00:00+00:00
+2025-07-03 21:48:01 - INFO - __main__ - Attempting to fetch data for 502 tickers
+2025-07-03 21:48:02 - INFO - __main__ - Received data for 502 symbols
+2025-07-03 21:48:02 - INFO - __main__ - Sample data structure for AMP:
+2025-07-03 21:48:02 - INFO - __main__ - Number of bars: 2
+2025-07-03 21:48:02 - INFO - __main__ - Bar timestamp: 2025-07-02 04:00:00+00:00 (UTC)
+2025-07-03 21:48:02 - INFO - __main__ - Bar timestamp: 2025-07-03 04:00:00+00:00 (UTC)
+2025-07-03 21:48:02 - INFO - __main__ - AMP timestamps - Today: 2025-07-03 04:00:00+00:00, Yesterday: 2025-07-02 04:00:00+00:00
+2025-07-03 21:48:02 - INFO - __main__ - MGM timestamps - Today: 2025-07-03 04:00:00+00:00, Yesterday: 2025-07-02 04:00:00+00:00
+2025-07-03 21:48:02 - INFO - __main__ - PNW timestamps - Today: 2025-07-03 04:00:00+00:00, Yesterday: 2025-07-02 04:00:00+00:00
+2025-07-03 21:48:02 - INFO - __main__ - SWKS timestamps - Today: 2025-07-03 04:00:00+00:00, Yesterday: 2025-07-02 04:00:00+00:00
+2025-07-03 21:48:02 - INFO - __main__ - TAP timestamps - Today: 2025-07-03 04:00:00+00:00, Yesterday: 2025-07-02 04:00:00+00:00
+2025-07-03 21:48:03 - INFO - __main__ - Successfully processed 502 stocks
+2025-07-03 21:48:03 - INFO - __main__ - Data issues encountered: 0
+2025-07-03 21:48:03 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-07-03 21:48:03 - INFO - __main__ - Analysis for market close on July 03, 2025
+2025-07-03 21:48:03 - INFO - __main__ - Found 502 stocks with price data
+2025-07-03 21:48:03 - INFO - __main__ - Found Wikipedia URL for FSLR: https://en.wikipedia.org/wiki/First_Solar
+2025-07-03 21:48:06 - INFO - __main__ - Found Wikipedia URL for LEN: https://en.wikipedia.org/wiki/Lennar
+2025-07-03 21:48:08 - INFO - __main__ - Analyzing top performer...
+2025-07-03 21:48:08 - INFO - __main__ - Analyzing First Solar (FSLR)
+2025-07-03 21:48:08 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-03 21:48:08 - INFO - __main__ - Searching for articles about FSLR
+2025-07-03 21:48:08 - INFO - __main__ - Searching for news about First Solar
+2025-07-03 21:48:08 - INFO - __main__ - Found 6 recent search results for First Solar
+2025-07-03 21:48:08 - INFO - __main__ - Found 6 URLs to try for FSLR
+2025-07-03 21:48:08 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/07/03/stocks-making-the-biggest-moves-midday-fslr-crwd-ddog-hood.html
+2025-07-03 21:48:09 - INFO - readability.readability - ruthless removal did not work. 
+2025-07-03 21:48:09 - INFO - __main__ - Successfully extracted article content (2903 chars)
+2025-07-03 21:48:09 - INFO - __main__ - Fetching content from: https://www.investors.com/research/ibd-stock-of-the-day/nextracker-stock-buy-zone-as-renewables-may-be-down-but-not-out/
+2025-07-03 21:48:09 - INFO - __main__ - Successfully extracted article content (343 chars)
+2025-07-03 21:48:09 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/07/02/stock-market-today-live-updates.html
+2025-07-03 21:48:09 - INFO - readability.readability - ruthless removal did not work. 
+2025-07-03 21:48:09 - INFO - __main__ - Successfully extracted article content (3002 chars)
+2025-07-03 21:48:09 - INFO - __main__ - Found total of 2 valid articles for FSLR
+2025-07-03 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 21:48:11 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-07-03 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 21:48:15 - INFO - __main__ - Top performer analysis complete
+2025-07-03 21:48:15 - INFO - __main__ - Analyzing bottom performer...
+2025-07-03 21:48:15 - INFO - __main__ - Analyzing Lennar (LEN)
+2025-07-03 21:48:15 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-03 21:48:16 - INFO - __main__ - Searching for articles about LEN
+2025-07-03 21:48:16 - INFO - __main__ - Searching for news about Lennar
+2025-07-03 21:48:16 - INFO - __main__ - Found 6 recent search results for Lennar
+2025-07-03 21:48:16 - INFO - __main__ - Found 6 URLs to try for LEN
+2025-07-03 21:48:16 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/wall-street-today-us-stocks-rise-as-job-data-exceeds-market-expectations-amid-trump-tariff-concerns-dow-nasdaq-s-p-500-11751551080453.html
+2025-07-03 21:48:17 - INFO - __main__ - Successfully extracted article content (3626 chars)
+2025-07-03 21:48:17 - INFO - __main__ - Fetching content from: https://www.youtube.com/watch?v=aNtQ9LwSKgs
+2025-07-03 21:48:18 - INFO - readability.readability - ruthless removal did not work. 
+2025-07-03 21:48:18 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-07-03 21:48:18 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-07032025-11765983
+2025-07-03 21:48:18 - INFO - __main__ - Successfully extracted article content (16038 chars)
+2025-07-03 21:48:18 - INFO - __main__ - Found total of 2 valid articles for LEN
+2025-07-03 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 21:48:20 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-07-03 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-03 21:48:22 - INFO - __main__ - Bottom performer analysis complete
+2025-07-03 21:48:22 - INFO - __main__ - Saving results to JSON...
+2025-07-03 21:48:23 - INFO - __main__ - Analysis complete and saved to market_analysis.json
