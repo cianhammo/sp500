@@ -1,0 +1,67 @@
+2025-07-07 21:49:03 - INFO - __main__ - Starting SP500 analysis script
+2025-07-07 21:49:03 - INFO - __main__ - Retrieved 502 tickers from SP500 list
+2025-07-07 21:49:04 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 3, 13, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-07 21:49:04 - INFO - __main__ - Runtime timezone: UTC
+2025-07-07 21:49:04 - INFO - __main__ - Original start: 2025-07-03 13:00:00-04:00 (America/New_York)
+2025-07-07 21:49:04 - INFO - __main__ - Original end: 2025-07-07 16:00:00-04:00 (America/New_York)
+2025-07-07 21:49:04 - INFO - __main__ - UTC start: 2025-07-03 04:00:00+00:00
+2025-07-07 21:49:04 - INFO - __main__ - UTC end: 2025-07-08 04:00:00+00:00
+2025-07-07 21:49:04 - INFO - __main__ - Attempting to fetch data for 502 tickers
+2025-07-07 21:49:04 - INFO - __main__ - Received data for 502 symbols
+2025-07-07 21:49:04 - INFO - __main__ - Sample data structure for UNH:
+2025-07-07 21:49:04 - INFO - __main__ - Number of bars: 2
+2025-07-07 21:49:04 - INFO - __main__ - Bar timestamp: 2025-07-03 04:00:00+00:00 (UTC)
+2025-07-07 21:49:04 - INFO - __main__ - Bar timestamp: 2025-07-07 04:00:00+00:00 (UTC)
+2025-07-07 21:49:04 - INFO - __main__ - UNH timestamps - Today: 2025-07-07 04:00:00+00:00, Yesterday: 2025-07-03 04:00:00+00:00
+2025-07-07 21:49:04 - INFO - __main__ - ETN timestamps - Today: 2025-07-07 04:00:00+00:00, Yesterday: 2025-07-03 04:00:00+00:00
+2025-07-07 21:49:04 - INFO - __main__ - ETR timestamps - Today: 2025-07-07 04:00:00+00:00, Yesterday: 2025-07-03 04:00:00+00:00
+2025-07-07 21:49:04 - INFO - __main__ - OMC timestamps - Today: 2025-07-07 04:00:00+00:00, Yesterday: 2025-07-03 04:00:00+00:00
+2025-07-07 21:49:04 - INFO - __main__ - KEY timestamps - Today: 2025-07-07 04:00:00+00:00, Yesterday: 2025-07-03 04:00:00+00:00
+2025-07-07 21:49:05 - INFO - __main__ - Successfully processed 502 stocks
+2025-07-07 21:49:05 - INFO - __main__ - Data issues encountered: 0
+2025-07-07 21:49:05 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-07-07 21:49:05 - INFO - __main__ - Analysis for market close on July 07, 2025
+2025-07-07 21:49:05 - INFO - __main__ - Found 502 stocks with price data
+2025-07-07 21:49:05 - INFO - __main__ - Found Wikipedia URL for TSCO: https://en.wikipedia.org/wiki/Tractor_Supply_Company
+2025-07-07 21:49:07 - INFO - __main__ - Found Wikipedia URL for TSLA: https://en.wikipedia.org/wiki/Tesla,_Inc.
+2025-07-07 21:49:09 - INFO - __main__ - Analyzing top performer...
+2025-07-07 21:49:09 - INFO - __main__ - Analyzing Tractor Supply (TSCO)
+2025-07-07 21:49:09 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-07 21:49:10 - INFO - __main__ - Searching for articles about TSCO
+2025-07-07 21:49:10 - INFO - __main__ - Searching for news about Tractor Supply
+2025-07-07 21:49:10 - INFO - __main__ - Found 6 recent search results for Tractor Supply
+2025-07-07 21:49:10 - INFO - __main__ - Found 6 URLs to try for TSCO
+2025-07-07 21:49:10 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/stocks-pressured-ahead-wednesdays-tariff-152150486.html
+2025-07-07 21:49:10 - INFO - __main__ - Successfully extracted article content (6939 chars)
+2025-07-07 21:49:10 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/earnings-preview-expect-tractor-supplys-114116217.html
+2025-07-07 21:49:11 - INFO - __main__ - Successfully extracted article content (2428 chars)
+2025-07-07 21:49:11 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/tractor-supply-co-stock-outperforms-competitors-on-strong-trading-day-c276e6d3-b1230035a5d1
+2025-07-07 21:49:11 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-07 21:49:11 - INFO - __main__ - Found total of 2 valid articles for TSCO
+2025-07-07 21:49:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:14 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-07-07 21:49:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:17 - INFO - __main__ - Top performer analysis complete
+2025-07-07 21:49:17 - INFO - __main__ - Analyzing bottom performer...
+2025-07-07 21:49:17 - INFO - __main__ - Analyzing Tesla, Inc. (TSLA)
+2025-07-07 21:49:17 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-07 21:49:18 - INFO - __main__ - Searching for articles about TSLA
+2025-07-07 21:49:18 - INFO - __main__ - Searching for news about Tesla, Inc.
+2025-07-07 21:49:18 - INFO - __main__ - Found 6 recent search results for Tesla, Inc.
+2025-07-07 21:49:18 - INFO - __main__ - Found 6 URLs to try for TSLA
+2025-07-07 21:49:18 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/tesla-stock-plummets-musk-launches-125353075.html
+2025-07-07 21:49:19 - INFO - __main__ - Successfully extracted article content (1114 chars)
+2025-07-07 21:49:19 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/tesla-stock-drops-on-musks-latest-battle-with-trump-loss-of-ev-and-regulatory-credits-140258240.html
+2025-07-07 21:49:19 - INFO - __main__ - Successfully extracted article content (4472 chars)
+2025-07-07 21:49:19 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/tesla-shares-fall-nearly-7-in-premarket-after-elon-musks-american-party-intent-spooks-wall-street-investors-11751882044765.html
+2025-07-07 21:49:19 - INFO - __main__ - Successfully extracted article content (2991 chars)
+2025-07-07 21:49:19 - INFO - __main__ - Found total of 3 valid articles for TSLA
+2025-07-07 21:49:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:24 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-07-07 21:49:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-07 21:49:26 - INFO - __main__ - Bottom performer analysis complete
+2025-07-07 21:49:26 - INFO - __main__ - Saving results to JSON...
+2025-07-07 21:49:26 - INFO - __main__ - Analysis complete and saved to market_analysis.json
