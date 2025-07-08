@@ -779,3 +779,137 @@
 2025-07-08 12:50:52,066 - sec_monitor - INFO - Cumulative stats - Input words: 101851, Output words: 28
 2025-07-08 12:50:52,066 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-07-08 12:50:52,066 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4648, 'output_words': 4, 'filings_processed': 1}
+2025-07-08 13:37:23,023 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-07-08 13:37:23,023 - sec_monitor - INFO - Loading S&P 500 data...
+2025-07-08 13:37:23,023 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-07-08 13:37:23,024 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-07-08 13:37:23,024 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-07-08 13:37:23,024 - sec_monitor - INFO - Initializing components...
+2025-07-08 13:37:23,024 - sec_monitor - INFO - Initializing components
+2025-07-08 13:37:23,024 - sec_monitor - INFO - SEC fetcher initialized
+2025-07-08 13:37:23,024 - sec_monitor - INFO - Filing analyzer initialized
+2025-07-08 13:37:23,025 - sec_monitor - INFO - Alpaca clients initialized
+2025-07-08 13:37:23,025 - sec_monitor - INFO - All components initialized successfully
+2025-07-08 13:37:23,026 - sec_monitor - INFO - Found JSON file from today
+2025-07-08 13:37:23,026 - sec_monitor - INFO - Found 7 previously processed accessions and 7 filing URLs
+2025-07-08 13:37:23,026 - sec_monitor - INFO - Found 7 accession numbers and 7 URLs from previously processed filings
+2025-07-08 13:37:23,026 - sec_monitor - INFO - Fetching SEC filings...
+2025-07-08 13:37:46,667 - sec_monitor - INFO - No more entries found
+2025-07-08 13:37:46,668 - sec_monitor - INFO - Completed fetching. Found 79 total filings
+2025-07-08 13:37:46,668 - sec_monitor - INFO - Found 1 new interesting filings
+2025-07-08 13:37:46,668 - sec_monitor - INFO - Found 1 new filings to process
+2025-07-08 13:37:46,668 - sec_monitor - INFO - Processing filing 1/1: HSY
+2025-07-08 13:38:20,573 - sec_monitor - INFO - ==================================================
+2025-07-08 13:38:20,574 - sec_monitor - INFO - Processing first chunk
+2025-07-08 13:38:20,574 - sec_monitor - INFO - Timestamp: 2025-07-08 13:38:20
+2025-07-08 13:38:21,215 - sec_monitor - INFO - token percentage = 43%
+2025-07-08 13:38:21,215 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-08 13:38:21,215 - sec_monitor - INFO - Timestamp: 2025-07-08 13:38:21
+2025-07-08 13:38:21,736 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-07-08 13:38:21,736 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2025-07-08 13:38:21,737 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-07-08 13:41:21,813 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-07-08 13:41:21,813 - sec_monitor - INFO - Timestamp: 2025-07-08 13:41:21
+2025-07-08 13:41:22,442 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-07-08 13:41:22,443 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 37
+}
+]
+2025-07-08 13:41:22,443 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-07-08 13:44:22,543 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-07-08 13:44:22,543 - sec_monitor - INFO - Timestamp: 2025-07-08 13:44:22
+2025-07-08 13:44:24,536 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-07-08 13:44:24,536 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-07-08 13:44:24,536 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-07-08 13:44:25,538 - sec_monitor - INFO - Fetching supplementary data...
+2025-07-08 13:44:26,128 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-07-08 13:44:26,128 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-07-08 13:44:26,128 - sec_monitor - INFO - Market open: True
+2025-07-08 13:44:26,128 - sec_monitor - INFO - Number of filing times mapped: 1
+2025-07-08 13:44:26,206 - sec_monitor - INFO - Last trading day: 2025-07-08
+2025-07-08 13:44:26,206 - sec_monitor - INFO - Processing ticker: HSY
+2025-07-08 13:44:26,552 - sec_monitor - INFO - Number of bars for HSY: 2
+2025-07-08 13:44:26,552 - sec_monitor - INFO - Last bar close for HSY: 175.57
+2025-07-08 13:44:26,552 - sec_monitor - INFO - Market open price for HSY: 175.57, change: -0.4761634827957618%
+2025-07-08 13:44:27,008 - sec_monitor - INFO - Generating final output...
+2025-07-08 13:44:27,011 - sec_monitor - INFO - Successfully merged 1 new filings with existing JSON
+2025-07-08 13:44:27,011 - sec_monitor - INFO - Cumulative stats - Input words: 130352, Output words: 32
+2025-07-08 13:44:27,011 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-07-08 13:44:27,011 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 28501, 'output_words': 4, 'filings_processed': 1}
