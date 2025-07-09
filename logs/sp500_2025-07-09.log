@@ -1,0 +1,73 @@
+2025-07-09 21:48:13 - INFO - __main__ - Starting SP500 analysis script
+2025-07-09 21:48:13 - INFO - __main__ - Retrieved 502 tickers from SP500 list
+2025-07-09 21:48:13 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-09 21:48:13 - INFO - __main__ - Runtime timezone: UTC
+2025-07-09 21:48:13 - INFO - __main__ - Original start: 2025-07-08 16:00:00-04:00 (America/New_York)
+2025-07-09 21:48:13 - INFO - __main__ - Original end: 2025-07-09 16:00:00-04:00 (America/New_York)
+2025-07-09 21:48:13 - INFO - __main__ - UTC start: 2025-07-08 04:00:00+00:00
+2025-07-09 21:48:13 - INFO - __main__ - UTC end: 2025-07-10 04:00:00+00:00
+2025-07-09 21:48:13 - INFO - __main__ - Attempting to fetch data for 502 tickers
+2025-07-09 21:48:16 - INFO - __main__ - Received data for 502 symbols
+2025-07-09 21:48:16 - INFO - __main__ - Sample data structure for LEN:
+2025-07-09 21:48:16 - INFO - __main__ - Number of bars: 2
+2025-07-09 21:48:16 - INFO - __main__ - Bar timestamp: 2025-07-08 04:00:00+00:00 (UTC)
+2025-07-09 21:48:16 - INFO - __main__ - Bar timestamp: 2025-07-09 04:00:00+00:00 (UTC)
+2025-07-09 21:48:16 - INFO - __main__ - LEN timestamps - Today: 2025-07-09 04:00:00+00:00, Yesterday: 2025-07-08 04:00:00+00:00
+2025-07-09 21:48:16 - INFO - __main__ - LMT timestamps - Today: 2025-07-09 04:00:00+00:00, Yesterday: 2025-07-08 04:00:00+00:00
+2025-07-09 21:48:16 - INFO - __main__ - LOW timestamps - Today: 2025-07-09 04:00:00+00:00, Yesterday: 2025-07-08 04:00:00+00:00
+2025-07-09 21:48:16 - INFO - __main__ - MRK timestamps - Today: 2025-07-09 04:00:00+00:00, Yesterday: 2025-07-08 04:00:00+00:00
+2025-07-09 21:48:16 - INFO - __main__ - MSFT timestamps - Today: 2025-07-09 04:00:00+00:00, Yesterday: 2025-07-08 04:00:00+00:00
+2025-07-09 21:48:16 - INFO - __main__ - Successfully processed 502 stocks
+2025-07-09 21:48:16 - INFO - __main__ - Data issues encountered: 0
+2025-07-09 21:48:16 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-07-09 21:48:16 - INFO - __main__ - Analysis for market close on July 09, 2025
+2025-07-09 21:48:16 - INFO - __main__ - Found 502 stocks with price data
+2025-07-09 21:48:16 - INFO - __main__ - Found Wikipedia URL for AES: https://en.wikipedia.org/wiki/AES_Corporation
+2025-07-09 21:48:19 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2025-07-09 21:48:21 - INFO - __main__ - Analyzing top performer...
+2025-07-09 21:48:21 - INFO - __main__ - Analyzing AES Corporation (AES)
+2025-07-09 21:48:21 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-09 21:48:21 - INFO - __main__ - Searching for articles about AES
+2025-07-09 21:48:21 - INFO - __main__ - Searching for news about AES Corporation
+2025-07-09 21:48:21 - INFO - __main__ - Found 6 recent search results for AES Corporation
+2025-07-09 21:48:21 - INFO - __main__ - Found 6 URLs to try for AES
+2025-07-09 21:48:21 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/aes-stock-jumps-report-renewable-125104846.html
+2025-07-09 21:48:22 - INFO - __main__ - Successfully extracted article content (2137 chars)
+2025-07-09 21:48:22 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/07/09/why-the-aes-corporation-stock-popped-today/
+2025-07-09 21:48:23 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-07-09 21:48:23 - INFO - __main__ - Fetching content from: https://www.forbes.com/sites/greatspeculations/2025/07/09/buy-or-sell-aes-stock-at-12/
+2025-07-09 21:48:24 - INFO - __main__ - Successfully extracted article content (6182 chars)
+2025-07-09 21:48:24 - INFO - __main__ - Found total of 2 valid articles for AES
+2025-07-09 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:26 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-07-09 21:48:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:32 - INFO - __main__ - Top performer analysis complete
+2025-07-09 21:48:32 - INFO - __main__ - Analyzing bottom performer...
+2025-07-09 21:48:32 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2025-07-09 21:48:32 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-09 21:48:32 - INFO - __main__ - Searching for articles about FICO
+2025-07-09 21:48:32 - INFO - __main__ - Searching for news about Fair Isaac
+2025-07-09 21:48:32 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2025-07-09 21:48:32 - INFO - __main__ - Found 6 URLs to try for FICO
+2025-07-09 21:48:32 - INFO - __main__ - Fetching content from: https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-07-09-2025/card/stocks-to-watch-wednesday-freeport-mcmoran-glencore-novo-nordisk-uulnscBYVaa1SWROUjN4?gaa_at=eafs&gaa_n=ASWzDAh2iqKnYdFCfm9by-r0ozYfw06isOL1FyQX11LOa6LZ1dL2wBo99VSu&gaa_ts=686ee66c&gaa_sig=x8gxmPwIoBY7MdtI2psLQ-wwv6dTT7_CHwsBoc2OTrRTEe9DyEcZnTD8zKedagYQhAExgL09nLZJQE_gVPkfbA%3D%3D
+2025-07-09 21:48:32 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-09 21:48:32 - INFO - __main__ - Fetching content from: https://www.cnn.com/2025/07/08/business/mortgage-lender-credit-fico-vantage-score
+2025-07-09 21:48:33 - INFO - __main__ - Successfully extracted article content (4163 chars)
+2025-07-09 21:48:33 - INFO - __main__ - Fetching content from: https://www.wsj.com/finance/regulation/mortgage-loan-vantagescore-fico-challenge-01841472?gaa_at=eafs&gaa_n=ASWzDAgJXLvDieoxZLjzOtd3Ibvz5qWqgfiMy9nIj8VBop2iPocPZrBUqTMx&gaa_ts=686ee66c&gaa_sig=up1qbSZrOKhbH1tn3OskGQ3egUuM-bK_0azxo4yspFIzD4a4fAmgem1nUneMjYVhxCrcmI73OQD_8ZZrHIhhCw%3D%3D
+2025-07-09 21:48:33 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-09 21:48:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/sofi-technologies-hits-another-52-132615814.html
+2025-07-09 21:48:33 - INFO - __main__ - Successfully extracted article content (6235 chars)
+2025-07-09 21:48:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/europe-clash-musk-xai-escalates-185155350.html
+2025-07-09 21:48:34 - INFO - __main__ - Successfully extracted article content (4515 chars)
+2025-07-09 21:48:34 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/chipmaker-nvidia-becomes-most-valuable-141727402.html
+2025-07-09 21:48:35 - INFO - __main__ - Successfully extracted article content (3479 chars)
+2025-07-09 21:48:35 - INFO - __main__ - Found total of 3 valid articles for FICO
+2025-07-09 21:48:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:39 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-07-09 21:48:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-09 21:48:43 - INFO - __main__ - Bottom performer analysis complete
+2025-07-09 21:48:43 - INFO - __main__ - Saving results to JSON...
+2025-07-09 21:48:43 - INFO - __main__ - Analysis complete and saved to market_analysis.json
