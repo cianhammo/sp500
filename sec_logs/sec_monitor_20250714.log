@@ -493,3 +493,235 @@
 2025-07-14 12:04:58,390 - sec_monitor - INFO - Generating final output...
 2025-07-14 12:04:58,391 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-07-14 12:04:58,391 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 509684, 'output_words': 286, 'filings_processed': 4}
+2025-07-14 12:45:27,301 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-07-14 12:45:27,301 - sec_monitor - INFO - Loading S&P 500 data...
+2025-07-14 12:45:27,301 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-07-14 12:45:27,302 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-07-14 12:45:27,302 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-07-14 12:45:27,302 - sec_monitor - INFO - Initializing components...
+2025-07-14 12:45:27,302 - sec_monitor - INFO - Initializing components
+2025-07-14 12:45:27,302 - sec_monitor - INFO - SEC fetcher initialized
+2025-07-14 12:45:27,302 - sec_monitor - INFO - Filing analyzer initialized
+2025-07-14 12:45:27,302 - sec_monitor - INFO - Alpaca clients initialized
+2025-07-14 12:45:27,302 - sec_monitor - INFO - All components initialized successfully
+2025-07-14 12:45:27,303 - sec_monitor - INFO - Found JSON file from today
+2025-07-14 12:45:27,303 - sec_monitor - INFO - Found 4 previously processed accessions and 4 filing URLs
+2025-07-14 12:45:27,304 - sec_monitor - INFO - Found 4 accession numbers and 4 URLs from previously processed filings
+2025-07-14 12:45:27,304 - sec_monitor - INFO - Fetching SEC filings...
+2025-07-14 12:45:28,794 - sec_monitor - INFO - Reached old filing, stopping. Found 13 total filings
+2025-07-14 12:45:28,795 - sec_monitor - INFO - Found 4 new interesting filings
+2025-07-14 12:45:28,795 - sec_monitor - INFO - Found 4 new filings to process
+2025-07-14 12:45:28,795 - sec_monitor - INFO - Processing filing 1/4: NDSN
+2025-07-14 12:45:59,276 - sec_monitor - INFO - ==================================================
+2025-07-14 12:45:59,276 - sec_monitor - INFO - Processing first chunk
+2025-07-14 12:45:59,276 - sec_monitor - INFO - Timestamp: 2025-07-14 12:45:59
+2025-07-14 12:45:59,412 - sec_monitor - INFO - token percentage = 2%
+2025-07-14 12:45:59,413 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 12:45:59,413 - sec_monitor - INFO - Timestamp: 2025-07-14 12:45:59
+2025-07-14 12:46:01,882 - sec_monitor - INFO - API call successful
+2025-07-14 12:46:02,884 - sec_monitor - INFO - Processing filing 2/4: HAL
+2025-07-14 12:47:10,016 - sec_monitor - INFO - ==================================================
+2025-07-14 12:47:10,016 - sec_monitor - INFO - Processing first chunk
+2025-07-14 12:47:10,016 - sec_monitor - INFO - Timestamp: 2025-07-14 12:47:10
+2025-07-14 12:47:10,345 - sec_monitor - INFO - token percentage = 49%
+2025-07-14 12:47:10,345 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 12:47:10,345 - sec_monitor - INFO - Timestamp: 2025-07-14 12:47:10
+2025-07-14 12:47:29,960 - sec_monitor - INFO - API call successful
+2025-07-14 12:47:59,990 - sec_monitor - INFO - ==================================================
+2025-07-14 12:47:59,991 - sec_monitor - INFO - Processing middle chunk
+2025-07-14 12:47:59,991 - sec_monitor - INFO - Timestamp: 2025-07-14 12:47:59
+2025-07-14 12:48:00,450 - sec_monitor - INFO - token percentage = 50%
+2025-07-14 12:48:00,451 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 12:48:00,451 - sec_monitor - INFO - Timestamp: 2025-07-14 12:48:00
+2025-07-14 12:48:17,824 - sec_monitor - INFO - API call successful
+2025-07-14 12:48:47,837 - sec_monitor - INFO - ==================================================
+2025-07-14 12:48:47,837 - sec_monitor - INFO - Processing middle chunk
+2025-07-14 12:48:47,837 - sec_monitor - INFO - Timestamp: 2025-07-14 12:48:47
+2025-07-14 12:48:48,228 - sec_monitor - INFO - token percentage = 50%
+2025-07-14 12:48:48,228 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 12:48:48,229 - sec_monitor - INFO - Timestamp: 2025-07-14 12:48:48
+2025-07-14 12:48:48,622 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-07-14 12:48:48,622 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 11
+}
+]
+2025-07-14 12:48:48,622 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-07-14 12:51:48,722 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-07-14 12:51:48,722 - sec_monitor - INFO - Timestamp: 2025-07-14 12:51:48
+2025-07-14 12:53:30,407 - sec_monitor - INFO - API call successful
+2025-07-14 12:54:00,438 - sec_monitor - INFO - ==================================================
+2025-07-14 12:54:00,438 - sec_monitor - INFO - Processing middle chunk
+2025-07-14 12:54:00,438 - sec_monitor - INFO - Timestamp: 2025-07-14 12:54:00
+2025-07-14 12:54:00,830 - sec_monitor - INFO - token percentage = 50%
+2025-07-14 12:54:00,831 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 12:54:00,831 - sec_monitor - INFO - Timestamp: 2025-07-14 12:54:00
+2025-07-14 12:54:02,748 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-07-14 12:54:02,748 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-14 12:54:02,748 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-07-14 12:57:02,809 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-07-14 12:57:02,809 - sec_monitor - INFO - Timestamp: 2025-07-14 12:57:02
+2025-07-14 12:58:02,483 - sec_monitor - INFO - API call successful
+2025-07-14 12:58:32,514 - sec_monitor - INFO - ==================================================
+2025-07-14 12:58:32,514 - sec_monitor - INFO - Processing middle chunk
+2025-07-14 12:58:32,514 - sec_monitor - INFO - Timestamp: 2025-07-14 12:58:32
+2025-07-14 12:58:32,886 - sec_monitor - INFO - token percentage = 50%
+2025-07-14 12:58:32,886 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 12:58:32,887 - sec_monitor - INFO - Timestamp: 2025-07-14 12:58:32
+2025-07-14 12:58:33,400 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-07-14 12:58:33,400 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 26
+}
+]
+2025-07-14 12:58:33,400 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-07-14 13:01:33,497 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-07-14 13:01:33,497 - sec_monitor - INFO - Timestamp: 2025-07-14 13:01:33
+2025-07-14 13:02:29,558 - sec_monitor - INFO - API call successful
+2025-07-14 13:02:59,588 - sec_monitor - INFO - ==================================================
+2025-07-14 13:02:59,588 - sec_monitor - INFO - Processing middle chunk
+2025-07-14 13:02:59,588 - sec_monitor - INFO - Timestamp: 2025-07-14 13:02:59
+2025-07-14 13:03:00,001 - sec_monitor - INFO - token percentage = 49%
+2025-07-14 13:03:00,001 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 13:03:00,001 - sec_monitor - INFO - Timestamp: 2025-07-14 13:03:00
+2025-07-14 13:03:49,692 - sec_monitor - INFO - API call successful
+2025-07-14 13:04:19,722 - sec_monitor - INFO - ==================================================
+2025-07-14 13:04:19,722 - sec_monitor - INFO - Processing last chunk
+2025-07-14 13:04:19,722 - sec_monitor - INFO - Timestamp: 2025-07-14 13:04:19
+2025-07-14 13:04:20,034 - sec_monitor - INFO - token percentage = 23%
+2025-07-14 13:04:20,035 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 13:04:20,035 - sec_monitor - INFO - Timestamp: 2025-07-14 13:04:20
+2025-07-14 13:04:38,844 - sec_monitor - INFO - API call successful
+2025-07-14 13:04:38,845 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-07-14 13:04:38,845 - sec_monitor - INFO - Timestamp: 2025-07-14 13:04:38
+2025-07-14 13:05:04,916 - sec_monitor - INFO - Combine API call successful
+2025-07-14 13:05:05,918 - sec_monitor - INFO - Processing filing 3/4: ZBH
+2025-07-14 13:05:47,205 - sec_monitor - INFO - ==================================================
+2025-07-14 13:05:47,205 - sec_monitor - INFO - Processing first chunk
+2025-07-14 13:05:47,205 - sec_monitor - INFO - Timestamp: 2025-07-14 13:05:47
+2025-07-14 13:05:47,719 - sec_monitor - INFO - token percentage = 50%
+2025-07-14 13:05:47,719 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 13:05:47,719 - sec_monitor - INFO - Timestamp: 2025-07-14 13:05:47
+2025-07-14 13:06:10,531 - sec_monitor - INFO - API call successful
+2025-07-14 13:06:40,532 - sec_monitor - INFO - ==================================================
+2025-07-14 13:06:40,532 - sec_monitor - INFO - Processing last chunk
+2025-07-14 13:06:40,532 - sec_monitor - INFO - Timestamp: 2025-07-14 13:06:40
+2025-07-14 13:06:40,880 - sec_monitor - INFO - token percentage = 23%
+2025-07-14 13:06:40,880 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 13:06:40,880 - sec_monitor - INFO - Timestamp: 2025-07-14 13:06:40
+2025-07-14 13:06:41,198 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-07-14 13:06:41,198 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 18
+}
+]
+2025-07-14 13:06:41,198 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-07-14 13:09:41,298 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-07-14 13:09:41,299 - sec_monitor - INFO - Timestamp: 2025-07-14 13:09:41
+2025-07-14 13:09:55,240 - sec_monitor - INFO - API call successful
+2025-07-14 13:09:55,240 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-07-14 13:09:55,240 - sec_monitor - INFO - Timestamp: 2025-07-14 13:09:55
+2025-07-14 13:09:57,608 - sec_monitor - INFO - Combine API call successful
+2025-07-14 13:09:58,610 - sec_monitor - INFO - Processing filing 4/4: FAST
+2025-07-14 13:10:29,476 - sec_monitor - INFO - ==================================================
+2025-07-14 13:10:29,477 - sec_monitor - INFO - Processing first chunk
+2025-07-14 13:10:29,477 - sec_monitor - INFO - Timestamp: 2025-07-14 13:10:29
+2025-07-14 13:10:29,688 - sec_monitor - INFO - token percentage = 4%
+2025-07-14 13:10:29,688 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-07-14 13:10:29,688 - sec_monitor - INFO - Timestamp: 2025-07-14 13:10:29
+2025-07-14 13:10:37,368 - sec_monitor - INFO - API call successful
+2025-07-14 13:10:38,370 - sec_monitor - INFO - Fetching supplementary data...
+2025-07-14 13:10:39,144 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-07-14 13:10:39,144 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-07-14 13:10:39,144 - sec_monitor - INFO - Market open: False
+2025-07-14 13:10:39,144 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-07-14 13:10:39,217 - sec_monitor - INFO - Last trading day: 2025-07-14
+2025-07-14 13:10:39,217 - sec_monitor - INFO - Processing ticker: NDSN
+2025-07-14 13:10:39,843 - sec_monitor - INFO - Number of bars for NDSN: 3
+2025-07-14 13:10:39,844 - sec_monitor - INFO - Last bar close for NDSN: 220.96
+2025-07-14 13:10:39,844 - sec_monitor - INFO - Outside market hours price for NDSN: 220.96
+2025-07-14 13:10:39,844 - sec_monitor - INFO - Processing ticker: HAL
+2025-07-14 13:10:39,921 - sec_monitor - INFO - Number of bars for HAL: 3
+2025-07-14 13:10:39,921 - sec_monitor - INFO - Last bar close for HAL: 23.07
+2025-07-14 13:10:39,921 - sec_monitor - INFO - Outside market hours price for HAL: 23.07
+2025-07-14 13:10:39,921 - sec_monitor - INFO - Processing ticker: ZBH
+2025-07-14 13:10:40,003 - sec_monitor - INFO - Number of bars for ZBH: 3
+2025-07-14 13:10:40,004 - sec_monitor - INFO - Last bar close for ZBH: 93.805
+2025-07-14 13:10:40,004 - sec_monitor - INFO - Outside market hours price for ZBH: 93.805
+2025-07-14 13:10:40,004 - sec_monitor - INFO - Processing ticker: FAST
+2025-07-14 13:10:40,079 - sec_monitor - INFO - Number of bars for FAST: 3
+2025-07-14 13:10:40,079 - sec_monitor - INFO - Last bar close for FAST: 43.28
+2025-07-14 13:10:40,079 - sec_monitor - INFO - Outside market hours price for FAST: 43.28
+2025-07-14 13:10:41,439 - sec_monitor - INFO - Generating final output...
+2025-07-14 13:10:41,440 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-07-14 13:10:41,440 - sec_monitor - INFO - Cumulative stats - Input words: 758285, Output words: 557
+2025-07-14 13:10:41,440 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-07-14 13:10:41,440 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 248601, 'output_words': 271, 'filings_processed': 4}
