@@ -1,0 +1,73 @@
+2025-07-16 21:50:25 - INFO - __main__ - Starting SP500 analysis script
+2025-07-16 21:50:25 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-16 21:50:25 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-16 21:50:25 - INFO - __main__ - Runtime timezone: UTC
+2025-07-16 21:50:25 - INFO - __main__ - Original start: 2025-07-15 16:00:00-04:00 (America/New_York)
+2025-07-16 21:50:25 - INFO - __main__ - Original end: 2025-07-16 16:00:00-04:00 (America/New_York)
+2025-07-16 21:50:25 - INFO - __main__ - UTC start: 2025-07-15 04:00:00+00:00
+2025-07-16 21:50:25 - INFO - __main__ - UTC end: 2025-07-17 04:00:00+00:00
+2025-07-16 21:50:25 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-16 21:50:26 - INFO - __main__ - Received data for 503 symbols
+2025-07-16 21:50:26 - INFO - __main__ - Sample data structure for UNP:
+2025-07-16 21:50:26 - INFO - __main__ - Number of bars: 2
+2025-07-16 21:50:26 - INFO - __main__ - Bar timestamp: 2025-07-15 04:00:00+00:00 (UTC)
+2025-07-16 21:50:26 - INFO - __main__ - Bar timestamp: 2025-07-16 04:00:00+00:00 (UTC)
+2025-07-16 21:50:26 - INFO - __main__ - UNP timestamps - Today: 2025-07-16 04:00:00+00:00, Yesterday: 2025-07-15 04:00:00+00:00
+2025-07-16 21:50:26 - INFO - __main__ - EFX timestamps - Today: 2025-07-16 04:00:00+00:00, Yesterday: 2025-07-15 04:00:00+00:00
+2025-07-16 21:50:26 - INFO - __main__ - MOH timestamps - Today: 2025-07-16 04:00:00+00:00, Yesterday: 2025-07-15 04:00:00+00:00
+2025-07-16 21:50:26 - INFO - __main__ - NI timestamps - Today: 2025-07-16 04:00:00+00:00, Yesterday: 2025-07-15 04:00:00+00:00
+2025-07-16 21:50:26 - INFO - __main__ - TPR timestamps - Today: 2025-07-16 04:00:00+00:00, Yesterday: 2025-07-15 04:00:00+00:00
+2025-07-16 21:50:26 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-16 21:50:26 - INFO - __main__ - Data issues encountered: 0
+2025-07-16 21:50:26 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-16 21:50:26 - INFO - __main__ - Analysis for market close on July 16, 2025
+2025-07-16 21:50:26 - INFO - __main__ - Found 503 stocks with price data
+2025-07-16 21:50:27 - INFO - __main__ - Found Wikipedia URL for GPN: https://en.wikipedia.org/wiki/Global_Payments
+2025-07-16 21:50:29 - INFO - __main__ - Found Wikipedia URL for VST: https://en.wikipedia.org/wiki/Vistra_Corp.
+2025-07-16 21:50:31 - INFO - __main__ - Analyzing top performer...
+2025-07-16 21:50:31 - INFO - __main__ - Analyzing Global Payments (GPN)
+2025-07-16 21:50:31 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-16 21:50:31 - INFO - __main__ - Searching for articles about GPN
+2025-07-16 21:50:31 - INFO - __main__ - Searching for news about Global Payments
+2025-07-16 21:50:32 - INFO - __main__ - Found 6 recent search results for Global Payments
+2025-07-16 21:50:32 - INFO - __main__ - Found 6 URLs to try for GPN
+2025-07-16 21:50:32 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/global-payments-stock-elliott-stake-25c99648
+2025-07-16 21:50:32 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-16 21:50:32 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/global-payments-stock-gpn-surges-on-reports-of-activist-stake
+2025-07-16 21:50:33 - INFO - __main__ - Successfully extracted article content (1729 chars)
+2025-07-16 21:50:33 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-206e2102
+2025-07-16 21:50:33 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-16 21:50:33 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-07-15/stock-market-today-dow-s-p-live-updates
+2025-07-16 21:50:33 - INFO - __main__ - Successfully extracted article content (734 chars)
+2025-07-16 21:50:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/BAC/
+2025-07-16 21:50:34 - INFO - __main__ - Successfully extracted article content (1680 chars)
+2025-07-16 21:50:34 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/newsletters/2025-07-16/stock-strategists-are-struggling-to-keep-up-with-trump
+2025-07-16 21:50:34 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-07-16 21:50:34 - INFO - __main__ - Found total of 3 valid articles for GPN
+2025-07-16 21:50:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:38 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-07-16 21:50:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:42 - INFO - __main__ - Top performer analysis complete
+2025-07-16 21:50:42 - INFO - __main__ - Analyzing bottom performer...
+2025-07-16 21:50:42 - INFO - __main__ - Analyzing Vistra Corp. (VST)
+2025-07-16 21:50:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-16 21:50:42 - INFO - __main__ - Searching for articles about VST
+2025-07-16 21:50:42 - INFO - __main__ - Searching for news about Vistra Corp.
+2025-07-16 21:50:43 - INFO - __main__ - Found 6 recent search results for Vistra Corp.
+2025-07-16 21:50:43 - INFO - __main__ - Found 6 URLs to try for VST
+2025-07-16 21:50:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/vst-stock-trading-above-50-152200752.html
+2025-07-16 21:50:43 - INFO - __main__ - Successfully extracted article content (6607 chars)
+2025-07-16 21:50:43 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/vistra-corp-stock-underperforms-wednesday-when-compared-to-competitors-b531fd7a-3cc269bfb793
+2025-07-16 21:50:43 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-16 21:50:43 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/VST/pressreleases/33443822/vst-stock-is-trading-above-50-and-200-day-sma-buy-hold-or-sell/
+2025-07-16 21:50:44 - INFO - __main__ - Successfully extracted article content (7290 chars)
+2025-07-16 21:50:44 - INFO - __main__ - Found total of 2 valid articles for VST
+2025-07-16 21:50:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:47 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-07-16 21:50:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-16 21:50:52 - INFO - __main__ - Bottom performer analysis complete
+2025-07-16 21:50:52 - INFO - __main__ - Saving results to JSON...
+2025-07-16 21:50:52 - INFO - __main__ - Analysis complete and saved to market_analysis.json
