@@ -1,0 +1,73 @@
+2025-07-17 21:49:27 - INFO - __main__ - Starting SP500 analysis script
+2025-07-17 21:49:28 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-17 21:49:28 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-17 21:49:28 - INFO - __main__ - Runtime timezone: UTC
+2025-07-17 21:49:28 - INFO - __main__ - Original start: 2025-07-16 16:00:00-04:00 (America/New_York)
+2025-07-17 21:49:28 - INFO - __main__ - Original end: 2025-07-17 16:00:00-04:00 (America/New_York)
+2025-07-17 21:49:28 - INFO - __main__ - UTC start: 2025-07-16 04:00:00+00:00
+2025-07-17 21:49:28 - INFO - __main__ - UTC end: 2025-07-18 04:00:00+00:00
+2025-07-17 21:49:28 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-17 21:49:29 - INFO - __main__ - Received data for 503 symbols
+2025-07-17 21:49:29 - INFO - __main__ - Sample data structure for SYY:
+2025-07-17 21:49:29 - INFO - __main__ - Number of bars: 2
+2025-07-17 21:49:29 - INFO - __main__ - Bar timestamp: 2025-07-16 04:00:00+00:00 (UTC)
+2025-07-17 21:49:29 - INFO - __main__ - Bar timestamp: 2025-07-17 04:00:00+00:00 (UTC)
+2025-07-17 21:49:29 - INFO - __main__ - SYY timestamps - Today: 2025-07-17 04:00:00+00:00, Yesterday: 2025-07-16 04:00:00+00:00
+2025-07-17 21:49:29 - INFO - __main__ - CAG timestamps - Today: 2025-07-17 04:00:00+00:00, Yesterday: 2025-07-16 04:00:00+00:00
+2025-07-17 21:49:29 - INFO - __main__ - CBOE timestamps - Today: 2025-07-17 04:00:00+00:00, Yesterday: 2025-07-16 04:00:00+00:00
+2025-07-17 21:49:29 - INFO - __main__ - IDXX timestamps - Today: 2025-07-17 04:00:00+00:00, Yesterday: 2025-07-16 04:00:00+00:00
+2025-07-17 21:49:29 - INFO - __main__ - SBAC timestamps - Today: 2025-07-17 04:00:00+00:00, Yesterday: 2025-07-16 04:00:00+00:00
+2025-07-17 21:49:29 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-17 21:49:29 - INFO - __main__ - Data issues encountered: 0
+2025-07-17 21:49:29 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-17 21:49:29 - INFO - __main__ - Analysis for market close on July 17, 2025
+2025-07-17 21:49:29 - INFO - __main__ - Found 503 stocks with price data
+2025-07-17 21:49:30 - INFO - __main__ - Found Wikipedia URL for SNA: https://en.wikipedia.org/wiki/Snap-on
+2025-07-17 21:49:32 - INFO - __main__ - Found Wikipedia URL for ELV: https://en.wikipedia.org/wiki/Elevance_Health
+2025-07-17 21:49:34 - INFO - __main__ - Analyzing top performer...
+2025-07-17 21:49:34 - INFO - __main__ - Analyzing Snap-on (SNA)
+2025-07-17 21:49:34 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-17 21:49:34 - INFO - __main__ - Searching for articles about SNA
+2025-07-17 21:49:34 - INFO - __main__ - Searching for news about Snap-on
+2025-07-17 21:49:34 - INFO - __main__ - Found 6 recent search results for Snap-on
+2025-07-17 21:49:34 - INFO - __main__ - Found 6 URLs to try for SNA
+2025-07-17 21:49:34 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/finance/global-markets-view-usa-2025-07-17/
+2025-07-17 21:49:35 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-17 21:49:35 - INFO - __main__ - Fetching content from: https://www.aol.com/spent-3-days-paris-grandparents-145110240.html
+2025-07-17 21:49:35 - INFO - __main__ - Successfully extracted article content (4950 chars)
+2025-07-17 21:49:35 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/33469525/stocks-supported-by-signs-of-us-economic-strength
+2025-07-17 21:49:36 - INFO - __main__ - Successfully extracted article content (296 chars)
+2025-07-17 21:49:36 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/snap-sna-q2-earnings-taking-133003889.html
+2025-07-17 21:49:36 - INFO - __main__ - Successfully extracted article content (2585 chars)
+2025-07-17 21:49:36 - INFO - __main__ - Fetching content from: https://www.snapon.com/Snap-on-Files/Investors/2025-Q2/Q2-2025-Release.pdf
+2025-07-17 21:49:37 - INFO - __main__ - Successfully extracted article content (3700 chars)
+2025-07-17 21:49:37 - INFO - __main__ - Fetching content from: https://www.hngnews.com/state/snap-on-q2-earnings-snapshot/article_fdf2d52e-671f-515f-8462-10b1d40bbe7c.html
+2025-07-17 21:49:38 - INFO - __main__ - Successfully extracted article content (6213 chars)
+2025-07-17 21:49:38 - INFO - __main__ - Found total of 3 valid articles for SNA
+2025-07-17 21:49:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:42 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-07-17 21:49:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:46 - INFO - __main__ - Top performer analysis complete
+2025-07-17 21:49:46 - INFO - __main__ - Analyzing bottom performer...
+2025-07-17 21:49:46 - INFO - __main__ - Analyzing Elevance Health (ELV)
+2025-07-17 21:49:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-17 21:49:46 - INFO - __main__ - Searching for articles about ELV
+2025-07-17 21:49:46 - INFO - __main__ - Searching for news about Elevance Health
+2025-07-17 21:49:46 - INFO - __main__ - Found 6 recent search results for Elevance Health
+2025-07-17 21:49:46 - INFO - __main__ - Found 6 URLs to try for ELV
+2025-07-17 21:49:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/elevance-health-hit-medicaid-troubles-140952075.html
+2025-07-17 21:49:47 - INFO - __main__ - Successfully extracted article content (4087 chars)
+2025-07-17 21:49:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/elevance-health-earnings-stock-price-unitedhealth-59667067
+2025-07-17 21:49:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-17 21:49:47 - INFO - __main__ - Fetching content from: https://www.elevancehealth.com/newsroom/elv-quarterly-earnings-q2-2025
+2025-07-17 21:49:47 - INFO - __main__ - Successfully extracted article content (7326 chars)
+2025-07-17 21:49:47 - INFO - __main__ - Found total of 2 valid articles for ELV
+2025-07-17 21:49:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:53 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-07-17 21:49:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-17 21:49:58 - INFO - __main__ - Bottom performer analysis complete
+2025-07-17 21:49:58 - INFO - __main__ - Saving results to JSON...
+2025-07-17 21:49:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
