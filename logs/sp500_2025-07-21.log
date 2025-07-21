@@ -1,0 +1,68 @@
+2025-07-21 21:49:35 - INFO - __main__ - Starting SP500 analysis script
+2025-07-21 21:49:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-21 21:49:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-21 21:49:36 - INFO - __main__ - Runtime timezone: UTC
+2025-07-21 21:49:36 - INFO - __main__ - Original start: 2025-07-18 16:00:00-04:00 (America/New_York)
+2025-07-21 21:49:36 - INFO - __main__ - Original end: 2025-07-21 16:00:00-04:00 (America/New_York)
+2025-07-21 21:49:36 - INFO - __main__ - UTC start: 2025-07-18 04:00:00+00:00
+2025-07-21 21:49:36 - INFO - __main__ - UTC end: 2025-07-22 04:00:00+00:00
+2025-07-21 21:49:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-21 21:49:36 - INFO - __main__ - Received data for 502 symbols
+2025-07-21 21:49:36 - INFO - __main__ - Sample data structure for VRSN:
+2025-07-21 21:49:36 - INFO - __main__ - Number of bars: 2
+2025-07-21 21:49:36 - INFO - __main__ - Bar timestamp: 2025-07-18 04:00:00+00:00 (UTC)
+2025-07-21 21:49:36 - INFO - __main__ - Bar timestamp: 2025-07-21 04:00:00+00:00 (UTC)
+2025-07-21 21:49:36 - INFO - __main__ - VRSN timestamps - Today: 2025-07-21 04:00:00+00:00, Yesterday: 2025-07-18 04:00:00+00:00
+2025-07-21 21:49:36 - INFO - __main__ - WAT timestamps - Today: 2025-07-21 04:00:00+00:00, Yesterday: 2025-07-18 04:00:00+00:00
+2025-07-21 21:49:36 - INFO - __main__ - WTW timestamps - Today: 2025-07-21 04:00:00+00:00, Yesterday: 2025-07-18 04:00:00+00:00
+2025-07-21 21:49:36 - INFO - __main__ - ADM timestamps - Today: 2025-07-21 04:00:00+00:00, Yesterday: 2025-07-18 04:00:00+00:00
+2025-07-21 21:49:36 - INFO - __main__ - CBOE timestamps - Today: 2025-07-21 04:00:00+00:00, Yesterday: 2025-07-18 04:00:00+00:00
+2025-07-21 21:49:37 - INFO - __main__ - Successfully processed 502 stocks
+2025-07-21 21:49:37 - INFO - __main__ - Data issues encountered: 0
+2025-07-21 21:49:37 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-07-21 21:49:37 - INFO - __main__ - Analysis for market close on July 21, 2025
+2025-07-21 21:49:37 - INFO - __main__ - Found 502 stocks with price data
+2025-07-21 21:49:37 - INFO - __main__ - Found Wikipedia URL for VZ: https://en.wikipedia.org/wiki/Verizon
+2025-07-21 21:49:39 - INFO - __main__ - Found Wikipedia URL for EQT: https://en.wikipedia.org/wiki/EQT_Corporation
+2025-07-21 21:49:41 - INFO - __main__ - Analyzing top performer...
+2025-07-21 21:49:41 - INFO - __main__ - Analyzing Verizon (VZ)
+2025-07-21 21:49:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-21 21:49:42 - INFO - __main__ - Searching for articles about VZ
+2025-07-21 21:49:42 - INFO - __main__ - Searching for news about Verizon
+2025-07-21 21:49:42 - INFO - __main__ - Found 6 recent search results for Verizon
+2025-07-21 21:49:42 - INFO - __main__ - Found 6 URLs to try for VZ
+2025-07-21 21:49:42 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/verizon-earnings-stock-price-7dd00a9b
+2025-07-21 21:49:42 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-21 21:49:42 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/verizon-stock-verizon-earnings-q22025/
+2025-07-21 21:49:43 - INFO - __main__ - Successfully extracted article content (3402 chars)
+2025-07-21 21:49:43 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/07/21/verizon-vz-q2-earnings.html
+2025-07-21 21:49:43 - INFO - readability.readability - ruthless removal did not work. 
+2025-07-21 21:49:43 - INFO - __main__ - Successfully extracted article content (2285 chars)
+2025-07-21 21:49:43 - INFO - __main__ - Found total of 2 valid articles for VZ
+2025-07-21 21:49:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:46 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-07-21 21:49:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:50 - INFO - __main__ - Top performer analysis complete
+2025-07-21 21:49:50 - INFO - __main__ - Analyzing bottom performer...
+2025-07-21 21:49:50 - INFO - __main__ - Analyzing EQT Corporation (EQT)
+2025-07-21 21:49:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-21 21:49:50 - INFO - __main__ - Searching for articles about EQT
+2025-07-21 21:49:50 - INFO - __main__ - Searching for news about EQT Corporation
+2025-07-21 21:49:50 - INFO - __main__ - Found 6 recent search results for EQT Corporation
+2025-07-21 21:49:50 - INFO - __main__ - Found 6 URLs to try for EQT
+2025-07-21 21:49:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/centene-cnc-falls-11-1-155315442.html
+2025-07-21 21:49:51 - INFO - __main__ - Successfully extracted article content (1786 chars)
+2025-07-21 21:49:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-did-navitas-semiconductor-explode-141924833.html
+2025-07-21 21:49:52 - INFO - __main__ - Successfully extracted article content (3230 chars)
+2025-07-21 21:49:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/dave-ramsey-dissects-trumps-big-144623281.html
+2025-07-21 21:49:52 - INFO - __main__ - Successfully extracted article content (4355 chars)
+2025-07-21 21:49:52 - INFO - __main__ - Found total of 3 valid articles for EQT
+2025-07-21 21:49:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:56 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-07-21 21:49:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-21 21:49:59 - INFO - __main__ - Bottom performer analysis complete
+2025-07-21 21:49:59 - INFO - __main__ - Saving results to JSON...
+2025-07-21 21:49:59 - INFO - __main__ - Analysis complete and saved to market_analysis.json
