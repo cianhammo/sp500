@@ -1,0 +1,67 @@
+2025-07-24 21:48:20 - INFO - __main__ - Starting SP500 analysis script
+2025-07-24 21:48:20 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-24 21:48:20 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-24 21:48:20 - INFO - __main__ - Runtime timezone: UTC
+2025-07-24 21:48:20 - INFO - __main__ - Original start: 2025-07-23 16:00:00-04:00 (America/New_York)
+2025-07-24 21:48:20 - INFO - __main__ - Original end: 2025-07-24 16:00:00-04:00 (America/New_York)
+2025-07-24 21:48:20 - INFO - __main__ - UTC start: 2025-07-23 04:00:00+00:00
+2025-07-24 21:48:20 - INFO - __main__ - UTC end: 2025-07-25 04:00:00+00:00
+2025-07-24 21:48:20 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-24 21:48:22 - INFO - __main__ - Received data for 503 symbols
+2025-07-24 21:48:22 - INFO - __main__ - Sample data structure for PSA:
+2025-07-24 21:48:22 - INFO - __main__ - Number of bars: 2
+2025-07-24 21:48:22 - INFO - __main__ - Bar timestamp: 2025-07-23 04:00:00+00:00 (UTC)
+2025-07-24 21:48:22 - INFO - __main__ - Bar timestamp: 2025-07-24 04:00:00+00:00 (UTC)
+2025-07-24 21:48:22 - INFO - __main__ - PSA timestamps - Today: 2025-07-24 04:00:00+00:00, Yesterday: 2025-07-23 04:00:00+00:00
+2025-07-24 21:48:22 - INFO - __main__ - BKR timestamps - Today: 2025-07-24 04:00:00+00:00, Yesterday: 2025-07-23 04:00:00+00:00
+2025-07-24 21:48:22 - INFO - __main__ - CNP timestamps - Today: 2025-07-24 04:00:00+00:00, Yesterday: 2025-07-23 04:00:00+00:00
+2025-07-24 21:48:22 - INFO - __main__ - D timestamps - Today: 2025-07-24 04:00:00+00:00, Yesterday: 2025-07-23 04:00:00+00:00
+2025-07-24 21:48:22 - INFO - __main__ - SWK timestamps - Today: 2025-07-24 04:00:00+00:00, Yesterday: 2025-07-23 04:00:00+00:00
+2025-07-24 21:48:22 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-24 21:48:22 - INFO - __main__ - Data issues encountered: 0
+2025-07-24 21:48:22 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-24 21:48:22 - INFO - __main__ - Analysis for market close on July 24, 2025
+2025-07-24 21:48:22 - INFO - __main__ - Found 503 stocks with price data
+2025-07-24 21:48:22 - INFO - __main__ - Found Wikipedia URL for WST: https://en.wikipedia.org/wiki/West_Pharmaceutical_Services
+2025-07-24 21:48:24 - INFO - __main__ - Found Wikipedia URL for LKQ: https://en.wikipedia.org/wiki/LKQ_Corporation
+2025-07-24 21:48:26 - INFO - __main__ - Analyzing top performer...
+2025-07-24 21:48:26 - INFO - __main__ - Analyzing West Pharmaceutical Services (WST)
+2025-07-24 21:48:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-24 21:48:27 - INFO - __main__ - Searching for articles about WST
+2025-07-24 21:48:27 - INFO - __main__ - Searching for news about West Pharmaceutical Services
+2025-07-24 21:48:27 - INFO - __main__ - Found 6 recent search results for West Pharmaceutical Services
+2025-07-24 21:48:27 - INFO - __main__ - Found 6 URLs to try for WST
+2025-07-24 21:48:27 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/westpharmaceutical-earnings-stock-price-c43c9a06
+2025-07-24 21:48:27 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-24 21:48:27 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/west-pharma-lifts-outlook-surging-143852862.html
+2025-07-24 21:48:28 - INFO - __main__ - Successfully extracted article content (4320 chars)
+2025-07-24 21:48:28 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/stock-market-today-p-500-145328984.html
+2025-07-24 21:48:29 - INFO - __main__ - Successfully extracted article content (13028 chars)
+2025-07-24 21:48:29 - INFO - __main__ - Found total of 2 valid articles for WST
+2025-07-24 21:48:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:32 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-07-24 21:48:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:37 - INFO - __main__ - Top performer analysis complete
+2025-07-24 21:48:37 - INFO - __main__ - Analyzing bottom performer...
+2025-07-24 21:48:37 - INFO - __main__ - Analyzing LKQ Corporation (LKQ)
+2025-07-24 21:48:37 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-24 21:48:37 - INFO - __main__ - Searching for articles about LKQ
+2025-07-24 21:48:37 - INFO - __main__ - Searching for news about LKQ Corporation
+2025-07-24 21:48:37 - INFO - __main__ - Found 6 recent search results for LKQ Corporation
+2025-07-24 21:48:37 - INFO - __main__ - Found 6 URLs to try for LKQ
+2025-07-24 21:48:37 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/lkq-shares-crash-52-week-152152209.html
+2025-07-24 21:48:38 - INFO - __main__ - Successfully extracted article content (3327 chars)
+2025-07-24 21:48:38 - INFO - __main__ - Fetching content from: https://s205.q4cdn.com/926050515/files/doc_financials/2025/q2/LKQ-CORPORATION-ANNOUNCES-RESULTS-FOR-SECOND-QUARTER-2025.pdf
+2025-07-24 21:48:39 - INFO - __main__ - Successfully extracted article content (2474 chars)
+2025-07-24 21:48:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/lkq-corporation-announces-results-second-110000909.html
+2025-07-24 21:48:41 - INFO - __main__ - Successfully extracted article content (40038 chars)
+2025-07-24 21:48:41 - INFO - __main__ - Found total of 3 valid articles for LKQ
+2025-07-24 21:48:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:44 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-07-24 21:48:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-24 21:48:48 - INFO - __main__ - Bottom performer analysis complete
+2025-07-24 21:48:48 - INFO - __main__ - Saving results to JSON...
+2025-07-24 21:48:48 - INFO - __main__ - Analysis complete and saved to market_analysis.json
