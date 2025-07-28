@@ -1,0 +1,72 @@
+2025-07-28 21:49:33 - INFO - __main__ - Starting SP500 analysis script
+2025-07-28 21:49:33 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-28 21:49:33 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-28 21:49:33 - INFO - __main__ - Runtime timezone: UTC
+2025-07-28 21:49:33 - INFO - __main__ - Original start: 2025-07-25 16:00:00-04:00 (America/New_York)
+2025-07-28 21:49:33 - INFO - __main__ - Original end: 2025-07-28 16:00:00-04:00 (America/New_York)
+2025-07-28 21:49:33 - INFO - __main__ - UTC start: 2025-07-25 04:00:00+00:00
+2025-07-28 21:49:33 - INFO - __main__ - UTC end: 2025-07-29 04:00:00+00:00
+2025-07-28 21:49:33 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-28 21:49:34 - INFO - __main__ - Received data for 503 symbols
+2025-07-28 21:49:34 - INFO - __main__ - Sample data structure for FTV:
+2025-07-28 21:49:34 - INFO - __main__ - Number of bars: 2
+2025-07-28 21:49:34 - INFO - __main__ - Bar timestamp: 2025-07-25 04:00:00+00:00 (UTC)
+2025-07-28 21:49:34 - INFO - __main__ - Bar timestamp: 2025-07-28 04:00:00+00:00 (UTC)
+2025-07-28 21:49:34 - INFO - __main__ - FTV timestamps - Today: 2025-07-28 04:00:00+00:00, Yesterday: 2025-07-25 04:00:00+00:00
+2025-07-28 21:49:34 - INFO - __main__ - HOLX timestamps - Today: 2025-07-28 04:00:00+00:00, Yesterday: 2025-07-25 04:00:00+00:00
+2025-07-28 21:49:34 - INFO - __main__ - RSG timestamps - Today: 2025-07-28 04:00:00+00:00, Yesterday: 2025-07-25 04:00:00+00:00
+2025-07-28 21:49:34 - INFO - __main__ - AON timestamps - Today: 2025-07-28 04:00:00+00:00, Yesterday: 2025-07-25 04:00:00+00:00
+2025-07-28 21:49:34 - INFO - __main__ - GEHC timestamps - Today: 2025-07-28 04:00:00+00:00, Yesterday: 2025-07-25 04:00:00+00:00
+2025-07-28 21:49:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-28 21:49:34 - INFO - __main__ - Data issues encountered: 0
+2025-07-28 21:49:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-28 21:49:34 - INFO - __main__ - Analysis for market close on July 28, 2025
+2025-07-28 21:49:34 - INFO - __main__ - Found 503 stocks with price data
+2025-07-28 21:49:34 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-07-28 21:49:36 - INFO - __main__ - Found Wikipedia URL for ALB: https://en.wikipedia.org/wiki/Albemarle_Corporation
+2025-07-28 21:49:38 - INFO - __main__ - Analyzing top performer...
+2025-07-28 21:49:38 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-07-28 21:49:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-28 21:49:38 - INFO - __main__ - Searching for articles about SMCI
+2025-07-28 21:49:38 - INFO - __main__ - Searching for news about Supermicro
+2025-07-28 21:49:39 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-07-28 21:49:39 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-07-28 21:49:39 - INFO - __main__ - Fetching content from: https://www.investors.com/news/sp-500-stocks-nvidia-partner-super-micro-rival-amd-lead/
+2025-07-28 21:49:39 - INFO - __main__ - Successfully extracted article content (355 chars)
+2025-07-28 21:49:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/whats-going-super-micro-stock-152607244.html
+2025-07-28 21:49:39 - INFO - __main__ - Successfully extracted article content (3180 chars)
+2025-07-28 21:49:39 - INFO - __main__ - Fetching content from: https://www.investors.com/news/sp-500-stocks-palantir-five-top-ai-stocks-2025/
+2025-07-28 21:49:40 - INFO - __main__ - Successfully extracted article content (376 chars)
+2025-07-28 21:49:40 - INFO - __main__ - Fetching content from: https://www.crn.com/news/security/2025/the-top-25-technology-disrupters-of-2025
+2025-07-28 21:49:40 - WARNING - __main__ - Article content too short (41 chars)
+2025-07-28 21:49:40 - INFO - __main__ - Fetching content from: https://www.crn.com/news/networking/2025/antonio-neri-creates-a-new-chapter-of-hpe-now-comes-the-fun-part
+2025-07-28 21:49:40 - WARNING - __main__ - Article content too short (41 chars)
+2025-07-28 21:49:40 - INFO - __main__ - Fetching content from: https://www.crn.com/news/channel-news/2025/the-top-100-executives-of-2025
+2025-07-28 21:49:40 - WARNING - __main__ - Article content too short (41 chars)
+2025-07-28 21:49:40 - INFO - __main__ - Found total of 1 valid articles for SMCI
+2025-07-28 21:49:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-28 21:49:41 - INFO - __main__ - Found 1 relevant articles out of 1 total
+2025-07-28 21:49:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-28 21:49:44 - INFO - __main__ - Top performer analysis complete
+2025-07-28 21:49:44 - INFO - __main__ - Analyzing bottom performer...
+2025-07-28 21:49:44 - INFO - __main__ - Analyzing Albemarle Corporation (ALB)
+2025-07-28 21:49:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-28 21:49:44 - INFO - __main__ - Searching for articles about ALB
+2025-07-28 21:49:44 - INFO - __main__ - Searching for news about Albemarle Corporation
+2025-07-28 21:49:44 - INFO - __main__ - Found 6 recent search results for Albemarle Corporation
+2025-07-28 21:49:44 - INFO - __main__ - Found 6 URLs to try for ALB
+2025-07-28 21:49:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/enovix-corporation-envx-may-bottom-135502089.html
+2025-07-28 21:49:45 - INFO - __main__ - Successfully extracted article content (3644 chars)
+2025-07-28 21:49:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/amd-stock-jumps-3-catalysts-161524529.html
+2025-07-28 21:49:46 - INFO - __main__ - Successfully extracted article content (1110 chars)
+2025-07-28 21:49:46 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/cea-industries-stock-jumps-500-194636141.html
+2025-07-28 21:49:47 - INFO - __main__ - Successfully extracted article content (1094 chars)
+2025-07-28 21:49:47 - INFO - __main__ - Found total of 3 valid articles for ALB
+2025-07-28 21:49:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-28 21:49:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-28 21:49:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-28 21:49:50 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-07-28 21:49:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-28 21:49:54 - INFO - __main__ - Bottom performer analysis complete
+2025-07-28 21:49:54 - INFO - __main__ - Saving results to JSON...
+2025-07-28 21:49:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
