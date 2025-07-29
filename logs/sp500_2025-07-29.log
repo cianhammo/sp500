@@ -1,0 +1,76 @@
+2025-07-29 21:51:13 - INFO - __main__ - Starting SP500 analysis script
+2025-07-29 21:51:14 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-29 21:51:14 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-29 21:51:14 - INFO - __main__ - Runtime timezone: UTC
+2025-07-29 21:51:14 - INFO - __main__ - Original start: 2025-07-28 16:00:00-04:00 (America/New_York)
+2025-07-29 21:51:14 - INFO - __main__ - Original end: 2025-07-29 16:00:00-04:00 (America/New_York)
+2025-07-29 21:51:14 - INFO - __main__ - UTC start: 2025-07-28 04:00:00+00:00
+2025-07-29 21:51:14 - INFO - __main__ - UTC end: 2025-07-30 04:00:00+00:00
+2025-07-29 21:51:14 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-29 21:51:15 - INFO - __main__ - Received data for 503 symbols
+2025-07-29 21:51:15 - INFO - __main__ - Sample data structure for DHI:
+2025-07-29 21:51:15 - INFO - __main__ - Number of bars: 2
+2025-07-29 21:51:15 - INFO - __main__ - Bar timestamp: 2025-07-28 04:00:00+00:00 (UTC)
+2025-07-29 21:51:15 - INFO - __main__ - Bar timestamp: 2025-07-29 04:00:00+00:00 (UTC)
+2025-07-29 21:51:15 - INFO - __main__ - DHI timestamps - Today: 2025-07-29 04:00:00+00:00, Yesterday: 2025-07-28 04:00:00+00:00
+2025-07-29 21:51:15 - INFO - __main__ - HSY timestamps - Today: 2025-07-29 04:00:00+00:00, Yesterday: 2025-07-28 04:00:00+00:00
+2025-07-29 21:51:15 - INFO - __main__ - MMM timestamps - Today: 2025-07-29 04:00:00+00:00, Yesterday: 2025-07-28 04:00:00+00:00
+2025-07-29 21:51:15 - INFO - __main__ - MTB timestamps - Today: 2025-07-29 04:00:00+00:00, Yesterday: 2025-07-28 04:00:00+00:00
+2025-07-29 21:51:15 - INFO - __main__ - RTX timestamps - Today: 2025-07-29 04:00:00+00:00, Yesterday: 2025-07-28 04:00:00+00:00
+2025-07-29 21:51:15 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-29 21:51:15 - INFO - __main__ - Data issues encountered: 0
+2025-07-29 21:51:15 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-29 21:51:15 - INFO - __main__ - Analysis for market close on July 29, 2025
+2025-07-29 21:51:15 - INFO - __main__ - Found 503 stocks with price data
+2025-07-29 21:51:16 - INFO - __main__ - Found Wikipedia URL for GLW: https://en.wikipedia.org/wiki/Corning_Inc.
+2025-07-29 21:51:18 - INFO - __main__ - Found Wikipedia URL for CARR: https://en.wikipedia.org/wiki/Carrier_Global
+2025-07-29 21:51:20 - INFO - __main__ - Analyzing top performer...
+2025-07-29 21:51:20 - INFO - __main__ - Analyzing Corning Inc. (GLW)
+2025-07-29 21:51:20 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-29 21:51:20 - INFO - __main__ - Searching for articles about GLW
+2025-07-29 21:51:20 - INFO - __main__ - Searching for news about Corning Inc.
+2025-07-29 21:51:21 - INFO - __main__ - Found 6 recent search results for Corning Inc.
+2025-07-29 21:51:21 - INFO - __main__ - Found 6 URLs to try for GLW
+2025-07-29 21:51:21 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/corning-eyes-more-growth-ai-164646380.html
+2025-07-29 21:51:21 - INFO - __main__ - Successfully extracted article content (3391 chars)
+2025-07-29 21:51:21 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/wall-street-today-dow-nasdaq-s-p-hit-record-high-sofi-novo-nordisk-unitedhealth-shares-in-focus-after-q2-result-11753792941154.html
+2025-07-29 21:51:22 - INFO - __main__ - Successfully extracted article content (4601 chars)
+2025-07-29 21:51:22 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/strong-earnings-trade-deal-optimism-140107384.html
+2025-07-29 21:51:23 - INFO - __main__ - Successfully extracted article content (9972 chars)
+2025-07-29 21:51:23 - INFO - __main__ - Found total of 3 valid articles for GLW
+2025-07-29 21:51:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:26 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-07-29 21:51:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:30 - INFO - __main__ - Top performer analysis complete
+2025-07-29 21:51:30 - INFO - __main__ - Analyzing bottom performer...
+2025-07-29 21:51:30 - INFO - __main__ - Analyzing Carrier Global (CARR)
+2025-07-29 21:51:31 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-29 21:51:31 - INFO - __main__ - Searching for articles about CARR
+2025-07-29 21:51:31 - INFO - __main__ - Searching for news about Carrier Global
+2025-07-29 21:51:31 - INFO - __main__ - Found 6 recent search results for Carrier Global
+2025-07-29 21:51:31 - INFO - __main__ - Found 6 URLs to try for CARR
+2025-07-29 21:51:31 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/carrier-global-stock-earnings-554e788f
+2025-07-29 21:51:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-29 21:51:31 - INFO - __main__ - Fetching content from: https://www.corporate.carrier.com/news/news-articles/202507_carrier-reports-strong-second-quarter-2025-results.html
+2025-07-29 21:51:32 - INFO - readability.readability - ruthless removal did not work. 
+2025-07-29 21:51:32 - INFO - __main__ - Successfully extracted article content (32777 chars)
+2025-07-29 21:51:32 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4473161-carrier-stock-slips-as-weak-international-sales-overshadow-earnings-beat
+2025-07-29 21:51:33 - INFO - readability.readability - ruthless removal did not work. 
+2025-07-29 21:51:33 - WARNING - __main__ - Article content too short (0 chars)
+2025-07-29 21:51:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/investors-more-bullish-carrier-global-140022100.html
+2025-07-29 21:51:34 - INFO - __main__ - Successfully extracted article content (4456 chars)
+2025-07-29 21:51:34 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/carrier-reports-strong-second-quarter-100500197.html
+2025-07-29 21:51:35 - INFO - __main__ - Successfully extracted article content (30734 chars)
+2025-07-29 21:51:35 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/the-fly/unusually-active-option-classes-on-open-july-29th-thefly
+2025-07-29 21:51:36 - INFO - __main__ - Successfully extracted article content (517 chars)
+2025-07-29 21:51:36 - INFO - __main__ - Found total of 3 valid articles for CARR
+2025-07-29 21:51:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:40 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-07-29 21:51:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-29 21:51:43 - INFO - __main__ - Bottom performer analysis complete
+2025-07-29 21:51:43 - INFO - __main__ - Saving results to JSON...
+2025-07-29 21:51:44 - INFO - __main__ - Analysis complete and saved to market_analysis.json
