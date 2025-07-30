@@ -1,0 +1,74 @@
+2025-07-30 21:50:06 - INFO - __main__ - Starting SP500 analysis script
+2025-07-30 21:50:06 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-07-30 21:50:07 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 7, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-07-30 21:50:07 - INFO - __main__ - Runtime timezone: UTC
+2025-07-30 21:50:07 - INFO - __main__ - Original start: 2025-07-29 16:00:00-04:00 (America/New_York)
+2025-07-30 21:50:07 - INFO - __main__ - Original end: 2025-07-30 16:00:00-04:00 (America/New_York)
+2025-07-30 21:50:07 - INFO - __main__ - UTC start: 2025-07-29 04:00:00+00:00
+2025-07-30 21:50:07 - INFO - __main__ - UTC end: 2025-07-31 04:00:00+00:00
+2025-07-30 21:50:07 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-07-30 21:50:09 - INFO - __main__ - Received data for 503 symbols
+2025-07-30 21:50:09 - INFO - __main__ - Sample data structure for A:
+2025-07-30 21:50:09 - INFO - __main__ - Number of bars: 2
+2025-07-30 21:50:09 - INFO - __main__ - Bar timestamp: 2025-07-29 04:00:00+00:00 (UTC)
+2025-07-30 21:50:09 - INFO - __main__ - Bar timestamp: 2025-07-30 04:00:00+00:00 (UTC)
+2025-07-30 21:50:09 - INFO - __main__ - A timestamps - Today: 2025-07-30 04:00:00+00:00, Yesterday: 2025-07-29 04:00:00+00:00
+2025-07-30 21:50:09 - INFO - __main__ - JBHT timestamps - Today: 2025-07-30 04:00:00+00:00, Yesterday: 2025-07-29 04:00:00+00:00
+2025-07-30 21:50:09 - INFO - __main__ - TTD timestamps - Today: 2025-07-30 04:00:00+00:00, Yesterday: 2025-07-29 04:00:00+00:00
+2025-07-30 21:50:09 - INFO - __main__ - WYNN timestamps - Today: 2025-07-30 04:00:00+00:00, Yesterday: 2025-07-29 04:00:00+00:00
+2025-07-30 21:50:09 - INFO - __main__ - HIG timestamps - Today: 2025-07-30 04:00:00+00:00, Yesterday: 2025-07-29 04:00:00+00:00
+2025-07-30 21:50:09 - INFO - __main__ - Successfully processed 503 stocks
+2025-07-30 21:50:09 - INFO - __main__ - Data issues encountered: 0
+2025-07-30 21:50:09 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-07-30 21:50:09 - INFO - __main__ - Analysis for market close on July 30, 2025
+2025-07-30 21:50:09 - INFO - __main__ - Found 503 stocks with price data
+2025-07-30 21:50:10 - INFO - __main__ - Found Wikipedia URL for GNRC: https://en.wikipedia.org/wiki/Generac
+2025-07-30 21:50:12 - INFO - __main__ - Found Wikipedia URL for IEX: https://en.wikipedia.org/wiki/IDEX_Corporation
+2025-07-30 21:50:14 - INFO - __main__ - Analyzing top performer...
+2025-07-30 21:50:14 - INFO - __main__ - Analyzing Generac (GNRC)
+2025-07-30 21:50:14 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-30 21:50:15 - INFO - __main__ - Searching for articles about GNRC
+2025-07-30 21:50:15 - INFO - __main__ - Searching for news about Generac
+2025-07-30 21:50:15 - INFO - __main__ - Found 6 recent search results for Generac
+2025-07-30 21:50:15 - INFO - __main__ - Found 6 URLs to try for GNRC
+2025-07-30 21:50:15 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/generac-earnings-stock-price-7851014f
+2025-07-30 21:50:15 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-30 21:50:15 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-624049e4
+2025-07-30 21:50:15 - WARNING - __main__ - Article content too short (43 chars)
+2025-07-30 21:50:15 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/generac-q2-earnings-revenues-beat-141800917.html
+2025-07-30 21:50:16 - INFO - __main__ - Successfully extracted article content (6991 chars)
+2025-07-30 21:50:16 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/wingstop-unveils-bold-expansion-plans-142246152.html
+2025-07-30 21:50:17 - INFO - __main__ - Successfully extracted article content (2655 chars)
+2025-07-30 21:50:17 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-steady-as-wall-street-awaits-fed-decision-big-tech-results-233533322.html
+2025-07-30 21:50:18 - INFO - __main__ - Successfully extracted article content (1579 chars)
+2025-07-30 21:50:18 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-slip-as-fed-holds-rates-steady-big-tech-results-loom-233533109.html
+2025-07-30 21:50:18 - INFO - __main__ - Successfully extracted article content (1579 chars)
+2025-07-30 21:50:18 - INFO - __main__ - Found total of 3 valid articles for GNRC
+2025-07-30 21:50:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:22 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-07-30 21:50:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:27 - INFO - __main__ - Top performer analysis complete
+2025-07-30 21:50:27 - INFO - __main__ - Analyzing bottom performer...
+2025-07-30 21:50:27 - INFO - __main__ - Analyzing IDEX Corporation (IEX)
+2025-07-30 21:50:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-07-30 21:50:27 - INFO - __main__ - Searching for articles about IEX
+2025-07-30 21:50:27 - INFO - __main__ - Searching for news about IDEX Corporation
+2025-07-30 21:50:27 - INFO - __main__ - Found 6 recent search results for IDEX Corporation
+2025-07-30 21:50:27 - INFO - __main__ - Found 6 URLs to try for IEX
+2025-07-30 21:50:27 - INFO - __main__ - Fetching content from: https://investors.idexcorp.com/news-releases/news-release-details/idex-reports-second-quarter-results-0
+2025-07-30 21:50:28 - INFO - __main__ - Successfully extracted article content (32594 chars)
+2025-07-30 21:50:28 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-steady-as-wall-street-awaits-fed-decision-big-tech-results-233533322.html
+2025-07-30 21:50:29 - INFO - __main__ - Successfully extracted article content (1579 chars)
+2025-07-30 21:50:29 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/starbucks-stock-drops-after-us-same-store-sales-fall-for-6th-straight-quarter-202028730.html
+2025-07-30 21:50:30 - INFO - __main__ - Successfully extracted article content (5867 chars)
+2025-07-30 21:50:30 - INFO - __main__ - Found total of 3 valid articles for IEX
+2025-07-30 21:50:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:33 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:34 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-07-30 21:50:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-07-30 21:50:38 - INFO - __main__ - Bottom performer analysis complete
+2025-07-30 21:50:38 - INFO - __main__ - Saving results to JSON...
+2025-07-30 21:50:39 - INFO - __main__ - Analysis complete and saved to market_analysis.json
