@@ -1,0 +1,74 @@
+2025-08-01 21:50:11 - INFO - __main__ - Starting SP500 analysis script
+2025-08-01 21:50:12 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-01 21:50:12 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 7, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-01 21:50:12 - INFO - __main__ - Runtime timezone: UTC
+2025-08-01 21:50:12 - INFO - __main__ - Original start: 2025-07-31 16:00:00-04:00 (America/New_York)
+2025-08-01 21:50:12 - INFO - __main__ - Original end: 2025-08-01 16:00:00-04:00 (America/New_York)
+2025-08-01 21:50:12 - INFO - __main__ - UTC start: 2025-07-31 04:00:00+00:00
+2025-08-01 21:50:12 - INFO - __main__ - UTC end: 2025-08-02 04:00:00+00:00
+2025-08-01 21:50:12 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-01 21:50:14 - INFO - __main__ - Received data for 503 symbols
+2025-08-01 21:50:14 - INFO - __main__ - Sample data structure for RSG:
+2025-08-01 21:50:14 - INFO - __main__ - Number of bars: 2
+2025-08-01 21:50:14 - INFO - __main__ - Bar timestamp: 2025-07-31 04:00:00+00:00 (UTC)
+2025-08-01 21:50:14 - INFO - __main__ - Bar timestamp: 2025-08-01 04:00:00+00:00 (UTC)
+2025-08-01 21:50:14 - INFO - __main__ - RSG timestamps - Today: 2025-08-01 04:00:00+00:00, Yesterday: 2025-07-31 04:00:00+00:00
+2025-08-01 21:50:14 - INFO - __main__ - EIX timestamps - Today: 2025-08-01 04:00:00+00:00, Yesterday: 2025-07-31 04:00:00+00:00
+2025-08-01 21:50:14 - INFO - __main__ - PGR timestamps - Today: 2025-08-01 04:00:00+00:00, Yesterday: 2025-07-31 04:00:00+00:00
+2025-08-01 21:50:14 - INFO - __main__ - J timestamps - Today: 2025-08-01 04:00:00+00:00, Yesterday: 2025-07-31 04:00:00+00:00
+2025-08-01 21:50:14 - INFO - __main__ - LW timestamps - Today: 2025-08-01 04:00:00+00:00, Yesterday: 2025-07-31 04:00:00+00:00
+2025-08-01 21:50:14 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-01 21:50:14 - INFO - __main__ - Data issues encountered: 0
+2025-08-01 21:50:14 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-01 21:50:14 - INFO - __main__ - Analysis for market close on August 01, 2025
+2025-08-01 21:50:14 - INFO - __main__ - Found 503 stocks with price data
+2025-08-01 21:50:14 - INFO - __main__ - Found Wikipedia URL for MPWR: https://en.wikipedia.org/wiki/Monolithic_Power_Systems
+2025-08-01 21:50:16 - INFO - __main__ - Found Wikipedia URL for EMN: https://en.wikipedia.org/wiki/Eastman_Chemical_Company
+2025-08-01 21:50:18 - INFO - __main__ - Analyzing top performer...
+2025-08-01 21:50:18 - INFO - __main__ - Analyzing Monolithic Power Systems (MPWR)
+2025-08-01 21:50:19 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-01 21:50:19 - INFO - __main__ - Searching for articles about MPWR
+2025-08-01 21:50:19 - INFO - __main__ - Searching for news about Monolithic Power Systems
+2025-08-01 21:50:19 - INFO - __main__ - Found 6 recent search results for Monolithic Power Systems
+2025-08-01 21:50:19 - INFO - __main__ - Found 6 URLs to try for MPWR
+2025-08-01 21:50:19 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/monolithic-power-beats-q2-earnings-132300648.html
+2025-08-01 21:50:22 - INFO - __main__ - Successfully extracted article content (5284 chars)
+2025-08-01 21:50:22 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/01/stocks-making-the-biggest-moves-midday-aapl-amzn-mpwr-rddt.html
+2025-08-01 21:50:22 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-01 21:50:22 - INFO - __main__ - Successfully extracted article content (6141 chars)
+2025-08-01 21:50:22 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-trump-tariffs-amazon-amzn-stock/
+2025-08-01 21:50:23 - INFO - __main__ - Successfully extracted article content (368 chars)
+2025-08-01 21:50:23 - INFO - __main__ - Found total of 2 valid articles for MPWR
+2025-08-01 21:50:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:26 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-01 21:50:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:30 - INFO - __main__ - Top performer analysis complete
+2025-08-01 21:50:30 - INFO - __main__ - Analyzing bottom performer...
+2025-08-01 21:50:30 - INFO - __main__ - Analyzing Eastman Chemical Company (EMN)
+2025-08-01 21:50:30 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-01 21:50:31 - INFO - __main__ - Searching for articles about EMN
+2025-08-01 21:50:31 - INFO - __main__ - Searching for news about Eastman Chemical Company
+2025-08-01 21:50:31 - INFO - __main__ - Found 6 recent search results for Eastman Chemical Company
+2025-08-01 21:50:31 - INFO - __main__ - Found 6 URLs to try for EMN
+2025-08-01 21:50:31 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4476850-eastman-chemical-plunges-19-sp-500s-biggest-loser-on-dismal-guidance
+2025-08-01 21:50:31 - INFO - __main__ - Successfully extracted article content (268 chars)
+2025-08-01 21:50:31 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/33815994/stocks-slump-on-tariffs-and-weak-us-job-growth
+2025-08-01 21:50:31 - INFO - __main__ - Successfully extracted article content (296 chars)
+2025-08-01 21:50:31 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/michael-saylor-says-owning-7-153824758.html
+2025-08-01 21:50:32 - INFO - __main__ - Successfully extracted article content (2386 chars)
+2025-08-01 21:50:32 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/apple-stock-rises-after-the-company-beat-q3-expectations-on-strong-iphone-sales-135026399.html
+2025-08-01 21:50:33 - INFO - __main__ - Successfully extracted article content (2677 chars)
+2025-08-01 21:50:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/rddt-reddit-stock-soars-q2-124036570.html
+2025-08-01 21:50:33 - INFO - __main__ - Successfully extracted article content (1208 chars)
+2025-08-01 21:50:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/exxon-mobil-hits-record-production-142251699.html
+2025-08-01 21:50:34 - INFO - __main__ - Successfully extracted article content (3871 chars)
+2025-08-01 21:50:34 - INFO - __main__ - Found total of 3 valid articles for EMN
+2025-08-01 21:50:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:37 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-08-01 21:50:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-01 21:50:41 - INFO - __main__ - Bottom performer analysis complete
+2025-08-01 21:50:41 - INFO - __main__ - Saving results to JSON...
+2025-08-01 21:50:42 - INFO - __main__ - Analysis complete and saved to market_analysis.json
