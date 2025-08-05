@@ -1,0 +1,74 @@
+2025-08-04 21:51:13 - INFO - __main__ - Starting SP500 analysis script
+2025-08-04 21:51:13 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-04 21:51:14 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-04 21:51:14 - INFO - __main__ - Runtime timezone: UTC
+2025-08-04 21:51:14 - INFO - __main__ - Original start: 2025-08-01 16:00:00-04:00 (America/New_York)
+2025-08-04 21:51:14 - INFO - __main__ - Original end: 2025-08-04 16:00:00-04:00 (America/New_York)
+2025-08-04 21:51:14 - INFO - __main__ - UTC start: 2025-08-01 04:00:00+00:00
+2025-08-04 21:51:14 - INFO - __main__ - UTC end: 2025-08-05 04:00:00+00:00
+2025-08-04 21:51:14 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-04 21:51:16 - INFO - __main__ - Received data for 503 symbols
+2025-08-04 21:51:16 - INFO - __main__ - Sample data structure for MNST:
+2025-08-04 21:51:16 - INFO - __main__ - Number of bars: 2
+2025-08-04 21:51:16 - INFO - __main__ - Bar timestamp: 2025-08-01 04:00:00+00:00 (UTC)
+2025-08-04 21:51:16 - INFO - __main__ - Bar timestamp: 2025-08-04 04:00:00+00:00 (UTC)
+2025-08-04 21:51:16 - INFO - __main__ - MNST timestamps - Today: 2025-08-04 04:00:00+00:00, Yesterday: 2025-08-01 04:00:00+00:00
+2025-08-04 21:51:16 - INFO - __main__ - SBUX timestamps - Today: 2025-08-04 04:00:00+00:00, Yesterday: 2025-08-01 04:00:00+00:00
+2025-08-04 21:51:16 - INFO - __main__ - SNPS timestamps - Today: 2025-08-04 04:00:00+00:00, Yesterday: 2025-08-01 04:00:00+00:00
+2025-08-04 21:51:16 - INFO - __main__ - AEP timestamps - Today: 2025-08-04 04:00:00+00:00, Yesterday: 2025-08-01 04:00:00+00:00
+2025-08-04 21:51:16 - INFO - __main__ - CTAS timestamps - Today: 2025-08-04 04:00:00+00:00, Yesterday: 2025-08-01 04:00:00+00:00
+2025-08-04 21:51:16 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-04 21:51:16 - INFO - __main__ - Data issues encountered: 0
+2025-08-04 21:51:16 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-04 21:51:16 - INFO - __main__ - Analysis for market close on August 04, 2025
+2025-08-04 21:51:16 - INFO - __main__ - Found 503 stocks with price data
+2025-08-04 21:51:16 - INFO - __main__ - Found Wikipedia URL for IDXX: https://en.wikipedia.org/wiki/Idexx_Laboratories
+2025-08-04 21:51:19 - INFO - __main__ - Found Wikipedia URL for ON: https://en.wikipedia.org/wiki/Onsemi
+2025-08-04 21:51:21 - INFO - __main__ - Analyzing top performer...
+2025-08-04 21:51:21 - INFO - __main__ - Analyzing Idexx Laboratories (IDXX)
+2025-08-04 21:51:21 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-04 21:51:21 - INFO - __main__ - Searching for articles about IDXX
+2025-08-04 21:51:21 - INFO - __main__ - Searching for news about Idexx Laboratories
+2025-08-04 21:51:21 - INFO - __main__ - Found 6 recent search results for Idexx Laboratories
+2025-08-04 21:51:21 - INFO - __main__ - Found 6 URLs to try for IDXX
+2025-08-04 21:51:21 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/idexx-laboratories-stock-idexx-laboratories-earnings-q2-2025/
+2025-08-04 21:51:21 - INFO - __main__ - Successfully extracted article content (2385 chars)
+2025-08-04 21:51:21 - INFO - __main__ - Fetching content from: https://www.idexx.com/files/2025-q2-earnings-release-20250804.pdf
+2025-08-04 21:51:23 - INFO - __main__ - Successfully extracted article content (4358 chars)
+2025-08-04 21:51:23 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4477226-idexx-rises-on-upgraded-guidance-fueled-by-invue-dx-demand
+2025-08-04 21:51:23 - INFO - __main__ - Successfully extracted article content (304 chars)
+2025-08-04 21:51:23 - INFO - __main__ - Found total of 2 valid articles for IDXX
+2025-08-04 21:51:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-04 21:51:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-04 21:51:25 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-08-04 21:51:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-04 21:51:30 - INFO - __main__ - Top performer analysis complete
+2025-08-04 21:51:30 - INFO - __main__ - Analyzing bottom performer...
+2025-08-04 21:51:30 - INFO - __main__ - Analyzing ON Semiconductor (ON)
+2025-08-04 21:51:30 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-04 21:51:30 - INFO - __main__ - Searching for articles about ON
+2025-08-04 21:51:30 - INFO - __main__ - Searching for news about ON Semiconductor
+2025-08-04 21:51:30 - INFO - __main__ - Found 6 recent search results for ON Semiconductor
+2025-08-04 21:51:30 - INFO - __main__ - Found 6 URLs to try for ON
+2025-08-04 21:51:30 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/semiconductor-faces-pricing-pressures-ceo-135017965.html
+2025-08-04 21:51:31 - INFO - __main__ - Successfully extracted article content (2530 chars)
+2025-08-04 21:51:31 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/on-semiconductor-earnings-stock-price-4cc1fdfc
+2025-08-04 21:51:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-04 21:51:31 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/earnings/on-semiconductor-results-show-stabilizing-end-markets-7a7fed2a?gaa_at=eafs&gaa_n=ASWzDAhR351M4y7PjMPTnd-Kj5KR0S00BmH8znd93lMe8r3kVd8ypqz8No8F&gaa_ts=68912deb&gaa_sig=EVKeuBh0dgTW4IWoFnHD4B4eeGRknwCBj7Eop8yCryV-S_Ff0ZfR6-ANDqSxuvV36PaDya08eK7lGVz0_p4nkg%3D%3D
+2025-08-04 21:51:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-04 21:51:31 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-3c12bc68
+2025-08-04 21:51:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-04 21:51:31 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4477201-onsemi-dips-on-q2-results-despite-signs-of-market-stabilization
+2025-08-04 21:51:31 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-04 21:51:31 - WARNING - __main__ - Article content too short (0 chars)
+2025-08-04 21:51:31 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/04/stocks-making-the-biggest-moves-premarket-on-w-spot-tsla.html
+2025-08-04 21:51:31 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-04 21:51:31 - INFO - __main__ - Successfully extracted article content (3424 chars)
+2025-08-04 21:51:31 - INFO - __main__ - Found total of 2 valid articles for ON
+2025-08-04 21:51:33 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-04 21:51:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-04 21:51:34 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-04 21:51:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-04 21:51:38 - INFO - __main__ - Bottom performer analysis complete
+2025-08-04 21:51:38 - INFO - __main__ - Saving results to JSON...
+2025-08-04 21:51:38 - INFO - __main__ - Analysis complete and saved to market_analysis.json
