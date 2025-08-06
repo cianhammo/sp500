@@ -1,0 +1,69 @@
+2025-08-05 21:50:58 - INFO - __main__ - Starting SP500 analysis script
+2025-08-05 21:50:58 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-05 21:51:00 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 5, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-05 21:51:00 - INFO - __main__ - Runtime timezone: UTC
+2025-08-05 21:51:00 - INFO - __main__ - Original start: 2025-08-04 16:00:00-04:00 (America/New_York)
+2025-08-05 21:51:00 - INFO - __main__ - Original end: 2025-08-05 16:00:00-04:00 (America/New_York)
+2025-08-05 21:51:00 - INFO - __main__ - UTC start: 2025-08-04 04:00:00+00:00
+2025-08-05 21:51:00 - INFO - __main__ - UTC end: 2025-08-06 04:00:00+00:00
+2025-08-05 21:51:00 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-05 21:51:02 - INFO - __main__ - Received data for 503 symbols
+2025-08-05 21:51:02 - INFO - __main__ - Sample data structure for SRE:
+2025-08-05 21:51:02 - INFO - __main__ - Number of bars: 2
+2025-08-05 21:51:02 - INFO - __main__ - Bar timestamp: 2025-08-04 04:00:00+00:00 (UTC)
+2025-08-05 21:51:02 - INFO - __main__ - Bar timestamp: 2025-08-05 04:00:00+00:00 (UTC)
+2025-08-05 21:51:02 - INFO - __main__ - SRE timestamps - Today: 2025-08-05 04:00:00+00:00, Yesterday: 2025-08-04 04:00:00+00:00
+2025-08-05 21:51:02 - INFO - __main__ - ABT timestamps - Today: 2025-08-05 04:00:00+00:00, Yesterday: 2025-08-04 04:00:00+00:00
+2025-08-05 21:51:02 - INFO - __main__ - CCL timestamps - Today: 2025-08-05 04:00:00+00:00, Yesterday: 2025-08-04 04:00:00+00:00
+2025-08-05 21:51:02 - INFO - __main__ - CHRW timestamps - Today: 2025-08-05 04:00:00+00:00, Yesterday: 2025-08-04 04:00:00+00:00
+2025-08-05 21:51:02 - INFO - __main__ - CI timestamps - Today: 2025-08-05 04:00:00+00:00, Yesterday: 2025-08-04 04:00:00+00:00
+2025-08-05 21:51:02 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-05 21:51:02 - INFO - __main__ - Data issues encountered: 0
+2025-08-05 21:51:02 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-05 21:51:02 - INFO - __main__ - Analysis for market close on August 05, 2025
+2025-08-05 21:51:02 - INFO - __main__ - Found 503 stocks with price data
+2025-08-05 21:51:02 - INFO - __main__ - Found Wikipedia URL for AXON: https://en.wikipedia.org/wiki/Axon_Enterprise
+2025-08-05 21:51:04 - INFO - __main__ - Found Wikipedia URL for IT: https://en.wikipedia.org/wiki/Gartner
+2025-08-05 21:51:06 - INFO - __main__ - Analyzing top performer...
+2025-08-05 21:51:06 - INFO - __main__ - Analyzing Axon Enterprise (AXON)
+2025-08-05 21:51:06 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-05 21:51:07 - INFO - __main__ - Searching for articles about AXON
+2025-08-05 21:51:07 - INFO - __main__ - Searching for news about Axon Enterprise
+2025-08-05 21:51:07 - INFO - __main__ - Found 6 recent search results for Axon Enterprise
+2025-08-05 21:51:07 - INFO - __main__ - Found 6 URLs to try for AXON
+2025-08-05 21:51:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-axon-enterprise-stock-soared-155721903.html
+2025-08-05 21:51:08 - INFO - __main__ - Successfully extracted article content (3309 chars)
+2025-08-05 21:51:08 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/05/axon-enterprise-stock-q2-earnings-2025.html
+2025-08-05 21:51:08 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-05 21:51:09 - INFO - __main__ - Successfully extracted article content (1416 chars)
+2025-08-05 21:51:09 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-gartner-axon-enterprise-palantir-and-more-11785000
+2025-08-05 21:51:09 - INFO - __main__ - Successfully extracted article content (2012 chars)
+2025-08-05 21:51:09 - INFO - __main__ - Found total of 3 valid articles for AXON
+2025-08-05 21:51:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:12 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-05 21:51:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:16 - INFO - __main__ - Top performer analysis complete
+2025-08-05 21:51:16 - INFO - __main__ - Analyzing bottom performer...
+2025-08-05 21:51:16 - INFO - __main__ - Analyzing Gartner (IT)
+2025-08-05 21:51:16 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-05 21:51:17 - INFO - __main__ - Searching for articles about IT
+2025-08-05 21:51:17 - INFO - __main__ - Searching for news about Gartner
+2025-08-05 21:51:17 - INFO - __main__ - Found 6 recent search results for Gartner
+2025-08-05 21:51:17 - INFO - __main__ - Found 6 URLs to try for IT
+2025-08-05 21:51:17 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gartner-tops-q2-earnings-revenue-111003413.html
+2025-08-05 21:51:18 - INFO - __main__ - Successfully extracted article content (4029 chars)
+2025-08-05 21:51:18 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-gartner-axon-enterprise-palantir-and-more-11785000
+2025-08-05 21:51:18 - INFO - __main__ - Successfully extracted article content (2012 chars)
+2025-08-05 21:51:18 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gartner-cuts-annual-revenue-forecast-110257906.html
+2025-08-05 21:51:18 - INFO - __main__ - Successfully extracted article content (1478 chars)
+2025-08-05 21:51:18 - INFO - __main__ - Found total of 3 valid articles for IT
+2025-08-05 21:51:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:22 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-05 21:51:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 21:51:25 - INFO - __main__ - Bottom performer analysis complete
+2025-08-05 21:51:25 - INFO - __main__ - Saving results to JSON...
+2025-08-05 21:51:26 - INFO - __main__ - Analysis complete and saved to market_analysis.json
