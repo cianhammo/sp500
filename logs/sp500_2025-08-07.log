@@ -1,0 +1,68 @@
+2025-08-07 21:50:00 - INFO - __main__ - Starting SP500 analysis script
+2025-08-07 21:50:01 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-07 21:50:01 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-07 21:50:01 - INFO - __main__ - Runtime timezone: UTC
+2025-08-07 21:50:01 - INFO - __main__ - Original start: 2025-08-06 16:00:00-04:00 (America/New_York)
+2025-08-07 21:50:01 - INFO - __main__ - Original end: 2025-08-07 16:00:00-04:00 (America/New_York)
+2025-08-07 21:50:01 - INFO - __main__ - UTC start: 2025-08-06 04:00:00+00:00
+2025-08-07 21:50:01 - INFO - __main__ - UTC end: 2025-08-08 04:00:00+00:00
+2025-08-07 21:50:01 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-07 21:50:02 - INFO - __main__ - Received data for 503 symbols
+2025-08-07 21:50:02 - INFO - __main__ - Sample data structure for PEG:
+2025-08-07 21:50:02 - INFO - __main__ - Number of bars: 2
+2025-08-07 21:50:02 - INFO - __main__ - Bar timestamp: 2025-08-06 04:00:00+00:00 (UTC)
+2025-08-07 21:50:02 - INFO - __main__ - Bar timestamp: 2025-08-07 04:00:00+00:00 (UTC)
+2025-08-07 21:50:02 - INFO - __main__ - PEG timestamps - Today: 2025-08-07 04:00:00+00:00, Yesterday: 2025-08-06 04:00:00+00:00
+2025-08-07 21:50:02 - INFO - __main__ - SPGI timestamps - Today: 2025-08-07 04:00:00+00:00, Yesterday: 2025-08-06 04:00:00+00:00
+2025-08-07 21:50:02 - INFO - __main__ - BK timestamps - Today: 2025-08-07 04:00:00+00:00, Yesterday: 2025-08-06 04:00:00+00:00
+2025-08-07 21:50:02 - INFO - __main__ - CNP timestamps - Today: 2025-08-07 04:00:00+00:00, Yesterday: 2025-08-06 04:00:00+00:00
+2025-08-07 21:50:02 - INFO - __main__ - EMN timestamps - Today: 2025-08-07 04:00:00+00:00, Yesterday: 2025-08-06 04:00:00+00:00
+2025-08-07 21:50:02 - INFO - __main__ - Successfully processed 502 stocks
+2025-08-07 21:50:02 - INFO - __main__ - Data issues encountered: 1
+2025-08-07 21:50:02 - INFO - __main__ - Sample of data issues:
+2025-08-07 21:50:02 - INFO - __main__ - PARA: Insufficient data points (1)
+2025-08-07 21:50:02 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-08-07 21:50:02 - INFO - __main__ - Analysis for market close on August 07, 2025
+2025-08-07 21:50:02 - INFO - __main__ - Found 502 stocks with price data
+2025-08-07 21:50:03 - INFO - __main__ - Found Wikipedia URL for PODD: https://en.wikipedia.org/wiki/Dexcom
+2025-08-07 21:50:05 - INFO - __main__ - Found Wikipedia URL for FTNT: https://en.wikipedia.org/wiki/Fortinet
+2025-08-07 21:50:07 - INFO - __main__ - Analyzing top performer...
+2025-08-07 21:50:07 - INFO - __main__ - Analyzing Insulet Corporation (PODD)
+2025-08-07 21:50:07 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-07 21:50:07 - INFO - __main__ - Searching for articles about PODD
+2025-08-07 21:50:07 - INFO - __main__ - Searching for news about Insulet Corporation
+2025-08-07 21:50:08 - INFO - __main__ - Found 6 recent search results for Insulet Corporation
+2025-08-07 21:50:08 - INFO - __main__ - Found 6 URLs to try for PODD
+2025-08-07 21:50:08 - INFO - __main__ - Fetching content from: https://www.marketscreener.com/news/chips-carrots-and-central-banks-ce7c5edfdf88f427
+2025-08-07 21:50:09 - INFO - __main__ - Successfully extracted article content (8541 chars)
+2025-08-07 21:50:09 - INFO - __main__ - Fetching content from: https://investors.insulet.com/news/news-details/2025/Insulet-Reports-Second-Quarter-2025-Revenue-Increase-of-32-9-Year-Over-Year-31-3-Constant-Currency1/default.aspx
+2025-08-07 21:50:09 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-08-07 21:50:09 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/markets-news/Business%20Wire/33955659/insulet-reports-second-quarter-2025-revenue-increase-of-32-9-year-over-year-31-3-constant-currency1/
+2025-08-07 21:50:10 - INFO - __main__ - Successfully extracted article content (22033 chars)
+2025-08-07 21:50:10 - INFO - __main__ - Found total of 2 valid articles for PODD
+2025-08-07 21:50:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-07 21:50:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-07 21:50:12 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-07 21:50:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-07 21:50:17 - INFO - __main__ - Top performer analysis complete
+2025-08-07 21:50:17 - INFO - __main__ - Analyzing bottom performer...
+2025-08-07 21:50:17 - INFO - __main__ - Analyzing Fortinet (FTNT)
+2025-08-07 21:50:17 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-07 21:50:18 - INFO - __main__ - Searching for articles about FTNT
+2025-08-07 21:50:18 - INFO - __main__ - Searching for news about Fortinet
+2025-08-07 21:50:18 - INFO - __main__ - Found 6 recent search results for Fortinet
+2025-08-07 21:50:18 - INFO - __main__ - Found 6 URLs to try for FTNT
+2025-08-07 21:50:18 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/fortinet-earnings-stock-price-3c8f59ae
+2025-08-07 21:50:18 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-07 21:50:18 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/analysts-cut-fortinet-rating-shares-152147416.html
+2025-08-07 21:50:19 - INFO - __main__ - Successfully extracted article content (1828 chars)
+2025-08-07 21:50:19 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/fortinet-stock-ftnt-stock-fortinet-earnings-q22025/
+2025-08-07 21:50:20 - INFO - __main__ - Successfully extracted article content (4183 chars)
+2025-08-07 21:50:20 - INFO - __main__ - Found total of 2 valid articles for FTNT
+2025-08-07 21:50:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-07 21:50:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-07 21:50:22 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-07 21:50:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-07 21:50:26 - INFO - __main__ - Bottom performer analysis complete
+2025-08-07 21:50:26 - INFO - __main__ - Saving results to JSON...
+2025-08-07 21:50:26 - INFO - __main__ - Analysis complete and saved to market_analysis.json
