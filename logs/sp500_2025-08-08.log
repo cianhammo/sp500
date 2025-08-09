@@ -1,0 +1,67 @@
+2025-08-08 21:48:35 - INFO - __main__ - Starting SP500 analysis script
+2025-08-08 21:48:36 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-08 21:48:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-08 21:48:36 - INFO - __main__ - Runtime timezone: UTC
+2025-08-08 21:48:36 - INFO - __main__ - Original start: 2025-08-07 16:00:00-04:00 (America/New_York)
+2025-08-08 21:48:36 - INFO - __main__ - Original end: 2025-08-08 16:00:00-04:00 (America/New_York)
+2025-08-08 21:48:36 - INFO - __main__ - UTC start: 2025-08-07 04:00:00+00:00
+2025-08-08 21:48:36 - INFO - __main__ - UTC end: 2025-08-09 04:00:00+00:00
+2025-08-08 21:48:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-08 21:48:37 - INFO - __main__ - Received data for 502 symbols
+2025-08-08 21:48:37 - INFO - __main__ - Sample data structure for EMN:
+2025-08-08 21:48:37 - INFO - __main__ - Number of bars: 2
+2025-08-08 21:48:37 - INFO - __main__ - Bar timestamp: 2025-08-07 04:00:00+00:00 (UTC)
+2025-08-08 21:48:37 - INFO - __main__ - Bar timestamp: 2025-08-08 04:00:00+00:00 (UTC)
+2025-08-08 21:48:37 - INFO - __main__ - EMN timestamps - Today: 2025-08-08 04:00:00+00:00, Yesterday: 2025-08-07 04:00:00+00:00
+2025-08-08 21:48:37 - INFO - __main__ - KDP timestamps - Today: 2025-08-08 04:00:00+00:00, Yesterday: 2025-08-07 04:00:00+00:00
+2025-08-08 21:48:37 - INFO - __main__ - NOC timestamps - Today: 2025-08-08 04:00:00+00:00, Yesterday: 2025-08-07 04:00:00+00:00
+2025-08-08 21:48:37 - INFO - __main__ - COR timestamps - Today: 2025-08-08 04:00:00+00:00, Yesterday: 2025-08-07 04:00:00+00:00
+2025-08-08 21:48:37 - INFO - __main__ - AXP timestamps - Today: 2025-08-08 04:00:00+00:00, Yesterday: 2025-08-07 04:00:00+00:00
+2025-08-08 21:48:38 - INFO - __main__ - Successfully processed 502 stocks
+2025-08-08 21:48:38 - INFO - __main__ - Data issues encountered: 0
+2025-08-08 21:48:38 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-08-08 21:48:38 - INFO - __main__ - Analysis for market close on August 08, 2025
+2025-08-08 21:48:38 - INFO - __main__ - Found 502 stocks with price data
+2025-08-08 21:48:38 - INFO - __main__ - Found Wikipedia URL for GILD: https://en.wikipedia.org/wiki/Gilead_Sciences
+2025-08-08 21:48:40 - INFO - __main__ - Found Wikipedia URL for TTD: https://en.wikipedia.org/wiki/The_Trade_Desk
+2025-08-08 21:48:42 - INFO - __main__ - Analyzing top performer...
+2025-08-08 21:48:42 - INFO - __main__ - Analyzing Gilead Sciences (GILD)
+2025-08-08 21:48:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-08 21:48:43 - INFO - __main__ - Searching for articles about GILD
+2025-08-08 21:48:43 - INFO - __main__ - Searching for news about Gilead Sciences
+2025-08-08 21:48:43 - INFO - __main__ - Found 6 recent search results for Gilead Sciences
+2025-08-08 21:48:43 - INFO - __main__ - Found 6 URLs to try for GILD
+2025-08-08 21:48:43 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/08/stocks-making-the-biggest-moves-midday-gild-mnst-ttd-mp-sg.html
+2025-08-08 21:48:43 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-08 21:48:43 - INFO - __main__ - Successfully extracted article content (5896 chars)
+2025-08-08 21:48:43 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-8181e83e
+2025-08-08 21:48:44 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-08 21:48:44 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/wall-street-live-s-p-500-dow-jones-nasdaq-rise-on-hopes-of-dovish-fed-board-11754660699666.html
+2025-08-08 21:48:45 - INFO - __main__ - Successfully extracted article content (2028 chars)
+2025-08-08 21:48:45 - INFO - __main__ - Found total of 2 valid articles for GILD
+2025-08-08 21:48:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-08 21:48:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-08 21:48:47 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-08 21:48:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-08 21:48:50 - INFO - __main__ - Top performer analysis complete
+2025-08-08 21:48:50 - INFO - __main__ - Analyzing bottom performer...
+2025-08-08 21:48:50 - INFO - __main__ - Analyzing Trade Desk (The) (TTD)
+2025-08-08 21:48:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-08 21:48:51 - INFO - __main__ - Searching for articles about TTD
+2025-08-08 21:48:51 - INFO - __main__ - Searching for news about Trade Desk (The)
+2025-08-08 21:48:51 - INFO - __main__ - Found 6 recent search results for Trade Desk (The)
+2025-08-08 21:48:51 - INFO - __main__ - Found 6 URLs to try for TTD
+2025-08-08 21:48:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/why-the-trade-desk-stock-tumbled-nearly-40-percent-11787443
+2025-08-08 21:48:52 - INFO - __main__ - Successfully extracted article content (1708 chars)
+2025-08-08 21:48:52 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/08/08/why-the-trade-desk-stock-tumbled-today/
+2025-08-08 21:48:52 - INFO - __main__ - Successfully extracted article content (146 chars)
+2025-08-08 21:48:52 - INFO - __main__ - Fetching content from: https://finviz.com/news/133266/why-did-the-trade-desk-stock-crash-after-earnings
+2025-08-08 21:48:52 - INFO - __main__ - Successfully extracted article content (1799 chars)
+2025-08-08 21:48:52 - INFO - __main__ - Found total of 2 valid articles for TTD
+2025-08-08 21:48:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-08 21:48:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-08 21:48:55 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-08 21:48:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-08 21:48:57 - INFO - __main__ - Bottom performer analysis complete
+2025-08-08 21:48:57 - INFO - __main__ - Saving results to JSON...
+2025-08-08 21:48:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
