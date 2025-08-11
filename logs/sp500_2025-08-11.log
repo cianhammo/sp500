@@ -1,0 +1,73 @@
+2025-08-11 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-08-11 21:47:37 - INFO - __main__ - Retrieved 502 tickers from SP500 list
+2025-08-11 21:47:37 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-11 21:47:37 - INFO - __main__ - Runtime timezone: UTC
+2025-08-11 21:47:37 - INFO - __main__ - Original start: 2025-08-08 16:00:00-04:00 (America/New_York)
+2025-08-11 21:47:37 - INFO - __main__ - Original end: 2025-08-11 16:00:00-04:00 (America/New_York)
+2025-08-11 21:47:37 - INFO - __main__ - UTC start: 2025-08-08 04:00:00+00:00
+2025-08-11 21:47:37 - INFO - __main__ - UTC end: 2025-08-12 04:00:00+00:00
+2025-08-11 21:47:37 - INFO - __main__ - Attempting to fetch data for 502 tickers
+2025-08-11 21:47:38 - INFO - __main__ - Received data for 502 symbols
+2025-08-11 21:47:38 - INFO - __main__ - Sample data structure for CHD:
+2025-08-11 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-08-11 21:47:38 - INFO - __main__ - Bar timestamp: 2025-08-08 04:00:00+00:00 (UTC)
+2025-08-11 21:47:38 - INFO - __main__ - Bar timestamp: 2025-08-11 04:00:00+00:00 (UTC)
+2025-08-11 21:47:38 - INFO - __main__ - CHD timestamps - Today: 2025-08-11 04:00:00+00:00, Yesterday: 2025-08-08 04:00:00+00:00
+2025-08-11 21:47:38 - INFO - __main__ - CRWD timestamps - Today: 2025-08-11 04:00:00+00:00, Yesterday: 2025-08-08 04:00:00+00:00
+2025-08-11 21:47:38 - INFO - __main__ - DG timestamps - Today: 2025-08-11 04:00:00+00:00, Yesterday: 2025-08-08 04:00:00+00:00
+2025-08-11 21:47:38 - INFO - __main__ - OKE timestamps - Today: 2025-08-11 04:00:00+00:00, Yesterday: 2025-08-08 04:00:00+00:00
+2025-08-11 21:47:38 - INFO - __main__ - EL timestamps - Today: 2025-08-11 04:00:00+00:00, Yesterday: 2025-08-08 04:00:00+00:00
+2025-08-11 21:47:38 - INFO - __main__ - Successfully processed 502 stocks
+2025-08-11 21:47:38 - INFO - __main__ - Data issues encountered: 0
+2025-08-11 21:47:38 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-08-11 21:47:38 - INFO - __main__ - Analysis for market close on August 11, 2025
+2025-08-11 21:47:38 - INFO - __main__ - Found 502 stocks with price data
+2025-08-11 21:47:38 - INFO - __main__ - Found Wikipedia URL for TKO: https://en.wikipedia.org/wiki/TKO_Group_Holdings
+2025-08-11 21:47:41 - INFO - __main__ - Found Wikipedia URL for INTU: https://en.wikipedia.org/wiki/Intuit
+2025-08-11 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-08-11 21:47:43 - INFO - __main__ - Analyzing TKO Group Holdings (TKO)
+2025-08-11 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-11 21:47:43 - INFO - __main__ - Searching for articles about TKO
+2025-08-11 21:47:43 - INFO - __main__ - Searching for news about TKO Group Holdings
+2025-08-11 21:47:43 - INFO - __main__ - Found 6 recent search results for TKO Group Holdings
+2025-08-11 21:47:43 - INFO - __main__ - Found 6 URLs to try for TKO
+2025-08-11 21:47:43 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/paramount-ufc-deal-tko-stock-price-eef9a8bc
+2025-08-11 21:47:43 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-11 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/paramount-tko-announce-historic-ufc-120000384.html
+2025-08-11 21:47:43 - INFO - __main__ - Successfully extracted article content (6153 chars)
+2025-08-11 21:47:43 - INFO - __main__ - Fetching content from: https://www.reuters.com/sustainability/society-equity/paramount-secures-ufc-rights-us-77-billion-deal-2025-08-11/
+2025-08-11 21:47:44 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-11 21:47:44 - INFO - __main__ - Fetching content from: https://www.ufc.com/news/paramount-and-tko-announce-historic-ufc-media-rights-agreement
+2025-08-11 21:47:44 - INFO - __main__ - Successfully extracted article content (118 chars)
+2025-08-11 21:47:44 - INFO - __main__ - Fetching content from: https://www.foxbusiness.com/sports/ufc-ditch-pay-per-view-model-part-7-7b-media-rights-deal-paramount
+2025-08-11 21:47:44 - INFO - __main__ - Successfully extracted article content (2903 chars)
+2025-08-11 21:47:44 - INFO - __main__ - Fetching content from: https://www.latimes.com/entertainment-arts/business/story/2025-08-11/paramount-lands-media-rights-for-ufc-events
+2025-08-11 21:47:44 - INFO - __main__ - Successfully extracted article content (5195 chars)
+2025-08-11 21:47:44 - INFO - __main__ - Found total of 3 valid articles for TKO
+2025-08-11 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:48 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-11 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-08-11 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-08-11 21:47:52 - INFO - __main__ - Analyzing Intuit (INTU)
+2025-08-11 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-11 21:47:52 - INFO - __main__ - Searching for articles about INTU
+2025-08-11 21:47:52 - INFO - __main__ - Searching for news about Intuit
+2025-08-11 21:47:52 - INFO - __main__ - Found 6 recent search results for Intuit
+2025-08-11 21:47:52 - INFO - __main__ - Found 6 URLs to try for INTU
+2025-08-11 21:47:52 - INFO - __main__ - Fetching content from: https://www.linkedin.com/jobs/view/business-analyst-tolling-industry-at-emovis-4283402114
+2025-08-11 21:47:53 - INFO - __main__ - Successfully extracted article content (8875 chars)
+2025-08-11 21:47:53 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-amd-ai-chip/
+2025-08-11 21:47:53 - INFO - __main__ - Successfully extracted article content (382 chars)
+2025-08-11 21:47:53 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/wall-street-today-dow-nasdaq-s-p-500-open-flat-as-investors-focus-on-tariff-deadline-on-china-nvidia-down-13-11754920668725.html
+2025-08-11 21:47:53 - INFO - __main__ - Successfully extracted article content (3835 chars)
+2025-08-11 21:47:53 - INFO - __main__ - Found total of 2 valid articles for INTU
+2025-08-11 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:55 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-08-11 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-11 21:47:59 - INFO - __main__ - Bottom performer analysis complete
+2025-08-11 21:47:59 - INFO - __main__ - Saving results to JSON...
+2025-08-11 21:47:59 - INFO - __main__ - Analysis complete and saved to market_analysis.json
