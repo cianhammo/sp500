@@ -1,0 +1,73 @@
+2025-08-12 21:48:05 - INFO - __main__ - Starting SP500 analysis script
+2025-08-12 21:48:05 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-12 21:48:06 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-12 21:48:06 - INFO - __main__ - Runtime timezone: UTC
+2025-08-12 21:48:06 - INFO - __main__ - Original start: 2025-08-11 16:00:00-04:00 (America/New_York)
+2025-08-12 21:48:06 - INFO - __main__ - Original end: 2025-08-12 16:00:00-04:00 (America/New_York)
+2025-08-12 21:48:06 - INFO - __main__ - UTC start: 2025-08-11 04:00:00+00:00
+2025-08-12 21:48:06 - INFO - __main__ - UTC end: 2025-08-13 04:00:00+00:00
+2025-08-12 21:48:06 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-12 21:48:06 - INFO - __main__ - Received data for 503 symbols
+2025-08-12 21:48:06 - INFO - __main__ - Sample data structure for CAH:
+2025-08-12 21:48:06 - INFO - __main__ - Number of bars: 2
+2025-08-12 21:48:06 - INFO - __main__ - Bar timestamp: 2025-08-11 04:00:00+00:00 (UTC)
+2025-08-12 21:48:06 - INFO - __main__ - Bar timestamp: 2025-08-12 04:00:00+00:00 (UTC)
+2025-08-12 21:48:06 - INFO - __main__ - CAH timestamps - Today: 2025-08-12 04:00:00+00:00, Yesterday: 2025-08-11 04:00:00+00:00
+2025-08-12 21:48:06 - INFO - __main__ - KR timestamps - Today: 2025-08-12 04:00:00+00:00, Yesterday: 2025-08-11 04:00:00+00:00
+2025-08-12 21:48:06 - INFO - __main__ - SPG timestamps - Today: 2025-08-12 04:00:00+00:00, Yesterday: 2025-08-11 04:00:00+00:00
+2025-08-12 21:48:06 - INFO - __main__ - WM timestamps - Today: 2025-08-12 04:00:00+00:00, Yesterday: 2025-08-11 04:00:00+00:00
+2025-08-12 21:48:06 - INFO - __main__ - BLK timestamps - Today: 2025-08-12 04:00:00+00:00, Yesterday: 2025-08-11 04:00:00+00:00
+2025-08-12 21:48:07 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-12 21:48:07 - INFO - __main__ - Data issues encountered: 0
+2025-08-12 21:48:07 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-12 21:48:07 - INFO - __main__ - Analysis for market close on August 12, 2025
+2025-08-12 21:48:07 - INFO - __main__ - Found 503 stocks with price data
+2025-08-12 21:48:07 - INFO - __main__ - Found Wikipedia URL for UAL: https://en.wikipedia.org/wiki/United_Airlines
+2025-08-12 21:48:09 - INFO - __main__ - Found Wikipedia URL for CAH: https://en.wikipedia.org/wiki/Cardinal_Health
+2025-08-12 21:48:11 - INFO - __main__ - Analyzing top performer...
+2025-08-12 21:48:11 - INFO - __main__ - Analyzing United Airlines Holdings (UAL)
+2025-08-12 21:48:11 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-12 21:48:12 - INFO - __main__ - Searching for articles about UAL
+2025-08-12 21:48:12 - INFO - __main__ - Searching for news about United Airlines Holdings
+2025-08-12 21:48:12 - INFO - __main__ - Found 6 recent search results for United Airlines Holdings
+2025-08-12 21:48:12 - INFO - __main__ - Found 6 URLs to try for UAL
+2025-08-12 21:48:12 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/united-and-delta-are-s-p-500s-top-stocks-today-thank-the-inflation-report-def423eb
+2025-08-12 21:48:12 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-12 21:48:12 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/bc-most-active-stocks-143020873.html
+2025-08-12 21:48:13 - INFO - __main__ - Successfully extracted article content (5537 chars)
+2025-08-12 21:48:13 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/those-invested-united-airlines-holdings-182517608.html
+2025-08-12 21:48:13 - INFO - __main__ - Successfully extracted article content (3459 chars)
+2025-08-12 21:48:13 - INFO - __main__ - Found total of 2 valid articles for UAL
+2025-08-12 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:16 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-08-12 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:19 - INFO - __main__ - Top performer analysis complete
+2025-08-12 21:48:19 - INFO - __main__ - Analyzing bottom performer...
+2025-08-12 21:48:19 - INFO - __main__ - Analyzing Cardinal Health (CAH)
+2025-08-12 21:48:20 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-12 21:48:20 - INFO - __main__ - Searching for articles about CAH
+2025-08-12 21:48:20 - INFO - __main__ - Searching for news about Cardinal Health
+2025-08-12 21:48:20 - INFO - __main__ - Found 6 recent search results for Cardinal Health
+2025-08-12 21:48:20 - INFO - __main__ - Found 6 URLs to try for CAH
+2025-08-12 21:48:20 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/cardinal-health-earnings-stock-price-768e4cc3
+2025-08-12 21:48:20 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-12 21:48:20 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/retail/cardinal-health-posts-higher-profit-enters-1-9-billion-solaris-health-buy-d4f39bf8?gaa_at=eafs&gaa_n=ASWzDAg7DursWmNvIjd5Z5Z77swcf81ZtGqDqknPC6WNJbLU6ygyfA39zOWy&gaa_ts=689bb95f&gaa_sig=SSjgVCbLNWVYiCWOA-HIdLp0GLghgpDuJVO9GXrc2XdRxKXYb-W2zdZso0QxOJLxNn8OwB79N5KVuDqr__xI9A%3D%3D
+2025-08-12 21:48:20 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-12 21:48:20 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/gildan-hanesbrands-cardinal-health-archer-133846096.html
+2025-08-12 21:48:21 - INFO - __main__ - Successfully extracted article content (1958 chars)
+2025-08-12 21:48:21 - INFO - __main__ - Fetching content from: https://newsroom.cardinalhealth.com/2025-08-12-Cardinal-Health-announces-the-addition-of-Solaris-Health,-the-countrys-leading-urology-MSO,-to-The-Specialty-Alliance
+2025-08-12 21:48:21 - INFO - __main__ - Successfully extracted article content (9061 chars)
+2025-08-12 21:48:21 - INFO - __main__ - Fetching content from: https://www.reuters.com/legal/transactional/cardinal-health-buy-solaris-health-19-billion-posts-weak-results-2025-08-12/
+2025-08-12 21:48:21 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-12 21:48:21 - INFO - __main__ - Fetching content from: https://newsroom.cardinalhealth.com/2025-08-12-Cardinal-Health-Reports-Fourth-Quarter-and-Fiscal-Year-2025-Results-and-Raises-Fiscal-Year-2026-Guidance
+2025-08-12 21:48:21 - INFO - __main__ - Successfully extracted article content (42985 chars)
+2025-08-12 21:48:21 - INFO - __main__ - Found total of 3 valid articles for CAH
+2025-08-12 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:25 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-12 21:48:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-12 21:48:29 - INFO - __main__ - Bottom performer analysis complete
+2025-08-12 21:48:29 - INFO - __main__ - Saving results to JSON...
+2025-08-12 21:48:29 - INFO - __main__ - Analysis complete and saved to market_analysis.json
