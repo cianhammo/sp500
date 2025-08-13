@@ -1,0 +1,69 @@
+2025-08-13 21:48:09 - INFO - __main__ - Starting SP500 analysis script
+2025-08-13 21:48:09 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-13 21:48:09 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-13 21:48:09 - INFO - __main__ - Runtime timezone: UTC
+2025-08-13 21:48:09 - INFO - __main__ - Original start: 2025-08-12 16:00:00-04:00 (America/New_York)
+2025-08-13 21:48:09 - INFO - __main__ - Original end: 2025-08-13 16:00:00-04:00 (America/New_York)
+2025-08-13 21:48:09 - INFO - __main__ - UTC start: 2025-08-12 04:00:00+00:00
+2025-08-13 21:48:09 - INFO - __main__ - UTC end: 2025-08-14 04:00:00+00:00
+2025-08-13 21:48:09 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-13 21:48:10 - INFO - __main__ - Received data for 503 symbols
+2025-08-13 21:48:10 - INFO - __main__ - Sample data structure for CME:
+2025-08-13 21:48:10 - INFO - __main__ - Number of bars: 2
+2025-08-13 21:48:10 - INFO - __main__ - Bar timestamp: 2025-08-12 04:00:00+00:00 (UTC)
+2025-08-13 21:48:10 - INFO - __main__ - Bar timestamp: 2025-08-13 04:00:00+00:00 (UTC)
+2025-08-13 21:48:10 - INFO - __main__ - CME timestamps - Today: 2025-08-13 04:00:00+00:00, Yesterday: 2025-08-12 04:00:00+00:00
+2025-08-13 21:48:10 - INFO - __main__ - WBA timestamps - Today: 2025-08-13 04:00:00+00:00, Yesterday: 2025-08-12 04:00:00+00:00
+2025-08-13 21:48:10 - INFO - __main__ - LOW timestamps - Today: 2025-08-13 04:00:00+00:00, Yesterday: 2025-08-12 04:00:00+00:00
+2025-08-13 21:48:10 - INFO - __main__ - L timestamps - Today: 2025-08-13 04:00:00+00:00, Yesterday: 2025-08-12 04:00:00+00:00
+2025-08-13 21:48:10 - INFO - __main__ - WEC timestamps - Today: 2025-08-13 04:00:00+00:00, Yesterday: 2025-08-12 04:00:00+00:00
+2025-08-13 21:48:10 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-13 21:48:10 - INFO - __main__ - Data issues encountered: 0
+2025-08-13 21:48:10 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-13 21:48:10 - INFO - __main__ - Analysis for market close on August 13, 2025
+2025-08-13 21:48:10 - INFO - __main__ - Found 503 stocks with price data
+2025-08-13 21:48:11 - INFO - __main__ - Found Wikipedia URL for PSKY: https://en.wikipedia.org/wiki/Merger_of_Skydance_Media_and_Paramount_Global
+2025-08-13 21:48:13 - INFO - __main__ - Found Wikipedia URL for JBL: https://en.wikipedia.org/wiki/Jabil
+2025-08-13 21:48:15 - INFO - __main__ - Analyzing top performer...
+2025-08-13 21:48:15 - INFO - __main__ - Analyzing Paramount Skydance Corporation (PSKY)
+2025-08-13 21:48:15 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-13 21:48:15 - WARNING - __main__ - Insufficient return data for PSKY
+2025-08-13 21:48:15 - WARNING - __main__ - No returns data available for PSKY
+2025-08-13 21:48:15 - INFO - __main__ - Searching for articles about PSKY
+2025-08-13 21:48:15 - INFO - __main__ - Searching for news about Paramount Skydance Corporation
+2025-08-13 21:48:15 - INFO - __main__ - Found 6 recent search results for Paramount Skydance Corporation
+2025-08-13 21:48:15 - INFO - __main__ - Found 6 URLs to try for PSKY
+2025-08-13 21:48:15 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/PSKY/
+2025-08-13 21:48:16 - INFO - __main__ - Successfully extracted article content (1864 chars)
+2025-08-13 21:48:16 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-pops-sp-500-and-nasdaq-waver-as-fed-rate-cut-bets-surge-133512187.html
+2025-08-13 21:48:17 - INFO - __main__ - Successfully extracted article content (1148 chars)
+2025-08-13 21:48:17 - INFO - __main__ - Fetching content from: https://www.paramountplus.com/shows/landman/news/1010930/everything-you-need-to-know-about-landman-season-2/
+2025-08-13 21:48:17 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-13 21:48:17 - WARNING - __main__ - Article content too short (28 chars)
+2025-08-13 21:48:17 - INFO - __main__ - Found total of 2 valid articles for PSKY
+2025-08-13 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-13 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-13 21:48:19 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-08-13 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-13 21:48:23 - INFO - __main__ - Top performer analysis complete
+2025-08-13 21:48:23 - INFO - __main__ - Analyzing bottom performer...
+2025-08-13 21:48:23 - INFO - __main__ - Analyzing Jabil (JBL)
+2025-08-13 21:48:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-13 21:48:24 - INFO - __main__ - Searching for articles about JBL
+2025-08-13 21:48:24 - INFO - __main__ - Searching for news about Jabil
+2025-08-13 21:48:24 - INFO - __main__ - Found 6 recent search results for Jabil
+2025-08-13 21:48:24 - INFO - __main__ - Found 6 URLs to try for JBL
+2025-08-13 21:48:24 - INFO - __main__ - Fetching content from: https://www.zacks.com/stock/news/2707789/apld-vs-vrt-which-digital-infrastructure-stock-has-more-upside-now
+2025-08-13 21:48:24 - INFO - __main__ - Successfully extracted article content (6905 chars)
+2025-08-13 21:48:24 - INFO - __main__ - Fetching content from: https://www.trefis.com/data/companies/JBL/no-login-required/oDbkp8Jp/Better-Bet-Than-JBL-Stock-universe-Peers
+2025-08-13 21:48:24 - INFO - __main__ - Successfully extracted article content (377 chars)
+2025-08-13 21:48:24 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jabil-skyrockets-119-6-buy-155500655.html
+2025-08-13 21:48:25 - INFO - __main__ - Successfully extracted article content (5464 chars)
+2025-08-13 21:48:25 - INFO - __main__ - Found total of 2 valid articles for JBL
+2025-08-13 21:48:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-13 21:48:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-13 21:48:27 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-08-13 21:48:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-13 21:48:30 - INFO - __main__ - Bottom performer analysis complete
+2025-08-13 21:48:30 - INFO - __main__ - Saving results to JSON...
+2025-08-13 21:48:31 - INFO - __main__ - Analysis complete and saved to market_analysis.json
