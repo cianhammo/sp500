@@ -1,0 +1,68 @@
+2025-08-14 21:47:45 - INFO - __main__ - Starting SP500 analysis script
+2025-08-14 21:47:45 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-14 21:47:46 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-14 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-08-14 21:47:46 - INFO - __main__ - Original start: 2025-08-13 16:00:00-04:00 (America/New_York)
+2025-08-14 21:47:46 - INFO - __main__ - Original end: 2025-08-14 16:00:00-04:00 (America/New_York)
+2025-08-14 21:47:46 - INFO - __main__ - UTC start: 2025-08-13 04:00:00+00:00
+2025-08-14 21:47:46 - INFO - __main__ - UTC end: 2025-08-15 04:00:00+00:00
+2025-08-14 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-14 21:47:47 - INFO - __main__ - Received data for 503 symbols
+2025-08-14 21:47:47 - INFO - __main__ - Sample data structure for CNP:
+2025-08-14 21:47:47 - INFO - __main__ - Number of bars: 2
+2025-08-14 21:47:47 - INFO - __main__ - Bar timestamp: 2025-08-13 04:00:00+00:00 (UTC)
+2025-08-14 21:47:47 - INFO - __main__ - Bar timestamp: 2025-08-14 04:00:00+00:00 (UTC)
+2025-08-14 21:47:47 - INFO - __main__ - CNP timestamps - Today: 2025-08-14 04:00:00+00:00, Yesterday: 2025-08-13 04:00:00+00:00
+2025-08-14 21:47:47 - INFO - __main__ - CRM timestamps - Today: 2025-08-14 04:00:00+00:00, Yesterday: 2025-08-13 04:00:00+00:00
+2025-08-14 21:47:47 - INFO - __main__ - HSY timestamps - Today: 2025-08-14 04:00:00+00:00, Yesterday: 2025-08-13 04:00:00+00:00
+2025-08-14 21:47:47 - INFO - __main__ - MS timestamps - Today: 2025-08-14 04:00:00+00:00, Yesterday: 2025-08-13 04:00:00+00:00
+2025-08-14 21:47:47 - INFO - __main__ - TPL timestamps - Today: 2025-08-14 04:00:00+00:00, Yesterday: 2025-08-13 04:00:00+00:00
+2025-08-14 21:47:47 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-14 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-08-14 21:47:47 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-14 21:47:47 - INFO - __main__ - Analysis for market close on August 14, 2025
+2025-08-14 21:47:47 - INFO - __main__ - Found 503 stocks with price data
+2025-08-14 21:47:48 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-08-14 21:47:50 - INFO - __main__ - Found Wikipedia URL for TPR: https://en.wikipedia.org/wiki/Tapestry,_Inc.
+2025-08-14 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-08-14 21:47:52 - INFO - __main__ - Analyzing Intel (INTC)
+2025-08-14 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-14 21:47:53 - INFO - __main__ - Searching for articles about INTC
+2025-08-14 21:47:53 - INFO - __main__ - Searching for news about Intel
+2025-08-14 21:47:53 - INFO - __main__ - Found 6 recent search results for Intel
+2025-08-14 21:47:53 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-08-14 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/intel-stock-jumps-report-trump-200947477.html
+2025-08-14 21:47:54 - INFO - __main__ - Successfully extracted article content (3322 chars)
+2025-08-14 21:47:54 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/14/intel-stock-climbs-trump-admin-stake.html
+2025-08-14 21:47:54 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-14 21:47:54 - INFO - __main__ - Successfully extracted article content (2678 chars)
+2025-08-14 21:47:54 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/30-higher-gaming-performance-intel-stock-nasdaqintc-gains-with-new-lunar-lake-findings
+2025-08-14 21:47:56 - INFO - __main__ - Successfully extracted article content (2627 chars)
+2025-08-14 21:47:56 - INFO - __main__ - Found total of 3 valid articles for INTC
+2025-08-14 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:47:59 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-14 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:48:03 - INFO - __main__ - Top performer analysis complete
+2025-08-14 21:48:03 - INFO - __main__ - Analyzing bottom performer...
+2025-08-14 21:48:03 - INFO - __main__ - Analyzing Tapestry, Inc. (TPR)
+2025-08-14 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-14 21:48:03 - INFO - __main__ - Searching for articles about TPR
+2025-08-14 21:48:03 - INFO - __main__ - Searching for news about Tapestry, Inc.
+2025-08-14 21:48:03 - INFO - __main__ - Found 6 recent search results for Tapestry, Inc.
+2025-08-14 21:48:03 - INFO - __main__ - Found 6 URLs to try for TPR
+2025-08-14 21:48:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/tapestry-stock-sinks-why-kate-183000041.html
+2025-08-14 21:48:04 - INFO - __main__ - Successfully extracted article content (2431 chars)
+2025-08-14 21:48:04 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/millennial-and-gen-z-customers-are-flocking-to-coach-so-why-is-tapestrys-stock-tanking-80679a91
+2025-08-14 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-14 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/tapestry-birkenstock-coherent-trending-tickers-134115383.html
+2025-08-14 21:48:06 - INFO - __main__ - Successfully extracted article content (1893 chars)
+2025-08-14 21:48:06 - INFO - __main__ - Found total of 2 valid articles for TPR
+2025-08-14 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:48:08 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-14 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-14 21:48:12 - INFO - __main__ - Bottom performer analysis complete
+2025-08-14 21:48:12 - INFO - __main__ - Saving results to JSON...
+2025-08-14 21:48:12 - INFO - __main__ - Analysis complete and saved to market_analysis.json
