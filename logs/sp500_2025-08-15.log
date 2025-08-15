@@ -1,0 +1,67 @@
+2025-08-15 21:47:29 - INFO - __main__ - Starting SP500 analysis script
+2025-08-15 21:47:30 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-15 21:47:30 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-15 21:47:30 - INFO - __main__ - Runtime timezone: UTC
+2025-08-15 21:47:30 - INFO - __main__ - Original start: 2025-08-14 16:00:00-04:00 (America/New_York)
+2025-08-15 21:47:30 - INFO - __main__ - Original end: 2025-08-15 16:00:00-04:00 (America/New_York)
+2025-08-15 21:47:30 - INFO - __main__ - UTC start: 2025-08-14 04:00:00+00:00
+2025-08-15 21:47:30 - INFO - __main__ - UTC end: 2025-08-16 04:00:00+00:00
+2025-08-15 21:47:30 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-15 21:47:34 - INFO - __main__ - Received data for 503 symbols
+2025-08-15 21:47:34 - INFO - __main__ - Sample data structure for AOS:
+2025-08-15 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-08-15 21:47:34 - INFO - __main__ - Bar timestamp: 2025-08-14 04:00:00+00:00 (UTC)
+2025-08-15 21:47:34 - INFO - __main__ - Bar timestamp: 2025-08-15 04:00:00+00:00 (UTC)
+2025-08-15 21:47:34 - INFO - __main__ - AOS timestamps - Today: 2025-08-15 04:00:00+00:00, Yesterday: 2025-08-14 04:00:00+00:00
+2025-08-15 21:47:34 - INFO - __main__ - FTNT timestamps - Today: 2025-08-15 04:00:00+00:00, Yesterday: 2025-08-14 04:00:00+00:00
+2025-08-15 21:47:34 - INFO - __main__ - MGM timestamps - Today: 2025-08-15 04:00:00+00:00, Yesterday: 2025-08-14 04:00:00+00:00
+2025-08-15 21:47:34 - INFO - __main__ - SJM timestamps - Today: 2025-08-15 04:00:00+00:00, Yesterday: 2025-08-14 04:00:00+00:00
+2025-08-15 21:47:34 - INFO - __main__ - ACN timestamps - Today: 2025-08-15 04:00:00+00:00, Yesterday: 2025-08-14 04:00:00+00:00
+2025-08-15 21:47:34 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-15 21:47:34 - INFO - __main__ - Data issues encountered: 0
+2025-08-15 21:47:34 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-15 21:47:34 - INFO - __main__ - Analysis for market close on August 15, 2025
+2025-08-15 21:47:34 - INFO - __main__ - Found 503 stocks with price data
+2025-08-15 21:47:34 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-08-15 21:47:36 - INFO - __main__ - Found Wikipedia URL for AMAT: https://en.wikipedia.org/wiki/Applied_Materials
+2025-08-15 21:47:38 - INFO - __main__ - Analyzing top performer...
+2025-08-15 21:47:38 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-08-15 21:47:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-15 21:47:39 - INFO - __main__ - Searching for articles about UNH
+2025-08-15 21:47:39 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-08-15 21:47:39 - INFO - __main__ - Found 6 recent search results for UnitedHealth Group
+2025-08-15 21:47:39 - INFO - __main__ - Found 6 URLs to try for UNH
+2025-08-15 21:47:39 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/healthcare-pharmaceuticals/unitedhealth-surges-after-warren-buffett-bets-recovery-2025-08-15/
+2025-08-15 21:47:39 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-15 21:47:39 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/15/unitedhealth-shares-soar-after-warren-buffetts-new-stake-provides-a-vote-of-confidence.html
+2025-08-15 21:47:40 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-15 21:47:40 - INFO - __main__ - Successfully extracted article content (1169 chars)
+2025-08-15 21:47:40 - INFO - __main__ - Fetching content from: https://www.investopedia.com/unitedhealth-others-see-buffett-bounce-as-berkshire-hathaway-boosts-investments-11791686
+2025-08-15 21:47:40 - INFO - __main__ - Successfully extracted article content (1563 chars)
+2025-08-15 21:47:40 - INFO - __main__ - Found total of 2 valid articles for UNH
+2025-08-15 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-15 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-15 21:47:42 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-15 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-15 21:47:46 - INFO - __main__ - Top performer analysis complete
+2025-08-15 21:47:46 - INFO - __main__ - Analyzing bottom performer...
+2025-08-15 21:47:46 - INFO - __main__ - Analyzing Applied Materials (AMAT)
+2025-08-15 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-15 21:47:46 - INFO - __main__ - Searching for articles about AMAT
+2025-08-15 21:47:46 - INFO - __main__ - Searching for news about Applied Materials
+2025-08-15 21:47:47 - INFO - __main__ - Found 6 recent search results for Applied Materials
+2025-08-15 21:47:47 - INFO - __main__ - Found 6 URLs to try for AMAT
+2025-08-15 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/applied-materials-tumbles-china-woes-103649551.html
+2025-08-15 21:47:47 - INFO - __main__ - Successfully extracted article content (3366 chars)
+2025-08-15 21:47:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/applied-materials-earnings-stock-price-7059be63
+2025-08-15 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-15 21:47:47 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/applied-materials-stock-amat-fiscal-q3-2025-earnings/
+2025-08-15 21:47:48 - INFO - __main__ - Successfully extracted article content (3287 chars)
+2025-08-15 21:47:48 - INFO - __main__ - Found total of 2 valid articles for AMAT
+2025-08-15 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-15 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-15 21:47:50 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-15 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-15 21:47:54 - INFO - __main__ - Bottom performer analysis complete
+2025-08-15 21:47:54 - INFO - __main__ - Saving results to JSON...
+2025-08-15 21:47:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
