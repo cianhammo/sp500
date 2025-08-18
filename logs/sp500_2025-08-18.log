@@ -1,0 +1,66 @@
+2025-08-18 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-08-18 21:47:37 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-18 21:47:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-18 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-08-18 21:47:38 - INFO - __main__ - Original start: 2025-08-15 16:00:00-04:00 (America/New_York)
+2025-08-18 21:47:38 - INFO - __main__ - Original end: 2025-08-18 16:00:00-04:00 (America/New_York)
+2025-08-18 21:47:38 - INFO - __main__ - UTC start: 2025-08-15 04:00:00+00:00
+2025-08-18 21:47:38 - INFO - __main__ - UTC end: 2025-08-19 04:00:00+00:00
+2025-08-18 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-18 21:47:39 - INFO - __main__ - Received data for 503 symbols
+2025-08-18 21:47:39 - INFO - __main__ - Sample data structure for UHS:
+2025-08-18 21:47:39 - INFO - __main__ - Number of bars: 2
+2025-08-18 21:47:39 - INFO - __main__ - Bar timestamp: 2025-08-15 04:00:00+00:00 (UTC)
+2025-08-18 21:47:39 - INFO - __main__ - Bar timestamp: 2025-08-18 04:00:00+00:00 (UTC)
+2025-08-18 21:47:39 - INFO - __main__ - UHS timestamps - Today: 2025-08-18 04:00:00+00:00, Yesterday: 2025-08-15 04:00:00+00:00
+2025-08-18 21:47:39 - INFO - __main__ - BLDR timestamps - Today: 2025-08-18 04:00:00+00:00, Yesterday: 2025-08-15 04:00:00+00:00
+2025-08-18 21:47:39 - INFO - __main__ - CLX timestamps - Today: 2025-08-18 04:00:00+00:00, Yesterday: 2025-08-15 04:00:00+00:00
+2025-08-18 21:47:39 - INFO - __main__ - HWM timestamps - Today: 2025-08-18 04:00:00+00:00, Yesterday: 2025-08-15 04:00:00+00:00
+2025-08-18 21:47:39 - INFO - __main__ - PLD timestamps - Today: 2025-08-18 04:00:00+00:00, Yesterday: 2025-08-15 04:00:00+00:00
+2025-08-18 21:47:39 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-18 21:47:39 - INFO - __main__ - Data issues encountered: 0
+2025-08-18 21:47:39 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-18 21:47:39 - INFO - __main__ - Analysis for market close on August 18, 2025
+2025-08-18 21:47:39 - INFO - __main__ - Found 503 stocks with price data
+2025-08-18 21:47:39 - INFO - __main__ - Found Wikipedia URL for DAY: https://en.wikipedia.org/wiki/Dayforce
+2025-08-18 21:47:42 - INFO - __main__ - Found Wikipedia URL for EQT: https://en.wikipedia.org/wiki/EQT_AB
+2025-08-18 21:47:44 - INFO - __main__ - Analyzing top performer...
+2025-08-18 21:47:44 - INFO - __main__ - Analyzing Dayforce (DAY)
+2025-08-18 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-18 21:47:44 - INFO - __main__ - Searching for articles about DAY
+2025-08-18 21:47:44 - INFO - __main__ - Searching for news about Dayforce
+2025-08-18 21:47:44 - INFO - __main__ - Found 6 recent search results for Dayforce
+2025-08-18 21:47:44 - INFO - __main__ - Found 6 URLs to try for DAY
+2025-08-18 21:47:44 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/dayforce-stock-thoma-bravo-acquisition-talks/
+2025-08-18 21:47:44 - INFO - __main__ - Successfully extracted article content (2976 chars)
+2025-08-18 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/thoma-bravo-said-talks-buy-084445220.html
+2025-08-18 21:47:45 - INFO - __main__ - Successfully extracted article content (3103 chars)
+2025-08-18 21:47:45 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/dayforce-stock-day-takeover-6eeca3cb
+2025-08-18 21:47:45 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-18 21:47:45 - INFO - __main__ - Found total of 2 valid articles for DAY
+2025-08-18 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 21:47:47 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-18 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 21:47:50 - INFO - __main__ - Top performer analysis complete
+2025-08-18 21:47:50 - INFO - __main__ - Analyzing bottom performer...
+2025-08-18 21:47:50 - INFO - __main__ - Analyzing EQT Corporation (EQT)
+2025-08-18 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-18 21:47:50 - INFO - __main__ - Searching for articles about EQT
+2025-08-18 21:47:50 - INFO - __main__ - Searching for news about EQT Corporation
+2025-08-18 21:47:50 - INFO - __main__ - Found 6 recent search results for EQT Corporation
+2025-08-18 21:47:50 - INFO - __main__ - Found 6 URLs to try for EQT
+2025-08-18 21:47:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/company-news-aug-18-2025-132100466.html
+2025-08-18 21:47:51 - WARNING - __main__ - Article content too short (0 chars)
+2025-08-18 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-morgan-stanley-thinks-apple-151843058.html
+2025-08-18 21:47:51 - INFO - __main__ - Successfully extracted article content (2166 chars)
+2025-08-18 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/kartoon-studios-announces-revenue-surge-130000645.html
+2025-08-18 21:47:52 - INFO - __main__ - Successfully extracted article content (11015 chars)
+2025-08-18 21:47:52 - INFO - __main__ - Found total of 2 valid articles for EQT
+2025-08-18 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 21:47:54 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-08-18 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-18 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-08-18 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-08-18 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
