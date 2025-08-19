@@ -279,3 +279,140 @@
 2025-08-19 18:23:58,165 - sec_monitor - INFO - Cumulative stats - Input words: 157056, Output words: 571
 2025-08-19 18:23:58,165 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-08-19 18:23:58,165 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 5800, 'output_words': 63, 'filings_processed': 1}
+2025-08-19 21:11:53,605 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-08-19 21:11:53,605 - sec_monitor - INFO - Loading S&P 500 data...
+2025-08-19 21:11:53,605 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-08-19 21:11:53,606 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-08-19 21:11:53,606 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-08-19 21:11:53,606 - sec_monitor - INFO - Initializing components...
+2025-08-19 21:11:53,606 - sec_monitor - INFO - Initializing components
+2025-08-19 21:11:53,606 - sec_monitor - INFO - SEC fetcher initialized
+2025-08-19 21:11:53,606 - sec_monitor - INFO - Filing analyzer initialized
+2025-08-19 21:11:53,607 - sec_monitor - INFO - Alpaca clients initialized
+2025-08-19 21:11:53,607 - sec_monitor - INFO - All components initialized successfully
+2025-08-19 21:11:53,608 - sec_monitor - INFO - Found JSON file from today
+2025-08-19 21:11:53,608 - sec_monitor - INFO - Found 8 previously processed accessions and 8 filing URLs
+2025-08-19 21:11:53,608 - sec_monitor - INFO - Found 8 accession numbers and 8 URLs from previously processed filings
+2025-08-19 21:11:53,608 - sec_monitor - INFO - Fetching SEC filings...
+2025-08-19 21:12:10,607 - sec_monitor - INFO - No more entries found
+2025-08-19 21:12:10,607 - sec_monitor - INFO - Completed fetching. Found 137 total filings
+2025-08-19 21:12:10,607 - sec_monitor - INFO - Found 6 new interesting filings
+2025-08-19 21:12:10,607 - sec_monitor - INFO - Found 6 new filings to process
+2025-08-19 21:12:10,608 - sec_monitor - INFO - Processing filing 1/6: PFG
+2025-08-19 21:12:41,157 - sec_monitor - INFO - ==================================================
+2025-08-19 21:12:41,157 - sec_monitor - INFO - Processing first chunk
+2025-08-19 21:12:41,157 - sec_monitor - INFO - Timestamp: 2025-08-19 21:12:41
+2025-08-19 21:12:41,271 - sec_monitor - INFO - token percentage = 4%
+2025-08-19 21:12:41,271 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:12:41,271 - sec_monitor - INFO - Timestamp: 2025-08-19 21:12:41
+2025-08-19 21:12:47,933 - sec_monitor - INFO - API call successful
+2025-08-19 21:12:48,935 - sec_monitor - INFO - Processing filing 2/6: WYNN
+2025-08-19 21:13:24,089 - sec_monitor - INFO - ==================================================
+2025-08-19 21:13:24,089 - sec_monitor - INFO - Processing first chunk
+2025-08-19 21:13:24,089 - sec_monitor - INFO - Timestamp: 2025-08-19 21:13:24
+2025-08-19 21:13:24,508 - sec_monitor - INFO - token percentage = 49%
+2025-08-19 21:13:24,508 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:13:24,509 - sec_monitor - INFO - Timestamp: 2025-08-19 21:13:24
+2025-08-19 21:13:46,417 - sec_monitor - INFO - API call successful
+2025-08-19 21:14:16,447 - sec_monitor - INFO - ==================================================
+2025-08-19 21:14:16,448 - sec_monitor - INFO - Processing last chunk
+2025-08-19 21:14:16,448 - sec_monitor - INFO - Timestamp: 2025-08-19 21:14:16
+2025-08-19 21:14:16,510 - sec_monitor - INFO - token percentage = 3%
+2025-08-19 21:14:16,510 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:14:16,511 - sec_monitor - INFO - Timestamp: 2025-08-19 21:14:16
+2025-08-19 21:14:16,631 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-08-19 21:14:16,631 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-08-19 21:14:16,631 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-08-19 21:17:16,718 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-08-19 21:17:16,718 - sec_monitor - INFO - Timestamp: 2025-08-19 21:17:16
+2025-08-19 21:17:20,140 - sec_monitor - INFO - API call successful
+2025-08-19 21:17:20,140 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-08-19 21:17:20,140 - sec_monitor - INFO - Timestamp: 2025-08-19 21:17:20
+2025-08-19 21:17:20,981 - sec_monitor - INFO - Combine API call successful
+2025-08-19 21:17:21,982 - sec_monitor - INFO - Processing filing 3/6: JKHY
+2025-08-19 21:17:54,000 - sec_monitor - INFO - ==================================================
+2025-08-19 21:17:54,000 - sec_monitor - INFO - Processing first chunk
+2025-08-19 21:17:54,000 - sec_monitor - INFO - Timestamp: 2025-08-19 21:17:53
+2025-08-19 21:17:54,186 - sec_monitor - INFO - token percentage = 24%
+2025-08-19 21:17:54,186 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:17:54,186 - sec_monitor - INFO - Timestamp: 2025-08-19 21:17:54
+2025-08-19 21:18:29,446 - sec_monitor - INFO - API call successful
+2025-08-19 21:18:30,447 - sec_monitor - INFO - Processing filing 4/6: EW
+2025-08-19 21:19:00,936 - sec_monitor - INFO - ==================================================
+2025-08-19 21:19:00,936 - sec_monitor - INFO - Processing first chunk
+2025-08-19 21:19:00,936 - sec_monitor - INFO - Timestamp: 2025-08-19 21:19:00
+2025-08-19 21:19:01,027 - sec_monitor - INFO - token percentage = 5%
+2025-08-19 21:19:01,027 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:19:01,028 - sec_monitor - INFO - Timestamp: 2025-08-19 21:19:01
+2025-08-19 21:19:20,666 - sec_monitor - INFO - API call successful
+2025-08-19 21:19:21,668 - sec_monitor - INFO - Processing filing 5/6: NXPI
+2025-08-19 21:19:53,046 - sec_monitor - INFO - ==================================================
+2025-08-19 21:19:53,046 - sec_monitor - INFO - Processing first chunk
+2025-08-19 21:19:53,046 - sec_monitor - INFO - Timestamp: 2025-08-19 21:19:53
+2025-08-19 21:19:53,250 - sec_monitor - INFO - token percentage = 14%
+2025-08-19 21:19:53,250 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:19:53,250 - sec_monitor - INFO - Timestamp: 2025-08-19 21:19:53
+2025-08-19 21:20:13,746 - sec_monitor - INFO - API call successful
+2025-08-19 21:20:14,748 - sec_monitor - INFO - Processing filing 6/6: KEYS
+2025-08-19 21:20:45,398 - sec_monitor - INFO - ==================================================
+2025-08-19 21:20:45,398 - sec_monitor - INFO - Processing first chunk
+2025-08-19 21:20:45,398 - sec_monitor - INFO - Timestamp: 2025-08-19 21:20:45
+2025-08-19 21:20:45,550 - sec_monitor - INFO - token percentage = 4%
+2025-08-19 21:20:45,550 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 21:20:45,550 - sec_monitor - INFO - Timestamp: 2025-08-19 21:20:45
+2025-08-19 21:20:58,325 - sec_monitor - INFO - API call successful
+2025-08-19 21:20:59,327 - sec_monitor - INFO - Fetching supplementary data...
+2025-08-19 21:20:59,852 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-08-19 21:20:59,852 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-08-19 21:20:59,852 - sec_monitor - INFO - Market open: False
+2025-08-19 21:20:59,852 - sec_monitor - INFO - Number of filing times mapped: 6
+2025-08-19 21:20:59,874 - sec_monitor - INFO - Last trading day: 2025-08-19
+2025-08-19 21:20:59,874 - sec_monitor - INFO - Processing ticker: PFG
+2025-08-19 21:21:00,017 - sec_monitor - INFO - Number of bars for PFG: 3
+2025-08-19 21:21:00,018 - sec_monitor - INFO - Last bar close for PFG: 77.7
+2025-08-19 21:21:00,018 - sec_monitor - INFO - Outside market hours price for PFG: 77.7
+2025-08-19 21:21:00,018 - sec_monitor - INFO - Processing ticker: WYNN
+2025-08-19 21:21:00,047 - sec_monitor - INFO - Number of bars for WYNN: 3
+2025-08-19 21:21:00,047 - sec_monitor - INFO - Last bar close for WYNN: 108.07
+2025-08-19 21:21:00,047 - sec_monitor - INFO - Outside market hours price for WYNN: 108.07
+2025-08-19 21:21:00,047 - sec_monitor - INFO - Processing ticker: JKHY
+2025-08-19 21:21:00,074 - sec_monitor - INFO - Number of bars for JKHY: 3
+2025-08-19 21:21:00,074 - sec_monitor - INFO - Last bar close for JKHY: 160.825
+2025-08-19 21:21:00,075 - sec_monitor - INFO - Outside market hours price for JKHY: 160.825
+2025-08-19 21:21:00,075 - sec_monitor - INFO - Processing ticker: EW
+2025-08-19 21:21:00,103 - sec_monitor - INFO - Number of bars for EW: 3
+2025-08-19 21:21:00,103 - sec_monitor - INFO - Last bar close for EW: 78.28
+2025-08-19 21:21:00,103 - sec_monitor - INFO - Outside market hours price for EW: 78.28
+2025-08-19 21:21:00,103 - sec_monitor - INFO - Processing ticker: NXPI
+2025-08-19 21:21:00,133 - sec_monitor - INFO - Number of bars for NXPI: 3
+2025-08-19 21:21:00,133 - sec_monitor - INFO - Last bar close for NXPI: 232.045
+2025-08-19 21:21:00,133 - sec_monitor - INFO - Outside market hours price for NXPI: 232.045
+2025-08-19 21:21:00,133 - sec_monitor - INFO - Processing ticker: KEYS
+2025-08-19 21:21:00,159 - sec_monitor - INFO - Number of bars for KEYS: 3
+2025-08-19 21:21:00,159 - sec_monitor - INFO - Last bar close for KEYS: 164.465
+2025-08-19 21:21:00,159 - sec_monitor - INFO - Outside market hours price for KEYS: 164.465
+2025-08-19 21:21:02,091 - sec_monitor - INFO - Generating final output...
+2025-08-19 21:21:02,092 - sec_monitor - INFO - Successfully merged 6 new filings with existing JSON
+2025-08-19 21:21:02,092 - sec_monitor - INFO - Cumulative stats - Input words: 303902, Output words: 1008
+2025-08-19 21:21:02,092 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-08-19 21:21:02,092 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 146846, 'output_words': 437, 'filings_processed': 6}
