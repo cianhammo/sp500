@@ -1,0 +1,159 @@
+2025-08-19 11:09:41,262 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-08-19 11:09:41,262 - sec_monitor - INFO - Loading S&P 500 data...
+2025-08-19 11:09:41,263 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-08-19 11:09:41,263 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-08-19 11:09:41,263 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-08-19 11:09:41,263 - sec_monitor - INFO - Initializing components...
+2025-08-19 11:09:41,263 - sec_monitor - INFO - Initializing components
+2025-08-19 11:09:41,263 - sec_monitor - INFO - SEC fetcher initialized
+2025-08-19 11:09:41,264 - sec_monitor - INFO - Filing analyzer initialized
+2025-08-19 11:09:41,264 - sec_monitor - INFO - Alpaca clients initialized
+2025-08-19 11:09:41,264 - sec_monitor - INFO - All components initialized successfully
+2025-08-19 11:09:41,265 - sec_monitor - INFO - Found old JSON file, archiving
+2025-08-19 11:09:41,265 - sec_monitor - INFO - Starting new filing collection for today
+2025-08-19 11:09:41,265 - sec_monitor - INFO - Fetching SEC filings...
+2025-08-19 11:09:57,312 - sec_monitor - INFO - No more entries found
+2025-08-19 11:09:57,313 - sec_monitor - INFO - Completed fetching. Found 108 total filings
+2025-08-19 11:09:57,313 - sec_monitor - INFO - Found 6 new interesting filings
+2025-08-19 11:09:57,313 - sec_monitor - INFO - Found 6 new filings to process
+2025-08-19 11:09:57,313 - sec_monitor - INFO - Processing filing 1/6: MDT
+2025-08-19 11:10:28,709 - sec_monitor - INFO - ==================================================
+2025-08-19 11:10:28,710 - sec_monitor - INFO - Processing first chunk
+2025-08-19 11:10:28,710 - sec_monitor - INFO - Timestamp: 2025-08-19 11:10:28
+2025-08-19 11:10:28,897 - sec_monitor - INFO - token percentage = 11%
+2025-08-19 11:10:28,897 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:10:28,897 - sec_monitor - INFO - Timestamp: 2025-08-19 11:10:28
+2025-08-19 11:10:34,757 - sec_monitor - INFO - API call successful
+2025-08-19 11:10:35,759 - sec_monitor - INFO - Processing filing 2/6: HD
+2025-08-19 11:11:11,285 - sec_monitor - INFO - ==================================================
+2025-08-19 11:11:11,286 - sec_monitor - INFO - Processing first chunk
+2025-08-19 11:11:11,286 - sec_monitor - INFO - Timestamp: 2025-08-19 11:11:11
+2025-08-19 11:11:11,664 - sec_monitor - INFO - token percentage = 49%
+2025-08-19 11:11:11,665 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:11:11,665 - sec_monitor - INFO - Timestamp: 2025-08-19 11:11:11
+2025-08-19 11:11:11,847 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-08-19 11:11:11,847 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-08-19 11:11:11,848 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-08-19 11:14:11,895 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-08-19 11:14:11,895 - sec_monitor - INFO - Timestamp: 2025-08-19 11:14:11
+2025-08-19 11:14:53,681 - sec_monitor - INFO - API call successful
+2025-08-19 11:15:23,711 - sec_monitor - INFO - ==================================================
+2025-08-19 11:15:23,712 - sec_monitor - INFO - Processing last chunk
+2025-08-19 11:15:23,712 - sec_monitor - INFO - Timestamp: 2025-08-19 11:15:23
+2025-08-19 11:15:23,983 - sec_monitor - INFO - token percentage = 32%
+2025-08-19 11:15:23,983 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:15:23,983 - sec_monitor - INFO - Timestamp: 2025-08-19 11:15:23
+2025-08-19 11:15:24,152 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-08-19 11:15:24,153 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-08-19 11:15:24,153 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-08-19 11:18:24,243 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-08-19 11:18:24,243 - sec_monitor - INFO - Timestamp: 2025-08-19 11:18:24
+2025-08-19 11:18:35,572 - sec_monitor - INFO - API call successful
+2025-08-19 11:18:35,572 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-08-19 11:18:35,572 - sec_monitor - INFO - Timestamp: 2025-08-19 11:18:35
+2025-08-19 11:18:36,600 - sec_monitor - INFO - Combine API call successful
+2025-08-19 11:18:37,601 - sec_monitor - INFO - Processing filing 3/6: AIG
+2025-08-19 11:19:08,150 - sec_monitor - INFO - ==================================================
+2025-08-19 11:19:08,151 - sec_monitor - INFO - Processing first chunk
+2025-08-19 11:19:08,151 - sec_monitor - INFO - Timestamp: 2025-08-19 11:19:08
+2025-08-19 11:19:08,256 - sec_monitor - INFO - token percentage = 2%
+2025-08-19 11:19:08,256 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:19:08,256 - sec_monitor - INFO - Timestamp: 2025-08-19 11:19:08
+2025-08-19 11:19:10,719 - sec_monitor - INFO - API call successful
+2025-08-19 11:19:11,721 - sec_monitor - INFO - Processing filing 4/6: HSY
+2025-08-19 11:19:43,686 - sec_monitor - INFO - ==================================================
+2025-08-19 11:19:43,686 - sec_monitor - INFO - Processing first chunk
+2025-08-19 11:19:43,686 - sec_monitor - INFO - Timestamp: 2025-08-19 11:19:43
+2025-08-19 11:19:43,951 - sec_monitor - INFO - token percentage = 25%
+2025-08-19 11:19:43,951 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:19:43,952 - sec_monitor - INFO - Timestamp: 2025-08-19 11:19:43
+2025-08-19 11:20:04,293 - sec_monitor - INFO - API call successful
+2025-08-19 11:20:05,295 - sec_monitor - INFO - Processing filing 5/6: SJM
+2025-08-19 11:20:35,749 - sec_monitor - INFO - ==================================================
+2025-08-19 11:20:35,750 - sec_monitor - INFO - Processing first chunk
+2025-08-19 11:20:35,750 - sec_monitor - INFO - Timestamp: 2025-08-19 11:20:35
+2025-08-19 11:20:35,846 - sec_monitor - INFO - token percentage = 2%
+2025-08-19 11:20:35,846 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:20:35,846 - sec_monitor - INFO - Timestamp: 2025-08-19 11:20:35
+2025-08-19 11:20:37,474 - sec_monitor - INFO - API call successful
+2025-08-19 11:20:38,476 - sec_monitor - INFO - Processing filing 6/6: BKR
+2025-08-19 11:21:10,065 - sec_monitor - INFO - ==================================================
+2025-08-19 11:21:10,066 - sec_monitor - INFO - Processing first chunk
+2025-08-19 11:21:10,066 - sec_monitor - INFO - Timestamp: 2025-08-19 11:21:10
+2025-08-19 11:21:10,372 - sec_monitor - INFO - token percentage = 17%
+2025-08-19 11:21:10,372 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-19 11:21:10,372 - sec_monitor - INFO - Timestamp: 2025-08-19 11:21:10
+2025-08-19 11:21:17,802 - sec_monitor - INFO - API call successful
+2025-08-19 11:21:18,803 - sec_monitor - INFO - Fetching supplementary data...
+2025-08-19 11:21:18,896 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-08-19 11:21:18,896 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-08-19 11:21:18,896 - sec_monitor - INFO - Market open: False
+2025-08-19 11:21:18,896 - sec_monitor - INFO - Number of filing times mapped: 6
+2025-08-19 11:21:18,964 - sec_monitor - INFO - Last trading day: 2025-08-19
+2025-08-19 11:21:18,965 - sec_monitor - INFO - Processing ticker: MDT
+2025-08-19 11:21:19,237 - sec_monitor - INFO - Number of bars for MDT: 3
+2025-08-19 11:21:19,237 - sec_monitor - INFO - Last bar close for MDT: 92.83
+2025-08-19 11:21:19,237 - sec_monitor - INFO - Outside market hours price for MDT: 92.83
+2025-08-19 11:21:19,238 - sec_monitor - INFO - Processing ticker: HD
+2025-08-19 11:21:19,254 - sec_monitor - INFO - Number of bars for HD: 3
+2025-08-19 11:21:19,254 - sec_monitor - INFO - Last bar close for HD: 394.7
+2025-08-19 11:21:19,254 - sec_monitor - INFO - Outside market hours price for HD: 394.7
+2025-08-19 11:21:19,254 - sec_monitor - INFO - Processing ticker: AIG
+2025-08-19 11:21:19,272 - sec_monitor - INFO - Number of bars for AIG: 4
+2025-08-19 11:21:19,272 - sec_monitor - INFO - Last bar close for AIG: 80.4
+2025-08-19 11:21:19,272 - sec_monitor - INFO - Outside market hours price for AIG: 80.4
+2025-08-19 11:21:19,272 - sec_monitor - INFO - Processing ticker: HSY
+2025-08-19 11:21:19,344 - sec_monitor - INFO - Number of bars for HSY: 4
+2025-08-19 11:21:19,344 - sec_monitor - INFO - Last bar close for HSY: 178.46
+2025-08-19 11:21:19,344 - sec_monitor - INFO - Outside market hours price for HSY: 178.46
+2025-08-19 11:21:19,344 - sec_monitor - INFO - Processing ticker: SJM
+2025-08-19 11:21:19,365 - sec_monitor - INFO - Number of bars for SJM: 4
+2025-08-19 11:21:19,365 - sec_monitor - INFO - Last bar close for SJM: 111.41
+2025-08-19 11:21:19,365 - sec_monitor - INFO - Outside market hours price for SJM: 111.41
+2025-08-19 11:21:19,365 - sec_monitor - INFO - Processing ticker: BKR
+2025-08-19 11:21:19,387 - sec_monitor - INFO - Number of bars for BKR: 4
+2025-08-19 11:21:19,387 - sec_monitor - INFO - Last bar close for BKR: 42.88
+2025-08-19 11:21:19,387 - sec_monitor - INFO - Outside market hours price for BKR: 42.88
+2025-08-19 11:21:21,064 - sec_monitor - INFO - Generating final output...
+2025-08-19 11:21:21,064 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-08-19 11:21:21,064 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 144873, 'output_words': 449, 'filings_processed': 6}
