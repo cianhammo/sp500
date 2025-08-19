@@ -1,0 +1,70 @@
+2025-08-19 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-08-19 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-19 21:47:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-19 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-08-19 21:47:36 - INFO - __main__ - Original start: 2025-08-18 16:00:00-04:00 (America/New_York)
+2025-08-19 21:47:36 - INFO - __main__ - Original end: 2025-08-19 16:00:00-04:00 (America/New_York)
+2025-08-19 21:47:36 - INFO - __main__ - UTC start: 2025-08-18 04:00:00+00:00
+2025-08-19 21:47:36 - INFO - __main__ - UTC end: 2025-08-20 04:00:00+00:00
+2025-08-19 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-19 21:47:38 - INFO - __main__ - Received data for 503 symbols
+2025-08-19 21:47:38 - INFO - __main__ - Sample data structure for AOS:
+2025-08-19 21:47:38 - INFO - __main__ - Number of bars: 2
+2025-08-19 21:47:38 - INFO - __main__ - Bar timestamp: 2025-08-18 04:00:00+00:00 (UTC)
+2025-08-19 21:47:38 - INFO - __main__ - Bar timestamp: 2025-08-19 04:00:00+00:00 (UTC)
+2025-08-19 21:47:38 - INFO - __main__ - AOS timestamps - Today: 2025-08-19 04:00:00+00:00, Yesterday: 2025-08-18 04:00:00+00:00
+2025-08-19 21:47:38 - INFO - __main__ - CHD timestamps - Today: 2025-08-19 04:00:00+00:00, Yesterday: 2025-08-18 04:00:00+00:00
+2025-08-19 21:47:38 - INFO - __main__ - FITB timestamps - Today: 2025-08-19 04:00:00+00:00, Yesterday: 2025-08-18 04:00:00+00:00
+2025-08-19 21:47:38 - INFO - __main__ - GEN timestamps - Today: 2025-08-19 04:00:00+00:00, Yesterday: 2025-08-18 04:00:00+00:00
+2025-08-19 21:47:38 - INFO - __main__ - KDP timestamps - Today: 2025-08-19 04:00:00+00:00, Yesterday: 2025-08-18 04:00:00+00:00
+2025-08-19 21:47:38 - INFO - __main__ - Successfully processed 502 stocks
+2025-08-19 21:47:38 - INFO - __main__ - Data issues encountered: 1
+2025-08-19 21:47:38 - INFO - __main__ - Sample of data issues:
+2025-08-19 21:47:38 - INFO - __main__ - TPL: Insufficient data points (1)
+2025-08-19 21:47:38 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-08-19 21:47:38 - INFO - __main__ - Analysis for market close on August 19, 2025
+2025-08-19 21:47:38 - INFO - __main__ - Found 502 stocks with price data
+2025-08-19 21:47:39 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-08-19 21:47:41 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-08-19 21:47:43 - INFO - __main__ - Analyzing top performer...
+2025-08-19 21:47:43 - INFO - __main__ - Analyzing Intel (INTC)
+2025-08-19 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-19 21:47:44 - INFO - __main__ - Searching for articles about INTC
+2025-08-19 21:47:44 - INFO - __main__ - Searching for news about Intel
+2025-08-19 21:47:44 - INFO - __main__ - Found 6 recent search results for Intel
+2025-08-19 21:47:44 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-08-19 21:47:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-stock-surges-10-as-softbank-takes-2-billion-stake-in-ailing-chip-company-123540091.html
+2025-08-19 21:47:44 - INFO - __main__ - Successfully extracted article content (2469 chars)
+2025-08-19 21:47:44 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intel-stock-price-softbank-investment-71f2c1fd
+2025-08-19 21:47:44 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-19 21:47:44 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/amd-stock-chipmaker-takes-intel-market-share/
+2025-08-19 21:47:45 - INFO - __main__ - Successfully extracted article content (1911 chars)
+2025-08-19 21:47:45 - INFO - __main__ - Found total of 2 valid articles for INTC
+2025-08-19 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:47 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-19 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:50 - INFO - __main__ - Top performer analysis complete
+2025-08-19 21:47:50 - INFO - __main__ - Analyzing bottom performer...
+2025-08-19 21:47:50 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-08-19 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-19 21:47:50 - INFO - __main__ - Searching for articles about PLTR
+2025-08-19 21:47:50 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-08-19 21:47:50 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-08-19 21:47:50 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-08-19 21:47:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-palantir-stock-plummeting-today-152412400.html
+2025-08-19 21:47:51 - INFO - __main__ - Successfully extracted article content (3423 chars)
+2025-08-19 21:47:51 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/19/palantir-stock-down.html
+2025-08-19 21:47:51 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-19 21:47:51 - INFO - __main__ - Successfully extracted article content (1434 chars)
+2025-08-19 21:47:51 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/palantir-stock-falls-fifth-straight-session-hot-ai-stock-running-out-of-steam/
+2025-08-19 21:47:51 - INFO - __main__ - Successfully extracted article content (5602 chars)
+2025-08-19 21:47:51 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-08-19 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:54 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-19 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-19 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-08-19 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-08-19 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
