@@ -1,0 +1,69 @@
+2025-08-20 21:47:43 - INFO - __main__ - Starting SP500 analysis script
+2025-08-20 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-20 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-20 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-08-20 21:47:44 - INFO - __main__ - Original start: 2025-08-19 16:00:00-04:00 (America/New_York)
+2025-08-20 21:47:44 - INFO - __main__ - Original end: 2025-08-20 16:00:00-04:00 (America/New_York)
+2025-08-20 21:47:44 - INFO - __main__ - UTC start: 2025-08-19 04:00:00+00:00
+2025-08-20 21:47:44 - INFO - __main__ - UTC end: 2025-08-21 04:00:00+00:00
+2025-08-20 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-20 21:47:45 - INFO - __main__ - Received data for 503 symbols
+2025-08-20 21:47:45 - INFO - __main__ - Sample data structure for O:
+2025-08-20 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-08-20 21:47:45 - INFO - __main__ - Bar timestamp: 2025-08-19 04:00:00+00:00 (UTC)
+2025-08-20 21:47:45 - INFO - __main__ - Bar timestamp: 2025-08-20 04:00:00+00:00 (UTC)
+2025-08-20 21:47:45 - INFO - __main__ - O timestamps - Today: 2025-08-20 04:00:00+00:00, Yesterday: 2025-08-19 04:00:00+00:00
+2025-08-20 21:47:45 - INFO - __main__ - PKG timestamps - Today: 2025-08-20 04:00:00+00:00, Yesterday: 2025-08-19 04:00:00+00:00
+2025-08-20 21:47:45 - INFO - __main__ - URI timestamps - Today: 2025-08-20 04:00:00+00:00, Yesterday: 2025-08-19 04:00:00+00:00
+2025-08-20 21:47:45 - INFO - __main__ - CLX timestamps - Today: 2025-08-20 04:00:00+00:00, Yesterday: 2025-08-19 04:00:00+00:00
+2025-08-20 21:47:45 - INFO - __main__ - CZR timestamps - Today: 2025-08-20 04:00:00+00:00, Yesterday: 2025-08-19 04:00:00+00:00
+2025-08-20 21:47:46 - INFO - __main__ - Successfully processed 502 stocks
+2025-08-20 21:47:46 - INFO - __main__ - Data issues encountered: 1
+2025-08-20 21:47:46 - INFO - __main__ - Sample of data issues:
+2025-08-20 21:47:46 - INFO - __main__ - TPL: Processing error - float division by zero
+2025-08-20 21:47:46 - INFO - __main__ - Final dataframe contains 502 stocks
+2025-08-20 21:47:46 - INFO - __main__ - Analysis for market close on August 20, 2025
+2025-08-20 21:47:46 - INFO - __main__ - Found 502 stocks with price data
+2025-08-20 21:47:46 - INFO - __main__ - Found Wikipedia URL for ADI: https://en.wikipedia.org/wiki/Analog_Devices
+2025-08-20 21:47:48 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-08-20 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-08-20 21:47:50 - INFO - __main__ - Analyzing Analog Devices (ADI)
+2025-08-20 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-20 21:47:51 - INFO - __main__ - Searching for articles about ADI
+2025-08-20 21:47:51 - INFO - __main__ - Searching for news about Analog Devices
+2025-08-20 21:47:51 - INFO - __main__ - Found 6 recent search results for Analog Devices
+2025-08-20 21:47:51 - INFO - __main__ - Found 6 URLs to try for ADI
+2025-08-20 21:47:51 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/adi-stock-analog-devices-fiscal-q3-2025-earnings/
+2025-08-20 21:47:52 - INFO - __main__ - Successfully extracted article content (2475 chars)
+2025-08-20 21:47:52 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/analog-devices-earnings-stock-price-c096185b
+2025-08-20 21:47:52 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-20 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/analog-devices-eyes-solid-finish-123255387.html
+2025-08-20 21:47:53 - INFO - __main__ - Successfully extracted article content (2508 chars)
+2025-08-20 21:47:53 - INFO - __main__ - Found total of 2 valid articles for ADI
+2025-08-20 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-20 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-20 21:47:55 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-20 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-20 21:47:59 - INFO - __main__ - Top performer analysis complete
+2025-08-20 21:47:59 - INFO - __main__ - Analyzing bottom performer...
+2025-08-20 21:47:59 - INFO - __main__ - Analyzing Intel (INTC)
+2025-08-20 21:47:59 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-20 21:47:59 - INFO - __main__ - Searching for articles about INTC
+2025-08-20 21:47:59 - INFO - __main__ - Searching for news about Intel
+2025-08-20 21:47:59 - INFO - __main__ - Found 6 recent search results for Intel
+2025-08-20 21:47:59 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-08-20 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-stock-falling-today-going-181814697.html
+2025-08-20 21:48:00 - INFO - __main__ - Successfully extracted article content (1283 chars)
+2025-08-20 21:48:00 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intel-stock-price-micron-trump-us-stake-5a911893
+2025-08-20 21:48:00 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-20 21:48:00 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/20/intel-investors-equity-softbank-trump.html
+2025-08-20 21:48:01 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-20 21:48:01 - INFO - __main__ - Successfully extracted article content (1882 chars)
+2025-08-20 21:48:01 - INFO - __main__ - Found total of 2 valid articles for INTC
+2025-08-20 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-20 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-20 21:48:05 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-20 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-20 21:48:08 - INFO - __main__ - Bottom performer analysis complete
+2025-08-20 21:48:08 - INFO - __main__ - Saving results to JSON...
+2025-08-20 21:48:09 - INFO - __main__ - Analysis complete and saved to market_analysis.json
