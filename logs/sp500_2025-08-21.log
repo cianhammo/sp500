@@ -1,0 +1,75 @@
+2025-08-21 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-08-21 21:47:39 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-21 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-21 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-08-21 21:47:40 - INFO - __main__ - Original start: 2025-08-20 16:00:00-04:00 (America/New_York)
+2025-08-21 21:47:40 - INFO - __main__ - Original end: 2025-08-21 16:00:00-04:00 (America/New_York)
+2025-08-21 21:47:40 - INFO - __main__ - UTC start: 2025-08-20 04:00:00+00:00
+2025-08-21 21:47:40 - INFO - __main__ - UTC end: 2025-08-22 04:00:00+00:00
+2025-08-21 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-21 21:47:41 - INFO - __main__ - Received data for 503 symbols
+2025-08-21 21:47:41 - INFO - __main__ - Sample data structure for HOLX:
+2025-08-21 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-08-21 21:47:41 - INFO - __main__ - Bar timestamp: 2025-08-20 04:00:00+00:00 (UTC)
+2025-08-21 21:47:41 - INFO - __main__ - Bar timestamp: 2025-08-21 04:00:00+00:00 (UTC)
+2025-08-21 21:47:41 - INFO - __main__ - HOLX timestamps - Today: 2025-08-21 04:00:00+00:00, Yesterday: 2025-08-20 04:00:00+00:00
+2025-08-21 21:47:41 - INFO - __main__ - NI timestamps - Today: 2025-08-21 04:00:00+00:00, Yesterday: 2025-08-20 04:00:00+00:00
+2025-08-21 21:47:41 - INFO - __main__ - BALL timestamps - Today: 2025-08-21 04:00:00+00:00, Yesterday: 2025-08-20 04:00:00+00:00
+2025-08-21 21:47:41 - INFO - __main__ - DASH timestamps - Today: 2025-08-21 04:00:00+00:00, Yesterday: 2025-08-20 04:00:00+00:00
+2025-08-21 21:47:41 - INFO - __main__ - FE timestamps - Today: 2025-08-21 04:00:00+00:00, Yesterday: 2025-08-20 04:00:00+00:00
+2025-08-21 21:47:41 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-21 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-08-21 21:47:41 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-21 21:47:41 - INFO - __main__ - Analysis for market close on August 21, 2025
+2025-08-21 21:47:41 - INFO - __main__ - Found 503 stocks with price data
+2025-08-21 21:47:42 - INFO - __main__ - Found Wikipedia URL for PSKY: https://en.wikipedia.org/wiki/Merger_of_Skydance_Media_and_Paramount_Global
+2025-08-21 21:47:44 - INFO - __main__ - Found Wikipedia URL for FSLR: https://en.wikipedia.org/wiki/First_Solar
+2025-08-21 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-08-21 21:47:46 - INFO - __main__ - Analyzing Paramount Skydance Corporation (PSKY)
+2025-08-21 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-21 21:47:46 - WARNING - __main__ - Insufficient return data for PSKY
+2025-08-21 21:47:46 - WARNING - __main__ - No returns data available for PSKY
+2025-08-21 21:47:46 - INFO - __main__ - Searching for articles about PSKY
+2025-08-21 21:47:46 - INFO - __main__ - Searching for news about Paramount Skydance Corporation
+2025-08-21 21:47:46 - INFO - __main__ - Found 6 recent search results for Paramount Skydance Corporation
+2025-08-21 21:47:46 - INFO - __main__ - Found 6 URLs to try for PSKY
+2025-08-21 21:47:46 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4488029-house-dems-probe-paramount-skydance-merger-over-possible-illegal-bribe-paid-to-trump
+2025-08-21 21:47:46 - INFO - __main__ - Successfully extracted article content (330 chars)
+2025-08-21 21:47:46 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/08/21/raskin-trump-paramount-skydance-probe.html
+2025-08-21 21:47:46 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-21 21:47:47 - INFO - __main__ - Successfully extracted article content (4552 chars)
+2025-08-21 21:47:47 - INFO - __main__ - Fetching content from: https://www.salon.com/2025/08/21/house-democrats-demand-answers-on-trump-paramount-bribe/
+2025-08-21 21:47:47 - INFO - __main__ - Successfully extracted article content (2892 chars)
+2025-08-21 21:47:47 - INFO - __main__ - Found total of 2 valid articles for PSKY
+2025-08-21 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-21 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-21 21:47:50 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-21 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-21 21:47:56 - INFO - __main__ - Top performer analysis complete
+2025-08-21 21:47:56 - INFO - __main__ - Analyzing bottom performer...
+2025-08-21 21:47:56 - INFO - __main__ - Analyzing First Solar (FSLR)
+2025-08-21 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-21 21:47:56 - INFO - __main__ - Searching for articles about FSLR
+2025-08-21 21:47:56 - INFO - __main__ - Searching for news about First Solar
+2025-08-21 21:47:56 - INFO - __main__ - Found 6 recent search results for First Solar
+2025-08-21 21:47:56 - INFO - __main__ - Found 6 URLs to try for FSLR
+2025-08-21 21:47:56 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/sunrun-first-solar-stocks-trump-df2b82c4
+2025-08-21 21:47:56 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-21 21:47:56 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-33e0dd5d
+2025-08-21 21:47:56 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-21 21:47:56 - INFO - __main__ - Fetching content from: https://www.investors.com/news/solar-stocks-rally-this-month-despite-ai-stock-market-pause/
+2025-08-21 21:47:58 - INFO - __main__ - Successfully extracted article content (411 chars)
+2025-08-21 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/canadian-solar-plunges-xpeng-surges-154457694.html
+2025-08-21 21:47:58 - INFO - __main__ - Successfully extracted article content (5716 chars)
+2025-08-21 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/renewable-energy-stocks-fall-trump-163354901.html
+2025-08-21 21:47:59 - INFO - __main__ - Successfully extracted article content (3148 chars)
+2025-08-21 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/m/99dba6a5-d94d-3854-aa13-3b8a9dc9acfb/sunrun-first-solar-stocks.html
+2025-08-21 21:47:59 - INFO - __main__ - Successfully extracted article content (151 chars)
+2025-08-21 21:47:59 - INFO - __main__ - Found total of 2 valid articles for FSLR
+2025-08-21 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-21 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-21 21:48:02 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-21 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-21 21:48:06 - INFO - __main__ - Bottom performer analysis complete
+2025-08-21 21:48:06 - INFO - __main__ - Saving results to JSON...
+2025-08-21 21:48:06 - INFO - __main__ - Analysis complete and saved to market_analysis.json
