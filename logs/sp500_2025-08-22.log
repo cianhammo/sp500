@@ -1,0 +1,75 @@
+2025-08-22 21:47:20 - INFO - __main__ - Starting SP500 analysis script
+2025-08-22 21:47:21 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-22 21:47:21 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-22 21:47:21 - INFO - __main__ - Runtime timezone: UTC
+2025-08-22 21:47:21 - INFO - __main__ - Original start: 2025-08-21 16:00:00-04:00 (America/New_York)
+2025-08-22 21:47:21 - INFO - __main__ - Original end: 2025-08-22 16:00:00-04:00 (America/New_York)
+2025-08-22 21:47:21 - INFO - __main__ - UTC start: 2025-08-21 04:00:00+00:00
+2025-08-22 21:47:21 - INFO - __main__ - UTC end: 2025-08-23 04:00:00+00:00
+2025-08-22 21:47:21 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-22 21:47:22 - INFO - __main__ - Received data for 503 symbols
+2025-08-22 21:47:22 - INFO - __main__ - Sample data structure for DVA:
+2025-08-22 21:47:22 - INFO - __main__ - Number of bars: 2
+2025-08-22 21:47:22 - INFO - __main__ - Bar timestamp: 2025-08-21 04:00:00+00:00 (UTC)
+2025-08-22 21:47:22 - INFO - __main__ - Bar timestamp: 2025-08-22 04:00:00+00:00 (UTC)
+2025-08-22 21:47:22 - INFO - __main__ - DVA timestamps - Today: 2025-08-22 04:00:00+00:00, Yesterday: 2025-08-21 04:00:00+00:00
+2025-08-22 21:47:22 - INFO - __main__ - KKR timestamps - Today: 2025-08-22 04:00:00+00:00, Yesterday: 2025-08-21 04:00:00+00:00
+2025-08-22 21:47:22 - INFO - __main__ - LUV timestamps - Today: 2025-08-22 04:00:00+00:00, Yesterday: 2025-08-21 04:00:00+00:00
+2025-08-22 21:47:22 - INFO - __main__ - AIG timestamps - Today: 2025-08-22 04:00:00+00:00, Yesterday: 2025-08-21 04:00:00+00:00
+2025-08-22 21:47:22 - INFO - __main__ - PEP timestamps - Today: 2025-08-22 04:00:00+00:00, Yesterday: 2025-08-21 04:00:00+00:00
+2025-08-22 21:47:22 - INFO - __main__ - Successfully processed 503 stocks
+2025-08-22 21:47:22 - INFO - __main__ - Data issues encountered: 0
+2025-08-22 21:47:22 - INFO - __main__ - Final dataframe contains 503 stocks
+2025-08-22 21:47:22 - INFO - __main__ - Analysis for market close on August 22, 2025
+2025-08-22 21:47:22 - INFO - __main__ - Found 503 stocks with price data
+2025-08-22 21:47:22 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-08-22 21:47:25 - INFO - __main__ - Found Wikipedia URL for INTU: https://en.wikipedia.org/wiki/Intuit
+2025-08-22 21:47:27 - INFO - __main__ - Analyzing top performer...
+2025-08-22 21:47:27 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-08-22 21:47:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-22 21:47:27 - INFO - __main__ - Searching for articles about ENPH
+2025-08-22 21:47:27 - INFO - __main__ - Searching for news about Enphase Energy
+2025-08-22 21:47:27 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-08-22 21:47:27 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-08-22 21:47:27 - INFO - __main__ - Fetching content from: https://qz.com/renewable-energy-reacts-trump-block-solar-wind
+2025-08-22 21:47:27 - INFO - __main__ - Successfully extracted article content (303 chars)
+2025-08-22 21:47:27 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4488423-enphase-energy-surges-to-top-of-sp-500-after-powell-appears-to-open-path-for-rate-cuts
+2025-08-22 21:47:27 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-22 21:47:27 - WARNING - __main__ - Article content too short (0 chars)
+2025-08-22 21:47:27 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/powells-jackson-hole-address-fires-155246330.html
+2025-08-22 21:47:28 - INFO - __main__ - Successfully extracted article content (5675 chars)
+2025-08-22 21:47:28 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/visa-shutters-us-open-banking-155047701.html
+2025-08-22 21:47:29 - INFO - __main__ - Successfully extracted article content (1945 chars)
+2025-08-22 21:47:29 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-powell-speech-nvidia-stock-nvda/
+2025-08-22 21:47:29 - INFO - __main__ - Successfully extracted article content (376 chars)
+2025-08-22 21:47:29 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/dow-hits-record-highs-small-171542921.html
+2025-08-22 21:47:29 - INFO - __main__ - Successfully extracted article content (3404 chars)
+2025-08-22 21:47:29 - INFO - __main__ - Found total of 3 valid articles for ENPH
+2025-08-22 21:47:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:34 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-08-22 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:38 - INFO - __main__ - Top performer analysis complete
+2025-08-22 21:47:38 - INFO - __main__ - Analyzing bottom performer...
+2025-08-22 21:47:38 - INFO - __main__ - Analyzing Intuit (INTU)
+2025-08-22 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-22 21:47:39 - INFO - __main__ - Searching for articles about INTU
+2025-08-22 21:47:39 - INFO - __main__ - Searching for news about Intuit
+2025-08-22 21:47:39 - INFO - __main__ - Found 6 recent search results for Intuit
+2025-08-22 21:47:39 - INFO - __main__ - Found 6 URLs to try for INTU
+2025-08-22 21:47:39 - INFO - __main__ - Fetching content from: https://www.investopedia.com/intuit-stock-sinks-on-disappointing-outlook-after-weak-mailchimp-turbotax-results-11795778
+2025-08-22 21:47:39 - INFO - __main__ - Successfully extracted article content (1882 chars)
+2025-08-22 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intuit-forecasts-first-quarter-revenue-200427127.html
+2025-08-22 21:47:39 - INFO - __main__ - Successfully extracted article content (2462 chars)
+2025-08-22 21:47:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intuit-stock-tumbles-q4-beat-123704981.html
+2025-08-22 21:47:40 - INFO - __main__ - Successfully extracted article content (1768 chars)
+2025-08-22 21:47:40 - INFO - __main__ - Found total of 3 valid articles for INTU
+2025-08-22 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:49 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-22 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-22 21:47:53 - INFO - __main__ - Bottom performer analysis complete
+2025-08-22 21:47:53 - INFO - __main__ - Saving results to JSON...
+2025-08-22 21:47:53 - INFO - __main__ - Analysis complete and saved to market_analysis.json
