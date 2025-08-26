@@ -1,0 +1,74 @@
+2025-08-26 21:47:46 - INFO - __main__ - Starting SP500 analysis script
+2025-08-26 21:47:46 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-26 21:47:46 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-26 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-08-26 21:47:46 - INFO - __main__ - Original start: 2025-08-25 16:00:00-04:00 (America/New_York)
+2025-08-26 21:47:46 - INFO - __main__ - Original end: 2025-08-26 16:00:00-04:00 (America/New_York)
+2025-08-26 21:47:46 - INFO - __main__ - UTC start: 2025-08-25 04:00:00+00:00
+2025-08-26 21:47:46 - INFO - __main__ - UTC end: 2025-08-27 04:00:00+00:00
+2025-08-26 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-26 21:47:47 - INFO - __main__ - Received data for 498 symbols
+2025-08-26 21:47:47 - INFO - __main__ - Sample data structure for AWK:
+2025-08-26 21:47:47 - INFO - __main__ - Number of bars: 2
+2025-08-26 21:47:47 - INFO - __main__ - Bar timestamp: 2025-08-25 04:00:00+00:00 (UTC)
+2025-08-26 21:47:47 - INFO - __main__ - Bar timestamp: 2025-08-26 04:00:00+00:00 (UTC)
+2025-08-26 21:47:47 - INFO - __main__ - AWK timestamps - Today: 2025-08-26 04:00:00+00:00, Yesterday: 2025-08-25 04:00:00+00:00
+2025-08-26 21:47:47 - INFO - __main__ - BR timestamps - Today: 2025-08-26 04:00:00+00:00, Yesterday: 2025-08-25 04:00:00+00:00
+2025-08-26 21:47:47 - INFO - __main__ - CTAS timestamps - Today: 2025-08-26 04:00:00+00:00, Yesterday: 2025-08-25 04:00:00+00:00
+2025-08-26 21:47:47 - INFO - __main__ - ES timestamps - Today: 2025-08-26 04:00:00+00:00, Yesterday: 2025-08-25 04:00:00+00:00
+2025-08-26 21:47:47 - INFO - __main__ - IPG timestamps - Today: 2025-08-26 04:00:00+00:00, Yesterday: 2025-08-25 04:00:00+00:00
+2025-08-26 21:47:47 - INFO - __main__ - Successfully processed 498 stocks
+2025-08-26 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-08-26 21:47:47 - INFO - __main__ - Final dataframe contains 498 stocks
+2025-08-26 21:47:47 - INFO - __main__ - Analysis for market close on August 26, 2025
+2025-08-26 21:47:47 - INFO - __main__ - Found 498 stocks with price data
+2025-08-26 21:47:47 - INFO - __main__ - Found Wikipedia URL for LLY: https://en.wikipedia.org/wiki/Eli_Lilly_and_Company
+2025-08-26 21:47:50 - INFO - __main__ - Found Wikipedia URL for KDP: https://en.wikipedia.org/wiki/Keurig_Dr_Pepper
+2025-08-26 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-08-26 21:47:52 - INFO - __main__ - Analyzing Lilly (Eli) (LLY)
+2025-08-26 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-26 21:47:53 - INFO - __main__ - Searching for articles about LLY
+2025-08-26 21:47:53 - INFO - __main__ - Searching for news about Lilly (Eli)
+2025-08-26 21:47:54 - INFO - __main__ - Found 6 recent search results for Lilly (Eli)
+2025-08-26 21:47:54 - INFO - __main__ - Found 6 URLs to try for LLY
+2025-08-26 21:47:54 - INFO - __main__ - Fetching content from: https://finviz.com/news/149985/eli-lilly-stock-climbs-on-weight-loss-drug-trial-results
+2025-08-26 21:47:54 - INFO - __main__ - Successfully extracted article content (1148 chars)
+2025-08-26 21:47:54 - INFO - __main__ - Fetching content from: https://finviz.com/news/150332/why-eli-lilly-stock-trounced-the-market-on-tuesday
+2025-08-26 21:47:55 - INFO - __main__ - Successfully extracted article content (2857 chars)
+2025-08-26 21:47:55 - INFO - __main__ - Fetching content from: https://finviz.com/news/150114/immuneering-stock-rises-217-on-supply-agreement-with-lly
+2025-08-26 21:47:55 - INFO - __main__ - Successfully extracted article content (3581 chars)
+2025-08-26 21:47:55 - INFO - __main__ - Found total of 3 valid articles for LLY
+2025-08-26 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:47:59 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-26 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:48:03 - INFO - __main__ - Top performer analysis complete
+2025-08-26 21:48:03 - INFO - __main__ - Analyzing bottom performer...
+2025-08-26 21:48:03 - INFO - __main__ - Analyzing Keurig Dr Pepper (KDP)
+2025-08-26 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-26 21:48:03 - INFO - __main__ - Searching for articles about KDP
+2025-08-26 21:48:03 - INFO - __main__ - Searching for news about Keurig Dr Pepper
+2025-08-26 21:48:07 - INFO - __main__ - Found 6 recent search results for Keurig Dr Pepper
+2025-08-26 21:48:07 - INFO - __main__ - Found 6 URLs to try for KDP
+2025-08-26 21:48:07 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/keurig-dr-pepper-stock-peets-coffee-e8911e33
+2025-08-26 21:48:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-26 21:48:07 - INFO - __main__ - Fetching content from: https://www.reuters.com/commentary/breakingviews/coffee-maker-carve-up-hints-caffeine-comedown-2025-08-25/
+2025-08-26 21:48:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-26 21:48:07 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/3-best-stocks-to-buy-now-8-26-2025-according-to-top-analysts
+2025-08-26 21:48:08 - INFO - __main__ - Successfully extracted article content (2910 chars)
+2025-08-26 21:48:08 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-eli-lilly-echostar-constellation-brands-and-more-11797598
+2025-08-26 21:48:08 - INFO - __main__ - Successfully extracted article content (1794 chars)
+2025-08-26 21:48:08 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/amd-upgraded-pdd-downgraded-wall-133249955.html
+2025-08-26 21:48:09 - INFO - __main__ - Successfully extracted article content (4891 chars)
+2025-08-26 21:48:09 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/retail-consumer/trump-urges-cracker-barrel-revert-old-logo-2025-08-26/
+2025-08-26 21:48:09 - WARNING - __main__ - Article content too short (43 chars)
+2025-08-26 21:48:09 - INFO - __main__ - Found total of 3 valid articles for KDP
+2025-08-26 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:48:13 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-08-26 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-26 21:48:18 - INFO - __main__ - Bottom performer analysis complete
+2025-08-26 21:48:18 - INFO - __main__ - Saving results to JSON...
+2025-08-26 21:48:18 - INFO - __main__ - Analysis complete and saved to market_analysis.json
