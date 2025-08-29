@@ -803,3 +803,57 @@
 2025-08-29 12:09:29,254 - sec_monitor - INFO - Generating final output...
 2025-08-29 12:09:29,255 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-08-29 12:09:29,255 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 610147, 'output_words': 412, 'filings_processed': 5}
+2025-08-29 12:40:15,272 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-08-29 12:40:15,273 - sec_monitor - INFO - Loading S&P 500 data...
+2025-08-29 12:40:15,273 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-08-29 12:40:15,273 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-08-29 12:40:15,273 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-08-29 12:40:15,273 - sec_monitor - INFO - Initializing components...
+2025-08-29 12:40:15,273 - sec_monitor - INFO - Initializing components
+2025-08-29 12:40:15,273 - sec_monitor - INFO - SEC fetcher initialized
+2025-08-29 12:40:15,274 - sec_monitor - INFO - Filing analyzer initialized
+2025-08-29 12:40:15,274 - sec_monitor - INFO - Alpaca clients initialized
+2025-08-29 12:40:15,274 - sec_monitor - INFO - All components initialized successfully
+2025-08-29 12:40:15,275 - sec_monitor - INFO - Found JSON file from today
+2025-08-29 12:40:15,275 - sec_monitor - INFO - Found 5 previously processed accessions and 5 filing URLs
+2025-08-29 12:40:15,275 - sec_monitor - INFO - Found 5 accession numbers and 5 URLs from previously processed filings
+2025-08-29 12:40:15,275 - sec_monitor - INFO - Fetching SEC filings...
+2025-08-29 12:40:29,949 - sec_monitor - INFO - No more entries found
+2025-08-29 12:40:29,949 - sec_monitor - INFO - Completed fetching. Found 60 total filings
+2025-08-29 12:40:29,950 - sec_monitor - INFO - Found 2 new interesting filings
+2025-08-29 12:40:29,950 - sec_monitor - INFO - Found 2 new filings to process
+2025-08-29 12:40:29,950 - sec_monitor - INFO - Processing filing 1/2: FI
+2025-08-29 12:41:00,516 - sec_monitor - INFO - ==================================================
+2025-08-29 12:41:00,516 - sec_monitor - INFO - Processing first chunk
+2025-08-29 12:41:00,516 - sec_monitor - INFO - Timestamp: 2025-08-29 12:41:00
+2025-08-29 12:41:00,626 - sec_monitor - INFO - token percentage = 3%
+2025-08-29 12:41:00,626 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-29 12:41:00,626 - sec_monitor - INFO - Timestamp: 2025-08-29 12:41:00
+2025-08-29 12:41:03,649 - sec_monitor - INFO - API call successful
+2025-08-29 12:41:04,651 - sec_monitor - INFO - Processing filing 2/2: DD
+2025-08-29 12:41:35,236 - sec_monitor - INFO - ==================================================
+2025-08-29 12:41:35,236 - sec_monitor - INFO - Processing first chunk
+2025-08-29 12:41:35,236 - sec_monitor - INFO - Timestamp: 2025-08-29 12:41:35
+2025-08-29 12:41:35,361 - sec_monitor - INFO - token percentage = 3%
+2025-08-29 12:41:35,361 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-08-29 12:41:35,361 - sec_monitor - INFO - Timestamp: 2025-08-29 12:41:35
+2025-08-29 12:41:38,787 - sec_monitor - INFO - API call successful
+2025-08-29 12:41:39,788 - sec_monitor - INFO - Fetching supplementary data...
+2025-08-29 12:41:40,149 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-08-29 12:41:40,149 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-08-29 12:41:40,149 - sec_monitor - INFO - Market open: False
+2025-08-29 12:41:40,149 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-08-29 12:41:40,158 - sec_monitor - INFO - Last trading day: 2025-08-29
+2025-08-29 12:41:40,158 - sec_monitor - INFO - Processing ticker: FI
+2025-08-29 12:41:40,418 - sec_monitor - INFO - Number of bars for FI: 4
+2025-08-29 12:41:40,418 - sec_monitor - INFO - Last bar close for FI: 137.55
+2025-08-29 12:41:40,418 - sec_monitor - INFO - Outside market hours price for FI: 137.55
+2025-08-29 12:41:40,418 - sec_monitor - INFO - Processing ticker: DD
+2025-08-29 12:41:40,437 - sec_monitor - INFO - Number of bars for DD: 4
+2025-08-29 12:41:40,437 - sec_monitor - INFO - Last bar close for DD: 77.64
+2025-08-29 12:41:40,437 - sec_monitor - INFO - Outside market hours price for DD: 77.64
+2025-08-29 12:41:41,045 - sec_monitor - INFO - Generating final output...
+2025-08-29 12:41:41,046 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-08-29 12:41:41,046 - sec_monitor - INFO - Cumulative stats - Input words: 619441, Output words: 540
+2025-08-29 12:41:41,046 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-08-29 12:41:41,046 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 9294, 'output_words': 128, 'filings_processed': 2}
