@@ -1,0 +1,68 @@
+2025-08-29 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-08-29 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-08-29 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 8, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-08-29 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-08-29 21:47:42 - INFO - __main__ - Original start: 2025-08-28 16:00:00-04:00 (America/New_York)
+2025-08-29 21:47:42 - INFO - __main__ - Original end: 2025-08-29 16:00:00-04:00 (America/New_York)
+2025-08-29 21:47:42 - INFO - __main__ - UTC start: 2025-08-28 04:00:00+00:00
+2025-08-29 21:47:42 - INFO - __main__ - UTC end: 2025-08-30 04:00:00+00:00
+2025-08-29 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-08-29 21:47:42 - INFO - __main__ - Received data for 497 symbols
+2025-08-29 21:47:42 - INFO - __main__ - Sample data structure for T:
+2025-08-29 21:47:42 - INFO - __main__ - Number of bars: 2
+2025-08-29 21:47:42 - INFO - __main__ - Bar timestamp: 2025-08-28 04:00:00+00:00 (UTC)
+2025-08-29 21:47:42 - INFO - __main__ - Bar timestamp: 2025-08-29 04:00:00+00:00 (UTC)
+2025-08-29 21:47:42 - INFO - __main__ - T timestamps - Today: 2025-08-29 04:00:00+00:00, Yesterday: 2025-08-28 04:00:00+00:00
+2025-08-29 21:47:42 - INFO - __main__ - CNP timestamps - Today: 2025-08-29 04:00:00+00:00, Yesterday: 2025-08-28 04:00:00+00:00
+2025-08-29 21:47:42 - INFO - __main__ - COO timestamps - Today: 2025-08-29 04:00:00+00:00, Yesterday: 2025-08-28 04:00:00+00:00
+2025-08-29 21:47:42 - INFO - __main__ - JBL timestamps - Today: 2025-08-29 04:00:00+00:00, Yesterday: 2025-08-28 04:00:00+00:00
+2025-08-29 21:47:42 - INFO - __main__ - MA timestamps - Today: 2025-08-29 04:00:00+00:00, Yesterday: 2025-08-28 04:00:00+00:00
+2025-08-29 21:47:43 - INFO - __main__ - Successfully processed 497 stocks
+2025-08-29 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-08-29 21:47:43 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-08-29 21:47:43 - INFO - __main__ - Analysis for market close on August 29, 2025
+2025-08-29 21:47:43 - INFO - __main__ - Found 497 stocks with price data
+2025-08-29 21:47:43 - INFO - __main__ - Found Wikipedia URL for ADSK: https://en.wikipedia.org/wiki/Autodesk
+2025-08-29 21:47:45 - INFO - __main__ - Found Wikipedia URL for DELL: https://en.wikipedia.org/wiki/Dell_Technologies
+2025-08-29 21:47:47 - INFO - __main__ - Analyzing top performer...
+2025-08-29 21:47:47 - INFO - __main__ - Analyzing Autodesk (ADSK)
+2025-08-29 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-29 21:47:47 - INFO - __main__ - Searching for articles about ADSK
+2025-08-29 21:47:47 - INFO - __main__ - Searching for news about Autodesk
+2025-08-29 21:47:50 - INFO - __main__ - Found 6 recent search results for Autodesk
+2025-08-29 21:47:50 - INFO - __main__ - Found 6 URLs to try for ADSK
+2025-08-29 21:47:50 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/autodesk-earnings-dot-pulls-offshore-171359266.html
+2025-08-29 21:47:51 - INFO - __main__ - Successfully extracted article content (1200 chars)
+2025-08-29 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/autodesk-stock-drives-higher-strong-144341401.html
+2025-08-29 21:47:51 - INFO - __main__ - Successfully extracted article content (1781 chars)
+2025-08-29 21:47:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-caterpillar-nvidia-autodesk-and-more-11800470
+2025-08-29 21:47:51 - INFO - __main__ - Successfully extracted article content (1863 chars)
+2025-08-29 21:47:51 - INFO - __main__ - Found total of 3 valid articles for ADSK
+2025-08-29 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:47:55 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-08-29 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:47:59 - INFO - __main__ - Top performer analysis complete
+2025-08-29 21:47:59 - INFO - __main__ - Analyzing bottom performer...
+2025-08-29 21:47:59 - INFO - __main__ - Analyzing Dell Technologies (DELL)
+2025-08-29 21:47:59 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-08-29 21:48:00 - INFO - __main__ - Searching for articles about DELL
+2025-08-29 21:48:00 - INFO - __main__ - Searching for news about Dell Technologies
+2025-08-29 21:48:04 - INFO - __main__ - Found 6 recent search results for Dell Technologies
+2025-08-29 21:48:04 - INFO - __main__ - Found 6 URLs to try for DELL
+2025-08-29 21:48:04 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dell-stock-drops-as-soft-q3-profit-projection-offsets-strong-ai-demand-11800283
+2025-08-29 21:48:04 - INFO - __main__ - Successfully extracted article content (2306 chars)
+2025-08-29 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/dell-beats-top-bottom-lines-115307224.html
+2025-08-29 21:48:05 - INFO - __main__ - Successfully extracted article content (2161 chars)
+2025-08-29 21:48:05 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4490422-dells-ai-momentum-continues-to-impress-wall-street-amid-spending-boom
+2025-08-29 21:48:05 - INFO - readability.readability - ruthless removal did not work. 
+2025-08-29 21:48:05 - WARNING - __main__ - Article content too short (0 chars)
+2025-08-29 21:48:05 - INFO - __main__ - Found total of 2 valid articles for DELL
+2025-08-29 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:48:07 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-08-29 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-29 21:48:13 - INFO - __main__ - Bottom performer analysis complete
+2025-08-29 21:48:13 - INFO - __main__ - Saving results to JSON...
+2025-08-29 21:48:14 - INFO - __main__ - Analysis complete and saved to market_analysis.json
