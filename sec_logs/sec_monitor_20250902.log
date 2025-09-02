@@ -446,3 +446,56 @@
 2025-09-02 13:07:16,882 - sec_monitor - INFO - Cumulative stats - Input words: 319101, Output words: 613
 2025-09-02 13:07:16,882 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-09-02 13:07:16,882 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 173336, 'output_words': 265, 'filings_processed': 3}
+2025-09-02 13:31:47,944 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-09-02 13:31:47,945 - sec_monitor - INFO - Loading S&P 500 data...
+2025-09-02 13:31:47,945 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-09-02 13:31:47,945 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-02 13:31:47,945 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-02 13:31:47,945 - sec_monitor - INFO - Initializing components...
+2025-09-02 13:31:47,946 - sec_monitor - INFO - Initializing components
+2025-09-02 13:31:47,946 - sec_monitor - INFO - SEC fetcher initialized
+2025-09-02 13:31:47,946 - sec_monitor - INFO - Filing analyzer initialized
+2025-09-02 13:31:47,946 - sec_monitor - INFO - Alpaca clients initialized
+2025-09-02 13:31:47,946 - sec_monitor - INFO - All components initialized successfully
+2025-09-02 13:31:47,947 - sec_monitor - INFO - Found JSON file from today
+2025-09-02 13:31:47,947 - sec_monitor - INFO - Found 8 previously processed accessions and 8 filing URLs
+2025-09-02 13:31:47,947 - sec_monitor - INFO - Found 8 accession numbers and 8 URLs from previously processed filings
+2025-09-02 13:31:47,947 - sec_monitor - INFO - Fetching SEC filings...
+2025-09-02 13:31:52,088 - sec_monitor - INFO - Reached old filing, stopping. Found 17 total filings
+2025-09-02 13:31:52,088 - sec_monitor - INFO - Found 2 new interesting filings
+2025-09-02 13:31:52,089 - sec_monitor - INFO - Found 2 new filings to process
+2025-09-02 13:31:52,089 - sec_monitor - INFO - Processing filing 1/2: IQV
+2025-09-02 13:32:22,611 - sec_monitor - INFO - ==================================================
+2025-09-02 13:32:22,611 - sec_monitor - INFO - Processing first chunk
+2025-09-02 13:32:22,611 - sec_monitor - INFO - Timestamp: 2025-09-02 13:32:22
+2025-09-02 13:32:22,754 - sec_monitor - INFO - token percentage = 4%
+2025-09-02 13:32:22,755 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-02 13:32:22,755 - sec_monitor - INFO - Timestamp: 2025-09-02 13:32:22
+2025-09-02 13:32:26,550 - sec_monitor - INFO - API call successful
+2025-09-02 13:32:27,552 - sec_monitor - INFO - Processing filing 2/2: PM
+2025-09-02 13:33:00,993 - sec_monitor - INFO - ==================================================
+2025-09-02 13:33:00,993 - sec_monitor - INFO - Processing first chunk
+2025-09-02 13:33:00,993 - sec_monitor - INFO - Timestamp: 2025-09-02 13:33:00
+2025-09-02 13:33:01,258 - sec_monitor - INFO - token percentage = 27%
+2025-09-02 13:33:01,258 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-02 13:33:01,258 - sec_monitor - INFO - Timestamp: 2025-09-02 13:33:01
+2025-09-02 13:33:21,864 - sec_monitor - INFO - API call successful
+2025-09-02 13:33:22,866 - sec_monitor - INFO - Fetching supplementary data...
+2025-09-02 13:33:23,240 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-09-02 13:33:23,241 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-09-02 13:33:23,241 - sec_monitor - INFO - Market open: True
+2025-09-02 13:33:23,241 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-09-02 13:33:23,254 - sec_monitor - INFO - Last trading day: 2025-09-02
+2025-09-02 13:33:23,254 - sec_monitor - INFO - Processing ticker: IQV
+2025-09-02 13:33:23,367 - sec_monitor - INFO - Number of bars for IQV: 2
+2025-09-02 13:33:23,367 - sec_monitor - INFO - Last bar close for IQV: 190.73
+2025-09-02 13:33:23,367 - sec_monitor - INFO - Market open price for IQV: 190.73, change: 1.1240125125921085%
+2025-09-02 13:33:23,367 - sec_monitor - INFO - Processing ticker: PM
+2025-09-02 13:33:23,381 - sec_monitor - INFO - Number of bars for PM: 2
+2025-09-02 13:33:23,381 - sec_monitor - INFO - Last bar close for PM: 167.15
+2025-09-02 13:33:23,381 - sec_monitor - INFO - Market open price for PM: 167.15, change: 0.8263964290022949%
+2025-09-02 13:33:23,839 - sec_monitor - INFO - Generating final output...
+2025-09-02 13:33:23,840 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-09-02 13:33:23,840 - sec_monitor - INFO - Cumulative stats - Input words: 338086, Output words: 824
+2025-09-02 13:33:23,840 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-09-02 13:33:23,840 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 18985, 'output_words': 211, 'filings_processed': 2}
