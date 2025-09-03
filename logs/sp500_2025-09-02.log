@@ -1,0 +1,68 @@
+2025-09-02 21:47:32 - INFO - __main__ - Starting SP500 analysis script
+2025-09-02 21:47:32 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-02 21:47:32 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 8, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-02 21:47:32 - INFO - __main__ - Runtime timezone: UTC
+2025-09-02 21:47:32 - INFO - __main__ - Original start: 2025-08-29 16:00:00-04:00 (America/New_York)
+2025-09-02 21:47:32 - INFO - __main__ - Original end: 2025-09-02 16:00:00-04:00 (America/New_York)
+2025-09-02 21:47:32 - INFO - __main__ - UTC start: 2025-08-29 04:00:00+00:00
+2025-09-02 21:47:32 - INFO - __main__ - UTC end: 2025-09-03 04:00:00+00:00
+2025-09-02 21:47:32 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-02 21:47:33 - INFO - __main__ - Received data for 497 symbols
+2025-09-02 21:47:33 - INFO - __main__ - Sample data structure for OTIS:
+2025-09-02 21:47:33 - INFO - __main__ - Number of bars: 2
+2025-09-02 21:47:33 - INFO - __main__ - Bar timestamp: 2025-08-29 04:00:00+00:00 (UTC)
+2025-09-02 21:47:33 - INFO - __main__ - Bar timestamp: 2025-09-02 04:00:00+00:00 (UTC)
+2025-09-02 21:47:33 - INFO - __main__ - OTIS timestamps - Today: 2025-09-02 04:00:00+00:00, Yesterday: 2025-08-29 04:00:00+00:00
+2025-09-02 21:47:33 - INFO - __main__ - ADI timestamps - Today: 2025-09-02 04:00:00+00:00, Yesterday: 2025-08-29 04:00:00+00:00
+2025-09-02 21:47:33 - INFO - __main__ - ARE timestamps - Today: 2025-09-02 04:00:00+00:00, Yesterday: 2025-08-29 04:00:00+00:00
+2025-09-02 21:47:33 - INFO - __main__ - EXR timestamps - Today: 2025-09-02 04:00:00+00:00, Yesterday: 2025-08-29 04:00:00+00:00
+2025-09-02 21:47:33 - INFO - __main__ - FTNT timestamps - Today: 2025-09-02 04:00:00+00:00, Yesterday: 2025-08-29 04:00:00+00:00
+2025-09-02 21:47:33 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-02 21:47:33 - INFO - __main__ - Data issues encountered: 0
+2025-09-02 21:47:33 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-02 21:47:33 - INFO - __main__ - Analysis for market close on September 02, 2025
+2025-09-02 21:47:33 - INFO - __main__ - Found 497 stocks with price data
+2025-09-02 21:47:33 - INFO - __main__ - Found Wikipedia URL for ULTA: https://en.wikipedia.org/wiki/Ulta_Beauty
+2025-09-02 21:47:36 - INFO - __main__ - Found Wikipedia URL for KHC: https://en.wikipedia.org/wiki/Kraft_Heinz
+2025-09-02 21:47:38 - INFO - __main__ - Analyzing top performer...
+2025-09-02 21:47:38 - INFO - __main__ - Analyzing Ulta Beauty (ULTA)
+2025-09-02 21:47:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-02 21:47:38 - INFO - __main__ - Searching for articles about ULTA
+2025-09-02 21:47:38 - INFO - __main__ - Searching for news about Ulta Beauty
+2025-09-02 21:47:41 - INFO - __main__ - Found 6 recent search results for Ulta Beauty
+2025-09-02 21:47:41 - INFO - __main__ - Found 6 URLs to try for ULTA
+2025-09-02 21:47:41 - INFO - __main__ - Fetching content from: https://www.google.com/finance/beta
+2025-09-02 21:47:42 - INFO - __main__ - Successfully extracted article content (644 chars)
+2025-09-02 21:47:42 - INFO - __main__ - Fetching content from: https://www.forbes.com/sites/tylerroush/2025/09/02/northern-lights-forecast-these-10-states-might-see-aurora-borealis-tonight/
+2025-09-02 21:47:43 - INFO - __main__ - Successfully extracted article content (2592 chars)
+2025-09-02 21:47:43 - INFO - __main__ - Fetching content from: https://www.forbes.com/sites/monicamercuri/2025/09/02/when-is-the-dancing-with-the-stars-season-34-cast-reveal-on-good-morning-america/
+2025-09-02 21:47:43 - INFO - __main__ - Successfully extracted article content (4211 chars)
+2025-09-02 21:47:43 - INFO - __main__ - Found total of 3 valid articles for ULTA
+2025-09-02 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:47:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:47:47 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-09-02 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-09-02 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-09-02 21:47:52 - INFO - __main__ - Analyzing Kraft Heinz (KHC)
+2025-09-02 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-02 21:47:52 - INFO - __main__ - Searching for articles about KHC
+2025-09-02 21:47:52 - INFO - __main__ - Searching for news about Kraft Heinz
+2025-09-02 21:47:55 - INFO - __main__ - Found 6 recent search results for Kraft Heinz
+2025-09-02 21:47:55 - INFO - __main__ - Found 6 URLs to try for KHC
+2025-09-02 21:47:55 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/02/warren-buffett-says-he-is-disappointed-in-kraft-heinz-split.html
+2025-09-02 21:47:55 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-02 21:47:55 - INFO - __main__ - Successfully extracted article content (2891 chars)
+2025-09-02 21:47:55 - INFO - __main__ - Fetching content from: https://www.reuters.com/sustainability/sustainable-finance-reporting/kraft-heinz-splits-unwinding-disappointing-merger-2025-09-02/
+2025-09-02 21:47:55 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-02 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/kraft-heinz-bets-split-growth-164936814.html
+2025-09-02 21:47:56 - INFO - __main__ - Successfully extracted article content (2995 chars)
+2025-09-02 21:47:56 - INFO - __main__ - Found total of 2 valid articles for KHC
+2025-09-02 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:47:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-02 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-02 21:48:02 - INFO - __main__ - Bottom performer analysis complete
+2025-09-02 21:48:02 - INFO - __main__ - Saving results to JSON...
+2025-09-02 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
