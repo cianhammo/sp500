@@ -1,0 +1,69 @@
+2025-09-03 21:47:40 - INFO - __main__ - Starting SP500 analysis script
+2025-09-03 21:47:40 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-03 21:47:40 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-03 21:47:40 - INFO - __main__ - Runtime timezone: UTC
+2025-09-03 21:47:40 - INFO - __main__ - Original start: 2025-09-02 16:00:00-04:00 (America/New_York)
+2025-09-03 21:47:40 - INFO - __main__ - Original end: 2025-09-03 16:00:00-04:00 (America/New_York)
+2025-09-03 21:47:40 - INFO - __main__ - UTC start: 2025-09-02 04:00:00+00:00
+2025-09-03 21:47:40 - INFO - __main__ - UTC end: 2025-09-04 04:00:00+00:00
+2025-09-03 21:47:40 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-03 21:47:41 - INFO - __main__ - Received data for 497 symbols
+2025-09-03 21:47:41 - INFO - __main__ - Sample data structure for BDX:
+2025-09-03 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-09-03 21:47:41 - INFO - __main__ - Bar timestamp: 2025-09-02 04:00:00+00:00 (UTC)
+2025-09-03 21:47:41 - INFO - __main__ - Bar timestamp: 2025-09-03 04:00:00+00:00 (UTC)
+2025-09-03 21:47:41 - INFO - __main__ - BDX timestamps - Today: 2025-09-03 04:00:00+00:00, Yesterday: 2025-09-02 04:00:00+00:00
+2025-09-03 21:47:41 - INFO - __main__ - ES timestamps - Today: 2025-09-03 04:00:00+00:00, Yesterday: 2025-09-02 04:00:00+00:00
+2025-09-03 21:47:41 - INFO - __main__ - INCY timestamps - Today: 2025-09-03 04:00:00+00:00, Yesterday: 2025-09-02 04:00:00+00:00
+2025-09-03 21:47:41 - INFO - __main__ - EPAM timestamps - Today: 2025-09-03 04:00:00+00:00, Yesterday: 2025-09-02 04:00:00+00:00
+2025-09-03 21:47:41 - INFO - __main__ - GRMN timestamps - Today: 2025-09-03 04:00:00+00:00, Yesterday: 2025-09-02 04:00:00+00:00
+2025-09-03 21:47:41 - INFO - __main__ - Successfully processed 496 stocks
+2025-09-03 21:47:41 - INFO - __main__ - Data issues encountered: 1
+2025-09-03 21:47:41 - INFO - __main__ - Sample of data issues:
+2025-09-03 21:47:41 - INFO - __main__ - TPL: Insufficient data points (1)
+2025-09-03 21:47:41 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-09-03 21:47:41 - INFO - __main__ - Analysis for market close on September 03, 2025
+2025-09-03 21:47:41 - INFO - __main__ - Found 496 stocks with price data
+2025-09-03 21:47:42 - INFO - __main__ - Found Wikipedia URL for GOOGL: https://en.wikipedia.org/wiki/Alphabet_Inc.
+2025-09-03 21:47:44 - INFO - __main__ - Found Wikipedia URL for DLTR: https://en.wikipedia.org/wiki/Dollar_Tree
+2025-09-03 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-09-03 21:47:46 - INFO - __main__ - Analyzing Alphabet Inc. (Class A) (GOOGL)
+2025-09-03 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-03 21:47:46 - INFO - __main__ - Searching for articles about GOOGL
+2025-09-03 21:47:46 - INFO - __main__ - Searching for news about Alphabet Inc. (Class A)
+2025-09-03 21:47:49 - INFO - __main__ - Found 6 recent search results for Alphabet Inc. (Class A)
+2025-09-03 21:47:49 - INFO - __main__ - Found 6 URLs to try for GOOGL
+2025-09-03 21:47:49 - INFO - __main__ - Fetching content from: https://www.google.com/finance/beta/
+2025-09-03 21:47:50 - INFO - __main__ - Successfully extracted article content (644 chars)
+2025-09-03 21:47:50 - INFO - __main__ - Fetching content from: https://www.google.com/finance/beta
+2025-09-03 21:47:51 - INFO - __main__ - Successfully extracted article content (644 chars)
+2025-09-03 21:47:51 - INFO - __main__ - Fetching content from: https://www.google.com/finance/quote/PONY:NASDAQ
+2025-09-03 21:47:51 - INFO - __main__ - Successfully extracted article content (644 chars)
+2025-09-03 21:47:51 - INFO - __main__ - Found total of 3 valid articles for GOOGL
+2025-09-03 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:47:55 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-09-03 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:47:59 - INFO - __main__ - Top performer analysis complete
+2025-09-03 21:47:59 - INFO - __main__ - Analyzing bottom performer...
+2025-09-03 21:47:59 - INFO - __main__ - Analyzing Dollar Tree (DLTR)
+2025-09-03 21:47:59 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-03 21:47:59 - INFO - __main__ - Searching for articles about DLTR
+2025-09-03 21:47:59 - INFO - __main__ - Searching for news about Dollar Tree
+2025-09-03 21:48:01 - INFO - __main__ - Found 6 recent search results for Dollar Tree
+2025-09-03 21:48:01 - INFO - __main__ - Found 6 URLs to try for DLTR
+2025-09-03 21:48:01 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/dollar-tree-earnings-stock-price-abddcf13
+2025-09-03 21:48:01 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-03 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/polestar-macys-dollar-tree-market-130200435.html
+2025-09-03 21:48:02 - INFO - __main__ - Successfully extracted article content (2482 chars)
+2025-09-03 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/dollar-tree-outdoes-q2-estimates-132604310.html
+2025-09-03 21:48:03 - INFO - __main__ - Successfully extracted article content (1330 chars)
+2025-09-03 21:48:03 - INFO - __main__ - Found total of 2 valid articles for DLTR
+2025-09-03 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:48:06 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-03 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-03 21:48:10 - INFO - __main__ - Bottom performer analysis complete
+2025-09-03 21:48:10 - INFO - __main__ - Saving results to JSON...
+2025-09-03 21:48:10 - INFO - __main__ - Analysis complete and saved to market_analysis.json
