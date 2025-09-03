@@ -453,3 +453,131 @@
 2025-09-03 11:39:09,125 - sec_monitor - INFO - Generating final output...
 2025-09-03 11:39:09,125 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-09-03 11:39:09,125 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 245440, 'output_words': 642, 'filings_processed': 8}
+2025-09-03 12:39:52,303 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-09-03 12:39:52,303 - sec_monitor - INFO - Loading S&P 500 data...
+2025-09-03 12:39:52,303 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-09-03 12:39:52,303 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-03 12:39:52,303 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-03 12:39:52,303 - sec_monitor - INFO - Initializing components...
+2025-09-03 12:39:52,304 - sec_monitor - INFO - Initializing components
+2025-09-03 12:39:52,304 - sec_monitor - INFO - SEC fetcher initialized
+2025-09-03 12:39:52,304 - sec_monitor - INFO - Filing analyzer initialized
+2025-09-03 12:39:52,304 - sec_monitor - INFO - Alpaca clients initialized
+2025-09-03 12:39:52,304 - sec_monitor - INFO - All components initialized successfully
+2025-09-03 12:39:52,305 - sec_monitor - INFO - Found JSON file from today
+2025-09-03 12:39:52,305 - sec_monitor - INFO - Found 8 previously processed accessions and 8 filing URLs
+2025-09-03 12:39:52,305 - sec_monitor - INFO - Found 8 accession numbers and 8 URLs from previously processed filings
+2025-09-03 12:39:52,305 - sec_monitor - INFO - Fetching SEC filings...
+2025-09-03 12:40:09,351 - sec_monitor - INFO - No more entries found
+2025-09-03 12:40:09,351 - sec_monitor - INFO - Completed fetching. Found 67 total filings
+2025-09-03 12:40:09,351 - sec_monitor - INFO - Found 2 new interesting filings
+2025-09-03 12:40:09,351 - sec_monitor - INFO - Found 2 new filings to process
+2025-09-03 12:40:09,351 - sec_monitor - INFO - Processing filing 1/2: YUM
+2025-09-03 12:40:40,053 - sec_monitor - INFO - ==================================================
+2025-09-03 12:40:40,053 - sec_monitor - INFO - Processing first chunk
+2025-09-03 12:40:40,053 - sec_monitor - INFO - Timestamp: 2025-09-03 12:40:40
+2025-09-03 12:40:40,179 - sec_monitor - INFO - token percentage = 4%
+2025-09-03 12:40:40,179 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-03 12:40:40,179 - sec_monitor - INFO - Timestamp: 2025-09-03 12:40:40
+2025-09-03 12:40:45,568 - sec_monitor - INFO - API call successful
+2025-09-03 12:40:46,570 - sec_monitor - INFO - Processing filing 2/2: CPB
+2025-09-03 12:41:38,032 - sec_monitor - INFO - ==================================================
+2025-09-03 12:41:38,033 - sec_monitor - INFO - Processing first chunk
+2025-09-03 12:41:38,033 - sec_monitor - INFO - Timestamp: 2025-09-03 12:41:38
+2025-09-03 12:41:38,345 - sec_monitor - INFO - token percentage = 49%
+2025-09-03 12:41:38,346 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-03 12:41:38,346 - sec_monitor - INFO - Timestamp: 2025-09-03 12:41:38
+2025-09-03 12:41:55,358 - sec_monitor - INFO - API call successful
+2025-09-03 12:42:25,388 - sec_monitor - INFO - ==================================================
+2025-09-03 12:42:25,388 - sec_monitor - INFO - Processing middle chunk
+2025-09-03 12:42:25,389 - sec_monitor - INFO - Timestamp: 2025-09-03 12:42:25
+2025-09-03 12:42:25,723 - sec_monitor - INFO - token percentage = 49%
+2025-09-03 12:42:25,723 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-03 12:42:25,723 - sec_monitor - INFO - Timestamp: 2025-09-03 12:42:25
+2025-09-03 12:42:25,821 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-03 12:42:25,821 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 34
+}
+]
+2025-09-03 12:42:25,821 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-03 12:45:25,903 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-03 12:45:25,903 - sec_monitor - INFO - Timestamp: 2025-09-03 12:45:25
+2025-09-03 12:45:43,365 - sec_monitor - INFO - API call successful
+2025-09-03 12:46:13,395 - sec_monitor - INFO - ==================================================
+2025-09-03 12:46:13,396 - sec_monitor - INFO - Processing middle chunk
+2025-09-03 12:46:13,396 - sec_monitor - INFO - Timestamp: 2025-09-03 12:46:13
+2025-09-03 12:46:13,703 - sec_monitor - INFO - token percentage = 51%
+2025-09-03 12:46:13,703 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-03 12:46:13,704 - sec_monitor - INFO - Timestamp: 2025-09-03 12:46:13
+2025-09-03 12:46:13,774 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-03 12:46:13,774 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-09-03 12:46:13,774 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-03 12:49:13,865 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-03 12:49:13,865 - sec_monitor - INFO - Timestamp: 2025-09-03 12:49:13
+2025-09-03 12:49:30,960 - sec_monitor - INFO - API call successful
+2025-09-03 12:50:00,991 - sec_monitor - INFO - ==================================================
+2025-09-03 12:50:00,991 - sec_monitor - INFO - Processing last chunk
+2025-09-03 12:50:00,991 - sec_monitor - INFO - Timestamp: 2025-09-03 12:50:00
+2025-09-03 12:50:01,188 - sec_monitor - INFO - token percentage = 19%
+2025-09-03 12:50:01,188 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-03 12:50:01,188 - sec_monitor - INFO - Timestamp: 2025-09-03 12:50:01
+2025-09-03 12:50:15,030 - sec_monitor - INFO - API call successful
+2025-09-03 12:50:15,030 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-09-03 12:50:15,030 - sec_monitor - INFO - Timestamp: 2025-09-03 12:50:15
+2025-09-03 12:50:16,454 - sec_monitor - INFO - Combine API call successful
+2025-09-03 12:50:17,456 - sec_monitor - INFO - Fetching supplementary data...
+2025-09-03 12:50:17,736 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-09-03 12:50:17,736 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-09-03 12:50:17,736 - sec_monitor - INFO - Market open: False
+2025-09-03 12:50:17,736 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-09-03 12:50:17,821 - sec_monitor - INFO - Last trading day: 2025-09-03
+2025-09-03 12:50:17,821 - sec_monitor - INFO - Processing ticker: YUM
+2025-09-03 12:50:18,163 - sec_monitor - INFO - Number of bars for YUM: 2
+2025-09-03 12:50:18,163 - sec_monitor - INFO - Last bar close for YUM: 145.4
+2025-09-03 12:50:18,163 - sec_monitor - INFO - Outside market hours price for YUM: 145.4
+2025-09-03 12:50:18,164 - sec_monitor - INFO - Processing ticker: CPB
+2025-09-03 12:50:18,242 - sec_monitor - INFO - Number of bars for CPB: 2
+2025-09-03 12:50:18,242 - sec_monitor - INFO - Last bar close for CPB: 31.44
+2025-09-03 12:50:18,242 - sec_monitor - INFO - Outside market hours price for CPB: 31.44
+2025-09-03 12:50:19,146 - sec_monitor - INFO - Generating final output...
+2025-09-03 12:50:19,147 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-09-03 12:50:19,147 - sec_monitor - INFO - Cumulative stats - Input words: 338409, Output words: 793
+2025-09-03 12:50:19,147 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-09-03 12:50:19,147 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 92969, 'output_words': 151, 'filings_processed': 2}
