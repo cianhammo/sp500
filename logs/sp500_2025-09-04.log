@@ -1,0 +1,67 @@
+2025-09-04 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-09-04 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-04 21:47:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-04 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2025-09-04 21:47:41 - INFO - __main__ - Original start: 2025-09-03 16:00:00-04:00 (America/New_York)
+2025-09-04 21:47:41 - INFO - __main__ - Original end: 2025-09-04 16:00:00-04:00 (America/New_York)
+2025-09-04 21:47:41 - INFO - __main__ - UTC start: 2025-09-03 04:00:00+00:00
+2025-09-04 21:47:41 - INFO - __main__ - UTC end: 2025-09-05 04:00:00+00:00
+2025-09-04 21:47:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-04 21:47:43 - INFO - __main__ - Received data for 497 symbols
+2025-09-04 21:47:43 - INFO - __main__ - Sample data structure for AWK:
+2025-09-04 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-09-04 21:47:43 - INFO - __main__ - Bar timestamp: 2025-09-03 04:00:00+00:00 (UTC)
+2025-09-04 21:47:43 - INFO - __main__ - Bar timestamp: 2025-09-04 04:00:00+00:00 (UTC)
+2025-09-04 21:47:43 - INFO - __main__ - AWK timestamps - Today: 2025-09-04 04:00:00+00:00, Yesterday: 2025-09-03 04:00:00+00:00
+2025-09-04 21:47:43 - INFO - __main__ - CVS timestamps - Today: 2025-09-04 04:00:00+00:00, Yesterday: 2025-09-03 04:00:00+00:00
+2025-09-04 21:47:43 - INFO - __main__ - KKR timestamps - Today: 2025-09-04 04:00:00+00:00, Yesterday: 2025-09-03 04:00:00+00:00
+2025-09-04 21:47:43 - INFO - __main__ - WFC timestamps - Today: 2025-09-04 04:00:00+00:00, Yesterday: 2025-09-03 04:00:00+00:00
+2025-09-04 21:47:43 - INFO - __main__ - PRU timestamps - Today: 2025-09-04 04:00:00+00:00, Yesterday: 2025-09-03 04:00:00+00:00
+2025-09-04 21:47:43 - INFO - __main__ - Successfully processed 496 stocks
+2025-09-04 21:47:43 - INFO - __main__ - Data issues encountered: 1
+2025-09-04 21:47:43 - INFO - __main__ - Sample of data issues:
+2025-09-04 21:47:43 - INFO - __main__ - TPL: Processing error - float division by zero
+2025-09-04 21:47:43 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-09-04 21:47:43 - INFO - __main__ - Analysis for market close on September 04, 2025
+2025-09-04 21:47:43 - INFO - __main__ - Found 496 stocks with price data
+2025-09-04 21:47:43 - INFO - __main__ - Found Wikipedia URL for TROW: https://en.wikipedia.org/wiki/T._Rowe_Price
+2025-09-04 21:47:46 - INFO - __main__ - Found Wikipedia URL for EL: https://en.wikipedia.org/wiki/The_Est%C3%A9e_Lauder_Companies
+2025-09-04 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-09-04 21:47:48 - INFO - __main__ - Analyzing T. Rowe Price (TROW)
+2025-09-04 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-04 21:47:48 - INFO - __main__ - Searching for articles about TROW
+2025-09-04 21:47:48 - INFO - __main__ - Searching for news about T. Rowe Price
+2025-09-04 21:47:56 - INFO - __main__ - Found 6 recent search results for T. Rowe Price
+2025-09-04 21:47:56 - INFO - __main__ - Found 6 URLs to try for TROW
+2025-09-04 21:47:56 - INFO - __main__ - Fetching content from: https://www.goldmansachs.com/pressroom/press-releases/2025/announcement-04-september-2025
+2025-09-04 21:47:57 - INFO - __main__ - Successfully extracted article content (8265 chars)
+2025-09-04 21:47:57 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/04/t-rowe-price-shares-rocket-higher-after-deal-where-goldman-will-invest-1-billion-in-asset-manager.html
+2025-09-04 21:47:58 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-04 21:47:58 - INFO - __main__ - Successfully extracted article content (1697 chars)
+2025-09-04 21:47:58 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-09-04/goldman-to-buy-1-billion-of-t-rowe-stock-in-private-funds-deal
+2025-09-04 21:47:59 - INFO - __main__ - Successfully extracted article content (193 chars)
+2025-09-04 21:47:59 - INFO - __main__ - Found total of 2 valid articles for TROW
+2025-09-04 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-04 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-04 21:48:01 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-04 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-04 21:48:05 - INFO - __main__ - Top performer analysis complete
+2025-09-04 21:48:05 - INFO - __main__ - Analyzing bottom performer...
+2025-09-04 21:48:05 - INFO - __main__ - Analyzing Estée Lauder Companies (The) (EL)
+2025-09-04 21:48:05 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-04 21:48:05 - INFO - __main__ - Searching for articles about EL
+2025-09-04 21:48:05 - INFO - __main__ - Searching for news about Estée Lauder Companies (The)
+2025-09-04 21:48:07 - INFO - __main__ - Found 2 recent search results for Estée Lauder Companies (The)
+2025-09-04 21:48:07 - INFO - __main__ - Found 2 URLs to try for EL
+2025-09-04 21:48:07 - INFO - __main__ - Fetching content from: https://uk.linkedin.com/jobs/view/keyholder-estee-lauder-companies-the-cosmetic-company-store-bridgend-22-5-hours-3-days-at-the-est%C3%A9e-lauder-companies-inc-4275935656
+2025-09-04 21:48:08 - INFO - __main__ - Successfully extracted article content (2126 chars)
+2025-09-04 21:48:08 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/KHC/pressreleases/34600989/deutsche-bank-reaffirms-their-hold-rating-on-kraft-heinz-khc/
+2025-09-04 21:48:08 - INFO - __main__ - Successfully extracted article content (1401 chars)
+2025-09-04 21:48:08 - INFO - __main__ - Found total of 2 valid articles for EL
+2025-09-04 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-04 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-04 21:48:10 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-09-04 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-04 21:48:14 - INFO - __main__ - Bottom performer analysis complete
+2025-09-04 21:48:14 - INFO - __main__ - Saving results to JSON...
+2025-09-04 21:48:14 - INFO - __main__ - Analysis complete and saved to market_analysis.json
