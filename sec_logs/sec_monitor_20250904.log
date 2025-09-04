@@ -957,3 +957,80 @@
 2025-09-04 12:11:11,254 - sec_monitor - INFO - Generating final output...
 2025-09-04 12:11:11,255 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-09-04 12:11:11,255 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 716769, 'output_words': 273, 'filings_processed': 4}
+2025-09-04 12:38:56,279 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-09-04 12:38:56,280 - sec_monitor - INFO - Loading S&P 500 data...
+2025-09-04 12:38:56,280 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-09-04 12:38:56,280 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-04 12:38:56,280 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-04 12:38:56,280 - sec_monitor - INFO - Initializing components...
+2025-09-04 12:38:56,280 - sec_monitor - INFO - Initializing components
+2025-09-04 12:38:56,280 - sec_monitor - INFO - SEC fetcher initialized
+2025-09-04 12:38:56,281 - sec_monitor - INFO - Filing analyzer initialized
+2025-09-04 12:38:56,281 - sec_monitor - INFO - Alpaca clients initialized
+2025-09-04 12:38:56,281 - sec_monitor - INFO - All components initialized successfully
+2025-09-04 12:38:56,282 - sec_monitor - INFO - Found JSON file from today
+2025-09-04 12:38:56,282 - sec_monitor - INFO - Found 4 previously processed accessions and 4 filing URLs
+2025-09-04 12:38:56,282 - sec_monitor - INFO - Found 4 accession numbers and 4 URLs from previously processed filings
+2025-09-04 12:38:56,282 - sec_monitor - INFO - Fetching SEC filings...
+2025-09-04 12:39:10,883 - sec_monitor - INFO - No more entries found
+2025-09-04 12:39:10,883 - sec_monitor - INFO - Completed fetching. Found 110 total filings
+2025-09-04 12:39:10,884 - sec_monitor - INFO - Found 1 new interesting filings
+2025-09-04 12:39:10,884 - sec_monitor - INFO - Found 1 new filings to process
+2025-09-04 12:39:10,884 - sec_monitor - INFO - Processing filing 1/1: TROW
+2025-09-04 12:39:48,311 - sec_monitor - INFO - ==================================================
+2025-09-04 12:39:48,311 - sec_monitor - INFO - Processing first chunk
+2025-09-04 12:39:48,311 - sec_monitor - INFO - Timestamp: 2025-09-04 12:39:48
+2025-09-04 12:39:48,580 - sec_monitor - INFO - token percentage = 50%
+2025-09-04 12:39:48,580 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-04 12:39:48,580 - sec_monitor - INFO - Timestamp: 2025-09-04 12:39:48
+2025-09-04 12:40:05,737 - sec_monitor - INFO - API call successful
+2025-09-04 12:40:35,753 - sec_monitor - INFO - ==================================================
+2025-09-04 12:40:35,753 - sec_monitor - INFO - Processing last chunk
+2025-09-04 12:40:35,753 - sec_monitor - INFO - Timestamp: 2025-09-04 12:40:35
+2025-09-04 12:40:35,872 - sec_monitor - INFO - token percentage = 5%
+2025-09-04 12:40:35,872 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-04 12:40:35,872 - sec_monitor - INFO - Timestamp: 2025-09-04 12:40:35
+2025-09-04 12:40:35,978 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-04 12:40:35,978 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 24
+}
+]
+2025-09-04 12:40:35,978 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-04 12:43:35,997 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-04 12:43:35,997 - sec_monitor - INFO - Timestamp: 2025-09-04 12:43:35
+2025-09-04 12:43:44,541 - sec_monitor - INFO - API call successful
+2025-09-04 12:43:44,541 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-09-04 12:43:44,541 - sec_monitor - INFO - Timestamp: 2025-09-04 12:43:44
+2025-09-04 12:43:45,582 - sec_monitor - INFO - Combine API call successful
+2025-09-04 12:43:46,584 - sec_monitor - INFO - Fetching supplementary data...
+2025-09-04 12:43:47,111 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-09-04 12:43:47,111 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-09-04 12:43:47,111 - sec_monitor - INFO - Market open: False
+2025-09-04 12:43:47,111 - sec_monitor - INFO - Number of filing times mapped: 1
+2025-09-04 12:43:47,186 - sec_monitor - INFO - Last trading day: 2025-09-04
+2025-09-04 12:43:47,186 - sec_monitor - INFO - Processing ticker: TROW
+2025-09-04 12:43:47,694 - sec_monitor - INFO - Number of bars for TROW: 2
+2025-09-04 12:43:47,694 - sec_monitor - INFO - Last bar close for TROW: 105.36
+2025-09-04 12:43:47,694 - sec_monitor - INFO - Outside market hours price for TROW: 105.36
+2025-09-04 12:43:47,953 - sec_monitor - INFO - Generating final output...
+2025-09-04 12:43:47,953 - sec_monitor - INFO - Successfully merged 1 new filings with existing JSON
+2025-09-04 12:43:47,954 - sec_monitor - INFO - Cumulative stats - Input words: 752301, Output words: 338
+2025-09-04 12:43:47,954 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-09-04 12:43:47,954 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 35532, 'output_words': 65, 'filings_processed': 1}
