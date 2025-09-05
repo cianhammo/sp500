@@ -4654,3 +4654,1044 @@
 2025-09-05 17:03:43,141 - sec_monitor - INFO - Generating final output...
 2025-09-05 17:03:43,142 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-09-05 17:03:43,142 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 2863054, 'output_words': 639, 'filings_processed': 9}
+2025-09-05 18:20:33,846 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-09-05 18:20:33,846 - sec_monitor - INFO - Loading S&P 500 data...
+2025-09-05 18:20:33,846 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-09-05 18:20:33,847 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-05 18:20:33,847 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-05 18:20:33,847 - sec_monitor - INFO - Initializing components...
+2025-09-05 18:20:33,847 - sec_monitor - INFO - Initializing components
+2025-09-05 18:20:33,847 - sec_monitor - INFO - SEC fetcher initialized
+2025-09-05 18:20:33,847 - sec_monitor - INFO - Filing analyzer initialized
+2025-09-05 18:20:33,848 - sec_monitor - INFO - Alpaca clients initialized
+2025-09-05 18:20:33,848 - sec_monitor - INFO - All components initialized successfully
+2025-09-05 18:20:33,849 - sec_monitor - INFO - Found JSON file from today
+2025-09-05 18:20:33,849 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2025-09-05 18:20:33,849 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2025-09-05 18:20:33,849 - sec_monitor - INFO - Fetching SEC filings...
+2025-09-05 18:20:54,693 - sec_monitor - INFO - No more entries found
+2025-09-05 18:20:54,693 - sec_monitor - INFO - Completed fetching. Found 51 total filings
+2025-09-05 18:20:54,693 - sec_monitor - INFO - Found 3 new interesting filings
+2025-09-05 18:20:54,693 - sec_monitor - INFO - Found 3 new filings to process
+2025-09-05 18:20:54,693 - sec_monitor - INFO - Processing filing 1/3: MGM
+2025-09-05 18:21:25,319 - sec_monitor - INFO - ==================================================
+2025-09-05 18:21:25,319 - sec_monitor - INFO - Processing first chunk
+2025-09-05 18:21:25,319 - sec_monitor - INFO - Timestamp: 2025-09-05 18:21:25
+2025-09-05 18:21:25,518 - sec_monitor - INFO - token percentage = 4%
+2025-09-05 18:21:25,519 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:21:25,519 - sec_monitor - INFO - Timestamp: 2025-09-05 18:21:25
+2025-09-05 18:21:29,255 - sec_monitor - INFO - API call successful
+2025-09-05 18:21:30,257 - sec_monitor - INFO - Processing filing 2/3: CPB
+2025-09-05 18:22:02,434 - sec_monitor - INFO - ==================================================
+2025-09-05 18:22:02,434 - sec_monitor - INFO - Processing first chunk
+2025-09-05 18:22:02,434 - sec_monitor - INFO - Timestamp: 2025-09-05 18:22:02
+2025-09-05 18:22:02,741 - sec_monitor - INFO - token percentage = 24%
+2025-09-05 18:22:02,741 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:22:02,741 - sec_monitor - INFO - Timestamp: 2025-09-05 18:22:02
+2025-09-05 18:22:02,977 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 18:22:02,978 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-09-05 18:22:02,978 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:25:03,077 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 18:25:03,077 - sec_monitor - INFO - Timestamp: 2025-09-05 18:25:03
+2025-09-05 18:25:03,331 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 18:25:03,332 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-05 18:25:03,332 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:28:03,354 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 18:28:03,354 - sec_monitor - INFO - Timestamp: 2025-09-05 18:28:03
+2025-09-05 18:28:03,615 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 18:28:03,615 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-05 18:28:03,615 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-05 18:28:04,616 - sec_monitor - INFO - Processing filing 3/3: BR
+2025-09-05 18:29:22,477 - sec_monitor - INFO - ==================================================
+2025-09-05 18:29:22,477 - sec_monitor - INFO - Processing first chunk
+2025-09-05 18:29:22,478 - sec_monitor - INFO - Timestamp: 2025-09-05 18:29:22
+2025-09-05 18:29:22,932 - sec_monitor - INFO - token percentage = 47%
+2025-09-05 18:29:22,932 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:29:22,932 - sec_monitor - INFO - Timestamp: 2025-09-05 18:29:22
+2025-09-05 18:29:23,224 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 18:29:23,225 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-09-05 18:29:23,225 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:32:23,313 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 18:32:23,313 - sec_monitor - INFO - Timestamp: 2025-09-05 18:32:23
+2025-09-05 18:32:23,457 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 18:32:23,457 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-09-05 18:32:23,457 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:35:23,546 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 18:35:23,546 - sec_monitor - INFO - Timestamp: 2025-09-05 18:35:23
+2025-09-05 18:35:23,724 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 18:35:23,724 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-09-05 18:35:23,725 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-09-05 18:35:53,743 - sec_monitor - INFO - ==================================================
+2025-09-05 18:35:53,744 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 18:35:53,744 - sec_monitor - INFO - Timestamp: 2025-09-05 18:35:53
+2025-09-05 18:35:54,146 - sec_monitor - INFO - token percentage = 50%
+2025-09-05 18:35:54,147 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:35:54,147 - sec_monitor - INFO - Timestamp: 2025-09-05 18:35:54
+2025-09-05 18:35:54,285 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 18:35:54,286 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-09-05 18:35:54,286 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:38:54,380 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 18:38:54,380 - sec_monitor - INFO - Timestamp: 2025-09-05 18:38:54
+2025-09-05 18:38:54,582 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 18:38:54,583 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-09-05 18:38:54,583 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:41:54,674 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 18:41:54,674 - sec_monitor - INFO - Timestamp: 2025-09-05 18:41:54
+2025-09-05 18:41:54,979 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 18:41:54,979 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-09-05 18:41:54,980 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 5
+}
+]
+2025-09-05 18:42:25,008 - sec_monitor - INFO - ==================================================
+2025-09-05 18:42:25,008 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 18:42:25,009 - sec_monitor - INFO - Timestamp: 2025-09-05 18:42:25
+2025-09-05 18:42:25,406 - sec_monitor - INFO - token percentage = 50%
+2025-09-05 18:42:25,406 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:42:25,406 - sec_monitor - INFO - Timestamp: 2025-09-05 18:42:25
+2025-09-05 18:42:25,693 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 18:42:25,693 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 34
+}
+]
+2025-09-05 18:42:25,693 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:45:25,721 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 18:45:25,722 - sec_monitor - INFO - Timestamp: 2025-09-05 18:45:25
+2025-09-05 18:45:26,021 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 18:45:26,021 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 34
+}
+]
+2025-09-05 18:45:26,021 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:48:26,120 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 18:48:26,121 - sec_monitor - INFO - Timestamp: 2025-09-05 18:48:26
+2025-09-05 18:48:26,411 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 18:48:26,411 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-09-05 18:48:26,411 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-09-05 18:48:56,441 - sec_monitor - INFO - ==================================================
+2025-09-05 18:48:56,441 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 18:48:56,441 - sec_monitor - INFO - Timestamp: 2025-09-05 18:48:56
+2025-09-05 18:48:56,844 - sec_monitor - INFO - token percentage = 50%
+2025-09-05 18:48:56,845 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:48:56,845 - sec_monitor - INFO - Timestamp: 2025-09-05 18:48:56
+2025-09-05 18:48:57,043 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 18:48:57,043 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-09-05 18:48:57,043 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:51:57,103 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 18:51:57,104 - sec_monitor - INFO - Timestamp: 2025-09-05 18:51:57
+2025-09-05 18:51:57,412 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 18:51:57,413 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-09-05 18:51:57,413 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:54:57,458 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 18:54:57,458 - sec_monitor - INFO - Timestamp: 2025-09-05 18:54:57
+2025-09-05 18:54:57,589 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 18:54:57,590 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-09-05 18:54:57,590 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2025-09-05 18:55:27,620 - sec_monitor - INFO - ==================================================
+2025-09-05 18:55:27,620 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 18:55:27,620 - sec_monitor - INFO - Timestamp: 2025-09-05 18:55:27
+2025-09-05 18:55:28,062 - sec_monitor - INFO - token percentage = 51%
+2025-09-05 18:55:28,063 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 18:55:28,063 - sec_monitor - INFO - Timestamp: 2025-09-05 18:55:28
+2025-09-05 18:55:28,364 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 18:55:28,364 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 31
+}
+]
+2025-09-05 18:55:28,364 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 18:58:28,410 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 18:58:28,410 - sec_monitor - INFO - Timestamp: 2025-09-05 18:58:28
+2025-09-05 18:58:28,719 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 18:58:28,720 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 31
+}
+]
+2025-09-05 18:58:28,720 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:01:28,820 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 19:01:28,820 - sec_monitor - INFO - Timestamp: 2025-09-05 19:01:28
+2025-09-05 19:01:29,137 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 19:01:29,137 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-09-05 19:01:29,137 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-09-05 19:01:59,160 - sec_monitor - INFO - ==================================================
+2025-09-05 19:01:59,160 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 19:01:59,161 - sec_monitor - INFO - Timestamp: 2025-09-05 19:01:59
+2025-09-05 19:01:59,551 - sec_monitor - INFO - token percentage = 50%
+2025-09-05 19:01:59,551 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 19:01:59,551 - sec_monitor - INFO - Timestamp: 2025-09-05 19:01:59
+2025-09-05 19:01:59,856 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 19:01:59,857 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+}
+]
+2025-09-05 19:01:59,857 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:04:59,911 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 19:04:59,912 - sec_monitor - INFO - Timestamp: 2025-09-05 19:04:59
+2025-09-05 19:05:00,217 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 19:05:00,217 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-09-05 19:05:00,217 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:08:00,229 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 19:08:00,229 - sec_monitor - INFO - Timestamp: 2025-09-05 19:08:00
+2025-09-05 19:08:00,532 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 19:08:00,532 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-09-05 19:08:00,533 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 59
+}
+]
+2025-09-05 19:08:30,563 - sec_monitor - INFO - ==================================================
+2025-09-05 19:08:30,563 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 19:08:30,563 - sec_monitor - INFO - Timestamp: 2025-09-05 19:08:30
+2025-09-05 19:08:30,981 - sec_monitor - INFO - token percentage = 51%
+2025-09-05 19:08:30,982 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 19:08:30,982 - sec_monitor - INFO - Timestamp: 2025-09-05 19:08:30
+2025-09-05 19:08:31,284 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 19:08:31,284 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 28
+}
+]
+2025-09-05 19:08:31,284 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:11:31,385 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 19:11:31,385 - sec_monitor - INFO - Timestamp: 2025-09-05 19:11:31
+2025-09-05 19:11:31,678 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 19:11:31,679 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 28
+}
+]
+2025-09-05 19:11:31,679 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:14:31,680 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 19:14:31,680 - sec_monitor - INFO - Timestamp: 2025-09-05 19:14:31
+2025-09-05 19:14:31,968 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 19:14:31,968 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 28
+}
+]
+2025-09-05 19:14:31,968 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 28
+}
+]
+2025-09-05 19:15:01,998 - sec_monitor - INFO - ==================================================
+2025-09-05 19:15:01,999 - sec_monitor - INFO - Processing middle chunk
+2025-09-05 19:15:01,999 - sec_monitor - INFO - Timestamp: 2025-09-05 19:15:01
+2025-09-05 19:15:02,453 - sec_monitor - INFO - token percentage = 49%
+2025-09-05 19:15:02,453 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 19:15:02,454 - sec_monitor - INFO - Timestamp: 2025-09-05 19:15:02
+2025-09-05 19:15:02,745 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 19:15:02,745 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-09-05 19:15:02,745 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:18:02,782 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 19:18:02,782 - sec_monitor - INFO - Timestamp: 2025-09-05 19:18:02
+2025-09-05 19:18:03,083 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 19:18:03,083 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-05 19:18:03,083 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:21:03,123 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 19:21:03,123 - sec_monitor - INFO - Timestamp: 2025-09-05 19:21:03
+2025-09-05 19:21:03,424 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 19:21:03,424 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-05 19:21:03,424 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 56
+}
+]
+2025-09-05 19:21:33,455 - sec_monitor - INFO - ==================================================
+2025-09-05 19:21:33,455 - sec_monitor - INFO - Processing last chunk
+2025-09-05 19:21:33,455 - sec_monitor - INFO - Timestamp: 2025-09-05 19:21:33
+2025-09-05 19:21:33,737 - sec_monitor - INFO - token percentage = 16%
+2025-09-05 19:21:33,738 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-05 19:21:33,738 - sec_monitor - INFO - Timestamp: 2025-09-05 19:21:33
+2025-09-05 19:21:33,948 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-05 19:21:33,949 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 26
+}
+]
+2025-09-05 19:21:33,949 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:24:34,032 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-05 19:24:34,032 - sec_monitor - INFO - Timestamp: 2025-09-05 19:24:34
+2025-09-05 19:24:34,265 - sec_monitor - ERROR - API call failed - Attempt 2
+2025-09-05 19:24:34,265 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2025-09-05 19:24:34,265 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-05 19:27:34,330 - sec_monitor - INFO - Making API call - Attempt 3/3
+2025-09-05 19:27:34,330 - sec_monitor - INFO - Timestamp: 2025-09-05 19:27:34
+2025-09-05 19:27:34,523 - sec_monitor - ERROR - API call failed - Attempt 3
+2025-09-05 19:27:34,523 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2025-09-05 19:27:34,523 - sec_monitor - ERROR - Failed to summarize chunk after 3 attempts: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 50
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 25
+}
+]
+2025-09-05 19:27:35,525 - sec_monitor - INFO - Fetching supplementary data...
+2025-09-05 19:27:36,096 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-09-05 19:27:36,096 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-09-05 19:27:36,096 - sec_monitor - INFO - Market open: True
+2025-09-05 19:27:36,096 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-09-05 19:27:36,170 - sec_monitor - INFO - Last trading day: 2025-09-05
+2025-09-05 19:27:36,170 - sec_monitor - INFO - Processing ticker: MGM
+2025-09-05 19:27:36,646 - sec_monitor - INFO - Number of bars for MGM: 3
+2025-09-05 19:27:36,646 - sec_monitor - INFO - Last bar close for MGM: 37.035
+2025-09-05 19:27:36,646 - sec_monitor - INFO - Market open price for MGM: 37.035, change: -2.8462749213011564%
+2025-09-05 19:27:36,646 - sec_monitor - INFO - Processing ticker: CPB
+2025-09-05 19:27:36,734 - sec_monitor - INFO - Number of bars for CPB: 3
+2025-09-05 19:27:36,734 - sec_monitor - INFO - Last bar close for CPB: 32.67
+2025-09-05 19:27:36,734 - sec_monitor - INFO - Market open price for CPB: 32.67, change: -3.128243143068939%
+2025-09-05 19:27:36,734 - sec_monitor - INFO - Processing ticker: BR
+2025-09-05 19:27:36,815 - sec_monitor - INFO - Number of bars for BR: 3
+2025-09-05 19:27:36,816 - sec_monitor - INFO - Last bar close for BR: 252.05
+2025-09-05 19:27:36,816 - sec_monitor - INFO - Market open price for BR: 252.05, change: 0.8926427027459845%
+2025-09-05 19:27:37,742 - sec_monitor - INFO - Generating final output...
+2025-09-05 19:27:37,743 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-09-05 19:27:37,743 - sec_monitor - INFO - Cumulative stats - Input words: 3181779, Output words: 745
+2025-09-05 19:27:37,743 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-09-05 19:27:37,743 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 318725, 'output_words': 106, 'filings_processed': 3}
