@@ -1,0 +1,70 @@
+2025-09-05 21:47:27 - INFO - __main__ - Starting SP500 analysis script
+2025-09-05 21:47:27 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-05 21:47:27 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 5, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-05 21:47:27 - INFO - __main__ - Runtime timezone: UTC
+2025-09-05 21:47:27 - INFO - __main__ - Original start: 2025-09-04 16:00:00-04:00 (America/New_York)
+2025-09-05 21:47:27 - INFO - __main__ - Original end: 2025-09-05 16:00:00-04:00 (America/New_York)
+2025-09-05 21:47:27 - INFO - __main__ - UTC start: 2025-09-04 04:00:00+00:00
+2025-09-05 21:47:27 - INFO - __main__ - UTC end: 2025-09-06 04:00:00+00:00
+2025-09-05 21:47:27 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-05 21:47:28 - INFO - __main__ - Received data for 497 symbols
+2025-09-05 21:47:28 - INFO - __main__ - Sample data structure for FIS:
+2025-09-05 21:47:28 - INFO - __main__ - Number of bars: 2
+2025-09-05 21:47:28 - INFO - __main__ - Bar timestamp: 2025-09-04 04:00:00+00:00 (UTC)
+2025-09-05 21:47:28 - INFO - __main__ - Bar timestamp: 2025-09-05 04:00:00+00:00 (UTC)
+2025-09-05 21:47:28 - INFO - __main__ - FIS timestamps - Today: 2025-09-05 04:00:00+00:00, Yesterday: 2025-09-04 04:00:00+00:00
+2025-09-05 21:47:28 - INFO - __main__ - HAL timestamps - Today: 2025-09-05 04:00:00+00:00, Yesterday: 2025-09-04 04:00:00+00:00
+2025-09-05 21:47:28 - INFO - __main__ - ISRG timestamps - Today: 2025-09-05 04:00:00+00:00, Yesterday: 2025-09-04 04:00:00+00:00
+2025-09-05 21:47:28 - INFO - __main__ - TFC timestamps - Today: 2025-09-05 04:00:00+00:00, Yesterday: 2025-09-04 04:00:00+00:00
+2025-09-05 21:47:28 - INFO - __main__ - GRMN timestamps - Today: 2025-09-05 04:00:00+00:00, Yesterday: 2025-09-04 04:00:00+00:00
+2025-09-05 21:47:29 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-05 21:47:29 - INFO - __main__ - Data issues encountered: 0
+2025-09-05 21:47:29 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-05 21:47:29 - INFO - __main__ - Analysis for market close on September 05, 2025
+2025-09-05 21:47:29 - INFO - __main__ - Found 497 stocks with price data
+2025-09-05 21:47:29 - INFO - __main__ - Found Wikipedia URL for AVGO: https://en.wikipedia.org/wiki/Broadcom
+2025-09-05 21:47:31 - INFO - __main__ - Found Wikipedia URL for LULU: https://en.wikipedia.org/wiki/Lululemon
+2025-09-05 21:47:33 - INFO - __main__ - Analyzing top performer...
+2025-09-05 21:47:33 - INFO - __main__ - Analyzing Broadcom (AVGO)
+2025-09-05 21:47:33 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-05 21:47:34 - INFO - __main__ - Searching for articles about AVGO
+2025-09-05 21:47:34 - INFO - __main__ - Searching for news about Broadcom
+2025-09-05 21:47:37 - INFO - __main__ - Found 6 recent search results for Broadcom
+2025-09-05 21:47:37 - INFO - __main__ - Found 6 URLs to try for AVGO
+2025-09-05 21:47:37 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/05/broadcoms-soaring-stock-is-getting-cheaper-heres-the-math-on-how-thats-possible.html
+2025-09-05 21:47:38 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-05 21:47:38 - INFO - __main__ - Successfully extracted article content (9185 chars)
+2025-09-05 21:47:38 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/05/broadcom-avgo-stock-openai-earnings.html
+2025-09-05 21:47:38 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-05 21:47:38 - INFO - __main__ - Successfully extracted article content (3213 chars)
+2025-09-05 21:47:38 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-broadcom-docusign-lululemon-and-more-11804161
+2025-09-05 21:47:38 - INFO - __main__ - Successfully extracted article content (2003 chars)
+2025-09-05 21:47:38 - INFO - __main__ - Found total of 3 valid articles for AVGO
+2025-09-05 21:47:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:42 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-05 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:46 - INFO - __main__ - Top performer analysis complete
+2025-09-05 21:47:46 - INFO - __main__ - Analyzing bottom performer...
+2025-09-05 21:47:46 - INFO - __main__ - Analyzing Lululemon Athletica (LULU)
+2025-09-05 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-05 21:47:46 - INFO - __main__ - Searching for articles about LULU
+2025-09-05 21:47:46 - INFO - __main__ - Searching for news about Lululemon Athletica
+2025-09-05 21:47:48 - INFO - __main__ - Found 6 recent search results for Lululemon Athletica
+2025-09-05 21:47:48 - INFO - __main__ - Found 6 URLs to try for LULU
+2025-09-05 21:47:48 - INFO - __main__ - Fetching content from: https://www.cbc.ca/news/business/lululemon-q2-earnings-1.7625890
+2025-09-05 21:47:49 - INFO - __main__ - Successfully extracted article content (3589 chars)
+2025-09-05 21:47:49 - INFO - __main__ - Fetching content from: https://www.investopedia.com/lululemon-cuts-its-outlook-as-sales-slow-and-tariffs-squeeze-profits-its-stock-is-plunging-11804090
+2025-09-05 21:47:49 - INFO - __main__ - Successfully extracted article content (1907 chars)
+2025-09-05 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/why-lululemon-stock-plummeting-q2-171930346.html
+2025-09-05 21:47:50 - INFO - __main__ - Successfully extracted article content (4019 chars)
+2025-09-05 21:47:50 - INFO - __main__ - Found total of 3 valid articles for LULU
+2025-09-05 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:47:54 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-05 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-05 21:48:06 - INFO - __main__ - Bottom performer analysis complete
+2025-09-05 21:48:06 - INFO - __main__ - Saving results to JSON...
+2025-09-05 21:48:06 - INFO - __main__ - Analysis complete and saved to market_analysis.json
