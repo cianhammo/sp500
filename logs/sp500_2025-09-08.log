@@ -1,0 +1,78 @@
+2025-09-08 21:47:51 - INFO - __main__ - Starting SP500 analysis script
+2025-09-08 21:47:51 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-08 21:47:51 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 5, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-08 21:47:51 - INFO - __main__ - Runtime timezone: UTC
+2025-09-08 21:47:51 - INFO - __main__ - Original start: 2025-09-05 16:00:00-04:00 (America/New_York)
+2025-09-08 21:47:51 - INFO - __main__ - Original end: 2025-09-08 16:00:00-04:00 (America/New_York)
+2025-09-08 21:47:51 - INFO - __main__ - UTC start: 2025-09-05 04:00:00+00:00
+2025-09-08 21:47:51 - INFO - __main__ - UTC end: 2025-09-09 04:00:00+00:00
+2025-09-08 21:47:51 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-08 21:47:52 - INFO - __main__ - Received data for 497 symbols
+2025-09-08 21:47:52 - INFO - __main__ - Sample data structure for ALL:
+2025-09-08 21:47:52 - INFO - __main__ - Number of bars: 2
+2025-09-08 21:47:52 - INFO - __main__ - Bar timestamp: 2025-09-05 04:00:00+00:00 (UTC)
+2025-09-08 21:47:52 - INFO - __main__ - Bar timestamp: 2025-09-08 04:00:00+00:00 (UTC)
+2025-09-08 21:47:52 - INFO - __main__ - ALL timestamps - Today: 2025-09-08 04:00:00+00:00, Yesterday: 2025-09-05 04:00:00+00:00
+2025-09-08 21:47:52 - INFO - __main__ - EA timestamps - Today: 2025-09-08 04:00:00+00:00, Yesterday: 2025-09-05 04:00:00+00:00
+2025-09-08 21:47:52 - INFO - __main__ - FTV timestamps - Today: 2025-09-08 04:00:00+00:00, Yesterday: 2025-09-05 04:00:00+00:00
+2025-09-08 21:47:52 - INFO - __main__ - HUBB timestamps - Today: 2025-09-08 04:00:00+00:00, Yesterday: 2025-09-05 04:00:00+00:00
+2025-09-08 21:47:52 - INFO - __main__ - CMS timestamps - Today: 2025-09-08 04:00:00+00:00, Yesterday: 2025-09-05 04:00:00+00:00
+2025-09-08 21:47:52 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-08 21:47:52 - INFO - __main__ - Data issues encountered: 0
+2025-09-08 21:47:52 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-08 21:47:52 - INFO - __main__ - Analysis for market close on September 08, 2025
+2025-09-08 21:47:52 - INFO - __main__ - Found 497 stocks with price data
+2025-09-08 21:47:52 - INFO - __main__ - Found Wikipedia URL for TTWO: https://en.wikipedia.org/wiki/Take-Two_Interactive
+2025-09-08 21:47:55 - INFO - __main__ - Found Wikipedia URL for CVS: https://en.wikipedia.org/wiki/CVS_Health
+2025-09-08 21:47:57 - INFO - __main__ - Analyzing top performer...
+2025-09-08 21:47:57 - INFO - __main__ - Analyzing Take-Two Interactive (TTWO)
+2025-09-08 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-08 21:47:57 - INFO - __main__ - Searching for articles about TTWO
+2025-09-08 21:47:57 - INFO - __main__ - Searching for news about Take-Two Interactive
+2025-09-08 21:47:59 - INFO - __main__ - Found 6 recent search results for Take-Two Interactive
+2025-09-08 21:47:59 - INFO - __main__ - Found 6 URLs to try for TTWO
+2025-09-08 21:47:59 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-inflation-data-tesla-stock-tsla-buy-point/
+2025-09-08 21:47:59 - INFO - __main__ - Successfully extracted article content (362 chars)
+2025-09-08 21:47:59 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/ttwo-stock-jumps-college-basketball-video-game/
+2025-09-08 21:48:00 - INFO - __main__ - Successfully extracted article content (2026 chars)
+2025-09-08 21:48:00 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/take-two-interactive-software-inc-stock-outperforms-competitors-on-strong-trading-day-bc486a25-b6ad92f1c481
+2025-09-08 21:48:00 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-08 21:48:00 - INFO - __main__ - Fetching content from: https://www.investing.com/news/company-news/taketwo-interactive-stock-hits-alltime-high-at-2456-usd-93CH-4229312
+2025-09-08 21:48:00 - WARNING - __main__ - Article content too short (41 chars)
+2025-09-08 21:48:00 - INFO - __main__ - Fetching content from: https://finviz.com/news/160314/take-two-ttwo-stock-trades-up-here-is-why
+2025-09-08 21:48:00 - INFO - __main__ - Successfully extracted article content (3040 chars)
+2025-09-08 21:48:00 - INFO - __main__ - Fetching content from: https://www.aol.com/two-interactive-stock-beating-market-093500537.html
+2025-09-08 21:48:01 - INFO - __main__ - Successfully extracted article content (5707 chars)
+2025-09-08 21:48:01 - INFO - __main__ - Found total of 3 valid articles for TTWO
+2025-09-08 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-08 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-08 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-08 21:48:05 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-08 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-08 21:48:10 - INFO - __main__ - Top performer analysis complete
+2025-09-08 21:48:10 - INFO - __main__ - Analyzing bottom performer...
+2025-09-08 21:48:10 - INFO - __main__ - Analyzing CVS Health (CVS)
+2025-09-08 21:48:10 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-08 21:48:10 - INFO - __main__ - Searching for articles about CVS
+2025-09-08 21:48:10 - INFO - __main__ - Searching for news about CVS Health
+2025-09-08 21:48:12 - INFO - __main__ - Found 6 recent search results for CVS Health
+2025-09-08 21:48:12 - INFO - __main__ - Found 6 URLs to try for CVS
+2025-09-08 21:48:12 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-09-08/cvs-drops-on-investor-worries-about-government-quality-ratings
+2025-09-08 21:48:12 - INFO - __main__ - Successfully extracted article content (458 chars)
+2025-09-08 21:48:12 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4493118-cvs-down-4-following-presentation-morgan-stanley-investors-conference
+2025-09-08 21:48:12 - INFO - __main__ - Successfully extracted article content (288 chars)
+2025-09-08 21:48:12 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/barclays-lifts-pt-unitedhealth-group-142928784.html
+2025-09-08 21:48:13 - INFO - __main__ - Successfully extracted article content (2743 chars)
+2025-09-08 21:48:13 - INFO - __main__ - Fetching content from: https://www.wsj.com/articles/how-the-ai-boom-is-leaving-consultants-behind-c9088fda?gaa_at=eafs&gaa_n=ASWzDAjIaOI5QeixVboc-BMkhqly7nG19_lEjcQlZAo4ZMMyZanx-ywgBQVG&gaa_ts=68bf52a0&gaa_sig=UntAD9F0tffz5KmfspuRGChAR2UWttX3sKaLZT79MMX5MZC20SGxtReq-bd_XuWw_L-hpJB9KIj7LYUOb3pV6w%3D%3D
+2025-09-08 21:48:13 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-08 21:48:13 - INFO - __main__ - Fetching content from: https://pro.thestreet.com/trade-ideas/a-medical-play-with-exploding-sales-is-on-my-radar
+2025-09-08 21:48:14 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-08 21:48:14 - INFO - __main__ - Fetching content from: https://www.thestreet.com/retail/80-year-old-furniture-giant-liquidates-no-chapter-7-bankruptcy
+2025-09-08 21:48:14 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-08 21:48:14 - INFO - __main__ - Found total of 1 valid articles for CVS
+2025-09-08 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-08 21:48:16 - INFO - __main__ - Found 0 relevant articles out of 1 total
+2025-09-08 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-08 21:48:19 - INFO - __main__ - Bottom performer analysis complete
+2025-09-08 21:48:19 - INFO - __main__ - Saving results to JSON...
+2025-09-08 21:48:19 - INFO - __main__ - Analysis complete and saved to market_analysis.json
