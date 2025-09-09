@@ -1,0 +1,72 @@
+2025-09-09 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-09-09 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-09 21:47:39 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-09 21:47:39 - INFO - __main__ - Runtime timezone: UTC
+2025-09-09 21:47:39 - INFO - __main__ - Original start: 2025-09-08 16:00:00-04:00 (America/New_York)
+2025-09-09 21:47:39 - INFO - __main__ - Original end: 2025-09-09 16:00:00-04:00 (America/New_York)
+2025-09-09 21:47:39 - INFO - __main__ - UTC start: 2025-09-08 04:00:00+00:00
+2025-09-09 21:47:39 - INFO - __main__ - UTC end: 2025-09-10 04:00:00+00:00
+2025-09-09 21:47:39 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-09 21:47:40 - INFO - __main__ - Received data for 497 symbols
+2025-09-09 21:47:40 - INFO - __main__ - Sample data structure for MS:
+2025-09-09 21:47:40 - INFO - __main__ - Number of bars: 2
+2025-09-09 21:47:40 - INFO - __main__ - Bar timestamp: 2025-09-08 04:00:00+00:00 (UTC)
+2025-09-09 21:47:40 - INFO - __main__ - Bar timestamp: 2025-09-09 04:00:00+00:00 (UTC)
+2025-09-09 21:47:40 - INFO - __main__ - MS timestamps - Today: 2025-09-09 04:00:00+00:00, Yesterday: 2025-09-08 04:00:00+00:00
+2025-09-09 21:47:40 - INFO - __main__ - PG timestamps - Today: 2025-09-09 04:00:00+00:00, Yesterday: 2025-09-08 04:00:00+00:00
+2025-09-09 21:47:40 - INFO - __main__ - SWKS timestamps - Today: 2025-09-09 04:00:00+00:00, Yesterday: 2025-09-08 04:00:00+00:00
+2025-09-09 21:47:40 - INFO - __main__ - UDR timestamps - Today: 2025-09-09 04:00:00+00:00, Yesterday: 2025-09-08 04:00:00+00:00
+2025-09-09 21:47:40 - INFO - __main__ - APH timestamps - Today: 2025-09-09 04:00:00+00:00, Yesterday: 2025-09-08 04:00:00+00:00
+2025-09-09 21:47:40 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-09 21:47:40 - INFO - __main__ - Data issues encountered: 0
+2025-09-09 21:47:40 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-09 21:47:40 - INFO - __main__ - Analysis for market close on September 09, 2025
+2025-09-09 21:47:40 - INFO - __main__ - Found 497 stocks with price data
+2025-09-09 21:47:40 - INFO - __main__ - Found Wikipedia URL for UNH: https://en.wikipedia.org/wiki/UnitedHealth_Group
+2025-09-09 21:47:42 - INFO - __main__ - Found Wikipedia URL for HUM: https://en.wikipedia.org/wiki/Humana
+2025-09-09 21:47:44 - INFO - __main__ - Analyzing top performer...
+2025-09-09 21:47:44 - INFO - __main__ - Analyzing UnitedHealth Group (UNH)
+2025-09-09 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-09 21:47:45 - INFO - __main__ - Searching for articles about UNH
+2025-09-09 21:47:45 - INFO - __main__ - Searching for news about UnitedHealth Group
+2025-09-09 21:47:47 - INFO - __main__ - Found 6 recent search results for UnitedHealth Group
+2025-09-09 21:47:47 - INFO - __main__ - Found 6 URLs to try for UNH
+2025-09-09 21:47:47 - INFO - __main__ - Fetching content from: https://www.investopedia.com/why-unitedhealth-group-stock-soared-on-tuesday-unh-medicare-advantage-11806604
+2025-09-09 21:47:47 - INFO - __main__ - Successfully extracted article content (1986 chars)
+2025-09-09 21:47:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/united-health-care-unh-stock-price-a892bdab
+2025-09-09 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-09 21:47:47 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-unitedhealth-group-fox-freeport-mcmoran-and-more-11806307
+2025-09-09 21:47:47 - INFO - __main__ - Successfully extracted article content (1879 chars)
+2025-09-09 21:47:47 - INFO - __main__ - Found total of 2 valid articles for UNH
+2025-09-09 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-09 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-09 21:47:49 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-09 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-09 21:47:53 - INFO - __main__ - Top performer analysis complete
+2025-09-09 21:47:53 - INFO - __main__ - Analyzing bottom performer...
+2025-09-09 21:47:53 - INFO - __main__ - Analyzing Humana (HUM)
+2025-09-09 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-09 21:47:53 - INFO - __main__ - Searching for articles about HUM
+2025-09-09 21:47:53 - INFO - __main__ - Searching for news about Humana
+2025-09-09 21:47:56 - INFO - __main__ - Found 6 recent search results for Humana
+2025-09-09 21:47:56 - INFO - __main__ - Found 6 URLs to try for HUM
+2025-09-09 21:47:56 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-09-09/humana-sinks-on-report-that-medicare-bonuses-now-harder-to-get
+2025-09-09 21:47:56 - INFO - __main__ - Successfully extracted article content (193 chars)
+2025-09-09 21:47:56 - INFO - __main__ - Fetching content from: https://humana.com/about
+2025-09-09 21:47:56 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='humana.com', port=443): Max retries exceeded with url: /about (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f859eb1c430>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-09 21:47:56 - INFO - __main__ - Fetching content from: https://humanamilitary.com/beneficiary/findcare
+2025-09-09 21:47:56 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='humanamilitary.com', port=443): Max retries exceeded with url: /beneficiary/findcare (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f859eb1cca0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-09 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/centene-cnc-assessing-valuation-investors-132444880.html
+2025-09-09 21:47:57 - INFO - __main__ - Successfully extracted article content (4508 chars)
+2025-09-09 21:47:57 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/sailpoint-keeping-close-eye-ai-141220265.html
+2025-09-09 21:47:58 - INFO - __main__ - Successfully extracted article content (10796 chars)
+2025-09-09 21:47:58 - INFO - __main__ - Fetching content from: https://humana.com/pharmacy/medication-information/understanding-drug-tiers
+2025-09-09 21:47:58 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='humana.com', port=443): Max retries exceeded with url: /pharmacy/medication-information/understanding-drug-tiers (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f859eb1dae0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-09-09 21:47:58 - INFO - __main__ - Found total of 2 valid articles for HUM
+2025-09-09 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-09 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-09 21:48:00 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-09-09 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-09 21:48:03 - INFO - __main__ - Bottom performer analysis complete
+2025-09-09 21:48:03 - INFO - __main__ - Saving results to JSON...
+2025-09-09 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
