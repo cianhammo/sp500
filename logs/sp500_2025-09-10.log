@@ -1,0 +1,74 @@
+2025-09-10 21:47:25 - INFO - __main__ - Starting SP500 analysis script
+2025-09-10 21:47:26 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-10 21:47:26 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-10 21:47:26 - INFO - __main__ - Runtime timezone: UTC
+2025-09-10 21:47:26 - INFO - __main__ - Original start: 2025-09-09 16:00:00-04:00 (America/New_York)
+2025-09-10 21:47:26 - INFO - __main__ - Original end: 2025-09-10 16:00:00-04:00 (America/New_York)
+2025-09-10 21:47:26 - INFO - __main__ - UTC start: 2025-09-09 04:00:00+00:00
+2025-09-10 21:47:26 - INFO - __main__ - UTC end: 2025-09-11 04:00:00+00:00
+2025-09-10 21:47:26 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-10 21:47:27 - INFO - __main__ - Received data for 497 symbols
+2025-09-10 21:47:27 - INFO - __main__ - Sample data structure for SMCI:
+2025-09-10 21:47:27 - INFO - __main__ - Number of bars: 2
+2025-09-10 21:47:27 - INFO - __main__ - Bar timestamp: 2025-09-09 04:00:00+00:00 (UTC)
+2025-09-10 21:47:27 - INFO - __main__ - Bar timestamp: 2025-09-10 04:00:00+00:00 (UTC)
+2025-09-10 21:47:27 - INFO - __main__ - SMCI timestamps - Today: 2025-09-10 04:00:00+00:00, Yesterday: 2025-09-09 04:00:00+00:00
+2025-09-10 21:47:27 - INFO - __main__ - STE timestamps - Today: 2025-09-10 04:00:00+00:00, Yesterday: 2025-09-09 04:00:00+00:00
+2025-09-10 21:47:27 - INFO - __main__ - TAP timestamps - Today: 2025-09-10 04:00:00+00:00, Yesterday: 2025-09-09 04:00:00+00:00
+2025-09-10 21:47:27 - INFO - __main__ - FE timestamps - Today: 2025-09-10 04:00:00+00:00, Yesterday: 2025-09-09 04:00:00+00:00
+2025-09-10 21:47:27 - INFO - __main__ - NVR timestamps - Today: 2025-09-10 04:00:00+00:00, Yesterday: 2025-09-09 04:00:00+00:00
+2025-09-10 21:47:27 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-10 21:47:27 - INFO - __main__ - Data issues encountered: 0
+2025-09-10 21:47:27 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-10 21:47:27 - INFO - __main__ - Analysis for market close on September 10, 2025
+2025-09-10 21:47:27 - INFO - __main__ - Found 497 stocks with price data
+2025-09-10 21:47:27 - INFO - __main__ - Found Wikipedia URL for ORCL: https://en.wikipedia.org/wiki/Oracle_Corporation
+2025-09-10 21:47:29 - INFO - __main__ - Found Wikipedia URL for SNPS: https://en.wikipedia.org/wiki/Synopsys
+2025-09-10 21:47:31 - INFO - __main__ - Analyzing top performer...
+2025-09-10 21:47:31 - INFO - __main__ - Analyzing Oracle Corporation (ORCL)
+2025-09-10 21:47:31 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-10 21:47:31 - INFO - __main__ - Searching for articles about ORCL
+2025-09-10 21:47:31 - INFO - __main__ - Searching for news about Oracle Corporation
+2025-09-10 21:47:33 - INFO - __main__ - Found 6 recent search results for Oracle Corporation
+2025-09-10 21:47:33 - INFO - __main__ - Found 6 URLs to try for ORCL
+2025-09-10 21:47:33 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-stock-soars-after-ceo-says-ai-fueled-cloud-revenue-set-to-jump-to-144-billion-154530523.html
+2025-09-10 21:47:34 - INFO - __main__ - Successfully extracted article content (4485 chars)
+2025-09-10 21:47:34 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/oracle-ai-way-microsoft-google-150202346.html
+2025-09-10 21:47:34 - INFO - __main__ - Successfully extracted article content (3862 chars)
+2025-09-10 21:47:34 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-230-billion-market-cap-134839858.html
+2025-09-10 21:47:35 - INFO - __main__ - Successfully extracted article content (2241 chars)
+2025-09-10 21:47:35 - INFO - __main__ - Found total of 3 valid articles for ORCL
+2025-09-10 21:47:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:38 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-10 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:44 - INFO - __main__ - Top performer analysis complete
+2025-09-10 21:47:44 - INFO - __main__ - Analyzing bottom performer...
+2025-09-10 21:47:44 - INFO - __main__ - Analyzing Synopsys (SNPS)
+2025-09-10 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-10 21:47:44 - INFO - __main__ - Searching for articles about SNPS
+2025-09-10 21:47:44 - INFO - __main__ - Searching for news about Synopsys
+2025-09-10 21:47:47 - INFO - __main__ - Found 6 recent search results for Synopsys
+2025-09-10 21:47:47 - INFO - __main__ - Found 6 URLs to try for SNPS
+2025-09-10 21:47:47 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/synopsys-stock-price-earnings-intel-545767f1
+2025-09-10 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-10 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/chip-design-software-provider-synopsys-152436643.html
+2025-09-10 21:47:47 - INFO - __main__ - Successfully extracted article content (1655 chars)
+2025-09-10 21:47:47 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/china/synopsys-set-wipe-out-2025-gains-shares-tank-china-business-woes-2025-09-10/
+2025-09-10 21:47:47 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-10 21:47:47 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/synopsys-china-slowdown-novo-nordisk-133409611.html
+2025-09-10 21:47:48 - INFO - __main__ - Successfully extracted article content (1594 chars)
+2025-09-10 21:47:48 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/snps-synopsys-stock-tanks-q4-172944196.html
+2025-09-10 21:47:49 - INFO - __main__ - Successfully extracted article content (2076 chars)
+2025-09-10 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/synopsys-falls-most-three-decades-134039974.html
+2025-09-10 21:47:49 - INFO - __main__ - Successfully extracted article content (2071 chars)
+2025-09-10 21:47:49 - INFO - __main__ - Found total of 3 valid articles for SNPS
+2025-09-10 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:53 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-10 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-10 21:47:58 - INFO - __main__ - Bottom performer analysis complete
+2025-09-10 21:47:58 - INFO - __main__ - Saving results to JSON...
+2025-09-10 21:47:58 - INFO - __main__ - Analysis complete and saved to market_analysis.json
