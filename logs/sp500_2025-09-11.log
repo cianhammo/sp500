@@ -1,0 +1,67 @@
+2025-09-11 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-09-11 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-11 21:47:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-11 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-09-11 21:47:36 - INFO - __main__ - Original start: 2025-09-10 16:00:00-04:00 (America/New_York)
+2025-09-11 21:47:36 - INFO - __main__ - Original end: 2025-09-11 16:00:00-04:00 (America/New_York)
+2025-09-11 21:47:36 - INFO - __main__ - UTC start: 2025-09-10 04:00:00+00:00
+2025-09-11 21:47:36 - INFO - __main__ - UTC end: 2025-09-12 04:00:00+00:00
+2025-09-11 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-11 21:47:37 - INFO - __main__ - Received data for 497 symbols
+2025-09-11 21:47:37 - INFO - __main__ - Sample data structure for SNA:
+2025-09-11 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-09-11 21:47:37 - INFO - __main__ - Bar timestamp: 2025-09-10 04:00:00+00:00 (UTC)
+2025-09-11 21:47:37 - INFO - __main__ - Bar timestamp: 2025-09-11 04:00:00+00:00 (UTC)
+2025-09-11 21:47:37 - INFO - __main__ - SNA timestamps - Today: 2025-09-11 04:00:00+00:00, Yesterday: 2025-09-10 04:00:00+00:00
+2025-09-11 21:47:37 - INFO - __main__ - CF timestamps - Today: 2025-09-11 04:00:00+00:00, Yesterday: 2025-09-10 04:00:00+00:00
+2025-09-11 21:47:37 - INFO - __main__ - PCAR timestamps - Today: 2025-09-11 04:00:00+00:00, Yesterday: 2025-09-10 04:00:00+00:00
+2025-09-11 21:47:37 - INFO - __main__ - FICO timestamps - Today: 2025-09-11 04:00:00+00:00, Yesterday: 2025-09-10 04:00:00+00:00
+2025-09-11 21:47:37 - INFO - __main__ - GPC timestamps - Today: 2025-09-11 04:00:00+00:00, Yesterday: 2025-09-10 04:00:00+00:00
+2025-09-11 21:47:38 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-11 21:47:38 - INFO - __main__ - Data issues encountered: 0
+2025-09-11 21:47:38 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-11 21:47:38 - INFO - __main__ - Analysis for market close on September 11, 2025
+2025-09-11 21:47:38 - INFO - __main__ - Found 497 stocks with price data
+2025-09-11 21:47:38 - INFO - __main__ - Found Wikipedia URL for WBD: https://en.wikipedia.org/wiki/Warner_Bros._Discovery
+2025-09-11 21:47:40 - INFO - __main__ - Found Wikipedia URL for ORCL: https://en.wikipedia.org/wiki/Oracle_Corporation
+2025-09-11 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-09-11 21:47:42 - INFO - __main__ - Analyzing Warner Bros. Discovery (WBD)
+2025-09-11 21:47:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-11 21:47:43 - INFO - __main__ - Searching for articles about WBD
+2025-09-11 21:47:43 - INFO - __main__ - Searching for news about Warner Bros. Discovery
+2025-09-11 21:47:45 - INFO - __main__ - Found 6 recent search results for Warner Bros. Discovery
+2025-09-11 21:47:45 - INFO - __main__ - Found 6 URLs to try for WBD
+2025-09-11 21:47:45 - INFO - __main__ - Fetching content from: https://www.hollywoodreporter.com/business/business-news/warner-bros-discovery-stock-wbd-rally-paramount-bid-news-1236368475/
+2025-09-11 21:47:46 - INFO - __main__ - Successfully extracted article content (2141 chars)
+2025-09-11 21:47:46 - INFO - __main__ - Fetching content from: https://www.nytimes.com/2025/09/11/business/media/paramount-warner-bros-discovery-bid.html
+2025-09-11 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-11 21:47:46 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-warner-bros-discovery-stock-soars-oracle-netflix-slip-11808188
+2025-09-11 21:47:46 - INFO - __main__ - Successfully extracted article content (3813 chars)
+2025-09-11 21:47:46 - INFO - __main__ - Found total of 2 valid articles for WBD
+2025-09-11 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:47:49 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-11 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-09-11 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-09-11 21:47:52 - INFO - __main__ - Analyzing Oracle Corporation (ORCL)
+2025-09-11 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-11 21:47:53 - INFO - __main__ - Searching for articles about ORCL
+2025-09-11 21:47:53 - INFO - __main__ - Searching for news about Oracle Corporation
+2025-09-11 21:47:55 - INFO - __main__ - Found 6 recent search results for Oracle Corporation
+2025-09-11 21:47:55 - INFO - __main__ - Found 6 URLs to try for ORCL
+2025-09-11 21:47:55 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4822054-oracle-earnings-pop-is-an-overshoot
+2025-09-11 21:47:55 - INFO - __main__ - Successfully extracted article content (2117 chars)
+2025-09-11 21:47:55 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4822123-oracle-q1-control-your-fomo
+2025-09-11 21:47:55 - INFO - __main__ - Successfully extracted article content (1833 chars)
+2025-09-11 21:47:55 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4822188-oracle-unleashing-massive-cloud-growth
+2025-09-11 21:47:56 - INFO - __main__ - Successfully extracted article content (1068 chars)
+2025-09-11 21:47:56 - INFO - __main__ - Found total of 3 valid articles for ORCL
+2025-09-11 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:47:59 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-09-11 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-11 21:48:02 - INFO - __main__ - Bottom performer analysis complete
+2025-09-11 21:48:02 - INFO - __main__ - Saving results to JSON...
+2025-09-11 21:48:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
