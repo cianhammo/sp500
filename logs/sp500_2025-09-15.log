@@ -1,0 +1,67 @@
+2025-09-15 21:47:47 - INFO - __main__ - Starting SP500 analysis script
+2025-09-15 21:47:47 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-15 21:47:47 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-15 21:47:47 - INFO - __main__ - Runtime timezone: UTC
+2025-09-15 21:47:47 - INFO - __main__ - Original start: 2025-09-12 16:00:00-04:00 (America/New_York)
+2025-09-15 21:47:47 - INFO - __main__ - Original end: 2025-09-15 16:00:00-04:00 (America/New_York)
+2025-09-15 21:47:47 - INFO - __main__ - UTC start: 2025-09-12 04:00:00+00:00
+2025-09-15 21:47:47 - INFO - __main__ - UTC end: 2025-09-16 04:00:00+00:00
+2025-09-15 21:47:47 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-15 21:47:48 - INFO - __main__ - Received data for 497 symbols
+2025-09-15 21:47:48 - INFO - __main__ - Sample data structure for AMAT:
+2025-09-15 21:47:48 - INFO - __main__ - Number of bars: 2
+2025-09-15 21:47:48 - INFO - __main__ - Bar timestamp: 2025-09-12 04:00:00+00:00 (UTC)
+2025-09-15 21:47:48 - INFO - __main__ - Bar timestamp: 2025-09-15 04:00:00+00:00 (UTC)
+2025-09-15 21:47:48 - INFO - __main__ - AMAT timestamps - Today: 2025-09-15 04:00:00+00:00, Yesterday: 2025-09-12 04:00:00+00:00
+2025-09-15 21:47:48 - INFO - __main__ - EMN timestamps - Today: 2025-09-15 04:00:00+00:00, Yesterday: 2025-09-12 04:00:00+00:00
+2025-09-15 21:47:48 - INFO - __main__ - MDLZ timestamps - Today: 2025-09-15 04:00:00+00:00, Yesterday: 2025-09-12 04:00:00+00:00
+2025-09-15 21:47:48 - INFO - __main__ - REGN timestamps - Today: 2025-09-15 04:00:00+00:00, Yesterday: 2025-09-12 04:00:00+00:00
+2025-09-15 21:47:48 - INFO - __main__ - ADM timestamps - Today: 2025-09-15 04:00:00+00:00, Yesterday: 2025-09-12 04:00:00+00:00
+2025-09-15 21:47:48 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-15 21:47:48 - INFO - __main__ - Data issues encountered: 0
+2025-09-15 21:47:48 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-15 21:47:48 - INFO - __main__ - Analysis for market close on September 15, 2025
+2025-09-15 21:47:48 - INFO - __main__ - Found 497 stocks with price data
+2025-09-15 21:47:48 - INFO - __main__ - Found Wikipedia URL for STX: https://en.wikipedia.org/wiki/Seagate_Technology
+2025-09-15 21:47:51 - INFO - __main__ - Found Wikipedia URL for CTVA: https://en.wikipedia.org/wiki/Corteva
+2025-09-15 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-09-15 21:47:53 - INFO - __main__ - Analyzing Seagate Technology (STX)
+2025-09-15 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-15 21:47:53 - INFO - __main__ - Searching for articles about STX
+2025-09-15 21:47:53 - INFO - __main__ - Searching for news about Seagate Technology
+2025-09-15 21:47:55 - INFO - __main__ - Found 6 recent search results for Seagate Technology
+2025-09-15 21:47:55 - INFO - __main__ - Found 6 URLs to try for STX
+2025-09-15 21:47:55 - INFO - __main__ - Fetching content from: https://sherwood.news/markets/nvidia-falls-chinese-regulator-said-violated-countrys-antitrust-laws/
+2025-09-15 21:47:55 - INFO - __main__ - Successfully extracted article content (2071 chars)
+2025-09-15 21:47:55 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-tesla-intel-nvidia-and-more-11809916
+2025-09-15 21:47:56 - INFO - __main__ - Successfully extracted article content (2170 chars)
+2025-09-15 21:47:56 - INFO - __main__ - Fetching content from: https://www.livemint.com/market/stock-market-news/wall-street-today-dow-s-p-500-nasdaq-open-higher-as-investors-focus-on-us-feds-meeting-tesla-stock-jumps-7-5-today-11757943660928.html
+2025-09-15 21:47:56 - INFO - __main__ - Successfully extracted article content (3918 chars)
+2025-09-15 21:47:56 - INFO - __main__ - Found total of 3 valid articles for STX
+2025-09-15 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:03 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-09-15 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:07 - INFO - __main__ - Top performer analysis complete
+2025-09-15 21:48:07 - INFO - __main__ - Analyzing bottom performer...
+2025-09-15 21:48:07 - INFO - __main__ - Analyzing Corteva (CTVA)
+2025-09-15 21:48:07 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-15 21:48:08 - INFO - __main__ - Searching for articles about CTVA
+2025-09-15 21:48:08 - INFO - __main__ - Searching for news about Corteva
+2025-09-15 21:48:11 - INFO - __main__ - Found 6 recent search results for Corteva
+2025-09-15 21:48:11 - INFO - __main__ - Found 6 URLs to try for CTVA
+2025-09-15 21:48:11 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/corteva-looking-split-seed-pesticide-131306780.html
+2025-09-15 21:48:12 - INFO - __main__ - Successfully extracted article content (1341 chars)
+2025-09-15 21:48:12 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/corteva-shares-fall-potential-split-160320487.html
+2025-09-15 21:48:14 - INFO - __main__ - Successfully extracted article content (1855 chars)
+2025-09-15 21:48:14 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-1e9c4755
+2025-09-15 21:48:14 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-15 21:48:14 - INFO - __main__ - Found total of 2 valid articles for CTVA
+2025-09-15 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:16 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-15 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-15 21:48:20 - INFO - __main__ - Bottom performer analysis complete
+2025-09-15 21:48:20 - INFO - __main__ - Saving results to JSON...
+2025-09-15 21:48:20 - INFO - __main__ - Analysis complete and saved to market_analysis.json
