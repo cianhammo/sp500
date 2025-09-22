@@ -1,0 +1,74 @@
+2025-09-22 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-09-22 21:47:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-22 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-22 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-09-22 21:47:42 - INFO - __main__ - Original start: 2025-09-19 16:00:00-04:00 (America/New_York)
+2025-09-22 21:47:42 - INFO - __main__ - Original end: 2025-09-22 16:00:00-04:00 (America/New_York)
+2025-09-22 21:47:42 - INFO - __main__ - UTC start: 2025-09-19 04:00:00+00:00
+2025-09-22 21:47:42 - INFO - __main__ - UTC end: 2025-09-23 04:00:00+00:00
+2025-09-22 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-22 21:47:43 - INFO - __main__ - Received data for 497 symbols
+2025-09-22 21:47:43 - INFO - __main__ - Sample data structure for CFG:
+2025-09-22 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-09-22 21:47:43 - INFO - __main__ - Bar timestamp: 2025-09-19 04:00:00+00:00 (UTC)
+2025-09-22 21:47:43 - INFO - __main__ - Bar timestamp: 2025-09-22 04:00:00+00:00 (UTC)
+2025-09-22 21:47:43 - INFO - __main__ - CFG timestamps - Today: 2025-09-22 04:00:00+00:00, Yesterday: 2025-09-19 04:00:00+00:00
+2025-09-22 21:47:43 - INFO - __main__ - CTAS timestamps - Today: 2025-09-22 04:00:00+00:00, Yesterday: 2025-09-19 04:00:00+00:00
+2025-09-22 21:47:43 - INFO - __main__ - DPZ timestamps - Today: 2025-09-22 04:00:00+00:00, Yesterday: 2025-09-19 04:00:00+00:00
+2025-09-22 21:47:43 - INFO - __main__ - JKHY timestamps - Today: 2025-09-22 04:00:00+00:00, Yesterday: 2025-09-19 04:00:00+00:00
+2025-09-22 21:47:43 - INFO - __main__ - ADP timestamps - Today: 2025-09-22 04:00:00+00:00, Yesterday: 2025-09-19 04:00:00+00:00
+2025-09-22 21:47:44 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-22 21:47:44 - INFO - __main__ - Data issues encountered: 0
+2025-09-22 21:47:44 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-22 21:47:44 - INFO - __main__ - Analysis for market close on September 22, 2025
+2025-09-22 21:47:44 - INFO - __main__ - Found 497 stocks with price data
+2025-09-22 21:47:44 - INFO - __main__ - Found Wikipedia URL for TER: https://en.wikipedia.org/wiki/Teradyne
+2025-09-22 21:47:46 - INFO - __main__ - Found Wikipedia URL for KVUE: https://en.wikipedia.org/wiki/Kenvue
+2025-09-22 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-09-22 21:47:48 - INFO - __main__ - Analyzing Teradyne (TER)
+2025-09-22 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-22 21:47:49 - INFO - __main__ - Searching for articles about TER
+2025-09-22 21:47:49 - INFO - __main__ - Searching for news about Teradyne
+2025-09-22 21:47:51 - INFO - __main__ - Found 6 recent search results for Teradyne
+2025-09-22 21:47:51 - INFO - __main__ - Found 6 URLs to try for TER
+2025-09-22 21:47:51 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/teradyne-stock-s-p-500-best-performer-814f11ee
+2025-09-22 21:47:51 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-22 21:47:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/apple-teradayne-netflix-ab-inbev-155226549.html
+2025-09-22 21:47:52 - INFO - __main__ - Successfully extracted article content (5417 chars)
+2025-09-22 21:47:52 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/22/stocks-making-the-biggest-midday-moves-orcl-aapl-mtsr-comp-kvue-and-more.html
+2025-09-22 21:47:53 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-22 21:47:53 - INFO - __main__ - Successfully extracted article content (3480 chars)
+2025-09-22 21:47:53 - INFO - __main__ - Found total of 2 valid articles for TER
+2025-09-22 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:47:55 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-22 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:48:00 - INFO - __main__ - Top performer analysis complete
+2025-09-22 21:48:00 - INFO - __main__ - Analyzing bottom performer...
+2025-09-22 21:48:00 - INFO - __main__ - Analyzing Kenvue (KVUE)
+2025-09-22 21:48:00 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-22 21:48:00 - INFO - __main__ - Searching for articles about KVUE
+2025-09-22 21:48:00 - INFO - __main__ - Searching for news about Kenvue
+2025-09-22 21:48:04 - INFO - __main__ - Found 6 recent search results for Kenvue
+2025-09-22 21:48:04 - INFO - __main__ - Found 6 URLs to try for KVUE
+2025-09-22 21:48:04 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/kenvue-stock-trump-tylenol-autism-5cd114b2
+2025-09-22 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-22 21:48:04 - INFO - __main__ - Fetching content from: https://www.nytimes.com/2025/09/22/health/tylenol-autism-kenvue.html
+2025-09-22 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-22 21:48:04 - INFO - __main__ - Fetching content from: https://www.usatoday.com/story/money/business/2025/09/22/kenvue-tylenol-rfk-jr-autism-link/86296224007/
+2025-09-22 21:48:04 - INFO - __main__ - Successfully extracted article content (2623 chars)
+2025-09-22 21:48:04 - INFO - __main__ - Fetching content from: https://www.investopedia.com/kenvue-shares-fall-on-report-that-white-house-plans-to-link-tylenol-to-autism-risk-11814318
+2025-09-22 21:48:04 - INFO - __main__ - Successfully extracted article content (2297 chars)
+2025-09-22 21:48:04 - INFO - __main__ - Fetching content from: https://www.businessinsider.com/tylenol-autism-link-white-house-kenvue-stock-price-hhs-kennedy-2025-9
+2025-09-22 21:48:04 - INFO - __main__ - Successfully extracted article content (2250 chars)
+2025-09-22 21:48:04 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-apple-kenvue-and-more-11814432
+2025-09-22 21:48:04 - INFO - __main__ - Successfully extracted article content (2300 chars)
+2025-09-22 21:48:04 - INFO - __main__ - Found total of 3 valid articles for KVUE
+2025-09-22 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:48:08 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-22 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-22 21:48:12 - INFO - __main__ - Bottom performer analysis complete
+2025-09-22 21:48:12 - INFO - __main__ - Saving results to JSON...
+2025-09-22 21:48:12 - INFO - __main__ - Analysis complete and saved to market_analysis.json
