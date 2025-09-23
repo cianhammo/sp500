@@ -1,0 +1,71 @@
+2025-09-23 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-09-23 21:47:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-23 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-23 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-09-23 21:47:42 - INFO - __main__ - Original start: 2025-09-22 16:00:00-04:00 (America/New_York)
+2025-09-23 21:47:42 - INFO - __main__ - Original end: 2025-09-23 16:00:00-04:00 (America/New_York)
+2025-09-23 21:47:42 - INFO - __main__ - UTC start: 2025-09-22 04:00:00+00:00
+2025-09-23 21:47:42 - INFO - __main__ - UTC end: 2025-09-24 04:00:00+00:00
+2025-09-23 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-23 21:47:43 - INFO - __main__ - Received data for 497 symbols
+2025-09-23 21:47:43 - INFO - __main__ - Sample data structure for VTRS:
+2025-09-23 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-09-23 21:47:43 - INFO - __main__ - Bar timestamp: 2025-09-22 04:00:00+00:00 (UTC)
+2025-09-23 21:47:43 - INFO - __main__ - Bar timestamp: 2025-09-23 04:00:00+00:00 (UTC)
+2025-09-23 21:47:43 - INFO - __main__ - VTRS timestamps - Today: 2025-09-23 04:00:00+00:00, Yesterday: 2025-09-22 04:00:00+00:00
+2025-09-23 21:47:43 - INFO - __main__ - IEX timestamps - Today: 2025-09-23 04:00:00+00:00, Yesterday: 2025-09-22 04:00:00+00:00
+2025-09-23 21:47:43 - INFO - __main__ - TDY timestamps - Today: 2025-09-23 04:00:00+00:00, Yesterday: 2025-09-22 04:00:00+00:00
+2025-09-23 21:47:43 - INFO - __main__ - WM timestamps - Today: 2025-09-23 04:00:00+00:00, Yesterday: 2025-09-22 04:00:00+00:00
+2025-09-23 21:47:43 - INFO - __main__ - RCL timestamps - Today: 2025-09-23 04:00:00+00:00, Yesterday: 2025-09-22 04:00:00+00:00
+2025-09-23 21:47:44 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-23 21:47:44 - INFO - __main__ - Data issues encountered: 0
+2025-09-23 21:47:44 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-23 21:47:44 - INFO - __main__ - Analysis for market close on September 23, 2025
+2025-09-23 21:47:44 - INFO - __main__ - Found 497 stocks with price data
+2025-09-23 21:47:44 - INFO - __main__ - Found Wikipedia URL for HAL: https://en.wikipedia.org/wiki/Halliburton
+2025-09-23 21:47:46 - INFO - __main__ - Found Wikipedia URL for GNRC: https://en.wikipedia.org/wiki/Generac
+2025-09-23 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-09-23 21:47:48 - INFO - __main__ - Analyzing Halliburton (HAL)
+2025-09-23 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-23 21:47:49 - INFO - __main__ - Searching for articles about HAL
+2025-09-23 21:47:49 - INFO - __main__ - Searching for news about Halliburton
+2025-09-23 21:47:51 - INFO - __main__ - Found 6 recent search results for Halliburton
+2025-09-23 21:47:51 - INFO - __main__ - Found 6 URLs to try for HAL
+2025-09-23 21:47:51 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-halliburton-vistra-and-more-11815316
+2025-09-23 21:47:51 - INFO - __main__ - Successfully extracted article content (1682 chars)
+2025-09-23 21:47:51 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/23/stocks-making-the-biggest-moves-midday-fly-azo-sre-hal.html
+2025-09-23 21:47:52 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-23 21:47:52 - INFO - __main__ - Successfully extracted article content (2495 chars)
+2025-09-23 21:47:52 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-8ee676ef
+2025-09-23 21:47:52 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-23 21:47:52 - INFO - __main__ - Found total of 2 valid articles for HAL
+2025-09-23 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:47:54 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-23 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:47:58 - INFO - __main__ - Top performer analysis complete
+2025-09-23 21:47:58 - INFO - __main__ - Analyzing bottom performer...
+2025-09-23 21:47:58 - INFO - __main__ - Analyzing Generac (GNRC)
+2025-09-23 21:47:58 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-23 21:47:58 - INFO - __main__ - Searching for articles about GNRC
+2025-09-23 21:47:58 - INFO - __main__ - Searching for news about Generac
+2025-09-23 21:48:04 - INFO - __main__ - Found 6 recent search results for Generac
+2025-09-23 21:48:04 - INFO - __main__ - Found 6 URLs to try for GNRC
+2025-09-23 21:48:04 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/09/23/3-top-dividend-etfs-to-hold-for-10-years/
+2025-09-23 21:48:04 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-23 21:48:04 - INFO - __main__ - Successfully extracted article content (4544 chars)
+2025-09-23 21:48:04 - INFO - __main__ - Fetching content from: https://247wallst.com/military/2025/09/23/every-u-s-military-rifle-since-wwii-by-caliber-and-rate-of-fire/
+2025-09-23 21:48:04 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-23 21:48:04 - INFO - __main__ - Successfully extracted article content (16059 chars)
+2025-09-23 21:48:04 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/09/23/3-dividend-etfs-to-buy-for-an-incredible-passive-income-stream-in-retirement/
+2025-09-23 21:48:04 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-23 21:48:04 - INFO - __main__ - Successfully extracted article content (5223 chars)
+2025-09-23 21:48:04 - INFO - __main__ - Found total of 3 valid articles for GNRC
+2025-09-23 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:48:09 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-09-23 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-23 21:48:13 - INFO - __main__ - Bottom performer analysis complete
+2025-09-23 21:48:13 - INFO - __main__ - Saving results to JSON...
+2025-09-23 21:48:13 - INFO - __main__ - Analysis complete and saved to market_analysis.json
