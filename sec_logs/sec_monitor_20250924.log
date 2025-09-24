@@ -423,3 +423,94 @@ Please retry in 33.517343507s. [violations {
 2025-09-24 15:42:19,761 - sec_monitor - INFO - Completed fetching. Found 53 total filings
 2025-09-24 15:42:19,762 - sec_monitor - INFO - Found 0 new interesting filings
 2025-09-24 15:42:19,762 - sec_monitor - INFO - No new filings to process
+2025-09-24 18:21:49,619 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-09-24 18:21:49,619 - sec_monitor - INFO - Loading S&P 500 data...
+2025-09-24 18:21:49,619 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-09-24 18:21:49,619 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-24 18:21:49,619 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-24 18:21:49,619 - sec_monitor - INFO - Initializing components...
+2025-09-24 18:21:49,620 - sec_monitor - INFO - Initializing components
+2025-09-24 18:21:49,620 - sec_monitor - INFO - SEC fetcher initialized
+2025-09-24 18:21:49,620 - sec_monitor - INFO - Filing analyzer initialized
+2025-09-24 18:21:49,620 - sec_monitor - INFO - Alpaca clients initialized
+2025-09-24 18:21:49,620 - sec_monitor - INFO - All components initialized successfully
+2025-09-24 18:21:49,621 - sec_monitor - INFO - Found JSON file from today
+2025-09-24 18:21:49,621 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2025-09-24 18:21:49,621 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2025-09-24 18:21:49,621 - sec_monitor - INFO - Fetching SEC filings...
+2025-09-24 18:22:06,287 - sec_monitor - INFO - No more entries found
+2025-09-24 18:22:06,288 - sec_monitor - INFO - Completed fetching. Found 49 total filings
+2025-09-24 18:22:06,288 - sec_monitor - INFO - Found 2 new interesting filings
+2025-09-24 18:22:06,288 - sec_monitor - INFO - Found 2 new filings to process
+2025-09-24 18:22:06,288 - sec_monitor - INFO - Processing filing 1/2: XEL
+2025-09-24 18:22:36,894 - sec_monitor - INFO - ==================================================
+2025-09-24 18:22:36,894 - sec_monitor - INFO - Processing first chunk
+2025-09-24 18:22:36,894 - sec_monitor - INFO - Timestamp: 2025-09-24 18:22:36
+2025-09-24 18:22:37,056 - sec_monitor - INFO - token percentage = 4%
+2025-09-24 18:22:37,056 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-24 18:22:37,056 - sec_monitor - INFO - Timestamp: 2025-09-24 18:22:37
+2025-09-24 18:22:43,024 - sec_monitor - INFO - API call successful
+2025-09-24 18:22:44,025 - sec_monitor - INFO - Processing filing 2/2: FCX
+2025-09-24 18:23:25,544 - sec_monitor - INFO - ==================================================
+2025-09-24 18:23:25,544 - sec_monitor - INFO - Processing first chunk
+2025-09-24 18:23:25,544 - sec_monitor - INFO - Timestamp: 2025-09-24 18:23:25
+2025-09-24 18:23:25,902 - sec_monitor - INFO - token percentage = 51%
+2025-09-24 18:23:25,902 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-24 18:23:25,902 - sec_monitor - INFO - Timestamp: 2025-09-24 18:23:25
+2025-09-24 18:23:43,618 - sec_monitor - INFO - API call successful
+2025-09-24 18:24:13,648 - sec_monitor - INFO - ==================================================
+2025-09-24 18:24:13,648 - sec_monitor - INFO - Processing last chunk
+2025-09-24 18:24:13,649 - sec_monitor - INFO - Timestamp: 2025-09-24 18:24:13
+2025-09-24 18:24:13,745 - sec_monitor - INFO - token percentage = 3%
+2025-09-24 18:24:13,745 - sec_monitor - INFO - Making API call - Attempt 1/3
+2025-09-24 18:24:13,745 - sec_monitor - INFO - Timestamp: 2025-09-24 18:24:13
+2025-09-24 18:24:13,879 - sec_monitor - ERROR - API call failed - Attempt 1
+2025-09-24 18:24:13,880 - sec_monitor - ERROR - Error: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 250000
+Please retry in 46.143024017s. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count"
+  quota_id: "GenerateContentInputTokensPerModelPerMinute-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 250000
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-09-24 18:24:13,880 - sec_monitor - INFO - Quota exceeded. Sleeping for 180 seconds before retry...
+2025-09-24 18:27:13,980 - sec_monitor - INFO - Making API call - Attempt 2/3
+2025-09-24 18:27:13,980 - sec_monitor - INFO - Timestamp: 2025-09-24 18:27:13
+2025-09-24 18:27:17,275 - sec_monitor - INFO - API call successful
+2025-09-24 18:27:17,276 - sec_monitor - INFO - Making combine API call - Attempt 1/3
+2025-09-24 18:27:17,276 - sec_monitor - INFO - Timestamp: 2025-09-24 18:27:17
+2025-09-24 18:27:18,291 - sec_monitor - INFO - Combine API call successful
+2025-09-24 18:27:19,292 - sec_monitor - INFO - Fetching supplementary data...
+2025-09-24 18:27:19,776 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-09-24 18:27:19,776 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-09-24 18:27:19,776 - sec_monitor - INFO - Market open: True
+2025-09-24 18:27:19,776 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-09-24 18:27:19,848 - sec_monitor - INFO - Last trading day: 2025-09-24
+2025-09-24 18:27:19,849 - sec_monitor - INFO - Processing ticker: XEL
+2025-09-24 18:27:20,403 - sec_monitor - INFO - Number of bars for XEL: 3
+2025-09-24 18:27:20,403 - sec_monitor - INFO - Last bar close for XEL: 73.025
+2025-09-24 18:27:20,404 - sec_monitor - INFO - Market open price for XEL: 73.025, change: 0.946917334807855%
+2025-09-24 18:27:20,404 - sec_monitor - INFO - Processing ticker: FCX
+2025-09-24 18:27:20,439 - sec_monitor - INFO - Number of bars for FCX: 3
+2025-09-24 18:27:20,439 - sec_monitor - INFO - Last bar close for FCX: 45.39
+2025-09-24 18:27:20,439 - sec_monitor - INFO - Market open price for FCX: 45.39, change: 0.5093002657218866%
+2025-09-24 18:27:21,056 - sec_monitor - INFO - Generating final output...
+2025-09-24 18:27:21,057 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-09-24 18:27:21,057 - sec_monitor - INFO - Cumulative stats - Input words: 300963, Output words: 817
+2025-09-24 18:27:21,057 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-09-24 18:27:21,057 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 38419, 'output_words': 154, 'filings_processed': 2}
