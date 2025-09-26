@@ -1,0 +1,67 @@
+2025-09-25 21:47:51 - INFO - __main__ - Starting SP500 analysis script
+2025-09-25 21:47:51 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-25 21:47:52 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-25 21:47:52 - INFO - __main__ - Runtime timezone: UTC
+2025-09-25 21:47:52 - INFO - __main__ - Original start: 2025-09-24 16:00:00-04:00 (America/New_York)
+2025-09-25 21:47:52 - INFO - __main__ - Original end: 2025-09-25 16:00:00-04:00 (America/New_York)
+2025-09-25 21:47:52 - INFO - __main__ - UTC start: 2025-09-24 04:00:00+00:00
+2025-09-25 21:47:52 - INFO - __main__ - UTC end: 2025-09-26 04:00:00+00:00
+2025-09-25 21:47:52 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-25 21:47:53 - INFO - __main__ - Received data for 497 symbols
+2025-09-25 21:47:53 - INFO - __main__ - Sample data structure for BKNG:
+2025-09-25 21:47:53 - INFO - __main__ - Number of bars: 2
+2025-09-25 21:47:53 - INFO - __main__ - Bar timestamp: 2025-09-24 04:00:00+00:00 (UTC)
+2025-09-25 21:47:53 - INFO - __main__ - Bar timestamp: 2025-09-25 04:00:00+00:00 (UTC)
+2025-09-25 21:47:53 - INFO - __main__ - BKNG timestamps - Today: 2025-09-25 04:00:00+00:00, Yesterday: 2025-09-24 04:00:00+00:00
+2025-09-25 21:47:53 - INFO - __main__ - COP timestamps - Today: 2025-09-25 04:00:00+00:00, Yesterday: 2025-09-24 04:00:00+00:00
+2025-09-25 21:47:53 - INFO - __main__ - CSX timestamps - Today: 2025-09-25 04:00:00+00:00, Yesterday: 2025-09-24 04:00:00+00:00
+2025-09-25 21:47:53 - INFO - __main__ - DHR timestamps - Today: 2025-09-25 04:00:00+00:00, Yesterday: 2025-09-24 04:00:00+00:00
+2025-09-25 21:47:53 - INFO - __main__ - INVH timestamps - Today: 2025-09-25 04:00:00+00:00, Yesterday: 2025-09-24 04:00:00+00:00
+2025-09-25 21:47:53 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-25 21:47:53 - INFO - __main__ - Data issues encountered: 0
+2025-09-25 21:47:53 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-25 21:47:53 - INFO - __main__ - Analysis for market close on September 25, 2025
+2025-09-25 21:47:53 - INFO - __main__ - Found 497 stocks with price data
+2025-09-25 21:47:53 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2025-09-25 21:47:56 - INFO - __main__ - Found Wikipedia URL for KMX: https://en.wikipedia.org/wiki/CarMax
+2025-09-25 21:47:58 - INFO - __main__ - Analyzing top performer...
+2025-09-25 21:47:58 - INFO - __main__ - Analyzing Intel (INTC)
+2025-09-25 21:47:58 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-25 21:47:59 - INFO - __main__ - Searching for articles about INTC
+2025-09-25 21:47:59 - INFO - __main__ - Searching for news about Intel
+2025-09-25 21:48:05 - INFO - __main__ - Found 6 recent search results for Intel
+2025-09-25 21:48:05 - INFO - __main__ - Found 6 URLs to try for INTC
+2025-09-25 21:48:05 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intc-intel-stock-jumps-6-122718912.html
+2025-09-25 21:48:05 - INFO - __main__ - Successfully extracted article content (1118 chars)
+2025-09-25 21:48:05 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intel-stock-price-apple-investment-1b1992e8
+2025-09-25 21:48:06 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-25 21:48:06 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-intel-ibm-oracle-lithium-americas-and-more-11816932
+2025-09-25 21:48:06 - INFO - __main__ - Successfully extracted article content (1659 chars)
+2025-09-25 21:48:06 - INFO - __main__ - Found total of 2 valid articles for INTC
+2025-09-25 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-25 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-25 21:48:09 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-25 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-25 21:48:14 - INFO - __main__ - Top performer analysis complete
+2025-09-25 21:48:14 - INFO - __main__ - Analyzing bottom performer...
+2025-09-25 21:48:14 - INFO - __main__ - Analyzing CarMax (KMX)
+2025-09-25 21:48:14 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-25 21:48:14 - INFO - __main__ - Searching for articles about KMX
+2025-09-25 21:48:14 - INFO - __main__ - Searching for news about CarMax
+2025-09-25 21:48:18 - INFO - __main__ - Found 6 recent search results for CarMax
+2025-09-25 21:48:18 - INFO - __main__ - Found 6 URLs to try for KMX
+2025-09-25 21:48:18 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/09/25/carmax-stock-plummets-after-missed-wall-streets-expectations.html
+2025-09-25 21:48:19 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-25 21:48:19 - INFO - __main__ - Successfully extracted article content (2331 chars)
+2025-09-25 21:48:19 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/carmax-stock-hits-52-week-125704337.html
+2025-09-25 21:48:19 - INFO - __main__ - Successfully extracted article content (2651 chars)
+2025-09-25 21:48:19 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/carmax-earnings-stock-price-fa3728f1
+2025-09-25 21:48:19 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-25 21:48:19 - INFO - __main__ - Found total of 2 valid articles for KMX
+2025-09-25 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-25 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-25 21:48:24 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-09-25 21:48:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-25 21:48:29 - INFO - __main__ - Bottom performer analysis complete
+2025-09-25 21:48:29 - INFO - __main__ - Saving results to JSON...
+2025-09-25 21:48:29 - INFO - __main__ - Analysis complete and saved to market_analysis.json
