@@ -89,3 +89,44 @@
 2025-09-29 12:42:47,278 - sec_monitor - INFO - Generating final output...
 2025-09-29 12:42:47,280 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-09-29 12:42:47,280 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 116901, 'output_words': 0, 'filings_processed': 8}
+2025-09-29 13:31:45,346 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-09-29 13:31:45,346 - sec_monitor - INFO - Loading S&P 500 data...
+2025-09-29 13:31:45,346 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-09-29 13:31:45,346 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-29 13:31:45,347 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-09-29 13:31:45,347 - sec_monitor - INFO - Initializing components...
+2025-09-29 13:31:45,347 - sec_monitor - INFO - Initializing components
+2025-09-29 13:31:45,347 - sec_monitor - INFO - SEC fetcher initialized
+2025-09-29 13:31:45,347 - sec_monitor - INFO - Filing analyzer initialized
+2025-09-29 13:31:45,347 - sec_monitor - INFO - Alpaca clients initialized
+2025-09-29 13:31:45,347 - sec_monitor - INFO - All components initialized successfully
+2025-09-29 13:31:45,348 - sec_monitor - INFO - Found JSON file from today
+2025-09-29 13:31:45,348 - sec_monitor - INFO - Found 8 previously processed accessions and 8 filing URLs
+2025-09-29 13:31:45,349 - sec_monitor - INFO - Found 8 accession numbers and 8 URLs from previously processed filings
+2025-09-29 13:31:45,349 - sec_monitor - INFO - Fetching SEC filings...
+2025-09-29 13:31:49,853 - sec_monitor - INFO - Reached old filing, stopping. Found 17 total filings
+2025-09-29 13:31:49,854 - sec_monitor - INFO - Found 2 new interesting filings
+2025-09-29 13:31:49,854 - sec_monitor - INFO - Found 2 new filings to process
+2025-09-29 13:31:49,854 - sec_monitor - INFO - Processing filing 1/2: CCL
+2025-09-29 13:31:50,756 - sec_monitor - ERROR - Error processing filing CCL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-09-29 13:31:50,757 - sec_monitor - INFO - Processing filing 2/2: MDT
+2025-09-29 13:31:51,906 - sec_monitor - ERROR - Error processing filing MDT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-09-29 13:31:51,906 - sec_monitor - INFO - Fetching supplementary data...
+2025-09-29 13:31:52,401 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-09-29 13:31:52,401 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-09-29 13:31:52,401 - sec_monitor - INFO - Market open: True
+2025-09-29 13:31:52,401 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-09-29 13:31:52,420 - sec_monitor - INFO - Last trading day: 2025-09-29
+2025-09-29 13:31:52,420 - sec_monitor - INFO - Processing ticker: CCL
+2025-09-29 13:31:52,703 - sec_monitor - INFO - Number of bars for CCL: 3
+2025-09-29 13:31:52,703 - sec_monitor - INFO - Last bar close for CCL: 30.63
+2025-09-29 13:31:52,703 - sec_monitor - INFO - Market open price for CCL: 30.63, change: 0.45916693998032326%
+2025-09-29 13:31:52,703 - sec_monitor - INFO - Processing ticker: MDT
+2025-09-29 13:31:52,716 - sec_monitor - INFO - Number of bars for MDT: 3
+2025-09-29 13:31:52,716 - sec_monitor - INFO - Last bar close for MDT: 94.22
+2025-09-29 13:31:52,716 - sec_monitor - INFO - Market open price for MDT: 94.22, change: 0.7054296707994833%
+2025-09-29 13:31:53,334 - sec_monitor - INFO - Generating final output...
+2025-09-29 13:31:53,334 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-09-29 13:31:53,334 - sec_monitor - INFO - Cumulative stats - Input words: 162530, Output words: 0
+2025-09-29 13:31:53,335 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-09-29 13:31:53,335 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 45629, 'output_words': 0, 'filings_processed': 2}
