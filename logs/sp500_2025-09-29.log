@@ -1,0 +1,68 @@
+2025-09-29 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-09-29 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-29 21:47:45 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-29 21:47:45 - INFO - __main__ - Runtime timezone: UTC
+2025-09-29 21:47:45 - INFO - __main__ - Original start: 2025-09-26 16:00:00-04:00 (America/New_York)
+2025-09-29 21:47:45 - INFO - __main__ - Original end: 2025-09-29 16:00:00-04:00 (America/New_York)
+2025-09-29 21:47:45 - INFO - __main__ - UTC start: 2025-09-26 04:00:00+00:00
+2025-09-29 21:47:45 - INFO - __main__ - UTC end: 2025-09-30 04:00:00+00:00
+2025-09-29 21:47:45 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-29 21:47:46 - INFO - __main__ - Received data for 497 symbols
+2025-09-29 21:47:46 - INFO - __main__ - Sample data structure for AWK:
+2025-09-29 21:47:46 - INFO - __main__ - Number of bars: 2
+2025-09-29 21:47:46 - INFO - __main__ - Bar timestamp: 2025-09-26 04:00:00+00:00 (UTC)
+2025-09-29 21:47:46 - INFO - __main__ - Bar timestamp: 2025-09-29 04:00:00+00:00 (UTC)
+2025-09-29 21:47:46 - INFO - __main__ - AWK timestamps - Today: 2025-09-29 04:00:00+00:00, Yesterday: 2025-09-26 04:00:00+00:00
+2025-09-29 21:47:46 - INFO - __main__ - CCI timestamps - Today: 2025-09-29 04:00:00+00:00, Yesterday: 2025-09-26 04:00:00+00:00
+2025-09-29 21:47:46 - INFO - __main__ - CFG timestamps - Today: 2025-09-29 04:00:00+00:00, Yesterday: 2025-09-26 04:00:00+00:00
+2025-09-29 21:47:46 - INFO - __main__ - NTRS timestamps - Today: 2025-09-29 04:00:00+00:00, Yesterday: 2025-09-26 04:00:00+00:00
+2025-09-29 21:47:46 - INFO - __main__ - PNW timestamps - Today: 2025-09-29 04:00:00+00:00, Yesterday: 2025-09-26 04:00:00+00:00
+2025-09-29 21:47:46 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-29 21:47:46 - INFO - __main__ - Data issues encountered: 0
+2025-09-29 21:47:46 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-29 21:47:46 - INFO - __main__ - Analysis for market close on September 29, 2025
+2025-09-29 21:47:46 - INFO - __main__ - Found 497 stocks with price data
+2025-09-29 21:47:46 - INFO - __main__ - Found Wikipedia URL for WDC: https://en.wikipedia.org/wiki/Western_Digital
+2025-09-29 21:47:49 - INFO - __main__ - Found Wikipedia URL for VST: https://en.wikipedia.org/wiki/Vistra_Corp.
+2025-09-29 21:47:51 - INFO - __main__ - Analyzing top performer...
+2025-09-29 21:47:51 - INFO - __main__ - Analyzing Western Digital (WDC)
+2025-09-29 21:47:51 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-29 21:47:51 - INFO - __main__ - Searching for articles about WDC
+2025-09-29 21:47:51 - INFO - __main__ - Searching for news about Western Digital
+2025-09-29 21:47:54 - INFO - __main__ - Found 6 recent search results for Western Digital
+2025-09-29 21:47:54 - INFO - __main__ - Found 6 URLs to try for WDC
+2025-09-29 21:47:54 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-electronic-arts-western-digital-intel-and-more-11820390
+2025-09-29 21:47:54 - INFO - __main__ - Successfully extracted article content (1632 chars)
+2025-09-29 21:47:54 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/seagate-stock-western-digital-ai-stocks/
+2025-09-29 21:47:54 - INFO - __main__ - Successfully extracted article content (3698 chars)
+2025-09-29 21:47:54 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/morgan-stanley-raises-price-target-on-western-digital-stock-wdc-even-after-155-gain
+2025-09-29 21:47:54 - INFO - __main__ - Successfully extracted article content (2019 chars)
+2025-09-29 21:47:54 - INFO - __main__ - Found total of 3 valid articles for WDC
+2025-09-29 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:47:59 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-09-29 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:48:03 - INFO - __main__ - Top performer analysis complete
+2025-09-29 21:48:03 - INFO - __main__ - Analyzing bottom performer...
+2025-09-29 21:48:03 - INFO - __main__ - Analyzing Vistra Corp. (VST)
+2025-09-29 21:48:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-29 21:48:04 - INFO - __main__ - Searching for articles about VST
+2025-09-29 21:48:04 - INFO - __main__ - Searching for news about Vistra Corp.
+2025-09-29 21:48:07 - INFO - __main__ - Found 6 recent search results for Vistra Corp.
+2025-09-29 21:48:07 - INFO - __main__ - Found 6 URLs to try for VST
+2025-09-29 21:48:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/vistra-expands-permian-basin-plant-145424326.html
+2025-09-29 21:48:07 - INFO - __main__ - Successfully extracted article content (2412 chars)
+2025-09-29 21:48:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/vistra-vs-nextera-energy-utility-162300014.html
+2025-09-29 21:48:08 - INFO - __main__ - Successfully extracted article content (7616 chars)
+2025-09-29 21:48:08 - INFO - __main__ - Fetching content from: https://www.utilitydive.com/news/vistra-corp-natural-gas-permian-basin-power-plant/761358/
+2025-09-29 21:48:08 - INFO - __main__ - Successfully extracted article content (2772 chars)
+2025-09-29 21:48:08 - INFO - __main__ - Found total of 3 valid articles for VST
+2025-09-29 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:48:12 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-09-29 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-29 21:48:16 - INFO - __main__ - Bottom performer analysis complete
+2025-09-29 21:48:16 - INFO - __main__ - Saving results to JSON...
+2025-09-29 21:48:17 - INFO - __main__ - Analysis complete and saved to market_analysis.json
