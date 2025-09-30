@@ -1,0 +1,74 @@
+2025-09-30 21:47:35 - INFO - __main__ - Starting SP500 analysis script
+2025-09-30 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-09-30 21:47:36 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 9, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 9, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-09-30 21:47:36 - INFO - __main__ - Runtime timezone: UTC
+2025-09-30 21:47:36 - INFO - __main__ - Original start: 2025-09-29 16:00:00-04:00 (America/New_York)
+2025-09-30 21:47:36 - INFO - __main__ - Original end: 2025-09-30 16:00:00-04:00 (America/New_York)
+2025-09-30 21:47:36 - INFO - __main__ - UTC start: 2025-09-29 04:00:00+00:00
+2025-09-30 21:47:36 - INFO - __main__ - UTC end: 2025-10-01 04:00:00+00:00
+2025-09-30 21:47:36 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-09-30 21:47:37 - INFO - __main__ - Received data for 497 symbols
+2025-09-30 21:47:37 - INFO - __main__ - Sample data structure for DGX:
+2025-09-30 21:47:37 - INFO - __main__ - Number of bars: 2
+2025-09-30 21:47:37 - INFO - __main__ - Bar timestamp: 2025-09-29 04:00:00+00:00 (UTC)
+2025-09-30 21:47:37 - INFO - __main__ - Bar timestamp: 2025-09-30 04:00:00+00:00 (UTC)
+2025-09-30 21:47:37 - INFO - __main__ - DGX timestamps - Today: 2025-09-30 04:00:00+00:00, Yesterday: 2025-09-29 04:00:00+00:00
+2025-09-30 21:47:37 - INFO - __main__ - IQV timestamps - Today: 2025-09-30 04:00:00+00:00, Yesterday: 2025-09-29 04:00:00+00:00
+2025-09-30 21:47:37 - INFO - __main__ - LVS timestamps - Today: 2025-09-30 04:00:00+00:00, Yesterday: 2025-09-29 04:00:00+00:00
+2025-09-30 21:47:37 - INFO - __main__ - MNST timestamps - Today: 2025-09-30 04:00:00+00:00, Yesterday: 2025-09-29 04:00:00+00:00
+2025-09-30 21:47:37 - INFO - __main__ - ORLY timestamps - Today: 2025-09-30 04:00:00+00:00, Yesterday: 2025-09-29 04:00:00+00:00
+2025-09-30 21:47:37 - INFO - __main__ - Successfully processed 497 stocks
+2025-09-30 21:47:37 - INFO - __main__ - Data issues encountered: 0
+2025-09-30 21:47:37 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-09-30 21:47:37 - INFO - __main__ - Analysis for market close on September 30, 2025
+2025-09-30 21:47:37 - INFO - __main__ - Found 497 stocks with price data
+2025-09-30 21:47:38 - INFO - __main__ - Found Wikipedia URL for MRK: https://en.wikipedia.org/wiki/Merck_%26_Co.
+2025-09-30 21:47:40 - INFO - __main__ - Found Wikipedia URL for ALB: https://en.wikipedia.org/wiki/Albemarle_Corporation
+2025-09-30 21:47:42 - INFO - __main__ - Analyzing top performer...
+2025-09-30 21:47:42 - INFO - __main__ - Analyzing Merck & Co. (MRK)
+2025-09-30 21:47:42 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-30 21:47:42 - INFO - __main__ - Searching for articles about MRK
+2025-09-30 21:47:42 - INFO - __main__ - Searching for news about Merck & Co.
+2025-09-30 21:47:46 - INFO - __main__ - Found 6 recent search results for Merck & Co.
+2025-09-30 21:47:46 - INFO - __main__ - Found 6 URLs to try for MRK
+2025-09-30 21:47:46 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-09-30/pfizer-to-cut-medicaid-drug-prices-in-deal-with-trump-wapo
+2025-09-30 21:47:46 - INFO - __main__ - Successfully extracted article content (678 chars)
+2025-09-30 21:47:46 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/pfizer-found-a-way-to-boost-its-ailing-stock-agree-with-trump-on-drug-pricing-219908fa
+2025-09-30 21:47:46 - WARNING - __main__ - Article content too short (43 chars)
+2025-09-30 21:47:46 - INFO - __main__ - Fetching content from: https://www.biopharmadive.com/news/crystalys-gout-drug-dotinurad-startup-launch/761383/
+2025-09-30 21:47:46 - INFO - __main__ - Successfully extracted article content (3856 chars)
+2025-09-30 21:47:46 - INFO - __main__ - Found total of 2 valid articles for MRK
+2025-09-30 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:47:49 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-09-30 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:47:53 - INFO - __main__ - Top performer analysis complete
+2025-09-30 21:47:53 - INFO - __main__ - Analyzing bottom performer...
+2025-09-30 21:47:53 - INFO - __main__ - Analyzing Albemarle Corporation (ALB)
+2025-09-30 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-09-30 21:47:53 - INFO - __main__ - Searching for articles about ALB
+2025-09-30 21:47:53 - INFO - __main__ - Searching for news about Albemarle Corporation
+2025-09-30 21:47:57 - INFO - __main__ - Found 6 recent search results for Albemarle Corporation
+2025-09-30 21:47:57 - INFO - __main__ - Found 6 URLs to try for ALB
+2025-09-30 21:47:57 - INFO - __main__ - Fetching content from: https://www.magnoliareporter.com/news_and_business/local_business/article_83f34255-eb27-4705-a090-a898b581baa6.html
+2025-09-30 21:47:58 - WARNING - __main__ - Article content too short (0 chars)
+2025-09-30 21:47:58 - INFO - __main__ - Fetching content from: https://www.mining.com/jobs/165271237-rtr-gl-accounting-supervisor-team-lead
+2025-09-30 21:47:59 - INFO - __main__ - Successfully extracted article content (2686 chars)
+2025-09-30 21:47:59 - INFO - __main__ - Fetching content from: https://www.marketscreener.com/news/chilean-regulator-fines-albemarle-4-million-for-environmental-violations-ce7d5bd8dc88f42d
+2025-09-30 21:47:59 - INFO - __main__ - Successfully extracted article content (122 chars)
+2025-09-30 21:47:59 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/albemarle-nysealb-stock-price-down-52-heres-what-happened-2025-09-30/
+2025-09-30 21:48:00 - INFO - __main__ - Successfully extracted article content (6159 chars)
+2025-09-30 21:48:00 - INFO - __main__ - Fetching content from: https://in.linkedin.com/jobs/view/associate-manager-hr-operations-at-navi-4307023436?refId=PCwJr%2Brg%2BmWmHmseRY%2F2RA%3D%3D&trackingId=4C60De79bhauzpKe%2FfiFBA%3D%3D&position=4&pageNum=0
+2025-09-30 21:48:00 - INFO - __main__ - Successfully extracted article content (3978 chars)
+2025-09-30 21:48:00 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/ADI251003P00232500/
+2025-09-30 21:48:01 - INFO - readability.readability - ruthless removal did not work. 
+2025-09-30 21:48:01 - WARNING - __main__ - Article content too short (0 chars)
+2025-09-30 21:48:01 - INFO - __main__ - Found total of 3 valid articles for ALB
+2025-09-30 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:48:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:48:26 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-09-30 21:48:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-09-30 21:48:30 - INFO - __main__ - Bottom performer analysis complete
+2025-09-30 21:48:30 - INFO - __main__ - Saving results to JSON...
+2025-09-30 21:48:30 - INFO - __main__ - Analysis complete and saved to market_analysis.json
