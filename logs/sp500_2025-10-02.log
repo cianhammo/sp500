@@ -1,0 +1,74 @@
+2025-10-02 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-10-02 21:47:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-02 21:47:43 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-02 21:47:43 - INFO - __main__ - Runtime timezone: UTC
+2025-10-02 21:47:43 - INFO - __main__ - Original start: 2025-10-01 16:00:00-04:00 (America/New_York)
+2025-10-02 21:47:43 - INFO - __main__ - Original end: 2025-10-02 16:00:00-04:00 (America/New_York)
+2025-10-02 21:47:43 - INFO - __main__ - UTC start: 2025-10-01 04:00:00+00:00
+2025-10-02 21:47:43 - INFO - __main__ - UTC end: 2025-10-03 04:00:00+00:00
+2025-10-02 21:47:43 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-02 21:47:44 - INFO - __main__ - Received data for 497 symbols
+2025-10-02 21:47:44 - INFO - __main__ - Sample data structure for BXP:
+2025-10-02 21:47:44 - INFO - __main__ - Number of bars: 2
+2025-10-02 21:47:44 - INFO - __main__ - Bar timestamp: 2025-10-01 04:00:00+00:00 (UTC)
+2025-10-02 21:47:44 - INFO - __main__ - Bar timestamp: 2025-10-02 04:00:00+00:00 (UTC)
+2025-10-02 21:47:44 - INFO - __main__ - BXP timestamps - Today: 2025-10-02 04:00:00+00:00, Yesterday: 2025-10-01 04:00:00+00:00
+2025-10-02 21:47:44 - INFO - __main__ - EXR timestamps - Today: 2025-10-02 04:00:00+00:00, Yesterday: 2025-10-01 04:00:00+00:00
+2025-10-02 21:47:44 - INFO - __main__ - HSIC timestamps - Today: 2025-10-02 04:00:00+00:00, Yesterday: 2025-10-01 04:00:00+00:00
+2025-10-02 21:47:44 - INFO - __main__ - MU timestamps - Today: 2025-10-02 04:00:00+00:00, Yesterday: 2025-10-01 04:00:00+00:00
+2025-10-02 21:47:44 - INFO - __main__ - PRU timestamps - Today: 2025-10-02 04:00:00+00:00, Yesterday: 2025-10-01 04:00:00+00:00
+2025-10-02 21:47:44 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-02 21:47:44 - INFO - __main__ - Data issues encountered: 0
+2025-10-02 21:47:44 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-02 21:47:44 - INFO - __main__ - Analysis for market close on October 02, 2025
+2025-10-02 21:47:44 - INFO - __main__ - Found 497 stocks with price data
+2025-10-02 21:47:45 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2025-10-02 21:47:47 - INFO - __main__ - Found Wikipedia URL for EFX: https://en.wikipedia.org/wiki/Equifax
+2025-10-02 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-10-02 21:47:49 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2025-10-02 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-02 21:47:50 - INFO - __main__ - Searching for articles about FICO
+2025-10-02 21:47:50 - INFO - __main__ - Searching for news about Fair Isaac
+2025-10-02 21:47:53 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2025-10-02 21:47:53 - INFO - __main__ - Found 6 URLs to try for FICO
+2025-10-02 21:47:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fair-isaac-stock-soaring-credit-154538726.html
+2025-10-02 21:47:53 - INFO - __main__ - Successfully extracted article content (2089 chars)
+2025-10-02 21:47:53 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/10/02/fico-provider-is-shaking-up-its-credit-score-business-its-stock-is-surging.html
+2025-10-02 21:47:54 - INFO - readability.readability - ruthless removal did not work. 
+2025-10-02 21:47:54 - INFO - __main__ - Successfully extracted article content (2202 chars)
+2025-10-02 21:47:54 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/fair-isaac-stock-fico-credit-bureaus-fa25d433?gaa_at=eafs&gaa_n=ASWzDAjdv0SsoKlhuQgHZGqeIVwsUQK6tIjhCOg3-ZqWmMp473fzZ3lMuqdK&gaa_ts=68def68c&gaa_sig=fcdcahxUSTI-cXgWwfRTgJ8QPGHLFF48Rro0jLe_UToai-Vm5vXewQeKAi9_mFo0cMUbTHw19Ls3zpRnEfyVOA%3D%3D
+2025-10-02 21:47:55 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-02 21:47:55 - INFO - __main__ - Found total of 2 valid articles for FICO
+2025-10-02 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-02 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-02 21:47:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-02 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-02 21:48:03 - INFO - __main__ - Top performer analysis complete
+2025-10-02 21:48:03 - INFO - __main__ - Analyzing bottom performer...
+2025-10-02 21:48:03 - INFO - __main__ - Analyzing Equifax (EFX)
+2025-10-02 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-02 21:48:04 - INFO - __main__ - Searching for articles about EFX
+2025-10-02 21:48:04 - INFO - __main__ - Searching for news about Equifax
+2025-10-02 21:48:07 - INFO - __main__ - Found 6 recent search results for Equifax
+2025-10-02 21:48:07 - INFO - __main__ - Found 6 URLs to try for EFX
+2025-10-02 21:48:07 - INFO - __main__ - Fetching content from: https://www.investors.com/news/fico-stock-sp-500-equifax-transunion-experian-credit-bureaus/
+2025-10-02 21:48:07 - INFO - __main__ - Successfully extracted article content (361 chars)
+2025-10-02 21:48:07 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/shares-credit-bureaus-fall-fico-rolls-out-direct-mortgage-score-licensing-2025-10-02/
+2025-10-02 21:48:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-02 21:48:07 - INFO - __main__ - Fetching content from: https://nypost.com/2025/10/02/business/fico-shares-surge-on-plan-that-could-cut-experian-equifax-out-of-credit-reporting-for-mortgages/
+2025-10-02 21:48:08 - INFO - readability.readability - ruthless removal did not work. 
+2025-10-02 21:48:08 - INFO - __main__ - Successfully extracted article content (4054 chars)
+2025-10-02 21:48:08 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/why-are-transunion-tru-equifax-efx-experian-expgy-stocks-down-today
+2025-10-02 21:48:08 - INFO - __main__ - Successfully extracted article content (2090 chars)
+2025-10-02 21:48:08 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/tesla-apple-and-stellantis-rise-premarket-equifax-falls-4268389
+2025-10-02 21:48:08 - WARNING - __main__ - Article content too short (41 chars)
+2025-10-02 21:48:08 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/fair-isaac-stock-fico-credit-bureaus-fa25d433?gaa_at=eafs&gaa_n=ASWzDAizX0trOsUs3Ep-0OpWcxOhlzXEhw7AfvU1IVHLwl1mAHRNgoTWANly&gaa_ts=68def69a&gaa_sig=yKoDx7bV4pEGqCAnRpGiZ5vGWUIolztRDVr4OREvbIk7jkK3HhX84WrilAiK2Q0MkrGm8iLHzURrqedieRfk6g%3D%3D
+2025-10-02 21:48:08 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-02 21:48:08 - INFO - __main__ - Found total of 2 valid articles for EFX
+2025-10-02 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-02 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-02 21:48:11 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-02 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-02 21:48:15 - INFO - __main__ - Bottom performer analysis complete
+2025-10-02 21:48:15 - INFO - __main__ - Saving results to JSON...
+2025-10-02 21:48:16 - INFO - __main__ - Analysis complete and saved to market_analysis.json
