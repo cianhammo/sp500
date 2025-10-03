@@ -1,0 +1,73 @@
+2025-10-03 21:47:51 - INFO - __main__ - Starting SP500 analysis script
+2025-10-03 21:47:51 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-03 21:47:51 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-03 21:47:51 - INFO - __main__ - Runtime timezone: UTC
+2025-10-03 21:47:51 - INFO - __main__ - Original start: 2025-10-02 16:00:00-04:00 (America/New_York)
+2025-10-03 21:47:51 - INFO - __main__ - Original end: 2025-10-03 16:00:00-04:00 (America/New_York)
+2025-10-03 21:47:51 - INFO - __main__ - UTC start: 2025-10-02 04:00:00+00:00
+2025-10-03 21:47:51 - INFO - __main__ - UTC end: 2025-10-04 04:00:00+00:00
+2025-10-03 21:47:51 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-03 21:47:52 - INFO - __main__ - Received data for 497 symbols
+2025-10-03 21:47:52 - INFO - __main__ - Sample data structure for GRMN:
+2025-10-03 21:47:52 - INFO - __main__ - Number of bars: 2
+2025-10-03 21:47:52 - INFO - __main__ - Bar timestamp: 2025-10-02 04:00:00+00:00 (UTC)
+2025-10-03 21:47:52 - INFO - __main__ - Bar timestamp: 2025-10-03 04:00:00+00:00 (UTC)
+2025-10-03 21:47:52 - INFO - __main__ - GRMN timestamps - Today: 2025-10-03 04:00:00+00:00, Yesterday: 2025-10-02 04:00:00+00:00
+2025-10-03 21:47:52 - INFO - __main__ - ITW timestamps - Today: 2025-10-03 04:00:00+00:00, Yesterday: 2025-10-02 04:00:00+00:00
+2025-10-03 21:47:52 - INFO - __main__ - MKC timestamps - Today: 2025-10-03 04:00:00+00:00, Yesterday: 2025-10-02 04:00:00+00:00
+2025-10-03 21:47:52 - INFO - __main__ - AVY timestamps - Today: 2025-10-03 04:00:00+00:00, Yesterday: 2025-10-02 04:00:00+00:00
+2025-10-03 21:47:52 - INFO - __main__ - BEN timestamps - Today: 2025-10-03 04:00:00+00:00, Yesterday: 2025-10-02 04:00:00+00:00
+2025-10-03 21:47:52 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-03 21:47:52 - INFO - __main__ - Data issues encountered: 0
+2025-10-03 21:47:52 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-03 21:47:52 - INFO - __main__ - Analysis for market close on October 03, 2025
+2025-10-03 21:47:52 - INFO - __main__ - Found 497 stocks with price data
+2025-10-03 21:47:53 - INFO - __main__ - Found Wikipedia URL for HUM: https://en.wikipedia.org/wiki/Humana
+2025-10-03 21:47:55 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-10-03 21:47:57 - INFO - __main__ - Analyzing top performer...
+2025-10-03 21:47:57 - INFO - __main__ - Analyzing Humana (HUM)
+2025-10-03 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-03 21:47:58 - INFO - __main__ - Searching for articles about HUM
+2025-10-03 21:47:58 - INFO - __main__ - Searching for news about Humana
+2025-10-03 21:48:01 - INFO - __main__ - Found 6 recent search results for Humana
+2025-10-03 21:48:01 - INFO - __main__ - Found 6 URLs to try for HUM
+2025-10-03 21:48:01 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/health-insurance-stocks-humana-star-ratings-2f6c5bde?gaa_at=eafs&gaa_n=ASWzDAj82SL4PjW5w2AGpbcNg7QmpKyws5X2YcnSbtQyf_QS-RaK4_Ga6IQ5&gaa_ts=68e04814&gaa_sig=39K9sY2u1TkYhELKxB3pltMmSuvQuJFSWi6EihfS9RsY_rwwyok2zY02rtbGUgU8iEbhq0RPKDs_vGawVDn7GQ%3D%3D
+2025-10-03 21:48:02 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-03 21:48:02 - INFO - __main__ - Fetching content from: https://humana.com/pharmacy/medicare-drug-list
+2025-10-03 21:48:02 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='humana.com', port=443): Max retries exceeded with url: /pharmacy/medicare-drug-list (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3957321d80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-10-03 21:48:02 - INFO - __main__ - Fetching content from: https://humana.com/medicare/medicare-supplement-plans
+2025-10-03 21:48:02 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='humana.com', port=443): Max retries exceeded with url: /medicare/medicare-supplement-plans (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3957320fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-10-03 21:48:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-humana-hum-stock-soaring-191619335.html
+2025-10-03 21:48:02 - INFO - __main__ - Successfully extracted article content (2128 chars)
+2025-10-03 21:48:02 - INFO - __main__ - Fetching content from: https://www.investors.com/news/sp-500-health-care-stocks-aca-subsidies-government-shutdown/
+2025-10-03 21:48:04 - INFO - __main__ - Successfully extracted article content (390 chars)
+2025-10-03 21:48:04 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/humanas-hum-medicare-advantage-star-132058262.html
+2025-10-03 21:48:04 - INFO - __main__ - Successfully extracted article content (3885 chars)
+2025-10-03 21:48:04 - INFO - __main__ - Found total of 2 valid articles for HUM
+2025-10-03 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:08 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-03 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:12 - INFO - __main__ - Top performer analysis complete
+2025-10-03 21:48:12 - INFO - __main__ - Analyzing bottom performer...
+2025-10-03 21:48:12 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-10-03 21:48:12 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-03 21:48:12 - INFO - __main__ - Searching for articles about PLTR
+2025-10-03 21:48:12 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-10-03 21:48:14 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-10-03 21:48:14 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-10-03 21:48:14 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-10-03/palantir-rebuts-claims-of-security-flaws-after-stock-falls
+2025-10-03 21:48:15 - INFO - __main__ - Successfully extracted article content (752 chars)
+2025-10-03 21:48:15 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/palantir-stock-falls-army-battlefield-communications-network-security/
+2025-10-03 21:48:15 - INFO - __main__ - Successfully extracted article content (3055 chars)
+2025-10-03 21:48:15 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/palantir-stock-falls-report-reveals-145324726.html
+2025-10-03 21:48:16 - INFO - __main__ - Successfully extracted article content (1773 chars)
+2025-10-03 21:48:16 - INFO - __main__ - Found total of 3 valid articles for PLTR
+2025-10-03 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:20 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-10-03 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-03 21:48:25 - INFO - __main__ - Bottom performer analysis complete
+2025-10-03 21:48:25 - INFO - __main__ - Saving results to JSON...
+2025-10-03 21:48:25 - INFO - __main__ - Analysis complete and saved to market_analysis.json
