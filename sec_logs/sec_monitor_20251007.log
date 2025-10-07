@@ -200,3 +200,63 @@
 2025-10-07 18:26:01,060 - sec_monitor - INFO - Cumulative stats - Input words: 1290616, Output words: 0
 2025-10-07 18:26:01,060 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-07 18:26:01,060 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 408517, 'output_words': 0, 'filings_processed': 1}
+2025-10-07 21:10:27,574 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-07 21:10:27,574 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-07 21:10:27,574 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-07 21:10:27,575 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-07 21:10:27,575 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-07 21:10:27,575 - sec_monitor - INFO - Initializing components...
+2025-10-07 21:10:27,575 - sec_monitor - INFO - Initializing components
+2025-10-07 21:10:27,575 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-07 21:10:27,575 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-07 21:10:27,575 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-07 21:10:27,576 - sec_monitor - INFO - All components initialized successfully
+2025-10-07 21:10:27,576 - sec_monitor - INFO - Found JSON file from today
+2025-10-07 21:10:27,577 - sec_monitor - INFO - Found 11 previously processed accessions and 11 filing URLs
+2025-10-07 21:10:27,577 - sec_monitor - INFO - Found 11 accession numbers and 11 URLs from previously processed filings
+2025-10-07 21:10:27,577 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-07 21:10:46,638 - sec_monitor - INFO - No more entries found
+2025-10-07 21:10:46,638 - sec_monitor - INFO - Completed fetching. Found 38 total filings
+2025-10-07 21:10:46,638 - sec_monitor - INFO - Found 5 new interesting filings
+2025-10-07 21:10:46,638 - sec_monitor - INFO - Found 5 new filings to process
+2025-10-07 21:10:46,638 - sec_monitor - INFO - Processing filing 1/5: ICE
+2025-10-07 21:10:47,603 - sec_monitor - ERROR - Error processing filing ICE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-07 21:10:47,603 - sec_monitor - INFO - Processing filing 2/5: CPB
+2025-10-07 21:10:49,844 - sec_monitor - ERROR - Error processing filing CPB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-07 21:10:49,845 - sec_monitor - INFO - Processing filing 3/5: TMO
+2025-10-07 21:10:51,373 - sec_monitor - ERROR - Error processing filing TMO: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-07 21:10:51,373 - sec_monitor - INFO - Processing filing 4/5: UDR
+2025-10-07 21:10:52,158 - sec_monitor - ERROR - Error processing filing UDR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-07 21:10:52,158 - sec_monitor - INFO - Processing filing 5/5: ZBH
+2025-10-07 21:10:52,729 - sec_monitor - ERROR - Error processing filing ZBH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-07 21:10:52,730 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-07 21:10:53,265 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-07 21:10:53,265 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-07 21:10:53,266 - sec_monitor - INFO - Market open: False
+2025-10-07 21:10:53,266 - sec_monitor - INFO - Number of filing times mapped: 5
+2025-10-07 21:10:53,320 - sec_monitor - INFO - Last trading day: 2025-10-07
+2025-10-07 21:10:53,320 - sec_monitor - INFO - Processing ticker: ICE
+2025-10-07 21:10:53,953 - sec_monitor - INFO - Number of bars for ICE: 3
+2025-10-07 21:10:53,953 - sec_monitor - INFO - Last bar close for ICE: 159.01
+2025-10-07 21:10:53,953 - sec_monitor - INFO - Outside market hours price for ICE: 159.01
+2025-10-07 21:10:53,953 - sec_monitor - INFO - Processing ticker: CPB
+2025-10-07 21:10:54,017 - sec_monitor - INFO - Number of bars for CPB: 3
+2025-10-07 21:10:54,017 - sec_monitor - INFO - Last bar close for CPB: 31.28
+2025-10-07 21:10:54,017 - sec_monitor - INFO - Outside market hours price for CPB: 31.28
+2025-10-07 21:10:54,017 - sec_monitor - INFO - Processing ticker: TMO
+2025-10-07 21:10:54,077 - sec_monitor - INFO - Number of bars for TMO: 3
+2025-10-07 21:10:54,077 - sec_monitor - INFO - Last bar close for TMO: 544.105
+2025-10-07 21:10:54,078 - sec_monitor - INFO - Outside market hours price for TMO: 544.105
+2025-10-07 21:10:54,078 - sec_monitor - INFO - Processing ticker: UDR
+2025-10-07 21:10:54,141 - sec_monitor - INFO - Number of bars for UDR: 3
+2025-10-07 21:10:54,142 - sec_monitor - INFO - Last bar close for UDR: 36.02
+2025-10-07 21:10:54,142 - sec_monitor - INFO - Outside market hours price for UDR: 36.02
+2025-10-07 21:10:54,142 - sec_monitor - INFO - Processing ticker: ZBH
+2025-10-07 21:10:54,207 - sec_monitor - INFO - Number of bars for ZBH: 3
+2025-10-07 21:10:54,207 - sec_monitor - INFO - Last bar close for ZBH: 98.83
+2025-10-07 21:10:54,207 - sec_monitor - INFO - Outside market hours price for ZBH: 98.83
+2025-10-07 21:10:55,985 - sec_monitor - INFO - Generating final output...
+2025-10-07 21:10:55,988 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2025-10-07 21:10:55,988 - sec_monitor - INFO - Cumulative stats - Input words: 1350958, Output words: 0
+2025-10-07 21:10:55,988 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-07 21:10:55,988 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 60342, 'output_words': 0, 'filings_processed': 5}
