@@ -1,0 +1,67 @@
+2025-10-10 21:47:47 - INFO - __main__ - Starting SP500 analysis script
+2025-10-10 21:47:47 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-10 21:47:47 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-10 21:47:47 - INFO - __main__ - Runtime timezone: UTC
+2025-10-10 21:47:47 - INFO - __main__ - Original start: 2025-10-09 16:00:00-04:00 (America/New_York)
+2025-10-10 21:47:47 - INFO - __main__ - Original end: 2025-10-10 16:00:00-04:00 (America/New_York)
+2025-10-10 21:47:47 - INFO - __main__ - UTC start: 2025-10-09 04:00:00+00:00
+2025-10-10 21:47:47 - INFO - __main__ - UTC end: 2025-10-11 04:00:00+00:00
+2025-10-10 21:47:47 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-10 21:47:48 - INFO - __main__ - Received data for 497 symbols
+2025-10-10 21:47:48 - INFO - __main__ - Sample data structure for ADBE:
+2025-10-10 21:47:48 - INFO - __main__ - Number of bars: 2
+2025-10-10 21:47:48 - INFO - __main__ - Bar timestamp: 2025-10-09 04:00:00+00:00 (UTC)
+2025-10-10 21:47:48 - INFO - __main__ - Bar timestamp: 2025-10-10 04:00:00+00:00 (UTC)
+2025-10-10 21:47:48 - INFO - __main__ - ADBE timestamps - Today: 2025-10-10 04:00:00+00:00, Yesterday: 2025-10-09 04:00:00+00:00
+2025-10-10 21:47:48 - INFO - __main__ - AWK timestamps - Today: 2025-10-10 04:00:00+00:00, Yesterday: 2025-10-09 04:00:00+00:00
+2025-10-10 21:47:48 - INFO - __main__ - CTVA timestamps - Today: 2025-10-10 04:00:00+00:00, Yesterday: 2025-10-09 04:00:00+00:00
+2025-10-10 21:47:48 - INFO - __main__ - DIS timestamps - Today: 2025-10-10 04:00:00+00:00, Yesterday: 2025-10-09 04:00:00+00:00
+2025-10-10 21:47:48 - INFO - __main__ - BR timestamps - Today: 2025-10-10 04:00:00+00:00, Yesterday: 2025-10-09 04:00:00+00:00
+2025-10-10 21:47:48 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-10 21:47:48 - INFO - __main__ - Data issues encountered: 0
+2025-10-10 21:47:48 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-10 21:47:48 - INFO - __main__ - Analysis for market close on October 10, 2025
+2025-10-10 21:47:48 - INFO - __main__ - Found 497 stocks with price data
+2025-10-10 21:47:48 - INFO - __main__ - Found Wikipedia URL for PEP: https://en.wikipedia.org/wiki/PepsiCo
+2025-10-10 21:47:50 - INFO - __main__ - Found Wikipedia URL for SNPS: https://en.wikipedia.org/wiki/Synopsys
+2025-10-10 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-10-10 21:47:52 - INFO - __main__ - Analyzing PepsiCo (PEP)
+2025-10-10 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-10 21:47:53 - INFO - __main__ - Searching for articles about PEP
+2025-10-10 21:47:53 - INFO - __main__ - Searching for news about PepsiCo
+2025-10-10 21:48:01 - INFO - __main__ - Found 6 recent search results for PepsiCo
+2025-10-10 21:48:01 - INFO - __main__ - Found 6 URLs to try for PEP
+2025-10-10 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/pepsico-working-sense-urgency-portfolio-135810208.html
+2025-10-10 21:48:01 - INFO - __main__ - Successfully extracted article content (4966 chars)
+2025-10-10 21:48:01 - INFO - __main__ - Fetching content from: https://www.pymnts.com/consumer-insights/2025/consumers-show-resilience-restraint-early-earnings-reports/
+2025-10-10 21:48:02 - INFO - __main__ - Successfully extracted article content (4201 chars)
+2025-10-10 21:48:02 - INFO - __main__ - Fetching content from: https://www.pepsicojobs.com/main/jobs/391398?lang=en-us&iisn=linkedin
+2025-10-10 21:48:02 - INFO - __main__ - Successfully extracted article content (496 chars)
+2025-10-10 21:48:02 - INFO - __main__ - Found total of 2 valid articles for PEP
+2025-10-10 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:06 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-10 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:12 - INFO - __main__ - Top performer analysis complete
+2025-10-10 21:48:12 - INFO - __main__ - Analyzing bottom performer...
+2025-10-10 21:48:12 - INFO - __main__ - Analyzing Synopsys (SNPS)
+2025-10-10 21:48:12 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-10 21:48:12 - INFO - __main__ - Searching for articles about SNPS
+2025-10-10 21:48:12 - INFO - __main__ - Searching for news about Synopsys
+2025-10-10 21:48:18 - INFO - __main__ - Found 6 recent search results for Synopsys
+2025-10-10 21:48:18 - INFO - __main__ - Found 6 URLs to try for SNPS
+2025-10-10 21:48:18 - INFO - __main__ - Fetching content from: https://news.synopsys.com/2025-10-10-Synopsys-Receives-Final-Regulatory-Approval-to-Close-Planned-Divestitures-of-Synopsys-Optical-Solutions-Group-and-Ansys-PowerArtist
+2025-10-10 21:48:18 - INFO - __main__ - Successfully extracted article content (2927 chars)
+2025-10-10 21:48:18 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/analyst-explains-why-amkor-technology-141256786.html
+2025-10-10 21:48:19 - INFO - __main__ - Successfully extracted article content (1716 chars)
+2025-10-10 21:48:19 - INFO - __main__ - Fetching content from: https://m.economictimes.com/news/international/us/us-stock-market-crash-why-is-the-us-stock-market-down-today-dow-jones-sp-500-nasdaq-plunge-as-trump-warns-of-massive-china-tariffs-amd-nvidia-tesla-fall-rare-earth-stocks-surge-wall-street-braces-for-trade-war-2-0/articleshow/124459476.cms
+2025-10-10 21:48:19 - INFO - __main__ - Successfully extracted article content (10352 chars)
+2025-10-10 21:48:19 - INFO - __main__ - Found total of 3 valid articles for SNPS
+2025-10-10 21:48:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:25 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-10-10 21:48:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-10 21:48:29 - INFO - __main__ - Bottom performer analysis complete
+2025-10-10 21:48:29 - INFO - __main__ - Saving results to JSON...
+2025-10-10 21:48:29 - INFO - __main__ - Analysis complete and saved to market_analysis.json
