@@ -1,0 +1,72 @@
+2025-10-13 21:47:48 - INFO - __main__ - Starting SP500 analysis script
+2025-10-13 21:47:49 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-13 21:47:49 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-13 21:47:49 - INFO - __main__ - Runtime timezone: UTC
+2025-10-13 21:47:49 - INFO - __main__ - Original start: 2025-10-10 16:00:00-04:00 (America/New_York)
+2025-10-13 21:47:49 - INFO - __main__ - Original end: 2025-10-13 16:00:00-04:00 (America/New_York)
+2025-10-13 21:47:49 - INFO - __main__ - UTC start: 2025-10-10 04:00:00+00:00
+2025-10-13 21:47:49 - INFO - __main__ - UTC end: 2025-10-14 04:00:00+00:00
+2025-10-13 21:47:49 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-13 21:47:50 - INFO - __main__ - Received data for 497 symbols
+2025-10-13 21:47:50 - INFO - __main__ - Sample data structure for ECL:
+2025-10-13 21:47:50 - INFO - __main__ - Number of bars: 2
+2025-10-13 21:47:50 - INFO - __main__ - Bar timestamp: 2025-10-10 04:00:00+00:00 (UTC)
+2025-10-13 21:47:50 - INFO - __main__ - Bar timestamp: 2025-10-13 04:00:00+00:00 (UTC)
+2025-10-13 21:47:50 - INFO - __main__ - ECL timestamps - Today: 2025-10-13 04:00:00+00:00, Yesterday: 2025-10-10 04:00:00+00:00
+2025-10-13 21:47:50 - INFO - __main__ - GLW timestamps - Today: 2025-10-13 04:00:00+00:00, Yesterday: 2025-10-10 04:00:00+00:00
+2025-10-13 21:47:50 - INFO - __main__ - JCI timestamps - Today: 2025-10-13 04:00:00+00:00, Yesterday: 2025-10-10 04:00:00+00:00
+2025-10-13 21:47:50 - INFO - __main__ - MDLZ timestamps - Today: 2025-10-13 04:00:00+00:00, Yesterday: 2025-10-10 04:00:00+00:00
+2025-10-13 21:47:50 - INFO - __main__ - TJX timestamps - Today: 2025-10-13 04:00:00+00:00, Yesterday: 2025-10-10 04:00:00+00:00
+2025-10-13 21:47:50 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-13 21:47:50 - INFO - __main__ - Data issues encountered: 0
+2025-10-13 21:47:50 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-13 21:47:50 - INFO - __main__ - Analysis for market close on October 13, 2025
+2025-10-13 21:47:50 - INFO - __main__ - Found 497 stocks with price data
+2025-10-13 21:47:50 - INFO - __main__ - Found Wikipedia URL for BBY: https://en.wikipedia.org/wiki/Best_Buy
+2025-10-13 21:47:53 - INFO - __main__ - Found Wikipedia URL for FAST: https://en.wikipedia.org/wiki/Fastenal
+2025-10-13 21:47:55 - INFO - __main__ - Analyzing top performer...
+2025-10-13 21:47:55 - INFO - __main__ - Analyzing Best Buy (BBY)
+2025-10-13 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-13 21:47:56 - INFO - __main__ - Searching for articles about BBY
+2025-10-13 21:47:56 - INFO - __main__ - Searching for news about Best Buy
+2025-10-13 21:48:04 - INFO - __main__ - Found 6 recent search results for Best Buy
+2025-10-13 21:48:04 - INFO - __main__ - Found 6 URLs to try for BBY
+2025-10-13 21:48:04 - INFO - __main__ - Fetching content from: https://www.bestbuy.com/product/miss-e-so-addictive-lp-vinyl/J79YV9YRT8/sku/33340173?sb_share_source=PDP&ref=app_pdp&loc=pdp_page
+2025-10-13 21:48:14 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=10)
+2025-10-13 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-best-buy-bby-stock-180551893.html
+2025-10-13 21:48:15 - INFO - __main__ - Successfully extracted article content (2127 chars)
+2025-10-13 21:48:15 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/best-blue-chip-stocks-buy-131200942.html
+2025-10-13 21:48:16 - INFO - __main__ - Successfully extracted article content (6136 chars)
+2025-10-13 21:48:16 - INFO - __main__ - Found total of 2 valid articles for BBY
+2025-10-13 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-13 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-13 21:48:20 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-10-13 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-13 21:48:24 - INFO - __main__ - Top performer analysis complete
+2025-10-13 21:48:24 - INFO - __main__ - Analyzing bottom performer...
+2025-10-13 21:48:24 - INFO - __main__ - Analyzing Fastenal (FAST)
+2025-10-13 21:48:24 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-13 21:48:25 - INFO - __main__ - Searching for articles about FAST
+2025-10-13 21:48:25 - INFO - __main__ - Searching for news about Fastenal
+2025-10-13 21:48:28 - INFO - __main__ - Found 6 recent search results for Fastenal
+2025-10-13 21:48:28 - INFO - __main__ - Found 6 URLs to try for FAST
+2025-10-13 21:48:28 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/rare-earth-stocks-climb-bloom-134210206.html
+2025-10-13 21:48:29 - INFO - __main__ - Successfully extracted article content (1749 chars)
+2025-10-13 21:48:29 - INFO - __main__ - Fetching content from: https://investor.fastenal.com/news-releases/news-details/2025/Fastenal-Company-Reports-2025-Third-Quarter-Earnings/default.aspx
+2025-10-13 21:48:29 - WARNING - __main__ - Article content too short (41 chars)
+2025-10-13 21:48:29 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/fastenal-earnings-stock-price-665ca45e?gaa_at=eafs&gaa_n=ASWzDAgy8bDwAQliKQv6fVe6kRkCKLymHMpcgJ5nay4vIwdHbf0GmKJkX4Rl&gaa_ts=68ed772f&gaa_sig=EckvICFur295EalJViL8vRUYHBP3YyF8oTeUTpY65hskOA7ULn9eJsqniVWDOWwzmYa47WdT2sgFsQMwX0L9cg%3D%3D
+2025-10-13 21:48:29 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-13 21:48:29 - INFO - __main__ - Fetching content from: https://www.investors.com/news/sp-500-fastenal-industrial-earnings/
+2025-10-13 21:48:30 - INFO - __main__ - Successfully extracted article content (396 chars)
+2025-10-13 21:48:30 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/earnings/fastenal-posts-higher-revenue-despite-industry-slowdown-6fcb31f1?gaa_at=eafs&gaa_n=ASWzDAh4DZoZGqPb4TzUTPBWj-DtFrLPdoL42sv38vwICrqiV-pIAFnz6zLk&gaa_ts=68ed772f&gaa_sig=aJQX7taZTKTvpPiIhR1niXB25hM68L8hk9HpipzW1hL-t7ugeIFsXxWxI-UmixFM9YApAwQcxxswTjFYe9nj7A%3D%3D
+2025-10-13 21:48:30 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-13 21:48:30 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fastenal-nasdaq-fast-q3-earnings-121224060.html
+2025-10-13 21:48:30 - INFO - __main__ - Successfully extracted article content (5373 chars)
+2025-10-13 21:48:30 - INFO - __main__ - Found total of 2 valid articles for FAST
+2025-10-13 21:48:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-13 21:48:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-13 21:48:34 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-13 21:48:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-13 21:48:38 - INFO - __main__ - Bottom performer analysis complete
+2025-10-13 21:48:38 - INFO - __main__ - Saving results to JSON...
+2025-10-13 21:48:39 - INFO - __main__ - Analysis complete and saved to market_analysis.json
