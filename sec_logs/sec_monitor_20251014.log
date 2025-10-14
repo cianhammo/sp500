@@ -84,3 +84,44 @@
 2025-10-14 11:11:42,768 - sec_monitor - INFO - Generating final output...
 2025-10-14 11:11:42,769 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-14 11:11:42,769 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 852163, 'output_words': 0, 'filings_processed': 10}
+2025-10-14 12:43:48,716 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-14 12:43:48,716 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-14 12:43:48,717 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-14 12:43:48,717 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-14 12:43:48,717 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-14 12:43:48,717 - sec_monitor - INFO - Initializing components...
+2025-10-14 12:43:48,717 - sec_monitor - INFO - Initializing components
+2025-10-14 12:43:48,717 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-14 12:43:48,717 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-14 12:43:48,718 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-14 12:43:48,718 - sec_monitor - INFO - All components initialized successfully
+2025-10-14 12:43:48,719 - sec_monitor - INFO - Found JSON file from today
+2025-10-14 12:43:48,719 - sec_monitor - INFO - Found 10 previously processed accessions and 10 filing URLs
+2025-10-14 12:43:48,719 - sec_monitor - INFO - Found 10 accession numbers and 10 URLs from previously processed filings
+2025-10-14 12:43:48,719 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-14 12:43:54,374 - sec_monitor - INFO - Reached old filing, stopping. Found 15 total filings
+2025-10-14 12:43:54,375 - sec_monitor - INFO - Found 2 new interesting filings
+2025-10-14 12:43:54,375 - sec_monitor - INFO - Found 2 new filings to process
+2025-10-14 12:43:54,375 - sec_monitor - INFO - Processing filing 1/2: BKR
+2025-10-14 12:43:54,849 - sec_monitor - ERROR - Error processing filing BKR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-14 12:43:54,849 - sec_monitor - INFO - Processing filing 2/2: JNJ
+2025-10-14 12:43:56,626 - sec_monitor - ERROR - Error processing filing JNJ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-14 12:43:56,626 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-14 12:43:56,997 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-14 12:43:56,997 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-14 12:43:56,997 - sec_monitor - INFO - Market open: False
+2025-10-14 12:43:56,997 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-10-14 12:43:57,009 - sec_monitor - INFO - Last trading day: 2025-10-14
+2025-10-14 12:43:57,009 - sec_monitor - INFO - Processing ticker: BKR
+2025-10-14 12:43:57,440 - sec_monitor - INFO - Number of bars for BKR: 3
+2025-10-14 12:43:57,441 - sec_monitor - INFO - Last bar close for BKR: 45.48
+2025-10-14 12:43:57,441 - sec_monitor - INFO - Outside market hours price for BKR: 45.48
+2025-10-14 12:43:57,441 - sec_monitor - INFO - Processing ticker: JNJ
+2025-10-14 12:43:57,461 - sec_monitor - INFO - Number of bars for JNJ: 3
+2025-10-14 12:43:57,461 - sec_monitor - INFO - Last bar close for JNJ: 190.88
+2025-10-14 12:43:57,461 - sec_monitor - INFO - Outside market hours price for JNJ: 190.88
+2025-10-14 12:43:58,203 - sec_monitor - INFO - Generating final output...
+2025-10-14 12:43:58,204 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-10-14 12:43:58,204 - sec_monitor - INFO - Cumulative stats - Input words: 869804, Output words: 0
+2025-10-14 12:43:58,204 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-14 12:43:58,205 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 17641, 'output_words': 0, 'filings_processed': 2}
