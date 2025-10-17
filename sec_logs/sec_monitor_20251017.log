@@ -151,3 +151,45 @@
 2025-10-17 12:41:53,341 - sec_monitor - INFO - Cumulative stats - Input words: 702622, Output words: 0
 2025-10-17 12:41:53,341 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-17 12:41:53,341 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 3276, 'output_words': 0, 'filings_processed': 1}
+2025-10-17 13:30:08,972 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-17 13:30:08,972 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-17 13:30:08,972 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-17 13:30:08,973 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-17 13:30:08,973 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-17 13:30:08,973 - sec_monitor - INFO - Initializing components...
+2025-10-17 13:30:08,973 - sec_monitor - INFO - Initializing components
+2025-10-17 13:30:08,973 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-17 13:30:08,973 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-17 13:30:08,973 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-17 13:30:08,973 - sec_monitor - INFO - All components initialized successfully
+2025-10-17 13:30:08,974 - sec_monitor - INFO - Found JSON file from today
+2025-10-17 13:30:08,975 - sec_monitor - INFO - Found 16 previously processed accessions and 16 filing URLs
+2025-10-17 13:30:08,975 - sec_monitor - INFO - Found 16 accession numbers and 16 URLs from previously processed filings
+2025-10-17 13:30:08,975 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-17 13:30:26,012 - sec_monitor - INFO - No more entries found
+2025-10-17 13:30:26,013 - sec_monitor - INFO - Completed fetching. Found 93 total filings
+2025-10-17 13:30:26,013 - sec_monitor - INFO - Found 2 new interesting filings
+2025-10-17 13:30:26,013 - sec_monitor - INFO - Found 2 new filings to process
+2025-10-17 13:30:26,013 - sec_monitor - INFO - Processing filing 1/2: ZBRA
+2025-10-17 13:30:26,552 - sec_monitor - ERROR - Error processing filing ZBRA: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-17 13:30:26,552 - sec_monitor - INFO - Processing filing 2/2: JBL
+2025-10-17 13:31:25,983 - sec_monitor - ERROR - Error processing filing JBL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-17 13:31:25,984 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-17 13:31:26,449 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-17 13:31:26,449 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-17 13:31:26,449 - sec_monitor - INFO - Market open: True
+2025-10-17 13:31:26,449 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-10-17 13:31:26,508 - sec_monitor - INFO - Last trading day: 2025-10-17
+2025-10-17 13:31:26,508 - sec_monitor - INFO - Processing ticker: ZBRA
+2025-10-17 13:31:26,925 - sec_monitor - INFO - Number of bars for ZBRA: 4
+2025-10-17 13:31:26,925 - sec_monitor - INFO - Last bar close for ZBRA: 294.0
+2025-10-17 13:31:26,926 - sec_monitor - INFO - Market open price for ZBRA: 294.0, change: 0.19425416624066835%
+2025-10-17 13:31:26,926 - sec_monitor - INFO - Processing ticker: JBL
+2025-10-17 13:31:26,993 - sec_monitor - INFO - Number of bars for JBL: 4
+2025-10-17 13:31:26,993 - sec_monitor - INFO - Last bar close for JBL: 209.595
+2025-10-17 13:31:26,993 - sec_monitor - INFO - Market open price for JBL: 209.595, change: 1.2976656517326384%
+2025-10-17 13:31:27,599 - sec_monitor - INFO - Generating final output...
+2025-10-17 13:31:27,600 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-10-17 13:31:27,600 - sec_monitor - INFO - Cumulative stats - Input words: 1120349, Output words: 0
+2025-10-17 13:31:27,600 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-17 13:31:27,600 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 417727, 'output_words': 0, 'filings_processed': 2}
