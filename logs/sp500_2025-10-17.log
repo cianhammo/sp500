@@ -1,0 +1,66 @@
+2025-10-17 21:47:43 - INFO - __main__ - Starting SP500 analysis script
+2025-10-17 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-17 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-17 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-10-17 21:47:44 - INFO - __main__ - Original start: 2025-10-16 16:00:00-04:00 (America/New_York)
+2025-10-17 21:47:44 - INFO - __main__ - Original end: 2025-10-17 16:00:00-04:00 (America/New_York)
+2025-10-17 21:47:44 - INFO - __main__ - UTC start: 2025-10-16 04:00:00+00:00
+2025-10-17 21:47:44 - INFO - __main__ - UTC end: 2025-10-18 04:00:00+00:00
+2025-10-17 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-17 21:47:45 - INFO - __main__ - Received data for 497 symbols
+2025-10-17 21:47:45 - INFO - __main__ - Sample data structure for ADSK:
+2025-10-17 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-10-17 21:47:45 - INFO - __main__ - Bar timestamp: 2025-10-16 04:00:00+00:00 (UTC)
+2025-10-17 21:47:45 - INFO - __main__ - Bar timestamp: 2025-10-17 04:00:00+00:00 (UTC)
+2025-10-17 21:47:45 - INFO - __main__ - ADSK timestamps - Today: 2025-10-17 04:00:00+00:00, Yesterday: 2025-10-16 04:00:00+00:00
+2025-10-17 21:47:45 - INFO - __main__ - BRK.B timestamps - Today: 2025-10-17 04:00:00+00:00, Yesterday: 2025-10-16 04:00:00+00:00
+2025-10-17 21:47:45 - INFO - __main__ - COF timestamps - Today: 2025-10-17 04:00:00+00:00, Yesterday: 2025-10-16 04:00:00+00:00
+2025-10-17 21:47:45 - INFO - __main__ - LIN timestamps - Today: 2025-10-17 04:00:00+00:00, Yesterday: 2025-10-16 04:00:00+00:00
+2025-10-17 21:47:45 - INFO - __main__ - ODFL timestamps - Today: 2025-10-17 04:00:00+00:00, Yesterday: 2025-10-16 04:00:00+00:00
+2025-10-17 21:47:45 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-17 21:47:45 - INFO - __main__ - Data issues encountered: 0
+2025-10-17 21:47:45 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-17 21:47:45 - INFO - __main__ - Analysis for market close on October 17, 2025
+2025-10-17 21:47:45 - INFO - __main__ - Found 497 stocks with price data
+2025-10-17 21:47:45 - INFO - __main__ - Found Wikipedia URL for KVUE: https://en.wikipedia.org/wiki/Kenvue
+2025-10-17 21:47:47 - INFO - __main__ - Found Wikipedia URL for NEM: https://en.wikipedia.org/wiki/Newmont
+2025-10-17 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-10-17 21:47:49 - INFO - __main__ - Analyzing Kenvue (KVUE)
+2025-10-17 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-17 21:47:50 - INFO - __main__ - Searching for articles about KVUE
+2025-10-17 21:47:50 - INFO - __main__ - Searching for news about Kenvue
+2025-10-17 21:47:57 - INFO - __main__ - Found 6 recent search results for Kenvue
+2025-10-17 21:47:57 - INFO - __main__ - Found 6 URLs to try for KVUE
+2025-10-17 21:47:57 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-10172025-11831706
+2025-10-17 21:47:58 - INFO - __main__ - Successfully extracted article content (20374 chars)
+2025-10-17 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gold-prices-topped-4-300-161411397.html
+2025-10-17 21:47:58 - INFO - __main__ - Successfully extracted article content (5627 chars)
+2025-10-17 21:47:58 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-11088179?gaa_at=eafs&gaa_n=AWEtsqciPHmnC8V8I46ccN7L7bK9IYqxqGUesOm4DCwor7EuyMAcoSTr9YP4&gaa_ts=68f2bd10&gaa_sig=L0oqhUYe3nqit-e5szXJ7_ltIju-h9P_sPJzSA59pC6kWqsK6j6Q7CpEMkj2osg-PZ7okU2kOagV_z0VKN8tEQ%3D%3D
+2025-10-17 21:47:58 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-17 21:47:58 - INFO - __main__ - Found total of 2 valid articles for KVUE
+2025-10-17 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-17 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-17 21:48:02 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-10-17 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-17 21:48:06 - INFO - __main__ - Top performer analysis complete
+2025-10-17 21:48:06 - INFO - __main__ - Analyzing bottom performer...
+2025-10-17 21:48:06 - INFO - __main__ - Analyzing Newmont (NEM)
+2025-10-17 21:48:06 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-17 21:48:07 - INFO - __main__ - Searching for articles about NEM
+2025-10-17 21:48:07 - INFO - __main__ - Searching for news about Newmont
+2025-10-17 21:48:09 - INFO - __main__ - Found 6 recent search results for Newmont
+2025-10-17 21:48:09 - INFO - __main__ - Found 6 URLs to try for NEM
+2025-10-17 21:48:09 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-10-17/rally-in-gold-miners-falters-as-gains-outstripped-metal-s-surge
+2025-10-17 21:48:09 - INFO - __main__ - Successfully extracted article content (557 chars)
+2025-10-17 21:48:09 - INFO - __main__ - Fetching content from: https://www.wsj.com/finance/stocks/gold-stocks-are-surging-they-still-lag-behind-cold-hard-bullion-301de60c?gaa_at=eafs&gaa_n=AWEtsqfbT8ilFN3nZcY904sVg7YsT4nFzCb2yrTimunuTHwn9W1qo1UTm4X_&gaa_ts=68f2bd1c&gaa_sig=VZ5X_-ti_2qsRC9PdUOoma254ybfMCkRdjulAek2YxxO04VZs5mKwLwcTA3IXcbzoq7bGKtvG0uqU-YrvlpHLg%3D%3D
+2025-10-17 21:48:10 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-17 21:48:10 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/intels-ai-client-bitcoin-hits-171521407.html
+2025-10-17 21:48:10 - INFO - __main__ - Successfully extracted article content (1173 chars)
+2025-10-17 21:48:10 - INFO - __main__ - Found total of 2 valid articles for NEM
+2025-10-17 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-17 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-17 21:48:14 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-10-17 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-17 21:48:19 - INFO - __main__ - Bottom performer analysis complete
+2025-10-17 21:48:19 - INFO - __main__ - Saving results to JSON...
+2025-10-17 21:48:19 - INFO - __main__ - Analysis complete and saved to market_analysis.json
