@@ -1,0 +1,67 @@
+2025-10-20 21:47:42 - INFO - __main__ - Starting SP500 analysis script
+2025-10-20 21:47:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-20 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-20 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-10-20 21:47:42 - INFO - __main__ - Original start: 2025-10-17 16:00:00-04:00 (America/New_York)
+2025-10-20 21:47:42 - INFO - __main__ - Original end: 2025-10-20 16:00:00-04:00 (America/New_York)
+2025-10-20 21:47:42 - INFO - __main__ - UTC start: 2025-10-17 04:00:00+00:00
+2025-10-20 21:47:42 - INFO - __main__ - UTC end: 2025-10-21 04:00:00+00:00
+2025-10-20 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-20 21:47:43 - INFO - __main__ - Received data for 497 symbols
+2025-10-20 21:47:43 - INFO - __main__ - Sample data structure for WST:
+2025-10-20 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-10-20 21:47:43 - INFO - __main__ - Bar timestamp: 2025-10-17 04:00:00+00:00 (UTC)
+2025-10-20 21:47:43 - INFO - __main__ - Bar timestamp: 2025-10-20 04:00:00+00:00 (UTC)
+2025-10-20 21:47:43 - INFO - __main__ - WST timestamps - Today: 2025-10-20 04:00:00+00:00, Yesterday: 2025-10-17 04:00:00+00:00
+2025-10-20 21:47:43 - INFO - __main__ - TECH timestamps - Today: 2025-10-20 04:00:00+00:00, Yesterday: 2025-10-17 04:00:00+00:00
+2025-10-20 21:47:43 - INFO - __main__ - BKR timestamps - Today: 2025-10-20 04:00:00+00:00, Yesterday: 2025-10-17 04:00:00+00:00
+2025-10-20 21:47:43 - INFO - __main__ - KKR timestamps - Today: 2025-10-20 04:00:00+00:00, Yesterday: 2025-10-17 04:00:00+00:00
+2025-10-20 21:47:43 - INFO - __main__ - LUV timestamps - Today: 2025-10-20 04:00:00+00:00, Yesterday: 2025-10-17 04:00:00+00:00
+2025-10-20 21:47:43 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-20 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-10-20 21:47:43 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-20 21:47:43 - INFO - __main__ - Analysis for market close on October 20, 2025
+2025-10-20 21:47:43 - INFO - __main__ - Found 497 stocks with price data
+2025-10-20 21:47:44 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2025-10-20 21:47:46 - INFO - __main__ - Found Wikipedia URL for STX: https://en.wikipedia.org/wiki/Seagate_Technology
+2025-10-20 21:47:48 - INFO - __main__ - Analyzing top performer...
+2025-10-20 21:47:48 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2025-10-20 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-20 21:47:49 - INFO - __main__ - Searching for articles about SMCI
+2025-10-20 21:47:49 - INFO - __main__ - Searching for news about Supermicro
+2025-10-20 21:47:52 - INFO - __main__ - Found 6 recent search results for Supermicro
+2025-10-20 21:47:52 - INFO - __main__ - Found 6 URLs to try for SMCI
+2025-10-20 21:47:52 - INFO - __main__ - Fetching content from: https://www.crn.com/news/cloud/2025/cloud-outages-will-increase-more-and-more-due-to-ai-usage-after-aws-outage-rocks-over-1-000-companies-says-tech-ceo
+2025-10-20 21:47:52 - INFO - __main__ - Successfully extracted article content (7774 chars)
+2025-10-20 21:47:52 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-apple-supermicro-surge-oracle-stock-extends-losses-11832975
+2025-10-20 21:47:52 - INFO - __main__ - Successfully extracted article content (3288 chars)
+2025-10-20 21:47:52 - INFO - __main__ - Fetching content from: https://markets.financialcontent.com/stocks/article/marketminute-2025-10-20-ai-revolution-propels-supermicro-smci-to-top-performer-status
+2025-10-20 21:47:53 - INFO - __main__ - Successfully extracted article content (13462 chars)
+2025-10-20 21:47:53 - INFO - __main__ - Found total of 3 valid articles for SMCI
+2025-10-20 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:47:58 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-10-20 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:48:03 - INFO - __main__ - Top performer analysis complete
+2025-10-20 21:48:03 - INFO - __main__ - Analyzing bottom performer...
+2025-10-20 21:48:03 - INFO - __main__ - Analyzing Seagate Technology (STX)
+2025-10-20 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-20 21:48:03 - INFO - __main__ - Searching for articles about STX
+2025-10-20 21:48:03 - INFO - __main__ - Searching for news about Seagate Technology
+2025-10-20 21:48:11 - INFO - __main__ - Found 6 recent search results for Seagate Technology
+2025-10-20 21:48:11 - INFO - __main__ - Found 6 URLs to try for STX
+2025-10-20 21:48:11 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-china-trade-talks-netflix-tesla-earnings/
+2025-10-20 21:48:12 - INFO - __main__ - Successfully extracted article content (371 chars)
+2025-10-20 21:48:12 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/10/20/meme-stock-beyond-meat-soaring-as-traders-buy-up-shares/
+2025-10-20 21:48:12 - INFO - __main__ - Successfully extracted article content (1763 chars)
+2025-10-20 21:48:12 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/10/20/meet-omah-the-high-yield-buffett-style-etf-taking-aim-at-schd/
+2025-10-20 21:48:12 - INFO - __main__ - Successfully extracted article content (6151 chars)
+2025-10-20 21:48:12 - INFO - __main__ - Found total of 2 valid articles for STX
+2025-10-20 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:48:15 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-10-20 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-20 21:48:20 - INFO - __main__ - Bottom performer analysis complete
+2025-10-20 21:48:20 - INFO - __main__ - Saving results to JSON...
+2025-10-20 21:48:20 - INFO - __main__ - Analysis complete and saved to market_analysis.json
