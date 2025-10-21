@@ -1,0 +1,78 @@
+2025-10-21 21:47:49 - INFO - __main__ - Starting SP500 analysis script
+2025-10-21 21:47:49 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-21 21:47:49 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-21 21:47:49 - INFO - __main__ - Runtime timezone: UTC
+2025-10-21 21:47:49 - INFO - __main__ - Original start: 2025-10-20 16:00:00-04:00 (America/New_York)
+2025-10-21 21:47:49 - INFO - __main__ - Original end: 2025-10-21 16:00:00-04:00 (America/New_York)
+2025-10-21 21:47:49 - INFO - __main__ - UTC start: 2025-10-20 04:00:00+00:00
+2025-10-21 21:47:49 - INFO - __main__ - UTC end: 2025-10-22 04:00:00+00:00
+2025-10-21 21:47:49 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-21 21:47:51 - INFO - __main__ - Received data for 497 symbols
+2025-10-21 21:47:51 - INFO - __main__ - Sample data structure for ALLE:
+2025-10-21 21:47:51 - INFO - __main__ - Number of bars: 2
+2025-10-21 21:47:51 - INFO - __main__ - Bar timestamp: 2025-10-20 04:00:00+00:00 (UTC)
+2025-10-21 21:47:51 - INFO - __main__ - Bar timestamp: 2025-10-21 04:00:00+00:00 (UTC)
+2025-10-21 21:47:51 - INFO - __main__ - ALLE timestamps - Today: 2025-10-21 04:00:00+00:00, Yesterday: 2025-10-20 04:00:00+00:00
+2025-10-21 21:47:51 - INFO - __main__ - EW timestamps - Today: 2025-10-21 04:00:00+00:00, Yesterday: 2025-10-20 04:00:00+00:00
+2025-10-21 21:47:51 - INFO - __main__ - JKHY timestamps - Today: 2025-10-21 04:00:00+00:00, Yesterday: 2025-10-20 04:00:00+00:00
+2025-10-21 21:47:51 - INFO - __main__ - AEP timestamps - Today: 2025-10-21 04:00:00+00:00, Yesterday: 2025-10-20 04:00:00+00:00
+2025-10-21 21:47:51 - INFO - __main__ - AMZN timestamps - Today: 2025-10-21 04:00:00+00:00, Yesterday: 2025-10-20 04:00:00+00:00
+2025-10-21 21:47:51 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-21 21:47:51 - INFO - __main__ - Data issues encountered: 0
+2025-10-21 21:47:51 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-21 21:47:51 - INFO - __main__ - Analysis for market close on October 21, 2025
+2025-10-21 21:47:51 - INFO - __main__ - Found 497 stocks with price data
+2025-10-21 21:47:51 - INFO - __main__ - Found Wikipedia URL for GM: https://en.wikipedia.org/wiki/General_Motors
+2025-10-21 21:47:54 - INFO - __main__ - Found Wikipedia URL for NEM: https://en.wikipedia.org/wiki/Newmont
+2025-10-21 21:47:56 - INFO - __main__ - Analyzing top performer...
+2025-10-21 21:47:56 - INFO - __main__ - Analyzing General Motors (GM)
+2025-10-21 21:47:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-21 21:47:56 - INFO - __main__ - Searching for articles about GM
+2025-10-21 21:47:56 - INFO - __main__ - Searching for news about General Motors
+2025-10-21 21:47:58 - INFO - __main__ - Found 6 recent search results for General Motors
+2025-10-21 21:47:58 - INFO - __main__ - Found 6 URLs to try for GM
+2025-10-21 21:47:58 - INFO - __main__ - Fetching content from: https://www.investors.com/news/gm-stock-soars-third-quarter-earnings-despite-ev-woes/
+2025-10-21 21:47:59 - INFO - __main__ - Successfully extracted article content (396 chars)
+2025-10-21 21:47:59 - INFO - __main__ - Fetching content from: https://investor.gm.com/static-files/51db67b7-798b-4ae3-9486-1a2228bdfc66
+2025-10-21 21:48:09 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='investor.gm.com', port=443): Read timed out. (read timeout=10)
+2025-10-21 21:48:09 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/autos-transportation/general-motors-raises-2025-core-profit-forecast-2025-10-21/
+2025-10-21 21:48:09 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-21 21:48:09 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/earnings-live-general-motors-and-ge-raise-guidance-coca-cola-stock-rises-on-earnings-beat-121339934.html
+2025-10-21 21:48:10 - INFO - __main__ - Successfully extracted article content (17222 chars)
+2025-10-21 21:48:10 - INFO - __main__ - Fetching content from: https://www.freep.com/story/money/cars/general-motors/2025/10/21/gm-profits-third-quarter-2025-electric-vehicles/86812846007/
+2025-10-21 21:48:11 - WARNING - __main__ - Article content too short (0 chars)
+2025-10-21 21:48:11 - INFO - __main__ - Fetching content from: https://investor.gm.com/news-releases/news-release-details/q3-2025-letter-shareholders/
+2025-10-21 21:48:21 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='investor.gm.com', port=443): Read timed out. (read timeout=10)
+2025-10-21 21:48:21 - INFO - __main__ - Found total of 1 valid articles for GM
+2025-10-21 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-21 21:48:23 - INFO - __main__ - Found 1 relevant articles out of 1 total
+2025-10-21 21:48:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-21 21:48:27 - INFO - __main__ - Top performer analysis complete
+2025-10-21 21:48:27 - INFO - __main__ - Analyzing bottom performer...
+2025-10-21 21:48:27 - INFO - __main__ - Analyzing Newmont (NEM)
+2025-10-21 21:48:27 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-21 21:48:27 - INFO - __main__ - Searching for articles about NEM
+2025-10-21 21:48:27 - INFO - __main__ - Searching for news about Newmont
+2025-10-21 21:48:31 - INFO - __main__ - Found 6 recent search results for Newmont
+2025-10-21 21:48:31 - INFO - __main__ - Found 6 URLs to try for NEM
+2025-10-21 21:48:31 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/gold-price-today-newmont-stock-drop-f4044778?gaa_at=eafs&gaa_n=AWEtsqeaD8uE_RlLQbKD6GmFb270iILabWB02RG2Qn_WP7xG8UfEOsI4EbSi&gaa_ts=68f80332&gaa_sig=yLL3TRTCfKj5UFBFVMRR45MnPR1soZ2u2qLEJ3xCF3c74Xg0dNsIYvrR24OWgvjdg4WhUDEbEA0DwuLGUVHsSA%3D%3D
+2025-10-21 21:48:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-21 21:48:31 - INFO - __main__ - Fetching content from: https://www.investopedia.com/s-and-p-500-gains-and-losses-today-gm-stock-speeds-higher-newmont-sinks-as-gold-retreats-11834045
+2025-10-21 21:48:31 - INFO - __main__ - Successfully extracted article content (3514 chars)
+2025-10-21 21:48:31 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-2ae0152e?gaa_at=eafs&gaa_n=AWEtsqeKoP924fBy-Pz93vA3Jkx-My-yoVFulsAP2ZuFCErnbqF2PCGBKEcX&gaa_ts=68f80332&gaa_sig=bihm8s9TliR1Xp2yzeyKVQYOReys4ESk5nKvwwuMNCMrustQLuFv7OQkIiOKS2umfacYmKGXqBorw3RiA7K5Pg%3D%3D
+2025-10-21 21:48:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-21 21:48:31 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/newmont-stock-nem-crashes-ahead-of-earnings-heres-why
+2025-10-21 21:48:31 - INFO - __main__ - Successfully extracted article content (1927 chars)
+2025-10-21 21:48:31 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-gm-y-z-and-more-11833576
+2025-10-21 21:48:32 - INFO - __main__ - Successfully extracted article content (1862 chars)
+2025-10-21 21:48:32 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-10212025-11833578
+2025-10-21 21:48:32 - INFO - __main__ - Successfully extracted article content (16234 chars)
+2025-10-21 21:48:32 - INFO - __main__ - Found total of 3 valid articles for NEM
+2025-10-21 21:48:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-21 21:48:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-21 21:48:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-21 21:48:37 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-10-21 21:48:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-21 21:48:41 - INFO - __main__ - Bottom performer analysis complete
+2025-10-21 21:48:41 - INFO - __main__ - Saving results to JSON...
+2025-10-21 21:48:42 - INFO - __main__ - Analysis complete and saved to market_analysis.json
