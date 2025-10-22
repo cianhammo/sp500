@@ -331,3 +331,51 @@
 2025-10-22 13:37:18,546 - sec_monitor - INFO - Cumulative stats - Input words: 4268786, Output words: 0
 2025-10-22 13:37:18,546 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-22 13:37:18,546 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 823964, 'output_words': 0, 'filings_processed': 4}
+2025-10-22 15:19:59,383 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-22 15:19:59,383 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-22 15:19:59,383 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-22 15:19:59,383 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-22 15:19:59,383 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-22 15:19:59,384 - sec_monitor - INFO - Initializing components...
+2025-10-22 15:19:59,384 - sec_monitor - INFO - Initializing components
+2025-10-22 15:19:59,384 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-22 15:19:59,384 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-22 15:19:59,384 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-22 15:19:59,384 - sec_monitor - INFO - All components initialized successfully
+2025-10-22 15:19:59,385 - sec_monitor - INFO - Found JSON file from today
+2025-10-22 15:19:59,385 - sec_monitor - INFO - Found 41 previously processed accessions and 41 filing URLs
+2025-10-22 15:19:59,386 - sec_monitor - INFO - Found 41 accession numbers and 41 URLs from previously processed filings
+2025-10-22 15:19:59,386 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-22 15:21:00,190 - sec_monitor - INFO - No more entries found
+2025-10-22 15:21:00,190 - sec_monitor - INFO - Completed fetching. Found 93 total filings
+2025-10-22 15:21:00,190 - sec_monitor - INFO - Found 3 new interesting filings
+2025-10-22 15:21:00,190 - sec_monitor - INFO - Found 3 new filings to process
+2025-10-22 15:21:00,190 - sec_monitor - INFO - Processing filing 1/3: WAB
+2025-10-22 15:21:18,840 - sec_monitor - ERROR - Error processing filing WAB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 15:21:18,840 - sec_monitor - INFO - Processing filing 2/3: HLT
+2025-10-22 15:21:27,364 - sec_monitor - ERROR - Error processing filing HLT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 15:21:27,364 - sec_monitor - INFO - Processing filing 3/3: SLB
+2025-10-22 15:21:55,152 - sec_monitor - ERROR - Error processing filing SLB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 15:21:55,152 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-22 15:21:55,783 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-22 15:21:55,783 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-22 15:21:55,784 - sec_monitor - INFO - Market open: True
+2025-10-22 15:21:55,784 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-10-22 15:21:55,855 - sec_monitor - INFO - Last trading day: 2025-10-22
+2025-10-22 15:21:55,855 - sec_monitor - INFO - Processing ticker: WAB
+2025-10-22 15:21:56,484 - sec_monitor - INFO - Number of bars for WAB: 3
+2025-10-22 15:21:56,484 - sec_monitor - INFO - Last bar close for WAB: 198.035
+2025-10-22 15:21:56,484 - sec_monitor - INFO - Market open price for WAB: 198.035, change: 0.9044125140120278%
+2025-10-22 15:21:56,484 - sec_monitor - INFO - Processing ticker: HLT
+2025-10-22 15:21:56,566 - sec_monitor - INFO - Number of bars for HLT: 3
+2025-10-22 15:21:56,566 - sec_monitor - INFO - Last bar close for HLT: 265.97
+2025-10-22 15:21:56,566 - sec_monitor - INFO - Market open price for HLT: 265.97, change: 1.9003103329374493%
+2025-10-22 15:21:56,566 - sec_monitor - INFO - Processing ticker: SLB
+2025-10-22 15:21:56,646 - sec_monitor - INFO - Number of bars for SLB: 3
+2025-10-22 15:21:56,646 - sec_monitor - INFO - Last bar close for SLB: 33.52
+2025-10-22 15:21:56,647 - sec_monitor - INFO - Market open price for SLB: 33.52, change: 0.2692192641340216%
+2025-10-22 15:21:57,453 - sec_monitor - INFO - Generating final output...
+2025-10-22 15:21:57,455 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-10-22 15:21:57,455 - sec_monitor - INFO - Cumulative stats - Input words: 4841770, Output words: 0
+2025-10-22 15:21:57,455 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-22 15:21:57,455 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 572984, 'output_words': 0, 'filings_processed': 3}
