@@ -277,3 +277,57 @@
 2025-10-22 12:44:38,191 - sec_monitor - INFO - Cumulative stats - Input words: 3444822, Output words: 0
 2025-10-22 12:44:38,191 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-22 12:44:38,191 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 209774, 'output_words': 0, 'filings_processed': 3}
+2025-10-22 13:35:01,273 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-22 13:35:01,273 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-22 13:35:01,273 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-22 13:35:01,273 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-22 13:35:01,274 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-22 13:35:01,274 - sec_monitor - INFO - Initializing components...
+2025-10-22 13:35:01,274 - sec_monitor - INFO - Initializing components
+2025-10-22 13:35:01,274 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-22 13:35:01,274 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-22 13:35:01,274 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-22 13:35:01,274 - sec_monitor - INFO - All components initialized successfully
+2025-10-22 13:35:01,275 - sec_monitor - INFO - Found JSON file from today
+2025-10-22 13:35:01,276 - sec_monitor - INFO - Found 37 previously processed accessions and 37 filing URLs
+2025-10-22 13:35:01,276 - sec_monitor - INFO - Found 37 accession numbers and 37 URLs from previously processed filings
+2025-10-22 13:35:01,276 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-22 13:35:20,229 - sec_monitor - INFO - No more entries found
+2025-10-22 13:35:20,230 - sec_monitor - INFO - Completed fetching. Found 118 total filings
+2025-10-22 13:35:20,230 - sec_monitor - INFO - Found 4 new interesting filings
+2025-10-22 13:35:20,230 - sec_monitor - INFO - Found 4 new filings to process
+2025-10-22 13:35:20,230 - sec_monitor - INFO - Processing filing 1/4: NVR
+2025-10-22 13:35:21,182 - sec_monitor - ERROR - Error processing filing NVR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 13:35:21,182 - sec_monitor - INFO - Processing filing 2/4: APH
+2025-10-22 13:35:22,758 - sec_monitor - ERROR - Error processing filing APH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 13:35:22,759 - sec_monitor - INFO - Processing filing 3/4: AVY
+2025-10-22 13:35:49,249 - sec_monitor - ERROR - Error processing filing AVY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 13:35:49,250 - sec_monitor - INFO - Processing filing 4/4: KHC
+2025-10-22 13:37:16,496 - sec_monitor - ERROR - Error processing filing KHC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 13:37:16,496 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-22 13:37:16,722 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-22 13:37:16,722 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-22 13:37:16,722 - sec_monitor - INFO - Market open: True
+2025-10-22 13:37:16,722 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-10-22 13:37:16,785 - sec_monitor - INFO - Last trading day: 2025-10-22
+2025-10-22 13:37:16,785 - sec_monitor - INFO - Processing ticker: NVR
+2025-10-22 13:37:17,401 - sec_monitor - INFO - Number of bars for NVR: 3
+2025-10-22 13:37:17,401 - sec_monitor - INFO - Last bar close for NVR: 7812.335
+2025-10-22 13:37:17,401 - sec_monitor - INFO - Market open price for NVR: 7812.335, change: 1.4459847967401613%
+2025-10-22 13:37:17,401 - sec_monitor - INFO - Processing ticker: APH
+2025-10-22 13:37:17,468 - sec_monitor - INFO - Number of bars for APH: 3
+2025-10-22 13:37:17,468 - sec_monitor - INFO - Last bar close for APH: 124.415
+2025-10-22 13:37:17,468 - sec_monitor - INFO - Market open price for APH: 124.415, change: -2.564805388049175%
+2025-10-22 13:37:17,468 - sec_monitor - INFO - Processing ticker: AVY
+2025-10-22 13:37:17,537 - sec_monitor - INFO - Number of bars for AVY: 3
+2025-10-22 13:37:17,537 - sec_monitor - INFO - Last bar close for AVY: 163.575
+2025-10-22 13:37:17,537 - sec_monitor - INFO - Market open price for AVY: 163.575, change: 2.081253120319508%
+2025-10-22 13:37:17,537 - sec_monitor - INFO - Processing ticker: KHC
+2025-10-22 13:37:17,606 - sec_monitor - INFO - Number of bars for KHC: 3
+2025-10-22 13:37:17,606 - sec_monitor - INFO - Last bar close for KHC: 25.57
+2025-10-22 13:37:17,606 - sec_monitor - INFO - Market open price for KHC: 25.57, change: -0.5058365758754825%
+2025-10-22 13:37:18,544 - sec_monitor - INFO - Generating final output...
+2025-10-22 13:37:18,546 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-10-22 13:37:18,546 - sec_monitor - INFO - Cumulative stats - Input words: 4268786, Output words: 0
+2025-10-22 13:37:18,546 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-22 13:37:18,546 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 823964, 'output_words': 0, 'filings_processed': 4}
