@@ -1,0 +1,67 @@
+2025-10-22 21:47:43 - INFO - __main__ - Starting SP500 analysis script
+2025-10-22 21:47:43 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-22 21:47:43 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-22 21:47:43 - INFO - __main__ - Runtime timezone: UTC
+2025-10-22 21:47:43 - INFO - __main__ - Original start: 2025-10-21 16:00:00-04:00 (America/New_York)
+2025-10-22 21:47:43 - INFO - __main__ - Original end: 2025-10-22 16:00:00-04:00 (America/New_York)
+2025-10-22 21:47:43 - INFO - __main__ - UTC start: 2025-10-21 04:00:00+00:00
+2025-10-22 21:47:43 - INFO - __main__ - UTC end: 2025-10-23 04:00:00+00:00
+2025-10-22 21:47:43 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-22 21:47:45 - INFO - __main__ - Received data for 497 symbols
+2025-10-22 21:47:45 - INFO - __main__ - Sample data structure for CSCO:
+2025-10-22 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-10-22 21:47:45 - INFO - __main__ - Bar timestamp: 2025-10-21 04:00:00+00:00 (UTC)
+2025-10-22 21:47:45 - INFO - __main__ - Bar timestamp: 2025-10-22 04:00:00+00:00 (UTC)
+2025-10-22 21:47:45 - INFO - __main__ - CSCO timestamps - Today: 2025-10-22 04:00:00+00:00, Yesterday: 2025-10-21 04:00:00+00:00
+2025-10-22 21:47:45 - INFO - __main__ - RCL timestamps - Today: 2025-10-22 04:00:00+00:00, Yesterday: 2025-10-21 04:00:00+00:00
+2025-10-22 21:47:45 - INFO - __main__ - ZBH timestamps - Today: 2025-10-22 04:00:00+00:00, Yesterday: 2025-10-21 04:00:00+00:00
+2025-10-22 21:47:45 - INFO - __main__ - PLD timestamps - Today: 2025-10-22 04:00:00+00:00, Yesterday: 2025-10-21 04:00:00+00:00
+2025-10-22 21:47:45 - INFO - __main__ - TDG timestamps - Today: 2025-10-22 04:00:00+00:00, Yesterday: 2025-10-21 04:00:00+00:00
+2025-10-22 21:47:45 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-22 21:47:45 - INFO - __main__ - Data issues encountered: 0
+2025-10-22 21:47:45 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-22 21:47:45 - INFO - __main__ - Analysis for market close on October 22, 2025
+2025-10-22 21:47:45 - INFO - __main__ - Found 497 stocks with price data
+2025-10-22 21:47:45 - INFO - __main__ - Found Wikipedia URL for ISRG: https://en.wikipedia.org/wiki/Intuitive_Surgical
+2025-10-22 21:47:48 - INFO - __main__ - Found Wikipedia URL for NFLX: https://en.wikipedia.org/wiki/Netflix,_Inc.
+2025-10-22 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-10-22 21:47:50 - INFO - __main__ - Analyzing Intuitive Surgical (ISRG)
+2025-10-22 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-22 21:47:51 - INFO - __main__ - Searching for articles about ISRG
+2025-10-22 21:47:51 - INFO - __main__ - Searching for news about Intuitive Surgical
+2025-10-22 21:48:00 - INFO - __main__ - Found 6 recent search results for Intuitive Surgical
+2025-10-22 21:48:00 - INFO - __main__ - Found 6 URLs to try for ISRG
+2025-10-22 21:48:00 - INFO - __main__ - Fetching content from: https://www.investopedia.com/intuitive-surgical-s-stock-soars-amid-rising-demand-for-robotic-procedures-11834598
+2025-10-22 21:48:00 - INFO - __main__ - Successfully extracted article content (2017 chars)
+2025-10-22 21:48:00 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/intuitive-surgical-earnings-stock-price-81b809c7?gaa_at=eafs&gaa_n=AWEtsqf_i0FjC2yZvUlk-4XxuqEYzErfEcx91POFtc9idPn5xPQRGJuY8EaZ&gaa_ts=68f95493&gaa_sig=erJtFLRjp65Qi9mbRdPomB2kqvWT2WPqycpZgHEu8cgiZuWAqR3jDoJKISCKqNpU48Uk133JqInaGK0d9lcU0w%3D%3D
+2025-10-22 21:48:00 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-22 21:48:00 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-netflix-texas-instruments-intuitive-surgical-and-more-11834710
+2025-10-22 21:48:00 - INFO - __main__ - Successfully extracted article content (1900 chars)
+2025-10-22 21:48:00 - INFO - __main__ - Found total of 2 valid articles for ISRG
+2025-10-22 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:04 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-22 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:08 - INFO - __main__ - Top performer analysis complete
+2025-10-22 21:48:08 - INFO - __main__ - Analyzing bottom performer...
+2025-10-22 21:48:08 - INFO - __main__ - Analyzing Netflix (NFLX)
+2025-10-22 21:48:09 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-22 21:48:09 - INFO - __main__ - Searching for articles about NFLX
+2025-10-22 21:48:09 - INFO - __main__ - Searching for news about Netflix
+2025-10-22 21:48:13 - INFO - __main__ - Found 6 recent search results for Netflix
+2025-10-22 21:48:13 - INFO - __main__ - Found 6 URLs to try for NFLX
+2025-10-22 21:48:13 - INFO - __main__ - Fetching content from: https://www.investopedia.com/netflix-s-earnings-came-with-a-jump-scare-why-the-stock-is-the-s-and-p-500-s-biggest-loser-11834874
+2025-10-22 21:48:14 - INFO - __main__ - Successfully extracted article content (2722 chars)
+2025-10-22 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/netflix-stock-falls-after-q3-earnings-miss-estimates-operating-profit-takes-a-hit-222330311.html
+2025-10-22 21:48:14 - INFO - __main__ - Successfully extracted article content (4995 chars)
+2025-10-22 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/earnings-live-netflix-stock-dives-ge-vernova-reverses-gains-hilton-rises-as-tesla-earnings-loom-120948437.html
+2025-10-22 21:48:15 - INFO - __main__ - Successfully extracted article content (17519 chars)
+2025-10-22 21:48:15 - INFO - __main__ - Found total of 3 valid articles for NFLX
+2025-10-22 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:21 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-10-22 21:48:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-22 21:48:27 - INFO - __main__ - Bottom performer analysis complete
+2025-10-22 21:48:27 - INFO - __main__ - Saving results to JSON...
+2025-10-22 21:48:27 - INFO - __main__ - Analysis complete and saved to market_analysis.json
