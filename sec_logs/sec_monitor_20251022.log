@@ -229,3 +229,51 @@
 2025-10-22 11:16:58,121 - sec_monitor - INFO - Generating final output...
 2025-10-22 11:16:58,122 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-22 11:16:58,122 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 3235048, 'output_words': 0, 'filings_processed': 34}
+2025-10-22 12:43:38,539 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-22 12:43:38,539 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-22 12:43:38,539 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-22 12:43:38,540 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-22 12:43:38,540 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-22 12:43:38,540 - sec_monitor - INFO - Initializing components...
+2025-10-22 12:43:38,540 - sec_monitor - INFO - Initializing components
+2025-10-22 12:43:38,540 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-22 12:43:38,540 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-22 12:43:38,540 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-22 12:43:38,541 - sec_monitor - INFO - All components initialized successfully
+2025-10-22 12:43:38,542 - sec_monitor - INFO - Found JSON file from today
+2025-10-22 12:43:38,542 - sec_monitor - INFO - Found 34 previously processed accessions and 34 filing URLs
+2025-10-22 12:43:38,542 - sec_monitor - INFO - Found 34 accession numbers and 34 URLs from previously processed filings
+2025-10-22 12:43:38,542 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-22 12:43:55,544 - sec_monitor - INFO - No more entries found
+2025-10-22 12:43:55,544 - sec_monitor - INFO - Completed fetching. Found 107 total filings
+2025-10-22 12:43:55,544 - sec_monitor - INFO - Found 3 new interesting filings
+2025-10-22 12:43:55,544 - sec_monitor - INFO - Found 3 new filings to process
+2025-10-22 12:43:55,544 - sec_monitor - INFO - Processing filing 1/3: DAY
+2025-10-22 12:43:58,247 - sec_monitor - ERROR - Error processing filing DAY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 12:43:58,247 - sec_monitor - INFO - Processing filing 2/3: CTRA
+2025-10-22 12:43:58,593 - sec_monitor - ERROR - Error processing filing CTRA: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 12:43:58,593 - sec_monitor - INFO - Processing filing 3/3: WAB
+2025-10-22 12:44:36,823 - sec_monitor - ERROR - Error processing filing WAB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-22 12:44:36,823 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-22 12:44:37,224 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-22 12:44:37,224 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-22 12:44:37,224 - sec_monitor - INFO - Market open: False
+2025-10-22 12:44:37,225 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-10-22 12:44:37,252 - sec_monitor - INFO - Last trading day: 2025-10-22
+2025-10-22 12:44:37,252 - sec_monitor - INFO - Processing ticker: DAY
+2025-10-22 12:44:37,346 - sec_monitor - INFO - Number of bars for DAY: 3
+2025-10-22 12:44:37,347 - sec_monitor - INFO - Last bar close for DAY: 68.32
+2025-10-22 12:44:37,347 - sec_monitor - INFO - Outside market hours price for DAY: 68.32
+2025-10-22 12:44:37,347 - sec_monitor - INFO - Processing ticker: CTRA
+2025-10-22 12:44:37,388 - sec_monitor - INFO - Number of bars for CTRA: 3
+2025-10-22 12:44:37,388 - sec_monitor - INFO - Last bar close for CTRA: 23.33
+2025-10-22 12:44:37,388 - sec_monitor - INFO - Outside market hours price for CTRA: 23.33
+2025-10-22 12:44:37,388 - sec_monitor - INFO - Processing ticker: WAB
+2025-10-22 12:44:37,421 - sec_monitor - INFO - Number of bars for WAB: 3
+2025-10-22 12:44:37,421 - sec_monitor - INFO - Last bar close for WAB: 198.035
+2025-10-22 12:44:37,421 - sec_monitor - INFO - Outside market hours price for WAB: 198.035
+2025-10-22 12:44:38,188 - sec_monitor - INFO - Generating final output...
+2025-10-22 12:44:38,190 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-10-22 12:44:38,191 - sec_monitor - INFO - Cumulative stats - Input words: 3444822, Output words: 0
+2025-10-22 12:44:38,191 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-22 12:44:38,191 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 209774, 'output_words': 0, 'filings_processed': 3}
