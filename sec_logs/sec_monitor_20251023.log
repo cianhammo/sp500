@@ -253,3 +253,63 @@
 2025-10-23 11:22:41,010 - sec_monitor - INFO - Generating final output...
 2025-10-23 11:22:41,011 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-23 11:22:41,011 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4167882, 'output_words': 0, 'filings_processed': 38}
+2025-10-23 12:44:00,118 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-23 12:44:00,118 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-23 12:44:00,118 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-23 12:44:00,119 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 12:44:00,119 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 12:44:00,119 - sec_monitor - INFO - Initializing components...
+2025-10-23 12:44:00,119 - sec_monitor - INFO - Initializing components
+2025-10-23 12:44:00,119 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-23 12:44:00,119 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-23 12:44:00,119 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-23 12:44:00,119 - sec_monitor - INFO - All components initialized successfully
+2025-10-23 12:44:00,120 - sec_monitor - INFO - Found JSON file from today
+2025-10-23 12:44:00,121 - sec_monitor - INFO - Found 38 previously processed accessions and 38 filing URLs
+2025-10-23 12:44:00,121 - sec_monitor - INFO - Found 38 accession numbers and 38 URLs from previously processed filings
+2025-10-23 12:44:00,121 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-23 12:44:19,556 - sec_monitor - INFO - No more entries found
+2025-10-23 12:44:19,556 - sec_monitor - INFO - Completed fetching. Found 97 total filings
+2025-10-23 12:44:19,556 - sec_monitor - INFO - Found 5 new interesting filings
+2025-10-23 12:44:19,556 - sec_monitor - INFO - Found 5 new filings to process
+2025-10-23 12:44:19,557 - sec_monitor - INFO - Processing filing 1/5: VLO
+2025-10-23 12:44:21,042 - sec_monitor - ERROR - Error processing filing VLO: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 12:44:21,042 - sec_monitor - INFO - Processing filing 2/5: FCX
+2025-10-23 12:44:46,183 - sec_monitor - ERROR - Error processing filing FCX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 12:44:46,183 - sec_monitor - INFO - Processing filing 3/5: UNP
+2025-10-23 12:44:47,149 - sec_monitor - ERROR - Error processing filing UNP: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 12:44:47,149 - sec_monitor - INFO - Processing filing 4/5: PODD
+2025-10-23 12:44:47,450 - sec_monitor - ERROR - Error processing filing PODD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 12:44:47,451 - sec_monitor - INFO - Processing filing 5/5: WST
+2025-10-23 12:45:05,900 - sec_monitor - ERROR - Error processing filing WST: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 12:45:05,900 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-23 12:45:06,497 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-23 12:45:06,497 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-23 12:45:06,497 - sec_monitor - INFO - Market open: False
+2025-10-23 12:45:06,498 - sec_monitor - INFO - Number of filing times mapped: 5
+2025-10-23 12:45:06,526 - sec_monitor - INFO - Last trading day: 2025-10-23
+2025-10-23 12:45:06,527 - sec_monitor - INFO - Processing ticker: VLO
+2025-10-23 12:45:06,897 - sec_monitor - INFO - Number of bars for VLO: 3
+2025-10-23 12:45:06,897 - sec_monitor - INFO - Last bar close for VLO: 161.895
+2025-10-23 12:45:06,897 - sec_monitor - INFO - Outside market hours price for VLO: 161.895
+2025-10-23 12:45:06,897 - sec_monitor - INFO - Processing ticker: FCX
+2025-10-23 12:45:06,937 - sec_monitor - INFO - Number of bars for FCX: 3
+2025-10-23 12:45:06,937 - sec_monitor - INFO - Last bar close for FCX: 40.795
+2025-10-23 12:45:06,937 - sec_monitor - INFO - Outside market hours price for FCX: 40.795
+2025-10-23 12:45:06,938 - sec_monitor - INFO - Processing ticker: UNP
+2025-10-23 12:45:06,982 - sec_monitor - INFO - Number of bars for UNP: 3
+2025-10-23 12:45:06,982 - sec_monitor - INFO - Last bar close for UNP: 225.27
+2025-10-23 12:45:06,982 - sec_monitor - INFO - Outside market hours price for UNP: 225.27
+2025-10-23 12:45:06,982 - sec_monitor - INFO - Processing ticker: PODD
+2025-10-23 12:45:07,027 - sec_monitor - INFO - Number of bars for PODD: 3
+2025-10-23 12:45:07,027 - sec_monitor - INFO - Last bar close for PODD: 329.345
+2025-10-23 12:45:07,027 - sec_monitor - INFO - Outside market hours price for PODD: 329.345
+2025-10-23 12:45:07,027 - sec_monitor - INFO - Processing ticker: WST
+2025-10-23 12:45:07,067 - sec_monitor - INFO - Number of bars for WST: 3
+2025-10-23 12:45:07,067 - sec_monitor - INFO - Last bar close for WST: 276.24
+2025-10-23 12:45:07,067 - sec_monitor - INFO - Outside market hours price for WST: 276.24
+2025-10-23 12:45:08,463 - sec_monitor - INFO - Generating final output...
+2025-10-23 12:45:08,464 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2025-10-23 12:45:08,464 - sec_monitor - INFO - Cumulative stats - Input words: 4404067, Output words: 0
+2025-10-23 12:45:08,464 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-23 12:45:08,464 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 236185, 'output_words': 0, 'filings_processed': 5}
