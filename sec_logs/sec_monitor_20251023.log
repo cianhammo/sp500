@@ -313,3 +313,45 @@
 2025-10-23 12:45:08,464 - sec_monitor - INFO - Cumulative stats - Input words: 4404067, Output words: 0
 2025-10-23 12:45:08,464 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-23 12:45:08,464 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 236185, 'output_words': 0, 'filings_processed': 5}
+2025-10-23 13:33:43,154 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-23 13:33:43,155 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-23 13:33:43,155 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-23 13:33:43,155 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 13:33:43,155 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 13:33:43,155 - sec_monitor - INFO - Initializing components...
+2025-10-23 13:33:43,155 - sec_monitor - INFO - Initializing components
+2025-10-23 13:33:43,156 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-23 13:33:43,156 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-23 13:33:43,156 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-23 13:33:43,156 - sec_monitor - INFO - All components initialized successfully
+2025-10-23 13:33:43,157 - sec_monitor - INFO - Found JSON file from today
+2025-10-23 13:33:43,157 - sec_monitor - INFO - Found 43 previously processed accessions and 43 filing URLs
+2025-10-23 13:33:43,157 - sec_monitor - INFO - Found 43 accession numbers and 43 URLs from previously processed filings
+2025-10-23 13:33:43,157 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-23 13:34:02,662 - sec_monitor - INFO - No more entries found
+2025-10-23 13:34:02,662 - sec_monitor - INFO - Completed fetching. Found 95 total filings
+2025-10-23 13:34:02,662 - sec_monitor - INFO - Found 2 new interesting filings
+2025-10-23 13:34:02,662 - sec_monitor - INFO - Found 2 new filings to process
+2025-10-23 13:34:02,662 - sec_monitor - INFO - Processing filing 1/2: SMCI
+2025-10-23 13:34:03,139 - sec_monitor - ERROR - Error processing filing SMCI: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 13:34:03,139 - sec_monitor - INFO - Processing filing 2/2: ODFL
+2025-10-23 13:34:03,652 - sec_monitor - ERROR - Error processing filing ODFL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 13:34:03,652 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-23 13:34:04,127 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-23 13:34:04,127 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-23 13:34:04,127 - sec_monitor - INFO - Market open: True
+2025-10-23 13:34:04,128 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-10-23 13:34:04,141 - sec_monitor - INFO - Last trading day: 2025-10-23
+2025-10-23 13:34:04,141 - sec_monitor - INFO - Processing ticker: SMCI
+2025-10-23 13:34:04,340 - sec_monitor - INFO - Number of bars for SMCI: 3
+2025-10-23 13:34:04,340 - sec_monitor - INFO - Last bar close for SMCI: 52.47
+2025-10-23 13:34:04,340 - sec_monitor - INFO - Market open price for SMCI: 52.47, change: -4.181884587289991%
+2025-10-23 13:34:04,340 - sec_monitor - INFO - Processing ticker: ODFL
+2025-10-23 13:34:04,356 - sec_monitor - INFO - Number of bars for ODFL: 3
+2025-10-23 13:34:04,357 - sec_monitor - INFO - Last bar close for ODFL: 141.09
+2025-10-23 13:34:04,357 - sec_monitor - INFO - Market open price for ODFL: 141.09, change: -2.2922437673130207%
+2025-10-23 13:34:05,026 - sec_monitor - INFO - Generating final output...
+2025-10-23 13:34:05,027 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-10-23 13:34:05,027 - sec_monitor - INFO - Cumulative stats - Input words: 4414271, Output words: 0
+2025-10-23 13:34:05,028 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-23 13:34:05,028 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 10204, 'output_words': 0, 'filings_processed': 2}
