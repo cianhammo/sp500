@@ -409,3 +409,45 @@
 2025-10-23 15:24:52,881 - sec_monitor - INFO - Cumulative stats - Input words: 5586810, Output words: 0
 2025-10-23 15:24:52,881 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-23 15:24:52,881 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1172539, 'output_words': 0, 'filings_processed': 4}
+2025-10-23 18:24:28,738 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-23 18:24:28,738 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-23 18:24:28,738 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-23 18:24:28,738 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 18:24:28,738 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 18:24:28,738 - sec_monitor - INFO - Initializing components...
+2025-10-23 18:24:28,739 - sec_monitor - INFO - Initializing components
+2025-10-23 18:24:28,739 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-23 18:24:28,739 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-23 18:24:28,739 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-23 18:24:28,739 - sec_monitor - INFO - All components initialized successfully
+2025-10-23 18:24:28,740 - sec_monitor - INFO - Found JSON file from today
+2025-10-23 18:24:28,741 - sec_monitor - INFO - Found 49 previously processed accessions and 49 filing URLs
+2025-10-23 18:24:28,741 - sec_monitor - INFO - Found 49 accession numbers and 49 URLs from previously processed filings
+2025-10-23 18:24:28,741 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-23 18:24:55,221 - sec_monitor - INFO - No more entries found
+2025-10-23 18:24:55,221 - sec_monitor - INFO - Completed fetching. Found 54 total filings
+2025-10-23 18:24:55,221 - sec_monitor - INFO - Found 2 new interesting filings
+2025-10-23 18:24:55,221 - sec_monitor - INFO - Found 2 new filings to process
+2025-10-23 18:24:55,221 - sec_monitor - INFO - Processing filing 1/2: TXN
+2025-10-23 18:25:15,953 - sec_monitor - ERROR - Error processing filing TXN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 18:25:15,953 - sec_monitor - INFO - Processing filing 2/2: TXT
+2025-10-23 18:25:30,780 - sec_monitor - ERROR - Error processing filing TXT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 18:25:30,781 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-23 18:25:31,049 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-23 18:25:31,049 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-23 18:25:31,049 - sec_monitor - INFO - Market open: True
+2025-10-23 18:25:31,050 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-10-23 18:25:31,092 - sec_monitor - INFO - Last trading day: 2025-10-23
+2025-10-23 18:25:31,092 - sec_monitor - INFO - Processing ticker: TXN
+2025-10-23 18:25:31,395 - sec_monitor - INFO - Number of bars for TXN: 3
+2025-10-23 18:25:31,396 - sec_monitor - INFO - Last bar close for TXN: 170.8
+2025-10-23 18:25:31,396 - sec_monitor - INFO - Market open price for TXN: 170.8, change: -5.583195135433938%
+2025-10-23 18:25:31,396 - sec_monitor - INFO - Processing ticker: TXT
+2025-10-23 18:25:31,433 - sec_monitor - INFO - Number of bars for TXT: 3
+2025-10-23 18:25:31,433 - sec_monitor - INFO - Last bar close for TXT: 82.55
+2025-10-23 18:25:31,433 - sec_monitor - INFO - Market open price for TXT: 82.55, change: -0.5661286437003118%
+2025-10-23 18:25:32,230 - sec_monitor - INFO - Generating final output...
+2025-10-23 18:25:32,231 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-10-23 18:25:32,231 - sec_monitor - INFO - Cumulative stats - Input words: 5910941, Output words: 0
+2025-10-23 18:25:32,231 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-23 18:25:32,231 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 324131, 'output_words': 0, 'filings_processed': 2}
