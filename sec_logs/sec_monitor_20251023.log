@@ -355,3 +355,57 @@
 2025-10-23 13:34:05,027 - sec_monitor - INFO - Cumulative stats - Input words: 4414271, Output words: 0
 2025-10-23 13:34:05,028 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-23 13:34:05,028 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 10204, 'output_words': 0, 'filings_processed': 2}
+2025-10-23 15:21:16,948 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-23 15:21:16,949 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-23 15:21:16,949 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-23 15:21:16,949 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 15:21:16,949 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-23 15:21:16,949 - sec_monitor - INFO - Initializing components...
+2025-10-23 15:21:16,949 - sec_monitor - INFO - Initializing components
+2025-10-23 15:21:16,949 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-23 15:21:16,950 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-23 15:21:16,950 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-23 15:21:16,950 - sec_monitor - INFO - All components initialized successfully
+2025-10-23 15:21:16,951 - sec_monitor - INFO - Found JSON file from today
+2025-10-23 15:21:16,951 - sec_monitor - INFO - Found 45 previously processed accessions and 45 filing URLs
+2025-10-23 15:21:16,951 - sec_monitor - INFO - Found 45 accession numbers and 45 URLs from previously processed filings
+2025-10-23 15:21:16,951 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-23 15:21:38,051 - sec_monitor - INFO - No more entries found
+2025-10-23 15:21:38,051 - sec_monitor - INFO - Completed fetching. Found 93 total filings
+2025-10-23 15:21:38,051 - sec_monitor - INFO - Found 4 new interesting filings
+2025-10-23 15:21:38,051 - sec_monitor - INFO - Found 4 new filings to process
+2025-10-23 15:21:38,051 - sec_monitor - INFO - Processing filing 1/4: NDAQ
+2025-10-23 15:22:17,134 - sec_monitor - ERROR - Error processing filing NDAQ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 15:22:17,134 - sec_monitor - INFO - Processing filing 2/4: POOL
+2025-10-23 15:22:18,061 - sec_monitor - ERROR - Error processing filing POOL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 15:22:18,061 - sec_monitor - INFO - Processing filing 3/4: MOH
+2025-10-23 15:24:03,743 - sec_monitor - ERROR - Error processing filing MOH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 15:24:03,743 - sec_monitor - INFO - Processing filing 4/4: HON
+2025-10-23 15:24:50,783 - sec_monitor - ERROR - Error processing filing HON: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-23 15:24:50,784 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-23 15:24:51,279 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-23 15:24:51,279 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-23 15:24:51,279 - sec_monitor - INFO - Market open: True
+2025-10-23 15:24:51,279 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-10-23 15:24:51,291 - sec_monitor - INFO - Last trading day: 2025-10-23
+2025-10-23 15:24:51,291 - sec_monitor - INFO - Processing ticker: NDAQ
+2025-10-23 15:24:51,725 - sec_monitor - INFO - Number of bars for NDAQ: 3
+2025-10-23 15:24:51,725 - sec_monitor - INFO - Last bar close for NDAQ: 87.425
+2025-10-23 15:24:51,725 - sec_monitor - INFO - Market open price for NDAQ: 87.425, change: -3.183831672203765%
+2025-10-23 15:24:51,725 - sec_monitor - INFO - Processing ticker: POOL
+2025-10-23 15:24:51,746 - sec_monitor - INFO - Number of bars for POOL: 3
+2025-10-23 15:24:51,746 - sec_monitor - INFO - Last bar close for POOL: 298.12
+2025-10-23 15:24:51,746 - sec_monitor - INFO - Market open price for POOL: 298.12, change: -1.5195560253699862%
+2025-10-23 15:24:51,746 - sec_monitor - INFO - Processing ticker: MOH
+2025-10-23 15:24:51,771 - sec_monitor - INFO - Number of bars for MOH: 3
+2025-10-23 15:24:51,771 - sec_monitor - INFO - Last bar close for MOH: 195.085
+2025-10-23 15:24:51,771 - sec_monitor - INFO - Market open price for MOH: 195.085, change: -0.8991389601483234%
+2025-10-23 15:24:51,771 - sec_monitor - INFO - Processing ticker: HON
+2025-10-23 15:24:51,793 - sec_monitor - INFO - Number of bars for HON: 3
+2025-10-23 15:24:51,793 - sec_monitor - INFO - Last bar close for HON: 206.57
+2025-10-23 15:24:51,793 - sec_monitor - INFO - Market open price for HON: 206.57, change: -1.2335644274444237%
+2025-10-23 15:24:52,879 - sec_monitor - INFO - Generating final output...
+2025-10-23 15:24:52,881 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-10-23 15:24:52,881 - sec_monitor - INFO - Cumulative stats - Input words: 5586810, Output words: 0
+2025-10-23 15:24:52,881 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-23 15:24:52,881 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1172539, 'output_words': 0, 'filings_processed': 4}
