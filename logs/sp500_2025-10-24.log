@@ -1,0 +1,68 @@
+2025-10-24 21:47:56 - INFO - __main__ - Starting SP500 analysis script
+2025-10-24 21:47:56 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-24 21:47:56 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-24 21:47:56 - INFO - __main__ - Runtime timezone: UTC
+2025-10-24 21:47:56 - INFO - __main__ - Original start: 2025-10-23 16:00:00-04:00 (America/New_York)
+2025-10-24 21:47:56 - INFO - __main__ - Original end: 2025-10-24 16:00:00-04:00 (America/New_York)
+2025-10-24 21:47:56 - INFO - __main__ - UTC start: 2025-10-23 04:00:00+00:00
+2025-10-24 21:47:56 - INFO - __main__ - UTC end: 2025-10-25 04:00:00+00:00
+2025-10-24 21:47:56 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-24 21:47:58 - INFO - __main__ - Received data for 497 symbols
+2025-10-24 21:47:58 - INFO - __main__ - Sample data structure for TSCO:
+2025-10-24 21:47:58 - INFO - __main__ - Number of bars: 2
+2025-10-24 21:47:58 - INFO - __main__ - Bar timestamp: 2025-10-23 04:00:00+00:00 (UTC)
+2025-10-24 21:47:58 - INFO - __main__ - Bar timestamp: 2025-10-24 04:00:00+00:00 (UTC)
+2025-10-24 21:47:58 - INFO - __main__ - TSCO timestamps - Today: 2025-10-24 04:00:00+00:00, Yesterday: 2025-10-23 04:00:00+00:00
+2025-10-24 21:47:58 - INFO - __main__ - AJG timestamps - Today: 2025-10-24 04:00:00+00:00, Yesterday: 2025-10-23 04:00:00+00:00
+2025-10-24 21:47:58 - INFO - __main__ - AME timestamps - Today: 2025-10-24 04:00:00+00:00, Yesterday: 2025-10-23 04:00:00+00:00
+2025-10-24 21:47:58 - INFO - __main__ - AVB timestamps - Today: 2025-10-24 04:00:00+00:00, Yesterday: 2025-10-23 04:00:00+00:00
+2025-10-24 21:47:58 - INFO - __main__ - GPC timestamps - Today: 2025-10-24 04:00:00+00:00, Yesterday: 2025-10-23 04:00:00+00:00
+2025-10-24 21:47:58 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-24 21:47:58 - INFO - __main__ - Data issues encountered: 0
+2025-10-24 21:47:58 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-24 21:47:58 - INFO - __main__ - Analysis for market close on October 24, 2025
+2025-10-24 21:47:58 - INFO - __main__ - Found 497 stocks with price data
+2025-10-24 21:47:59 - INFO - __main__ - Found Wikipedia URL for F: https://en.wikipedia.org/wiki/Ford_Motor_Company
+2025-10-24 21:48:01 - INFO - __main__ - Found Wikipedia URL for DECK: https://en.wikipedia.org/wiki/Deckers_Brands
+2025-10-24 21:48:03 - INFO - __main__ - Analyzing top performer...
+2025-10-24 21:48:03 - INFO - __main__ - Analyzing Ford Motor Company (F)
+2025-10-24 21:48:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-24 21:48:03 - INFO - __main__ - Searching for articles about F
+2025-10-24 21:48:03 - INFO - __main__ - Searching for news about Ford Motor Company
+2025-10-24 21:48:09 - INFO - __main__ - Found 6 recent search results for Ford Motor Company
+2025-10-24 21:48:09 - INFO - __main__ - Found 6 URLs to try for F
+2025-10-24 21:48:09 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/10/24/why-ford-stock-shifted-into-a-higher-gear-today/
+2025-10-24 21:48:09 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-10-24 21:48:09 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/top-stock-movers-now-ford-163751308.html
+2025-10-24 21:48:10 - INFO - __main__ - Successfully extracted article content (2203 chars)
+2025-10-24 21:48:10 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/earnings-live-intel-stock-surges-ford-rises-after-hours-deckers-drops-203435980.html
+2025-10-24 21:48:10 - INFO - __main__ - Successfully extracted article content (14503 chars)
+2025-10-24 21:48:10 - INFO - __main__ - Found total of 2 valid articles for F
+2025-10-24 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:15 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-24 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:19 - INFO - __main__ - Top performer analysis complete
+2025-10-24 21:48:19 - INFO - __main__ - Analyzing bottom performer...
+2025-10-24 21:48:19 - INFO - __main__ - Analyzing Deckers Brands (DECK)
+2025-10-24 21:48:20 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-24 21:48:20 - INFO - __main__ - Searching for articles about DECK
+2025-10-24 21:48:20 - INFO - __main__ - Searching for news about Deckers Brands
+2025-10-24 21:48:26 - INFO - __main__ - Found 6 recent search results for Deckers Brands
+2025-10-24 21:48:26 - INFO - __main__ - Found 6 URLs to try for DECK
+2025-10-24 21:48:26 - INFO - __main__ - Fetching content from: https://www.investopedia.com/deckers-stock-slumps-as-hoka-maker-warns-of-consumer-pullback-because-of-tariffs-higher-prices-11836350
+2025-10-24 21:48:27 - INFO - __main__ - Successfully extracted article content (1925 chars)
+2025-10-24 21:48:27 - INFO - __main__ - Fetching content from: https://www.benzinga.com/analyst-stock-ratings/price-target/25/10/48402040/deckers-outdoor-analysts-cut-their-forecasts-after-q2-earnings
+2025-10-24 21:48:27 - INFO - __main__ - Successfully extracted article content (1448 chars)
+2025-10-24 21:48:27 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/10/23/stock-market-today-live-updates.html
+2025-10-24 21:48:27 - INFO - readability.readability - ruthless removal did not work. 
+2025-10-24 21:48:27 - INFO - __main__ - Successfully extracted article content (3059 chars)
+2025-10-24 21:48:27 - INFO - __main__ - Found total of 3 valid articles for DECK
+2025-10-24 21:48:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:32 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-10-24 21:48:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-24 21:48:37 - INFO - __main__ - Bottom performer analysis complete
+2025-10-24 21:48:37 - INFO - __main__ - Saving results to JSON...
+2025-10-24 21:48:37 - INFO - __main__ - Analysis complete and saved to market_analysis.json
