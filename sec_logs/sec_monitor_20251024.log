@@ -187,3 +187,57 @@
 2025-10-24 11:28:24,682 - sec_monitor - INFO - Generating final output...
 2025-10-24 11:28:24,684 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-24 11:28:24,684 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 5332644, 'output_words': 0, 'filings_processed': 27}
+2025-10-24 12:43:29,129 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-24 12:43:29,129 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-24 12:43:29,129 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-24 12:43:29,129 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-24 12:43:29,130 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-24 12:43:29,130 - sec_monitor - INFO - Initializing components...
+2025-10-24 12:43:29,130 - sec_monitor - INFO - Initializing components
+2025-10-24 12:43:29,130 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-24 12:43:29,130 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-24 12:43:29,130 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-24 12:43:29,130 - sec_monitor - INFO - All components initialized successfully
+2025-10-24 12:43:29,131 - sec_monitor - INFO - Found JSON file from today
+2025-10-24 12:43:29,131 - sec_monitor - INFO - Found 27 previously processed accessions and 27 filing URLs
+2025-10-24 12:43:29,131 - sec_monitor - INFO - Found 27 accession numbers and 27 URLs from previously processed filings
+2025-10-24 12:43:29,132 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-24 12:43:45,451 - sec_monitor - INFO - No more entries found
+2025-10-24 12:43:45,452 - sec_monitor - INFO - Completed fetching. Found 58 total filings
+2025-10-24 12:43:45,452 - sec_monitor - INFO - Found 4 new interesting filings
+2025-10-24 12:43:45,452 - sec_monitor - INFO - Found 4 new filings to process
+2025-10-24 12:43:45,452 - sec_monitor - INFO - Processing filing 1/4: GD
+2025-10-24 12:43:47,158 - sec_monitor - ERROR - Error processing filing GD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 12:43:47,158 - sec_monitor - INFO - Processing filing 2/4: DOW
+2025-10-24 12:44:49,631 - sec_monitor - ERROR - Error processing filing DOW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 12:44:49,632 - sec_monitor - INFO - Processing filing 3/4: HCA
+2025-10-24 12:44:51,464 - sec_monitor - ERROR - Error processing filing HCA: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 12:44:51,464 - sec_monitor - INFO - Processing filing 4/4: PM
+2025-10-24 12:45:34,655 - sec_monitor - ERROR - Error processing filing PM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 12:45:34,655 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-24 12:45:35,089 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-24 12:45:35,089 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-24 12:45:35,089 - sec_monitor - INFO - Market open: False
+2025-10-24 12:45:35,089 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-10-24 12:45:35,102 - sec_monitor - INFO - Last trading day: 2025-10-24
+2025-10-24 12:45:35,102 - sec_monitor - INFO - Processing ticker: GD
+2025-10-24 12:45:35,669 - sec_monitor - INFO - Number of bars for GD: 4
+2025-10-24 12:45:35,669 - sec_monitor - INFO - Last bar close for GD: 341.5
+2025-10-24 12:45:35,669 - sec_monitor - INFO - Outside market hours price for GD: 341.5
+2025-10-24 12:45:35,670 - sec_monitor - INFO - Processing ticker: DOW
+2025-10-24 12:45:35,690 - sec_monitor - INFO - Number of bars for DOW: 4
+2025-10-24 12:45:35,690 - sec_monitor - INFO - Last bar close for DOW: 24.52
+2025-10-24 12:45:35,690 - sec_monitor - INFO - Outside market hours price for DOW: 24.52
+2025-10-24 12:45:35,690 - sec_monitor - INFO - Processing ticker: HCA
+2025-10-24 12:45:35,711 - sec_monitor - INFO - Number of bars for HCA: 4
+2025-10-24 12:45:35,711 - sec_monitor - INFO - Last bar close for HCA: 439.965
+2025-10-24 12:45:35,711 - sec_monitor - INFO - Outside market hours price for HCA: 439.965
+2025-10-24 12:45:35,711 - sec_monitor - INFO - Processing ticker: PM
+2025-10-24 12:45:35,730 - sec_monitor - INFO - Number of bars for PM: 4
+2025-10-24 12:45:35,730 - sec_monitor - INFO - Last bar close for PM: 157.71
+2025-10-24 12:45:35,730 - sec_monitor - INFO - Outside market hours price for PM: 157.71
+2025-10-24 12:45:37,125 - sec_monitor - INFO - Generating final output...
+2025-10-24 12:45:37,126 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-10-24 12:45:37,126 - sec_monitor - INFO - Cumulative stats - Input words: 6129830, Output words: 0
+2025-10-24 12:45:37,126 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-24 12:45:37,126 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 797186, 'output_words': 0, 'filings_processed': 4}
