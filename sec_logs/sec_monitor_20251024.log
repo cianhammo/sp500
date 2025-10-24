@@ -260,3 +260,51 @@
 2025-10-24 13:33:07,764 - sec_monitor - INFO - Completed fetching. Found 59 total filings
 2025-10-24 13:33:07,764 - sec_monitor - INFO - Found 0 new interesting filings
 2025-10-24 13:33:07,764 - sec_monitor - INFO - No new filings to process
+2025-10-24 15:20:46,107 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-24 15:20:46,107 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-24 15:20:46,107 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-24 15:20:46,108 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-24 15:20:46,108 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-24 15:20:46,108 - sec_monitor - INFO - Initializing components...
+2025-10-24 15:20:46,108 - sec_monitor - INFO - Initializing components
+2025-10-24 15:20:46,108 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-24 15:20:46,108 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-24 15:20:46,109 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-24 15:20:46,109 - sec_monitor - INFO - All components initialized successfully
+2025-10-24 15:20:46,110 - sec_monitor - INFO - Found JSON file from today
+2025-10-24 15:20:46,110 - sec_monitor - INFO - Found 31 previously processed accessions and 31 filing URLs
+2025-10-24 15:20:46,110 - sec_monitor - INFO - Found 31 accession numbers and 31 URLs from previously processed filings
+2025-10-24 15:20:46,110 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-24 15:23:59,544 - sec_monitor - INFO - No more entries found
+2025-10-24 15:23:59,544 - sec_monitor - INFO - Completed fetching. Found 57 total filings
+2025-10-24 15:23:59,545 - sec_monitor - INFO - Found 3 new interesting filings
+2025-10-24 15:23:59,545 - sec_monitor - INFO - Found 3 new filings to process
+2025-10-24 15:23:59,545 - sec_monitor - INFO - Processing filing 1/3: GD
+2025-10-24 15:24:13,272 - sec_monitor - ERROR - Error processing filing GD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 15:24:13,272 - sec_monitor - INFO - Processing filing 2/3: PG
+2025-10-24 15:24:42,256 - sec_monitor - ERROR - Error processing filing PG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 15:24:42,256 - sec_monitor - INFO - Processing filing 3/3: ITW
+2025-10-24 15:24:42,972 - sec_monitor - ERROR - Error processing filing ITW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-24 15:24:42,973 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-24 15:24:43,601 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-24 15:24:43,601 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-24 15:24:43,601 - sec_monitor - INFO - Market open: True
+2025-10-24 15:24:43,601 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-10-24 15:24:43,663 - sec_monitor - INFO - Last trading day: 2025-10-24
+2025-10-24 15:24:43,664 - sec_monitor - INFO - Processing ticker: GD
+2025-10-24 15:24:44,211 - sec_monitor - INFO - Number of bars for GD: 4
+2025-10-24 15:24:44,211 - sec_monitor - INFO - Last bar close for GD: 341.5
+2025-10-24 15:24:44,212 - sec_monitor - INFO - Market open price for GD: 341.5, change: 0.9369550438920629%
+2025-10-24 15:24:44,212 - sec_monitor - INFO - Processing ticker: PG
+2025-10-24 15:24:44,302 - sec_monitor - INFO - Number of bars for PG: 4
+2025-10-24 15:24:44,302 - sec_monitor - INFO - Last bar close for PG: 152.25
+2025-10-24 15:24:44,302 - sec_monitor - INFO - Market open price for PG: 152.25, change: 0.03942440370589544%
+2025-10-24 15:24:44,302 - sec_monitor - INFO - Processing ticker: ITW
+2025-10-24 15:24:44,369 - sec_monitor - INFO - Number of bars for ITW: 4
+2025-10-24 15:24:44,369 - sec_monitor - INFO - Last bar close for ITW: 257.57
+2025-10-24 15:24:44,369 - sec_monitor - INFO - Market open price for ITW: 257.57, change: 1.746000395022709%
+2025-10-24 15:24:45,660 - sec_monitor - INFO - Generating final output...
+2025-10-24 15:24:45,661 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-10-24 15:24:45,661 - sec_monitor - INFO - Cumulative stats - Input words: 6475399, Output words: 0
+2025-10-24 15:24:45,661 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-24 15:24:45,661 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 345569, 'output_words': 0, 'filings_processed': 3}
