@@ -1,0 +1,67 @@
+2025-10-27 21:47:45 - INFO - __main__ - Starting SP500 analysis script
+2025-10-27 21:47:46 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-27 21:47:46 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-27 21:47:46 - INFO - __main__ - Runtime timezone: UTC
+2025-10-27 21:47:46 - INFO - __main__ - Original start: 2025-10-24 16:00:00-04:00 (America/New_York)
+2025-10-27 21:47:46 - INFO - __main__ - Original end: 2025-10-27 16:00:00-04:00 (America/New_York)
+2025-10-27 21:47:46 - INFO - __main__ - UTC start: 2025-10-24 04:00:00+00:00
+2025-10-27 21:47:46 - INFO - __main__ - UTC end: 2025-10-28 04:00:00+00:00
+2025-10-27 21:47:46 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-27 21:47:47 - INFO - __main__ - Received data for 497 symbols
+2025-10-27 21:47:47 - INFO - __main__ - Sample data structure for VST:
+2025-10-27 21:47:47 - INFO - __main__ - Number of bars: 2
+2025-10-27 21:47:47 - INFO - __main__ - Bar timestamp: 2025-10-24 04:00:00+00:00 (UTC)
+2025-10-27 21:47:47 - INFO - __main__ - Bar timestamp: 2025-10-27 04:00:00+00:00 (UTC)
+2025-10-27 21:47:47 - INFO - __main__ - VST timestamps - Today: 2025-10-27 04:00:00+00:00, Yesterday: 2025-10-24 04:00:00+00:00
+2025-10-27 21:47:47 - INFO - __main__ - XOM timestamps - Today: 2025-10-27 04:00:00+00:00, Yesterday: 2025-10-24 04:00:00+00:00
+2025-10-27 21:47:47 - INFO - __main__ - AXON timestamps - Today: 2025-10-27 04:00:00+00:00, Yesterday: 2025-10-24 04:00:00+00:00
+2025-10-27 21:47:47 - INFO - __main__ - CFG timestamps - Today: 2025-10-27 04:00:00+00:00, Yesterday: 2025-10-24 04:00:00+00:00
+2025-10-27 21:47:47 - INFO - __main__ - ITW timestamps - Today: 2025-10-27 04:00:00+00:00, Yesterday: 2025-10-24 04:00:00+00:00
+2025-10-27 21:47:47 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-27 21:47:47 - INFO - __main__ - Data issues encountered: 0
+2025-10-27 21:47:47 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-27 21:47:47 - INFO - __main__ - Analysis for market close on October 27, 2025
+2025-10-27 21:47:47 - INFO - __main__ - Found 497 stocks with price data
+2025-10-27 21:47:47 - INFO - __main__ - Found Wikipedia URL for QCOM: https://en.wikipedia.org/wiki/Qualcomm
+2025-10-27 21:47:50 - INFO - __main__ - Found Wikipedia URL for ALB: https://en.wikipedia.org/wiki/Albemarle_Corporation
+2025-10-27 21:47:52 - INFO - __main__ - Analyzing top performer...
+2025-10-27 21:47:52 - INFO - __main__ - Analyzing Qualcomm (QCOM)
+2025-10-27 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-27 21:47:52 - INFO - __main__ - Searching for articles about QCOM
+2025-10-27 21:47:52 - INFO - __main__ - Searching for news about Qualcomm
+2025-10-27 21:47:54 - INFO - __main__ - Found 6 recent search results for Qualcomm
+2025-10-27 21:47:54 - INFO - __main__ - Found 6 URLs to try for QCOM
+2025-10-27 21:47:54 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/qualcomm-stock-jumps-11-as-company-enters-ai-chip-race-taking-on-nvidia-amd-140024484.html
+2025-10-27 21:47:55 - INFO - __main__ - Successfully extracted article content (3801 chars)
+2025-10-27 21:47:55 - INFO - __main__ - Fetching content from: https://www.wsj.com/tech/qualcomm-stock-surges-on-ai-chip-launch-cc7a4590?gaa_at=eafs&gaa_n=AWEtsqfcjR-oty1jZgaf5gz2Gxbtvwdb_VMP6MnZKIrlv0fLOA8Idh_O6u5Y&gaa_ts=68ffec0e&gaa_sig=6WGgTe9nMWt5LIB0oRLmHcLKhWQlvidtD6NDoYc_MW2Ui7qSGBZiD4BiX5VDZAfJwlGiNdUJRhX0262sKm8xVQ%3D%3D
+2025-10-27 21:47:56 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-27 21:47:56 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/qualcomm-stock-chipmaker-enters-ai-data-center-market/
+2025-10-27 21:47:56 - INFO - __main__ - Successfully extracted article content (3280 chars)
+2025-10-27 21:47:56 - INFO - __main__ - Found total of 2 valid articles for QCOM
+2025-10-27 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:01 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-10-27 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:10 - INFO - __main__ - Top performer analysis complete
+2025-10-27 21:48:10 - INFO - __main__ - Analyzing bottom performer...
+2025-10-27 21:48:10 - INFO - __main__ - Analyzing Albemarle Corporation (ALB)
+2025-10-27 21:48:10 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-27 21:48:10 - INFO - __main__ - Searching for articles about ALB
+2025-10-27 21:48:10 - INFO - __main__ - Searching for news about Albemarle Corporation
+2025-10-27 21:48:15 - INFO - __main__ - Found 6 recent search results for Albemarle Corporation
+2025-10-27 21:48:15 - INFO - __main__ - Found 6 URLs to try for ALB
+2025-10-27 21:48:15 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/albemarle-announces-sale-controlling-stake-111700341.html
+2025-10-27 21:48:16 - INFO - __main__ - Successfully extracted article content (10445 chars)
+2025-10-27 21:48:16 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nvidia-nvda-one-best-dow-155418486.html
+2025-10-27 21:48:16 - INFO - __main__ - Successfully extracted article content (2090 chars)
+2025-10-27 21:48:16 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jamie-dimon-declares-jpmorgan-chases-173130430.html
+2025-10-27 21:48:18 - INFO - __main__ - Successfully extracted article content (2198 chars)
+2025-10-27 21:48:18 - INFO - __main__ - Found total of 3 valid articles for ALB
+2025-10-27 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:31 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-10-27 21:48:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-27 21:48:36 - INFO - __main__ - Bottom performer analysis complete
+2025-10-27 21:48:36 - INFO - __main__ - Saving results to JSON...
+2025-10-27 21:48:36 - INFO - __main__ - Analysis complete and saved to market_analysis.json
