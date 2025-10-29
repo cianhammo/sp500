@@ -1,0 +1,81 @@
+2025-10-29 21:47:50 - INFO - __main__ - Starting SP500 analysis script
+2025-10-29 21:47:51 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-10-29 21:47:51 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 10, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 10, 28, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-10-29 21:47:51 - INFO - __main__ - Runtime timezone: UTC
+2025-10-29 21:47:51 - INFO - __main__ - Original start: 2025-10-28 16:00:00-04:00 (America/New_York)
+2025-10-29 21:47:51 - INFO - __main__ - Original end: 2025-10-29 16:00:00-04:00 (America/New_York)
+2025-10-29 21:47:51 - INFO - __main__ - UTC start: 2025-10-28 04:00:00+00:00
+2025-10-29 21:47:51 - INFO - __main__ - UTC end: 2025-10-30 04:00:00+00:00
+2025-10-29 21:47:51 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-10-29 21:47:52 - INFO - __main__ - Received data for 497 symbols
+2025-10-29 21:47:52 - INFO - __main__ - Sample data structure for ACN:
+2025-10-29 21:47:52 - INFO - __main__ - Number of bars: 2
+2025-10-29 21:47:52 - INFO - __main__ - Bar timestamp: 2025-10-28 04:00:00+00:00 (UTC)
+2025-10-29 21:47:52 - INFO - __main__ - Bar timestamp: 2025-10-29 04:00:00+00:00 (UTC)
+2025-10-29 21:47:52 - INFO - __main__ - ACN timestamps - Today: 2025-10-29 04:00:00+00:00, Yesterday: 2025-10-28 04:00:00+00:00
+2025-10-29 21:47:52 - INFO - __main__ - NOW timestamps - Today: 2025-10-29 04:00:00+00:00, Yesterday: 2025-10-28 04:00:00+00:00
+2025-10-29 21:47:52 - INFO - __main__ - CINF timestamps - Today: 2025-10-29 04:00:00+00:00, Yesterday: 2025-10-28 04:00:00+00:00
+2025-10-29 21:47:52 - INFO - __main__ - HAL timestamps - Today: 2025-10-29 04:00:00+00:00, Yesterday: 2025-10-28 04:00:00+00:00
+2025-10-29 21:47:52 - INFO - __main__ - NXPI timestamps - Today: 2025-10-29 04:00:00+00:00, Yesterday: 2025-10-28 04:00:00+00:00
+2025-10-29 21:47:53 - INFO - __main__ - Successfully processed 497 stocks
+2025-10-29 21:47:53 - INFO - __main__ - Data issues encountered: 0
+2025-10-29 21:47:53 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-10-29 21:47:53 - INFO - __main__ - Analysis for market close on October 29, 2025
+2025-10-29 21:47:53 - INFO - __main__ - Found 497 stocks with price data
+2025-10-29 21:47:53 - INFO - __main__ - Found Wikipedia URL for TER: https://en.wikipedia.org/wiki/Teradyne
+2025-10-29 21:47:55 - INFO - __main__ - Found Wikipedia URL for FI: https://en.wikipedia.org/wiki/Fiserv
+2025-10-29 21:47:57 - INFO - __main__ - Analyzing top performer...
+2025-10-29 21:47:57 - INFO - __main__ - Analyzing Teradyne (TER)
+2025-10-29 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-29 21:47:57 - INFO - __main__ - Searching for articles about TER
+2025-10-29 21:47:57 - INFO - __main__ - Searching for news about Teradyne
+2025-10-29 21:48:00 - INFO - __main__ - Found 6 recent search results for Teradyne
+2025-10-29 21:48:00 - INFO - __main__ - Found 6 URLs to try for TER
+2025-10-29 21:48:00 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4510151-teradyne-surges-after-q3-outlook-beat-estimates-driven-by-ai-related-demand
+2025-10-29 21:48:00 - INFO - __main__ - Successfully extracted article content (354 chars)
+2025-10-29 21:48:00 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/etsys-ceo-shakeup-kraft-heinz-145125925.html
+2025-10-29 21:48:01 - INFO - __main__ - Successfully extracted article content (1752 chars)
+2025-10-29 21:48:01 - INFO - __main__ - Fetching content from: https://www.thestreet.com/markets/stock-market-today-fed-decision-looms-heavy-as-megacap-earnings-from-microsoft-alphabet-and-meta-await
+2025-10-29 21:48:01 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-29 21:48:01 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4509971-biggest-stock-movers-wednesday-joby-enph-and-more
+2025-10-29 21:48:01 - INFO - __main__ - Successfully extracted article content (237 chars)
+2025-10-29 21:48:01 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-nvidia-caterpillar-fiserv-hormel-and-more-11839314
+2025-10-29 21:48:01 - INFO - __main__ - Successfully extracted article content (2189 chars)
+2025-10-29 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fiserv-stock-plunges-29-massive-115152958.html
+2025-10-29 21:48:03 - INFO - __main__ - Successfully extracted article content (2792 chars)
+2025-10-29 21:48:03 - INFO - __main__ - Found total of 3 valid articles for TER
+2025-10-29 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:19 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-10-29 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:23 - INFO - __main__ - Top performer analysis complete
+2025-10-29 21:48:23 - INFO - __main__ - Analyzing bottom performer...
+2025-10-29 21:48:23 - INFO - __main__ - Analyzing Fiserv (FI)
+2025-10-29 21:48:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-10-29 21:48:24 - INFO - __main__ - Searching for articles about FI
+2025-10-29 21:48:24 - INFO - __main__ - Searching for news about Fiserv
+2025-10-29 21:48:31 - INFO - __main__ - Found 6 recent search results for Fiserv
+2025-10-29 21:48:31 - INFO - __main__ - Found 6 URLs to try for FI
+2025-10-29 21:48:31 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-10-29/fiserv-s-impossible-to-sugarcoat-forecast-cut-shocks-analysts
+2025-10-29 21:48:31 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-10-29 21:48:31 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fiserv-stock-plunges-new-ceo-launches-an-executive-shakeup-160116444.html
+2025-10-29 21:48:31 - INFO - __main__ - Successfully extracted article content (4617 chars)
+2025-10-29 21:48:31 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-10-29/fiserv-share-price-plunges-after-slashing-full-year-earnings-forecast
+2025-10-29 21:48:31 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-10-29 21:48:31 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/c-suite/fiserv-erases-30-billion-in-market-value-after-new-ceo-pulls-guidance-63c8ba9f?gaa_at=eafs&gaa_n=AWEtsqdQSCgc3wd57ahlTJQfgw30PWdoCz8xtzyXGOZs6un3OgemM8CaLoM0&gaa_ts=69028f32&gaa_sig=hrYo0Y7jqTV5sIbIfvIs-1ozyK5GSkUz-vJktIRD1OquN46y8hwRTTmRxZZA6CuCvIZrxLI1Ti8tko4zDggWRw%3D%3D
+2025-10-29 21:48:31 - WARNING - __main__ - Article content too short (43 chars)
+2025-10-29 21:48:31 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/10/29/fiserv-stock-guidance-earnings.html
+2025-10-29 21:48:32 - INFO - readability.readability - ruthless removal did not work. 
+2025-10-29 21:48:32 - INFO - __main__ - Successfully extracted article content (2431 chars)
+2025-10-29 21:48:32 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/fiserv-falls-off-cliff-q3-145231371.html
+2025-10-29 21:48:32 - INFO - __main__ - Successfully extracted article content (3533 chars)
+2025-10-29 21:48:32 - INFO - __main__ - Found total of 3 valid articles for FI
+2025-10-29 21:48:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:38 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-10-29 21:48:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-10-29 21:48:43 - INFO - __main__ - Bottom performer analysis complete
+2025-10-29 21:48:43 - INFO - __main__ - Saving results to JSON...
+2025-10-29 21:48:43 - INFO - __main__ - Analysis complete and saved to market_analysis.json
