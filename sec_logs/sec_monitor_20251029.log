@@ -517,3 +517,45 @@
 2025-10-29 15:25:47,941 - sec_monitor - INFO - Cumulative stats - Input words: 8224889, Output words: 0
 2025-10-29 15:25:47,941 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-10-29 15:25:47,941 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 869379, 'output_words': 0, 'filings_processed': 2}
+2025-10-29 18:25:35,843 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-10-29 18:25:35,844 - sec_monitor - INFO - Loading S&P 500 data...
+2025-10-29 18:25:35,844 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-10-29 18:25:35,844 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-29 18:25:35,844 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-10-29 18:25:35,844 - sec_monitor - INFO - Initializing components...
+2025-10-29 18:25:35,844 - sec_monitor - INFO - Initializing components
+2025-10-29 18:25:35,845 - sec_monitor - INFO - SEC fetcher initialized
+2025-10-29 18:25:35,845 - sec_monitor - INFO - Filing analyzer initialized
+2025-10-29 18:25:35,845 - sec_monitor - INFO - Alpaca clients initialized
+2025-10-29 18:25:35,845 - sec_monitor - INFO - All components initialized successfully
+2025-10-29 18:25:35,846 - sec_monitor - INFO - Found JSON file from today
+2025-10-29 18:25:35,847 - sec_monitor - INFO - Found 67 previously processed accessions and 67 filing URLs
+2025-10-29 18:25:35,847 - sec_monitor - INFO - Found 67 accession numbers and 67 URLs from previously processed filings
+2025-10-29 18:25:35,847 - sec_monitor - INFO - Fetching SEC filings...
+2025-10-29 18:25:51,151 - sec_monitor - INFO - No more entries found
+2025-10-29 18:25:51,151 - sec_monitor - INFO - Completed fetching. Found 57 total filings
+2025-10-29 18:25:51,151 - sec_monitor - INFO - Found 2 new interesting filings
+2025-10-29 18:25:51,151 - sec_monitor - INFO - Found 2 new filings to process
+2025-10-29 18:25:51,151 - sec_monitor - INFO - Processing filing 1/2: VZ
+2025-10-29 18:26:22,174 - sec_monitor - ERROR - Error processing filing VZ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-29 18:26:22,174 - sec_monitor - INFO - Processing filing 2/2: POOL
+2025-10-29 18:26:33,495 - sec_monitor - ERROR - Error processing filing POOL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-10-29 18:26:33,495 - sec_monitor - INFO - Fetching supplementary data...
+2025-10-29 18:26:33,714 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-10-29 18:26:33,714 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-10-29 18:26:33,714 - sec_monitor - INFO - Market open: True
+2025-10-29 18:26:33,714 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-10-29 18:26:33,739 - sec_monitor - INFO - Last trading day: 2025-10-29
+2025-10-29 18:26:33,739 - sec_monitor - INFO - Processing ticker: VZ
+2025-10-29 18:26:34,116 - sec_monitor - INFO - Number of bars for VZ: 3
+2025-10-29 18:26:34,116 - sec_monitor - INFO - Last bar close for VZ: 39.32
+2025-10-29 18:26:34,116 - sec_monitor - INFO - Market open price for VZ: 39.32, change: 0.2549719530851643%
+2025-10-29 18:26:34,116 - sec_monitor - INFO - Processing ticker: POOL
+2025-10-29 18:26:34,164 - sec_monitor - INFO - Number of bars for POOL: 3
+2025-10-29 18:26:34,164 - sec_monitor - INFO - Last bar close for POOL: 286.97
+2025-10-29 18:26:34,164 - sec_monitor - INFO - Market open price for POOL: 286.97, change: -2.3114106753812513%
+2025-10-29 18:26:34,795 - sec_monitor - INFO - Generating final output...
+2025-10-29 18:26:34,797 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-10-29 18:26:34,797 - sec_monitor - INFO - Cumulative stats - Input words: 8638347, Output words: 0
+2025-10-29 18:26:34,797 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-10-29 18:26:34,798 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 413458, 'output_words': 0, 'filings_processed': 2}
