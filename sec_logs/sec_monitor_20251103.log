@@ -184,3 +184,50 @@
 2025-11-03 13:34:35,247 - sec_monitor - INFO - Cumulative stats - Input words: 1908788, Output words: 0
 2025-11-03 13:34:35,247 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-03 13:34:35,247 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 705324, 'output_words': 0, 'filings_processed': 7}
+2025-11-03 15:21:30,105 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-03 15:21:30,105 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-03 15:21:30,105 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-03 15:21:30,106 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-03 15:21:30,106 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-03 15:21:30,106 - sec_monitor - INFO - Initializing components...
+2025-11-03 15:21:30,106 - sec_monitor - INFO - Initializing components
+2025-11-03 15:21:30,106 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-03 15:21:30,106 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-03 15:21:30,106 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-03 15:21:30,107 - sec_monitor - INFO - All components initialized successfully
+2025-11-03 15:21:30,107 - sec_monitor - INFO - Found JSON file from today
+2025-11-03 15:21:30,108 - sec_monitor - INFO - Found 17 previously processed accessions and 17 filing URLs
+2025-11-03 15:21:30,108 - sec_monitor - INFO - Found 17 accession numbers and 17 URLs from previously processed filings
+2025-11-03 15:21:30,108 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-03 15:21:34,547 - sec_monitor - INFO - Reached old filing, stopping. Found 36 total filings
+2025-11-03 15:21:34,547 - sec_monitor - INFO - Found 3 new interesting filings
+2025-11-03 15:21:34,548 - sec_monitor - INFO - Found 3 new filings to process
+2025-11-03 15:21:34,548 - sec_monitor - INFO - Processing filing 1/3: PGR
+2025-11-03 15:22:06,239 - sec_monitor - ERROR - Error processing filing PGR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-03 15:22:06,239 - sec_monitor - INFO - Processing filing 2/3: PEG
+2025-11-03 15:23:06,546 - sec_monitor - ERROR - Error processing filing PEG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-03 15:23:06,546 - sec_monitor - INFO - Processing filing 3/3: TROW
+2025-11-03 15:23:08,801 - sec_monitor - ERROR - Error processing filing TROW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-03 15:23:08,801 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-03 15:23:08,832 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-03 15:23:08,833 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-03 15:23:08,833 - sec_monitor - INFO - Market open: True
+2025-11-03 15:23:08,833 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-11-03 15:23:08,847 - sec_monitor - INFO - Last trading day: 2025-11-03
+2025-11-03 15:23:08,847 - sec_monitor - INFO - Processing ticker: PGR
+2025-11-03 15:23:08,895 - sec_monitor - INFO - Number of bars for PGR: 3
+2025-11-03 15:23:08,895 - sec_monitor - INFO - Last bar close for PGR: 205.93
+2025-11-03 15:23:08,895 - sec_monitor - INFO - Market open price for PGR: 205.93, change: -0.4880641731902923%
+2025-11-03 15:23:08,895 - sec_monitor - INFO - Processing ticker: PEG
+2025-11-03 15:23:08,913 - sec_monitor - INFO - Number of bars for PEG: 3
+2025-11-03 15:23:08,913 - sec_monitor - INFO - Last bar close for PEG: 80.58
+2025-11-03 15:23:08,914 - sec_monitor - INFO - Market open price for PEG: 80.58, change: -0.2846182403167974%
+2025-11-03 15:23:08,914 - sec_monitor - INFO - Processing ticker: TROW
+2025-11-03 15:23:08,935 - sec_monitor - INFO - Number of bars for TROW: 3
+2025-11-03 15:23:08,935 - sec_monitor - INFO - Last bar close for TROW: 102.54
+2025-11-03 15:23:08,935 - sec_monitor - INFO - Market open price for TROW: 102.54, change: 0.2787149772627361%
+2025-11-03 15:23:10,283 - sec_monitor - INFO - Generating final output...
+2025-11-03 15:23:10,284 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-11-03 15:23:10,284 - sec_monitor - INFO - Cumulative stats - Input words: 2371931, Output words: 0
+2025-11-03 15:23:10,284 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-03 15:23:10,284 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 463143, 'output_words': 0, 'filings_processed': 3}
