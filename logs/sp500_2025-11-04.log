@@ -1,0 +1,74 @@
+2025-11-04 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-11-04 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-04 21:47:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 4, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-04 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2025-11-04 21:47:41 - INFO - __main__ - Original start: 2025-11-03 16:00:00-05:00 (America/New_York)
+2025-11-04 21:47:41 - INFO - __main__ - Original end: 2025-11-04 16:00:00-05:00 (America/New_York)
+2025-11-04 21:47:41 - INFO - __main__ - UTC start: 2025-11-03 05:00:00+00:00
+2025-11-04 21:47:41 - INFO - __main__ - UTC end: 2025-11-05 05:00:00+00:00
+2025-11-04 21:47:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-04 21:47:41 - INFO - __main__ - Received data for 497 symbols
+2025-11-04 21:47:41 - INFO - __main__ - Sample data structure for COR:
+2025-11-04 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-11-04 21:47:41 - INFO - __main__ - Bar timestamp: 2025-11-03 05:00:00+00:00 (UTC)
+2025-11-04 21:47:41 - INFO - __main__ - Bar timestamp: 2025-11-04 05:00:00+00:00 (UTC)
+2025-11-04 21:47:41 - INFO - __main__ - COR timestamps - Today: 2025-11-04 05:00:00+00:00, Yesterday: 2025-11-03 05:00:00+00:00
+2025-11-04 21:47:41 - INFO - __main__ - O timestamps - Today: 2025-11-04 05:00:00+00:00, Yesterday: 2025-11-03 05:00:00+00:00
+2025-11-04 21:47:41 - INFO - __main__ - BBY timestamps - Today: 2025-11-04 05:00:00+00:00, Yesterday: 2025-11-03 05:00:00+00:00
+2025-11-04 21:47:41 - INFO - __main__ - CRM timestamps - Today: 2025-11-04 05:00:00+00:00, Yesterday: 2025-11-03 05:00:00+00:00
+2025-11-04 21:47:41 - INFO - __main__ - HOLX timestamps - Today: 2025-11-04 05:00:00+00:00, Yesterday: 2025-11-03 05:00:00+00:00
+2025-11-04 21:47:42 - INFO - __main__ - Successfully processed 497 stocks
+2025-11-04 21:47:42 - INFO - __main__ - Data issues encountered: 0
+2025-11-04 21:47:42 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-11-04 21:47:42 - INFO - __main__ - Analysis for market close on November 04, 2025
+2025-11-04 21:47:42 - INFO - __main__ - Found 497 stocks with price data
+2025-11-04 21:47:42 - INFO - __main__ - Found Wikipedia URL for EXPD: https://en.wikipedia.org/wiki/Expeditors_International
+2025-11-04 21:47:44 - INFO - __main__ - Found Wikipedia URL for NCLH: https://en.wikipedia.org/wiki/Norwegian_Cruise_Line_Holdings
+2025-11-04 21:47:46 - INFO - __main__ - Analyzing top performer...
+2025-11-04 21:47:46 - INFO - __main__ - Analyzing Expeditors International (EXPD)
+2025-11-04 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-04 21:47:46 - INFO - __main__ - Searching for articles about EXPD
+2025-11-04 21:47:46 - INFO - __main__ - Searching for news about Expeditors International
+2025-11-04 21:47:49 - INFO - __main__ - Found 6 recent search results for Expeditors International
+2025-11-04 21:47:49 - INFO - __main__ - Found 6 URLs to try for EXPD
+2025-11-04 21:47:49 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/11/03/stock-market-today-live-updates.html
+2025-11-04 21:47:49 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-04 21:47:49 - INFO - __main__ - Successfully extracted article content (3473 chars)
+2025-11-04 21:47:49 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/stocks-retreat-valuation-concerns
+2025-11-04 21:47:49 - INFO - __main__ - Successfully extracted article content (8962 chars)
+2025-11-04 21:47:49 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/could-buying-ethereum-today-set-you-life
+2025-11-04 21:47:50 - INFO - __main__ - Successfully extracted article content (5799 chars)
+2025-11-04 21:47:50 - INFO - __main__ - Found total of 3 valid articles for EXPD
+2025-11-04 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:47:57 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-11-04 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-11-04 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-11-04 21:48:02 - INFO - __main__ - Analyzing Norwegian Cruise Line Holdings (NCLH)
+2025-11-04 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-04 21:48:02 - INFO - __main__ - Searching for articles about NCLH
+2025-11-04 21:48:02 - INFO - __main__ - Searching for news about Norwegian Cruise Line Holdings
+2025-11-04 21:48:05 - INFO - __main__ - Found 6 recent search results for Norwegian Cruise Line Holdings
+2025-11-04 21:48:05 - INFO - __main__ - Found 6 URLs to try for NCLH
+2025-11-04 21:48:05 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/norwegian-cruise-earnings-stock-price-aa80d69d?gaa_at=eafs&gaa_n=AWEtsqe-_LX1X8dND45BWPYf6_CY3og2yMPIUiW00QLX3lm7_-3EOr1UeZS6&gaa_ts=690a7818&gaa_sig=KBzLmWAXeTOe_LI4dWNV0aH1nfl9QqMLfnkpeD9yTbu47qTZF0SXbF44wWOX2t2TTh-EQUN2W8tWyf7Th1Nj-Q%3D%3D
+2025-11-04 21:48:05 - WARNING - __main__ - Article content too short (43 chars)
+2025-11-04 21:48:05 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/why-norwegian-cruise-line-holdings-stock-crashed
+2025-11-04 21:48:06 - INFO - __main__ - Successfully extracted article content (3562 chars)
+2025-11-04 21:48:06 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/11/04/why-norwegian-cruise-line-holdings-stock-crashed/
+2025-11-04 21:48:06 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-11-04 21:48:06 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4514291-norwegians-shares-sink-on-weak-q3-results-forecast-amid-worrying-cruise-industry-trends
+2025-11-04 21:48:06 - INFO - __main__ - Successfully extracted article content (103 chars)
+2025-11-04 21:48:06 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/norwegian-cruise-sets-a-revenue-record-but-wall-street-wanted-even-more-25a85840?gaa_at=eafs&gaa_n=AWEtsqcRvVnIAeyYdvknJ8UTKKLHXDxZQ8Fc_QKbHSLCvGxDHr9A4WEW9Uaf&gaa_ts=690a7818&gaa_sig=eW7qJbPQuBvKMI1OMVBJE9UWGF7rgflT5zHx0872RFOBwnnCXiD3cWWOr7s-guxMUERQ5MTcrRNfc5p0NyCbQg%3D%3D
+2025-11-04 21:48:06 - WARNING - __main__ - Article content too short (43 chars)
+2025-11-04 21:48:06 - INFO - __main__ - Fetching content from: https://www.benzinga.com/trading-ideas/movers/25/11/48627925/carnival-stock-falls-after-rival-norwegian-cruise-lines-revenue-miss
+2025-11-04 21:48:07 - INFO - __main__ - Successfully extracted article content (2510 chars)
+2025-11-04 21:48:07 - INFO - __main__ - Found total of 2 valid articles for NCLH
+2025-11-04 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:48:10 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-11-04 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-04 21:48:16 - INFO - __main__ - Bottom performer analysis complete
+2025-11-04 21:48:16 - INFO - __main__ - Saving results to JSON...
+2025-11-04 21:48:16 - INFO - __main__ - Analysis complete and saved to market_analysis.json
