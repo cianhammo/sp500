@@ -265,3 +265,57 @@
 2025-11-04 12:49:18,379 - sec_monitor - INFO - Cumulative stats - Input words: 3145900, Output words: 0
 2025-11-04 12:49:18,379 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-04 12:49:18,379 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1319110, 'output_words': 0, 'filings_processed': 19}
+2025-11-04 13:35:30,086 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-04 13:35:30,086 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-04 13:35:30,086 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-04 13:35:30,086 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-04 13:35:30,086 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-04 13:35:30,087 - sec_monitor - INFO - Initializing components...
+2025-11-04 13:35:30,087 - sec_monitor - INFO - Initializing components
+2025-11-04 13:35:30,087 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-04 13:35:30,087 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-04 13:35:30,087 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-04 13:35:30,087 - sec_monitor - INFO - All components initialized successfully
+2025-11-04 13:35:30,088 - sec_monitor - INFO - Found JSON file from today
+2025-11-04 13:35:30,088 - sec_monitor - INFO - Found 35 previously processed accessions and 35 filing URLs
+2025-11-04 13:35:30,089 - sec_monitor - INFO - Found 35 accession numbers and 35 URLs from previously processed filings
+2025-11-04 13:35:30,089 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-04 13:35:47,935 - sec_monitor - INFO - No more entries found
+2025-11-04 13:35:47,935 - sec_monitor - INFO - Completed fetching. Found 138 total filings
+2025-11-04 13:35:47,935 - sec_monitor - INFO - Found 4 new interesting filings
+2025-11-04 13:35:47,935 - sec_monitor - INFO - Found 4 new filings to process
+2025-11-04 13:35:47,935 - sec_monitor - INFO - Processing filing 1/4: HRL
+2025-11-04 13:35:48,389 - sec_monitor - ERROR - Error processing filing HRL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-04 13:35:48,390 - sec_monitor - INFO - Processing filing 2/4: CBRE
+2025-11-04 13:35:48,770 - sec_monitor - ERROR - Error processing filing CBRE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-04 13:35:48,770 - sec_monitor - INFO - Processing filing 3/4: BALL
+2025-11-04 13:35:49,822 - sec_monitor - ERROR - Error processing filing BALL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-04 13:35:49,822 - sec_monitor - INFO - Processing filing 4/4: BR
+2025-11-04 13:36:17,502 - sec_monitor - ERROR - Error processing filing BR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-04 13:36:17,503 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-04 13:36:17,719 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-04 13:36:17,719 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-04 13:36:17,719 - sec_monitor - INFO - Market open: False
+2025-11-04 13:36:17,719 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-11-04 13:36:17,790 - sec_monitor - INFO - Last trading day: 2025-11-04
+2025-11-04 13:36:17,790 - sec_monitor - INFO - Processing ticker: HRL
+2025-11-04 13:36:18,024 - sec_monitor - INFO - Number of bars for HRL: 3
+2025-11-04 13:36:18,024 - sec_monitor - INFO - Last bar close for HRL: 21.47
+2025-11-04 13:36:18,024 - sec_monitor - INFO - Outside market hours price for HRL: 21.47
+2025-11-04 13:36:18,024 - sec_monitor - INFO - Processing ticker: CBRE
+2025-11-04 13:36:18,104 - sec_monitor - INFO - Number of bars for CBRE: 3
+2025-11-04 13:36:18,104 - sec_monitor - INFO - Last bar close for CBRE: 150.6
+2025-11-04 13:36:18,104 - sec_monitor - INFO - Outside market hours price for CBRE: 150.6
+2025-11-04 13:36:18,104 - sec_monitor - INFO - Processing ticker: BALL
+2025-11-04 13:36:18,182 - sec_monitor - INFO - Number of bars for BALL: 3
+2025-11-04 13:36:18,182 - sec_monitor - INFO - Last bar close for BALL: 47.07
+2025-11-04 13:36:18,182 - sec_monitor - INFO - Outside market hours price for BALL: 47.07
+2025-11-04 13:36:18,182 - sec_monitor - INFO - Processing ticker: BR
+2025-11-04 13:36:18,261 - sec_monitor - INFO - Number of bars for BR: 3
+2025-11-04 13:36:18,261 - sec_monitor - INFO - Last bar close for BR: 221.17
+2025-11-04 13:36:18,261 - sec_monitor - INFO - Outside market hours price for BR: 221.17
+2025-11-04 13:36:19,420 - sec_monitor - INFO - Generating final output...
+2025-11-04 13:36:19,422 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-11-04 13:36:19,422 - sec_monitor - INFO - Cumulative stats - Input words: 3342487, Output words: 0
+2025-11-04 13:36:19,422 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-04 13:36:19,422 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 196587, 'output_words': 0, 'filings_processed': 4}
