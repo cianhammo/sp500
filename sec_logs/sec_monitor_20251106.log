@@ -319,3 +319,57 @@
 2025-11-06 12:45:56,136 - sec_monitor - INFO - Cumulative stats - Input words: 4143176, Output words: 0
 2025-11-06 12:45:56,136 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-06 12:45:56,136 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1047865, 'output_words': 0, 'filings_processed': 15}
+2025-11-06 13:33:39,061 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-06 13:33:39,061 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-06 13:33:39,061 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-06 13:33:39,062 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-06 13:33:39,062 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-06 13:33:39,062 - sec_monitor - INFO - Initializing components...
+2025-11-06 13:33:39,062 - sec_monitor - INFO - Initializing components
+2025-11-06 13:33:39,062 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-06 13:33:39,062 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-06 13:33:39,063 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-06 13:33:39,063 - sec_monitor - INFO - All components initialized successfully
+2025-11-06 13:33:39,064 - sec_monitor - INFO - Found JSON file from today
+2025-11-06 13:33:39,064 - sec_monitor - INFO - Found 43 previously processed accessions and 43 filing URLs
+2025-11-06 13:33:39,064 - sec_monitor - INFO - Found 43 accession numbers and 43 URLs from previously processed filings
+2025-11-06 13:33:39,064 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-06 13:33:55,096 - sec_monitor - INFO - No more entries found
+2025-11-06 13:33:55,097 - sec_monitor - INFO - Completed fetching. Found 148 total filings
+2025-11-06 13:33:55,097 - sec_monitor - INFO - Found 4 new interesting filings
+2025-11-06 13:33:55,097 - sec_monitor - INFO - Found 4 new filings to process
+2025-11-06 13:33:55,097 - sec_monitor - INFO - Processing filing 1/4: RL
+2025-11-06 13:33:56,243 - sec_monitor - ERROR - Error processing filing RL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-06 13:33:56,243 - sec_monitor - INFO - Processing filing 2/4: PH
+2025-11-06 13:33:57,118 - sec_monitor - ERROR - Error processing filing PH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-06 13:33:57,118 - sec_monitor - INFO - Processing filing 3/4: VTRS
+2025-11-06 13:33:58,194 - sec_monitor - ERROR - Error processing filing VTRS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-06 13:33:58,194 - sec_monitor - INFO - Processing filing 4/4: APD
+2025-11-06 13:34:01,353 - sec_monitor - ERROR - Error processing filing APD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-06 13:34:01,353 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-06 13:34:01,835 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-06 13:34:01,835 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-06 13:34:01,836 - sec_monitor - INFO - Market open: False
+2025-11-06 13:34:01,836 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-11-06 13:34:01,877 - sec_monitor - INFO - Last trading day: 2025-11-06
+2025-11-06 13:34:01,877 - sec_monitor - INFO - Processing ticker: RL
+2025-11-06 13:34:02,290 - sec_monitor - INFO - Number of bars for RL: 3
+2025-11-06 13:34:02,291 - sec_monitor - INFO - Last bar close for RL: 317.57
+2025-11-06 13:34:02,291 - sec_monitor - INFO - Outside market hours price for RL: 317.57
+2025-11-06 13:34:02,291 - sec_monitor - INFO - Processing ticker: PH
+2025-11-06 13:34:02,333 - sec_monitor - INFO - Number of bars for PH: 3
+2025-11-06 13:34:02,334 - sec_monitor - INFO - Last bar close for PH: 774.32
+2025-11-06 13:34:02,334 - sec_monitor - INFO - Outside market hours price for PH: 774.32
+2025-11-06 13:34:02,334 - sec_monitor - INFO - Processing ticker: VTRS
+2025-11-06 13:34:02,376 - sec_monitor - INFO - Number of bars for VTRS: 3
+2025-11-06 13:34:02,377 - sec_monitor - INFO - Last bar close for VTRS: 10.79
+2025-11-06 13:34:02,377 - sec_monitor - INFO - Outside market hours price for VTRS: 10.79
+2025-11-06 13:34:02,377 - sec_monitor - INFO - Processing ticker: APD
+2025-11-06 13:34:02,414 - sec_monitor - INFO - Number of bars for APD: 3
+2025-11-06 13:34:02,414 - sec_monitor - INFO - Last bar close for APD: 237.4
+2025-11-06 13:34:02,414 - sec_monitor - INFO - Outside market hours price for APD: 237.4
+2025-11-06 13:34:03,784 - sec_monitor - INFO - Generating final output...
+2025-11-06 13:34:03,785 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-11-06 13:34:03,785 - sec_monitor - INFO - Cumulative stats - Input words: 4194454, Output words: 0
+2025-11-06 13:34:03,785 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-06 13:34:03,785 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 51278, 'output_words': 0, 'filings_processed': 4}
