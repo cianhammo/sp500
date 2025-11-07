@@ -217,3 +217,57 @@
 2025-11-07 11:19:50,058 - sec_monitor - INFO - Generating final output...
 2025-11-07 11:19:50,059 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-07 11:19:50,059 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4574679, 'output_words': 0, 'filings_processed': 32}
+2025-11-07 12:41:40,394 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-07 12:41:40,394 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-07 12:41:40,394 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-07 12:41:40,395 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-07 12:41:40,395 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-07 12:41:40,395 - sec_monitor - INFO - Initializing components...
+2025-11-07 12:41:40,395 - sec_monitor - INFO - Initializing components
+2025-11-07 12:41:40,395 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-07 12:41:40,395 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-07 12:41:40,396 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-07 12:41:40,396 - sec_monitor - INFO - All components initialized successfully
+2025-11-07 12:41:40,397 - sec_monitor - INFO - Found JSON file from today
+2025-11-07 12:41:40,397 - sec_monitor - INFO - Found 32 previously processed accessions and 32 filing URLs
+2025-11-07 12:41:40,397 - sec_monitor - INFO - Found 32 accession numbers and 32 URLs from previously processed filings
+2025-11-07 12:41:40,397 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-07 12:41:55,156 - sec_monitor - INFO - No more entries found
+2025-11-07 12:41:55,156 - sec_monitor - INFO - Completed fetching. Found 122 total filings
+2025-11-07 12:41:55,156 - sec_monitor - INFO - Found 4 new interesting filings
+2025-11-07 12:41:55,156 - sec_monitor - INFO - Found 4 new filings to process
+2025-11-07 12:41:55,156 - sec_monitor - INFO - Processing filing 1/4: NWS
+2025-11-07 12:42:10,387 - sec_monitor - ERROR - Error processing filing NWS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 12:42:10,387 - sec_monitor - INFO - Processing filing 2/4: CEG
+2025-11-07 12:42:34,318 - sec_monitor - ERROR - Error processing filing CEG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 12:42:34,319 - sec_monitor - INFO - Processing filing 3/4: MKTX
+2025-11-07 12:42:36,855 - sec_monitor - ERROR - Error processing filing MKTX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 12:42:36,855 - sec_monitor - INFO - Processing filing 4/4: SW
+2025-11-07 12:43:03,469 - sec_monitor - ERROR - Error processing filing SW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 12:43:03,469 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-07 12:43:04,050 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-07 12:43:04,050 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-07 12:43:04,050 - sec_monitor - INFO - Market open: False
+2025-11-07 12:43:04,050 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-11-07 12:43:04,125 - sec_monitor - INFO - Last trading day: 2025-11-07
+2025-11-07 12:43:04,125 - sec_monitor - INFO - Processing ticker: NWS
+2025-11-07 12:43:04,601 - sec_monitor - INFO - Number of bars for NWS: 4
+2025-11-07 12:43:04,602 - sec_monitor - INFO - Last bar close for NWS: 28.435
+2025-11-07 12:43:04,602 - sec_monitor - INFO - Outside market hours price for NWS: 28.435
+2025-11-07 12:43:04,602 - sec_monitor - INFO - Processing ticker: CEG
+2025-11-07 12:43:04,684 - sec_monitor - INFO - Number of bars for CEG: 4
+2025-11-07 12:43:04,684 - sec_monitor - INFO - Last bar close for CEG: 351.18
+2025-11-07 12:43:04,684 - sec_monitor - INFO - Outside market hours price for CEG: 351.18
+2025-11-07 12:43:04,684 - sec_monitor - INFO - Processing ticker: MKTX
+2025-11-07 12:43:04,769 - sec_monitor - INFO - Number of bars for MKTX: 4
+2025-11-07 12:43:04,769 - sec_monitor - INFO - Last bar close for MKTX: 165.85
+2025-11-07 12:43:04,769 - sec_monitor - INFO - Outside market hours price for MKTX: 165.85
+2025-11-07 12:43:04,769 - sec_monitor - INFO - Processing ticker: SW
+2025-11-07 12:43:04,854 - sec_monitor - INFO - Number of bars for SW: 4
+2025-11-07 12:43:04,854 - sec_monitor - INFO - Last bar close for SW: 35.675
+2025-11-07 12:43:04,854 - sec_monitor - INFO - Outside market hours price for SW: 35.675
+2025-11-07 12:43:05,716 - sec_monitor - INFO - Generating final output...
+2025-11-07 12:43:05,718 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-11-07 12:43:05,718 - sec_monitor - INFO - Cumulative stats - Input words: 5205415, Output words: 0
+2025-11-07 12:43:05,718 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-07 12:43:05,718 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 630736, 'output_words': 0, 'filings_processed': 4}
