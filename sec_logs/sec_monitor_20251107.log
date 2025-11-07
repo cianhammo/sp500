@@ -307,3 +307,57 @@
 2025-11-07 13:30:43,713 - sec_monitor - INFO - Cumulative stats - Input words: 5378588, Output words: 0
 2025-11-07 13:30:43,713 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-07 13:30:43,713 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 173173, 'output_words': 0, 'filings_processed': 1}
+2025-11-07 15:20:43,483 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-07 15:20:43,483 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-07 15:20:43,483 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-07 15:20:43,484 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-07 15:20:43,484 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-07 15:20:43,484 - sec_monitor - INFO - Initializing components...
+2025-11-07 15:20:43,484 - sec_monitor - INFO - Initializing components
+2025-11-07 15:20:43,484 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-07 15:20:43,484 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-07 15:20:43,484 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-07 15:20:43,484 - sec_monitor - INFO - All components initialized successfully
+2025-11-07 15:20:43,485 - sec_monitor - INFO - Found JSON file from today
+2025-11-07 15:20:43,486 - sec_monitor - INFO - Found 37 previously processed accessions and 37 filing URLs
+2025-11-07 15:20:43,486 - sec_monitor - INFO - Found 37 accession numbers and 37 URLs from previously processed filings
+2025-11-07 15:20:43,486 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-07 15:20:59,572 - sec_monitor - INFO - No more entries found
+2025-11-07 15:20:59,572 - sec_monitor - INFO - Completed fetching. Found 113 total filings
+2025-11-07 15:20:59,572 - sec_monitor - INFO - Found 4 new interesting filings
+2025-11-07 15:20:59,572 - sec_monitor - INFO - Found 4 new filings to process
+2025-11-07 15:20:59,572 - sec_monitor - INFO - Processing filing 1/4: O
+2025-11-07 15:21:01,506 - sec_monitor - ERROR - Error processing filing O: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 15:21:01,506 - sec_monitor - INFO - Processing filing 2/4: BEN
+2025-11-07 15:21:02,711 - sec_monitor - ERROR - Error processing filing BEN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 15:21:02,711 - sec_monitor - INFO - Processing filing 3/4: AMT
+2025-11-07 15:21:03,177 - sec_monitor - ERROR - Error processing filing AMT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 15:21:03,178 - sec_monitor - INFO - Processing filing 4/4: CINF
+2025-11-07 15:21:24,385 - sec_monitor - ERROR - Error processing filing CINF: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-07 15:21:24,385 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-07 15:21:24,856 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-07 15:21:24,857 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-07 15:21:24,857 - sec_monitor - INFO - Market open: True
+2025-11-07 15:21:24,857 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-11-07 15:21:24,880 - sec_monitor - INFO - Last trading day: 2025-11-07
+2025-11-07 15:21:24,880 - sec_monitor - INFO - Processing ticker: O
+2025-11-07 15:21:25,250 - sec_monitor - INFO - Number of bars for O: 4
+2025-11-07 15:21:25,250 - sec_monitor - INFO - Last bar close for O: 56.34
+2025-11-07 15:21:25,250 - sec_monitor - INFO - Market open price for O: 56.34, change: 0.3562522265764212%
+2025-11-07 15:21:25,250 - sec_monitor - INFO - Processing ticker: BEN
+2025-11-07 15:21:25,311 - sec_monitor - INFO - Number of bars for BEN: 4
+2025-11-07 15:21:25,311 - sec_monitor - INFO - Last bar close for BEN: 23.28
+2025-11-07 15:21:25,311 - sec_monitor - INFO - Market open price for BEN: 23.28, change: 2.2173435784851927%
+2025-11-07 15:21:25,311 - sec_monitor - INFO - Processing ticker: AMT
+2025-11-07 15:21:25,343 - sec_monitor - INFO - Number of bars for AMT: 4
+2025-11-07 15:21:25,344 - sec_monitor - INFO - Last bar close for AMT: 178.1
+2025-11-07 15:21:25,344 - sec_monitor - INFO - Market open price for AMT: 178.1, change: -0.7412361366549699%
+2025-11-07 15:21:25,344 - sec_monitor - INFO - Processing ticker: CINF
+2025-11-07 15:21:25,371 - sec_monitor - INFO - Number of bars for CINF: 4
+2025-11-07 15:21:25,372 - sec_monitor - INFO - Last bar close for CINF: 161.315
+2025-11-07 15:21:25,372 - sec_monitor - INFO - Market open price for CINF: 161.315, change: 0.8281767610475584%
+2025-11-07 15:21:26,593 - sec_monitor - INFO - Generating final output...
+2025-11-07 15:21:26,594 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-11-07 15:21:26,594 - sec_monitor - INFO - Cumulative stats - Input words: 5611192, Output words: 0
+2025-11-07 15:21:26,594 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-07 15:21:26,594 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 232604, 'output_words': 0, 'filings_processed': 4}
