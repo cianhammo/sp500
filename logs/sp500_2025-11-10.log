@@ -1,0 +1,69 @@
+2025-11-10 21:47:46 - INFO - __main__ - Starting SP500 analysis script
+2025-11-10 21:47:47 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-10 21:47:47 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-10 21:47:47 - INFO - __main__ - Runtime timezone: UTC
+2025-11-10 21:47:47 - INFO - __main__ - Original start: 2025-11-07 16:00:00-05:00 (America/New_York)
+2025-11-10 21:47:47 - INFO - __main__ - Original end: 2025-11-10 16:00:00-05:00 (America/New_York)
+2025-11-10 21:47:47 - INFO - __main__ - UTC start: 2025-11-07 05:00:00+00:00
+2025-11-10 21:47:47 - INFO - __main__ - UTC end: 2025-11-11 05:00:00+00:00
+2025-11-10 21:47:47 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-10 21:47:48 - INFO - __main__ - Received data for 497 symbols
+2025-11-10 21:47:48 - INFO - __main__ - Sample data structure for PTC:
+2025-11-10 21:47:48 - INFO - __main__ - Number of bars: 2
+2025-11-10 21:47:48 - INFO - __main__ - Bar timestamp: 2025-11-07 05:00:00+00:00 (UTC)
+2025-11-10 21:47:48 - INFO - __main__ - Bar timestamp: 2025-11-10 05:00:00+00:00 (UTC)
+2025-11-10 21:47:48 - INFO - __main__ - PTC timestamps - Today: 2025-11-10 05:00:00+00:00, Yesterday: 2025-11-07 05:00:00+00:00
+2025-11-10 21:47:48 - INFO - __main__ - CMCSA timestamps - Today: 2025-11-10 05:00:00+00:00, Yesterday: 2025-11-07 05:00:00+00:00
+2025-11-10 21:47:48 - INFO - __main__ - DOV timestamps - Today: 2025-11-10 05:00:00+00:00, Yesterday: 2025-11-07 05:00:00+00:00
+2025-11-10 21:47:48 - INFO - __main__ - DPZ timestamps - Today: 2025-11-10 05:00:00+00:00, Yesterday: 2025-11-07 05:00:00+00:00
+2025-11-10 21:47:48 - INFO - __main__ - ERIE timestamps - Today: 2025-11-10 05:00:00+00:00, Yesterday: 2025-11-07 05:00:00+00:00
+2025-11-10 21:47:48 - INFO - __main__ - Successfully processed 497 stocks
+2025-11-10 21:47:48 - INFO - __main__ - Data issues encountered: 0
+2025-11-10 21:47:48 - INFO - __main__ - Final dataframe contains 497 stocks
+2025-11-10 21:47:48 - INFO - __main__ - Analysis for market close on November 10, 2025
+2025-11-10 21:47:48 - INFO - __main__ - Found 497 stocks with price data
+2025-11-10 21:47:49 - INFO - __main__ - Found Wikipedia URL for PLTR: https://en.wikipedia.org/wiki/Palantir_Technologies
+2025-11-10 21:47:51 - INFO - __main__ - Found Wikipedia URL for CNC: https://en.wikipedia.org/wiki/Centene_Corporation
+2025-11-10 21:47:53 - INFO - __main__ - Analyzing top performer...
+2025-11-10 21:47:53 - INFO - __main__ - Analyzing Palantir Technologies (PLTR)
+2025-11-10 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-10 21:47:54 - INFO - __main__ - Searching for articles about PLTR
+2025-11-10 21:47:54 - INFO - __main__ - Searching for news about Palantir Technologies
+2025-11-10 21:47:57 - INFO - __main__ - Found 6 recent search results for Palantir Technologies
+2025-11-10 21:47:57 - INFO - __main__ - Found 6 URLs to try for PLTR
+2025-11-10 21:47:57 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/palantir-stock-ai-trade-shutdown-9d8900b7?gaa_at=eafs&gaa_n=AWEtsqfuDlMQ3J0T-KpBzjXX-oBn59_El9iSIujuW20yXN4FGZjr4zXrVCE_&gaa_ts=69126110&gaa_sig=MU7-eA3uvkiBt5KNy8t8HLXx4Tz2UiFrO0XFRboYlKhw698j88Xn-hlumxdWjqvbC0rE9jrqKKQTTf0ELur2UQ%3D%3D
+2025-11-10 21:47:57 - WARNING - __main__ - Article content too short (43 chars)
+2025-11-10 21:47:57 - INFO - __main__ - Fetching content from: https://www.morningstar.com/stocks/after-earnings-is-palantir-stock-buy-sell-or-fairly-valued-9
+2025-11-10 21:47:58 - INFO - __main__ - Successfully extracted article content (4979 chars)
+2025-11-10 21:47:58 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-palantir-micron-technology-centene-ball-and-more-11846661
+2025-11-10 21:47:58 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-10 21:47:58 - INFO - __main__ - Successfully extracted article content (2138 chars)
+2025-11-10 21:47:58 - INFO - __main__ - Found total of 2 valid articles for PLTR
+2025-11-10 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:02 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-11-10 21:48:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:07 - INFO - __main__ - Top performer analysis complete
+2025-11-10 21:48:07 - INFO - __main__ - Analyzing bottom performer...
+2025-11-10 21:48:07 - INFO - __main__ - Analyzing Centene Corporation (CNC)
+2025-11-10 21:48:07 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-10 21:48:07 - INFO - __main__ - Searching for articles about CNC
+2025-11-10 21:48:07 - INFO - __main__ - Searching for news about Centene Corporation
+2025-11-10 21:48:11 - INFO - __main__ - Found 6 recent search results for Centene Corporation
+2025-11-10 21:48:11 - INFO - __main__ - Found 6 URLs to try for CNC
+2025-11-10 21:48:11 - INFO - __main__ - Fetching content from: https://www.investopedia.com/health-insurer-stocks-slide-on-president-trump-s-call-to-change-aca-payments-11846543
+2025-11-10 21:48:11 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-10 21:48:11 - INFO - __main__ - Successfully extracted article content (1930 chars)
+2025-11-10 21:48:11 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/verizon-seeks-10-billion-bond-141434382.html
+2025-11-10 21:48:11 - INFO - __main__ - Successfully extracted article content (1191 chars)
+2025-11-10 21:48:11 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/visa-mastercard-could-break-rules-132738049.html
+2025-11-10 21:48:12 - INFO - __main__ - Successfully extracted article content (2311 chars)
+2025-11-10 21:48:12 - INFO - __main__ - Found total of 3 valid articles for CNC
+2025-11-10 21:48:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:20 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-11-10 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-10 21:48:24 - INFO - __main__ - Bottom performer analysis complete
+2025-11-10 21:48:24 - INFO - __main__ - Saving results to JSON...
+2025-11-10 21:48:25 - INFO - __main__ - Analysis complete and saved to market_analysis.json
