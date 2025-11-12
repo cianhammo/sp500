@@ -1,0 +1,74 @@
+2025-11-12 21:47:34 - INFO - __main__ - Starting SP500 analysis script
+2025-11-12 21:47:34 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-12 21:47:34 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-12 21:47:34 - INFO - __main__ - Runtime timezone: UTC
+2025-11-12 21:47:34 - INFO - __main__ - Original start: 2025-11-11 16:00:00-05:00 (America/New_York)
+2025-11-12 21:47:34 - INFO - __main__ - Original end: 2025-11-12 16:00:00-05:00 (America/New_York)
+2025-11-12 21:47:34 - INFO - __main__ - UTC start: 2025-11-11 05:00:00+00:00
+2025-11-12 21:47:34 - INFO - __main__ - UTC end: 2025-11-13 05:00:00+00:00
+2025-11-12 21:47:34 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-12 21:47:35 - INFO - __main__ - Received data for 496 symbols
+2025-11-12 21:47:35 - INFO - __main__ - Sample data structure for DOC:
+2025-11-12 21:47:35 - INFO - __main__ - Number of bars: 2
+2025-11-12 21:47:35 - INFO - __main__ - Bar timestamp: 2025-11-11 05:00:00+00:00 (UTC)
+2025-11-12 21:47:35 - INFO - __main__ - Bar timestamp: 2025-11-12 05:00:00+00:00 (UTC)
+2025-11-12 21:47:35 - INFO - __main__ - DOC timestamps - Today: 2025-11-12 05:00:00+00:00, Yesterday: 2025-11-11 05:00:00+00:00
+2025-11-12 21:47:35 - INFO - __main__ - FOX timestamps - Today: 2025-11-12 05:00:00+00:00, Yesterday: 2025-11-11 05:00:00+00:00
+2025-11-12 21:47:35 - INFO - __main__ - J timestamps - Today: 2025-11-12 05:00:00+00:00, Yesterday: 2025-11-11 05:00:00+00:00
+2025-11-12 21:47:35 - INFO - __main__ - KR timestamps - Today: 2025-11-12 05:00:00+00:00, Yesterday: 2025-11-11 05:00:00+00:00
+2025-11-12 21:47:35 - INFO - __main__ - MCD timestamps - Today: 2025-11-12 05:00:00+00:00, Yesterday: 2025-11-11 05:00:00+00:00
+2025-11-12 21:47:35 - INFO - __main__ - Successfully processed 496 stocks
+2025-11-12 21:47:35 - INFO - __main__ - Data issues encountered: 0
+2025-11-12 21:47:35 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-11-12 21:47:35 - INFO - __main__ - Analysis for market close on November 12, 2025
+2025-11-12 21:47:35 - INFO - __main__ - Found 496 stocks with price data
+2025-11-12 21:47:36 - INFO - __main__ - Found Wikipedia URL for AMD: https://en.wikipedia.org/wiki/AMD
+2025-11-12 21:47:38 - INFO - __main__ - Found Wikipedia URL for CE: https://en.wikipedia.org/wiki/Celanese
+2025-11-12 21:47:40 - INFO - __main__ - Analyzing top performer...
+2025-11-12 21:47:40 - INFO - __main__ - Analyzing Advanced Micro Devices (AMD)
+2025-11-12 21:47:40 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-12 21:47:40 - INFO - __main__ - Searching for articles about AMD
+2025-11-12 21:47:40 - INFO - __main__ - Searching for news about Advanced Micro Devices
+2025-11-12 21:47:42 - INFO - __main__ - Found 6 recent search results for Advanced Micro Devices
+2025-11-12 21:47:42 - INFO - __main__ - Found 6 URLs to try for AMD
+2025-11-12 21:47:42 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/amd-stock-jumps-ceo-predicts-115702501.html
+2025-11-12 21:47:43 - INFO - __main__ - Successfully extracted article content (1241 chars)
+2025-11-12 21:47:43 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-11-11/amd-predicts-accelerating-sales-growth-driven-by-data-centers
+2025-11-12 21:47:44 - INFO - __main__ - Successfully extracted article content (438 chars)
+2025-11-12 21:47:44 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/11/12/stocks-making-the-biggest-premarket-moves-amd-cwan-on-and-more.html
+2025-11-12 21:47:44 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-12 21:47:44 - INFO - __main__ - Successfully extracted article content (2435 chars)
+2025-11-12 21:47:44 - INFO - __main__ - Found total of 2 valid articles for AMD
+2025-11-12 21:47:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-12 21:47:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-12 21:47:50 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-11-12 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-12 21:47:55 - INFO - __main__ - Top performer analysis complete
+2025-11-12 21:47:55 - INFO - __main__ - Analyzing bottom performer...
+2025-11-12 21:47:55 - INFO - __main__ - Analyzing Celanese (CE)
+2025-11-12 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-12 21:47:56 - INFO - __main__ - Searching for articles about CE
+2025-11-12 21:47:56 - INFO - __main__ - Searching for news about Celanese
+2025-11-12 21:47:58 - INFO - __main__ - Found 6 recent search results for Celanese
+2025-11-12 21:47:58 - INFO - __main__ - Found 6 URLs to try for CE
+2025-11-12 21:47:58 - INFO - __main__ - Fetching content from: https://www.thebanner.com/culture/lifestyle/daniels-patapsco-baltimore-county-ruins-4QACNTYEDFBBXNBVSRU6HG3WZA/
+2025-11-12 21:47:59 - INFO - __main__ - Successfully extracted article content (6149 chars)
+2025-11-12 21:47:59 - INFO - __main__ - Fetching content from: https://fintel.io/news/ubs-maintains-celanese-ce-neutral-recommendation-495
+2025-11-12 21:47:59 - WARNING - __main__ - Article content too short (41 chars)
+2025-11-12 21:47:59 - INFO - __main__ - Fetching content from: https://fintel.io/news/evercore-isi-group-maintains-celanese-bit-1ce-in-line-recommendation-472
+2025-11-12 21:47:59 - WARNING - __main__ - Article content too short (41 chars)
+2025-11-12 21:47:59 - INFO - __main__ - Fetching content from: https://www.marketsmojo.com/news/stocks-in-action/celanese-corp-hits-day-high-with-1437-surge-in-strong-intraday-performance-3686563
+2025-11-12 21:48:01 - INFO - __main__ - Successfully extracted article content (1469 chars)
+2025-11-12 21:48:01 - INFO - __main__ - Fetching content from: https://www.simplyhired.co.in/job/Ioun5c37MbUEZ6LUavYKxDnkWZJvD7VjzLbI5bL8-1abo8_tiR73Dw
+2025-11-12 21:48:01 - WARNING - __main__ - Article content too short (41 chars)
+2025-11-12 21:48:01 - INFO - __main__ - Fetching content from: https://finimize.com/content/celanese-tops-estimates-but-faces-pressure-to-cut-debt
+2025-11-12 21:48:02 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-12 21:48:02 - INFO - __main__ - Successfully extracted article content (209 chars)
+2025-11-12 21:48:02 - INFO - __main__ - Found total of 2 valid articles for CE
+2025-11-12 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-12 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-12 21:48:06 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-11-12 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-12 21:48:11 - INFO - __main__ - Bottom performer analysis complete
+2025-11-12 21:48:11 - INFO - __main__ - Saving results to JSON...
+2025-11-12 21:48:11 - INFO - __main__ - Analysis complete and saved to market_analysis.json
