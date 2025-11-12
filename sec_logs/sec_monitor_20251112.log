@@ -1,0 +1,38 @@
+2025-11-12 11:10:28,351 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-12 11:10:28,351 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-12 11:10:28,351 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-12 11:10:28,351 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-12 11:10:28,352 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-12 11:10:28,352 - sec_monitor - INFO - Initializing components...
+2025-11-12 11:10:28,352 - sec_monitor - INFO - Initializing components
+2025-11-12 11:10:28,352 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-12 11:10:28,352 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-12 11:10:28,352 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-12 11:10:28,352 - sec_monitor - INFO - All components initialized successfully
+2025-11-12 11:10:28,353 - sec_monitor - INFO - Found old JSON file, archiving
+2025-11-12 11:10:28,353 - sec_monitor - INFO - Starting new filing collection for today
+2025-11-12 11:10:28,353 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-12 11:10:29,996 - sec_monitor - INFO - Reached old filing, stopping. Found 7 total filings
+2025-11-12 11:10:29,997 - sec_monitor - INFO - Found 2 new interesting filings
+2025-11-12 11:10:29,997 - sec_monitor - INFO - Found 2 new filings to process
+2025-11-12 11:10:29,997 - sec_monitor - INFO - Processing filing 1/2: PH
+2025-11-12 11:10:31,483 - sec_monitor - ERROR - Error processing filing PH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-12 11:10:31,483 - sec_monitor - INFO - Processing filing 2/2: CEG
+2025-11-12 11:10:31,868 - sec_monitor - ERROR - Error processing filing CEG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-12 11:10:31,868 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-12 11:10:32,285 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-12 11:10:32,286 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-12 11:10:32,286 - sec_monitor - INFO - Market open: False
+2025-11-12 11:10:32,286 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-11-12 11:10:32,297 - sec_monitor - INFO - Last trading day: 2025-11-12
+2025-11-12 11:10:32,297 - sec_monitor - INFO - Processing ticker: PH
+2025-11-12 11:10:32,753 - sec_monitor - INFO - Number of bars for PH: 3
+2025-11-12 11:10:32,753 - sec_monitor - INFO - Last bar close for PH: 858.02
+2025-11-12 11:10:32,754 - sec_monitor - INFO - Outside market hours price for PH: 858.02
+2025-11-12 11:10:32,754 - sec_monitor - INFO - Processing ticker: CEG
+2025-11-12 11:10:32,772 - sec_monitor - INFO - Number of bars for CEG: 3
+2025-11-12 11:10:32,772 - sec_monitor - INFO - Last bar close for CEG: 351.63
+2025-11-12 11:10:32,772 - sec_monitor - INFO - Outside market hours price for CEG: 351.63
+2025-11-12 11:10:33,534 - sec_monitor - INFO - Generating final output...
+2025-11-12 11:10:33,535 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-12 11:10:33,535 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 56372, 'output_words': 0, 'filings_processed': 2}
