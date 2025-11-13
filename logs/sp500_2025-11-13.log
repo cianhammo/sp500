@@ -1,0 +1,70 @@
+2025-11-13 21:47:55 - INFO - __main__ - Starting SP500 analysis script
+2025-11-13 21:47:55 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-13 21:47:55 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-13 21:47:55 - INFO - __main__ - Runtime timezone: UTC
+2025-11-13 21:47:55 - INFO - __main__ - Original start: 2025-11-12 16:00:00-05:00 (America/New_York)
+2025-11-13 21:47:55 - INFO - __main__ - Original end: 2025-11-13 16:00:00-05:00 (America/New_York)
+2025-11-13 21:47:55 - INFO - __main__ - UTC start: 2025-11-12 05:00:00+00:00
+2025-11-13 21:47:55 - INFO - __main__ - UTC end: 2025-11-14 05:00:00+00:00
+2025-11-13 21:47:55 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-13 21:47:56 - INFO - __main__ - Received data for 496 symbols
+2025-11-13 21:47:56 - INFO - __main__ - Sample data structure for ANET:
+2025-11-13 21:47:56 - INFO - __main__ - Number of bars: 2
+2025-11-13 21:47:56 - INFO - __main__ - Bar timestamp: 2025-11-12 05:00:00+00:00 (UTC)
+2025-11-13 21:47:56 - INFO - __main__ - Bar timestamp: 2025-11-13 05:00:00+00:00 (UTC)
+2025-11-13 21:47:56 - INFO - __main__ - ANET timestamps - Today: 2025-11-13 05:00:00+00:00, Yesterday: 2025-11-12 05:00:00+00:00
+2025-11-13 21:47:56 - INFO - __main__ - GEV timestamps - Today: 2025-11-13 05:00:00+00:00, Yesterday: 2025-11-12 05:00:00+00:00
+2025-11-13 21:47:56 - INFO - __main__ - UNH timestamps - Today: 2025-11-13 05:00:00+00:00, Yesterday: 2025-11-12 05:00:00+00:00
+2025-11-13 21:47:56 - INFO - __main__ - WRB timestamps - Today: 2025-11-13 05:00:00+00:00, Yesterday: 2025-11-12 05:00:00+00:00
+2025-11-13 21:47:56 - INFO - __main__ - PEG timestamps - Today: 2025-11-13 05:00:00+00:00, Yesterday: 2025-11-12 05:00:00+00:00
+2025-11-13 21:47:56 - INFO - __main__ - Successfully processed 496 stocks
+2025-11-13 21:47:56 - INFO - __main__ - Data issues encountered: 0
+2025-11-13 21:47:56 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-11-13 21:47:56 - INFO - __main__ - Analysis for market close on November 13, 2025
+2025-11-13 21:47:56 - INFO - __main__ - Found 496 stocks with price data
+2025-11-13 21:47:57 - INFO - __main__ - Found Wikipedia URL for LYB: https://en.wikipedia.org/wiki/LyondellBasell
+2025-11-13 21:47:59 - INFO - __main__ - Found Wikipedia URL for DIS: https://en.wikipedia.org/wiki/The_Walt_Disney_Company
+2025-11-13 21:48:01 - INFO - __main__ - Analyzing top performer...
+2025-11-13 21:48:01 - INFO - __main__ - Analyzing LyondellBasell (LYB)
+2025-11-13 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-13 21:48:01 - INFO - __main__ - Searching for articles about LYB
+2025-11-13 21:48:01 - INFO - __main__ - Searching for news about LyondellBasell
+2025-11-13 21:48:02 - INFO - __main__ - Found 6 recent search results for LyondellBasell
+2025-11-13 21:48:02 - INFO - __main__ - Found 6 URLs to try for LYB
+2025-11-13 21:48:02 - INFO - __main__ - Fetching content from: https://www.smartkarma.com/home/market-movers/lyondellbasell-industries-n-v-s-stock-price-leaps-to-45-52-marking-a-robust-5-10-surge/
+2025-11-13 21:48:03 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-13 21:48:03 - INFO - __main__ - Successfully extracted article content (4406 chars)
+2025-11-13 21:48:03 - INFO - __main__ - Fetching content from: https://www.stocktitan.net/sec-filings/LYB/8-k-lyondell-basell-industries-n-v-reports-material-event-773b2c867590.html
+2025-11-13 21:48:04 - INFO - __main__ - Successfully extracted article content (7911 chars)
+2025-11-13 21:48:04 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/filing-mitsubishi-ufj-asset-management-co-ltd-purchases-42471-shares-of-lyondellbasell-industries-nv-lyb-2025-11-12/
+2025-11-13 21:48:04 - INFO - __main__ - Successfully extracted article content (6576 chars)
+2025-11-13 21:48:04 - INFO - __main__ - Found total of 3 valid articles for LYB
+2025-11-13 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:11 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-11-13 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:16 - INFO - __main__ - Top performer analysis complete
+2025-11-13 21:48:16 - INFO - __main__ - Analyzing bottom performer...
+2025-11-13 21:48:16 - INFO - __main__ - Analyzing Walt Disney Company (The) (DIS)
+2025-11-13 21:48:16 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-13 21:48:16 - INFO - __main__ - Searching for articles about DIS
+2025-11-13 21:48:16 - INFO - __main__ - Searching for news about Walt Disney Company (The)
+2025-11-13 21:48:23 - INFO - __main__ - Found 6 recent search results for Walt Disney Company (The)
+2025-11-13 21:48:23 - INFO - __main__ - Found 6 URLs to try for DIS
+2025-11-13 21:48:23 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/11/13/stocks-making-the-biggest-moves-premarket-walt-disney-cisco-systems-firefly-aerospace-and-more.html
+2025-11-13 21:48:24 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-13 21:48:24 - INFO - __main__ - Successfully extracted article content (3054 chars)
+2025-11-13 21:48:24 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/11/12/stock-market-today-live-updates.html
+2025-11-13 21:48:24 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-13 21:48:24 - INFO - __main__ - Successfully extracted article content (3360 chars)
+2025-11-13 21:48:24 - INFO - __main__ - Fetching content from: https://www.investing.com/news/transcripts/earnings-call-transcript-disney-q4-2025-sees-eps-beat-but-revenue-miss-93CH-4355857
+2025-11-13 21:48:24 - WARNING - __main__ - Article content too short (41 chars)
+2025-11-13 21:48:24 - INFO - __main__ - Found total of 2 valid articles for DIS
+2025-11-13 21:48:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:28 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-11-13 21:48:33 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-13 21:48:33 - INFO - __main__ - Bottom performer analysis complete
+2025-11-13 21:48:33 - INFO - __main__ - Saving results to JSON...
+2025-11-13 21:48:34 - INFO - __main__ - Analysis complete and saved to market_analysis.json
