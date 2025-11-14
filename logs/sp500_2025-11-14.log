@@ -1,0 +1,71 @@
+2025-11-14 21:47:39 - INFO - __main__ - Starting SP500 analysis script
+2025-11-14 21:47:39 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-14 21:47:39 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-14 21:47:39 - INFO - __main__ - Runtime timezone: UTC
+2025-11-14 21:47:39 - INFO - __main__ - Original start: 2025-11-13 16:00:00-05:00 (America/New_York)
+2025-11-14 21:47:39 - INFO - __main__ - Original end: 2025-11-14 16:00:00-05:00 (America/New_York)
+2025-11-14 21:47:39 - INFO - __main__ - UTC start: 2025-11-13 05:00:00+00:00
+2025-11-14 21:47:39 - INFO - __main__ - UTC end: 2025-11-15 05:00:00+00:00
+2025-11-14 21:47:39 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-14 21:47:41 - INFO - __main__ - Received data for 496 symbols
+2025-11-14 21:47:41 - INFO - __main__ - Sample data structure for ACGL:
+2025-11-14 21:47:41 - INFO - __main__ - Number of bars: 2
+2025-11-14 21:47:41 - INFO - __main__ - Bar timestamp: 2025-11-13 05:00:00+00:00 (UTC)
+2025-11-14 21:47:41 - INFO - __main__ - Bar timestamp: 2025-11-14 05:00:00+00:00 (UTC)
+2025-11-14 21:47:41 - INFO - __main__ - ACGL timestamps - Today: 2025-11-14 05:00:00+00:00, Yesterday: 2025-11-13 05:00:00+00:00
+2025-11-14 21:47:41 - INFO - __main__ - BSX timestamps - Today: 2025-11-14 05:00:00+00:00, Yesterday: 2025-11-13 05:00:00+00:00
+2025-11-14 21:47:41 - INFO - __main__ - NFLX timestamps - Today: 2025-11-14 05:00:00+00:00, Yesterday: 2025-11-13 05:00:00+00:00
+2025-11-14 21:47:41 - INFO - __main__ - PFG timestamps - Today: 2025-11-14 05:00:00+00:00, Yesterday: 2025-11-13 05:00:00+00:00
+2025-11-14 21:47:41 - INFO - __main__ - HPE timestamps - Today: 2025-11-14 05:00:00+00:00, Yesterday: 2025-11-13 05:00:00+00:00
+2025-11-14 21:47:41 - INFO - __main__ - Successfully processed 496 stocks
+2025-11-14 21:47:41 - INFO - __main__ - Data issues encountered: 0
+2025-11-14 21:47:41 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-11-14 21:47:41 - INFO - __main__ - Analysis for market close on November 14, 2025
+2025-11-14 21:47:41 - INFO - __main__ - Found 496 stocks with price data
+2025-11-14 21:47:41 - INFO - __main__ - Found Wikipedia URL for MU: https://en.wikipedia.org/wiki/Micron_Technology
+2025-11-14 21:47:43 - INFO - __main__ - Found Wikipedia URL for EMN: https://en.wikipedia.org/wiki/Eastman_Chemical_Company
+2025-11-14 21:47:45 - INFO - __main__ - Analyzing top performer...
+2025-11-14 21:47:45 - INFO - __main__ - Analyzing Micron Technology (MU)
+2025-11-14 21:47:46 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-14 21:47:46 - INFO - __main__ - Searching for articles about MU
+2025-11-14 21:47:46 - INFO - __main__ - Searching for news about Micron Technology
+2025-11-14 21:47:49 - INFO - __main__ - Found 6 recent search results for Micron Technology
+2025-11-14 21:47:49 - INFO - __main__ - Found 6 URLs to try for MU
+2025-11-14 21:47:49 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4843917-micron-picks-and-shovels-for-ai
+2025-11-14 21:47:49 - INFO - __main__ - Successfully extracted article content (1992 chars)
+2025-11-14 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/micron-sandisk-stocks-surge-samsung-153715782.html
+2025-11-14 21:47:52 - INFO - __main__ - Successfully extracted article content (2023 chars)
+2025-11-14 21:47:52 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaqa-nvda-nvidia-stock-tesla-tsla-stock/
+2025-11-14 21:47:52 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-11-14 21:47:52 - INFO - __main__ - Found total of 2 valid articles for MU
+2025-11-14 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-14 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-14 21:47:56 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-11-14 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-14 21:48:00 - INFO - __main__ - Top performer analysis complete
+2025-11-14 21:48:00 - INFO - __main__ - Analyzing bottom performer...
+2025-11-14 21:48:00 - INFO - __main__ - Analyzing Eastman Chemical Company (EMN)
+2025-11-14 21:48:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-14 21:48:01 - INFO - __main__ - Searching for articles about EMN
+2025-11-14 21:48:01 - INFO - __main__ - Searching for news about Eastman Chemical Company
+2025-11-14 21:48:02 - INFO - __main__ - Found 6 recent search results for Eastman Chemical Company
+2025-11-14 21:48:02 - INFO - __main__ - Found 6 URLs to try for EMN
+2025-11-14 21:48:02 - INFO - __main__ - Fetching content from: https://fcp.pa.gov.br/market-outlook/Will-Eastman-Chemical-Company-(EAC)-stock-extend-growth-story
+2025-11-14 21:48:03 - INFO - __main__ - Successfully extracted article content (145 chars)
+2025-11-14 21:48:03 - INFO - __main__ - Fetching content from: http://www.fcp.pa.gov.br/bullish-on/Will-Eastman-Chemical-Company-stock-sustain-dividend-payouts
+2025-11-14 21:48:04 - INFO - __main__ - Successfully extracted article content (145 chars)
+2025-11-14 21:48:04 - INFO - __main__ - Fetching content from: https://fcp.pa.gov.br/video/Will-Eastman-Chemical-Company-stock-profit-from-AI-boom
+2025-11-14 21:48:05 - INFO - __main__ - Successfully extracted article content (145 chars)
+2025-11-14 21:48:05 - INFO - __main__ - Fetching content from: http://www.fcp.pa.gov.br/video/Will-Eastman-Chemical-Company-stock-sustain-dividend-payouts
+2025-11-14 21:48:06 - INFO - __main__ - Successfully extracted article content (145 chars)
+2025-11-14 21:48:06 - INFO - __main__ - Fetching content from: https://www.globenewswire.com/news-release/2025/11/14/3188152/0/en/Recycled-Engineering-Plastics-Market-Size-to-Worth-USD-7-89-Bn-by-2034.html
+2025-11-14 21:48:07 - INFO - __main__ - Successfully extracted article content (21010 chars)
+2025-11-14 21:48:07 - INFO - __main__ - Fetching content from: https://www.fcp.pa.gov.br/bullish-on/Will-PureTech-Health-plc-(Common-Stock)-(0VQ0)-stock-benefit-from-Fed-rate-cuts
+2025-11-14 21:48:07 - INFO - __main__ - Successfully extracted article content (145 chars)
+2025-11-14 21:48:07 - INFO - __main__ - Found total of 1 valid articles for EMN
+2025-11-14 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-14 21:48:10 - INFO - __main__ - Found 0 relevant articles out of 1 total
+2025-11-14 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-14 21:48:14 - INFO - __main__ - Bottom performer analysis complete
+2025-11-14 21:48:14 - INFO - __main__ - Saving results to JSON...
+2025-11-14 21:48:14 - INFO - __main__ - Analysis complete and saved to market_analysis.json
