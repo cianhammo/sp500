@@ -83,3 +83,50 @@
 2025-11-17 12:45:37,401 - sec_monitor - INFO - Cumulative stats - Input words: 559410, Output words: 0
 2025-11-17 12:45:37,401 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-17 12:45:37,401 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 556032, 'output_words': 0, 'filings_processed': 4}
+2025-11-17 13:34:10,649 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-17 13:34:10,649 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-17 13:34:10,649 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-17 13:34:10,650 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-17 13:34:10,650 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-17 13:34:10,650 - sec_monitor - INFO - Initializing components...
+2025-11-17 13:34:10,650 - sec_monitor - INFO - Initializing components
+2025-11-17 13:34:10,650 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-17 13:34:10,650 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-17 13:34:10,650 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-17 13:34:10,650 - sec_monitor - INFO - All components initialized successfully
+2025-11-17 13:34:10,651 - sec_monitor - INFO - Found JSON file from today
+2025-11-17 13:34:10,651 - sec_monitor - INFO - Found 5 previously processed accessions and 5 filing URLs
+2025-11-17 13:34:10,651 - sec_monitor - INFO - Found 5 accession numbers and 5 URLs from previously processed filings
+2025-11-17 13:34:10,651 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-17 13:34:12,927 - sec_monitor - INFO - Reached old filing, stopping. Found 10 total filings
+2025-11-17 13:34:12,927 - sec_monitor - INFO - Found 3 new interesting filings
+2025-11-17 13:34:12,927 - sec_monitor - INFO - Found 3 new filings to process
+2025-11-17 13:34:12,927 - sec_monitor - INFO - Processing filing 1/3: MOH
+2025-11-17 13:34:13,566 - sec_monitor - ERROR - Error processing filing MOH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-17 13:34:13,566 - sec_monitor - INFO - Processing filing 2/3: CRL
+2025-11-17 13:34:13,893 - sec_monitor - ERROR - Error processing filing CRL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-17 13:34:13,893 - sec_monitor - INFO - Processing filing 3/3: NSC
+2025-11-17 13:34:14,305 - sec_monitor - ERROR - Error processing filing NSC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-17 13:34:14,305 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-17 13:34:15,085 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-17 13:34:15,085 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-17 13:34:15,085 - sec_monitor - INFO - Market open: False
+2025-11-17 13:34:15,085 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-11-17 13:34:15,153 - sec_monitor - INFO - Last trading day: 2025-11-17
+2025-11-17 13:34:15,153 - sec_monitor - INFO - Processing ticker: MOH
+2025-11-17 13:34:15,728 - sec_monitor - INFO - Number of bars for MOH: 3
+2025-11-17 13:34:15,728 - sec_monitor - INFO - Last bar close for MOH: 137.49
+2025-11-17 13:34:15,729 - sec_monitor - INFO - Outside market hours price for MOH: 137.49
+2025-11-17 13:34:15,729 - sec_monitor - INFO - Processing ticker: CRL
+2025-11-17 13:34:15,807 - sec_monitor - INFO - Number of bars for CRL: 3
+2025-11-17 13:34:15,807 - sec_monitor - INFO - Last bar close for CRL: 167.7
+2025-11-17 13:34:15,808 - sec_monitor - INFO - Outside market hours price for CRL: 167.7
+2025-11-17 13:34:15,808 - sec_monitor - INFO - Processing ticker: NSC
+2025-11-17 13:34:15,883 - sec_monitor - INFO - Number of bars for NSC: 3
+2025-11-17 13:34:15,883 - sec_monitor - INFO - Last bar close for NSC: 283.95
+2025-11-17 13:34:15,883 - sec_monitor - INFO - Outside market hours price for NSC: 283.95
+2025-11-17 13:34:17,094 - sec_monitor - INFO - Generating final output...
+2025-11-17 13:34:17,095 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-11-17 13:34:17,095 - sec_monitor - INFO - Cumulative stats - Input words: 572643, Output words: 0
+2025-11-17 13:34:17,095 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-17 13:34:17,095 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 13233, 'output_words': 0, 'filings_processed': 3}
