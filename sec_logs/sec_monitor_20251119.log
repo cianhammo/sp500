@@ -302,3 +302,44 @@
 2025-11-19 18:26:22,423 - sec_monitor - INFO - Cumulative stats - Input words: 5161647, Output words: 0
 2025-11-19 18:26:22,423 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-19 18:26:22,423 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 20655, 'output_words': 0, 'filings_processed': 1}
+2025-11-19 21:10:11,301 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-19 21:10:11,301 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-19 21:10:11,302 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-19 21:10:11,302 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-19 21:10:11,302 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-19 21:10:11,302 - sec_monitor - INFO - Initializing components...
+2025-11-19 21:10:11,302 - sec_monitor - INFO - Initializing components
+2025-11-19 21:10:11,302 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-19 21:10:11,303 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-19 21:10:11,303 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-19 21:10:11,303 - sec_monitor - INFO - All components initialized successfully
+2025-11-19 21:10:11,304 - sec_monitor - INFO - Found JSON file from today
+2025-11-19 21:10:11,304 - sec_monitor - INFO - Found 27 previously processed accessions and 27 filing URLs
+2025-11-19 21:10:11,304 - sec_monitor - INFO - Found 27 accession numbers and 27 URLs from previously processed filings
+2025-11-19 21:10:11,304 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-19 21:11:39,635 - sec_monitor - INFO - Reached old filing, stopping. Found 251 total filings
+2025-11-19 21:11:39,635 - sec_monitor - INFO - Found 2 new interesting filings
+2025-11-19 21:11:39,635 - sec_monitor - INFO - Found 2 new filings to process
+2025-11-19 21:11:39,635 - sec_monitor - INFO - Processing filing 1/2: CPB
+2025-11-19 21:11:41,509 - sec_monitor - ERROR - Error processing filing CPB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 21:11:41,509 - sec_monitor - INFO - Processing filing 2/2: DHI
+2025-11-19 21:12:15,507 - sec_monitor - ERROR - Error processing filing DHI: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 21:12:15,507 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-19 21:12:15,898 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-19 21:12:15,898 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-19 21:12:15,898 - sec_monitor - INFO - Market open: False
+2025-11-19 21:12:15,898 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-11-19 21:12:15,955 - sec_monitor - INFO - Last trading day: 2025-11-19
+2025-11-19 21:12:15,955 - sec_monitor - INFO - Processing ticker: CPB
+2025-11-19 21:12:16,512 - sec_monitor - INFO - Number of bars for CPB: 3
+2025-11-19 21:12:16,513 - sec_monitor - INFO - Last bar close for CPB: 31.03
+2025-11-19 21:12:16,513 - sec_monitor - INFO - Outside market hours price for CPB: 31.03
+2025-11-19 21:12:16,513 - sec_monitor - INFO - Processing ticker: DHI
+2025-11-19 21:12:16,602 - sec_monitor - INFO - Number of bars for DHI: 3
+2025-11-19 21:12:16,602 - sec_monitor - INFO - Last bar close for DHI: 138.46
+2025-11-19 21:12:16,602 - sec_monitor - INFO - Same-day filing price for DHI: 138.46, change: 0.5154264972776827%
+2025-11-19 21:12:17,224 - sec_monitor - INFO - Generating final output...
+2025-11-19 21:12:17,225 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-11-19 21:12:17,225 - sec_monitor - INFO - Cumulative stats - Input words: 5523139, Output words: 0
+2025-11-19 21:12:17,225 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-19 21:12:17,225 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 361492, 'output_words': 0, 'filings_processed': 2}
