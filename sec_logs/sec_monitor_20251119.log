@@ -173,3 +173,44 @@
 2025-11-19 12:45:08,959 - sec_monitor - INFO - Cumulative stats - Input words: 5061643, Output words: 0
 2025-11-19 12:45:08,959 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-19 12:45:08,959 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 38113, 'output_words': 0, 'filings_processed': 2}
+2025-11-19 13:33:56,974 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-19 13:33:56,975 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-19 13:33:56,975 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-19 13:33:56,975 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-19 13:33:56,975 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-19 13:33:56,975 - sec_monitor - INFO - Initializing components...
+2025-11-19 13:33:56,975 - sec_monitor - INFO - Initializing components
+2025-11-19 13:33:56,975 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-19 13:33:56,976 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-19 13:33:56,976 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-19 13:33:56,976 - sec_monitor - INFO - All components initialized successfully
+2025-11-19 13:33:56,977 - sec_monitor - INFO - Found JSON file from today
+2025-11-19 13:33:56,977 - sec_monitor - INFO - Found 20 previously processed accessions and 20 filing URLs
+2025-11-19 13:33:56,977 - sec_monitor - INFO - Found 20 accession numbers and 20 URLs from previously processed filings
+2025-11-19 13:33:56,977 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-19 13:34:30,235 - sec_monitor - INFO - Reached old filing, stopping. Found 298 total filings
+2025-11-19 13:34:30,235 - sec_monitor - INFO - Found 2 new interesting filings
+2025-11-19 13:34:30,235 - sec_monitor - INFO - Found 2 new filings to process
+2025-11-19 13:34:30,235 - sec_monitor - INFO - Processing filing 1/2: GILD
+2025-11-19 13:34:30,612 - sec_monitor - ERROR - Error processing filing GILD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 13:34:30,612 - sec_monitor - INFO - Processing filing 2/2: TGT
+2025-11-19 13:34:31,289 - sec_monitor - ERROR - Error processing filing TGT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 13:34:31,289 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-19 13:34:31,889 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-19 13:34:31,890 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-19 13:34:31,890 - sec_monitor - INFO - Market open: False
+2025-11-19 13:34:31,890 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-11-19 13:34:31,901 - sec_monitor - INFO - Last trading day: 2025-11-19
+2025-11-19 13:34:31,901 - sec_monitor - INFO - Processing ticker: GILD
+2025-11-19 13:34:32,341 - sec_monitor - INFO - Number of bars for GILD: 3
+2025-11-19 13:34:32,341 - sec_monitor - INFO - Last bar close for GILD: 127.19
+2025-11-19 13:34:32,341 - sec_monitor - INFO - Outside market hours price for GILD: 127.19
+2025-11-19 13:34:32,341 - sec_monitor - INFO - Processing ticker: TGT
+2025-11-19 13:34:32,354 - sec_monitor - INFO - Number of bars for TGT: 3
+2025-11-19 13:34:32,355 - sec_monitor - INFO - Last bar close for TGT: 88.555
+2025-11-19 13:34:32,355 - sec_monitor - INFO - Outside market hours price for TGT: 88.555
+2025-11-19 13:34:33,041 - sec_monitor - INFO - Generating final output...
+2025-11-19 13:34:33,042 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-11-19 13:34:33,042 - sec_monitor - INFO - Cumulative stats - Input words: 5073340, Output words: 0
+2025-11-19 13:34:33,042 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-19 13:34:33,042 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 11697, 'output_words': 0, 'filings_processed': 2}
