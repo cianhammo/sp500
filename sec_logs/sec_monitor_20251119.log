@@ -214,3 +214,56 @@
 2025-11-19 13:34:33,042 - sec_monitor - INFO - Cumulative stats - Input words: 5073340, Output words: 0
 2025-11-19 13:34:33,042 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-19 13:34:33,042 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 11697, 'output_words': 0, 'filings_processed': 2}
+2025-11-19 15:22:43,422 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-19 15:22:43,422 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-19 15:22:43,422 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-19 15:22:43,423 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-19 15:22:43,423 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-19 15:22:43,423 - sec_monitor - INFO - Initializing components...
+2025-11-19 15:22:43,423 - sec_monitor - INFO - Initializing components
+2025-11-19 15:22:43,423 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-19 15:22:43,423 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-19 15:22:43,424 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-19 15:22:43,424 - sec_monitor - INFO - All components initialized successfully
+2025-11-19 15:22:43,425 - sec_monitor - INFO - Found JSON file from today
+2025-11-19 15:22:43,425 - sec_monitor - INFO - Found 22 previously processed accessions and 22 filing URLs
+2025-11-19 15:22:43,425 - sec_monitor - INFO - Found 22 accession numbers and 22 URLs from previously processed filings
+2025-11-19 15:22:43,425 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-19 15:24:01,924 - sec_monitor - INFO - Reached old filing, stopping. Found 301 total filings
+2025-11-19 15:24:01,925 - sec_monitor - INFO - Found 4 new interesting filings
+2025-11-19 15:24:01,925 - sec_monitor - INFO - Found 4 new filings to process
+2025-11-19 15:24:01,925 - sec_monitor - INFO - Processing filing 1/4: TJX
+2025-11-19 15:24:02,492 - sec_monitor - ERROR - Error processing filing TJX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 15:24:02,493 - sec_monitor - INFO - Processing filing 2/4: PGR
+2025-11-19 15:24:03,401 - sec_monitor - ERROR - Error processing filing PGR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 15:24:03,401 - sec_monitor - INFO - Processing filing 3/4: BAX
+2025-11-19 15:24:03,778 - sec_monitor - ERROR - Error processing filing BAX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 15:24:03,778 - sec_monitor - INFO - Processing filing 4/4: LOW
+2025-11-19 15:24:10,749 - sec_monitor - ERROR - Error processing filing LOW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-19 15:24:10,749 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-19 15:24:10,999 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-19 15:24:10,999 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-19 15:24:10,999 - sec_monitor - INFO - Market open: True
+2025-11-19 15:24:10,999 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-11-19 15:24:11,019 - sec_monitor - INFO - Last trading day: 2025-11-19
+2025-11-19 15:24:11,019 - sec_monitor - INFO - Processing ticker: TJX
+2025-11-19 15:24:11,348 - sec_monitor - INFO - Number of bars for TJX: 3
+2025-11-19 15:24:11,348 - sec_monitor - INFO - Last bar close for TJX: 145.65
+2025-11-19 15:24:11,348 - sec_monitor - INFO - Market open price for TJX: 145.65, change: 0.2891964470150905%
+2025-11-19 15:24:11,348 - sec_monitor - INFO - Processing ticker: PGR
+2025-11-19 15:24:11,377 - sec_monitor - INFO - Number of bars for PGR: 3
+2025-11-19 15:24:11,377 - sec_monitor - INFO - Last bar close for PGR: 224.98
+2025-11-19 15:24:11,377 - sec_monitor - INFO - Market open price for PGR: 224.98, change: -0.17304876425434387%
+2025-11-19 15:24:11,377 - sec_monitor - INFO - Processing ticker: BAX
+2025-11-19 15:24:11,406 - sec_monitor - INFO - Number of bars for BAX: 3
+2025-11-19 15:24:11,406 - sec_monitor - INFO - Last bar close for BAX: 18.15
+2025-11-19 15:24:11,406 - sec_monitor - INFO - Market open price for BAX: 18.15, change: 2.1097046413502114%
+2025-11-19 15:24:11,406 - sec_monitor - INFO - Processing ticker: LOW
+2025-11-19 15:24:11,437 - sec_monitor - INFO - Number of bars for LOW: 3
+2025-11-19 15:24:11,437 - sec_monitor - INFO - Last bar close for LOW: 219.605
+2025-11-19 15:24:11,437 - sec_monitor - INFO - Market open price for LOW: 219.605, change: -2.4064527597546976%
+2025-11-19 15:24:12,871 - sec_monitor - INFO - Generating final output...
+2025-11-19 15:24:12,873 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-11-19 15:24:12,873 - sec_monitor - INFO - Cumulative stats - Input words: 5140992, Output words: 0
+2025-11-19 15:24:12,873 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-19 15:24:12,873 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 67652, 'output_words': 0, 'filings_processed': 4}
