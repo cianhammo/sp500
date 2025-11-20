@@ -1,0 +1,68 @@
+2025-11-20 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-11-20 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-20 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-20 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-11-20 21:47:44 - INFO - __main__ - Original start: 2025-11-19 16:00:00-05:00 (America/New_York)
+2025-11-20 21:47:44 - INFO - __main__ - Original end: 2025-11-20 16:00:00-05:00 (America/New_York)
+2025-11-20 21:47:44 - INFO - __main__ - UTC start: 2025-11-19 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - UTC end: 2025-11-21 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-20 21:47:44 - INFO - __main__ - Received data for 496 symbols
+2025-11-20 21:47:44 - INFO - __main__ - Sample data structure for BALL:
+2025-11-20 21:47:44 - INFO - __main__ - Number of bars: 2
+2025-11-20 21:47:44 - INFO - __main__ - Bar timestamp: 2025-11-19 05:00:00+00:00 (UTC)
+2025-11-20 21:47:44 - INFO - __main__ - Bar timestamp: 2025-11-20 05:00:00+00:00 (UTC)
+2025-11-20 21:47:44 - INFO - __main__ - BALL timestamps - Today: 2025-11-20 05:00:00+00:00, Yesterday: 2025-11-19 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - CNC timestamps - Today: 2025-11-20 05:00:00+00:00, Yesterday: 2025-11-19 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - FRT timestamps - Today: 2025-11-20 05:00:00+00:00, Yesterday: 2025-11-19 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - HON timestamps - Today: 2025-11-20 05:00:00+00:00, Yesterday: 2025-11-19 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - INTC timestamps - Today: 2025-11-20 05:00:00+00:00, Yesterday: 2025-11-19 05:00:00+00:00
+2025-11-20 21:47:44 - INFO - __main__ - Successfully processed 496 stocks
+2025-11-20 21:47:44 - INFO - __main__ - Data issues encountered: 0
+2025-11-20 21:47:44 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-11-20 21:47:44 - INFO - __main__ - Analysis for market close on November 20, 2025
+2025-11-20 21:47:44 - INFO - __main__ - Found 496 stocks with price data
+2025-11-20 21:47:45 - INFO - __main__ - Found Wikipedia URL for WMT: https://en.wikipedia.org/wiki/Walmart
+2025-11-20 21:47:47 - INFO - __main__ - Found Wikipedia URL for J: https://en.wikipedia.org/wiki/Jacobs_Solutions
+2025-11-20 21:47:49 - INFO - __main__ - Analyzing top performer...
+2025-11-20 21:47:49 - INFO - __main__ - Analyzing Walmart (WMT)
+2025-11-20 21:47:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-20 21:47:49 - INFO - __main__ - Searching for articles about WMT
+2025-11-20 21:47:49 - INFO - __main__ - Searching for news about Walmart
+2025-11-20 21:47:58 - INFO - __main__ - Found 6 recent search results for Walmart
+2025-11-20 21:47:58 - INFO - __main__ - Found 6 URLs to try for WMT
+2025-11-20 21:47:58 - INFO - __main__ - Fetching content from: https://www.nbcnews.com/business/business-news/stock-market-nvidia-walmart-jobs-rcna244960
+2025-11-20 21:47:59 - INFO - __main__ - Successfully extracted article content (4895 chars)
+2025-11-20 21:47:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/walmart-earnings-sales-top-expectations-as-company-raises-full-year-forecasts-120530231.html
+2025-11-20 21:48:01 - INFO - __main__ - Successfully extracted article content (3591 chars)
+2025-11-20 21:48:01 - INFO - __main__ - Fetching content from: https://corporate.walmart.com/news/2025/11/20/walmart-releases-q3-fy26-earnings
+2025-11-20 21:48:01 - INFO - __main__ - Successfully extracted article content (459 chars)
+2025-11-20 21:48:01 - INFO - __main__ - Found total of 2 valid articles for WMT
+2025-11-20 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:05 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-11-20 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:11 - INFO - __main__ - Top performer analysis complete
+2025-11-20 21:48:11 - INFO - __main__ - Analyzing bottom performer...
+2025-11-20 21:48:11 - INFO - __main__ - Analyzing Jacobs Solutions (J)
+2025-11-20 21:48:11 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-20 21:48:11 - INFO - __main__ - Searching for articles about J
+2025-11-20 21:48:11 - INFO - __main__ - Searching for news about Jacobs Solutions
+2025-11-20 21:48:14 - INFO - __main__ - Found 6 recent search results for Jacobs Solutions
+2025-11-20 21:48:14 - INFO - __main__ - Found 6 URLs to try for J
+2025-11-20 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jacobs-solutions-j-q4-earnings-125602816.html
+2025-11-20 21:48:15 - INFO - __main__ - Successfully extracted article content (4040 chars)
+2025-11-20 21:48:15 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-11202025-11853411
+2025-11-20 21:48:15 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-20 21:48:15 - INFO - __main__ - Successfully extracted article content (18936 chars)
+2025-11-20 21:48:15 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/stocks-soar-robust-nvidia-earnings
+2025-11-20 21:48:15 - INFO - __main__ - Successfully extracted article content (8267 chars)
+2025-11-20 21:48:15 - INFO - __main__ - Found total of 3 valid articles for J
+2025-11-20 21:48:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:23 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-11-20 21:48:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-20 21:48:28 - INFO - __main__ - Bottom performer analysis complete
+2025-11-20 21:48:28 - INFO - __main__ - Saving results to JSON...
+2025-11-20 21:48:28 - INFO - __main__ - Analysis complete and saved to market_analysis.json
