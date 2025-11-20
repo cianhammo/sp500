@@ -280,3 +280,50 @@
 2025-11-20 13:32:58,111 - sec_monitor - INFO - Cumulative stats - Input words: 2080558, Output words: 0
 2025-11-20 13:32:58,111 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-20 13:32:58,111 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 13821, 'output_words': 0, 'filings_processed': 2}
+2025-11-20 15:22:24,447 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-20 15:22:24,447 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-20 15:22:24,447 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-20 15:22:24,448 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-20 15:22:24,448 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-20 15:22:24,448 - sec_monitor - INFO - Initializing components...
+2025-11-20 15:22:24,448 - sec_monitor - INFO - Initializing components
+2025-11-20 15:22:24,448 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-20 15:22:24,448 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-20 15:22:24,448 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-20 15:22:24,449 - sec_monitor - INFO - All components initialized successfully
+2025-11-20 15:22:24,449 - sec_monitor - INFO - Found JSON file from today
+2025-11-20 15:22:24,450 - sec_monitor - INFO - Found 33 previously processed accessions and 33 filing URLs
+2025-11-20 15:22:24,450 - sec_monitor - INFO - Found 33 accession numbers and 33 URLs from previously processed filings
+2025-11-20 15:22:24,450 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-20 15:22:53,788 - sec_monitor - INFO - Reached old filing, stopping. Found 126 total filings
+2025-11-20 15:22:53,789 - sec_monitor - INFO - Found 3 new interesting filings
+2025-11-20 15:22:53,789 - sec_monitor - INFO - Found 3 new filings to process
+2025-11-20 15:22:53,789 - sec_monitor - INFO - Processing filing 1/3: APD
+2025-11-20 15:23:58,581 - sec_monitor - ERROR - Error processing filing APD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-20 15:23:58,582 - sec_monitor - INFO - Processing filing 2/3: TEL
+2025-11-20 15:25:31,235 - sec_monitor - ERROR - Error processing filing TEL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-20 15:25:31,235 - sec_monitor - INFO - Processing filing 3/3: EQIX
+2025-11-20 15:25:31,629 - sec_monitor - ERROR - Error processing filing EQIX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-20 15:25:31,629 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-20 15:25:31,762 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-20 15:25:31,762 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-20 15:25:31,762 - sec_monitor - INFO - Market open: True
+2025-11-20 15:25:31,762 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-11-20 15:25:31,772 - sec_monitor - INFO - Last trading day: 2025-11-20
+2025-11-20 15:25:31,772 - sec_monitor - INFO - Processing ticker: APD
+2025-11-20 15:25:32,020 - sec_monitor - INFO - Number of bars for APD: 3
+2025-11-20 15:25:32,020 - sec_monitor - INFO - Last bar close for APD: 253.2
+2025-11-20 15:25:32,020 - sec_monitor - INFO - Market open price for APD: 253.2, change: 0.42836744407424404%
+2025-11-20 15:25:32,020 - sec_monitor - INFO - Processing ticker: TEL
+2025-11-20 15:25:32,037 - sec_monitor - INFO - Number of bars for TEL: 3
+2025-11-20 15:25:32,038 - sec_monitor - INFO - Last bar close for TEL: 233.01
+2025-11-20 15:25:32,038 - sec_monitor - INFO - Market open price for TEL: 233.01, change: 0.595777748996242%
+2025-11-20 15:25:32,038 - sec_monitor - INFO - Processing ticker: EQIX
+2025-11-20 15:25:32,056 - sec_monitor - INFO - Number of bars for EQIX: 3
+2025-11-20 15:25:32,057 - sec_monitor - INFO - Last bar close for EQIX: 764.825
+2025-11-20 15:25:32,057 - sec_monitor - INFO - Market open price for EQIX: 764.825, change: -1.314176591269783%
+2025-11-20 15:25:32,970 - sec_monitor - INFO - Generating final output...
+2025-11-20 15:25:32,972 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-11-20 15:25:32,972 - sec_monitor - INFO - Cumulative stats - Input words: 2990236, Output words: 0
+2025-11-20 15:25:32,972 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-20 15:25:32,972 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 909678, 'output_words': 0, 'filings_processed': 3}
