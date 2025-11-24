@@ -118,3 +118,56 @@
 2025-11-24 18:26:52,325 - sec_monitor - INFO - Cumulative stats - Input words: 233057, Output words: 0
 2025-11-24 18:26:52,325 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-24 18:26:52,325 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 60697, 'output_words': 0, 'filings_processed': 4}
+2025-11-24 21:12:14,005 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-24 21:12:14,005 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-24 21:12:14,005 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-24 21:12:14,005 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-24 21:12:14,006 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-24 21:12:14,006 - sec_monitor - INFO - Initializing components...
+2025-11-24 21:12:14,006 - sec_monitor - INFO - Initializing components
+2025-11-24 21:12:14,006 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-24 21:12:14,006 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-24 21:12:14,006 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-24 21:12:14,006 - sec_monitor - INFO - All components initialized successfully
+2025-11-24 21:12:14,007 - sec_monitor - INFO - Found JSON file from today
+2025-11-24 21:12:14,007 - sec_monitor - INFO - Found 7 previously processed accessions and 7 filing URLs
+2025-11-24 21:12:14,007 - sec_monitor - INFO - Found 7 accession numbers and 7 URLs from previously processed filings
+2025-11-24 21:12:14,007 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-24 21:12:34,975 - sec_monitor - INFO - Reached old filing, stopping. Found 56 total filings
+2025-11-24 21:12:34,976 - sec_monitor - INFO - Found 4 new interesting filings
+2025-11-24 21:12:34,976 - sec_monitor - INFO - Found 4 new filings to process
+2025-11-24 21:12:34,976 - sec_monitor - INFO - Processing filing 1/4: A
+2025-11-24 21:12:35,644 - sec_monitor - ERROR - Error processing filing A: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 21:12:35,644 - sec_monitor - INFO - Processing filing 2/4: KEYS
+2025-11-24 21:12:36,213 - sec_monitor - ERROR - Error processing filing KEYS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 21:12:36,213 - sec_monitor - INFO - Processing filing 3/4: ROST
+2025-11-24 21:12:36,639 - sec_monitor - ERROR - Error processing filing ROST: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 21:12:36,639 - sec_monitor - INFO - Processing filing 4/4: SWKS
+2025-11-24 21:12:38,323 - sec_monitor - ERROR - Error processing filing SWKS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-24 21:12:38,323 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-24 21:12:38,354 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-24 21:12:38,354 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-24 21:12:38,355 - sec_monitor - INFO - Market open: False
+2025-11-24 21:12:38,355 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-11-24 21:12:38,363 - sec_monitor - INFO - Last trading day: 2025-11-24
+2025-11-24 21:12:38,364 - sec_monitor - INFO - Processing ticker: A
+2025-11-24 21:12:38,632 - sec_monitor - INFO - Number of bars for A: 3
+2025-11-24 21:12:38,632 - sec_monitor - INFO - Last bar close for A: 151.35
+2025-11-24 21:12:38,632 - sec_monitor - INFO - Outside market hours price for A: 151.35
+2025-11-24 21:12:38,632 - sec_monitor - INFO - Processing ticker: KEYS
+2025-11-24 21:12:38,651 - sec_monitor - INFO - Number of bars for KEYS: 3
+2025-11-24 21:12:38,651 - sec_monitor - INFO - Last bar close for KEYS: 173.01
+2025-11-24 21:12:38,651 - sec_monitor - INFO - Outside market hours price for KEYS: 173.01
+2025-11-24 21:12:38,651 - sec_monitor - INFO - Processing ticker: ROST
+2025-11-24 21:12:38,665 - sec_monitor - INFO - Number of bars for ROST: 3
+2025-11-24 21:12:38,665 - sec_monitor - INFO - Last bar close for ROST: 173.93
+2025-11-24 21:12:38,665 - sec_monitor - INFO - Outside market hours price for ROST: 173.93
+2025-11-24 21:12:38,665 - sec_monitor - INFO - Processing ticker: SWKS
+2025-11-24 21:12:38,683 - sec_monitor - INFO - Number of bars for SWKS: 3
+2025-11-24 21:12:38,683 - sec_monitor - INFO - Last bar close for SWKS: 62.595
+2025-11-24 21:12:38,683 - sec_monitor - INFO - Outside market hours price for SWKS: 62.595
+2025-11-24 21:12:39,974 - sec_monitor - INFO - Generating final output...
+2025-11-24 21:12:39,975 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-11-24 21:12:39,975 - sec_monitor - INFO - Cumulative stats - Input words: 330272, Output words: 0
+2025-11-24 21:12:39,975 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-24 21:12:39,975 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 97215, 'output_words': 0, 'filings_processed': 4}
