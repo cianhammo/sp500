@@ -1,0 +1,75 @@
+2025-11-25 21:47:26 - INFO - __main__ - Starting SP500 analysis script
+2025-11-25 21:47:26 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-25 21:47:26 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 24, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-25 21:47:26 - INFO - __main__ - Runtime timezone: UTC
+2025-11-25 21:47:26 - INFO - __main__ - Original start: 2025-11-24 16:00:00-05:00 (America/New_York)
+2025-11-25 21:47:26 - INFO - __main__ - Original end: 2025-11-25 16:00:00-05:00 (America/New_York)
+2025-11-25 21:47:26 - INFO - __main__ - UTC start: 2025-11-24 05:00:00+00:00
+2025-11-25 21:47:26 - INFO - __main__ - UTC end: 2025-11-26 05:00:00+00:00
+2025-11-25 21:47:26 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-25 21:47:27 - INFO - __main__ - Received data for 496 symbols
+2025-11-25 21:47:27 - INFO - __main__ - Sample data structure for AMAT:
+2025-11-25 21:47:27 - INFO - __main__ - Number of bars: 2
+2025-11-25 21:47:27 - INFO - __main__ - Bar timestamp: 2025-11-24 05:00:00+00:00 (UTC)
+2025-11-25 21:47:27 - INFO - __main__ - Bar timestamp: 2025-11-25 05:00:00+00:00 (UTC)
+2025-11-25 21:47:27 - INFO - __main__ - AMAT timestamps - Today: 2025-11-25 05:00:00+00:00, Yesterday: 2025-11-24 05:00:00+00:00
+2025-11-25 21:47:27 - INFO - __main__ - NEE timestamps - Today: 2025-11-25 05:00:00+00:00, Yesterday: 2025-11-24 05:00:00+00:00
+2025-11-25 21:47:27 - INFO - __main__ - SYK timestamps - Today: 2025-11-25 05:00:00+00:00, Yesterday: 2025-11-24 05:00:00+00:00
+2025-11-25 21:47:27 - INFO - __main__ - TPL timestamps - Today: 2025-11-25 05:00:00+00:00, Yesterday: 2025-11-24 05:00:00+00:00
+2025-11-25 21:47:27 - INFO - __main__ - TXT timestamps - Today: 2025-11-25 05:00:00+00:00, Yesterday: 2025-11-24 05:00:00+00:00
+2025-11-25 21:47:27 - INFO - __main__ - Successfully processed 496 stocks
+2025-11-25 21:47:27 - INFO - __main__ - Data issues encountered: 0
+2025-11-25 21:47:27 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-11-25 21:47:27 - INFO - __main__ - Analysis for market close on November 25, 2025
+2025-11-25 21:47:27 - INFO - __main__ - Found 496 stocks with price data
+2025-11-25 21:47:28 - INFO - __main__ - Found Wikipedia URL for KEYS: https://en.wikipedia.org/wiki/Keysight
+2025-11-25 21:47:30 - INFO - __main__ - Found Wikipedia URL for AMD: https://en.wikipedia.org/wiki/AMD
+2025-11-25 21:47:32 - INFO - __main__ - Analyzing top performer...
+2025-11-25 21:47:32 - INFO - __main__ - Analyzing Keysight Technologies (KEYS)
+2025-11-25 21:47:32 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-25 21:47:32 - INFO - __main__ - Searching for articles about KEYS
+2025-11-25 21:47:32 - INFO - __main__ - Searching for news about Keysight Technologies
+2025-11-25 21:47:35 - INFO - __main__ - Found 6 recent search results for Keysight Technologies
+2025-11-25 21:47:35 - INFO - __main__ - Found 6 URLs to try for KEYS
+2025-11-25 21:47:35 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/keysight-beats-quarterly-forecast-estimates-222232807.html
+2025-11-25 21:47:37 - INFO - __main__ - Successfully extracted article content (1589 chars)
+2025-11-25 21:47:37 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-stall-after-techs-biggest-rally-since-may-235115024.html
+2025-11-25 21:47:38 - INFO - __main__ - Successfully extracted article content (17980 chars)
+2025-11-25 21:47:38 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/11/25/stocks-making-the-biggest-moves-premarket-kss-nvda-dks-sym.html
+2025-11-25 21:47:38 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-25 21:47:38 - INFO - __main__ - Successfully extracted article content (4741 chars)
+2025-11-25 21:47:38 - INFO - __main__ - Found total of 3 valid articles for KEYS
+2025-11-25 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:47:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:47:46 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-11-25 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:47:52 - INFO - __main__ - Top performer analysis complete
+2025-11-25 21:47:52 - INFO - __main__ - Analyzing bottom performer...
+2025-11-25 21:47:52 - INFO - __main__ - Analyzing Advanced Micro Devices (AMD)
+2025-11-25 21:47:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-25 21:47:52 - INFO - __main__ - Searching for articles about AMD
+2025-11-25 21:47:52 - INFO - __main__ - Searching for news about Advanced Micro Devices
+2025-11-25 21:47:57 - INFO - __main__ - Found 6 recent search results for Advanced Micro Devices
+2025-11-25 21:47:57 - INFO - __main__ - Found 6 URLs to try for AMD
+2025-11-25 21:47:57 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/11/25/why-amd-stock-just-crashed/
+2025-11-25 21:47:57 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-11-25 21:47:57 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/why-amds-stock-is-having-its-worst-month-in-three-years-c2b30a54?gaa_at=eafs&gaa_n=AWEtsqebXqG2hhH-uTOo3-DIeXsGG71nucaBur0iPIGjj9mLv3vL2aFAMJ0H&gaa_ts=6926278f&gaa_sig=hbP-Hip9ZLakGCaFax96ArQ_jWokCRlqOg59D_ShUmHza_BO7uNVtR1_wPxTCm6aNKCY8xdhYkJRetLQeIZyxw%3D%3D
+2025-11-25 21:47:57 - WARNING - __main__ - Article content too short (43 chars)
+2025-11-25 21:47:57 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4847532-amd-ai-runway-is-long-and-promising-but-ai-revenue-takeoff-clearance-is-a-year-out
+2025-11-25 21:47:57 - INFO - __main__ - Successfully extracted article content (1718 chars)
+2025-11-25 21:47:57 - INFO - __main__ - Fetching content from: https://www.benzinga.com/trading-ideas/movers/25/11/49053674/semtech-posts-mixed-q3-results-joins-zhihu-nvidia-and-other-big-stocks-moving-lower-in-tuesdays-pre-market-session
+2025-11-25 21:47:57 - INFO - __main__ - Successfully extracted article content (1652 chars)
+2025-11-25 21:47:57 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/google-in-talks-ai-chips-meta-nvidia-amd/
+2025-11-25 21:47:58 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-11-25 21:47:58 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/nvidia-amd-stocks-fall-meta-171830436.html
+2025-11-25 21:47:58 - INFO - __main__ - Successfully extracted article content (1108 chars)
+2025-11-25 21:47:58 - INFO - __main__ - Found total of 3 valid articles for AMD
+2025-11-25 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:48:05 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2025-11-25 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-25 21:48:09 - INFO - __main__ - Bottom performer analysis complete
+2025-11-25 21:48:09 - INFO - __main__ - Saving results to JSON...
+2025-11-25 21:48:09 - INFO - __main__ - Analysis complete and saved to market_analysis.json
