@@ -212,3 +212,45 @@
 2025-11-26 13:37:03,386 - sec_monitor - INFO - Cumulative stats - Input words: 2373478, Output words: 0
 2025-11-26 13:37:03,386 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-11-26 13:37:03,386 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 10999, 'output_words': 0, 'filings_processed': 1}
+2025-11-26 15:19:52,919 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-11-26 15:19:52,919 - sec_monitor - INFO - Loading S&P 500 data...
+2025-11-26 15:19:52,919 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-11-26 15:19:52,920 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-26 15:19:52,920 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-11-26 15:19:52,920 - sec_monitor - INFO - Initializing components...
+2025-11-26 15:19:52,920 - sec_monitor - INFO - Initializing components
+2025-11-26 15:19:52,920 - sec_monitor - INFO - SEC fetcher initialized
+2025-11-26 15:19:52,921 - sec_monitor - INFO - Filing analyzer initialized
+2025-11-26 15:19:52,921 - sec_monitor - INFO - Alpaca clients initialized
+2025-11-26 15:19:52,921 - sec_monitor - INFO - All components initialized successfully
+2025-11-26 15:19:52,922 - sec_monitor - INFO - Found JSON file from today
+2025-11-26 15:19:52,922 - sec_monitor - INFO - Found 23 previously processed accessions and 23 filing URLs
+2025-11-26 15:19:52,922 - sec_monitor - INFO - Found 23 accession numbers and 23 URLs from previously processed filings
+2025-11-26 15:19:52,922 - sec_monitor - INFO - Fetching SEC filings...
+2025-11-26 15:20:33,677 - sec_monitor - INFO - No more entries found
+2025-11-26 15:20:33,677 - sec_monitor - INFO - Completed fetching. Found 114 total filings
+2025-11-26 15:20:33,677 - sec_monitor - INFO - Found 2 new interesting filings
+2025-11-26 15:20:33,677 - sec_monitor - INFO - Found 2 new filings to process
+2025-11-26 15:20:33,677 - sec_monitor - INFO - Processing filing 1/2: PPL
+2025-11-26 15:20:34,237 - sec_monitor - ERROR - Error processing filing PPL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-26 15:20:34,237 - sec_monitor - INFO - Processing filing 2/2: EXC
+2025-11-26 15:20:34,526 - sec_monitor - ERROR - Error processing filing EXC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-11-26 15:20:34,526 - sec_monitor - INFO - Fetching supplementary data...
+2025-11-26 15:20:34,986 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-11-26 15:20:34,986 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-11-26 15:20:34,986 - sec_monitor - INFO - Market open: True
+2025-11-26 15:20:34,986 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-11-26 15:20:34,996 - sec_monitor - INFO - Last trading day: 2025-11-26
+2025-11-26 15:20:34,996 - sec_monitor - INFO - Processing ticker: PPL
+2025-11-26 15:20:35,421 - sec_monitor - INFO - Number of bars for PPL: 3
+2025-11-26 15:20:35,421 - sec_monitor - INFO - Last bar close for PPL: 36.41
+2025-11-26 15:20:35,421 - sec_monitor - INFO - Market open price for PPL: 36.41, change: -0.1918859649122815%
+2025-11-26 15:20:35,421 - sec_monitor - INFO - Processing ticker: EXC
+2025-11-26 15:20:35,443 - sec_monitor - INFO - Number of bars for EXC: 3
+2025-11-26 15:20:35,443 - sec_monitor - INFO - Last bar close for EXC: 45.77
+2025-11-26 15:20:35,443 - sec_monitor - INFO - Market open price for EXC: 45.77, change: -0.9736045002163473%
+2025-11-26 15:20:36,136 - sec_monitor - INFO - Generating final output...
+2025-11-26 15:20:36,137 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-11-26 15:20:36,137 - sec_monitor - INFO - Cumulative stats - Input words: 2382804, Output words: 0
+2025-11-26 15:20:36,137 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-11-26 15:20:36,137 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 9326, 'output_words': 0, 'filings_processed': 2}
