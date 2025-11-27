@@ -1,0 +1,77 @@
+2025-11-27 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-11-27 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-11-27 21:47:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 11, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 25, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-11-27 21:47:44 - INFO - __main__ - Runtime timezone: UTC
+2025-11-27 21:47:44 - INFO - __main__ - Original start: 2025-11-25 16:00:00-05:00 (America/New_York)
+2025-11-27 21:47:44 - INFO - __main__ - Original end: 2025-11-26 16:00:00-05:00 (America/New_York)
+2025-11-27 21:47:44 - INFO - __main__ - UTC start: 2025-11-25 05:00:00+00:00
+2025-11-27 21:47:44 - INFO - __main__ - UTC end: 2025-11-27 05:00:00+00:00
+2025-11-27 21:47:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-11-27 21:47:45 - INFO - __main__ - Received data for 496 symbols
+2025-11-27 21:47:45 - INFO - __main__ - Sample data structure for BRK.B:
+2025-11-27 21:47:45 - INFO - __main__ - Number of bars: 2
+2025-11-27 21:47:45 - INFO - __main__ - Bar timestamp: 2025-11-25 05:00:00+00:00 (UTC)
+2025-11-27 21:47:45 - INFO - __main__ - Bar timestamp: 2025-11-26 05:00:00+00:00 (UTC)
+2025-11-27 21:47:45 - INFO - __main__ - BRK.B timestamps - Today: 2025-11-26 05:00:00+00:00, Yesterday: 2025-11-25 05:00:00+00:00
+2025-11-27 21:47:45 - INFO - __main__ - DE timestamps - Today: 2025-11-26 05:00:00+00:00, Yesterday: 2025-11-25 05:00:00+00:00
+2025-11-27 21:47:45 - INFO - __main__ - T timestamps - Today: 2025-11-26 05:00:00+00:00, Yesterday: 2025-11-25 05:00:00+00:00
+2025-11-27 21:47:45 - INFO - __main__ - SWK timestamps - Today: 2025-11-26 05:00:00+00:00, Yesterday: 2025-11-25 05:00:00+00:00
+2025-11-27 21:47:45 - INFO - __main__ - MHK timestamps - Today: 2025-11-26 05:00:00+00:00, Yesterday: 2025-11-25 05:00:00+00:00
+2025-11-27 21:47:46 - INFO - __main__ - Successfully processed 496 stocks
+2025-11-27 21:47:46 - INFO - __main__ - Data issues encountered: 0
+2025-11-27 21:47:46 - INFO - __main__ - Final dataframe contains 496 stocks
+2025-11-27 21:47:46 - INFO - __main__ - Analysis for market close on November 26, 2025
+2025-11-27 21:47:46 - INFO - __main__ - Found 496 stocks with price data
+2025-11-27 21:47:46 - INFO - __main__ - Found Wikipedia URL for TER: https://en.wikipedia.org/wiki/Teradyne
+2025-11-27 21:47:48 - INFO - __main__ - Found Wikipedia URL for WDAY: https://en.wikipedia.org/wiki/Workday,_Inc.
+2025-11-27 21:47:50 - INFO - __main__ - Analyzing top performer...
+2025-11-27 21:47:50 - INFO - __main__ - Analyzing Teradyne (TER)
+2025-11-27 21:47:50 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-27 21:47:51 - INFO - __main__ - Searching for articles about TER
+2025-11-27 21:47:51 - INFO - __main__ - Searching for news about Teradyne
+2025-11-27 21:47:55 - INFO - __main__ - Found 6 recent search results for Teradyne
+2025-11-27 21:47:55 - INFO - __main__ - Found 6 URLs to try for TER
+2025-11-27 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-teradyne-ter-3-1-163015666.html
+2025-11-27 21:47:56 - INFO - __main__ - Successfully extracted article content (2470 chars)
+2025-11-27 21:47:56 - INFO - __main__ - Fetching content from: https://www.moha.gov.vn/market-outlook/Is-Teradyne-Inc.-stock-positioned-well-for-digital-economy
+2025-11-27 21:47:58 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-27 21:47:58 - WARNING - __main__ - Article content too short (14 chars)
+2025-11-27 21:47:58 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/serve-robotics-vs-teradyne-which-robotics-stock-buy-2026
+2025-11-27 21:47:58 - INFO - __main__ - Successfully extracted article content (9175 chars)
+2025-11-27 21:47:58 - INFO - __main__ - Found total of 2 valid articles for TER
+2025-11-27 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-27 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-27 21:48:02 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-11-27 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-27 21:48:08 - INFO - __main__ - Top performer analysis complete
+2025-11-27 21:48:08 - INFO - __main__ - Analyzing bottom performer...
+2025-11-27 21:48:08 - INFO - __main__ - Analyzing Workday, Inc. (WDAY)
+2025-11-27 21:48:08 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-11-27 21:48:08 - INFO - __main__ - Searching for articles about WDAY
+2025-11-27 21:48:08 - INFO - __main__ - Searching for news about Workday, Inc.
+2025-11-27 21:48:11 - INFO - __main__ - Found 6 recent search results for Workday, Inc.
+2025-11-27 21:48:11 - INFO - __main__ - Found 6 URLs to try for WDAY
+2025-11-27 21:48:11 - INFO - __main__ - Fetching content from: https://ghr.wd1.myworkdayjobs.com/en-US/lateral-ba_continuum/job/Software-Engineer_25046996
+2025-11-27 21:48:11 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-27 21:48:11 - WARNING - __main__ - Article content too short (0 chars)
+2025-11-27 21:48:11 - INFO - __main__ - Fetching content from: https://worldvision.wd1.myworkdayjobs.com/en-US/WorldVisionInternational/job/Head-Office-VF-Office-Tanzania/Loan-Officer--VF-Tanzania_JR46686?q=Tanzania
+2025-11-27 21:48:12 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-27 21:48:12 - WARNING - __main__ - Article content too short (0 chars)
+2025-11-27 21:48:12 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/wall-streets-2026-forecasts-are-rolling-in--and-some-see-the-sp-500-hitting-8000-110002501.html
+2025-11-27 21:48:12 - INFO - __main__ - Successfully extracted article content (4840 chars)
+2025-11-27 21:48:12 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/goldman-sachs-revamps-broadcom-stock-173300749.html
+2025-11-27 21:48:13 - INFO - __main__ - Successfully extracted article content (4292 chars)
+2025-11-27 21:48:13 - INFO - __main__ - Fetching content from: https://absa.wd3.myworkdayjobs.com/en-US/NBC_Careers/job/Head-Office-NBC/Sales-Coordinator--Pensioner-Portfolio_R-15981740
+2025-11-27 21:48:14 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-27 21:48:14 - WARNING - __main__ - Article content too short (0 chars)
+2025-11-27 21:48:14 - INFO - __main__ - Fetching content from: https://elevancehealth.wd1.myworkdayjobs.com/carelonglobal_in/job/IND---HR---Gurugram-Candor-Tech-Space/JR173730---Associate-Software-Engineer-I---GR---04222243---JR173730_JR173730
+2025-11-27 21:48:14 - INFO - readability.readability - ruthless removal did not work. 
+2025-11-27 21:48:14 - WARNING - __main__ - Article content too short (0 chars)
+2025-11-27 21:48:14 - INFO - __main__ - Found total of 2 valid articles for WDAY
+2025-11-27 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-27 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-27 21:48:19 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-11-27 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-27 21:48:23 - INFO - __main__ - Bottom performer analysis complete
+2025-11-27 21:48:23 - INFO - __main__ - Saving results to JSON...
+2025-11-27 21:48:23 - INFO - __main__ - Analysis complete and saved to market_analysis.json
