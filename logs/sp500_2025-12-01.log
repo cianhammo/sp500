@@ -1,0 +1,83 @@
+2025-12-01 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-12-01 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-01 21:47:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 11, 28, 13, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-01 21:47:41 - INFO - __main__ - Runtime timezone: UTC
+2025-12-01 21:47:41 - INFO - __main__ - Original start: 2025-11-28 13:00:00-05:00 (America/New_York)
+2025-12-01 21:47:41 - INFO - __main__ - Original end: 2025-12-01 16:00:00-05:00 (America/New_York)
+2025-12-01 21:47:41 - INFO - __main__ - UTC start: 2025-11-28 05:00:00+00:00
+2025-12-01 21:47:41 - INFO - __main__ - UTC end: 2025-12-02 05:00:00+00:00
+2025-12-01 21:47:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-01 21:47:42 - INFO - __main__ - Received data for 495 symbols
+2025-12-01 21:47:42 - INFO - __main__ - Sample data structure for ADBE:
+2025-12-01 21:47:42 - INFO - __main__ - Number of bars: 2
+2025-12-01 21:47:42 - INFO - __main__ - Bar timestamp: 2025-11-28 05:00:00+00:00 (UTC)
+2025-12-01 21:47:42 - INFO - __main__ - Bar timestamp: 2025-12-01 05:00:00+00:00 (UTC)
+2025-12-01 21:47:42 - INFO - __main__ - ADBE timestamps - Today: 2025-12-01 05:00:00+00:00, Yesterday: 2025-11-28 05:00:00+00:00
+2025-12-01 21:47:42 - INFO - __main__ - AKAM timestamps - Today: 2025-12-01 05:00:00+00:00, Yesterday: 2025-11-28 05:00:00+00:00
+2025-12-01 21:47:42 - INFO - __main__ - CSCO timestamps - Today: 2025-12-01 05:00:00+00:00, Yesterday: 2025-11-28 05:00:00+00:00
+2025-12-01 21:47:42 - INFO - __main__ - ERIE timestamps - Today: 2025-12-01 05:00:00+00:00, Yesterday: 2025-11-28 05:00:00+00:00
+2025-12-01 21:47:42 - INFO - __main__ - JNJ timestamps - Today: 2025-12-01 05:00:00+00:00, Yesterday: 2025-11-28 05:00:00+00:00
+2025-12-01 21:47:42 - INFO - __main__ - Successfully processed 495 stocks
+2025-12-01 21:47:42 - INFO - __main__ - Data issues encountered: 0
+2025-12-01 21:47:42 - INFO - __main__ - Final dataframe contains 495 stocks
+2025-12-01 21:47:42 - INFO - __main__ - Analysis for market close on December 01, 2025
+2025-12-01 21:47:42 - INFO - __main__ - Found 495 stocks with price data
+2025-12-01 21:47:43 - INFO - __main__ - Found Wikipedia URL for SNPS: https://en.wikipedia.org/wiki/Synopsys
+2025-12-01 21:47:45 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-12-01 21:47:47 - INFO - __main__ - Analyzing top performer...
+2025-12-01 21:47:47 - INFO - __main__ - Analyzing Synopsys (SNPS)
+2025-12-01 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-01 21:47:48 - INFO - __main__ - Searching for articles about SNPS
+2025-12-01 21:47:48 - INFO - __main__ - Searching for news about Synopsys
+2025-12-01 21:47:54 - INFO - __main__ - Found 6 recent search results for Synopsys
+2025-12-01 21:47:54 - INFO - __main__ - Found 6 URLs to try for SNPS
+2025-12-01 21:47:54 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-12-01/nvidia-buys-2-billion-of-chip-software-maker-synopsys-stock
+2025-12-01 21:47:54 - INFO - __main__ - Successfully extracted article content (193 chars)
+2025-12-01 21:47:54 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/01/nvidia-takes-2-billion-stake-in-synopsys.html
+2025-12-01 21:47:54 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-01 21:47:54 - INFO - __main__ - Successfully extracted article content (2008 chars)
+2025-12-01 21:47:54 - INFO - __main__ - Fetching content from: https://investor.synopsys.com/news/news-details/2025/NVIDIA-and-Synopsys-Announce-Strategic-Partnership-to-Revolutionize-Engineering-and-Design/default.aspx
+2025-12-01 21:47:55 - WARNING - __main__ - Article content too short (41 chars)
+2025-12-01 21:47:55 - INFO - __main__ - Fetching content from: https://nvidianews.nvidia.com/news/nvidia-and-synopsys-announce-strategic-partnership-to-revolutionize-engineering-and-design
+2025-12-01 21:47:55 - INFO - __main__ - Successfully extracted article content (7121 chars)
+2025-12-01 21:47:55 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/nvidia-stock-price-synposys-deal-chips-google-acd20d4d?gaa_at=eafs&gaa_n=AWEtsqcbn9DpoWZYcQN-zfUVAVzTyOQj7Yrue46UqrBWuNl3gvPrYkA8dOAF&gaa_ts=692e108d&gaa_sig=kv0ds4UQKef0XkRJrg9sJE8r167Tgk0_GGY0bEOYU450y_cnJgT9YZh2fN4Ntu_UWEQjVmXG3tiKFEBAv1j_vw%3D%3D
+2025-12-01 21:47:55 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-01 21:47:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nvidia-invests-2-billion-chip-130524782.html
+2025-12-01 21:47:55 - INFO - __main__ - Successfully extracted article content (2503 chars)
+2025-12-01 21:47:55 - INFO - __main__ - Found total of 3 valid articles for SNPS
+2025-12-01 21:47:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:04 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-12-01 21:48:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:09 - INFO - __main__ - Top performer analysis complete
+2025-12-01 21:48:09 - INFO - __main__ - Analyzing bottom performer...
+2025-12-01 21:48:09 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-12-01 21:48:09 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-01 21:48:09 - INFO - __main__ - Searching for articles about MRNA
+2025-12-01 21:48:09 - INFO - __main__ - Searching for news about Moderna
+2025-12-01 21:48:13 - INFO - __main__ - Found 6 recent search results for Moderna
+2025-12-01 21:48:13 - INFO - __main__ - Found 6 URLs to try for MRNA
+2025-12-01 21:48:13 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/moderna-biontech-covid-vaccines-deaths-myocarditis/
+2025-12-01 21:48:13 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-01 21:48:13 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-nvda-stock-tesla-stock-tsla/
+2025-12-01 21:48:14 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-01 21:48:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/moderna-falls-fda-vows-impose-131247161.html
+2025-12-01 21:48:14 - INFO - __main__ - Successfully extracted article content (2460 chars)
+2025-12-01 21:48:14 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-coinbase-robinhood-moderna-synopsys-and-more-hood-coin-mrna-snps-11859381
+2025-12-01 21:48:14 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-01 21:48:15 - INFO - __main__ - Successfully extracted article content (1736 chars)
+2025-12-01 21:48:15 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/01/stocks-making-big-moves-premarket-synopsys-moderna-coinbase-and-more.html
+2025-12-01 21:48:15 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-01 21:48:15 - INFO - __main__ - Successfully extracted article content (1674 chars)
+2025-12-01 21:48:15 - INFO - __main__ - Fetching content from: https://www.investors.com/news/xpeng-stock-chinese-tesla-rival-sales-targets/
+2025-12-01 21:48:15 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-01 21:48:15 - INFO - __main__ - Found total of 3 valid articles for MRNA
+2025-12-01 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:23 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-12-01 21:48:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-01 21:48:27 - INFO - __main__ - Bottom performer analysis complete
+2025-12-01 21:48:27 - INFO - __main__ - Saving results to JSON...
+2025-12-01 21:48:28 - INFO - __main__ - Analysis complete and saved to market_analysis.json
