@@ -1,0 +1,68 @@
+2025-12-02 21:47:51 - INFO - __main__ - Starting SP500 analysis script
+2025-12-02 21:47:51 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-02 21:47:51 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 1, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-02 21:47:51 - INFO - __main__ - Runtime timezone: UTC
+2025-12-02 21:47:51 - INFO - __main__ - Original start: 2025-12-01 16:00:00-05:00 (America/New_York)
+2025-12-02 21:47:51 - INFO - __main__ - Original end: 2025-12-02 16:00:00-05:00 (America/New_York)
+2025-12-02 21:47:51 - INFO - __main__ - UTC start: 2025-12-01 05:00:00+00:00
+2025-12-02 21:47:51 - INFO - __main__ - UTC end: 2025-12-03 05:00:00+00:00
+2025-12-02 21:47:51 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-02 21:47:52 - INFO - __main__ - Received data for 495 symbols
+2025-12-02 21:47:52 - INFO - __main__ - Sample data structure for PCG:
+2025-12-02 21:47:52 - INFO - __main__ - Number of bars: 2
+2025-12-02 21:47:52 - INFO - __main__ - Bar timestamp: 2025-12-01 05:00:00+00:00 (UTC)
+2025-12-02 21:47:52 - INFO - __main__ - Bar timestamp: 2025-12-02 05:00:00+00:00 (UTC)
+2025-12-02 21:47:52 - INFO - __main__ - PCG timestamps - Today: 2025-12-02 05:00:00+00:00, Yesterday: 2025-12-01 05:00:00+00:00
+2025-12-02 21:47:52 - INFO - __main__ - SYY timestamps - Today: 2025-12-02 05:00:00+00:00, Yesterday: 2025-12-01 05:00:00+00:00
+2025-12-02 21:47:52 - INFO - __main__ - GRMN timestamps - Today: 2025-12-02 05:00:00+00:00, Yesterday: 2025-12-01 05:00:00+00:00
+2025-12-02 21:47:52 - INFO - __main__ - MAR timestamps - Today: 2025-12-02 05:00:00+00:00, Yesterday: 2025-12-01 05:00:00+00:00
+2025-12-02 21:47:52 - INFO - __main__ - MDT timestamps - Today: 2025-12-02 05:00:00+00:00, Yesterday: 2025-12-01 05:00:00+00:00
+2025-12-02 21:47:53 - INFO - __main__ - Successfully processed 495 stocks
+2025-12-02 21:47:53 - INFO - __main__ - Data issues encountered: 0
+2025-12-02 21:47:53 - INFO - __main__ - Final dataframe contains 495 stocks
+2025-12-02 21:47:53 - INFO - __main__ - Analysis for market close on December 02, 2025
+2025-12-02 21:47:53 - INFO - __main__ - Found 495 stocks with price data
+2025-12-02 21:47:53 - INFO - __main__ - Found Wikipedia URL for BA: https://en.wikipedia.org/wiki/Boeing
+2025-12-02 21:47:55 - INFO - __main__ - Found Wikipedia URL for PKG: https://en.wikipedia.org/wiki/Packaging_Corporation_of_America
+2025-12-02 21:47:57 - INFO - __main__ - Analyzing top performer...
+2025-12-02 21:47:57 - INFO - __main__ - Analyzing Boeing (BA)
+2025-12-02 21:47:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-02 21:47:58 - INFO - __main__ - Searching for articles about BA
+2025-12-02 21:47:58 - INFO - __main__ - Searching for news about Boeing
+2025-12-02 21:48:00 - INFO - __main__ - Found 6 recent search results for Boeing
+2025-12-02 21:48:00 - INFO - __main__ - Found 6 URLs to try for BA
+2025-12-02 21:48:00 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/02/boeing-plane-deliveries-cfo.html
+2025-12-02 21:48:00 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-02 21:48:00 - INFO - __main__ - Successfully extracted article content (1805 chars)
+2025-12-02 21:48:00 - INFO - __main__ - Fetching content from: https://www.investors.com/news/boeing-stock-dow-jones-737-deliveries-production-update-cash-flow-spirit-aerosystems/
+2025-12-02 21:48:00 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-02 21:48:00 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-boeing-intel-sandisk-and-more-ba-intc-sndk-11860282
+2025-12-02 21:48:01 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-02 21:48:01 - INFO - __main__ - Successfully extracted article content (2297 chars)
+2025-12-02 21:48:01 - INFO - __main__ - Found total of 2 valid articles for BA
+2025-12-02 21:48:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-02 21:48:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-02 21:48:05 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-12-02 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-02 21:48:10 - INFO - __main__ - Top performer analysis complete
+2025-12-02 21:48:10 - INFO - __main__ - Analyzing bottom performer...
+2025-12-02 21:48:10 - INFO - __main__ - Analyzing Packaging Corporation of America (PKG)
+2025-12-02 21:48:10 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-02 21:48:11 - INFO - __main__ - Searching for articles about PKG
+2025-12-02 21:48:11 - INFO - __main__ - Searching for news about Packaging Corporation of America
+2025-12-02 21:48:13 - INFO - __main__ - Found 6 recent search results for Packaging Corporation of America
+2025-12-02 21:48:13 - INFO - __main__ - Found 6 URLs to try for PKG
+2025-12-02 21:48:13 - INFO - __main__ - Fetching content from: https://www.linkedin.com/posts/pca_packagingsolutions-corrugated-supplychainsolutions-activity-7401624726978285568-DDgz
+2025-12-02 21:48:14 - WARNING - __main__ - Article content too short (0 chars)
+2025-12-02 21:48:14 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/filing-railway-pension-investments-ltd-decreases-stock-position-in-packaging-corporation-of-america-pkg-2025-12-01/
+2025-12-02 21:48:14 - INFO - __main__ - Successfully extracted article content (7192 chars)
+2025-12-02 21:48:14 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/filing-packaging-corporation-of-america-pkg-shares-sold-by-korea-investment-corp-2025-12-01/
+2025-12-02 21:48:14 - INFO - __main__ - Successfully extracted article content (7270 chars)
+2025-12-02 21:48:14 - INFO - __main__ - Found total of 2 valid articles for PKG
+2025-12-02 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-02 21:48:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-02 21:48:19 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-12-02 21:48:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-02 21:48:24 - INFO - __main__ - Bottom performer analysis complete
+2025-12-02 21:48:24 - INFO - __main__ - Saving results to JSON...
+2025-12-02 21:48:24 - INFO - __main__ - Analysis complete and saved to market_analysis.json
