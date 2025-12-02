@@ -266,3 +266,56 @@
 2025-12-02 18:29:47,800 - sec_monitor - INFO - Cumulative stats - Input words: 713466, Output words: 0
 2025-12-02 18:29:47,800 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-02 18:29:47,800 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 162310, 'output_words': 0, 'filings_processed': 2}
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Initializing components...
+2025-12-02 21:12:27,651 - sec_monitor - INFO - Initializing components
+2025-12-02 21:12:27,651 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-02 21:12:27,652 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-02 21:12:27,652 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-02 21:12:27,652 - sec_monitor - INFO - All components initialized successfully
+2025-12-02 21:12:27,653 - sec_monitor - INFO - Found JSON file from today
+2025-12-02 21:12:27,653 - sec_monitor - INFO - Found 21 previously processed accessions and 21 filing URLs
+2025-12-02 21:12:27,653 - sec_monitor - INFO - Found 21 accession numbers and 21 URLs from previously processed filings
+2025-12-02 21:12:27,653 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-02 21:13:48,706 - sec_monitor - INFO - Reached old filing, stopping. Found 172 total filings
+2025-12-02 21:13:48,707 - sec_monitor - INFO - Found 4 new interesting filings
+2025-12-02 21:13:48,707 - sec_monitor - INFO - Found 4 new filings to process
+2025-12-02 21:13:48,707 - sec_monitor - INFO - Processing filing 1/4: CRWD
+2025-12-02 21:13:49,662 - sec_monitor - ERROR - Error processing filing CRWD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-02 21:13:49,662 - sec_monitor - INFO - Processing filing 2/4: HLT
+2025-12-02 21:13:50,039 - sec_monitor - ERROR - Error processing filing HLT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-02 21:13:50,039 - sec_monitor - INFO - Processing filing 3/4: JBHT
+2025-12-02 21:13:52,006 - sec_monitor - ERROR - Error processing filing JBHT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-02 21:13:52,006 - sec_monitor - INFO - Processing filing 4/4: MNST
+2025-12-02 21:18:34,630 - sec_monitor - ERROR - Error processing filing MNST: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-02 21:18:34,630 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-02 21:18:34,969 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-02 21:18:34,969 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-02 21:18:34,969 - sec_monitor - INFO - Market open: False
+2025-12-02 21:18:34,969 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-12-02 21:18:35,048 - sec_monitor - INFO - Last trading day: 2025-12-02
+2025-12-02 21:18:35,048 - sec_monitor - INFO - Processing ticker: CRWD
+2025-12-02 21:18:35,668 - sec_monitor - INFO - Number of bars for CRWD: 2
+2025-12-02 21:18:35,668 - sec_monitor - INFO - Last bar close for CRWD: 504.21
+2025-12-02 21:18:35,668 - sec_monitor - INFO - Outside market hours price for CRWD: 504.21
+2025-12-02 21:18:35,669 - sec_monitor - INFO - Processing ticker: HLT
+2025-12-02 21:18:35,750 - sec_monitor - INFO - Number of bars for HLT: 2
+2025-12-02 21:18:35,750 - sec_monitor - INFO - Last bar close for HLT: 283.05
+2025-12-02 21:18:35,750 - sec_monitor - INFO - Outside market hours price for HLT: 283.05
+2025-12-02 21:18:35,750 - sec_monitor - INFO - Processing ticker: JBHT
+2025-12-02 21:18:35,833 - sec_monitor - INFO - Number of bars for JBHT: 2
+2025-12-02 21:18:35,833 - sec_monitor - INFO - Last bar close for JBHT: 179.695
+2025-12-02 21:18:35,833 - sec_monitor - INFO - Same-day filing price for JBHT: 179.695, change: 3.219599057958521%
+2025-12-02 21:18:35,833 - sec_monitor - INFO - Processing ticker: MNST
+2025-12-02 21:18:35,942 - sec_monitor - INFO - Number of bars for MNST: 2
+2025-12-02 21:18:35,942 - sec_monitor - INFO - Last bar close for MNST: 75.93
+2025-12-02 21:18:35,943 - sec_monitor - INFO - Same-day filing price for MNST: 75.93, change: 1.2535004667289134%
+2025-12-02 21:18:37,243 - sec_monitor - INFO - Generating final output...
+2025-12-02 21:18:37,244 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-12-02 21:18:37,244 - sec_monitor - INFO - Cumulative stats - Input words: 1530498, Output words: 0
+2025-12-02 21:18:37,244 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-02 21:18:37,244 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 817032, 'output_words': 0, 'filings_processed': 4}
