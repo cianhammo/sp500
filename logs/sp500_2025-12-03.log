@@ -1,0 +1,76 @@
+2025-12-03 21:47:34 - INFO - __main__ - Starting SP500 analysis script
+2025-12-03 21:47:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-03 21:47:35 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-03 21:47:35 - INFO - __main__ - Runtime timezone: UTC
+2025-12-03 21:47:35 - INFO - __main__ - Original start: 2025-12-02 16:00:00-05:00 (America/New_York)
+2025-12-03 21:47:35 - INFO - __main__ - Original end: 2025-12-03 16:00:00-05:00 (America/New_York)
+2025-12-03 21:47:35 - INFO - __main__ - UTC start: 2025-12-02 05:00:00+00:00
+2025-12-03 21:47:35 - INFO - __main__ - UTC end: 2025-12-04 05:00:00+00:00
+2025-12-03 21:47:35 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-03 21:47:35 - INFO - __main__ - Received data for 495 symbols
+2025-12-03 21:47:35 - INFO - __main__ - Sample data structure for DVN:
+2025-12-03 21:47:35 - INFO - __main__ - Number of bars: 2
+2025-12-03 21:47:35 - INFO - __main__ - Bar timestamp: 2025-12-02 05:00:00+00:00 (UTC)
+2025-12-03 21:47:35 - INFO - __main__ - Bar timestamp: 2025-12-03 05:00:00+00:00 (UTC)
+2025-12-03 21:47:35 - INFO - __main__ - DVN timestamps - Today: 2025-12-03 05:00:00+00:00, Yesterday: 2025-12-02 05:00:00+00:00
+2025-12-03 21:47:35 - INFO - __main__ - EOG timestamps - Today: 2025-12-03 05:00:00+00:00, Yesterday: 2025-12-02 05:00:00+00:00
+2025-12-03 21:47:35 - INFO - __main__ - PG timestamps - Today: 2025-12-03 05:00:00+00:00, Yesterday: 2025-12-02 05:00:00+00:00
+2025-12-03 21:47:35 - INFO - __main__ - PHM timestamps - Today: 2025-12-03 05:00:00+00:00, Yesterday: 2025-12-02 05:00:00+00:00
+2025-12-03 21:47:35 - INFO - __main__ - SMCI timestamps - Today: 2025-12-03 05:00:00+00:00, Yesterday: 2025-12-02 05:00:00+00:00
+2025-12-03 21:47:36 - INFO - __main__ - Successfully processed 495 stocks
+2025-12-03 21:47:36 - INFO - __main__ - Data issues encountered: 0
+2025-12-03 21:47:36 - INFO - __main__ - Final dataframe contains 495 stocks
+2025-12-03 21:47:36 - INFO - __main__ - Analysis for market close on December 03, 2025
+2025-12-03 21:47:36 - INFO - __main__ - Found 495 stocks with price data
+2025-12-03 21:47:36 - INFO - __main__ - Found Wikipedia URL for MCHP: https://en.wikipedia.org/wiki/Microchip_Technology
+2025-12-03 21:47:38 - INFO - __main__ - Found Wikipedia URL for ARE: https://en.wikipedia.org/wiki/Alexandria_Real_Estate_Equities
+2025-12-03 21:47:40 - INFO - __main__ - Analyzing top performer...
+2025-12-03 21:47:40 - INFO - __main__ - Analyzing Microchip Technology (MCHP)
+2025-12-03 21:47:40 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-03 21:47:40 - INFO - __main__ - Searching for articles about MCHP
+2025-12-03 21:47:40 - INFO - __main__ - Searching for news about Microchip Technology
+2025-12-03 21:47:42 - INFO - __main__ - Found 6 recent search results for Microchip Technology
+2025-12-03 21:47:42 - INFO - __main__ - Found 6 URLs to try for MCHP
+2025-12-03 21:47:42 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-american-eagle-outfitters-microchip-technology-netflix-and-more-aeo-mchp-nflx-11861199
+2025-12-03 21:47:42 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-03 21:47:43 - INFO - __main__ - Successfully extracted article content (1724 chars)
+2025-12-03 21:47:43 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-be4342fb?gaa_at=eafs&gaa_n=AWEtsqft-ODHGBn44CsIbNfqPcxNbHz40u5FhrjU9fDm0_HGAxsxIzX6afLU&gaa_ts=6930b382&gaa_sig=m8rkfE305BBxHxiLtzNvhZ0lzwCf3_yUwspfAKahv9wTixZ1q9sGKcMHaqyr7jUJw1-qHbz795CNMwiMcEiODw%3D%3D
+2025-12-03 21:47:43 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-03 21:47:43 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/03/stocks-making-big-moves-premarket-aeo-okta-mchp-and-more.html
+2025-12-03 21:47:44 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-03 21:47:44 - INFO - __main__ - Successfully extracted article content (3811 chars)
+2025-12-03 21:47:44 - INFO - __main__ - Found total of 2 valid articles for MCHP
+2025-12-03 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:47:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:47:49 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-12-03 21:47:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:47:53 - INFO - __main__ - Top performer analysis complete
+2025-12-03 21:47:53 - INFO - __main__ - Analyzing bottom performer...
+2025-12-03 21:47:53 - INFO - __main__ - Analyzing Alexandria Real Estate Equities (ARE)
+2025-12-03 21:47:53 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-03 21:47:53 - INFO - __main__ - Searching for articles about ARE
+2025-12-03 21:47:53 - INFO - __main__ - Searching for news about Alexandria Real Estate Equities
+2025-12-03 21:47:56 - INFO - __main__ - Found 6 recent search results for Alexandria Real Estate Equities
+2025-12-03 21:47:56 - INFO - __main__ - Found 6 URLs to try for ARE
+2025-12-03 21:47:56 - INFO - __main__ - Fetching content from: https://investor.are.com/news-events-and-webcasts/news/news-details/2025/Alexandria-Real-Estate-Equities-Inc--Declares-Cash-Dividend-of-0-72-per-Common-Share-for-4Q25-a-Decrease-of-0-60-or-45-Compared-to-3Q25/default.aspx
+2025-12-03 21:47:56 - WARNING - __main__ - Article content too short (41 chars)
+2025-12-03 21:47:56 - INFO - __main__ - Fetching content from: https://www.prnewswire.com/news-releases/alexandria-real-estate-equities-inc-declares-cash-dividend-of-0-72-per-common-share-for-4q25--a-decrease-of-0-60--or-45-compared-to-3q25--302630962.html
+2025-12-03 21:47:56 - INFO - __main__ - Successfully extracted article content (2118 chars)
+2025-12-03 21:47:56 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4528053-alexandria-real-estate-equities-trades-lower-as-2026-ffo-guidance-falls-short-of-consensus
+2025-12-03 21:47:56 - INFO - __main__ - Successfully extracted article content (309 chars)
+2025-12-03 21:47:56 - INFO - __main__ - Fetching content from: https://www.investing.com/news/company-news/alexandria-real-estate-slashes-quarterly-dividend-by-45-93CH-4388490
+2025-12-03 21:47:56 - WARNING - __main__ - Article content too short (41 chars)
+2025-12-03 21:47:56 - INFO - __main__ - Fetching content from: https://www.investopedia.com/top-stock-movers-now-american-eagle-outfitters-microchip-technology-netflix-and-more-aeo-mchp-nflx-11861199
+2025-12-03 21:47:56 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-03 21:47:56 - INFO - __main__ - Successfully extracted article content (1724 chars)
+2025-12-03 21:47:56 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-shares-poet-technologies-soaring-161337721.html
+2025-12-03 21:47:57 - INFO - __main__ - Successfully extracted article content (3307 chars)
+2025-12-03 21:47:57 - INFO - __main__ - Found total of 3 valid articles for ARE
+2025-12-03 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:48:04 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-12-03 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-03 21:48:10 - INFO - __main__ - Bottom performer analysis complete
+2025-12-03 21:48:10 - INFO - __main__ - Saving results to JSON...
+2025-12-03 21:48:10 - INFO - __main__ - Analysis complete and saved to market_analysis.json
