@@ -126,3 +126,56 @@
 2025-12-04 11:18:53,836 - sec_monitor - INFO - Generating final output...
 2025-12-04 11:18:53,837 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-04 11:18:53,837 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1926714, 'output_words': 0, 'filings_processed': 17}
+2025-12-04 12:48:20,979 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-04 12:48:20,979 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-04 12:48:20,980 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-04 12:48:20,980 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-04 12:48:20,980 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-04 12:48:20,980 - sec_monitor - INFO - Initializing components...
+2025-12-04 12:48:20,980 - sec_monitor - INFO - Initializing components
+2025-12-04 12:48:20,980 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-04 12:48:20,980 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-04 12:48:20,981 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-04 12:48:20,981 - sec_monitor - INFO - All components initialized successfully
+2025-12-04 12:48:20,982 - sec_monitor - INFO - Found JSON file from today
+2025-12-04 12:48:20,982 - sec_monitor - INFO - Found 17 previously processed accessions and 17 filing URLs
+2025-12-04 12:48:20,982 - sec_monitor - INFO - Found 17 accession numbers and 17 URLs from previously processed filings
+2025-12-04 12:48:20,982 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-04 12:48:56,686 - sec_monitor - INFO - Reached old filing, stopping. Found 268 total filings
+2025-12-04 12:48:56,687 - sec_monitor - INFO - Found 4 new interesting filings
+2025-12-04 12:48:56,687 - sec_monitor - INFO - Found 4 new filings to process
+2025-12-04 12:48:56,687 - sec_monitor - INFO - Processing filing 1/4: LKQ
+2025-12-04 12:48:57,095 - sec_monitor - ERROR - Error processing filing LKQ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 12:48:57,095 - sec_monitor - INFO - Processing filing 2/4: DG
+2025-12-04 12:49:06,376 - sec_monitor - ERROR - Error processing filing DG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 12:49:06,376 - sec_monitor - INFO - Processing filing 3/4: DG
+2025-12-04 12:49:06,996 - sec_monitor - ERROR - Error processing filing DG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 12:49:06,996 - sec_monitor - INFO - Processing filing 4/4: HAL
+2025-12-04 12:50:37,923 - sec_monitor - ERROR - Error processing filing HAL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-04 12:50:37,923 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-04 12:50:38,497 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-04 12:50:38,498 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-04 12:50:38,498 - sec_monitor - INFO - Market open: False
+2025-12-04 12:50:38,498 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-12-04 12:50:38,572 - sec_monitor - INFO - Last trading day: 2025-12-04
+2025-12-04 12:50:38,572 - sec_monitor - INFO - Processing ticker: LKQ
+2025-12-04 12:50:38,965 - sec_monitor - INFO - Number of bars for LKQ: 3
+2025-12-04 12:50:38,965 - sec_monitor - INFO - Last bar close for LKQ: 29.335
+2025-12-04 12:50:38,966 - sec_monitor - INFO - Outside market hours price for LKQ: 29.335
+2025-12-04 12:50:38,966 - sec_monitor - INFO - Processing ticker: DG
+2025-12-04 12:50:39,042 - sec_monitor - INFO - Number of bars for DG: 3
+2025-12-04 12:50:39,042 - sec_monitor - INFO - Last bar close for DG: 109.98
+2025-12-04 12:50:39,043 - sec_monitor - INFO - Outside market hours price for DG: 109.98
+2025-12-04 12:50:39,043 - sec_monitor - INFO - Processing ticker: DG
+2025-12-04 12:50:39,118 - sec_monitor - INFO - Number of bars for DG: 3
+2025-12-04 12:50:39,118 - sec_monitor - INFO - Last bar close for DG: 109.98
+2025-12-04 12:50:39,118 - sec_monitor - INFO - Outside market hours price for DG: 109.98
+2025-12-04 12:50:39,118 - sec_monitor - INFO - Processing ticker: HAL
+2025-12-04 12:50:39,193 - sec_monitor - INFO - Number of bars for HAL: 3
+2025-12-04 12:50:39,193 - sec_monitor - INFO - Last bar close for HAL: 27.42
+2025-12-04 12:50:39,193 - sec_monitor - INFO - Outside market hours price for HAL: 27.42
+2025-12-04 12:50:40,738 - sec_monitor - INFO - Generating final output...
+2025-12-04 12:50:40,739 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-12-04 12:50:40,739 - sec_monitor - INFO - Cumulative stats - Input words: 2452057, Output words: 0
+2025-12-04 12:50:40,739 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-04 12:50:40,739 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 525343, 'output_words': 0, 'filings_processed': 4}
