@@ -168,3 +168,50 @@
 2025-12-05 11:26:38,281 - sec_monitor - INFO - Generating final output...
 2025-12-05 11:26:38,282 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-05 11:26:38,282 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 2598762, 'output_words': 0, 'filings_processed': 24}
+2025-12-05 12:45:00,803 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-05 12:45:00,803 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-05 12:45:00,803 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-05 12:45:00,804 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-05 12:45:00,804 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-05 12:45:00,804 - sec_monitor - INFO - Initializing components...
+2025-12-05 12:45:00,804 - sec_monitor - INFO - Initializing components
+2025-12-05 12:45:00,804 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-05 12:45:00,804 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-05 12:45:00,805 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-05 12:45:00,805 - sec_monitor - INFO - All components initialized successfully
+2025-12-05 12:45:00,806 - sec_monitor - INFO - Found JSON file from today
+2025-12-05 12:45:00,806 - sec_monitor - INFO - Found 24 previously processed accessions and 24 filing URLs
+2025-12-05 12:45:00,806 - sec_monitor - INFO - Found 24 accession numbers and 24 URLs from previously processed filings
+2025-12-05 12:45:00,806 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-05 12:45:25,533 - sec_monitor - INFO - Reached old filing, stopping. Found 111 total filings
+2025-12-05 12:45:25,533 - sec_monitor - INFO - Found 3 new interesting filings
+2025-12-05 12:45:25,533 - sec_monitor - INFO - Found 3 new filings to process
+2025-12-05 12:45:25,533 - sec_monitor - INFO - Processing filing 1/3: NFLX
+2025-12-05 12:45:27,573 - sec_monitor - ERROR - Error processing filing NFLX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-05 12:45:27,573 - sec_monitor - INFO - Processing filing 2/3: CHTR
+2025-12-05 12:45:30,198 - sec_monitor - ERROR - Error processing filing CHTR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-05 12:45:30,198 - sec_monitor - INFO - Processing filing 3/3: LUV
+2025-12-05 12:45:31,346 - sec_monitor - ERROR - Error processing filing LUV: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-05 12:45:31,346 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-05 12:45:31,758 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-05 12:45:31,759 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-05 12:45:31,759 - sec_monitor - INFO - Market open: False
+2025-12-05 12:45:31,759 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-12-05 12:45:31,782 - sec_monitor - INFO - Last trading day: 2025-12-05
+2025-12-05 12:45:31,782 - sec_monitor - INFO - Processing ticker: NFLX
+2025-12-05 12:45:32,019 - sec_monitor - INFO - Number of bars for NFLX: 4
+2025-12-05 12:45:32,019 - sec_monitor - INFO - Last bar close for NFLX: 103.215
+2025-12-05 12:45:32,020 - sec_monitor - INFO - Outside market hours price for NFLX: 103.215
+2025-12-05 12:45:32,020 - sec_monitor - INFO - Processing ticker: CHTR
+2025-12-05 12:45:32,047 - sec_monitor - INFO - Number of bars for CHTR: 4
+2025-12-05 12:45:32,047 - sec_monitor - INFO - Last bar close for CHTR: 199.96
+2025-12-05 12:45:32,047 - sec_monitor - INFO - Outside market hours price for CHTR: 199.96
+2025-12-05 12:45:32,047 - sec_monitor - INFO - Processing ticker: LUV
+2025-12-05 12:45:32,081 - sec_monitor - INFO - Number of bars for LUV: 4
+2025-12-05 12:45:32,081 - sec_monitor - INFO - Last bar close for LUV: 35.82
+2025-12-05 12:45:32,081 - sec_monitor - INFO - Outside market hours price for LUV: 35.82
+2025-12-05 12:45:33,205 - sec_monitor - INFO - Generating final output...
+2025-12-05 12:45:33,206 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-12-05 12:45:33,206 - sec_monitor - INFO - Cumulative stats - Input words: 2740635, Output words: 0
+2025-12-05 12:45:33,206 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-05 12:45:33,207 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 141873, 'output_words': 0, 'filings_processed': 3}
