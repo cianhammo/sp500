@@ -291,3 +291,50 @@
 2025-12-09 18:24:35,257 - sec_monitor - INFO - Cumulative stats - Input words: 1134347, Output words: 0
 2025-12-09 18:24:35,257 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-09 18:24:35,257 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4060, 'output_words': 0, 'filings_processed': 1}
+2025-12-09 21:11:01,412 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-09 21:11:01,412 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-09 21:11:01,412 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-09 21:11:01,412 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-09 21:11:01,413 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-09 21:11:01,413 - sec_monitor - INFO - Initializing components...
+2025-12-09 21:11:01,413 - sec_monitor - INFO - Initializing components
+2025-12-09 21:11:01,413 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-09 21:11:01,413 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-09 21:11:01,413 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-09 21:11:01,413 - sec_monitor - INFO - All components initialized successfully
+2025-12-09 21:11:01,414 - sec_monitor - INFO - Found JSON file from today
+2025-12-09 21:11:01,415 - sec_monitor - INFO - Found 27 previously processed accessions and 27 filing URLs
+2025-12-09 21:11:01,415 - sec_monitor - INFO - Found 27 accession numbers and 27 URLs from previously processed filings
+2025-12-09 21:11:01,415 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-09 21:11:32,425 - sec_monitor - INFO - Reached old filing, stopping. Found 144 total filings
+2025-12-09 21:11:32,426 - sec_monitor - INFO - Found 3 new interesting filings
+2025-12-09 21:11:32,426 - sec_monitor - INFO - Found 3 new filings to process
+2025-12-09 21:11:32,426 - sec_monitor - INFO - Processing filing 1/3: DELL
+2025-12-09 21:12:05,853 - sec_monitor - ERROR - Error processing filing DELL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-09 21:12:05,854 - sec_monitor - INFO - Processing filing 2/3: ODFL
+2025-12-09 21:12:06,690 - sec_monitor - ERROR - Error processing filing ODFL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-09 21:12:06,690 - sec_monitor - INFO - Processing filing 3/3: ALLE
+2025-12-09 21:12:08,538 - sec_monitor - ERROR - Error processing filing ALLE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-09 21:12:08,538 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-09 21:12:08,891 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-09 21:12:08,891 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-09 21:12:08,891 - sec_monitor - INFO - Market open: False
+2025-12-09 21:12:08,891 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-12-09 21:12:08,900 - sec_monitor - INFO - Last trading day: 2025-12-09
+2025-12-09 21:12:08,900 - sec_monitor - INFO - Processing ticker: DELL
+2025-12-09 21:12:09,098 - sec_monitor - INFO - Number of bars for DELL: 3
+2025-12-09 21:12:09,098 - sec_monitor - INFO - Last bar close for DELL: 140.36
+2025-12-09 21:12:09,098 - sec_monitor - INFO - Outside market hours price for DELL: 140.36
+2025-12-09 21:12:09,098 - sec_monitor - INFO - Processing ticker: ODFL
+2025-12-09 21:12:09,118 - sec_monitor - INFO - Number of bars for ODFL: 3
+2025-12-09 21:12:09,118 - sec_monitor - INFO - Last bar close for ODFL: 151.61
+2025-12-09 21:12:09,118 - sec_monitor - INFO - Outside market hours price for ODFL: 151.61
+2025-12-09 21:12:09,118 - sec_monitor - INFO - Processing ticker: ALLE
+2025-12-09 21:12:09,130 - sec_monitor - INFO - Number of bars for ALLE: 3
+2025-12-09 21:12:09,130 - sec_monitor - INFO - Last bar close for ALLE: 158.86
+2025-12-09 21:12:09,130 - sec_monitor - INFO - Outside market hours price for ALLE: 158.86
+2025-12-09 21:12:10,158 - sec_monitor - INFO - Generating final output...
+2025-12-09 21:12:10,159 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-12-09 21:12:10,160 - sec_monitor - INFO - Cumulative stats - Input words: 1550539, Output words: 0
+2025-12-09 21:12:10,160 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-09 21:12:10,160 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 416192, 'output_words': 0, 'filings_processed': 3}
