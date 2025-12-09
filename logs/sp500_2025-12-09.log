@@ -1,0 +1,75 @@
+2025-12-09 21:47:37 - INFO - __main__ - Starting SP500 analysis script
+2025-12-09 21:47:38 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-09 21:47:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-09 21:47:38 - INFO - __main__ - Runtime timezone: UTC
+2025-12-09 21:47:38 - INFO - __main__ - Original start: 2025-12-08 16:00:00-05:00 (America/New_York)
+2025-12-09 21:47:38 - INFO - __main__ - Original end: 2025-12-09 16:00:00-05:00 (America/New_York)
+2025-12-09 21:47:38 - INFO - __main__ - UTC start: 2025-12-08 05:00:00+00:00
+2025-12-09 21:47:38 - INFO - __main__ - UTC end: 2025-12-10 05:00:00+00:00
+2025-12-09 21:47:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-09 21:47:39 - INFO - __main__ - Received data for 495 symbols
+2025-12-09 21:47:39 - INFO - __main__ - Sample data structure for CDW:
+2025-12-09 21:47:39 - INFO - __main__ - Number of bars: 2
+2025-12-09 21:47:39 - INFO - __main__ - Bar timestamp: 2025-12-08 05:00:00+00:00 (UTC)
+2025-12-09 21:47:39 - INFO - __main__ - Bar timestamp: 2025-12-09 05:00:00+00:00 (UTC)
+2025-12-09 21:47:39 - INFO - __main__ - CDW timestamps - Today: 2025-12-09 05:00:00+00:00, Yesterday: 2025-12-08 05:00:00+00:00
+2025-12-09 21:47:39 - INFO - __main__ - KDP timestamps - Today: 2025-12-09 05:00:00+00:00, Yesterday: 2025-12-08 05:00:00+00:00
+2025-12-09 21:47:39 - INFO - __main__ - MOH timestamps - Today: 2025-12-09 05:00:00+00:00, Yesterday: 2025-12-08 05:00:00+00:00
+2025-12-09 21:47:39 - INFO - __main__ - VICI timestamps - Today: 2025-12-09 05:00:00+00:00, Yesterday: 2025-12-08 05:00:00+00:00
+2025-12-09 21:47:39 - INFO - __main__ - V timestamps - Today: 2025-12-09 05:00:00+00:00, Yesterday: 2025-12-08 05:00:00+00:00
+2025-12-09 21:47:39 - INFO - __main__ - Successfully processed 495 stocks
+2025-12-09 21:47:39 - INFO - __main__ - Data issues encountered: 0
+2025-12-09 21:47:39 - INFO - __main__ - Final dataframe contains 495 stocks
+2025-12-09 21:47:39 - INFO - __main__ - Analysis for market close on December 09, 2025
+2025-12-09 21:47:39 - INFO - __main__ - Found 495 stocks with price data
+2025-12-09 21:47:40 - INFO - __main__ - Found Wikipedia URL for TFX: https://en.wikipedia.org/wiki/Teleflex
+2025-12-09 21:47:42 - INFO - __main__ - Found Wikipedia URL for AZO: https://en.wikipedia.org/wiki/AutoZone
+2025-12-09 21:47:44 - INFO - __main__ - Analyzing top performer...
+2025-12-09 21:47:44 - INFO - __main__ - Analyzing Teleflex (TFX)
+2025-12-09 21:47:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-09 21:47:44 - INFO - __main__ - Searching for articles about TFX
+2025-12-09 21:47:44 - INFO - __main__ - Searching for news about Teleflex
+2025-12-09 21:47:48 - INFO - __main__ - Found 6 recent search results for Teleflex
+2025-12-09 21:47:48 - INFO - __main__ - Found 6 URLs to try for TFX
+2025-12-09 21:47:48 - INFO - __main__ - Fetching content from: https://investors.teleflex.com/news/news-details/2025/Teleflex-Announces-Sale-of-Acute-Care-Interventional-Urology-and-OEM-Businesses-for-2-03-Billion/default.aspx
+2025-12-09 21:47:48 - WARNING - __main__ - Article content too short (41 chars)
+2025-12-09 21:47:48 - INFO - __main__ - Fetching content from: https://montagu.com/montagu-and-kohlberg-to-acquire-teleflex-medical-oem-in-a-carve-out-transaction/
+2025-12-09 21:47:49 - INFO - __main__ - Successfully extracted article content (7711 chars)
+2025-12-09 21:47:49 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/teleflex-announces-sale-acute-care-140400673.html
+2025-12-09 21:47:50 - INFO - __main__ - Successfully extracted article content (7246 chars)
+2025-12-09 21:47:50 - INFO - __main__ - Found total of 2 valid articles for TFX
+2025-12-09 21:47:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:47:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:47:54 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-12-09 21:48:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:48:00 - INFO - __main__ - Top performer analysis complete
+2025-12-09 21:48:00 - INFO - __main__ - Analyzing bottom performer...
+2025-12-09 21:48:00 - INFO - __main__ - Analyzing AutoZone (AZO)
+2025-12-09 21:48:00 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-09 21:48:00 - INFO - __main__ - Searching for articles about AZO
+2025-12-09 21:48:00 - INFO - __main__ - Searching for news about AutoZone
+2025-12-09 21:48:04 - INFO - __main__ - Found 6 recent search results for AutoZone
+2025-12-09 21:48:04 - INFO - __main__ - Found 6 URLs to try for AZO
+2025-12-09 21:48:04 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/earnings/autozone-profit-falls-as-higher-costs-continue-from-tariffs-916eb1c4?gaa_at=eafs&gaa_n=AWEtsqcCX4Cc8zf0f3prdLkT2VamxgmECzKwgACXDV4VF9C9Dpt51HyPcpgy&gaa_ts=69389c97&gaa_sig=7R5F6PMttYVSjVOs-2ErV6R3fc1qCjVA_mDG6GkxZyVIXA3EdjNzBmXc5aUx26eTcREyznL5PpJlBLG4LhsIMw%3D%3D
+2025-12-09 21:48:04 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-09 21:48:04 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-fed-meeting-nvidia-nvda-trump/
+2025-12-09 21:48:05 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-09 21:48:05 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2025/12/09/why-advance-auto-parts-stock-slumped-today/
+2025-12-09 21:48:05 - INFO - __main__ - Successfully extracted article content (159 chars)
+2025-12-09 21:48:05 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/09/stocks-making-the-biggest-moves-midday-xom-staa-cvs-azo-ares.html
+2025-12-09 21:48:06 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-09 21:48:06 - INFO - __main__ - Successfully extracted article content (4222 chars)
+2025-12-09 21:48:06 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-12092025-11864887
+2025-12-09 21:48:06 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-09 21:48:06 - INFO - __main__ - Successfully extracted article content (19530 chars)
+2025-12-09 21:48:06 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/earnings-live-autozone-toll-brothers-stocks-fall-campbells-sales-decline-133646635.html
+2025-12-09 21:48:07 - INFO - __main__ - Successfully extracted article content (1465 chars)
+2025-12-09 21:48:07 - INFO - __main__ - Found total of 3 valid articles for AZO
+2025-12-09 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:48:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:48:16 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-12-09 21:48:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-09 21:48:21 - INFO - __main__ - Bottom performer analysis complete
+2025-12-09 21:48:21 - INFO - __main__ - Saving results to JSON...
+2025-12-09 21:48:21 - INFO - __main__ - Analysis complete and saved to market_analysis.json
