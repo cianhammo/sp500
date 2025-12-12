@@ -1,0 +1,68 @@
+2025-12-12 21:47:44 - INFO - __main__ - Starting SP500 analysis script
+2025-12-12 21:47:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-12 21:47:45 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-12 21:47:45 - INFO - __main__ - Runtime timezone: UTC
+2025-12-12 21:47:45 - INFO - __main__ - Original start: 2025-12-11 16:00:00-05:00 (America/New_York)
+2025-12-12 21:47:45 - INFO - __main__ - Original end: 2025-12-12 16:00:00-05:00 (America/New_York)
+2025-12-12 21:47:45 - INFO - __main__ - UTC start: 2025-12-11 05:00:00+00:00
+2025-12-12 21:47:45 - INFO - __main__ - UTC end: 2025-12-13 05:00:00+00:00
+2025-12-12 21:47:45 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-12 21:47:46 - INFO - __main__ - Received data for 494 symbols
+2025-12-12 21:47:46 - INFO - __main__ - Sample data structure for AMAT:
+2025-12-12 21:47:46 - INFO - __main__ - Number of bars: 2
+2025-12-12 21:47:46 - INFO - __main__ - Bar timestamp: 2025-12-11 05:00:00+00:00 (UTC)
+2025-12-12 21:47:46 - INFO - __main__ - Bar timestamp: 2025-12-12 05:00:00+00:00 (UTC)
+2025-12-12 21:47:46 - INFO - __main__ - AMAT timestamps - Today: 2025-12-12 05:00:00+00:00, Yesterday: 2025-12-11 05:00:00+00:00
+2025-12-12 21:47:46 - INFO - __main__ - BK timestamps - Today: 2025-12-12 05:00:00+00:00, Yesterday: 2025-12-11 05:00:00+00:00
+2025-12-12 21:47:46 - INFO - __main__ - CMS timestamps - Today: 2025-12-12 05:00:00+00:00, Yesterday: 2025-12-11 05:00:00+00:00
+2025-12-12 21:47:46 - INFO - __main__ - DD timestamps - Today: 2025-12-12 05:00:00+00:00, Yesterday: 2025-12-11 05:00:00+00:00
+2025-12-12 21:47:46 - INFO - __main__ - CI timestamps - Today: 2025-12-12 05:00:00+00:00, Yesterday: 2025-12-11 05:00:00+00:00
+2025-12-12 21:47:46 - INFO - __main__ - Successfully processed 494 stocks
+2025-12-12 21:47:46 - INFO - __main__ - Data issues encountered: 0
+2025-12-12 21:47:46 - INFO - __main__ - Final dataframe contains 494 stocks
+2025-12-12 21:47:46 - INFO - __main__ - Analysis for market close on December 12, 2025
+2025-12-12 21:47:46 - INFO - __main__ - Found 494 stocks with price data
+2025-12-12 21:47:47 - INFO - __main__ - Found Wikipedia URL for LULU: https://en.wikipedia.org/wiki/Lululemon
+2025-12-12 21:47:49 - INFO - __main__ - Found Wikipedia URL for AVGO: https://en.wikipedia.org/wiki/Broadcom
+2025-12-12 21:47:51 - INFO - __main__ - Analyzing top performer...
+2025-12-12 21:47:51 - INFO - __main__ - Analyzing Lululemon Athletica (LULU)
+2025-12-12 21:47:51 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-12 21:47:51 - INFO - __main__ - Searching for articles about LULU
+2025-12-12 21:47:51 - INFO - __main__ - Searching for news about Lululemon Athletica
+2025-12-12 21:47:53 - INFO - __main__ - Found 6 recent search results for Lululemon Athletica
+2025-12-12 21:47:53 - INFO - __main__ - Found 6 URLs to try for LULU
+2025-12-12 21:47:53 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4852963-lululemon-stock-time-to-buy-hand-over-fist
+2025-12-12 21:47:54 - INFO - __main__ - Successfully extracted article content (2187 chars)
+2025-12-12 21:47:54 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/jefferies-upgrades-lululemon-stock-lulu-after-q3-beat-analysts-raise-price-targets
+2025-12-12 21:47:54 - WARNING - __main__ - Article content too short (41 chars)
+2025-12-12 21:47:54 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4852895-lululemon-leadership-shake-up-stock-wake-up-lulu-might-be-bottoming
+2025-12-12 21:47:54 - INFO - __main__ - Successfully extracted article content (2229 chars)
+2025-12-12 21:47:54 - INFO - __main__ - Found total of 2 valid articles for LULU
+2025-12-12 21:47:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-12 21:47:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-12 21:47:59 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2025-12-12 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-12 21:48:04 - INFO - __main__ - Top performer analysis complete
+2025-12-12 21:48:04 - INFO - __main__ - Analyzing bottom performer...
+2025-12-12 21:48:04 - INFO - __main__ - Analyzing Broadcom (AVGO)
+2025-12-12 21:48:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-12 21:48:04 - INFO - __main__ - Searching for articles about AVGO
+2025-12-12 21:48:04 - INFO - __main__ - Searching for news about Broadcom
+2025-12-12 21:48:05 - INFO - __main__ - Found 6 recent search results for Broadcom
+2025-12-12 21:48:05 - INFO - __main__ - Found 6 URLs to try for AVGO
+2025-12-12 21:48:05 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/12/broadcom-tumbles-10percent-after-earnings-as-ai-trade-sells-off-.html
+2025-12-12 21:48:06 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-12 21:48:06 - INFO - __main__ - Successfully extracted article content (3755 chars)
+2025-12-12 21:48:06 - INFO - __main__ - Fetching content from: https://www.investopedia.com/broadcom-s-ai-business-is-growing-fast-here-s-why-the-stock-is-tanking-anyway-avgo-11867992
+2025-12-12 21:48:06 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-12 21:48:06 - INFO - __main__ - Successfully extracted article content (3227 chars)
+2025-12-12 21:48:06 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/broadcom-stock-falls-after-fiscal-q4-report/
+2025-12-12 21:48:06 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-12 21:48:06 - INFO - __main__ - Found total of 2 valid articles for AVGO
+2025-12-12 21:48:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-12 21:48:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-12 21:48:11 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-12-12 21:48:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-12 21:48:17 - INFO - __main__ - Bottom performer analysis complete
+2025-12-12 21:48:17 - INFO - __main__ - Saving results to JSON...
+2025-12-12 21:48:17 - INFO - __main__ - Analysis complete and saved to market_analysis.json
