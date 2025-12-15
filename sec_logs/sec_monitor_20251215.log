@@ -100,3 +100,50 @@
 2025-12-15 13:43:22,312 - sec_monitor - INFO - Cumulative stats - Input words: 15847, Output words: 0
 2025-12-15 13:43:22,312 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-15 13:43:22,312 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4772, 'output_words': 0, 'filings_processed': 1}
+2025-12-15 15:25:26,851 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-15 15:25:26,851 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-15 15:25:26,851 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-15 15:25:26,851 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-15 15:25:26,851 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-15 15:25:26,852 - sec_monitor - INFO - Initializing components...
+2025-12-15 15:25:26,852 - sec_monitor - INFO - Initializing components
+2025-12-15 15:25:26,852 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-15 15:25:26,852 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-15 15:25:26,852 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-15 15:25:26,852 - sec_monitor - INFO - All components initialized successfully
+2025-12-15 15:25:26,853 - sec_monitor - INFO - Found JSON file from today
+2025-12-15 15:25:26,853 - sec_monitor - INFO - Found 3 previously processed accessions and 3 filing URLs
+2025-12-15 15:25:26,854 - sec_monitor - INFO - Found 3 accession numbers and 3 URLs from previously processed filings
+2025-12-15 15:25:26,854 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-15 15:26:22,635 - sec_monitor - INFO - Reached old filing, stopping. Found 20 total filings
+2025-12-15 15:26:22,636 - sec_monitor - INFO - Found 3 new interesting filings
+2025-12-15 15:26:22,636 - sec_monitor - INFO - Found 3 new filings to process
+2025-12-15 15:26:22,636 - sec_monitor - INFO - Processing filing 1/3: PG
+2025-12-15 15:26:23,805 - sec_monitor - ERROR - Error processing filing PG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-15 15:26:23,806 - sec_monitor - INFO - Processing filing 2/3: NWS
+2025-12-15 15:26:24,890 - sec_monitor - ERROR - Error processing filing NWS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-15 15:26:24,891 - sec_monitor - INFO - Processing filing 3/3: ZBRA
+2025-12-15 15:26:25,563 - sec_monitor - ERROR - Error processing filing ZBRA: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-15 15:26:25,563 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-15 15:26:26,044 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-15 15:26:26,045 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-15 15:26:26,045 - sec_monitor - INFO - Market open: True
+2025-12-15 15:26:26,045 - sec_monitor - INFO - Number of filing times mapped: 3
+2025-12-15 15:26:26,112 - sec_monitor - INFO - Last trading day: 2025-12-15
+2025-12-15 15:26:26,112 - sec_monitor - INFO - Processing ticker: PG
+2025-12-15 15:26:26,338 - sec_monitor - INFO - Number of bars for PG: 3
+2025-12-15 15:26:26,339 - sec_monitor - INFO - Last bar close for PG: 142.81
+2025-12-15 15:26:26,339 - sec_monitor - INFO - Market open price for PG: 142.81, change: 1.4780075321537787%
+2025-12-15 15:26:26,339 - sec_monitor - INFO - Processing ticker: NWS
+2025-12-15 15:26:26,411 - sec_monitor - INFO - Number of bars for NWS: 3
+2025-12-15 15:26:26,412 - sec_monitor - INFO - Last bar close for NWS: 29.655
+2025-12-15 15:26:26,412 - sec_monitor - INFO - Market open price for NWS: 29.655, change: 0.35532994923858013%
+2025-12-15 15:26:26,412 - sec_monitor - INFO - Processing ticker: ZBRA
+2025-12-15 15:26:26,482 - sec_monitor - INFO - Number of bars for ZBRA: 3
+2025-12-15 15:26:26,483 - sec_monitor - INFO - Last bar close for ZBRA: 268.42
+2025-12-15 15:26:26,483 - sec_monitor - INFO - Market open price for ZBRA: 268.42, change: -1.8645802866335062%
+2025-12-15 15:26:27,813 - sec_monitor - INFO - Generating final output...
+2025-12-15 15:26:27,813 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2025-12-15 15:26:27,814 - sec_monitor - INFO - Cumulative stats - Input words: 33630, Output words: 0
+2025-12-15 15:26:27,814 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-15 15:26:27,814 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 17783, 'output_words': 0, 'filings_processed': 3}
