@@ -190,3 +190,44 @@
 2025-12-17 15:25:27,161 - sec_monitor - INFO - Cumulative stats - Input words: 104426, Output words: 0
 2025-12-17 15:25:27,162 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-17 15:25:27,162 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4606, 'output_words': 0, 'filings_processed': 1}
+2025-12-17 18:28:30,891 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-17 18:28:30,891 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-17 18:28:30,891 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-17 18:28:30,892 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-17 18:28:30,892 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-17 18:28:30,892 - sec_monitor - INFO - Initializing components...
+2025-12-17 18:28:30,892 - sec_monitor - INFO - Initializing components
+2025-12-17 18:28:30,892 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-17 18:28:30,892 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-17 18:28:30,892 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-17 18:28:30,893 - sec_monitor - INFO - All components initialized successfully
+2025-12-17 18:28:30,893 - sec_monitor - INFO - Found JSON file from today
+2025-12-17 18:28:30,894 - sec_monitor - INFO - Found 14 previously processed accessions and 14 filing URLs
+2025-12-17 18:28:30,894 - sec_monitor - INFO - Found 14 accession numbers and 14 URLs from previously processed filings
+2025-12-17 18:28:30,894 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-17 18:29:01,742 - sec_monitor - INFO - Reached old filing, stopping. Found 189 total filings
+2025-12-17 18:29:01,743 - sec_monitor - INFO - Found 2 new interesting filings
+2025-12-17 18:29:01,743 - sec_monitor - INFO - Found 2 new filings to process
+2025-12-17 18:29:01,743 - sec_monitor - INFO - Processing filing 1/2: PGR
+2025-12-17 18:29:02,822 - sec_monitor - ERROR - Error processing filing PGR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 18:29:02,823 - sec_monitor - INFO - Processing filing 2/2: STLD
+2025-12-17 18:29:03,219 - sec_monitor - ERROR - Error processing filing STLD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 18:29:03,219 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-17 18:29:03,873 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-17 18:29:03,873 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-17 18:29:03,873 - sec_monitor - INFO - Market open: True
+2025-12-17 18:29:03,873 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-12-17 18:29:03,947 - sec_monitor - INFO - Last trading day: 2025-12-17
+2025-12-17 18:29:03,947 - sec_monitor - INFO - Processing ticker: PGR
+2025-12-17 18:29:04,399 - sec_monitor - INFO - Number of bars for PGR: 3
+2025-12-17 18:29:04,399 - sec_monitor - INFO - Last bar close for PGR: 231.81
+2025-12-17 18:29:04,399 - sec_monitor - INFO - Market open price for PGR: 231.81, change: -1.9084292484766379%
+2025-12-17 18:29:04,399 - sec_monitor - INFO - Processing ticker: STLD
+2025-12-17 18:29:04,499 - sec_monitor - INFO - Number of bars for STLD: 3
+2025-12-17 18:29:04,499 - sec_monitor - INFO - Last bar close for STLD: 169.13
+2025-12-17 18:29:04,499 - sec_monitor - INFO - Market open price for STLD: 169.13, change: 0.13617525162817629%
+2025-12-17 18:29:05,396 - sec_monitor - INFO - Generating final output...
+2025-12-17 18:29:05,397 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-12-17 18:29:05,397 - sec_monitor - INFO - Cumulative stats - Input words: 118793, Output words: 0
+2025-12-17 18:29:05,397 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-17 18:29:05,397 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 14367, 'output_words': 0, 'filings_processed': 2}
