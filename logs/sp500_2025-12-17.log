@@ -1,0 +1,66 @@
+2025-12-17 21:48:57 - INFO - __main__ - Starting SP500 analysis script
+2025-12-17 21:48:57 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-17 21:48:58 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-17 21:48:58 - INFO - __main__ - Runtime timezone: UTC
+2025-12-17 21:48:58 - INFO - __main__ - Original start: 2025-12-16 16:00:00-05:00 (America/New_York)
+2025-12-17 21:48:58 - INFO - __main__ - Original end: 2025-12-17 16:00:00-05:00 (America/New_York)
+2025-12-17 21:48:58 - INFO - __main__ - UTC start: 2025-12-16 05:00:00+00:00
+2025-12-17 21:48:58 - INFO - __main__ - UTC end: 2025-12-18 05:00:00+00:00
+2025-12-17 21:48:58 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-17 21:48:59 - INFO - __main__ - Received data for 494 symbols
+2025-12-17 21:48:59 - INFO - __main__ - Sample data structure for AMCR:
+2025-12-17 21:48:59 - INFO - __main__ - Number of bars: 2
+2025-12-17 21:48:59 - INFO - __main__ - Bar timestamp: 2025-12-16 05:00:00+00:00 (UTC)
+2025-12-17 21:48:59 - INFO - __main__ - Bar timestamp: 2025-12-17 05:00:00+00:00 (UTC)
+2025-12-17 21:48:59 - INFO - __main__ - AMCR timestamps - Today: 2025-12-17 05:00:00+00:00, Yesterday: 2025-12-16 05:00:00+00:00
+2025-12-17 21:48:59 - INFO - __main__ - BK timestamps - Today: 2025-12-17 05:00:00+00:00, Yesterday: 2025-12-16 05:00:00+00:00
+2025-12-17 21:48:59 - INFO - __main__ - CI timestamps - Today: 2025-12-17 05:00:00+00:00, Yesterday: 2025-12-16 05:00:00+00:00
+2025-12-17 21:48:59 - INFO - __main__ - FMC timestamps - Today: 2025-12-17 05:00:00+00:00, Yesterday: 2025-12-16 05:00:00+00:00
+2025-12-17 21:48:59 - INFO - __main__ - PPL timestamps - Today: 2025-12-17 05:00:00+00:00, Yesterday: 2025-12-16 05:00:00+00:00
+2025-12-17 21:48:59 - INFO - __main__ - Successfully processed 494 stocks
+2025-12-17 21:48:59 - INFO - __main__ - Data issues encountered: 0
+2025-12-17 21:48:59 - INFO - __main__ - Final dataframe contains 494 stocks
+2025-12-17 21:48:59 - INFO - __main__ - Analysis for market close on December 17, 2025
+2025-12-17 21:48:59 - INFO - __main__ - Found 494 stocks with price data
+2025-12-17 21:48:59 - INFO - __main__ - Found Wikipedia URL for TPL: https://en.wikipedia.org/wiki/Texas_Pacific_Land_Corporation
+2025-12-17 21:49:01 - INFO - __main__ - Found Wikipedia URL for GEV: https://en.wikipedia.org/wiki/GE_Vernova
+2025-12-17 21:49:03 - INFO - __main__ - Analyzing top performer...
+2025-12-17 21:49:03 - INFO - __main__ - Analyzing Texas Pacific Land Corporation (TPL)
+2025-12-17 21:49:03 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-17 21:49:04 - INFO - __main__ - Searching for articles about TPL
+2025-12-17 21:49:04 - INFO - __main__ - Searching for news about Texas Pacific Land Corporation
+2025-12-17 21:49:07 - INFO - __main__ - Found 6 recent search results for Texas Pacific Land Corporation
+2025-12-17 21:49:07 - INFO - __main__ - Found 6 URLs to try for TPL
+2025-12-17 21:49:07 - INFO - __main__ - Fetching content from: https://www.texaspacific.com/investors/news-events/press-releases/detail/176/bolt-and-tpl-announce-strategic-agreement-to-pursue-data
+2025-12-17 21:49:07 - INFO - __main__ - Successfully extracted article content (5422 chars)
+2025-12-17 21:49:07 - INFO - __main__ - Fetching content from: https://www.thestreet.com/latest-news/stock-market-today-russell-2000-reverses-yesterdays-losses-sp-500-looks-to-snap-three-day-skid
+2025-12-17 21:49:07 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-17 21:49:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jim-cramer-nvidia-nvda-m-174456973.html
+2025-12-17 21:49:08 - INFO - __main__ - Successfully extracted article content (1467 chars)
+2025-12-17 21:49:08 - INFO - __main__ - Found total of 2 valid articles for TPL
+2025-12-17 21:49:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 21:49:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 21:49:13 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-12-17 21:49:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 21:49:17 - INFO - __main__ - Top performer analysis complete
+2025-12-17 21:49:17 - INFO - __main__ - Analyzing bottom performer...
+2025-12-17 21:49:17 - INFO - __main__ - Analyzing GE Vernova (GEV)
+2025-12-17 21:49:17 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-17 21:49:17 - INFO - __main__ - Searching for articles about GEV
+2025-12-17 21:49:17 - INFO - __main__ - Searching for news about GE Vernova
+2025-12-17 21:49:21 - INFO - __main__ - Found 6 recent search results for GE Vernova
+2025-12-17 21:49:21 - INFO - __main__ - Found 6 URLs to try for GEV
+2025-12-17 21:49:21 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/ge-vernova-stock-drops-around-201924368.html
+2025-12-17 21:49:22 - INFO - __main__ - Successfully extracted article content (4101 chars)
+2025-12-17 21:49:22 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/ge-vernova-price-target-raised-123510536.html
+2025-12-17 21:49:23 - INFO - __main__ - Successfully extracted article content (703 chars)
+2025-12-17 21:49:23 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/stock-ideas/massive-breakout-in-industrials-3-must-watch-stocks-now/
+2025-12-17 21:49:23 - WARNING - __main__ - Article content too short (41 chars)
+2025-12-17 21:49:23 - INFO - __main__ - Found total of 2 valid articles for GEV
+2025-12-17 21:49:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 21:49:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 21:49:27 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-12-17 21:49:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-17 21:49:32 - INFO - __main__ - Bottom performer analysis complete
+2025-12-17 21:49:32 - INFO - __main__ - Saving results to JSON...
+2025-12-17 21:49:32 - INFO - __main__ - Analysis complete and saved to market_analysis.json
