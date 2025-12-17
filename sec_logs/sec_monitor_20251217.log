@@ -231,3 +231,62 @@
 2025-12-17 18:29:05,397 - sec_monitor - INFO - Cumulative stats - Input words: 118793, Output words: 0
 2025-12-17 18:29:05,397 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-17 18:29:05,397 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 14367, 'output_words': 0, 'filings_processed': 2}
+2025-12-17 21:13:01,147 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-17 21:13:01,148 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-17 21:13:01,148 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-17 21:13:01,148 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-17 21:13:01,148 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-17 21:13:01,148 - sec_monitor - INFO - Initializing components...
+2025-12-17 21:13:01,148 - sec_monitor - INFO - Initializing components
+2025-12-17 21:13:01,149 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-17 21:13:01,149 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-17 21:13:01,149 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-17 21:13:01,149 - sec_monitor - INFO - All components initialized successfully
+2025-12-17 21:13:01,150 - sec_monitor - INFO - Found JSON file from today
+2025-12-17 21:13:01,150 - sec_monitor - INFO - Found 16 previously processed accessions and 16 filing URLs
+2025-12-17 21:13:01,150 - sec_monitor - INFO - Found 16 accession numbers and 16 URLs from previously processed filings
+2025-12-17 21:13:01,150 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-17 21:13:35,619 - sec_monitor - INFO - Reached old filing, stopping. Found 185 total filings
+2025-12-17 21:13:35,620 - sec_monitor - INFO - Found 5 new interesting filings
+2025-12-17 21:13:35,620 - sec_monitor - INFO - Found 5 new filings to process
+2025-12-17 21:13:35,620 - sec_monitor - INFO - Processing filing 1/5: CE
+2025-12-17 21:13:37,071 - sec_monitor - ERROR - Error processing filing CE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 21:13:37,071 - sec_monitor - INFO - Processing filing 2/5: KEYS
+2025-12-17 21:14:30,957 - sec_monitor - ERROR - Error processing filing KEYS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 21:14:30,957 - sec_monitor - INFO - Processing filing 3/5: MU
+2025-12-17 21:14:31,663 - sec_monitor - ERROR - Error processing filing MU: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 21:14:31,663 - sec_monitor - INFO - Processing filing 4/5: PODD
+2025-12-17 21:14:32,088 - sec_monitor - ERROR - Error processing filing PODD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 21:14:32,088 - sec_monitor - INFO - Processing filing 5/5: GIS
+2025-12-17 21:15:26,835 - sec_monitor - ERROR - Error processing filing GIS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-17 21:15:26,835 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-17 21:15:26,943 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-17 21:15:26,943 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-17 21:15:26,943 - sec_monitor - INFO - Market open: False
+2025-12-17 21:15:26,943 - sec_monitor - INFO - Number of filing times mapped: 5
+2025-12-17 21:15:26,977 - sec_monitor - INFO - Last trading day: 2025-12-17
+2025-12-17 21:15:26,977 - sec_monitor - INFO - Processing ticker: CE
+2025-12-17 21:15:27,088 - sec_monitor - INFO - Number of bars for CE: 3
+2025-12-17 21:15:27,088 - sec_monitor - INFO - Last bar close for CE: 40.93
+2025-12-17 21:15:27,088 - sec_monitor - INFO - Outside market hours price for CE: 40.93
+2025-12-17 21:15:27,088 - sec_monitor - INFO - Processing ticker: KEYS
+2025-12-17 21:15:27,135 - sec_monitor - INFO - Number of bars for KEYS: 3
+2025-12-17 21:15:27,135 - sec_monitor - INFO - Last bar close for KEYS: 204.81
+2025-12-17 21:15:27,135 - sec_monitor - INFO - Outside market hours price for KEYS: 204.81
+2025-12-17 21:15:27,135 - sec_monitor - INFO - Processing ticker: MU
+2025-12-17 21:15:27,179 - sec_monitor - INFO - Number of bars for MU: 3
+2025-12-17 21:15:27,179 - sec_monitor - INFO - Last bar close for MU: 232.33
+2025-12-17 21:15:27,179 - sec_monitor - INFO - Outside market hours price for MU: 232.33
+2025-12-17 21:15:27,179 - sec_monitor - INFO - Processing ticker: PODD
+2025-12-17 21:15:27,222 - sec_monitor - INFO - Number of bars for PODD: 3
+2025-12-17 21:15:27,223 - sec_monitor - INFO - Last bar close for PODD: 288.78
+2025-12-17 21:15:27,223 - sec_monitor - INFO - Outside market hours price for PODD: 288.78
+2025-12-17 21:15:27,223 - sec_monitor - INFO - Processing ticker: GIS
+2025-12-17 21:15:27,269 - sec_monitor - INFO - Number of bars for GIS: 3
+2025-12-17 21:15:27,269 - sec_monitor - INFO - Last bar close for GIS: 47.01
+2025-12-17 21:15:27,269 - sec_monitor - INFO - Same-day filing price for GIS: 47.01, change: -0.09563277016257933%
+2025-12-17 21:15:28,703 - sec_monitor - INFO - Generating final output...
+2025-12-17 21:15:28,705 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2025-12-17 21:15:28,705 - sec_monitor - INFO - Cumulative stats - Input words: 961761, Output words: 0
+2025-12-17 21:15:28,705 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-17 21:15:28,705 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 842968, 'output_words': 0, 'filings_processed': 5}
