@@ -215,3 +215,44 @@
 2025-12-18 12:47:46,430 - sec_monitor - INFO - Cumulative stats - Input words: 2044975, Output words: 0
 2025-12-18 12:47:46,430 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-18 12:47:46,431 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 208579, 'output_words': 0, 'filings_processed': 7}
+2025-12-18 13:38:40,904 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-18 13:38:40,904 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-18 13:38:40,904 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-18 13:38:40,905 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-18 13:38:40,905 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-18 13:38:40,905 - sec_monitor - INFO - Initializing components...
+2025-12-18 13:38:40,905 - sec_monitor - INFO - Initializing components
+2025-12-18 13:38:40,905 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-18 13:38:40,905 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-18 13:38:40,906 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-18 13:38:40,906 - sec_monitor - INFO - All components initialized successfully
+2025-12-18 13:38:40,907 - sec_monitor - INFO - Found JSON file from today
+2025-12-18 13:38:40,907 - sec_monitor - INFO - Found 27 previously processed accessions and 27 filing URLs
+2025-12-18 13:38:40,907 - sec_monitor - INFO - Found 27 accession numbers and 27 URLs from previously processed filings
+2025-12-18 13:38:40,907 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-18 13:41:13,089 - sec_monitor - INFO - Reached old filing, stopping. Found 217 total filings
+2025-12-18 13:41:13,090 - sec_monitor - INFO - Found 2 new interesting filings
+2025-12-18 13:41:13,090 - sec_monitor - INFO - Found 2 new filings to process
+2025-12-18 13:41:13,090 - sec_monitor - INFO - Processing filing 1/2: CTAS
+2025-12-18 13:41:24,927 - sec_monitor - ERROR - Error processing filing CTAS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-18 13:41:24,927 - sec_monitor - INFO - Processing filing 2/2: DE
+2025-12-18 13:43:38,709 - sec_monitor - ERROR - Error processing filing DE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-18 13:43:38,709 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-18 13:43:38,926 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-18 13:43:38,926 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-18 13:43:38,926 - sec_monitor - INFO - Market open: False
+2025-12-18 13:43:38,927 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-12-18 13:43:38,997 - sec_monitor - INFO - Last trading day: 2025-12-18
+2025-12-18 13:43:38,997 - sec_monitor - INFO - Processing ticker: CTAS
+2025-12-18 13:43:39,536 - sec_monitor - INFO - Number of bars for CTAS: 3
+2025-12-18 13:43:39,536 - sec_monitor - INFO - Last bar close for CTAS: 187.39
+2025-12-18 13:43:39,536 - sec_monitor - INFO - Outside market hours price for CTAS: 187.39
+2025-12-18 13:43:39,536 - sec_monitor - INFO - Processing ticker: DE
+2025-12-18 13:43:39,610 - sec_monitor - INFO - Number of bars for DE: 3
+2025-12-18 13:43:39,610 - sec_monitor - INFO - Last bar close for DE: 481.05
+2025-12-18 13:43:39,611 - sec_monitor - INFO - Outside market hours price for DE: 481.05
+2025-12-18 13:43:40,141 - sec_monitor - INFO - Generating final output...
+2025-12-18 13:43:40,143 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-12-18 13:43:40,143 - sec_monitor - INFO - Cumulative stats - Input words: 2923530, Output words: 0
+2025-12-18 13:43:40,143 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-18 13:43:40,143 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 878555, 'output_words': 0, 'filings_processed': 2}
