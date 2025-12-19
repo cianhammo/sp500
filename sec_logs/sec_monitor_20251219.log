@@ -320,3 +320,44 @@
 2025-12-19 18:29:25,939 - sec_monitor - INFO - Cumulative stats - Input words: 4868506, Output words: 0
 2025-12-19 18:29:25,939 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-19 18:29:25,939 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 240374, 'output_words': 0, 'filings_processed': 1}
+2025-12-19 21:12:40,240 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-19 21:12:40,240 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-19 21:12:40,240 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-19 21:12:40,241 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-19 21:12:40,241 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-19 21:12:40,241 - sec_monitor - INFO - Initializing components...
+2025-12-19 21:12:40,241 - sec_monitor - INFO - Initializing components
+2025-12-19 21:12:40,241 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-19 21:12:40,241 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-19 21:12:40,241 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-19 21:12:40,241 - sec_monitor - INFO - All components initialized successfully
+2025-12-19 21:12:40,242 - sec_monitor - INFO - Found JSON file from today
+2025-12-19 21:12:40,243 - sec_monitor - INFO - Found 30 previously processed accessions and 30 filing URLs
+2025-12-19 21:12:40,243 - sec_monitor - INFO - Found 30 accession numbers and 30 URLs from previously processed filings
+2025-12-19 21:12:40,243 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-19 21:13:12,801 - sec_monitor - INFO - Reached old filing, stopping. Found 188 total filings
+2025-12-19 21:13:12,801 - sec_monitor - INFO - Found 2 new interesting filings
+2025-12-19 21:13:12,801 - sec_monitor - INFO - Found 2 new filings to process
+2025-12-19 21:13:12,801 - sec_monitor - INFO - Processing filing 1/2: KDP
+2025-12-19 21:13:16,165 - sec_monitor - ERROR - Error processing filing KDP: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-19 21:13:16,165 - sec_monitor - INFO - Processing filing 2/2: PODD
+2025-12-19 21:13:16,819 - sec_monitor - ERROR - Error processing filing PODD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-19 21:13:16,819 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-19 21:13:17,128 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-19 21:13:17,128 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-19 21:13:17,129 - sec_monitor - INFO - Market open: False
+2025-12-19 21:13:17,129 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-12-19 21:13:17,142 - sec_monitor - INFO - Last trading day: 2025-12-19
+2025-12-19 21:13:17,142 - sec_monitor - INFO - Processing ticker: KDP
+2025-12-19 21:13:17,595 - sec_monitor - INFO - Number of bars for KDP: 4
+2025-12-19 21:13:17,595 - sec_monitor - INFO - Last bar close for KDP: 28.09
+2025-12-19 21:13:17,595 - sec_monitor - INFO - Outside market hours price for KDP: 28.09
+2025-12-19 21:13:17,595 - sec_monitor - INFO - Processing ticker: PODD
+2025-12-19 21:13:17,623 - sec_monitor - INFO - Number of bars for PODD: 4
+2025-12-19 21:13:17,623 - sec_monitor - INFO - Last bar close for PODD: 292.93
+2025-12-19 21:13:17,623 - sec_monitor - INFO - Outside market hours price for PODD: 292.93
+2025-12-19 21:13:18,208 - sec_monitor - INFO - Generating final output...
+2025-12-19 21:13:18,209 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-12-19 21:13:18,209 - sec_monitor - INFO - Cumulative stats - Input words: 4995132, Output words: 0
+2025-12-19 21:13:18,209 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-19 21:13:18,209 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 126626, 'output_words': 0, 'filings_processed': 2}
