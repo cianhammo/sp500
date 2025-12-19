@@ -1,0 +1,76 @@
+2025-12-19 21:47:41 - INFO - __main__ - Starting SP500 analysis script
+2025-12-19 21:47:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-19 21:47:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 19, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 18, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-19 21:47:42 - INFO - __main__ - Runtime timezone: UTC
+2025-12-19 21:47:42 - INFO - __main__ - Original start: 2025-12-18 16:00:00-05:00 (America/New_York)
+2025-12-19 21:47:42 - INFO - __main__ - Original end: 2025-12-19 16:00:00-05:00 (America/New_York)
+2025-12-19 21:47:42 - INFO - __main__ - UTC start: 2025-12-18 05:00:00+00:00
+2025-12-19 21:47:42 - INFO - __main__ - UTC end: 2025-12-20 05:00:00+00:00
+2025-12-19 21:47:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-19 21:47:43 - INFO - __main__ - Received data for 494 symbols
+2025-12-19 21:47:43 - INFO - __main__ - Sample data structure for APH:
+2025-12-19 21:47:43 - INFO - __main__ - Number of bars: 2
+2025-12-19 21:47:43 - INFO - __main__ - Bar timestamp: 2025-12-18 05:00:00+00:00 (UTC)
+2025-12-19 21:47:43 - INFO - __main__ - Bar timestamp: 2025-12-19 05:00:00+00:00 (UTC)
+2025-12-19 21:47:43 - INFO - __main__ - APH timestamps - Today: 2025-12-19 05:00:00+00:00, Yesterday: 2025-12-18 05:00:00+00:00
+2025-12-19 21:47:43 - INFO - __main__ - CCI timestamps - Today: 2025-12-19 05:00:00+00:00, Yesterday: 2025-12-18 05:00:00+00:00
+2025-12-19 21:47:43 - INFO - __main__ - CVS timestamps - Today: 2025-12-19 05:00:00+00:00, Yesterday: 2025-12-18 05:00:00+00:00
+2025-12-19 21:47:43 - INFO - __main__ - OKE timestamps - Today: 2025-12-19 05:00:00+00:00, Yesterday: 2025-12-18 05:00:00+00:00
+2025-12-19 21:47:43 - INFO - __main__ - SYF timestamps - Today: 2025-12-19 05:00:00+00:00, Yesterday: 2025-12-18 05:00:00+00:00
+2025-12-19 21:47:43 - INFO - __main__ - Successfully processed 494 stocks
+2025-12-19 21:47:43 - INFO - __main__ - Data issues encountered: 0
+2025-12-19 21:47:43 - INFO - __main__ - Final dataframe contains 494 stocks
+2025-12-19 21:47:43 - INFO - __main__ - Analysis for market close on December 19, 2025
+2025-12-19 21:47:43 - INFO - __main__ - Found 494 stocks with price data
+2025-12-19 21:47:43 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-12-19 21:47:45 - INFO - __main__ - Found Wikipedia URL for LW: https://en.wikipedia.org/wiki/Lamb_Weston
+2025-12-19 21:47:47 - INFO - __main__ - Analyzing top performer...
+2025-12-19 21:47:47 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-12-19 21:47:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-19 21:47:48 - INFO - __main__ - Searching for articles about MRNA
+2025-12-19 21:47:48 - INFO - __main__ - Searching for news about Moderna
+2025-12-19 21:47:52 - INFO - __main__ - Found 6 recent search results for Moderna
+2025-12-19 21:47:52 - INFO - __main__ - Found 6 URLs to try for MRNA
+2025-12-19 21:47:52 - INFO - __main__ - Fetching content from: https://www.investors.com/news/bitcoin-price-strategy-buying-mstr-stock-issuance/
+2025-12-19 21:47:52 - INFO - __main__ - Successfully extracted article content (474 chars)
+2025-12-19 21:47:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-moderna-mrna-stock-rocketing-201644403.html
+2025-12-19 21:47:53 - INFO - __main__ - Successfully extracted article content (2616 chars)
+2025-12-19 21:47:53 - INFO - __main__ - Fetching content from: https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-mrna/moderna/news/theres-no-escaping-moderna-incs-nasdaqmrna-muted-revenues-de/amp
+2025-12-19 21:47:53 - INFO - __main__ - Successfully extracted article content (4453 chars)
+2025-12-19 21:47:53 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-12-19 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:47:57 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-12-19 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:48:02 - INFO - __main__ - Top performer analysis complete
+2025-12-19 21:48:02 - INFO - __main__ - Analyzing bottom performer...
+2025-12-19 21:48:02 - INFO - __main__ - Analyzing Lamb Weston (LW)
+2025-12-19 21:48:02 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-19 21:48:02 - INFO - __main__ - Searching for articles about LW
+2025-12-19 21:48:02 - INFO - __main__ - Searching for news about Lamb Weston
+2025-12-19 21:48:07 - INFO - __main__ - Found 6 recent search results for Lamb Weston
+2025-12-19 21:48:07 - INFO - __main__ - Found 6 URLs to try for LW
+2025-12-19 21:48:07 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/carnival-stock-pops-lamb-weston-164454601.html
+2025-12-19 21:48:08 - INFO - __main__ - Successfully extracted article content (1437 chars)
+2025-12-19 21:48:08 - INFO - __main__ - Fetching content from: https://www.wsj.com/business/earnings/lamb-weston-swings-to-profit-as-revenue-ticks-up-92e1353b?gaa_at=eafs&gaa_n=AWEtsqf185iH1F8suOOB3Z_8_eDDwYViKxB0fuoXLjz1VU19uFtBdLWV9v7M&gaa_ts=6945cb9b&gaa_sig=Ijq6T8xTLrbkvCppZwJfoN20mxY57lj5bwdE-cNyCUzNNIAyqhESuI5B-vDnlQGWZTJ-a4SMw4iL8-4jqF7xCA%3D%3D
+2025-12-19 21:48:08 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-19 21:48:08 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-3224cf98?gaa_at=eafs&gaa_n=AWEtsqctKbdG8dnGgeRJH2aNaHwHpyKpk9D7d2qw86RQKZaDMzbPNRkfRZNR&gaa_ts=6945cb9b&gaa_sig=0cJn9tqKKfRCC8cmwmPVb3gOY49U0Wk5VXKsHKs1HY5FUD4-aVb_Qk-Ox8mRx4vvXE5Rs9NoKLJcABNrloVSvA%3D%3D
+2025-12-19 21:48:09 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-19 21:48:09 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/19/stocks-making-the-biggest-moves-midday-lw-kbh-ccl-orcl-crwv.html
+2025-12-19 21:48:09 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-19 21:48:09 - INFO - __main__ - Successfully extracted article content (2309 chars)
+2025-12-19 21:48:09 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-12192025-11872970
+2025-12-19 21:48:09 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-19 21:48:09 - INFO - __main__ - Successfully extracted article content (16657 chars)
+2025-12-19 21:48:09 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2025/12/18/stock-market-today-live-updates.html
+2025-12-19 21:48:09 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-19 21:48:09 - INFO - __main__ - Successfully extracted article content (2698 chars)
+2025-12-19 21:48:09 - INFO - __main__ - Found total of 3 valid articles for LW
+2025-12-19 21:48:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:48:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:48:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:48:16 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2025-12-19 21:48:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-19 21:48:22 - INFO - __main__ - Bottom performer analysis complete
+2025-12-19 21:48:22 - INFO - __main__ - Saving results to JSON...
+2025-12-19 21:48:22 - INFO - __main__ - Analysis complete and saved to market_analysis.json
