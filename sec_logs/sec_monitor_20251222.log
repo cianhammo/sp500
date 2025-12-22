@@ -54,3 +54,44 @@
 2025-12-22 12:46:48,125 - sec_monitor - INFO - Reached old filing, stopping. Found 4 total filings
 2025-12-22 12:46:48,126 - sec_monitor - INFO - Found 0 new interesting filings
 2025-12-22 12:46:48,126 - sec_monitor - INFO - No new filings to process
+2025-12-22 13:36:40,628 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-22 13:36:40,628 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-22 13:36:40,628 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-22 13:36:40,629 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-22 13:36:40,629 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-22 13:36:40,629 - sec_monitor - INFO - Initializing components...
+2025-12-22 13:36:40,629 - sec_monitor - INFO - Initializing components
+2025-12-22 13:36:40,629 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-22 13:36:40,629 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-22 13:36:40,629 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-22 13:36:40,629 - sec_monitor - INFO - All components initialized successfully
+2025-12-22 13:36:40,630 - sec_monitor - INFO - Found JSON file from today
+2025-12-22 13:36:40,630 - sec_monitor - INFO - Found 2 previously processed accessions and 2 filing URLs
+2025-12-22 13:36:40,631 - sec_monitor - INFO - Found 2 accession numbers and 2 URLs from previously processed filings
+2025-12-22 13:36:40,631 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-22 13:36:43,673 - sec_monitor - INFO - Reached old filing, stopping. Found 8 total filings
+2025-12-22 13:36:43,674 - sec_monitor - INFO - Found 2 new interesting filings
+2025-12-22 13:36:43,674 - sec_monitor - INFO - Found 2 new filings to process
+2025-12-22 13:36:43,674 - sec_monitor - INFO - Processing filing 1/2: NWS
+2025-12-22 13:36:44,407 - sec_monitor - ERROR - Error processing filing NWS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-22 13:36:44,407 - sec_monitor - INFO - Processing filing 2/2: FAST
+2025-12-22 13:36:45,410 - sec_monitor - ERROR - Error processing filing FAST: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-22 13:36:45,411 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-22 13:36:45,626 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-22 13:36:45,626 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-22 13:36:45,626 - sec_monitor - INFO - Market open: False
+2025-12-22 13:36:45,626 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-12-22 13:36:45,637 - sec_monitor - INFO - Last trading day: 2025-12-22
+2025-12-22 13:36:45,637 - sec_monitor - INFO - Processing ticker: NWS
+2025-12-22 13:36:45,752 - sec_monitor - INFO - Number of bars for NWS: 3
+2025-12-22 13:36:45,752 - sec_monitor - INFO - Last bar close for NWS: 29.785
+2025-12-22 13:36:45,752 - sec_monitor - INFO - Outside market hours price for NWS: 29.785
+2025-12-22 13:36:45,752 - sec_monitor - INFO - Processing ticker: FAST
+2025-12-22 13:36:45,773 - sec_monitor - INFO - Number of bars for FAST: 3
+2025-12-22 13:36:45,774 - sec_monitor - INFO - Last bar close for FAST: 42.32
+2025-12-22 13:36:45,774 - sec_monitor - INFO - Outside market hours price for FAST: 42.32
+2025-12-22 13:36:46,554 - sec_monitor - INFO - Generating final output...
+2025-12-22 13:36:46,555 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-12-22 13:36:46,555 - sec_monitor - INFO - Cumulative stats - Input words: 182794, Output words: 0
+2025-12-22 13:36:46,555 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-22 13:36:46,555 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 18306, 'output_words': 0, 'filings_processed': 2}
