@@ -66,3 +66,68 @@
 2025-12-23 11:17:45,834 - sec_monitor - INFO - Generating final output...
 2025-12-23 11:17:45,834 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-23 11:17:45,834 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 295146, 'output_words': 0, 'filings_processed': 7}
+2025-12-23 12:47:50,101 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-23 12:47:50,101 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-23 12:47:50,101 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-23 12:47:50,102 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-23 12:47:50,102 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-23 12:47:50,102 - sec_monitor - INFO - Initializing components...
+2025-12-23 12:47:50,102 - sec_monitor - INFO - Initializing components
+2025-12-23 12:47:50,102 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-23 12:47:50,102 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-23 12:47:50,102 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-23 12:47:50,102 - sec_monitor - INFO - All components initialized successfully
+2025-12-23 12:47:50,103 - sec_monitor - INFO - Found JSON file from today
+2025-12-23 12:47:50,104 - sec_monitor - INFO - Found 7 previously processed accessions and 7 filing URLs
+2025-12-23 12:47:50,104 - sec_monitor - INFO - Found 7 accession numbers and 7 URLs from previously processed filings
+2025-12-23 12:47:50,104 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-23 12:48:26,154 - sec_monitor - INFO - Reached old filing, stopping. Found 103 total filings
+2025-12-23 12:48:26,155 - sec_monitor - INFO - Found 6 new interesting filings
+2025-12-23 12:48:26,155 - sec_monitor - INFO - Found 6 new filings to process
+2025-12-23 12:48:26,155 - sec_monitor - INFO - Processing filing 1/6: HSIC
+2025-12-23 12:48:27,208 - sec_monitor - ERROR - Error processing filing HSIC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 12:48:27,208 - sec_monitor - INFO - Processing filing 2/6: D
+2025-12-23 12:48:27,615 - sec_monitor - ERROR - Error processing filing D: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 12:48:27,615 - sec_monitor - INFO - Processing filing 3/6: CTAS
+2025-12-23 12:49:17,819 - sec_monitor - ERROR - Error processing filing CTAS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 12:49:17,820 - sec_monitor - INFO - Processing filing 4/6: SWK
+2025-12-23 12:49:18,215 - sec_monitor - ERROR - Error processing filing SWK: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 12:49:18,216 - sec_monitor - INFO - Processing filing 5/6: NWS
+2025-12-23 12:49:18,837 - sec_monitor - ERROR - Error processing filing NWS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 12:49:18,837 - sec_monitor - INFO - Processing filing 6/6: FAST
+2025-12-23 12:49:20,045 - sec_monitor - ERROR - Error processing filing FAST: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 12:49:20,045 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-23 12:49:20,594 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-23 12:49:20,594 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-23 12:49:20,594 - sec_monitor - INFO - Market open: False
+2025-12-23 12:49:20,595 - sec_monitor - INFO - Number of filing times mapped: 6
+2025-12-23 12:49:20,664 - sec_monitor - INFO - Last trading day: 2025-12-23
+2025-12-23 12:49:20,664 - sec_monitor - INFO - Processing ticker: HSIC
+2025-12-23 12:49:21,570 - sec_monitor - INFO - Number of bars for HSIC: 3
+2025-12-23 12:49:21,570 - sec_monitor - INFO - Last bar close for HSIC: 77.6
+2025-12-23 12:49:21,571 - sec_monitor - INFO - Outside market hours price for HSIC: 77.6
+2025-12-23 12:49:21,571 - sec_monitor - INFO - Processing ticker: D
+2025-12-23 12:49:21,655 - sec_monitor - INFO - Number of bars for D: 4
+2025-12-23 12:49:21,655 - sec_monitor - INFO - Last bar close for D: 57.22
+2025-12-23 12:49:21,655 - sec_monitor - INFO - Outside market hours price for D: 57.22
+2025-12-23 12:49:21,656 - sec_monitor - INFO - Processing ticker: CTAS
+2025-12-23 12:49:21,739 - sec_monitor - INFO - Number of bars for CTAS: 4
+2025-12-23 12:49:21,739 - sec_monitor - INFO - Last bar close for CTAS: 191.98
+2025-12-23 12:49:21,740 - sec_monitor - INFO - Outside market hours price for CTAS: 191.98
+2025-12-23 12:49:21,740 - sec_monitor - INFO - Processing ticker: SWK
+2025-12-23 12:49:21,825 - sec_monitor - INFO - Number of bars for SWK: 4
+2025-12-23 12:49:21,825 - sec_monitor - INFO - Last bar close for SWK: 75.29
+2025-12-23 12:49:21,825 - sec_monitor - INFO - Outside market hours price for SWK: 75.29
+2025-12-23 12:49:21,826 - sec_monitor - INFO - Processing ticker: NWS
+2025-12-23 12:49:21,903 - sec_monitor - INFO - Number of bars for NWS: 4
+2025-12-23 12:49:21,903 - sec_monitor - INFO - Last bar close for NWS: 29.89
+2025-12-23 12:49:21,903 - sec_monitor - INFO - Outside market hours price for NWS: 29.89
+2025-12-23 12:49:21,903 - sec_monitor - INFO - Processing ticker: FAST
+2025-12-23 12:49:21,983 - sec_monitor - INFO - Number of bars for FAST: 4
+2025-12-23 12:49:21,983 - sec_monitor - INFO - Last bar close for FAST: 41.74
+2025-12-23 12:49:21,983 - sec_monitor - INFO - Outside market hours price for FAST: 41.74
+2025-12-23 12:49:24,364 - sec_monitor - INFO - Generating final output...
+2025-12-23 12:49:24,365 - sec_monitor - INFO - Successfully merged 6 new filings with existing JSON
+2025-12-23 12:49:24,365 - sec_monitor - INFO - Cumulative stats - Input words: 491579, Output words: 0
+2025-12-23 12:49:24,365 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-23 12:49:24,365 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 196433, 'output_words': 0, 'filings_processed': 6}
