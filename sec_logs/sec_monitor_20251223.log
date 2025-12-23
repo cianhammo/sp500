@@ -227,3 +227,57 @@
 2025-12-23 18:27:43,677 - sec_monitor - INFO - Completed fetching. Found 107 total filings
 2025-12-23 18:27:43,678 - sec_monitor - INFO - Found 0 new interesting filings
 2025-12-23 18:27:43,678 - sec_monitor - INFO - No new filings to process
+2025-12-23 21:12:47,106 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-23 21:12:47,106 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-23 21:12:47,106 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-23 21:12:47,106 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-23 21:12:47,107 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-23 21:12:47,107 - sec_monitor - INFO - Initializing components...
+2025-12-23 21:12:47,107 - sec_monitor - INFO - Initializing components
+2025-12-23 21:12:47,107 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-23 21:12:47,107 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-23 21:12:47,107 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-23 21:12:47,107 - sec_monitor - INFO - All components initialized successfully
+2025-12-23 21:12:47,108 - sec_monitor - INFO - Found JSON file from today
+2025-12-23 21:12:47,108 - sec_monitor - INFO - Found 16 previously processed accessions and 16 filing URLs
+2025-12-23 21:12:47,109 - sec_monitor - INFO - Found 16 accession numbers and 16 URLs from previously processed filings
+2025-12-23 21:12:47,109 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-23 21:13:22,138 - sec_monitor - INFO - No more entries found
+2025-12-23 21:13:22,138 - sec_monitor - INFO - Completed fetching. Found 68 total filings
+2025-12-23 21:13:22,138 - sec_monitor - INFO - Found 4 new interesting filings
+2025-12-23 21:13:22,138 - sec_monitor - INFO - Found 4 new filings to process
+2025-12-23 21:13:22,138 - sec_monitor - INFO - Processing filing 1/4: EIX
+2025-12-23 21:13:24,357 - sec_monitor - ERROR - Error processing filing EIX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 21:13:24,357 - sec_monitor - INFO - Processing filing 2/4: STLD
+2025-12-23 21:13:24,685 - sec_monitor - ERROR - Error processing filing STLD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 21:13:24,685 - sec_monitor - INFO - Processing filing 3/4: V
+2025-12-23 21:13:27,562 - sec_monitor - ERROR - Error processing filing V: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 21:13:27,562 - sec_monitor - INFO - Processing filing 4/4: HSIC
+2025-12-23 21:13:27,912 - sec_monitor - ERROR - Error processing filing HSIC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-23 21:13:27,912 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-23 21:13:28,079 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-23 21:13:28,079 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-23 21:13:28,079 - sec_monitor - INFO - Market open: False
+2025-12-23 21:13:28,079 - sec_monitor - INFO - Number of filing times mapped: 4
+2025-12-23 21:13:28,091 - sec_monitor - INFO - Last trading day: 2025-12-23
+2025-12-23 21:13:28,091 - sec_monitor - INFO - Processing ticker: EIX
+2025-12-23 21:13:28,337 - sec_monitor - INFO - Number of bars for EIX: 3
+2025-12-23 21:13:28,337 - sec_monitor - INFO - Last bar close for EIX: 60.64
+2025-12-23 21:13:28,337 - sec_monitor - INFO - Outside market hours price for EIX: 60.64
+2025-12-23 21:13:28,337 - sec_monitor - INFO - Processing ticker: STLD
+2025-12-23 21:13:28,354 - sec_monitor - INFO - Number of bars for STLD: 3
+2025-12-23 21:13:28,354 - sec_monitor - INFO - Last bar close for STLD: 175.765
+2025-12-23 21:13:28,354 - sec_monitor - INFO - Outside market hours price for STLD: 175.765
+2025-12-23 21:13:28,354 - sec_monitor - INFO - Processing ticker: V
+2025-12-23 21:13:28,371 - sec_monitor - INFO - Number of bars for V: 3
+2025-12-23 21:13:28,371 - sec_monitor - INFO - Last bar close for V: 352.08
+2025-12-23 21:13:28,371 - sec_monitor - INFO - Outside market hours price for V: 352.08
+2025-12-23 21:13:28,371 - sec_monitor - INFO - Processing ticker: HSIC
+2025-12-23 21:13:28,389 - sec_monitor - INFO - Number of bars for HSIC: 3
+2025-12-23 21:13:28,389 - sec_monitor - INFO - Last bar close for HSIC: 77.6
+2025-12-23 21:13:28,389 - sec_monitor - INFO - Outside market hours price for HSIC: 77.6
+2025-12-23 21:13:29,777 - sec_monitor - INFO - Generating final output...
+2025-12-23 21:13:29,778 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2025-12-23 21:13:29,778 - sec_monitor - INFO - Cumulative stats - Input words: 1109300, Output words: 0
+2025-12-23 21:13:29,779 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-23 21:13:29,779 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 63174, 'output_words': 0, 'filings_processed': 4}
