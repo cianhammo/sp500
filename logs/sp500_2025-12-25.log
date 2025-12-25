@@ -1,0 +1,80 @@
+2025-12-25 21:47:58 - INFO - __main__ - Starting SP500 analysis script
+2025-12-25 21:47:58 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-25 21:47:59 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 24, 13, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-25 21:47:59 - INFO - __main__ - Runtime timezone: UTC
+2025-12-25 21:47:59 - INFO - __main__ - Original start: 2025-12-23 16:00:00-05:00 (America/New_York)
+2025-12-25 21:47:59 - INFO - __main__ - Original end: 2025-12-24 13:00:00-05:00 (America/New_York)
+2025-12-25 21:47:59 - INFO - __main__ - UTC start: 2025-12-23 05:00:00+00:00
+2025-12-25 21:47:59 - INFO - __main__ - UTC end: 2025-12-25 05:00:00+00:00
+2025-12-25 21:47:59 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-25 21:48:00 - INFO - __main__ - Received data for 494 symbols
+2025-12-25 21:48:00 - INFO - __main__ - Sample data structure for AAPL:
+2025-12-25 21:48:00 - INFO - __main__ - Number of bars: 2
+2025-12-25 21:48:00 - INFO - __main__ - Bar timestamp: 2025-12-23 05:00:00+00:00 (UTC)
+2025-12-25 21:48:00 - INFO - __main__ - Bar timestamp: 2025-12-24 05:00:00+00:00 (UTC)
+2025-12-25 21:48:00 - INFO - __main__ - AAPL timestamps - Today: 2025-12-24 05:00:00+00:00, Yesterday: 2025-12-23 05:00:00+00:00
+2025-12-25 21:48:00 - INFO - __main__ - IFF timestamps - Today: 2025-12-24 05:00:00+00:00, Yesterday: 2025-12-23 05:00:00+00:00
+2025-12-25 21:48:00 - INFO - __main__ - SCHW timestamps - Today: 2025-12-24 05:00:00+00:00, Yesterday: 2025-12-23 05:00:00+00:00
+2025-12-25 21:48:00 - INFO - __main__ - DELL timestamps - Today: 2025-12-24 05:00:00+00:00, Yesterday: 2025-12-23 05:00:00+00:00
+2025-12-25 21:48:00 - INFO - __main__ - ERIE timestamps - Today: 2025-12-24 05:00:00+00:00, Yesterday: 2025-12-23 05:00:00+00:00
+2025-12-25 21:48:00 - INFO - __main__ - Successfully processed 494 stocks
+2025-12-25 21:48:00 - INFO - __main__ - Data issues encountered: 0
+2025-12-25 21:48:00 - INFO - __main__ - Final dataframe contains 494 stocks
+2025-12-25 21:48:00 - INFO - __main__ - Analysis for market close on December 24, 2025
+2025-12-25 21:48:00 - INFO - __main__ - Found 494 stocks with price data
+2025-12-25 21:48:00 - INFO - __main__ - Found Wikipedia URL for NKE: https://en.wikipedia.org/wiki/Nike,_Inc.
+2025-12-25 21:48:03 - INFO - __main__ - Found Wikipedia URL for CCL: https://en.wikipedia.org/wiki/Carnival_Corporation_%26_plc
+2025-12-25 21:48:05 - INFO - __main__ - Analyzing top performer...
+2025-12-25 21:48:05 - INFO - __main__ - Analyzing Nike, Inc. (NKE)
+2025-12-25 21:48:05 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-25 21:48:05 - INFO - __main__ - Searching for articles about NKE
+2025-12-25 21:48:05 - INFO - __main__ - Searching for news about Nike, Inc.
+2025-12-25 21:48:08 - INFO - __main__ - Found 6 recent search results for Nike, Inc.
+2025-12-25 21:48:08 - INFO - __main__ - Found 6 URLs to try for NKE
+2025-12-25 21:48:08 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nike-nke-jumps-4-6-153647936.html
+2025-12-25 21:48:08 - INFO - __main__ - Successfully extracted article content (2024 chars)
+2025-12-25 21:48:08 - INFO - __main__ - Fetching content from: https://www.esseg.eu/?e=43041898021470
+2025-12-25 21:48:10 - INFO - __main__ - Successfully extracted article content (127 chars)
+2025-12-25 21:48:10 - INFO - __main__ - Fetching content from: https://www.shoshitamam.com/?n=54714877041430
+2025-12-25 21:48:12 - INFO - __main__ - Successfully extracted article content (241 chars)
+2025-12-25 21:48:12 - INFO - __main__ - Fetching content from: https://www.patumoil.co.th/shop/storeSearch/KeepCriteriaInput.aspx?&transition=top98888792122730
+2025-12-25 21:48:17 - WARNING - __main__ - Article content too short (0 chars)
+2025-12-25 21:48:17 - INFO - __main__ - Fetching content from: https://www.shoshitamam.com/?n=78277069041430
+2025-12-25 21:48:20 - INFO - __main__ - Successfully extracted article content (241 chars)
+2025-12-25 21:48:20 - INFO - __main__ - Fetching content from: https://ts2.tech/en/nike-stock-nke-news-and-forecast-for-dec-25-2025-tim-cooks-3m-buy-lifts-shares-but-china-and-tariffs-still-define-nikes-turnaround/
+2025-12-25 21:48:21 - INFO - __main__ - Successfully extracted article content (10211 chars)
+2025-12-25 21:48:21 - INFO - __main__ - Found total of 2 valid articles for NKE
+2025-12-25 21:48:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-25 21:48:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-25 21:48:25 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2025-12-25 21:48:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-25 21:48:30 - INFO - __main__ - Top performer analysis complete
+2025-12-25 21:48:30 - INFO - __main__ - Analyzing bottom performer...
+2025-12-25 21:48:30 - INFO - __main__ - Analyzing Carnival (CCL)
+2025-12-25 21:48:30 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-25 21:48:30 - INFO - __main__ - Searching for articles about CCL
+2025-12-25 21:48:30 - INFO - __main__ - Searching for news about Carnival
+2025-12-25 21:48:33 - INFO - __main__ - Found 6 recent search results for Carnival
+2025-12-25 21:48:33 - INFO - __main__ - Found 6 URLs to try for CCL
+2025-12-25 21:48:33 - INFO - __main__ - Fetching content from: https://abcnews.go.com/US/wireStory/teen-suspect-stepsisters-cruise-ship-death-remember-documents-128680949
+2025-12-25 21:48:33 - INFO - __main__ - Successfully extracted article content (2433 chars)
+2025-12-25 21:48:33 - INFO - __main__ - Fetching content from: https://www.bbc.com/news/videos/cjwyel60jw4o
+2025-12-25 21:48:33 - INFO - __main__ - Successfully extracted article content (500 chars)
+2025-12-25 21:48:33 - INFO - __main__ - Fetching content from: https://moha.gov.vn/blank/Is-Carnival-Corporation-plc-CVC1-stock-attractive-for-growth-funds
+2025-12-25 21:48:34 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-25 21:48:34 - WARNING - __main__ - Article content too short (0 chars)
+2025-12-25 21:48:34 - INFO - __main__ - Fetching content from: https://www.facebook.com/phoenixmarketcitybangalore/posts/from-stunning-christmas-d%C3%A9cor-to-a-vibrant-christmas-market-carnival-dancers-int/1302781208562130/
+2025-12-25 21:48:35 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-25 21:48:35 - WARNING - __main__ - Article content too short (0 chars)
+2025-12-25 21:48:35 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/CCL/options/?date=1784246400&straddle=false&type=all
+2025-12-25 21:48:36 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-25 21:48:36 - WARNING - __main__ - Article content too short (0 chars)
+2025-12-25 21:48:36 - INFO - __main__ - Fetching content from: https://www.walmart.ca/en/ip/ETHKIA-Girls-Carnival-Dance-Performance-Tutu-Skirt-Layered-Flared-Ballet-Recital-Party-Wear-Twirling-Outfit-Satin-Waistband-Kids-Children-Dress-Up-Pu/1BDGPJN90HO1
+2025-12-25 21:48:36 - INFO - __main__ - Successfully extracted article content (136 chars)
+2025-12-25 21:48:36 - INFO - __main__ - Found total of 1 valid articles for CCL
+2025-12-25 21:48:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-25 21:48:39 - INFO - __main__ - Found 1 relevant articles out of 1 total
+2025-12-25 21:48:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-25 21:48:43 - INFO - __main__ - Bottom performer analysis complete
+2025-12-25 21:48:43 - INFO - __main__ - Saving results to JSON...
+2025-12-25 21:48:43 - INFO - __main__ - Analysis complete and saved to market_analysis.json
