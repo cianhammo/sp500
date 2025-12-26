@@ -1,0 +1,69 @@
+2025-12-26 21:47:33 - INFO - __main__ - Starting SP500 analysis script
+2025-12-26 21:47:33 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-26 21:47:33 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 24, 13, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-26 21:47:33 - INFO - __main__ - Runtime timezone: UTC
+2025-12-26 21:47:33 - INFO - __main__ - Original start: 2025-12-24 13:00:00-05:00 (America/New_York)
+2025-12-26 21:47:33 - INFO - __main__ - Original end: 2025-12-26 16:00:00-05:00 (America/New_York)
+2025-12-26 21:47:33 - INFO - __main__ - UTC start: 2025-12-24 05:00:00+00:00
+2025-12-26 21:47:33 - INFO - __main__ - UTC end: 2025-12-27 05:00:00+00:00
+2025-12-26 21:47:33 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-26 21:47:34 - INFO - __main__ - Received data for 494 symbols
+2025-12-26 21:47:34 - INFO - __main__ - Sample data structure for ACN:
+2025-12-26 21:47:34 - INFO - __main__ - Number of bars: 2
+2025-12-26 21:47:34 - INFO - __main__ - Bar timestamp: 2025-12-24 05:00:00+00:00 (UTC)
+2025-12-26 21:47:34 - INFO - __main__ - Bar timestamp: 2025-12-26 05:00:00+00:00 (UTC)
+2025-12-26 21:47:34 - INFO - __main__ - ACN timestamps - Today: 2025-12-26 05:00:00+00:00, Yesterday: 2025-12-24 05:00:00+00:00
+2025-12-26 21:47:34 - INFO - __main__ - APD timestamps - Today: 2025-12-26 05:00:00+00:00, Yesterday: 2025-12-24 05:00:00+00:00
+2025-12-26 21:47:34 - INFO - __main__ - CB timestamps - Today: 2025-12-26 05:00:00+00:00, Yesterday: 2025-12-24 05:00:00+00:00
+2025-12-26 21:47:34 - INFO - __main__ - NXPI timestamps - Today: 2025-12-26 05:00:00+00:00, Yesterday: 2025-12-24 05:00:00+00:00
+2025-12-26 21:47:34 - INFO - __main__ - ORCL timestamps - Today: 2025-12-26 05:00:00+00:00, Yesterday: 2025-12-24 05:00:00+00:00
+2025-12-26 21:47:34 - INFO - __main__ - Successfully processed 493 stocks
+2025-12-26 21:47:34 - INFO - __main__ - Data issues encountered: 1
+2025-12-26 21:47:34 - INFO - __main__ - Sample of data issues:
+2025-12-26 21:47:34 - INFO - __main__ - NDSN: Insufficient data points (1)
+2025-12-26 21:47:34 - INFO - __main__ - Final dataframe contains 493 stocks
+2025-12-26 21:47:34 - INFO - __main__ - Analysis for market close on December 26, 2025
+2025-12-26 21:47:34 - INFO - __main__ - Found 493 stocks with price data
+2025-12-26 21:47:35 - INFO - __main__ - Found Wikipedia URL for TGT: https://en.wikipedia.org/wiki/Target_Corporation
+2025-12-26 21:47:37 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2025-12-26 21:47:39 - INFO - __main__ - Analyzing top performer...
+2025-12-26 21:47:39 - INFO - __main__ - Analyzing Target Corporation (TGT)
+2025-12-26 21:47:39 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-26 21:47:40 - INFO - __main__ - Searching for articles about TGT
+2025-12-26 21:47:40 - INFO - __main__ - Searching for news about Target Corporation
+2025-12-26 21:47:42 - INFO - __main__ - Found 6 recent search results for Target Corporation
+2025-12-26 21:47:42 - INFO - __main__ - Found 6 URLs to try for TGT
+2025-12-26 21:47:42 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/target-stock-activist-investor-reportedly-154151692.html
+2025-12-26 21:47:43 - INFO - __main__ - Successfully extracted article content (1015 chars)
+2025-12-26 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/NVDA/
+2025-12-26 21:47:43 - INFO - __main__ - Successfully extracted article content (1043 chars)
+2025-12-26 21:47:43 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/target-rises-report-activist-investor-205727494.html
+2025-12-26 21:47:44 - INFO - __main__ - Successfully extracted article content (1340 chars)
+2025-12-26 21:47:44 - INFO - __main__ - Found total of 3 valid articles for TGT
+2025-12-26 21:47:46 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:47:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:47:51 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-12-26 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:47:55 - INFO - __main__ - Top performer analysis complete
+2025-12-26 21:47:55 - INFO - __main__ - Analyzing bottom performer...
+2025-12-26 21:47:55 - INFO - __main__ - Analyzing Moderna (MRNA)
+2025-12-26 21:47:55 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-26 21:47:55 - INFO - __main__ - Searching for articles about MRNA
+2025-12-26 21:47:55 - INFO - __main__ - Searching for news about Moderna
+2025-12-26 21:48:00 - INFO - __main__ - Found 6 recent search results for Moderna
+2025-12-26 21:48:00 - INFO - __main__ - Found 6 URLs to try for MRNA
+2025-12-26 21:48:00 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-484d9230?gaa_at=eafs&gaa_n=AWEtsqfVOVddVGLcw6bRUU5XcpJ8fBjOBmJRR99970UwQo14UiYd2ssd1Hut&gaa_ts=694f0614&gaa_sig=dn_1WZnG4A4Fmjhi4VktgINH3Imldxe-TeqgWFW36vyUzLsWQOIDXkB4IHTMsAh636ZPkhIBwEiR4xrZYPNKCA%3D%3D
+2025-12-26 21:48:01 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-26 21:48:01 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/continue-believe-nike-nke-ceo-172530452.html
+2025-12-26 21:48:01 - INFO - __main__ - Successfully extracted article content (1966 chars)
+2025-12-26 21:48:01 - INFO - __main__ - Fetching content from: https://www.statnews.com/2025/12/26/public-health-2026-issues-to-watch/
+2025-12-26 21:48:02 - INFO - __main__ - Successfully extracted article content (10006 chars)
+2025-12-26 21:48:02 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2025-12-26 21:48:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:48:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:48:06 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-12-26 21:48:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-26 21:48:10 - INFO - __main__ - Bottom performer analysis complete
+2025-12-26 21:48:10 - INFO - __main__ - Saving results to JSON...
+2025-12-26 21:48:10 - INFO - __main__ - Analysis complete and saved to market_analysis.json
