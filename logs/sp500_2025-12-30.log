@@ -1,0 +1,68 @@
+2025-12-30 21:49:04 - INFO - __main__ - Starting SP500 analysis script
+2025-12-30 21:49:04 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-30 21:49:04 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 29, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-30 21:49:04 - INFO - __main__ - Runtime timezone: UTC
+2025-12-30 21:49:04 - INFO - __main__ - Original start: 2025-12-29 16:00:00-05:00 (America/New_York)
+2025-12-30 21:49:04 - INFO - __main__ - Original end: 2025-12-30 16:00:00-05:00 (America/New_York)
+2025-12-30 21:49:04 - INFO - __main__ - UTC start: 2025-12-29 05:00:00+00:00
+2025-12-30 21:49:04 - INFO - __main__ - UTC end: 2025-12-31 05:00:00+00:00
+2025-12-30 21:49:04 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-30 21:49:05 - INFO - __main__ - Received data for 494 symbols
+2025-12-30 21:49:05 - INFO - __main__ - Sample data structure for CMCSA:
+2025-12-30 21:49:05 - INFO - __main__ - Number of bars: 2
+2025-12-30 21:49:05 - INFO - __main__ - Bar timestamp: 2025-12-29 05:00:00+00:00 (UTC)
+2025-12-30 21:49:05 - INFO - __main__ - Bar timestamp: 2025-12-30 05:00:00+00:00 (UTC)
+2025-12-30 21:49:05 - INFO - __main__ - CMCSA timestamps - Today: 2025-12-30 05:00:00+00:00, Yesterday: 2025-12-29 05:00:00+00:00
+2025-12-30 21:49:05 - INFO - __main__ - EQIX timestamps - Today: 2025-12-30 05:00:00+00:00, Yesterday: 2025-12-29 05:00:00+00:00
+2025-12-30 21:49:05 - INFO - __main__ - FANG timestamps - Today: 2025-12-30 05:00:00+00:00, Yesterday: 2025-12-29 05:00:00+00:00
+2025-12-30 21:49:05 - INFO - __main__ - MTB timestamps - Today: 2025-12-30 05:00:00+00:00, Yesterday: 2025-12-29 05:00:00+00:00
+2025-12-30 21:49:05 - INFO - __main__ - WFC timestamps - Today: 2025-12-30 05:00:00+00:00, Yesterday: 2025-12-29 05:00:00+00:00
+2025-12-30 21:49:05 - INFO - __main__ - Successfully processed 494 stocks
+2025-12-30 21:49:05 - INFO - __main__ - Data issues encountered: 0
+2025-12-30 21:49:05 - INFO - __main__ - Final dataframe contains 494 stocks
+2025-12-30 21:49:05 - INFO - __main__ - Analysis for market close on December 30, 2025
+2025-12-30 21:49:05 - INFO - __main__ - Found 494 stocks with price data
+2025-12-30 21:49:06 - INFO - __main__ - Found Wikipedia URL for OXY: https://en.wikipedia.org/wiki/Occidental_Petroleum
+2025-12-30 21:49:08 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2025-12-30 21:49:10 - INFO - __main__ - Analyzing top performer...
+2025-12-30 21:49:10 - INFO - __main__ - Analyzing Occidental Petroleum (OXY)
+2025-12-30 21:49:10 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-30 21:49:11 - INFO - __main__ - Searching for articles about OXY
+2025-12-30 21:49:11 - INFO - __main__ - Searching for news about Occidental Petroleum
+2025-12-30 21:49:14 - INFO - __main__ - Found 6 recent search results for Occidental Petroleum
+2025-12-30 21:49:14 - INFO - __main__ - Found 6 URLs to try for OXY
+2025-12-30 21:49:14 - INFO - __main__ - Fetching content from: https://www.thestreet.com/latest-news/stock-market-today-futures-decline-as-2025-struggles-to-finish-year-on-high-note
+2025-12-30 21:49:14 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-30 21:49:14 - INFO - __main__ - Fetching content from: https://www.businessinsider.com/warren-buffett-2025-berkshire-hathaway-retirement-alphabet-meme-cash-combs-2025-12
+2025-12-30 21:49:14 - INFO - __main__ - Successfully extracted article content (1110 chars)
+2025-12-30 21:49:14 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-12302025-11877245
+2025-12-30 21:49:15 - INFO - readability.readability - ruthless removal did not work. 
+2025-12-30 21:49:15 - INFO - __main__ - Successfully extracted article content (11004 chars)
+2025-12-30 21:49:15 - INFO - __main__ - Found total of 2 valid articles for OXY
+2025-12-30 21:49:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:19 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-12-30 21:49:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:23 - INFO - __main__ - Top performer analysis complete
+2025-12-30 21:49:23 - INFO - __main__ - Analyzing bottom performer...
+2025-12-30 21:49:23 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2025-12-30 21:49:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-30 21:49:23 - INFO - __main__ - Searching for articles about ENPH
+2025-12-30 21:49:23 - INFO - __main__ - Searching for news about Enphase Energy
+2025-12-30 21:49:28 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2025-12-30 21:49:28 - INFO - __main__ - Found 6 URLs to try for ENPH
+2025-12-30 21:49:28 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/12/30/here-are-tuesdays-top-wall-street-analyst-research-calls-alphabet-applied-digital-birkenstock-etsy-genius-sports-tesla-twilio-and-more/
+2025-12-30 21:49:28 - INFO - __main__ - Successfully extracted article content (5149 chars)
+2025-12-30 21:49:28 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/12/30/the-76-year-old-reason-why-buffett-has-been-selling-apple/
+2025-12-30 21:49:28 - INFO - __main__ - Successfully extracted article content (4343 chars)
+2025-12-30 21:49:28 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2025/12/30/prediction-costco-has-what-it-takes-to-surge-and-split-in-2026/
+2025-12-30 21:49:28 - INFO - __main__ - Successfully extracted article content (3831 chars)
+2025-12-30 21:49:28 - INFO - __main__ - Found total of 3 valid articles for ENPH
+2025-12-30 21:49:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:34 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2025-12-30 21:49:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-30 21:49:39 - INFO - __main__ - Bottom performer analysis complete
+2025-12-30 21:49:39 - INFO - __main__ - Saving results to JSON...
+2025-12-30 21:49:39 - INFO - __main__ - Analysis complete and saved to market_analysis.json
