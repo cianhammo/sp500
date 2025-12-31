@@ -1,0 +1,73 @@
+2025-12-31 21:48:27 - INFO - __main__ - Starting SP500 analysis script
+2025-12-31 21:48:28 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2025-12-31 21:48:28 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2025-12-31 21:48:28 - INFO - __main__ - Runtime timezone: UTC
+2025-12-31 21:48:28 - INFO - __main__ - Original start: 2025-12-30 16:00:00-05:00 (America/New_York)
+2025-12-31 21:48:28 - INFO - __main__ - Original end: 2025-12-31 16:00:00-05:00 (America/New_York)
+2025-12-31 21:48:28 - INFO - __main__ - UTC start: 2025-12-30 05:00:00+00:00
+2025-12-31 21:48:28 - INFO - __main__ - UTC end: 2026-01-01 05:00:00+00:00
+2025-12-31 21:48:28 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2025-12-31 21:48:29 - INFO - __main__ - Received data for 494 symbols
+2025-12-31 21:48:29 - INFO - __main__ - Sample data structure for TSLA:
+2025-12-31 21:48:29 - INFO - __main__ - Number of bars: 2
+2025-12-31 21:48:29 - INFO - __main__ - Bar timestamp: 2025-12-30 05:00:00+00:00 (UTC)
+2025-12-31 21:48:29 - INFO - __main__ - Bar timestamp: 2025-12-31 05:00:00+00:00 (UTC)
+2025-12-31 21:48:29 - INFO - __main__ - TSLA timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2025-12-31 21:48:29 - INFO - __main__ - VRSN timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2025-12-31 21:48:29 - INFO - __main__ - AVGO timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2025-12-31 21:48:29 - INFO - __main__ - BBY timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2025-12-31 21:48:29 - INFO - __main__ - GDDY timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2025-12-31 21:48:29 - INFO - __main__ - Successfully processed 494 stocks
+2025-12-31 21:48:29 - INFO - __main__ - Data issues encountered: 0
+2025-12-31 21:48:29 - INFO - __main__ - Final dataframe contains 494 stocks
+2025-12-31 21:48:29 - INFO - __main__ - Analysis for market close on December 31, 2025
+2025-12-31 21:48:29 - INFO - __main__ - Found 494 stocks with price data
+2025-12-31 21:48:29 - INFO - __main__ - Found Wikipedia URL for NKE: https://en.wikipedia.org/wiki/Nike,_Inc.
+2025-12-31 21:48:32 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2025-12-31 21:48:34 - INFO - __main__ - Analyzing top performer...
+2025-12-31 21:48:34 - INFO - __main__ - Analyzing Nike, Inc. (NKE)
+2025-12-31 21:48:34 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-31 21:48:34 - INFO - __main__ - Searching for articles about NKE
+2025-12-31 21:48:34 - INFO - __main__ - Searching for news about Nike, Inc.
+2025-12-31 21:48:37 - INFO - __main__ - Found 6 recent search results for Nike, Inc.
+2025-12-31 21:48:37 - INFO - __main__ - Found 6 URLs to try for NKE
+2025-12-31 21:48:37 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nike-shares-rise-ceo-elliott-160411650.html
+2025-12-31 21:48:37 - INFO - __main__ - Successfully extracted article content (1163 chars)
+2025-12-31 21:48:37 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2025-12-31/us-stocks-slouch-into-year-end-with-nike-and-tesla-rallying
+2025-12-31 21:48:37 - INFO - __main__ - Successfully extracted article content (133 chars)
+2025-12-31 21:48:37 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/NVDA/
+2025-12-31 21:48:38 - INFO - __main__ - Successfully extracted article content (1043 chars)
+2025-12-31 21:48:38 - INFO - __main__ - Found total of 2 valid articles for NKE
+2025-12-31 21:48:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:48:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:48:42 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2025-12-31 21:48:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:48:47 - INFO - __main__ - Top performer analysis complete
+2025-12-31 21:48:47 - INFO - __main__ - Analyzing bottom performer...
+2025-12-31 21:48:47 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2025-12-31 21:48:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2025-12-31 21:48:47 - INFO - __main__ - Searching for articles about FICO
+2025-12-31 21:48:47 - INFO - __main__ - Searching for news about Fair Isaac
+2025-12-31 21:48:49 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2025-12-31 21:48:49 - INFO - __main__ - Found 6 URLs to try for FICO
+2025-12-31 21:48:49 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/FICO/pressreleases/36843833/fair-isaac-corporation-nysefico-reports-q3-cy2025-in-line-with-expectations/
+2025-12-31 21:48:50 - INFO - __main__ - Successfully extracted article content (7069 chars)
+2025-12-31 21:48:50 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/fair-isaac-corp-stock-underperforms-wednesday-when-compared-to-competitors-fca54c0f-435c0f14f450?gaa_at=eafs&gaa_n=AWEtsqceVJWlD0USS035kcknut-Lzx0cJxlYMw_oJMM-fCOOP9jXXrbs4ZXx&gaa_ts=69559dc5&gaa_sig=x667LfeiYxBGFo1FBvatJ-hrXDbaHn0N4vIGpQdrsm3YoHdSR9JbtCzrhSy7K_bd-eyCp-VonyKQfWNVnaT1tw%3D%3D
+2025-12-31 21:48:51 - WARNING - __main__ - Article content too short (43 chars)
+2025-12-31 21:48:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/research/reports/ARGUS_2970_QuantitativeReport_1767139200000
+2025-12-31 21:48:51 - INFO - __main__ - Successfully extracted article content (197 chars)
+2025-12-31 21:48:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/quote/FICO/
+2025-12-31 21:48:52 - INFO - __main__ - Successfully extracted article content (1956 chars)
+2025-12-31 21:48:52 - INFO - __main__ - Fetching content from: https://ts2.tech/en/why-fico-stock-is-sliding-today-fair-isaac-drops-in-thin-year-end-trading/
+2025-12-31 21:48:52 - INFO - __main__ - Successfully extracted article content (2557 chars)
+2025-12-31 21:48:52 - INFO - __main__ - Fetching content from: https://news.stocktradersdaily.com/news_release/22/Precision_Trading_with_Fair_Isaac_Corporation_FICO_Risk_Zones_123125120802_1767200882.html
+2025-12-31 21:48:52 - INFO - __main__ - Successfully extracted article content (1034 chars)
+2025-12-31 21:48:52 - INFO - __main__ - Found total of 3 valid articles for FICO
+2025-12-31 21:48:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:48:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:48:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:48:59 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2025-12-31 21:49:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-12-31 21:49:03 - INFO - __main__ - Bottom performer analysis complete
+2025-12-31 21:49:03 - INFO - __main__ - Saving results to JSON...
+2025-12-31 21:49:04 - INFO - __main__ - Analysis complete and saved to market_analysis.json
