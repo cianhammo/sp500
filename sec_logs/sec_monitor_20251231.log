@@ -83,3 +83,44 @@
 2025-12-31 12:47:01,773 - sec_monitor - INFO - Cumulative stats - Input words: 369662, Output words: 0
 2025-12-31 12:47:01,773 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2025-12-31 12:47:01,773 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 8517, 'output_words': 0, 'filings_processed': 1}
+2025-12-31 13:34:27,158 - sec_monitor - INFO - Starting SEC filing monitor 
+2025-12-31 13:34:27,158 - sec_monitor - INFO - Loading S&P 500 data...
+2025-12-31 13:34:27,158 - sec_monitor - INFO - Starting S&P 500 data initialization
+2025-12-31 13:34:27,159 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-31 13:34:27,159 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2025-12-31 13:34:27,159 - sec_monitor - INFO - Initializing components...
+2025-12-31 13:34:27,159 - sec_monitor - INFO - Initializing components
+2025-12-31 13:34:27,159 - sec_monitor - INFO - SEC fetcher initialized
+2025-12-31 13:34:27,159 - sec_monitor - INFO - Filing analyzer initialized
+2025-12-31 13:34:27,159 - sec_monitor - INFO - Alpaca clients initialized
+2025-12-31 13:34:27,159 - sec_monitor - INFO - All components initialized successfully
+2025-12-31 13:34:27,160 - sec_monitor - INFO - Found JSON file from today
+2025-12-31 13:34:27,160 - sec_monitor - INFO - Found 5 previously processed accessions and 5 filing URLs
+2025-12-31 13:34:27,160 - sec_monitor - INFO - Found 5 accession numbers and 5 URLs from previously processed filings
+2025-12-31 13:34:27,161 - sec_monitor - INFO - Fetching SEC filings...
+2025-12-31 13:34:59,651 - sec_monitor - INFO - Reached old filing, stopping. Found 77 total filings
+2025-12-31 13:34:59,652 - sec_monitor - INFO - Found 2 new interesting filings
+2025-12-31 13:34:59,652 - sec_monitor - INFO - Found 2 new filings to process
+2025-12-31 13:34:59,652 - sec_monitor - INFO - Processing filing 1/2: TDG
+2025-12-31 13:35:00,745 - sec_monitor - ERROR - Error processing filing TDG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-31 13:35:00,745 - sec_monitor - INFO - Processing filing 2/2: UHS
+2025-12-31 13:35:01,084 - sec_monitor - ERROR - Error processing filing UHS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2025-12-31 13:35:01,084 - sec_monitor - INFO - Fetching supplementary data...
+2025-12-31 13:35:01,640 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2025-12-31 13:35:01,641 - sec_monitor - INFO - filing_data type: <class 'list'>
+2025-12-31 13:35:01,641 - sec_monitor - INFO - Market open: False
+2025-12-31 13:35:01,641 - sec_monitor - INFO - Number of filing times mapped: 2
+2025-12-31 13:35:01,663 - sec_monitor - INFO - Last trading day: 2025-12-31
+2025-12-31 13:35:01,663 - sec_monitor - INFO - Processing ticker: TDG
+2025-12-31 13:35:02,147 - sec_monitor - INFO - Number of bars for TDG: 3
+2025-12-31 13:35:02,148 - sec_monitor - INFO - Last bar close for TDG: 1316.95
+2025-12-31 13:35:02,148 - sec_monitor - INFO - Outside market hours price for TDG: 1316.95
+2025-12-31 13:35:02,148 - sec_monitor - INFO - Processing ticker: UHS
+2025-12-31 13:35:02,179 - sec_monitor - INFO - Number of bars for UHS: 3
+2025-12-31 13:35:02,179 - sec_monitor - INFO - Last bar close for UHS: 224.97
+2025-12-31 13:35:02,179 - sec_monitor - INFO - Outside market hours price for UHS: 224.97
+2025-12-31 13:35:02,941 - sec_monitor - INFO - Generating final output...
+2025-12-31 13:35:02,942 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2025-12-31 13:35:02,942 - sec_monitor - INFO - Cumulative stats - Input words: 389615, Output words: 0
+2025-12-31 13:35:02,942 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2025-12-31 13:35:02,942 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 19953, 'output_words': 0, 'filings_processed': 2}
