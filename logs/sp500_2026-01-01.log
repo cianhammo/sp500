@@ -1,0 +1,67 @@
+2026-01-01 21:48:37 - INFO - __main__ - Starting SP500 analysis script
+2026-01-01 21:48:37 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-01 21:48:37 - INFO - __main__ - Found last two trading days: [datetime.datetime(2025, 12, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 30, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-01 21:48:37 - INFO - __main__ - Runtime timezone: UTC
+2026-01-01 21:48:37 - INFO - __main__ - Original start: 2025-12-30 16:00:00-05:00 (America/New_York)
+2026-01-01 21:48:37 - INFO - __main__ - Original end: 2025-12-31 16:00:00-05:00 (America/New_York)
+2026-01-01 21:48:37 - INFO - __main__ - UTC start: 2025-12-30 05:00:00+00:00
+2026-01-01 21:48:37 - INFO - __main__ - UTC end: 2026-01-01 05:00:00+00:00
+2026-01-01 21:48:37 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-01 21:48:38 - INFO - __main__ - Received data for 494 symbols
+2026-01-01 21:48:38 - INFO - __main__ - Sample data structure for TRV:
+2026-01-01 21:48:38 - INFO - __main__ - Number of bars: 2
+2026-01-01 21:48:38 - INFO - __main__ - Bar timestamp: 2025-12-30 05:00:00+00:00 (UTC)
+2026-01-01 21:48:38 - INFO - __main__ - Bar timestamp: 2025-12-31 05:00:00+00:00 (UTC)
+2026-01-01 21:48:38 - INFO - __main__ - TRV timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2026-01-01 21:48:38 - INFO - __main__ - KR timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2026-01-01 21:48:38 - INFO - __main__ - NFLX timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2026-01-01 21:48:38 - INFO - __main__ - ON timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2026-01-01 21:48:38 - INFO - __main__ - TSN timestamps - Today: 2025-12-31 05:00:00+00:00, Yesterday: 2025-12-30 05:00:00+00:00
+2026-01-01 21:48:38 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-01 21:48:38 - INFO - __main__ - Data issues encountered: 0
+2026-01-01 21:48:38 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-01 21:48:38 - INFO - __main__ - Analysis for market close on December 31, 2025
+2026-01-01 21:48:38 - INFO - __main__ - Found 494 stocks with price data
+2026-01-01 21:48:39 - INFO - __main__ - Found Wikipedia URL for NKE: https://en.wikipedia.org/wiki/Nike,_Inc.
+2026-01-01 21:48:41 - INFO - __main__ - Found Wikipedia URL for FICO: https://en.wikipedia.org/wiki/FICO
+2026-01-01 21:48:43 - INFO - __main__ - Analyzing top performer...
+2026-01-01 21:48:43 - INFO - __main__ - Analyzing Nike, Inc. (NKE)
+2026-01-01 21:48:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-01 21:48:43 - INFO - __main__ - Searching for articles about NKE
+2026-01-01 21:48:43 - INFO - __main__ - Searching for news about Nike, Inc.
+2026-01-01 21:48:51 - INFO - __main__ - Found 6 recent search results for Nike, Inc.
+2026-01-01 21:48:51 - INFO - __main__ - Found 6 URLs to try for NKE
+2026-01-01 21:48:51 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/36853790/nvda-nke-and-cm-bet-on-these-3-stocks-with-surging-unusual-options-activity-for-2026-gains
+2026-01-01 21:48:51 - INFO - __main__ - Successfully extracted article content (6954 chars)
+2026-01-01 21:48:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/nuscale-power-nuclear-stock-everyones-152500173.html
+2026-01-01 21:48:52 - INFO - __main__ - Successfully extracted article content (3506 chars)
+2026-01-01 21:48:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/warren-buffett-mark-cuban-agree-153831288.html
+2026-01-01 21:48:53 - INFO - __main__ - Successfully extracted article content (2563 chars)
+2026-01-01 21:48:53 - INFO - __main__ - Found total of 3 valid articles for NKE
+2026-01-01 21:48:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:48:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:48:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:48:59 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2026-01-01 21:49:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:49:04 - INFO - __main__ - Top performer analysis complete
+2026-01-01 21:49:04 - INFO - __main__ - Analyzing bottom performer...
+2026-01-01 21:49:04 - INFO - __main__ - Analyzing Fair Isaac (FICO)
+2026-01-01 21:49:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-01 21:49:04 - INFO - __main__ - Searching for articles about FICO
+2026-01-01 21:49:04 - INFO - __main__ - Searching for news about Fair Isaac
+2026-01-01 21:49:08 - INFO - __main__ - Found 6 recent search results for Fair Isaac
+2026-01-01 21:49:08 - INFO - __main__ - Found 6 URLs to try for FICO
+2026-01-01 21:49:08 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2026/01/01/high-conviction-ai-stocks-with-10x-potential-2036/
+2026-01-01 21:49:09 - INFO - __main__ - Successfully extracted article content (159 chars)
+2026-01-01 21:49:09 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/3-high-conviction-ai-stocks-125000047.html
+2026-01-01 21:49:09 - INFO - __main__ - Successfully extracted article content (6257 chars)
+2026-01-01 21:49:09 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/01/meta-platforms-nasdaq-meta-stock-price-prediction-for-2025-where-will-it-be-in-1-year/
+2026-01-01 21:49:10 - INFO - __main__ - Successfully extracted article content (6970 chars)
+2026-01-01 21:49:10 - INFO - __main__ - Found total of 2 valid articles for FICO
+2026-01-01 21:49:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:49:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:49:14 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2026-01-01 21:49:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-01 21:49:19 - INFO - __main__ - Bottom performer analysis complete
+2026-01-01 21:49:19 - INFO - __main__ - Saving results to JSON...
+2026-01-01 21:49:19 - INFO - __main__ - Analysis complete and saved to market_analysis.json
