@@ -88,3 +88,38 @@
 2026-01-02 15:23:04,180 - sec_monitor - INFO - Cumulative stats - Input words: 32668, Output words: 0
 2026-01-02 15:23:04,180 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-02 15:23:04,180 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 12020, 'output_words': 0, 'filings_processed': 2}
+2026-01-02 18:26:37,856 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-02 18:26:37,856 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-02 18:26:37,856 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-02 18:26:37,856 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-02 18:26:37,857 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-02 18:26:37,857 - sec_monitor - INFO - Initializing components...
+2026-01-02 18:26:37,857 - sec_monitor - INFO - Initializing components
+2026-01-02 18:26:37,857 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-02 18:26:37,857 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-02 18:26:37,857 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-02 18:26:37,857 - sec_monitor - INFO - All components initialized successfully
+2026-01-02 18:26:37,858 - sec_monitor - INFO - Found JSON file from today
+2026-01-02 18:26:37,858 - sec_monitor - INFO - Found 3 previously processed accessions and 3 filing URLs
+2026-01-02 18:26:37,858 - sec_monitor - INFO - Found 3 accession numbers and 3 URLs from previously processed filings
+2026-01-02 18:26:37,858 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-02 18:26:55,513 - sec_monitor - INFO - Reached old filing, stopping. Found 44 total filings
+2026-01-02 18:26:55,514 - sec_monitor - INFO - Found 1 new interesting filings
+2026-01-02 18:26:55,514 - sec_monitor - INFO - Found 1 new filings to process
+2026-01-02 18:26:55,514 - sec_monitor - INFO - Processing filing 1/1: TDY
+2026-01-02 18:26:56,158 - sec_monitor - ERROR - Error processing filing TDY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-02 18:26:56,158 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-02 18:26:56,264 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-02 18:26:56,264 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-02 18:26:56,264 - sec_monitor - INFO - Market open: True
+2026-01-02 18:26:56,264 - sec_monitor - INFO - Number of filing times mapped: 1
+2026-01-02 18:26:56,295 - sec_monitor - INFO - Last trading day: 2026-01-02
+2026-01-02 18:26:56,295 - sec_monitor - INFO - Processing ticker: TDY
+2026-01-02 18:26:56,412 - sec_monitor - INFO - Number of bars for TDY: 3
+2026-01-02 18:26:56,412 - sec_monitor - INFO - Last bar close for TDY: 511.0
+2026-01-02 18:26:56,412 - sec_monitor - INFO - Market open price for TDY: 511.0, change: -1.3532557286538853%
+2026-01-02 18:26:56,804 - sec_monitor - INFO - Generating final output...
+2026-01-02 18:26:56,804 - sec_monitor - INFO - Successfully merged 1 new filings with existing JSON
+2026-01-02 18:26:56,805 - sec_monitor - INFO - Cumulative stats - Input words: 35811, Output words: 0
+2026-01-02 18:26:56,805 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-02 18:26:56,805 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 3143, 'output_words': 0, 'filings_processed': 1}
