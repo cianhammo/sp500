@@ -1,0 +1,67 @@
+2026-01-02 21:47:27 - INFO - __main__ - Starting SP500 analysis script
+2026-01-02 21:47:27 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-02 21:47:27 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2025, 12, 31, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-02 21:47:27 - INFO - __main__ - Runtime timezone: UTC
+2026-01-02 21:47:27 - INFO - __main__ - Original start: 2025-12-31 16:00:00-05:00 (America/New_York)
+2026-01-02 21:47:27 - INFO - __main__ - Original end: 2026-01-02 16:00:00-05:00 (America/New_York)
+2026-01-02 21:47:27 - INFO - __main__ - UTC start: 2025-12-31 05:00:00+00:00
+2026-01-02 21:47:27 - INFO - __main__ - UTC end: 2026-01-03 05:00:00+00:00
+2026-01-02 21:47:27 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-02 21:47:29 - INFO - __main__ - Received data for 494 symbols
+2026-01-02 21:47:29 - INFO - __main__ - Sample data structure for CDW:
+2026-01-02 21:47:29 - INFO - __main__ - Number of bars: 2
+2026-01-02 21:47:29 - INFO - __main__ - Bar timestamp: 2025-12-31 05:00:00+00:00 (UTC)
+2026-01-02 21:47:29 - INFO - __main__ - Bar timestamp: 2026-01-02 05:00:00+00:00 (UTC)
+2026-01-02 21:47:29 - INFO - __main__ - CDW timestamps - Today: 2026-01-02 05:00:00+00:00, Yesterday: 2025-12-31 05:00:00+00:00
+2026-01-02 21:47:29 - INFO - __main__ - MRK timestamps - Today: 2026-01-02 05:00:00+00:00, Yesterday: 2025-12-31 05:00:00+00:00
+2026-01-02 21:47:29 - INFO - __main__ - PCAR timestamps - Today: 2026-01-02 05:00:00+00:00, Yesterday: 2025-12-31 05:00:00+00:00
+2026-01-02 21:47:29 - INFO - __main__ - VMC timestamps - Today: 2026-01-02 05:00:00+00:00, Yesterday: 2025-12-31 05:00:00+00:00
+2026-01-02 21:47:29 - INFO - __main__ - ETN timestamps - Today: 2026-01-02 05:00:00+00:00, Yesterday: 2025-12-31 05:00:00+00:00
+2026-01-02 21:47:29 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-02 21:47:29 - INFO - __main__ - Data issues encountered: 0
+2026-01-02 21:47:29 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-02 21:47:29 - INFO - __main__ - Analysis for market close on January 02, 2026
+2026-01-02 21:47:29 - INFO - __main__ - Found 494 stocks with price data
+2026-01-02 21:47:29 - INFO - __main__ - Found Wikipedia URL for MU: https://en.wikipedia.org/wiki/Micron_Technology
+2026-01-02 21:47:31 - INFO - __main__ - Found Wikipedia URL for PGR: https://en.wikipedia.org/wiki/Progressive_Corporation
+2026-01-02 21:47:33 - INFO - __main__ - Analyzing top performer...
+2026-01-02 21:47:33 - INFO - __main__ - Analyzing Micron Technology (MU)
+2026-01-02 21:47:34 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-02 21:47:34 - INFO - __main__ - Searching for articles about MU
+2026-01-02 21:47:34 - INFO - __main__ - Searching for news about Micron Technology
+2026-01-02 21:47:37 - INFO - __main__ - Found 6 recent search results for Micron Technology
+2026-01-02 21:47:37 - INFO - __main__ - Found 6 URLs to try for MU
+2026-01-02 21:47:37 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/micron-technology-stock-buy-sell-150058287.html
+2026-01-02 21:47:38 - INFO - __main__ - Successfully extracted article content (2425 chars)
+2026-01-02 21:47:38 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2026/01/02/why-micron-stock-popped-today/
+2026-01-02 21:47:38 - INFO - __main__ - Successfully extracted article content (159 chars)
+2026-01-02 21:47:38 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/makes-micron-technology-mu-bullish-115758164.html
+2026-01-02 21:47:38 - INFO - __main__ - Successfully extracted article content (2879 chars)
+2026-01-02 21:47:38 - INFO - __main__ - Found total of 2 valid articles for MU
+2026-01-02 21:47:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 21:47:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 21:47:43 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-02 21:47:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 21:47:48 - INFO - __main__ - Top performer analysis complete
+2026-01-02 21:47:48 - INFO - __main__ - Analyzing bottom performer...
+2026-01-02 21:47:48 - INFO - __main__ - Analyzing Progressive Corporation (PGR)
+2026-01-02 21:47:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-02 21:47:49 - INFO - __main__ - Searching for articles about PGR
+2026-01-02 21:47:49 - INFO - __main__ - Searching for news about Progressive Corporation
+2026-01-02 21:47:52 - INFO - __main__ - Found 6 recent search results for Progressive Corporation
+2026-01-02 21:47:52 - INFO - __main__ - Found 6 URLs to try for PGR
+2026-01-02 21:47:52 - INFO - __main__ - Fetching content from: https://insurancenewsnet.com/oarticle/golden-state-equity-partners-makes-new-investment-in-the-progressive-corporation-pgr
+2026-01-02 21:47:52 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-02 21:47:52 - INFO - __main__ - Successfully extracted article content (531 chars)
+2026-01-02 21:47:52 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/filing-mather-group-llc-buys-4865-shares-of-the-progressive-corporation-pgr-2026-01-02/
+2026-01-02 21:47:53 - INFO - __main__ - Successfully extracted article content (7213 chars)
+2026-01-02 21:47:53 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/progressive-nysepgr-shares-gap-down-heres-what-happened-2026-01-02/
+2026-01-02 21:47:53 - INFO - __main__ - Successfully extracted article content (7372 chars)
+2026-01-02 21:47:53 - INFO - __main__ - Found total of 2 valid articles for PGR
+2026-01-02 21:47:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 21:47:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 21:47:57 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-02 21:48:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-02 21:48:02 - INFO - __main__ - Bottom performer analysis complete
+2026-01-02 21:48:02 - INFO - __main__ - Saving results to JSON...
+2026-01-02 21:48:02 - INFO - __main__ - Analysis complete and saved to market_analysis.json
