@@ -1,0 +1,72 @@
+2026-01-07 21:50:44 - INFO - __main__ - Starting SP500 analysis script
+2026-01-07 21:50:44 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-07 21:50:44 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-07 21:50:44 - INFO - __main__ - Runtime timezone: UTC
+2026-01-07 21:50:44 - INFO - __main__ - Original start: 2026-01-06 16:00:00-05:00 (America/New_York)
+2026-01-07 21:50:44 - INFO - __main__ - Original end: 2026-01-07 16:00:00-05:00 (America/New_York)
+2026-01-07 21:50:44 - INFO - __main__ - UTC start: 2026-01-06 05:00:00+00:00
+2026-01-07 21:50:44 - INFO - __main__ - UTC end: 2026-01-08 05:00:00+00:00
+2026-01-07 21:50:44 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-07 21:50:45 - INFO - __main__ - Received data for 494 symbols
+2026-01-07 21:50:45 - INFO - __main__ - Sample data structure for AFL:
+2026-01-07 21:50:45 - INFO - __main__ - Number of bars: 2
+2026-01-07 21:50:45 - INFO - __main__ - Bar timestamp: 2026-01-06 05:00:00+00:00 (UTC)
+2026-01-07 21:50:45 - INFO - __main__ - Bar timestamp: 2026-01-07 05:00:00+00:00 (UTC)
+2026-01-07 21:50:45 - INFO - __main__ - AFL timestamps - Today: 2026-01-07 05:00:00+00:00, Yesterday: 2026-01-06 05:00:00+00:00
+2026-01-07 21:50:45 - INFO - __main__ - AXON timestamps - Today: 2026-01-07 05:00:00+00:00, Yesterday: 2026-01-06 05:00:00+00:00
+2026-01-07 21:50:45 - INFO - __main__ - CAH timestamps - Today: 2026-01-07 05:00:00+00:00, Yesterday: 2026-01-06 05:00:00+00:00
+2026-01-07 21:50:45 - INFO - __main__ - DHR timestamps - Today: 2026-01-07 05:00:00+00:00, Yesterday: 2026-01-06 05:00:00+00:00
+2026-01-07 21:50:45 - INFO - __main__ - TSCO timestamps - Today: 2026-01-07 05:00:00+00:00, Yesterday: 2026-01-06 05:00:00+00:00
+2026-01-07 21:50:46 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-07 21:50:46 - INFO - __main__ - Data issues encountered: 0
+2026-01-07 21:50:46 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-07 21:50:46 - INFO - __main__ - Analysis for market close on January 07, 2026
+2026-01-07 21:50:46 - INFO - __main__ - Found 494 stocks with price data
+2026-01-07 21:50:46 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2026-01-07 21:50:48 - INFO - __main__ - Found Wikipedia URL for FSLR: https://en.wikipedia.org/wiki/First_Solar
+2026-01-07 21:50:50 - INFO - __main__ - Analyzing top performer...
+2026-01-07 21:50:50 - INFO - __main__ - Analyzing Intel (INTC)
+2026-01-07 21:50:51 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-07 21:50:51 - INFO - __main__ - Searching for articles about INTC
+2026-01-07 21:50:51 - INFO - __main__ - Searching for news about Intel
+2026-01-07 21:50:52 - INFO - __main__ - Found 6 recent search results for Intel
+2026-01-07 21:50:52 - INFO - __main__ - Found 6 URLs to try for INTC
+2026-01-07 21:50:52 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-stock-rallies-as-ces-debut-of-panther-lake-chip-marks-make-or-break-moment-185045233.html
+2026-01-07 21:50:53 - INFO - __main__ - Successfully extracted article content (2763 chars)
+2026-01-07 21:50:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-stock-jumps-8-unveiling-153726774.html
+2026-01-07 21:50:53 - INFO - __main__ - Successfully extracted article content (1906 chars)
+2026-01-07 21:50:53 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2026/01/07/why-intel-stock-soared-84-in-2025/
+2026-01-07 21:50:53 - INFO - __main__ - Successfully extracted article content (159 chars)
+2026-01-07 21:50:53 - INFO - __main__ - Found total of 2 valid articles for INTC
+2026-01-07 21:50:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-07 21:50:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-07 21:50:59 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-07 21:51:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-07 21:51:08 - INFO - __main__ - Top performer analysis complete
+2026-01-07 21:51:08 - INFO - __main__ - Analyzing bottom performer...
+2026-01-07 21:51:08 - INFO - __main__ - Analyzing First Solar (FSLR)
+2026-01-07 21:51:08 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-07 21:51:09 - INFO - __main__ - Searching for articles about FSLR
+2026-01-07 21:51:09 - INFO - __main__ - Searching for news about First Solar
+2026-01-07 21:51:11 - INFO - __main__ - Found 6 recent search results for First Solar
+2026-01-07 21:51:11 - INFO - __main__ - Found 6 URLs to try for FSLR
+2026-01-07 21:51:11 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/jefferies-slashes-forecast-on-first-solar-stock-as-market-reality-hits-home
+2026-01-07 21:51:11 - WARNING - __main__ - Article content too short (41 chars)
+2026-01-07 21:51:11 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/first-solar-slides-10-jefferies-164340110.html
+2026-01-07 21:51:12 - INFO - __main__ - Successfully extracted article content (2430 chars)
+2026-01-07 21:51:12 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/m/13703b2e-ccf0-3e00-bbfd-83abf3b3eec7/first-solar-stock-sinks-on.html
+2026-01-07 21:51:12 - INFO - __main__ - Successfully extracted article content (350 chars)
+2026-01-07 21:51:12 - INFO - __main__ - Fetching content from: https://stocktwits.com/news-articles/markets/equity/why-did-first-solar-stock-fall-5-in-premarket-today/cmxyC2bR4cD
+2026-01-07 21:51:13 - INFO - __main__ - Successfully extracted article content (303 chars)
+2026-01-07 21:51:13 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-f364e4d1?gaa_at=eafs&gaa_n=AWEtsqfniUk8E3aw2CSyk4EO_cpuj6lEIh-yxHdvyxaiO1bdpePw-oAFZ_z-&gaa_ts=695ed8d2&gaa_sig=Q2oI38Mcjr_ehrVOqlrSUn-Ca_E8hrSyNMv7wPTaBNb9hNpqLGxAJd5fLtqVx8GWar0LvPA9vOwjknzL2HqqNw%3D%3D
+2026-01-07 21:51:13 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-07 21:51:13 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/why-first-solar-fslr-shares-162108043.html
+2026-01-07 21:51:14 - INFO - __main__ - Successfully extracted article content (2211 chars)
+2026-01-07 21:51:14 - INFO - __main__ - Found total of 2 valid articles for FSLR
+2026-01-07 21:51:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-07 21:51:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-07 21:51:19 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-07 21:51:25 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-07 21:51:25 - INFO - __main__ - Bottom performer analysis complete
+2026-01-07 21:51:25 - INFO - __main__ - Saving results to JSON...
+2026-01-07 21:51:26 - INFO - __main__ - Analysis complete and saved to market_analysis.json
