@@ -1,0 +1,68 @@
+2026-01-08 21:51:02 - INFO - __main__ - Starting SP500 analysis script
+2026-01-08 21:51:02 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-08 21:51:02 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 7, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-08 21:51:02 - INFO - __main__ - Runtime timezone: UTC
+2026-01-08 21:51:02 - INFO - __main__ - Original start: 2026-01-07 16:00:00-05:00 (America/New_York)
+2026-01-08 21:51:02 - INFO - __main__ - Original end: 2026-01-08 16:00:00-05:00 (America/New_York)
+2026-01-08 21:51:02 - INFO - __main__ - UTC start: 2026-01-07 05:00:00+00:00
+2026-01-08 21:51:02 - INFO - __main__ - UTC end: 2026-01-09 05:00:00+00:00
+2026-01-08 21:51:02 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-08 21:51:04 - INFO - __main__ - Received data for 494 symbols
+2026-01-08 21:51:04 - INFO - __main__ - Sample data structure for UAL:
+2026-01-08 21:51:04 - INFO - __main__ - Number of bars: 2
+2026-01-08 21:51:04 - INFO - __main__ - Bar timestamp: 2026-01-07 05:00:00+00:00 (UTC)
+2026-01-08 21:51:04 - INFO - __main__ - Bar timestamp: 2026-01-08 05:00:00+00:00 (UTC)
+2026-01-08 21:51:04 - INFO - __main__ - UAL timestamps - Today: 2026-01-08 05:00:00+00:00, Yesterday: 2026-01-07 05:00:00+00:00
+2026-01-08 21:51:04 - INFO - __main__ - GNRC timestamps - Today: 2026-01-08 05:00:00+00:00, Yesterday: 2026-01-07 05:00:00+00:00
+2026-01-08 21:51:04 - INFO - __main__ - LLY timestamps - Today: 2026-01-08 05:00:00+00:00, Yesterday: 2026-01-07 05:00:00+00:00
+2026-01-08 21:51:04 - INFO - __main__ - MO timestamps - Today: 2026-01-08 05:00:00+00:00, Yesterday: 2026-01-07 05:00:00+00:00
+2026-01-08 21:51:04 - INFO - __main__ - BRK.B timestamps - Today: 2026-01-08 05:00:00+00:00, Yesterday: 2026-01-07 05:00:00+00:00
+2026-01-08 21:51:04 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-08 21:51:04 - INFO - __main__ - Data issues encountered: 0
+2026-01-08 21:51:04 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-08 21:51:04 - INFO - __main__ - Analysis for market close on January 08, 2026
+2026-01-08 21:51:04 - INFO - __main__ - Found 494 stocks with price data
+2026-01-08 21:51:04 - INFO - __main__ - Found Wikipedia URL for CZR: https://en.wikipedia.org/wiki/Caesars_Entertainment
+2026-01-08 21:51:07 - INFO - __main__ - Found Wikipedia URL for TFX: https://en.wikipedia.org/wiki/Teleflex
+2026-01-08 21:51:09 - INFO - __main__ - Analyzing top performer...
+2026-01-08 21:51:09 - INFO - __main__ - Analyzing Caesars Entertainment (CZR)
+2026-01-08 21:51:09 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-08 21:51:09 - INFO - __main__ - Searching for articles about CZR
+2026-01-08 21:51:09 - INFO - __main__ - Searching for news about Caesars Entertainment
+2026-01-08 21:51:11 - INFO - __main__ - Found 6 recent search results for Caesars Entertainment
+2026-01-08 21:51:11 - INFO - __main__ - Found 6 URLs to try for CZR
+2026-01-08 21:51:11 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/08/3-energy-partnerships-crushing-it-on-dividend-growth/
+2026-01-08 21:51:12 - INFO - __main__ - Successfully extracted article content (6180 chars)
+2026-01-08 21:51:12 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/08/here-are-thursdays-top-wall-street-analyst-research-calls-alphabet-coinbase-global-digital-realty-trust-intuit-reddit-roku-tyler-technolgies-and-more/
+2026-01-08 21:51:12 - INFO - __main__ - Successfully extracted article content (5596 chars)
+2026-01-08 21:51:12 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/08/memory-chip-stocks-are-red-hot-is-it-too-late-to-buy/
+2026-01-08 21:51:12 - INFO - __main__ - Successfully extracted article content (4204 chars)
+2026-01-08 21:51:12 - INFO - __main__ - Found total of 3 valid articles for CZR
+2026-01-08 21:51:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:19 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2026-01-08 21:51:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:23 - INFO - __main__ - Top performer analysis complete
+2026-01-08 21:51:23 - INFO - __main__ - Analyzing bottom performer...
+2026-01-08 21:51:23 - INFO - __main__ - Analyzing Teleflex (TFX)
+2026-01-08 21:51:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-08 21:51:24 - INFO - __main__ - Searching for articles about TFX
+2026-01-08 21:51:24 - INFO - __main__ - Searching for news about Teleflex
+2026-01-08 21:51:29 - INFO - __main__ - Found 6 recent search results for Teleflex
+2026-01-08 21:51:29 - INFO - __main__ - Found 6 URLs to try for TFX
+2026-01-08 21:51:29 - INFO - __main__ - Fetching content from: https://www.massdevice.com/teleflex-leadership-transition-ceo-kelly-departs/
+2026-01-08 21:51:29 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-08 21:51:29 - INFO - __main__ - Successfully extracted article content (3721 chars)
+2026-01-08 21:51:29 - INFO - __main__ - Fetching content from: https://investors.teleflex.com/news/news-details/2026/Teleflex-Announces-Leadership-Transition/default.aspx
+2026-01-08 21:51:29 - WARNING - __main__ - Article content too short (41 chars)
+2026-01-08 21:51:29 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/best-stock-trade-2025-keeps-101035155.html
+2026-01-08 21:51:30 - INFO - __main__ - Successfully extracted article content (6759 chars)
+2026-01-08 21:51:30 - INFO - __main__ - Found total of 2 valid articles for TFX
+2026-01-08 21:51:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:35 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2026-01-08 21:51:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-08 21:51:40 - INFO - __main__ - Bottom performer analysis complete
+2026-01-08 21:51:40 - INFO - __main__ - Saving results to JSON...
+2026-01-08 21:51:40 - INFO - __main__ - Analysis complete and saved to market_analysis.json
