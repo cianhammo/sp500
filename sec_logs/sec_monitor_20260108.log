@@ -172,3 +172,44 @@
 2026-01-08 13:44:25,973 - sec_monitor - INFO - Cumulative stats - Input words: 1785478, Output words: 0
 2026-01-08 13:44:25,973 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-08 13:44:25,973 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 5029, 'output_words': 0, 'filings_processed': 1}
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Initializing components...
+2026-01-08 15:27:18,338 - sec_monitor - INFO - Initializing components
+2026-01-08 15:27:18,339 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-08 15:27:18,339 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-08 15:27:18,339 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-08 15:27:18,339 - sec_monitor - INFO - All components initialized successfully
+2026-01-08 15:27:18,340 - sec_monitor - INFO - Found JSON file from today
+2026-01-08 15:27:18,340 - sec_monitor - INFO - Found 15 previously processed accessions and 15 filing URLs
+2026-01-08 15:27:18,340 - sec_monitor - INFO - Found 15 accession numbers and 15 URLs from previously processed filings
+2026-01-08 15:27:18,340 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-08 15:27:46,184 - sec_monitor - INFO - Reached old filing, stopping. Found 125 total filings
+2026-01-08 15:27:46,184 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-08 15:27:46,184 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-08 15:27:46,185 - sec_monitor - INFO - Processing filing 1/2: LW
+2026-01-08 15:27:46,508 - sec_monitor - ERROR - Error processing filing LW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 15:27:46,508 - sec_monitor - INFO - Processing filing 2/2: WMB
+2026-01-08 15:27:47,543 - sec_monitor - ERROR - Error processing filing WMB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 15:27:47,544 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-08 15:27:47,580 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-08 15:27:47,580 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-08 15:27:47,580 - sec_monitor - INFO - Market open: True
+2026-01-08 15:27:47,580 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-08 15:27:47,593 - sec_monitor - INFO - Last trading day: 2026-01-08
+2026-01-08 15:27:47,593 - sec_monitor - INFO - Processing ticker: LW
+2026-01-08 15:27:47,650 - sec_monitor - INFO - Number of bars for LW: 3
+2026-01-08 15:27:47,650 - sec_monitor - INFO - Last bar close for LW: 40.29
+2026-01-08 15:27:47,650 - sec_monitor - INFO - Market open price for LW: 40.29, change: -2.962427745664749%
+2026-01-08 15:27:47,650 - sec_monitor - INFO - Processing ticker: WMB
+2026-01-08 15:27:47,669 - sec_monitor - INFO - Number of bars for WMB: 3
+2026-01-08 15:27:47,669 - sec_monitor - INFO - Last bar close for WMB: 60.4
+2026-01-08 15:27:47,669 - sec_monitor - INFO - Market open price for WMB: 60.4, change: 1.5296688519078778%
+2026-01-08 15:27:48,450 - sec_monitor - INFO - Generating final output...
+2026-01-08 15:27:48,451 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-08 15:27:48,452 - sec_monitor - INFO - Cumulative stats - Input words: 1826885, Output words: 0
+2026-01-08 15:27:48,452 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-08 15:27:48,452 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 41407, 'output_words': 0, 'filings_processed': 2}
