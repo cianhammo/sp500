@@ -231,3 +231,44 @@
 2026-01-08 18:28:20,277 - sec_monitor - INFO - Reached old filing, stopping. Found 81 total filings
 2026-01-08 18:28:20,277 - sec_monitor - INFO - Found 0 new interesting filings
 2026-01-08 18:28:20,277 - sec_monitor - INFO - No new filings to process
+2026-01-08 21:13:48,319 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-08 21:13:48,319 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-08 21:13:48,319 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-08 21:13:48,319 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-08 21:13:48,320 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-08 21:13:48,320 - sec_monitor - INFO - Initializing components...
+2026-01-08 21:13:48,320 - sec_monitor - INFO - Initializing components
+2026-01-08 21:13:48,320 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-08 21:13:48,320 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-08 21:13:48,320 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-08 21:13:48,320 - sec_monitor - INFO - All components initialized successfully
+2026-01-08 21:13:48,321 - sec_monitor - INFO - Found JSON file from today
+2026-01-08 21:13:48,321 - sec_monitor - INFO - Found 17 previously processed accessions and 17 filing URLs
+2026-01-08 21:13:48,322 - sec_monitor - INFO - Found 17 accession numbers and 17 URLs from previously processed filings
+2026-01-08 21:13:48,322 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-08 21:14:20,296 - sec_monitor - INFO - Reached old filing, stopping. Found 139 total filings
+2026-01-08 21:14:20,297 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-08 21:14:20,297 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-08 21:14:20,297 - sec_monitor - INFO - Processing filing 1/2: GM
+2026-01-08 21:14:20,698 - sec_monitor - ERROR - Error processing filing GM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 21:14:20,699 - sec_monitor - INFO - Processing filing 2/2: STZ
+2026-01-08 21:16:07,409 - sec_monitor - ERROR - Error processing filing STZ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-08 21:16:07,409 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-08 21:16:07,674 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-08 21:16:07,674 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-08 21:16:07,675 - sec_monitor - INFO - Market open: False
+2026-01-08 21:16:07,675 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-08 21:16:07,688 - sec_monitor - INFO - Last trading day: 2026-01-08
+2026-01-08 21:16:07,688 - sec_monitor - INFO - Processing ticker: GM
+2026-01-08 21:16:08,030 - sec_monitor - INFO - Number of bars for GM: 3
+2026-01-08 21:16:08,030 - sec_monitor - INFO - Last bar close for GM: 81.905
+2026-01-08 21:16:08,030 - sec_monitor - INFO - Outside market hours price for GM: 81.905
+2026-01-08 21:16:08,030 - sec_monitor - INFO - Processing ticker: STZ
+2026-01-08 21:16:08,058 - sec_monitor - INFO - Number of bars for STZ: 3
+2026-01-08 21:16:08,058 - sec_monitor - INFO - Last bar close for STZ: 140.555
+2026-01-08 21:16:08,058 - sec_monitor - INFO - Same-day filing price for STZ: 140.555, change: -2.1885873347251095%
+2026-01-08 21:16:08,760 - sec_monitor - INFO - Generating final output...
+2026-01-08 21:16:08,761 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-08 21:16:08,761 - sec_monitor - INFO - Cumulative stats - Input words: 2253380, Output words: 0
+2026-01-08 21:16:08,761 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-08 21:16:08,761 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 426495, 'output_words': 0, 'filings_processed': 2}
