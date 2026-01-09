@@ -1,0 +1,68 @@
+2026-01-09 21:49:36 - INFO - __main__ - Starting SP500 analysis script
+2026-01-09 21:49:37 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-09 21:49:38 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 8, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-09 21:49:38 - INFO - __main__ - Runtime timezone: UTC
+2026-01-09 21:49:38 - INFO - __main__ - Original start: 2026-01-08 16:00:00-05:00 (America/New_York)
+2026-01-09 21:49:38 - INFO - __main__ - Original end: 2026-01-09 16:00:00-05:00 (America/New_York)
+2026-01-09 21:49:38 - INFO - __main__ - UTC start: 2026-01-08 05:00:00+00:00
+2026-01-09 21:49:38 - INFO - __main__ - UTC end: 2026-01-10 05:00:00+00:00
+2026-01-09 21:49:38 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-09 21:49:38 - INFO - __main__ - Received data for 494 symbols
+2026-01-09 21:49:38 - INFO - __main__ - Sample data structure for FOX:
+2026-01-09 21:49:38 - INFO - __main__ - Number of bars: 2
+2026-01-09 21:49:38 - INFO - __main__ - Bar timestamp: 2026-01-08 05:00:00+00:00 (UTC)
+2026-01-09 21:49:38 - INFO - __main__ - Bar timestamp: 2026-01-09 05:00:00+00:00 (UTC)
+2026-01-09 21:49:38 - INFO - __main__ - FOX timestamps - Today: 2026-01-09 05:00:00+00:00, Yesterday: 2026-01-08 05:00:00+00:00
+2026-01-09 21:49:38 - INFO - __main__ - HRL timestamps - Today: 2026-01-09 05:00:00+00:00, Yesterday: 2026-01-08 05:00:00+00:00
+2026-01-09 21:49:38 - INFO - __main__ - ADI timestamps - Today: 2026-01-09 05:00:00+00:00, Yesterday: 2026-01-08 05:00:00+00:00
+2026-01-09 21:49:38 - INFO - __main__ - MNST timestamps - Today: 2026-01-09 05:00:00+00:00, Yesterday: 2026-01-08 05:00:00+00:00
+2026-01-09 21:49:38 - INFO - __main__ - TPL timestamps - Today: 2026-01-09 05:00:00+00:00, Yesterday: 2026-01-08 05:00:00+00:00
+2026-01-09 21:49:39 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-09 21:49:39 - INFO - __main__ - Data issues encountered: 0
+2026-01-09 21:49:39 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-09 21:49:39 - INFO - __main__ - Analysis for market close on January 09, 2026
+2026-01-09 21:49:39 - INFO - __main__ - Found 494 stocks with price data
+2026-01-09 21:49:39 - INFO - __main__ - Found Wikipedia URL for BLDR: https://en.wikipedia.org/wiki/Builders_FirstSource
+2026-01-09 21:49:41 - INFO - __main__ - Found Wikipedia URL for LVS: https://en.wikipedia.org/wiki/Las_Vegas_Sands
+2026-01-09 21:49:43 - INFO - __main__ - Analyzing top performer...
+2026-01-09 21:49:43 - INFO - __main__ - Analyzing Builders FirstSource (BLDR)
+2026-01-09 21:49:43 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-09 21:49:44 - INFO - __main__ - Searching for articles about BLDR
+2026-01-09 21:49:44 - INFO - __main__ - Searching for news about Builders FirstSource
+2026-01-09 21:49:45 - INFO - __main__ - Found 6 recent search results for Builders FirstSource
+2026-01-09 21:49:45 - INFO - __main__ - Found 6 URLs to try for BLDR
+2026-01-09 21:49:45 - INFO - __main__ - Fetching content from: https://apnews.com/article/stocks-markets-trump-oil-ai-d6cf868b23a814a3a2038aca24a0de93
+2026-01-09 21:49:46 - INFO - __main__ - Successfully extracted article content (5052 chars)
+2026-01-09 21:49:46 - INFO - __main__ - Fetching content from: https://apnews.com/article/jobs-economy-growth-3520ef449c36be8ca60eb046177200a2
+2026-01-09 21:49:46 - INFO - __main__ - Successfully extracted article content (7286 chars)
+2026-01-09 21:49:46 - INFO - __main__ - Fetching content from: https://apnews.com/article/facebook-meta-zuckerberg-ai-vistra-oklo-terrapower-0eb051a9a11d96f7ce200e186ad13476
+2026-01-09 21:49:46 - INFO - __main__ - Successfully extracted article content (1944 chars)
+2026-01-09 21:49:46 - INFO - __main__ - Found total of 3 valid articles for BLDR
+2026-01-09 21:49:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:49:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:49:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:49:52 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2026-01-09 21:49:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:49:56 - INFO - __main__ - Top performer analysis complete
+2026-01-09 21:49:56 - INFO - __main__ - Analyzing bottom performer...
+2026-01-09 21:49:56 - INFO - __main__ - Analyzing Las Vegas Sands (LVS)
+2026-01-09 21:49:56 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-09 21:49:57 - INFO - __main__ - Searching for articles about LVS
+2026-01-09 21:49:57 - INFO - __main__ - Searching for news about Las Vegas Sands
+2026-01-09 21:50:00 - INFO - __main__ - Found 6 recent search results for Las Vegas Sands
+2026-01-09 21:50:00 - INFO - __main__ - Found 6 URLs to try for LVS
+2026-01-09 21:50:00 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/09/betting-on-lower-rates-in-2026-boomers-are-buying-the-small-dogs-of-the-dow/
+2026-01-09 21:50:01 - INFO - __main__ - Successfully extracted article content (9932 chars)
+2026-01-09 21:50:01 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/09/2-stocks-that-dont-have-enough-ai-priced-in/
+2026-01-09 21:50:01 - INFO - __main__ - Successfully extracted article content (3434 chars)
+2026-01-09 21:50:01 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/09/taiwan-semiconductor-started-2nm-chip-production-time-to-buy/
+2026-01-09 21:50:01 - INFO - __main__ - Successfully extracted article content (3772 chars)
+2026-01-09 21:50:01 - INFO - __main__ - Found total of 3 valid articles for LVS
+2026-01-09 21:50:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:50:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:50:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:50:07 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2026-01-09 21:50:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-09 21:50:11 - INFO - __main__ - Bottom performer analysis complete
+2026-01-09 21:50:11 - INFO - __main__ - Saving results to JSON...
+2026-01-09 21:50:11 - INFO - __main__ - Analysis complete and saved to market_analysis.json
