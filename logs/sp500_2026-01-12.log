@@ -1,0 +1,73 @@
+2026-01-12 21:50:31 - INFO - __main__ - Starting SP500 analysis script
+2026-01-12 21:50:31 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-12 21:50:32 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-12 21:50:32 - INFO - __main__ - Runtime timezone: UTC
+2026-01-12 21:50:32 - INFO - __main__ - Original start: 2026-01-09 16:00:00-05:00 (America/New_York)
+2026-01-12 21:50:32 - INFO - __main__ - Original end: 2026-01-12 16:00:00-05:00 (America/New_York)
+2026-01-12 21:50:32 - INFO - __main__ - UTC start: 2026-01-09 05:00:00+00:00
+2026-01-12 21:50:32 - INFO - __main__ - UTC end: 2026-01-13 05:00:00+00:00
+2026-01-12 21:50:32 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-12 21:50:33 - INFO - __main__ - Received data for 494 symbols
+2026-01-12 21:50:33 - INFO - __main__ - Sample data structure for PTC:
+2026-01-12 21:50:33 - INFO - __main__ - Number of bars: 2
+2026-01-12 21:50:33 - INFO - __main__ - Bar timestamp: 2026-01-09 05:00:00+00:00 (UTC)
+2026-01-12 21:50:33 - INFO - __main__ - Bar timestamp: 2026-01-12 05:00:00+00:00 (UTC)
+2026-01-12 21:50:33 - INFO - __main__ - PTC timestamps - Today: 2026-01-12 05:00:00+00:00, Yesterday: 2026-01-09 05:00:00+00:00
+2026-01-12 21:50:33 - INFO - __main__ - BRO timestamps - Today: 2026-01-12 05:00:00+00:00, Yesterday: 2026-01-09 05:00:00+00:00
+2026-01-12 21:50:33 - INFO - __main__ - IP timestamps - Today: 2026-01-12 05:00:00+00:00, Yesterday: 2026-01-09 05:00:00+00:00
+2026-01-12 21:50:33 - INFO - __main__ - ON timestamps - Today: 2026-01-12 05:00:00+00:00, Yesterday: 2026-01-09 05:00:00+00:00
+2026-01-12 21:50:33 - INFO - __main__ - UHS timestamps - Today: 2026-01-12 05:00:00+00:00, Yesterday: 2026-01-09 05:00:00+00:00
+2026-01-12 21:50:33 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-12 21:50:33 - INFO - __main__ - Data issues encountered: 0
+2026-01-12 21:50:33 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-12 21:50:33 - INFO - __main__ - Analysis for market close on January 12, 2026
+2026-01-12 21:50:33 - INFO - __main__ - Found 494 stocks with price data
+2026-01-12 21:50:33 - INFO - __main__ - Found Wikipedia URL for STX: https://en.wikipedia.org/wiki/Seagate_Technology
+2026-01-12 21:50:36 - INFO - __main__ - Found Wikipedia URL for SYF: https://en.wikipedia.org/wiki/Synchrony_Financial
+2026-01-12 21:50:38 - INFO - __main__ - Analyzing top performer...
+2026-01-12 21:50:38 - INFO - __main__ - Analyzing Seagate Technology (STX)
+2026-01-12 21:50:38 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-12 21:50:38 - INFO - __main__ - Searching for articles about STX
+2026-01-12 21:50:38 - INFO - __main__ - Searching for news about Seagate Technology
+2026-01-12 21:50:40 - INFO - __main__ - Found 6 recent search results for Seagate Technology
+2026-01-12 21:50:40 - INFO - __main__ - Found 6 URLs to try for STX
+2026-01-12 21:50:40 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/36999313/whats-next-for-seagate-stock-after-a-2418-stellar-run-in-a-year/
+2026-01-12 21:50:42 - INFO - __main__ - Successfully extracted article content (8383 chars)
+2026-01-12 21:50:42 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/data-news/seagate-technology-holdings-plc-stock-outperforms-competitors-on-strong-trading-day-3adc7c20-9770539b3f20?gaa_at=eafs&gaa_n=AWEtsqdZfht6IAh2JDzCwWyVxT4qZ6bbI6LA2ejjbnRrz73CpFD6kBpDeqod&gaa_ts=69657034&gaa_sig=NWlqzaSQdBqDnoqol-AlnmyLxzJYYClxkbCQ1-xIYP9QFzsU3Fx_uqIn8pw5e79o2vG4l9duXCXux-sjs10mZA%3D%3D
+2026-01-12 21:50:42 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-12 21:50:42 - INFO - __main__ - Fetching content from: https://www.theglobeandmail.com/investing/markets/stocks/STX/pressreleases/36995756/this-artificial-intelligence-ai-stock-quietly-outperformed-nvidia-in-2025-it-can-continue-soaring-in-2026/
+2026-01-12 21:50:43 - INFO - __main__ - Successfully extracted article content (5499 chars)
+2026-01-12 21:50:43 - INFO - __main__ - Found total of 2 valid articles for STX
+2026-01-12 21:50:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-12 21:50:48 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-12 21:50:48 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-12 21:50:52 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-12 21:50:52 - INFO - __main__ - Top performer analysis complete
+2026-01-12 21:50:52 - INFO - __main__ - Analyzing bottom performer...
+2026-01-12 21:50:52 - INFO - __main__ - Analyzing Synchrony Financial (SYF)
+2026-01-12 21:50:52 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-12 21:50:53 - INFO - __main__ - Searching for articles about SYF
+2026-01-12 21:50:53 - INFO - __main__ - Searching for news about Synchrony Financial
+2026-01-12 21:50:55 - INFO - __main__ - Found 6 recent search results for Synchrony Financial
+2026-01-12 21:50:55 - INFO - __main__ - Found 6 URLs to try for SYF
+2026-01-12 21:50:55 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/finance/us-financial-stocks-fall-after-trump-calls-credit-card-rate-cap-2026-01-12/
+2026-01-12 21:50:55 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-12 21:50:55 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/finance/wall-st-futures-slip-worries-over-fed-independence-financial-stocks-slide-2026-01-12/
+2026-01-12 21:50:55 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-12 21:50:55 - INFO - __main__ - Fetching content from: https://www.investing.com/news/economy-news/us-financial-stocks-fall-after-trump-calls-for-credit-card-rate-cap-4441081
+2026-01-12 21:50:55 - WARNING - __main__ - Article content too short (41 chars)
+2026-01-12 21:50:55 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/barclays-us-bank-shares-slide-103541808.html
+2026-01-12 21:50:56 - INFO - __main__ - Successfully extracted article content (4545 chars)
+2026-01-12 21:50:56 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/finance/global-markets-global-markets-2026-01-12/
+2026-01-12 21:50:56 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-12 21:50:56 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/12/trump-credit-card-limit-banks-jpmorgan-citi.html
+2026-01-12 21:50:56 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-12 21:50:56 - INFO - __main__ - Successfully extracted article content (2848 chars)
+2026-01-12 21:50:56 - INFO - __main__ - Found total of 2 valid articles for SYF
+2026-01-12 21:50:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-12 21:51:00 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-12 21:51:00 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-12 21:51:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-12 21:51:04 - INFO - __main__ - Bottom performer analysis complete
+2026-01-12 21:51:04 - INFO - __main__ - Saving results to JSON...
+2026-01-12 21:51:04 - INFO - __main__ - Analysis complete and saved to market_analysis.json
