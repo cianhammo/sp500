@@ -201,3 +201,56 @@
 2026-01-12 18:30:05,373 - sec_monitor - INFO - Reached old filing, stopping. Found 1 total filings
 2026-01-12 18:30:05,373 - sec_monitor - INFO - Found 0 new interesting filings
 2026-01-12 18:30:05,373 - sec_monitor - INFO - No new filings to process
+2026-01-12 21:13:28,661 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-12 21:13:28,661 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-12 21:13:28,661 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-12 21:13:28,662 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-12 21:13:28,662 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-12 21:13:28,662 - sec_monitor - INFO - Initializing components...
+2026-01-12 21:13:28,662 - sec_monitor - INFO - Initializing components
+2026-01-12 21:13:28,662 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-12 21:13:28,662 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-12 21:13:28,663 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-12 21:13:28,663 - sec_monitor - INFO - All components initialized successfully
+2026-01-12 21:13:28,664 - sec_monitor - INFO - Found JSON file from today
+2026-01-12 21:13:28,664 - sec_monitor - INFO - Found 12 previously processed accessions and 12 filing URLs
+2026-01-12 21:13:28,664 - sec_monitor - INFO - Found 12 accession numbers and 12 URLs from previously processed filings
+2026-01-12 21:13:28,664 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-12 21:13:43,509 - sec_monitor - INFO - Reached old filing, stopping. Found 71 total filings
+2026-01-12 21:13:43,510 - sec_monitor - INFO - Found 4 new interesting filings
+2026-01-12 21:13:43,510 - sec_monitor - INFO - Found 4 new filings to process
+2026-01-12 21:13:43,510 - sec_monitor - INFO - Processing filing 1/4: POOL
+2026-01-12 21:13:44,500 - sec_monitor - ERROR - Error processing filing POOL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-12 21:13:44,501 - sec_monitor - INFO - Processing filing 2/4: MAS
+2026-01-12 21:13:44,887 - sec_monitor - ERROR - Error processing filing MAS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-12 21:13:44,887 - sec_monitor - INFO - Processing filing 3/4: ARE
+2026-01-12 21:13:45,267 - sec_monitor - ERROR - Error processing filing ARE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-12 21:13:45,267 - sec_monitor - INFO - Processing filing 4/4: FANG
+2026-01-12 21:13:45,677 - sec_monitor - ERROR - Error processing filing FANG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-12 21:13:45,677 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-12 21:13:46,161 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-12 21:13:46,161 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-12 21:13:46,161 - sec_monitor - INFO - Market open: False
+2026-01-12 21:13:46,161 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-01-12 21:13:46,238 - sec_monitor - INFO - Last trading day: 2026-01-12
+2026-01-12 21:13:46,238 - sec_monitor - INFO - Processing ticker: POOL
+2026-01-12 21:13:46,471 - sec_monitor - INFO - Number of bars for POOL: 3
+2026-01-12 21:13:46,471 - sec_monitor - INFO - Last bar close for POOL: 252.33
+2026-01-12 21:13:46,471 - sec_monitor - INFO - Outside market hours price for POOL: 252.33
+2026-01-12 21:13:46,471 - sec_monitor - INFO - Processing ticker: MAS
+2026-01-12 21:13:46,552 - sec_monitor - INFO - Number of bars for MAS: 3
+2026-01-12 21:13:46,552 - sec_monitor - INFO - Last bar close for MAS: 69.35
+2026-01-12 21:13:46,552 - sec_monitor - INFO - Outside market hours price for MAS: 69.35
+2026-01-12 21:13:46,553 - sec_monitor - INFO - Processing ticker: ARE
+2026-01-12 21:13:46,635 - sec_monitor - INFO - Number of bars for ARE: 3
+2026-01-12 21:13:46,635 - sec_monitor - INFO - Last bar close for ARE: 53.955
+2026-01-12 21:13:46,635 - sec_monitor - INFO - Outside market hours price for ARE: 53.955
+2026-01-12 21:13:46,635 - sec_monitor - INFO - Processing ticker: FANG
+2026-01-12 21:13:46,729 - sec_monitor - INFO - Number of bars for FANG: 3
+2026-01-12 21:13:46,730 - sec_monitor - INFO - Last bar close for FANG: 147.31
+2026-01-12 21:13:46,730 - sec_monitor - INFO - Outside market hours price for FANG: 147.31
+2026-01-12 21:13:48,203 - sec_monitor - INFO - Generating final output...
+2026-01-12 21:13:48,204 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2026-01-12 21:13:48,204 - sec_monitor - INFO - Cumulative stats - Input words: 355818, Output words: 0
+2026-01-12 21:13:48,204 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-12 21:13:48,205 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 24828, 'output_words': 0, 'filings_processed': 4}
