@@ -1,0 +1,77 @@
+2026-01-13 21:51:35 - INFO - __main__ - Starting SP500 analysis script
+2026-01-13 21:51:35 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-13 21:51:35 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-13 21:51:35 - INFO - __main__ - Runtime timezone: UTC
+2026-01-13 21:51:35 - INFO - __main__ - Original start: 2026-01-12 16:00:00-05:00 (America/New_York)
+2026-01-13 21:51:35 - INFO - __main__ - Original end: 2026-01-13 16:00:00-05:00 (America/New_York)
+2026-01-13 21:51:35 - INFO - __main__ - UTC start: 2026-01-12 05:00:00+00:00
+2026-01-13 21:51:35 - INFO - __main__ - UTC end: 2026-01-14 05:00:00+00:00
+2026-01-13 21:51:35 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-13 21:51:36 - INFO - __main__ - Received data for 494 symbols
+2026-01-13 21:51:36 - INFO - __main__ - Sample data structure for AZO:
+2026-01-13 21:51:36 - INFO - __main__ - Number of bars: 2
+2026-01-13 21:51:36 - INFO - __main__ - Bar timestamp: 2026-01-12 05:00:00+00:00 (UTC)
+2026-01-13 21:51:36 - INFO - __main__ - Bar timestamp: 2026-01-13 05:00:00+00:00 (UTC)
+2026-01-13 21:51:36 - INFO - __main__ - AZO timestamps - Today: 2026-01-13 05:00:00+00:00, Yesterday: 2026-01-12 05:00:00+00:00
+2026-01-13 21:51:36 - INFO - __main__ - CARR timestamps - Today: 2026-01-13 05:00:00+00:00, Yesterday: 2026-01-12 05:00:00+00:00
+2026-01-13 21:51:36 - INFO - __main__ - SCHW timestamps - Today: 2026-01-13 05:00:00+00:00, Yesterday: 2026-01-12 05:00:00+00:00
+2026-01-13 21:51:36 - INFO - __main__ - FCX timestamps - Today: 2026-01-13 05:00:00+00:00, Yesterday: 2026-01-12 05:00:00+00:00
+2026-01-13 21:51:36 - INFO - __main__ - MDT timestamps - Today: 2026-01-13 05:00:00+00:00, Yesterday: 2026-01-12 05:00:00+00:00
+2026-01-13 21:51:36 - INFO - __main__ - Successfully processed 494 stocks
+2026-01-13 21:51:36 - INFO - __main__ - Data issues encountered: 0
+2026-01-13 21:51:36 - INFO - __main__ - Final dataframe contains 494 stocks
+2026-01-13 21:51:36 - INFO - __main__ - Analysis for market close on January 13, 2026
+2026-01-13 21:51:36 - INFO - __main__ - Found 494 stocks with price data
+2026-01-13 21:51:37 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2026-01-13 21:51:39 - INFO - __main__ - Found Wikipedia URL for CRM: https://en.wikipedia.org/wiki/Salesforce
+2026-01-13 21:51:41 - INFO - __main__ - Analyzing top performer...
+2026-01-13 21:51:41 - INFO - __main__ - Analyzing Moderna (MRNA)
+2026-01-13 21:51:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-13 21:51:41 - INFO - __main__ - Searching for articles about MRNA
+2026-01-13 21:51:41 - INFO - __main__ - Searching for news about Moderna
+2026-01-13 21:51:44 - INFO - __main__ - Found 6 recent search results for Moderna
+2026-01-13 21:51:44 - INFO - __main__ - Found 6 URLs to try for MRNA
+2026-01-13 21:51:44 - INFO - __main__ - Fetching content from: https://www.investors.com/news/moderna-stock-gets-healthy-relative-strength-rating-jump/
+2026-01-13 21:51:44 - INFO - __main__ - Successfully extracted article content (474 chars)
+2026-01-13 21:51:44 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-4b90f18a?gaa_at=eafs&gaa_n=AWEtsqcRiZOEttzWRms1fOCrrM7lkwgWrF6BgjUyAw-I5IJ6zzcNwLHkAHKU&gaa_ts=6966c1f4&gaa_sig=Cb49VJcIyIsVrIQxYWdrVD0LQURMce9ud7FcMp-ZjclVabuIOgYkYdZ0wsD_oB4b6PNssrZM1vHjrhGjSwooEQ%3D%3D
+2026-01-13 21:51:45 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-13 21:51:45 - INFO - __main__ - Fetching content from: https://seekingalpha.com/article/4859100-moderna-v940-keytruda-data-vaccine-revenues-drive-high-risk-recovery-story
+2026-01-13 21:51:45 - INFO - __main__ - Successfully extracted article content (1822 chars)
+2026-01-13 21:51:45 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gold-silver-all-time-highs-drive-market-cap-surge-in-tokenized-metals-193332335.html
+2026-01-13 21:51:45 - INFO - __main__ - Successfully extracted article content (2853 chars)
+2026-01-13 21:51:45 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/13/stocks-making-the-biggest-moves-midday-jpm-mrna-ba-cah-.html
+2026-01-13 21:51:46 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-13 21:51:46 - INFO - __main__ - Successfully extracted article content (3250 chars)
+2026-01-13 21:51:46 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-01132026-11884217
+2026-01-13 21:51:46 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-13 21:51:47 - INFO - __main__ - Successfully extracted article content (20370 chars)
+2026-01-13 21:51:47 - INFO - __main__ - Found total of 3 valid articles for MRNA
+2026-01-13 21:51:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:51:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:51:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:51:53 - INFO - __main__ - Found 1 relevant articles out of 3 total
+2026-01-13 21:51:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:51:57 - INFO - __main__ - Top performer analysis complete
+2026-01-13 21:51:57 - INFO - __main__ - Analyzing bottom performer...
+2026-01-13 21:51:57 - INFO - __main__ - Analyzing Salesforce (CRM)
+2026-01-13 21:51:57 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-13 21:51:57 - INFO - __main__ - Searching for articles about CRM
+2026-01-13 21:51:57 - INFO - __main__ - Searching for news about Salesforce
+2026-01-13 21:51:58 - INFO - __main__ - Found 6 recent search results for Salesforce
+2026-01-13 21:51:58 - INFO - __main__ - Found 6 URLs to try for CRM
+2026-01-13 21:51:58 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/13/salesforce-releases-updated-slackbot-powered-by-anthropics-ai-model.html
+2026-01-13 21:51:59 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-13 21:51:59 - INFO - __main__ - Successfully extracted article content (4343 chars)
+2026-01-13 21:51:59 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/nvidia-salesforce-where-money-made-110010284.html
+2026-01-13 21:52:00 - INFO - __main__ - Successfully extracted article content (27758 chars)
+2026-01-13 21:52:00 - INFO - __main__ - Fetching content from: https://www.salesforce.com/news/press-releases/2026/01/13/slackbot-announcement/
+2026-01-13 21:52:00 - INFO - __main__ - Successfully extracted article content (11385 chars)
+2026-01-13 21:52:00 - INFO - __main__ - Found total of 3 valid articles for CRM
+2026-01-13 21:52:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:52:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:52:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:52:06 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2026-01-13 21:52:11 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-13 21:52:11 - INFO - __main__ - Bottom performer analysis complete
+2026-01-13 21:52:11 - INFO - __main__ - Saving results to JSON...
+2026-01-13 21:52:11 - INFO - __main__ - Analysis complete and saved to market_analysis.json
