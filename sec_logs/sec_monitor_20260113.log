@@ -315,3 +315,44 @@
 2026-01-13 18:32:10,289 - sec_monitor - INFO - Reached old filing, stopping. Found 110 total filings
 2026-01-13 18:32:10,289 - sec_monitor - INFO - Found 0 new interesting filings
 2026-01-13 18:32:10,290 - sec_monitor - INFO - No new filings to process
+2026-01-13 21:13:59,525 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-13 21:13:59,525 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-13 21:13:59,525 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-13 21:13:59,525 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-13 21:13:59,526 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-13 21:13:59,526 - sec_monitor - INFO - Initializing components...
+2026-01-13 21:13:59,526 - sec_monitor - INFO - Initializing components
+2026-01-13 21:13:59,526 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-13 21:13:59,526 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-13 21:13:59,526 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-13 21:13:59,526 - sec_monitor - INFO - All components initialized successfully
+2026-01-13 21:13:59,527 - sec_monitor - INFO - Found JSON file from today
+2026-01-13 21:13:59,527 - sec_monitor - INFO - Found 31 previously processed accessions and 31 filing URLs
+2026-01-13 21:13:59,527 - sec_monitor - INFO - Found 31 accession numbers and 31 URLs from previously processed filings
+2026-01-13 21:13:59,528 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-13 21:14:32,872 - sec_monitor - INFO - Reached old filing, stopping. Found 102 total filings
+2026-01-13 21:14:32,873 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-13 21:14:32,873 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-13 21:14:32,873 - sec_monitor - INFO - Processing filing 1/2: AVGO
+2026-01-13 21:14:33,904 - sec_monitor - ERROR - Error processing filing AVGO: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 21:14:33,905 - sec_monitor - INFO - Processing filing 2/2: EPAM
+2026-01-13 21:14:34,285 - sec_monitor - ERROR - Error processing filing EPAM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 21:14:34,285 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-13 21:14:34,520 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-13 21:14:34,521 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-13 21:14:34,521 - sec_monitor - INFO - Market open: False
+2026-01-13 21:14:34,521 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-13 21:14:34,596 - sec_monitor - INFO - Last trading day: 2026-01-13
+2026-01-13 21:14:34,597 - sec_monitor - INFO - Processing ticker: AVGO
+2026-01-13 21:14:34,852 - sec_monitor - INFO - Number of bars for AVGO: 3
+2026-01-13 21:14:34,852 - sec_monitor - INFO - Last bar close for AVGO: 352.18
+2026-01-13 21:14:34,852 - sec_monitor - INFO - Outside market hours price for AVGO: 352.18
+2026-01-13 21:14:34,852 - sec_monitor - INFO - Processing ticker: EPAM
+2026-01-13 21:14:34,932 - sec_monitor - INFO - Number of bars for EPAM: 3
+2026-01-13 21:14:34,932 - sec_monitor - INFO - Last bar close for EPAM: 211.815
+2026-01-13 21:14:34,933 - sec_monitor - INFO - Outside market hours price for EPAM: 211.815
+2026-01-13 21:14:35,743 - sec_monitor - INFO - Generating final output...
+2026-01-13 21:14:35,745 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-13 21:14:35,745 - sec_monitor - INFO - Cumulative stats - Input words: 1270192, Output words: 0
+2026-01-13 21:14:35,745 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-13 21:14:35,745 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 41156, 'output_words': 0, 'filings_processed': 2}
