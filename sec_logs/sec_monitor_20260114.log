@@ -196,3 +196,56 @@
 2026-01-14 18:30:17,939 - sec_monitor - INFO - Reached old filing, stopping. Found 70 total filings
 2026-01-14 18:30:17,939 - sec_monitor - INFO - Found 0 new interesting filings
 2026-01-14 18:30:17,940 - sec_monitor - INFO - No new filings to process
+2026-01-14 21:14:09,414 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-14 21:14:09,414 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-14 21:14:09,414 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-14 21:14:09,414 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-14 21:14:09,414 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-14 21:14:09,415 - sec_monitor - INFO - Initializing components...
+2026-01-14 21:14:09,415 - sec_monitor - INFO - Initializing components
+2026-01-14 21:14:09,415 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-14 21:14:09,415 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-14 21:14:09,415 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-14 21:14:09,415 - sec_monitor - INFO - All components initialized successfully
+2026-01-14 21:14:09,416 - sec_monitor - INFO - Found JSON file from today
+2026-01-14 21:14:09,416 - sec_monitor - INFO - Found 13 previously processed accessions and 13 filing URLs
+2026-01-14 21:14:09,417 - sec_monitor - INFO - Found 13 accession numbers and 13 URLs from previously processed filings
+2026-01-14 21:14:09,417 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-14 21:14:37,349 - sec_monitor - INFO - Reached old filing, stopping. Found 77 total filings
+2026-01-14 21:14:37,350 - sec_monitor - INFO - Found 4 new interesting filings
+2026-01-14 21:14:37,350 - sec_monitor - INFO - Found 4 new filings to process
+2026-01-14 21:14:37,350 - sec_monitor - INFO - Processing filing 1/4: CHTR
+2026-01-14 21:14:39,749 - sec_monitor - ERROR - Error processing filing CHTR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-14 21:14:39,749 - sec_monitor - INFO - Processing filing 2/4: GPN
+2026-01-14 21:14:40,390 - sec_monitor - ERROR - Error processing filing GPN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-14 21:14:40,390 - sec_monitor - INFO - Processing filing 3/4: HAL
+2026-01-14 21:15:14,624 - sec_monitor - ERROR - Error processing filing HAL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-14 21:15:14,625 - sec_monitor - INFO - Processing filing 4/4: MMC
+2026-01-14 21:16:38,362 - sec_monitor - ERROR - Error processing filing MMC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-14 21:16:38,362 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-14 21:16:39,001 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-14 21:16:39,001 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-14 21:16:39,001 - sec_monitor - INFO - Market open: False
+2026-01-14 21:16:39,001 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-01-14 21:16:39,058 - sec_monitor - INFO - Last trading day: 2026-01-14
+2026-01-14 21:16:39,058 - sec_monitor - INFO - Processing ticker: CHTR
+2026-01-14 21:16:39,251 - sec_monitor - INFO - Number of bars for CHTR: 3
+2026-01-14 21:16:39,252 - sec_monitor - INFO - Last bar close for CHTR: 197.93
+2026-01-14 21:16:39,252 - sec_monitor - INFO - Outside market hours price for CHTR: 197.93
+2026-01-14 21:16:39,252 - sec_monitor - INFO - Processing ticker: GPN
+2026-01-14 21:16:39,338 - sec_monitor - INFO - Number of bars for GPN: 3
+2026-01-14 21:16:39,338 - sec_monitor - INFO - Last bar close for GPN: 77.485
+2026-01-14 21:16:39,338 - sec_monitor - INFO - Outside market hours price for GPN: 77.485
+2026-01-14 21:16:39,339 - sec_monitor - INFO - Processing ticker: HAL
+2026-01-14 21:16:39,407 - sec_monitor - INFO - Number of bars for HAL: 3
+2026-01-14 21:16:39,407 - sec_monitor - INFO - Last bar close for HAL: 32.605
+2026-01-14 21:16:39,407 - sec_monitor - INFO - Outside market hours price for HAL: 32.605
+2026-01-14 21:16:39,407 - sec_monitor - INFO - Processing ticker: MMC
+2026-01-14 21:16:39,471 - sec_monitor - INFO - Number of bars for MMC: 3
+2026-01-14 21:16:39,471 - sec_monitor - INFO - Last bar close for MMC: 182.52
+2026-01-14 21:16:39,471 - sec_monitor - INFO - Outside market hours price for MMC: 182.52
+2026-01-14 21:16:41,238 - sec_monitor - INFO - Generating final output...
+2026-01-14 21:16:41,240 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2026-01-14 21:16:41,240 - sec_monitor - INFO - Cumulative stats - Input words: 1015309, Output words: 0
+2026-01-14 21:16:41,240 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-14 21:16:41,241 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 673819, 'output_words': 0, 'filings_processed': 4}
