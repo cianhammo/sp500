@@ -1,0 +1,70 @@
+2026-01-15 21:50:52 - INFO - __main__ - Starting SP500 analysis script
+2026-01-15 21:50:52 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-15 21:50:53 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 14, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-15 21:50:53 - INFO - __main__ - Runtime timezone: UTC
+2026-01-15 21:50:53 - INFO - __main__ - Original start: 2026-01-14 16:00:00-05:00 (America/New_York)
+2026-01-15 21:50:53 - INFO - __main__ - Original end: 2026-01-15 16:00:00-05:00 (America/New_York)
+2026-01-15 21:50:53 - INFO - __main__ - UTC start: 2026-01-14 05:00:00+00:00
+2026-01-15 21:50:53 - INFO - __main__ - UTC end: 2026-01-16 05:00:00+00:00
+2026-01-15 21:50:53 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-15 21:50:54 - INFO - __main__ - Received data for 493 symbols
+2026-01-15 21:50:54 - INFO - __main__ - Sample data structure for BDX:
+2026-01-15 21:50:54 - INFO - __main__ - Number of bars: 2
+2026-01-15 21:50:54 - INFO - __main__ - Bar timestamp: 2026-01-14 05:00:00+00:00 (UTC)
+2026-01-15 21:50:54 - INFO - __main__ - Bar timestamp: 2026-01-15 05:00:00+00:00 (UTC)
+2026-01-15 21:50:54 - INFO - __main__ - BDX timestamps - Today: 2026-01-15 05:00:00+00:00, Yesterday: 2026-01-14 05:00:00+00:00
+2026-01-15 21:50:54 - INFO - __main__ - CME timestamps - Today: 2026-01-15 05:00:00+00:00, Yesterday: 2026-01-14 05:00:00+00:00
+2026-01-15 21:50:54 - INFO - __main__ - DLR timestamps - Today: 2026-01-15 05:00:00+00:00, Yesterday: 2026-01-14 05:00:00+00:00
+2026-01-15 21:50:54 - INFO - __main__ - NUE timestamps - Today: 2026-01-15 05:00:00+00:00, Yesterday: 2026-01-14 05:00:00+00:00
+2026-01-15 21:50:54 - INFO - __main__ - KIM timestamps - Today: 2026-01-15 05:00:00+00:00, Yesterday: 2026-01-14 05:00:00+00:00
+2026-01-15 21:50:54 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-15 21:50:54 - INFO - __main__ - Data issues encountered: 0
+2026-01-15 21:50:54 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-15 21:50:54 - INFO - __main__ - Analysis for market close on January 15, 2026
+2026-01-15 21:50:54 - INFO - __main__ - Found 493 stocks with price data
+2026-01-15 21:50:54 - INFO - __main__ - Found Wikipedia URL for KLAC: https://en.wikipedia.org/wiki/KLA_Corporation
+2026-01-15 21:50:57 - INFO - __main__ - Found Wikipedia URL for DVN: https://en.wikipedia.org/wiki/Devon_Energy
+2026-01-15 21:50:59 - INFO - __main__ - Analyzing top performer...
+2026-01-15 21:50:59 - INFO - __main__ - Analyzing KLA Corporation (KLAC)
+2026-01-15 21:50:59 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-15 21:50:59 - INFO - __main__ - Searching for articles about KLAC
+2026-01-15 21:50:59 - INFO - __main__ - Searching for news about KLA Corporation
+2026-01-15 21:51:02 - INFO - __main__ - Found 6 recent search results for KLA Corporation
+2026-01-15 21:51:02 - INFO - __main__ - Found 6 URLs to try for KLAC
+2026-01-15 21:51:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/chip-equipment-stocks-soar-tsmc-125514005.html
+2026-01-15 21:51:03 - INFO - __main__ - Successfully extracted article content (1626 chars)
+2026-01-15 21:51:03 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4539595-applied-materials-upgraded-at-barclays-as-china-concerns-overblown
+2026-01-15 21:51:03 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-15 21:51:03 - WARNING - __main__ - Article content too short (0 chars)
+2026-01-15 21:51:03 - INFO - __main__ - Fetching content from: https://ca.finance.yahoo.com/news/analysts-think-kla-corporation-klac-163956951.html
+2026-01-15 21:51:04 - INFO - __main__ - Successfully extracted article content (2650 chars)
+2026-01-15 21:51:04 - INFO - __main__ - Found total of 2 valid articles for KLAC
+2026-01-15 21:51:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-15 21:51:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-15 21:51:09 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-15 21:51:13 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-15 21:51:13 - INFO - __main__ - Top performer analysis complete
+2026-01-15 21:51:13 - INFO - __main__ - Analyzing bottom performer...
+2026-01-15 21:51:13 - INFO - __main__ - Analyzing Devon Energy (DVN)
+2026-01-15 21:51:13 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-15 21:51:13 - INFO - __main__ - Searching for articles about DVN
+2026-01-15 21:51:13 - INFO - __main__ - Searching for news about Devon Energy
+2026-01-15 21:51:16 - INFO - __main__ - Found 6 recent search results for Devon Energy
+2026-01-15 21:51:16 - INFO - __main__ - Found 6 URLs to try for DVN
+2026-01-15 21:51:16 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2026-01-15/coterra-said-to-mull-combining-with-devon-energy-in-oil-megadeal
+2026-01-15 21:51:16 - INFO - __main__ - Successfully extracted article content (133 chars)
+2026-01-15 21:51:16 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/us-shale-producers-devon-energy-coterra-energy-merger-talks-sources-say-2026-01-15/
+2026-01-15 21:51:16 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-15 21:51:16 - INFO - __main__ - Fetching content from: https://www.oklahoman.com/story/business/energy-resource/2026/01/15/devon-energy-okc-in-merger-talks-with-houstons-corterra-energy/88199828007/
+2026-01-15 21:51:17 - WARNING - __main__ - Article content too short (0 chars)
+2026-01-15 21:51:17 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/us/us-weekly-jobless-claims-unexpectedly-fall-amid-seasonal-adjustment-challenges-2026-01-15/
+2026-01-15 21:51:17 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-15 21:51:17 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/china/tsmc-likely-post-fourth-quarter-profit-leap-driven-by-ai-boom-2026-01-14/
+2026-01-15 21:51:17 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-15 21:51:17 - INFO - __main__ - Fetching content from: https://www.reuters.com/world/middle-east/turkey-says-it-opposes-military-intervention-iran-priority-is-avoiding-2026-01-15/
+2026-01-15 21:51:17 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-15 21:51:17 - INFO - __main__ - Found total of 0 valid articles for DVN
+2026-01-15 21:51:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-15 21:51:21 - INFO - __main__ - Bottom performer analysis complete
+2026-01-15 21:51:21 - INFO - __main__ - Saving results to JSON...
+2026-01-15 21:51:22 - INFO - __main__ - Analysis complete and saved to market_analysis.json
