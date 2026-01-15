@@ -224,3 +224,44 @@
 2026-01-15 18:33:38,343 - sec_monitor - INFO - Cumulative stats - Input words: 1340230, Output words: 0
 2026-01-15 18:33:38,343 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-15 18:33:38,343 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 15556, 'output_words': 0, 'filings_processed': 2}
+2026-01-15 21:14:22,774 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-15 21:14:22,774 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-15 21:14:22,774 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-15 21:14:22,775 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-15 21:14:22,775 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-15 21:14:22,775 - sec_monitor - INFO - Initializing components...
+2026-01-15 21:14:22,775 - sec_monitor - INFO - Initializing components
+2026-01-15 21:14:22,775 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-15 21:14:22,775 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-15 21:14:22,776 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-15 21:14:22,776 - sec_monitor - INFO - All components initialized successfully
+2026-01-15 21:14:22,777 - sec_monitor - INFO - Found JSON file from today
+2026-01-15 21:14:22,777 - sec_monitor - INFO - Found 14 previously processed accessions and 14 filing URLs
+2026-01-15 21:14:22,777 - sec_monitor - INFO - Found 14 accession numbers and 14 URLs from previously processed filings
+2026-01-15 21:14:22,777 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-15 21:14:48,753 - sec_monitor - INFO - Reached old filing, stopping. Found 71 total filings
+2026-01-15 21:14:48,754 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-15 21:14:48,754 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-15 21:14:48,754 - sec_monitor - INFO - Processing filing 1/2: RL
+2026-01-15 21:14:49,337 - sec_monitor - ERROR - Error processing filing RL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-15 21:14:49,338 - sec_monitor - INFO - Processing filing 2/2: CEG
+2026-01-15 21:16:57,461 - sec_monitor - ERROR - Error processing filing CEG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-15 21:16:57,461 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-15 21:16:57,704 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-15 21:16:57,704 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-15 21:16:57,705 - sec_monitor - INFO - Market open: False
+2026-01-15 21:16:57,705 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-15 21:16:57,719 - sec_monitor - INFO - Last trading day: 2026-01-15
+2026-01-15 21:16:57,719 - sec_monitor - INFO - Processing ticker: RL
+2026-01-15 21:16:58,163 - sec_monitor - INFO - Number of bars for RL: 3
+2026-01-15 21:16:58,163 - sec_monitor - INFO - Last bar close for RL: 362.97
+2026-01-15 21:16:58,163 - sec_monitor - INFO - Outside market hours price for RL: 362.97
+2026-01-15 21:16:58,164 - sec_monitor - INFO - Processing ticker: CEG
+2026-01-15 21:16:58,185 - sec_monitor - INFO - Number of bars for CEG: 3
+2026-01-15 21:16:58,185 - sec_monitor - INFO - Last bar close for CEG: 330.44
+2026-01-15 21:16:58,185 - sec_monitor - INFO - Outside market hours price for CEG: 330.44
+2026-01-15 21:16:58,900 - sec_monitor - INFO - Generating final output...
+2026-01-15 21:16:58,901 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-15 21:16:58,902 - sec_monitor - INFO - Cumulative stats - Input words: 2028290, Output words: 0
+2026-01-15 21:16:58,902 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-15 21:16:58,902 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 688060, 'output_words': 0, 'filings_processed': 2}
