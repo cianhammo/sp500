@@ -254,3 +254,62 @@
 2026-01-16 18:30:02,189 - sec_monitor - INFO - Cumulative stats - Input words: 2021719, Output words: 0
 2026-01-16 18:30:02,189 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-16 18:30:02,190 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 147408, 'output_words': 0, 'filings_processed': 1}
+2026-01-16 21:13:40,210 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-16 21:13:40,211 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-16 21:13:40,211 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-16 21:13:40,211 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-16 21:13:40,211 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-16 21:13:40,211 - sec_monitor - INFO - Initializing components...
+2026-01-16 21:13:40,211 - sec_monitor - INFO - Initializing components
+2026-01-16 21:13:40,212 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-16 21:13:40,212 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-16 21:13:40,212 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-16 21:13:40,212 - sec_monitor - INFO - All components initialized successfully
+2026-01-16 21:13:40,213 - sec_monitor - INFO - Found JSON file from today
+2026-01-16 21:13:40,213 - sec_monitor - INFO - Found 19 previously processed accessions and 19 filing URLs
+2026-01-16 21:13:40,213 - sec_monitor - INFO - Found 19 accession numbers and 19 URLs from previously processed filings
+2026-01-16 21:13:40,213 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-16 21:14:18,400 - sec_monitor - INFO - Reached old filing, stopping. Found 114 total filings
+2026-01-16 21:14:18,400 - sec_monitor - INFO - Found 5 new interesting filings
+2026-01-16 21:14:18,400 - sec_monitor - INFO - Found 5 new filings to process
+2026-01-16 21:14:18,401 - sec_monitor - INFO - Processing filing 1/5: DHI
+2026-01-16 21:14:18,935 - sec_monitor - ERROR - Error processing filing DHI: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-16 21:14:18,935 - sec_monitor - INFO - Processing filing 2/5: PCAR
+2026-01-16 21:14:19,286 - sec_monitor - ERROR - Error processing filing PCAR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-16 21:14:19,287 - sec_monitor - INFO - Processing filing 3/5: QCOM
+2026-01-16 21:14:19,623 - sec_monitor - ERROR - Error processing filing QCOM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-16 21:14:19,623 - sec_monitor - INFO - Processing filing 4/5: COR
+2026-01-16 21:14:24,163 - sec_monitor - ERROR - Error processing filing COR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-16 21:14:24,163 - sec_monitor - INFO - Processing filing 5/5: NDAQ
+2026-01-16 21:14:25,060 - sec_monitor - ERROR - Error processing filing NDAQ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-16 21:14:25,060 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-16 21:14:25,601 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-16 21:14:25,601 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-16 21:14:25,602 - sec_monitor - INFO - Market open: False
+2026-01-16 21:14:25,602 - sec_monitor - INFO - Number of filing times mapped: 5
+2026-01-16 21:14:25,661 - sec_monitor - INFO - Last trading day: 2026-01-16
+2026-01-16 21:14:25,661 - sec_monitor - INFO - Processing ticker: DHI
+2026-01-16 21:14:26,072 - sec_monitor - INFO - Number of bars for DHI: 4
+2026-01-16 21:14:26,072 - sec_monitor - INFO - Last bar close for DHI: 160.89
+2026-01-16 21:14:26,073 - sec_monitor - INFO - Outside market hours price for DHI: 160.89
+2026-01-16 21:14:26,073 - sec_monitor - INFO - Processing ticker: PCAR
+2026-01-16 21:14:26,135 - sec_monitor - INFO - Number of bars for PCAR: 4
+2026-01-16 21:14:26,135 - sec_monitor - INFO - Last bar close for PCAR: 121.95
+2026-01-16 21:14:26,135 - sec_monitor - INFO - Outside market hours price for PCAR: 121.95
+2026-01-16 21:14:26,135 - sec_monitor - INFO - Processing ticker: QCOM
+2026-01-16 21:14:26,209 - sec_monitor - INFO - Number of bars for QCOM: 4
+2026-01-16 21:14:26,209 - sec_monitor - INFO - Last bar close for QCOM: 161.385
+2026-01-16 21:14:26,210 - sec_monitor - INFO - Outside market hours price for QCOM: 161.385
+2026-01-16 21:14:26,210 - sec_monitor - INFO - Processing ticker: COR
+2026-01-16 21:14:26,282 - sec_monitor - INFO - Number of bars for COR: 4
+2026-01-16 21:14:26,282 - sec_monitor - INFO - Last bar close for COR: 355.37
+2026-01-16 21:14:26,282 - sec_monitor - INFO - Outside market hours price for COR: 355.37
+2026-01-16 21:14:26,282 - sec_monitor - INFO - Processing ticker: NDAQ
+2026-01-16 21:14:26,355 - sec_monitor - INFO - Number of bars for NDAQ: 4
+2026-01-16 21:14:26,355 - sec_monitor - INFO - Last bar close for NDAQ: 100.3
+2026-01-16 21:14:26,355 - sec_monitor - INFO - Outside market hours price for NDAQ: 100.3
+2026-01-16 21:14:27,850 - sec_monitor - INFO - Generating final output...
+2026-01-16 21:14:27,851 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-01-16 21:14:27,851 - sec_monitor - INFO - Cumulative stats - Input words: 2261953, Output words: 0
+2026-01-16 21:14:27,851 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-16 21:14:27,851 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 240234, 'output_words': 0, 'filings_processed': 5}
