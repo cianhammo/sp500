@@ -1,0 +1,80 @@
+2026-01-16 21:50:16 - INFO - __main__ - Starting SP500 analysis script
+2026-01-16 21:50:16 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-16 21:50:16 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-16 21:50:16 - INFO - __main__ - Runtime timezone: UTC
+2026-01-16 21:50:16 - INFO - __main__ - Original start: 2026-01-15 16:00:00-05:00 (America/New_York)
+2026-01-16 21:50:16 - INFO - __main__ - Original end: 2026-01-16 16:00:00-05:00 (America/New_York)
+2026-01-16 21:50:16 - INFO - __main__ - UTC start: 2026-01-15 05:00:00+00:00
+2026-01-16 21:50:16 - INFO - __main__ - UTC end: 2026-01-17 05:00:00+00:00
+2026-01-16 21:50:16 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-16 21:50:18 - INFO - __main__ - Received data for 493 symbols
+2026-01-16 21:50:18 - INFO - __main__ - Sample data structure for CNP:
+2026-01-16 21:50:18 - INFO - __main__ - Number of bars: 2
+2026-01-16 21:50:18 - INFO - __main__ - Bar timestamp: 2026-01-15 05:00:00+00:00 (UTC)
+2026-01-16 21:50:18 - INFO - __main__ - Bar timestamp: 2026-01-16 05:00:00+00:00 (UTC)
+2026-01-16 21:50:18 - INFO - __main__ - CNP timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-16 21:50:18 - INFO - __main__ - STX timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-16 21:50:18 - INFO - __main__ - TAP timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-16 21:50:18 - INFO - __main__ - BDX timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-16 21:50:18 - INFO - __main__ - RJF timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-16 21:50:18 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-16 21:50:18 - INFO - __main__ - Data issues encountered: 0
+2026-01-16 21:50:18 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-16 21:50:18 - INFO - __main__ - Analysis for market close on January 16, 2026
+2026-01-16 21:50:18 - INFO - __main__ - Found 493 stocks with price data
+2026-01-16 21:50:18 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2026-01-16 21:50:20 - INFO - __main__ - Found Wikipedia URL for CEG: https://en.wikipedia.org/wiki/Constellation_Energy
+2026-01-16 21:50:22 - INFO - __main__ - Analyzing top performer...
+2026-01-16 21:50:22 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2026-01-16 21:50:23 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-16 21:50:23 - INFO - __main__ - Searching for articles about SMCI
+2026-01-16 21:50:23 - INFO - __main__ - Searching for news about Supermicro
+2026-01-16 21:50:25 - INFO - __main__ - Found 6 recent search results for Supermicro
+2026-01-16 21:50:25 - INFO - __main__ - Found 6 URLs to try for SMCI
+2026-01-16 21:50:25 - INFO - __main__ - Fetching content from: https://www.crn.com/news/components-peripherals/2026/intel-hires-qualcomm-executive-to-lead-gpu-engineering-for-data-centers
+2026-01-16 21:50:26 - INFO - __main__ - Successfully extracted article content (4606 chars)
+2026-01-16 21:50:26 - INFO - __main__ - Fetching content from: https://www.youtube.com/watch?v=T1Hkqn0CqMA
+2026-01-16 21:50:26 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-16 21:50:26 - INFO - __main__ - Successfully extracted article content (146 chars)
+2026-01-16 21:50:26 - INFO - __main__ - Fetching content from: https://www.istore.nc/products/super-micro-supermicro-c7h61-l-desktop-motherboard-intel-chi/205878232/
+2026-01-16 21:50:29 - WARNING - __main__ - Article content too short (52 chars)
+2026-01-16 21:50:29 - INFO - __main__ - Fetching content from: https://polygraphia.it/?v=6397595001900
+2026-01-16 21:50:36 - INFO - __main__ - Successfully extracted article content (2028 chars)
+2026-01-16 21:50:36 - INFO - __main__ - Fetching content from: https://polygraphia.it/?v=6397595021900
+2026-01-16 21:50:46 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='polygraphia.it', port=443): Read timed out. (read timeout=10)
+2026-01-16 21:50:46 - INFO - __main__ - Fetching content from: https://www.esseg.eu/?e=62491765041470
+2026-01-16 21:50:55 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.esseg.eu', port=443): Max retries exceeded with url: /?e=62491765041470 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-01-16 21:50:55 - INFO - __main__ - Found total of 2 valid articles for SMCI
+2026-01-16 21:50:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-16 21:50:59 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-16 21:50:59 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2026-01-16 21:51:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-16 21:51:04 - INFO - __main__ - Top performer analysis complete
+2026-01-16 21:51:04 - INFO - __main__ - Analyzing bottom performer...
+2026-01-16 21:51:04 - INFO - __main__ - Analyzing Constellation Energy (CEG)
+2026-01-16 21:51:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-16 21:51:04 - INFO - __main__ - Searching for articles about CEG
+2026-01-16 21:51:04 - INFO - __main__ - Searching for news about Constellation Energy
+2026-01-16 21:51:07 - INFO - __main__ - Found 6 recent search results for Constellation Energy
+2026-01-16 21:51:07 - INFO - __main__ - Found 6 URLs to try for CEG
+2026-01-16 21:51:07 - INFO - __main__ - Fetching content from: https://www.fool.com/investing/2026/01/16/why-constellation-energy-tanked-today/
+2026-01-16 21:51:07 - INFO - __main__ - Successfully extracted article content (159 chars)
+2026-01-16 21:51:07 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/why-constellation-energy-tanked-today
+2026-01-16 21:51:07 - INFO - __main__ - Successfully extracted article content (4535 chars)
+2026-01-16 21:51:07 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-45c8219d?gaa_at=eafs&gaa_n=AWEtsqdNs-NzLZB4MaPEdOHN_FLDWvN_PDtPfiHqgtEqCKMMDWCBdzifsBb2&gaa_ts=696ab64e&gaa_sig=rkb-1waJOdQr2ZYaUc6pWoU6uP0siRYCm9phaQcrUG5a4wRqntP0I3p-FLIdfth27LR3b0-BwXY3cVigYBD90g%3D%3D
+2026-01-16 21:51:07 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-16 21:51:07 - INFO - __main__ - Fetching content from: https://www.investors.com/news/trump-energy-auction-electricity-power-ai-demand-tech-bitcoin-miners/
+2026-01-16 21:51:07 - INFO - __main__ - Successfully extracted article content (474 chars)
+2026-01-16 21:51:07 - INFO - __main__ - Fetching content from: https://www.marketwatch.com/story/these-stocks-have-the-most-to-lose-from-trumps-push-to-lower-electricity-prices-e920c47f?gaa_at=eafs&gaa_n=AWEtsqcYQ3c1mkIUJ_sYGGo30IWK6XvjyEQ1e1r5BR6c-stNG9eNsckVcI0w&gaa_ts=696ab64e&gaa_sig=0S6g2JvcK1OwwNlrL4hFM9-LNaOehPLncADfRpEizm1SevQMtZw_10qKRN5R2ZsaZSXALhYmeGW68CZYsG0JtA%3D%3D
+2026-01-16 21:51:07 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-16 21:51:07 - INFO - __main__ - Fetching content from: https://www.investopedia.com/dow-jones-today-01162026-11886786
+2026-01-16 21:51:07 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-16 21:51:07 - INFO - __main__ - Successfully extracted article content (11069 chars)
+2026-01-16 21:51:07 - INFO - __main__ - Found total of 2 valid articles for CEG
+2026-01-16 21:51:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-16 21:51:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-16 21:51:12 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-16 21:51:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-16 21:51:17 - INFO - __main__ - Bottom performer analysis complete
+2026-01-16 21:51:17 - INFO - __main__ - Saving results to JSON...
+2026-01-16 21:51:18 - INFO - __main__ - Analysis complete and saved to market_analysis.json
