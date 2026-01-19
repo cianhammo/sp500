@@ -1,0 +1,83 @@
+2026-01-19 21:49:57 - INFO - __main__ - Starting SP500 analysis script
+2026-01-19 21:49:58 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-19 21:49:58 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 15, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-19 21:49:58 - INFO - __main__ - Runtime timezone: UTC
+2026-01-19 21:49:58 - INFO - __main__ - Original start: 2026-01-15 16:00:00-05:00 (America/New_York)
+2026-01-19 21:49:58 - INFO - __main__ - Original end: 2026-01-16 16:00:00-05:00 (America/New_York)
+2026-01-19 21:49:58 - INFO - __main__ - UTC start: 2026-01-15 05:00:00+00:00
+2026-01-19 21:49:58 - INFO - __main__ - UTC end: 2026-01-17 05:00:00+00:00
+2026-01-19 21:49:58 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-19 21:49:59 - INFO - __main__ - Received data for 493 symbols
+2026-01-19 21:49:59 - INFO - __main__ - Sample data structure for CPRT:
+2026-01-19 21:49:59 - INFO - __main__ - Number of bars: 2
+2026-01-19 21:49:59 - INFO - __main__ - Bar timestamp: 2026-01-15 05:00:00+00:00 (UTC)
+2026-01-19 21:49:59 - INFO - __main__ - Bar timestamp: 2026-01-16 05:00:00+00:00 (UTC)
+2026-01-19 21:49:59 - INFO - __main__ - CPRT timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-19 21:49:59 - INFO - __main__ - BA timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-19 21:49:59 - INFO - __main__ - BF.B timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-19 21:49:59 - INFO - __main__ - CMG timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-19 21:49:59 - INFO - __main__ - UNP timestamps - Today: 2026-01-16 05:00:00+00:00, Yesterday: 2026-01-15 05:00:00+00:00
+2026-01-19 21:49:59 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-19 21:49:59 - INFO - __main__ - Data issues encountered: 0
+2026-01-19 21:49:59 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-19 21:49:59 - INFO - __main__ - Analysis for market close on January 16, 2026
+2026-01-19 21:49:59 - INFO - __main__ - Found 493 stocks with price data
+2026-01-19 21:50:00 - INFO - __main__ - Found Wikipedia URL for SMCI: https://en.wikipedia.org/wiki/Supermicro
+2026-01-19 21:50:02 - INFO - __main__ - Found Wikipedia URL for CEG: https://en.wikipedia.org/wiki/Constellation_Energy
+2026-01-19 21:50:04 - INFO - __main__ - Analyzing top performer...
+2026-01-19 21:50:04 - INFO - __main__ - Analyzing Supermicro (SMCI)
+2026-01-19 21:50:04 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-19 21:50:05 - INFO - __main__ - Searching for articles about SMCI
+2026-01-19 21:50:05 - INFO - __main__ - Searching for news about Supermicro
+2026-01-19 21:50:08 - INFO - __main__ - Found 6 recent search results for Supermicro
+2026-01-19 21:50:08 - INFO - __main__ - Found 6 URLs to try for SMCI
+2026-01-19 21:50:08 - INFO - __main__ - Fetching content from: https://storagemagazine.co.uk/articles/?article_id=15099&Mag=Storage
+2026-01-19 21:50:09 - INFO - __main__ - Successfully extracted article content (147 chars)
+2026-01-19 21:50:09 - INFO - __main__ - Fetching content from: https://www.pamsteele.org/contents/event/kansyasai/62154019030210
+2026-01-19 21:50:11 - WARNING - __main__ - Article content too short (0 chars)
+2026-01-19 21:50:11 - INFO - __main__ - Fetching content from: https://www.dentalhousecr.com/?t=78503744001500
+2026-01-19 21:50:11 - ERROR - readability.readability - error getting summary: 
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/readability/readability.py", line 213, in summary
+    self._html(True)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/readability/readability.py", line 148, in _html
+    self.html = self._parse(self.input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/readability/readability.py", line 157, in _parse
+    doc, self.encoding = build_doc(input)
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/readability/htmls.py", line 21, in build_doc
+    doc = lxml.html.document_fromstring(
+  File "/opt/hostedtoolcache/Python/3.10.19/x64/lib/python3.10/site-packages/lxml/html/__init__.py", line 761, in document_fromstring
+    raise etree.ParserError(
+lxml.etree.ParserError: Document is empty
+2026-01-19 21:50:11 - ERROR - __main__ - Failed to fetch article: Document is empty
+2026-01-19 21:50:11 - INFO - __main__ - Fetching content from: https://www.esseg.eu/product-similar-image/?4025580020470
+2026-01-19 21:50:21 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.esseg.eu', port=443): Max retries exceeded with url: /product-similar-image/?4025580020470 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-01-19 21:50:21 - INFO - __main__ - Fetching content from: https://www.esseg.eu/shop/manufacturer-site?&transition=top14036323012470
+2026-01-19 21:50:21 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.esseg.eu', port=443): Max retries exceeded with url: /shop/manufacturer-site?&transition=top14036323012470 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-01-19 21:50:21 - INFO - __main__ - Fetching content from: https://www.esseg.eu/shop/manufacturer-site?&transition=top107455667012470
+2026-01-19 21:50:21 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.esseg.eu', port=443): Max retries exceeded with url: /shop/manufacturer-site?&transition=top107455667012470 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1017)')))
+2026-01-19 21:50:21 - INFO - __main__ - Found total of 0 valid articles for SMCI
+2026-01-19 21:50:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-19 21:50:26 - INFO - __main__ - Top performer analysis complete
+2026-01-19 21:50:26 - INFO - __main__ - Analyzing bottom performer...
+2026-01-19 21:50:26 - INFO - __main__ - Analyzing Constellation Energy (CEG)
+2026-01-19 21:50:26 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-19 21:50:26 - INFO - __main__ - Searching for articles about CEG
+2026-01-19 21:50:26 - INFO - __main__ - Searching for news about Constellation Energy
+2026-01-19 21:50:29 - INFO - __main__ - Found 6 recent search results for Constellation Energy
+2026-01-19 21:50:29 - INFO - __main__ - Found 6 URLs to try for CEG
+2026-01-19 21:50:29 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/constellation-energy-stock-buy-now-152000816.html
+2026-01-19 21:50:30 - INFO - __main__ - Successfully extracted article content (5328 chars)
+2026-01-19 21:50:30 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/2-no-brainer-high-yield-164200826.html
+2026-01-19 21:50:31 - INFO - __main__ - Successfully extracted article content (4349 chars)
+2026-01-19 21:50:31 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/us-stock-market-today-p-101216047.html
+2026-01-19 21:50:32 - INFO - __main__ - Successfully extracted article content (3852 chars)
+2026-01-19 21:50:32 - INFO - __main__ - Found total of 3 valid articles for CEG
+2026-01-19 21:50:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-19 21:50:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-19 21:50:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-19 21:50:38 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2026-01-19 21:50:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-19 21:50:42 - INFO - __main__ - Bottom performer analysis complete
+2026-01-19 21:50:42 - INFO - __main__ - Saving results to JSON...
+2026-01-19 21:50:42 - INFO - __main__ - Analysis complete and saved to market_analysis.json
