@@ -118,3 +118,44 @@
 2026-01-20 13:50:25,004 - sec_monitor - INFO - Cumulative stats - Input words: 425456, Output words: 0
 2026-01-20 13:50:25,004 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-20 13:50:25,004 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 8190, 'output_words': 0, 'filings_processed': 1}
+2026-01-20 15:32:09,323 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-20 15:32:09,323 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-20 15:32:09,323 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-20 15:32:09,324 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-20 15:32:09,324 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-20 15:32:09,324 - sec_monitor - INFO - Initializing components...
+2026-01-20 15:32:09,324 - sec_monitor - INFO - Initializing components
+2026-01-20 15:32:09,324 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-20 15:32:09,324 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-20 15:32:09,324 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-20 15:32:09,325 - sec_monitor - INFO - All components initialized successfully
+2026-01-20 15:32:09,325 - sec_monitor - INFO - Found JSON file from today
+2026-01-20 15:32:09,326 - sec_monitor - INFO - Found 6 previously processed accessions and 6 filing URLs
+2026-01-20 15:32:09,326 - sec_monitor - INFO - Found 6 accession numbers and 6 URLs from previously processed filings
+2026-01-20 15:32:09,326 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-20 15:32:14,691 - sec_monitor - INFO - Reached old filing, stopping. Found 19 total filings
+2026-01-20 15:32:14,691 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-20 15:32:14,691 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-20 15:32:14,692 - sec_monitor - INFO - Processing filing 1/2: VZ
+2026-01-20 15:32:15,516 - sec_monitor - ERROR - Error processing filing VZ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 15:32:15,516 - sec_monitor - INFO - Processing filing 2/2: PAYX
+2026-01-20 15:32:15,998 - sec_monitor - ERROR - Error processing filing PAYX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 15:32:15,998 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-20 15:32:16,636 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-20 15:32:16,636 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-20 15:32:16,636 - sec_monitor - INFO - Market open: True
+2026-01-20 15:32:16,637 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-20 15:32:16,728 - sec_monitor - INFO - Last trading day: 2026-01-20
+2026-01-20 15:32:16,728 - sec_monitor - INFO - Processing ticker: VZ
+2026-01-20 15:32:17,225 - sec_monitor - INFO - Number of bars for VZ: 2
+2026-01-20 15:32:17,226 - sec_monitor - INFO - Last bar close for VZ: 38.92
+2026-01-20 15:32:17,226 - sec_monitor - INFO - Market open price for VZ: 38.92, change: -1.1430022860045612%
+2026-01-20 15:32:17,226 - sec_monitor - INFO - Processing ticker: PAYX
+2026-01-20 15:32:17,356 - sec_monitor - INFO - Number of bars for PAYX: 2
+2026-01-20 15:32:17,356 - sec_monitor - INFO - Last bar close for PAYX: 111.185
+2026-01-20 15:32:17,356 - sec_monitor - INFO - Market open price for PAYX: 111.185, change: 0.6654594839293793%
+2026-01-20 15:32:18,278 - sec_monitor - INFO - Generating final output...
+2026-01-20 15:32:18,278 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-20 15:32:18,279 - sec_monitor - INFO - Cumulative stats - Input words: 436534, Output words: 0
+2026-01-20 15:32:18,279 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-20 15:32:18,279 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 11078, 'output_words': 0, 'filings_processed': 2}
