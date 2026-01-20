@@ -30,3 +30,56 @@
 2026-01-20 11:17:16,531 - sec_monitor - INFO - Generating final output...
 2026-01-20 11:17:16,532 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-20 11:17:16,533 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 4236, 'output_words': 0, 'filings_processed': 1}
+2026-01-20 12:53:52,282 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-20 12:53:52,282 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-20 12:53:52,282 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-20 12:53:52,283 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-20 12:53:52,283 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-20 12:53:52,283 - sec_monitor - INFO - Initializing components...
+2026-01-20 12:53:52,283 - sec_monitor - INFO - Initializing components
+2026-01-20 12:53:52,283 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-20 12:53:52,283 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-20 12:53:52,283 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-20 12:53:52,284 - sec_monitor - INFO - All components initialized successfully
+2026-01-20 12:53:52,284 - sec_monitor - INFO - Found JSON file from today
+2026-01-20 12:53:52,285 - sec_monitor - INFO - Found 1 previously processed accessions and 1 filing URLs
+2026-01-20 12:53:52,285 - sec_monitor - INFO - Found 1 accession numbers and 1 URLs from previously processed filings
+2026-01-20 12:53:52,285 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-20 12:53:53,702 - sec_monitor - INFO - Reached old filing, stopping. Found 13 total filings
+2026-01-20 12:53:53,702 - sec_monitor - INFO - Found 4 new interesting filings
+2026-01-20 12:53:53,702 - sec_monitor - INFO - Found 4 new filings to process
+2026-01-20 12:53:53,702 - sec_monitor - INFO - Processing filing 1/4: WBD
+2026-01-20 12:53:57,803 - sec_monitor - ERROR - Error processing filing WBD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 12:53:57,803 - sec_monitor - INFO - Processing filing 2/4: NFLX
+2026-01-20 12:54:01,681 - sec_monitor - ERROR - Error processing filing NFLX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 12:54:01,681 - sec_monitor - INFO - Processing filing 3/4: OTIS
+2026-01-20 12:54:08,507 - sec_monitor - ERROR - Error processing filing OTIS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 12:54:08,507 - sec_monitor - INFO - Processing filing 4/4: MMM
+2026-01-20 12:54:09,837 - sec_monitor - ERROR - Error processing filing MMM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 12:54:09,837 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-20 12:54:09,956 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-20 12:54:09,956 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-20 12:54:09,956 - sec_monitor - INFO - Market open: False
+2026-01-20 12:54:09,957 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-01-20 12:54:09,984 - sec_monitor - INFO - Last trading day: 2026-01-20
+2026-01-20 12:54:09,984 - sec_monitor - INFO - Processing ticker: WBD
+2026-01-20 12:54:10,194 - sec_monitor - INFO - Number of bars for WBD: 2
+2026-01-20 12:54:10,194 - sec_monitor - INFO - Last bar close for WBD: 28.59
+2026-01-20 12:54:10,194 - sec_monitor - INFO - Outside market hours price for WBD: 28.59
+2026-01-20 12:54:10,194 - sec_monitor - INFO - Processing ticker: NFLX
+2026-01-20 12:54:10,217 - sec_monitor - INFO - Number of bars for NFLX: 2
+2026-01-20 12:54:10,217 - sec_monitor - INFO - Last bar close for NFLX: 87.99
+2026-01-20 12:54:10,218 - sec_monitor - INFO - Outside market hours price for NFLX: 87.99
+2026-01-20 12:54:10,218 - sec_monitor - INFO - Processing ticker: OTIS
+2026-01-20 12:54:10,279 - sec_monitor - INFO - Number of bars for OTIS: 2
+2026-01-20 12:54:10,279 - sec_monitor - INFO - Last bar close for OTIS: 90.11
+2026-01-20 12:54:10,280 - sec_monitor - INFO - Outside market hours price for OTIS: 90.11
+2026-01-20 12:54:10,280 - sec_monitor - INFO - Processing ticker: MMM
+2026-01-20 12:54:10,373 - sec_monitor - INFO - Number of bars for MMM: 2
+2026-01-20 12:54:10,373 - sec_monitor - INFO - Last bar close for MMM: 167.725
+2026-01-20 12:54:10,373 - sec_monitor - INFO - Outside market hours price for MMM: 167.725
+2026-01-20 12:54:11,918 - sec_monitor - INFO - Generating final output...
+2026-01-20 12:54:11,919 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2026-01-20 12:54:11,919 - sec_monitor - INFO - Cumulative stats - Input words: 417266, Output words: 0
+2026-01-20 12:54:11,919 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-20 12:54:11,919 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 413030, 'output_words': 0, 'filings_processed': 4}
