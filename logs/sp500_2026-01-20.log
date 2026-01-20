@@ -1,0 +1,67 @@
+2026-01-20 21:49:26 - INFO - __main__ - Starting SP500 analysis script
+2026-01-20 21:49:26 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-20 21:49:27 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 16, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-20 21:49:27 - INFO - __main__ - Runtime timezone: UTC
+2026-01-20 21:49:27 - INFO - __main__ - Original start: 2026-01-16 16:00:00-05:00 (America/New_York)
+2026-01-20 21:49:27 - INFO - __main__ - Original end: 2026-01-20 16:00:00-05:00 (America/New_York)
+2026-01-20 21:49:27 - INFO - __main__ - UTC start: 2026-01-16 05:00:00+00:00
+2026-01-20 21:49:27 - INFO - __main__ - UTC end: 2026-01-21 05:00:00+00:00
+2026-01-20 21:49:27 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-20 21:49:28 - INFO - __main__ - Received data for 493 symbols
+2026-01-20 21:49:28 - INFO - __main__ - Sample data structure for ABT:
+2026-01-20 21:49:28 - INFO - __main__ - Number of bars: 2
+2026-01-20 21:49:28 - INFO - __main__ - Bar timestamp: 2026-01-16 05:00:00+00:00 (UTC)
+2026-01-20 21:49:28 - INFO - __main__ - Bar timestamp: 2026-01-20 05:00:00+00:00 (UTC)
+2026-01-20 21:49:28 - INFO - __main__ - ABT timestamps - Today: 2026-01-20 05:00:00+00:00, Yesterday: 2026-01-16 05:00:00+00:00
+2026-01-20 21:49:28 - INFO - __main__ - LNT timestamps - Today: 2026-01-20 05:00:00+00:00, Yesterday: 2026-01-16 05:00:00+00:00
+2026-01-20 21:49:28 - INFO - __main__ - MA timestamps - Today: 2026-01-20 05:00:00+00:00, Yesterday: 2026-01-16 05:00:00+00:00
+2026-01-20 21:49:28 - INFO - __main__ - MCO timestamps - Today: 2026-01-20 05:00:00+00:00, Yesterday: 2026-01-16 05:00:00+00:00
+2026-01-20 21:49:28 - INFO - __main__ - NSC timestamps - Today: 2026-01-20 05:00:00+00:00, Yesterday: 2026-01-16 05:00:00+00:00
+2026-01-20 21:49:28 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-20 21:49:28 - INFO - __main__ - Data issues encountered: 0
+2026-01-20 21:49:28 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-20 21:49:28 - INFO - __main__ - Analysis for market close on January 20, 2026
+2026-01-20 21:49:28 - INFO - __main__ - Found 493 stocks with price data
+2026-01-20 21:49:28 - INFO - __main__ - Found Wikipedia URL for ALB: https://en.wikipedia.org/wiki/Albemarle_Corporation
+2026-01-20 21:49:31 - INFO - __main__ - Found Wikipedia URL for NTAP: https://en.wikipedia.org/wiki/NetApp
+2026-01-20 21:49:33 - INFO - __main__ - Analyzing top performer...
+2026-01-20 21:49:33 - INFO - __main__ - Analyzing Albemarle Corporation (ALB)
+2026-01-20 21:49:33 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-20 21:49:33 - INFO - __main__ - Searching for articles about ALB
+2026-01-20 21:49:33 - INFO - __main__ - Searching for news about Albemarle Corporation
+2026-01-20 21:49:35 - INFO - __main__ - Found 6 recent search results for Albemarle Corporation
+2026-01-20 21:49:35 - INFO - __main__ - Found 6 URLs to try for ALB
+2026-01-20 21:49:35 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4540643-albemarle-lithium-argentina-raised-to-buy-at-hsbc-as-lithium-surplus-vanishes-quickly
+2026-01-20 21:49:36 - INFO - __main__ - Successfully extracted article content (248 chars)
+2026-01-20 21:49:36 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/albemarle-nysealb-stock-rating-upgraded-by-hsbc-global-res-2026-01-20/
+2026-01-20 21:49:36 - INFO - __main__ - Successfully extracted article content (5922 chars)
+2026-01-20 21:49:36 - INFO - __main__ - Fetching content from: https://www.marketbeat.com/instant-alerts/filing-pacific-heights-asset-management-llc-buys-70000-shares-of-albemarle-corporation-alb-2026-01-20/
+2026-01-20 21:49:36 - INFO - __main__ - Successfully extracted article content (6910 chars)
+2026-01-20 21:49:36 - INFO - __main__ - Found total of 2 valid articles for ALB
+2026-01-20 21:49:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:49:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:49:40 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-20 21:49:45 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:49:45 - INFO - __main__ - Top performer analysis complete
+2026-01-20 21:49:45 - INFO - __main__ - Analyzing bottom performer...
+2026-01-20 21:49:45 - INFO - __main__ - Analyzing NetApp (NTAP)
+2026-01-20 21:49:45 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-20 21:49:45 - INFO - __main__ - Searching for articles about NTAP
+2026-01-20 21:49:45 - INFO - __main__ - Searching for news about NetApp
+2026-01-20 21:49:48 - INFO - __main__ - Found 6 recent search results for NetApp
+2026-01-20 21:49:48 - INFO - __main__ - Found 6 URLs to try for NTAP
+2026-01-20 21:49:48 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/20/here-are-tuesdays-top-wall-street-analyst-research-calls-chevron-dominos-pizza-doximity-exact-sciences-intel-netapp-stubhub-toast-and-more/
+2026-01-20 21:49:48 - INFO - __main__ - Successfully extracted article content (6408 chars)
+2026-01-20 21:49:48 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/us-hardware-stocks-fall-morgan-112240004.html
+2026-01-20 21:49:48 - INFO - __main__ - Successfully extracted article content (1876 chars)
+2026-01-20 21:49:48 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-upgraded-dominos-downgraded-wall-143603334.html
+2026-01-20 21:49:49 - INFO - __main__ - Successfully extracted article content (2770 chars)
+2026-01-20 21:49:49 - INFO - __main__ - Found total of 3 valid articles for NTAP
+2026-01-20 21:49:51 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:49:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:49:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:49:56 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2026-01-20 21:50:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-20 21:50:01 - INFO - __main__ - Bottom performer analysis complete
+2026-01-20 21:50:01 - INFO - __main__ - Saving results to JSON...
+2026-01-20 21:50:01 - INFO - __main__ - Analysis complete and saved to market_analysis.json
