@@ -194,3 +194,44 @@
 2026-01-20 18:32:42,513 - sec_monitor - INFO - Cumulative stats - Input words: 444083, Output words: 0
 2026-01-20 18:32:42,513 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-20 18:32:42,514 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 7549, 'output_words': 0, 'filings_processed': 1}
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Initializing components...
+2026-01-20 21:14:21,127 - sec_monitor - INFO - Initializing components
+2026-01-20 21:14:21,128 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-20 21:14:21,128 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-20 21:14:21,128 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-20 21:14:21,128 - sec_monitor - INFO - All components initialized successfully
+2026-01-20 21:14:21,129 - sec_monitor - INFO - Found JSON file from today
+2026-01-20 21:14:21,129 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2026-01-20 21:14:21,129 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2026-01-20 21:14:21,129 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-20 21:14:45,050 - sec_monitor - INFO - Reached old filing, stopping. Found 56 total filings
+2026-01-20 21:14:45,050 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-20 21:14:45,051 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-20 21:14:45,051 - sec_monitor - INFO - Processing filing 1/2: NFLX
+2026-01-20 21:14:46,304 - sec_monitor - ERROR - Error processing filing NFLX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 21:14:46,304 - sec_monitor - INFO - Processing filing 2/2: UAL
+2026-01-20 21:14:47,580 - sec_monitor - ERROR - Error processing filing UAL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-20 21:14:47,580 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-20 21:14:47,977 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-20 21:14:47,977 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-20 21:14:47,977 - sec_monitor - INFO - Market open: False
+2026-01-20 21:14:47,977 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-20 21:14:48,036 - sec_monitor - INFO - Last trading day: 2026-01-20
+2026-01-20 21:14:48,036 - sec_monitor - INFO - Processing ticker: NFLX
+2026-01-20 21:14:48,519 - sec_monitor - INFO - Number of bars for NFLX: 2
+2026-01-20 21:14:48,519 - sec_monitor - INFO - Last bar close for NFLX: 87.99
+2026-01-20 21:14:48,519 - sec_monitor - INFO - Outside market hours price for NFLX: 87.99
+2026-01-20 21:14:48,519 - sec_monitor - INFO - Processing ticker: UAL
+2026-01-20 21:14:48,615 - sec_monitor - INFO - Number of bars for UAL: 2
+2026-01-20 21:14:48,616 - sec_monitor - INFO - Last bar close for UAL: 113.43
+2026-01-20 21:14:48,616 - sec_monitor - INFO - Outside market hours price for UAL: 113.43
+2026-01-20 21:14:49,685 - sec_monitor - INFO - Generating final output...
+2026-01-20 21:14:49,686 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-20 21:14:49,686 - sec_monitor - INFO - Cumulative stats - Input words: 478830, Output words: 0
+2026-01-20 21:14:49,686 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-20 21:14:49,686 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 34747, 'output_words': 0, 'filings_processed': 2}
