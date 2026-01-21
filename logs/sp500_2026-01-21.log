@@ -1,0 +1,68 @@
+2026-01-21 21:56:00 - INFO - __main__ - Starting SP500 analysis script
+2026-01-21 21:56:00 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-21 21:56:00 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 20, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-21 21:56:00 - INFO - __main__ - Runtime timezone: UTC
+2026-01-21 21:56:00 - INFO - __main__ - Original start: 2026-01-20 16:00:00-05:00 (America/New_York)
+2026-01-21 21:56:00 - INFO - __main__ - Original end: 2026-01-21 16:00:00-05:00 (America/New_York)
+2026-01-21 21:56:00 - INFO - __main__ - UTC start: 2026-01-20 05:00:00+00:00
+2026-01-21 21:56:00 - INFO - __main__ - UTC end: 2026-01-22 05:00:00+00:00
+2026-01-21 21:56:00 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-21 21:56:01 - INFO - __main__ - Received data for 493 symbols
+2026-01-21 21:56:01 - INFO - __main__ - Sample data structure for BR:
+2026-01-21 21:56:01 - INFO - __main__ - Number of bars: 2
+2026-01-21 21:56:01 - INFO - __main__ - Bar timestamp: 2026-01-20 05:00:00+00:00 (UTC)
+2026-01-21 21:56:01 - INFO - __main__ - Bar timestamp: 2026-01-21 05:00:00+00:00 (UTC)
+2026-01-21 21:56:01 - INFO - __main__ - BR timestamps - Today: 2026-01-21 05:00:00+00:00, Yesterday: 2026-01-20 05:00:00+00:00
+2026-01-21 21:56:01 - INFO - __main__ - NTRS timestamps - Today: 2026-01-21 05:00:00+00:00, Yesterday: 2026-01-20 05:00:00+00:00
+2026-01-21 21:56:01 - INFO - __main__ - GM timestamps - Today: 2026-01-21 05:00:00+00:00, Yesterday: 2026-01-20 05:00:00+00:00
+2026-01-21 21:56:01 - INFO - __main__ - SWK timestamps - Today: 2026-01-21 05:00:00+00:00, Yesterday: 2026-01-20 05:00:00+00:00
+2026-01-21 21:56:01 - INFO - __main__ - GEN timestamps - Today: 2026-01-21 05:00:00+00:00, Yesterday: 2026-01-20 05:00:00+00:00
+2026-01-21 21:56:01 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-21 21:56:01 - INFO - __main__ - Data issues encountered: 0
+2026-01-21 21:56:01 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-21 21:56:01 - INFO - __main__ - Analysis for market close on January 21, 2026
+2026-01-21 21:56:01 - INFO - __main__ - Found 493 stocks with price data
+2026-01-21 21:56:06 - INFO - __main__ - Found Wikipedia URL for MRNA: https://en.wikipedia.org/wiki/Moderna
+2026-01-21 21:56:09 - INFO - __main__ - Found Wikipedia URL for KHC: https://en.wikipedia.org/wiki/Kraft_Heinz
+2026-01-21 21:56:11 - INFO - __main__ - Analyzing top performer...
+2026-01-21 21:56:11 - INFO - __main__ - Analyzing Moderna (MRNA)
+2026-01-21 21:56:11 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-21 21:56:11 - INFO - __main__ - Searching for articles about MRNA
+2026-01-21 21:56:11 - INFO - __main__ - Searching for news about Moderna
+2026-01-21 21:56:14 - INFO - __main__ - Found 6 recent search results for Moderna
+2026-01-21 21:56:14 - INFO - __main__ - Found 6 URLs to try for MRNA
+2026-01-21 21:56:14 - INFO - __main__ - Fetching content from: https://simplywall.st/stocks/us/pharmaceuticals-biotech/nasdaq-mrna/moderna/news/moderna-cancer-data-sparks-questions-on-oncology-pivot-and-s
+2026-01-21 21:56:14 - INFO - __main__ - Successfully extracted article content (3414 chars)
+2026-01-21 21:56:14 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/company-announcements/moderna-extends-rare-disease-bet-with-long-term-mrna-3705-study-in-mma
+2026-01-21 21:56:14 - WARNING - __main__ - Article content too short (41 chars)
+2026-01-21 21:56:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-jump-after-brutal-sell-off-as-trump-rules-out-force-on-greenland-154955543.html
+2026-01-21 21:56:15 - INFO - __main__ - Successfully extracted article content (17694 chars)
+2026-01-21 21:56:15 - INFO - __main__ - Found total of 2 valid articles for MRNA
+2026-01-21 21:56:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-21 21:56:19 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-21 21:56:19 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-21 21:56:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-21 21:56:24 - INFO - __main__ - Top performer analysis complete
+2026-01-21 21:56:24 - INFO - __main__ - Analyzing bottom performer...
+2026-01-21 21:56:24 - INFO - __main__ - Analyzing Kraft Heinz (KHC)
+2026-01-21 21:56:24 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-21 21:56:25 - INFO - __main__ - Searching for articles about KHC
+2026-01-21 21:56:25 - INFO - __main__ - Searching for news about Kraft Heinz
+2026-01-21 21:56:27 - INFO - __main__ - Found 6 recent search results for Kraft Heinz
+2026-01-21 21:56:27 - INFO - __main__ - Found 6 URLs to try for KHC
+2026-01-21 21:56:27 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/21/berkshire-set-to-exit-28percent-stake-in-kraft-heinz-after-rare-buffett-blunder.html
+2026-01-21 21:56:28 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-21 21:56:28 - INFO - __main__ - Successfully extracted article content (2889 chars)
+2026-01-21 21:56:28 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/21/stocks-making-the-biggest-moves-premarket-nflx-ual-khc.html
+2026-01-21 21:56:28 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-21 21:56:28 - INFO - __main__ - Successfully extracted article content (2093 chars)
+2026-01-21 21:56:28 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/berkshire-hathaway-sell-kraft-heinz-087ba49f?gaa_at=eafs&gaa_n=AWEtsqee61PnLqk_8zob9S1uphuh8gzs25vyIfSpwEX0U5t4Jr3UjtoIfH_R&gaa_ts=69714f0f&gaa_sig=5j_wYPiQ8Mu3gbPUBMnn_uD6xLtSH-xwPOQciEGyQsYuWXwo5zeg03z8xsejQnFlQNY8Bkp1sZ8PaUi3qveWbw%3D%3D
+2026-01-21 21:56:28 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-21 21:56:28 - INFO - __main__ - Found total of 2 valid articles for KHC
+2026-01-21 21:56:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-21 21:56:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-21 21:56:32 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-21 21:56:36 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-21 21:56:36 - INFO - __main__ - Bottom performer analysis complete
+2026-01-21 21:56:36 - INFO - __main__ - Saving results to JSON...
+2026-01-21 21:56:37 - INFO - __main__ - Analysis complete and saved to market_analysis.json
