@@ -61,3 +61,51 @@
 2026-01-22 11:17:11,475 - sec_monitor - INFO - Generating final output...
 2026-01-22 11:17:11,475 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-22 11:17:11,475 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 33610, 'output_words': 0, 'filings_processed': 6}
+2026-01-22 12:53:57,852 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-22 12:53:57,852 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-22 12:53:57,852 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-22 12:53:57,853 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-22 12:53:57,853 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-22 12:53:57,853 - sec_monitor - INFO - Initializing components...
+2026-01-22 12:53:57,853 - sec_monitor - INFO - Initializing components
+2026-01-22 12:53:57,853 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-22 12:53:57,853 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-22 12:53:57,853 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-22 12:53:57,854 - sec_monitor - INFO - All components initialized successfully
+2026-01-22 12:53:57,854 - sec_monitor - INFO - Found JSON file from today
+2026-01-22 12:53:57,855 - sec_monitor - INFO - Found 6 previously processed accessions and 6 filing URLs
+2026-01-22 12:53:57,855 - sec_monitor - INFO - Found 6 accession numbers and 6 URLs from previously processed filings
+2026-01-22 12:53:57,855 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-22 12:54:58,429 - sec_monitor - INFO - No more entries found
+2026-01-22 12:54:58,429 - sec_monitor - INFO - Completed fetching. Found 342 total filings
+2026-01-22 12:54:58,430 - sec_monitor - INFO - Found 3 new interesting filings
+2026-01-22 12:54:58,430 - sec_monitor - INFO - Found 3 new filings to process
+2026-01-22 12:54:58,430 - sec_monitor - INFO - Processing filing 1/3: ABT
+2026-01-22 12:54:59,504 - sec_monitor - ERROR - Error processing filing ABT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-22 12:54:59,504 - sec_monitor - INFO - Processing filing 2/3: PG
+2026-01-22 12:55:00,378 - sec_monitor - ERROR - Error processing filing PG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-22 12:55:00,378 - sec_monitor - INFO - Processing filing 3/3: GE
+2026-01-22 12:55:02,541 - sec_monitor - ERROR - Error processing filing GE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-22 12:55:02,542 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-22 12:55:02,913 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-22 12:55:02,913 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-22 12:55:02,913 - sec_monitor - INFO - Market open: False
+2026-01-22 12:55:02,913 - sec_monitor - INFO - Number of filing times mapped: 3
+2026-01-22 12:55:02,925 - sec_monitor - INFO - Last trading day: 2026-01-22
+2026-01-22 12:55:02,925 - sec_monitor - INFO - Processing ticker: ABT
+2026-01-22 12:55:03,221 - sec_monitor - INFO - Number of bars for ABT: 2
+2026-01-22 12:55:03,222 - sec_monitor - INFO - Last bar close for ABT: 120.69
+2026-01-22 12:55:03,222 - sec_monitor - INFO - Outside market hours price for ABT: 120.69
+2026-01-22 12:55:03,222 - sec_monitor - INFO - Processing ticker: PG
+2026-01-22 12:55:03,243 - sec_monitor - INFO - Number of bars for PG: 2
+2026-01-22 12:55:03,243 - sec_monitor - INFO - Last bar close for PG: 146.02
+2026-01-22 12:55:03,244 - sec_monitor - INFO - Outside market hours price for PG: 146.02
+2026-01-22 12:55:03,244 - sec_monitor - INFO - Processing ticker: GE
+2026-01-22 12:55:03,267 - sec_monitor - INFO - Number of bars for GE: 2
+2026-01-22 12:55:03,267 - sec_monitor - INFO - Last bar close for GE: 318.57
+2026-01-22 12:55:03,267 - sec_monitor - INFO - Outside market hours price for GE: 318.57
+2026-01-22 12:55:04,468 - sec_monitor - INFO - Generating final output...
+2026-01-22 12:55:04,469 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2026-01-22 12:55:04,469 - sec_monitor - INFO - Cumulative stats - Input words: 121608, Output words: 0
+2026-01-22 12:55:04,469 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-22 12:55:04,469 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 87998, 'output_words': 0, 'filings_processed': 3}
