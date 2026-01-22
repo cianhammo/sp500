@@ -1,0 +1,66 @@
+2026-01-22 21:54:22 - INFO - __main__ - Starting SP500 analysis script
+2026-01-22 21:54:22 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-22 21:54:22 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 21, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-22 21:54:22 - INFO - __main__ - Runtime timezone: UTC
+2026-01-22 21:54:22 - INFO - __main__ - Original start: 2026-01-21 16:00:00-05:00 (America/New_York)
+2026-01-22 21:54:22 - INFO - __main__ - Original end: 2026-01-22 16:00:00-05:00 (America/New_York)
+2026-01-22 21:54:22 - INFO - __main__ - UTC start: 2026-01-21 05:00:00+00:00
+2026-01-22 21:54:22 - INFO - __main__ - UTC end: 2026-01-23 05:00:00+00:00
+2026-01-22 21:54:22 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-22 21:54:24 - INFO - __main__ - Received data for 493 symbols
+2026-01-22 21:54:24 - INFO - __main__ - Sample data structure for CHRW:
+2026-01-22 21:54:24 - INFO - __main__ - Number of bars: 2
+2026-01-22 21:54:24 - INFO - __main__ - Bar timestamp: 2026-01-21 05:00:00+00:00 (UTC)
+2026-01-22 21:54:24 - INFO - __main__ - Bar timestamp: 2026-01-22 05:00:00+00:00 (UTC)
+2026-01-22 21:54:24 - INFO - __main__ - CHRW timestamps - Today: 2026-01-22 05:00:00+00:00, Yesterday: 2026-01-21 05:00:00+00:00
+2026-01-22 21:54:24 - INFO - __main__ - MHK timestamps - Today: 2026-01-22 05:00:00+00:00, Yesterday: 2026-01-21 05:00:00+00:00
+2026-01-22 21:54:24 - INFO - __main__ - APO timestamps - Today: 2026-01-22 05:00:00+00:00, Yesterday: 2026-01-21 05:00:00+00:00
+2026-01-22 21:54:24 - INFO - __main__ - MGM timestamps - Today: 2026-01-22 05:00:00+00:00, Yesterday: 2026-01-21 05:00:00+00:00
+2026-01-22 21:54:24 - INFO - __main__ - AMZN timestamps - Today: 2026-01-22 05:00:00+00:00, Yesterday: 2026-01-21 05:00:00+00:00
+2026-01-22 21:54:24 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-22 21:54:24 - INFO - __main__ - Data issues encountered: 0
+2026-01-22 21:54:24 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-22 21:54:24 - INFO - __main__ - Analysis for market close on January 22, 2026
+2026-01-22 21:54:24 - INFO - __main__ - Found 493 stocks with price data
+2026-01-22 21:54:24 - INFO - __main__ - Found Wikipedia URL for ENPH: https://en.wikipedia.org/wiki/Enphase_Energy
+2026-01-22 21:54:27 - INFO - __main__ - Found Wikipedia URL for ABT: https://en.wikipedia.org/wiki/Abbott_Laboratories
+2026-01-22 21:54:29 - INFO - __main__ - Analyzing top performer...
+2026-01-22 21:54:29 - INFO - __main__ - Analyzing Enphase Energy (ENPH)
+2026-01-22 21:54:29 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-22 21:54:29 - INFO - __main__ - Searching for articles about ENPH
+2026-01-22 21:54:29 - INFO - __main__ - Searching for news about Enphase Energy
+2026-01-22 21:54:31 - INFO - __main__ - Found 6 recent search results for Enphase Energy
+2026-01-22 21:54:31 - INFO - __main__ - Found 6 URLs to try for ENPH
+2026-01-22 21:54:31 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/22/saudi-arabias-solar-bet-exposes-the-energy-stock-you-need-to-own-right-now/
+2026-01-22 21:54:32 - INFO - __main__ - Successfully extracted article content (6246 chars)
+2026-01-22 21:54:32 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/saudi-arabia-solar-bet-exposes-130403902.html
+2026-01-22 21:54:32 - INFO - __main__ - Successfully extracted article content (7035 chars)
+2026-01-22 21:54:32 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4541788-enphase-leads-clean-energy-names-higher-wins-upgrades-from-citi-goldman
+2026-01-22 21:54:32 - INFO - __main__ - Successfully extracted article content (183 chars)
+2026-01-22 21:54:32 - INFO - __main__ - Found total of 2 valid articles for ENPH
+2026-01-22 21:54:35 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-22 21:54:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-22 21:54:37 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-22 21:54:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-22 21:54:41 - INFO - __main__ - Top performer analysis complete
+2026-01-22 21:54:41 - INFO - __main__ - Analyzing bottom performer...
+2026-01-22 21:54:41 - INFO - __main__ - Analyzing Abbott Laboratories (ABT)
+2026-01-22 21:54:41 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-22 21:54:41 - INFO - __main__ - Searching for articles about ABT
+2026-01-22 21:54:41 - INFO - __main__ - Searching for news about Abbott Laboratories
+2026-01-22 21:54:44 - INFO - __main__ - Found 6 recent search results for Abbott Laboratories
+2026-01-22 21:54:44 - INFO - __main__ - Found 6 URLs to try for ABT
+2026-01-22 21:54:44 - INFO - __main__ - Fetching content from: https://www.investors.com/news/technology/abbott-stock-abbott-laboratories-earnings-q4-2025/
+2026-01-22 21:54:44 - INFO - __main__ - Successfully extracted article content (474 chars)
+2026-01-22 21:54:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/abbott-falls-fourth-quarter-revenue-131544732.html
+2026-01-22 21:54:44 - INFO - __main__ - Successfully extracted article content (2031 chars)
+2026-01-22 21:54:44 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/video/ge-aerospace-stock-slumps-abbott-141447633.html
+2026-01-22 21:54:45 - INFO - __main__ - Successfully extracted article content (1400 chars)
+2026-01-22 21:54:45 - INFO - __main__ - Found total of 2 valid articles for ABT
+2026-01-22 21:54:47 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-22 21:54:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-22 21:54:49 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-22 21:54:54 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-22 21:54:54 - INFO - __main__ - Bottom performer analysis complete
+2026-01-22 21:54:54 - INFO - __main__ - Saving results to JSON...
+2026-01-22 21:54:54 - INFO - __main__ - Analysis complete and saved to market_analysis.json
