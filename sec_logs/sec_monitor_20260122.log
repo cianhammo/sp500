@@ -109,3 +109,45 @@
 2026-01-22 12:55:04,469 - sec_monitor - INFO - Cumulative stats - Input words: 121608, Output words: 0
 2026-01-22 12:55:04,469 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-22 12:55:04,469 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 87998, 'output_words': 0, 'filings_processed': 3}
+2026-01-22 13:50:15,966 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-22 13:50:15,966 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-22 13:50:15,966 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-22 13:50:15,966 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-22 13:50:15,967 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-22 13:50:15,967 - sec_monitor - INFO - Initializing components...
+2026-01-22 13:50:15,967 - sec_monitor - INFO - Initializing components
+2026-01-22 13:50:15,967 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-22 13:50:15,967 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-22 13:50:15,967 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-22 13:50:15,967 - sec_monitor - INFO - All components initialized successfully
+2026-01-22 13:50:15,968 - sec_monitor - INFO - Found JSON file from today
+2026-01-22 13:50:15,968 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2026-01-22 13:50:15,968 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2026-01-22 13:50:15,968 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-22 13:50:56,321 - sec_monitor - INFO - No more entries found
+2026-01-22 13:50:56,321 - sec_monitor - INFO - Completed fetching. Found 348 total filings
+2026-01-22 13:50:56,322 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-22 13:50:56,322 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-22 13:50:56,322 - sec_monitor - INFO - Processing filing 1/2: FCX
+2026-01-22 13:52:00,645 - sec_monitor - ERROR - Error processing filing FCX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-22 13:52:00,645 - sec_monitor - INFO - Processing filing 2/2: COR
+2026-01-22 13:52:01,573 - sec_monitor - ERROR - Error processing filing COR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-22 13:52:01,573 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-22 13:52:01,882 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-22 13:52:01,883 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-22 13:52:01,883 - sec_monitor - INFO - Market open: False
+2026-01-22 13:52:01,883 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-22 13:52:01,906 - sec_monitor - INFO - Last trading day: 2026-01-22
+2026-01-22 13:52:01,906 - sec_monitor - INFO - Processing ticker: FCX
+2026-01-22 13:52:02,410 - sec_monitor - INFO - Number of bars for FCX: 2
+2026-01-22 13:52:02,411 - sec_monitor - INFO - Last bar close for FCX: 60.595
+2026-01-22 13:52:02,411 - sec_monitor - INFO - Outside market hours price for FCX: 60.595
+2026-01-22 13:52:02,411 - sec_monitor - INFO - Processing ticker: COR
+2026-01-22 13:52:02,444 - sec_monitor - INFO - Number of bars for COR: 2
+2026-01-22 13:52:02,444 - sec_monitor - INFO - Last bar close for COR: 351.78
+2026-01-22 13:52:02,444 - sec_monitor - INFO - Outside market hours price for COR: 351.78
+2026-01-22 13:52:03,014 - sec_monitor - INFO - Generating final output...
+2026-01-22 13:52:03,015 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-22 13:52:03,015 - sec_monitor - INFO - Cumulative stats - Input words: 416543, Output words: 0
+2026-01-22 13:52:03,015 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-22 13:52:03,015 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 294935, 'output_words': 0, 'filings_processed': 2}
