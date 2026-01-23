@@ -144,3 +144,44 @@
 2026-01-23 11:17:59,969 - sec_monitor - INFO - Generating final output...
 2026-01-23 11:17:59,970 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-23 11:17:59,970 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1580505, 'output_words': 0, 'filings_processed': 20}
+2026-01-23 12:51:32,907 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-23 12:51:32,908 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-23 12:51:32,908 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-23 12:51:32,908 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-23 12:51:32,908 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-23 12:51:32,908 - sec_monitor - INFO - Initializing components...
+2026-01-23 12:51:32,908 - sec_monitor - INFO - Initializing components
+2026-01-23 12:51:32,908 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-23 12:51:32,909 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-23 12:51:32,909 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-23 12:51:32,909 - sec_monitor - INFO - All components initialized successfully
+2026-01-23 12:51:32,910 - sec_monitor - INFO - Found JSON file from today
+2026-01-23 12:51:32,910 - sec_monitor - INFO - Found 20 previously processed accessions and 20 filing URLs
+2026-01-23 12:51:32,910 - sec_monitor - INFO - Found 20 accession numbers and 20 URLs from previously processed filings
+2026-01-23 12:51:32,910 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-23 12:52:00,001 - sec_monitor - INFO - Reached old filing, stopping. Found 107 total filings
+2026-01-23 12:52:00,001 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-23 12:52:00,001 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-23 12:52:00,001 - sec_monitor - INFO - Processing filing 1/2: SLB
+2026-01-23 12:52:02,680 - sec_monitor - ERROR - Error processing filing SLB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-23 12:52:02,680 - sec_monitor - INFO - Processing filing 2/2: ADI
+2026-01-23 12:52:03,198 - sec_monitor - ERROR - Error processing filing ADI: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-23 12:52:03,198 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-23 12:52:03,538 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-23 12:52:03,538 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-23 12:52:03,539 - sec_monitor - INFO - Market open: False
+2026-01-23 12:52:03,539 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-23 12:52:03,580 - sec_monitor - INFO - Last trading day: 2026-01-23
+2026-01-23 12:52:03,581 - sec_monitor - INFO - Processing ticker: SLB
+2026-01-23 12:52:03,896 - sec_monitor - INFO - Number of bars for SLB: 3
+2026-01-23 12:52:03,896 - sec_monitor - INFO - Last bar close for SLB: 49.32
+2026-01-23 12:52:03,896 - sec_monitor - INFO - Outside market hours price for SLB: 49.32
+2026-01-23 12:52:03,896 - sec_monitor - INFO - Processing ticker: ADI
+2026-01-23 12:52:03,947 - sec_monitor - INFO - Number of bars for ADI: 3
+2026-01-23 12:52:03,947 - sec_monitor - INFO - Last bar close for ADI: 308.62
+2026-01-23 12:52:03,947 - sec_monitor - INFO - Outside market hours price for ADI: 308.62
+2026-01-23 12:52:04,720 - sec_monitor - INFO - Generating final output...
+2026-01-23 12:52:04,721 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-23 12:52:04,721 - sec_monitor - INFO - Cumulative stats - Input words: 1600505, Output words: 0
+2026-01-23 12:52:04,721 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-23 12:52:04,721 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 20000, 'output_words': 0, 'filings_processed': 2}
