@@ -1,0 +1,67 @@
+2026-01-23 21:50:41 - INFO - __main__ - Starting SP500 analysis script
+2026-01-23 21:50:41 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-23 21:50:41 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 23, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 22, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-23 21:50:41 - INFO - __main__ - Runtime timezone: UTC
+2026-01-23 21:50:41 - INFO - __main__ - Original start: 2026-01-22 16:00:00-05:00 (America/New_York)
+2026-01-23 21:50:41 - INFO - __main__ - Original end: 2026-01-23 16:00:00-05:00 (America/New_York)
+2026-01-23 21:50:41 - INFO - __main__ - UTC start: 2026-01-22 05:00:00+00:00
+2026-01-23 21:50:41 - INFO - __main__ - UTC end: 2026-01-24 05:00:00+00:00
+2026-01-23 21:50:41 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-23 21:50:42 - INFO - __main__ - Received data for 493 symbols
+2026-01-23 21:50:42 - INFO - __main__ - Sample data structure for KMB:
+2026-01-23 21:50:42 - INFO - __main__ - Number of bars: 2
+2026-01-23 21:50:42 - INFO - __main__ - Bar timestamp: 2026-01-22 05:00:00+00:00 (UTC)
+2026-01-23 21:50:42 - INFO - __main__ - Bar timestamp: 2026-01-23 05:00:00+00:00 (UTC)
+2026-01-23 21:50:42 - INFO - __main__ - KMB timestamps - Today: 2026-01-23 05:00:00+00:00, Yesterday: 2026-01-22 05:00:00+00:00
+2026-01-23 21:50:42 - INFO - __main__ - LIN timestamps - Today: 2026-01-23 05:00:00+00:00, Yesterday: 2026-01-22 05:00:00+00:00
+2026-01-23 21:50:42 - INFO - __main__ - WELL timestamps - Today: 2026-01-23 05:00:00+00:00, Yesterday: 2026-01-22 05:00:00+00:00
+2026-01-23 21:50:42 - INFO - __main__ - CSGP timestamps - Today: 2026-01-23 05:00:00+00:00, Yesterday: 2026-01-22 05:00:00+00:00
+2026-01-23 21:50:42 - INFO - __main__ - CZR timestamps - Today: 2026-01-23 05:00:00+00:00, Yesterday: 2026-01-22 05:00:00+00:00
+2026-01-23 21:50:43 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-23 21:50:43 - INFO - __main__ - Data issues encountered: 0
+2026-01-23 21:50:43 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-23 21:50:43 - INFO - __main__ - Analysis for market close on January 23, 2026
+2026-01-23 21:50:43 - INFO - __main__ - Found 493 stocks with price data
+2026-01-23 21:50:43 - INFO - __main__ - Found Wikipedia URL for LYV: https://en.wikipedia.org/wiki/Live_Nation_Entertainment
+2026-01-23 21:50:45 - INFO - __main__ - Found Wikipedia URL for INTC: https://en.wikipedia.org/wiki/Intel
+2026-01-23 21:50:47 - INFO - __main__ - Analyzing top performer...
+2026-01-23 21:50:47 - INFO - __main__ - Analyzing Live Nation Entertainment (LYV)
+2026-01-23 21:50:48 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-23 21:50:48 - INFO - __main__ - Searching for articles about LYV
+2026-01-23 21:50:48 - INFO - __main__ - Searching for news about Live Nation Entertainment
+2026-01-23 21:50:52 - INFO - __main__ - Found 6 recent search results for Live Nation Entertainment
+2026-01-23 21:50:52 - INFO - __main__ - Found 6 URLs to try for LYV
+2026-01-23 21:50:52 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/23/retirees-can-invest-like-buffett-and-collect-monthly-income-at-the-same-time/
+2026-01-23 21:50:53 - INFO - __main__ - Successfully extracted article content (2716 chars)
+2026-01-23 21:50:53 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/01/23/these-3-etfs-could-pay-you-even-more-than-social-security/
+2026-01-23 21:50:53 - INFO - __main__ - Successfully extracted article content (3147 chars)
+2026-01-23 21:50:53 - INFO - __main__ - Fetching content from: https://uk.investing.com/news/stock-market-news/live-nation-stock-rises-after-doj-argues-for-company-breakup-93CH-4468566
+2026-01-23 21:50:53 - WARNING - __main__ - Article content too short (41 chars)
+2026-01-23 21:50:53 - INFO - __main__ - Found total of 2 valid articles for LYV
+2026-01-23 21:50:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-23 21:50:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-23 21:50:57 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2026-01-23 21:51:01 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-23 21:51:01 - INFO - __main__ - Top performer analysis complete
+2026-01-23 21:51:01 - INFO - __main__ - Analyzing bottom performer...
+2026-01-23 21:51:01 - INFO - __main__ - Analyzing Intel (INTC)
+2026-01-23 21:51:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-23 21:51:01 - INFO - __main__ - Searching for articles about INTC
+2026-01-23 21:51:01 - INFO - __main__ - Searching for news about Intel
+2026-01-23 21:51:04 - INFO - __main__ - Found 6 recent search results for Intel
+2026-01-23 21:51:04 - INFO - __main__ - Found 6 URLs to try for INTC
+2026-01-23 21:51:04 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2026-01-23/intel-s-stock-meltdown-risks-eroding-trump-endorsed-comeback
+2026-01-23 21:51:04 - INFO - __main__ - Successfully extracted article content (133 chars)
+2026-01-23 21:51:04 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/23/intel-stock-earnings-q4-2025-supply.html
+2026-01-23 21:51:05 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-23 21:51:05 - INFO - __main__ - Successfully extracted article content (2002 chars)
+2026-01-23 21:51:05 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/intel-stock-sinks-as-companys-q1-outlook-falls-short-of-wall-street-expectations-143343615.html
+2026-01-23 21:51:05 - INFO - __main__ - Successfully extracted article content (4368 chars)
+2026-01-23 21:51:05 - INFO - __main__ - Found total of 2 valid articles for INTC
+2026-01-23 21:51:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-23 21:51:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-23 21:51:10 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-23 21:51:15 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-23 21:51:15 - INFO - __main__ - Bottom performer analysis complete
+2026-01-23 21:51:15 - INFO - __main__ - Saving results to JSON...
+2026-01-23 21:51:15 - INFO - __main__ - Analysis complete and saved to market_analysis.json
