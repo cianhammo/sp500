@@ -30,3 +30,62 @@
 2026-01-26 11:14:39,662 - sec_monitor - INFO - Generating final output...
 2026-01-26 11:14:39,663 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-26 11:14:39,663 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 18814, 'output_words': 0, 'filings_processed': 1}
+2026-01-26 12:52:44,695 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-26 12:52:44,696 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-26 12:52:44,696 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-26 12:52:44,696 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-26 12:52:44,696 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-26 12:52:44,696 - sec_monitor - INFO - Initializing components...
+2026-01-26 12:52:44,696 - sec_monitor - INFO - Initializing components
+2026-01-26 12:52:44,697 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-26 12:52:44,697 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-26 12:52:44,697 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-26 12:52:44,697 - sec_monitor - INFO - All components initialized successfully
+2026-01-26 12:52:44,698 - sec_monitor - INFO - Found JSON file from today
+2026-01-26 12:52:44,698 - sec_monitor - INFO - Found 1 previously processed accessions and 1 filing URLs
+2026-01-26 12:52:44,698 - sec_monitor - INFO - Found 1 accession numbers and 1 URLs from previously processed filings
+2026-01-26 12:52:44,698 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-26 12:52:45,569 - sec_monitor - INFO - Reached old filing, stopping. Found 6 total filings
+2026-01-26 12:52:45,569 - sec_monitor - INFO - Found 5 new interesting filings
+2026-01-26 12:52:45,569 - sec_monitor - INFO - Found 5 new filings to process
+2026-01-26 12:52:45,569 - sec_monitor - INFO - Processing filing 1/5: CBOE
+2026-01-26 12:52:46,280 - sec_monitor - ERROR - Error processing filing CBOE: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 12:52:46,280 - sec_monitor - INFO - Processing filing 2/5: ETN
+2026-01-26 12:52:46,722 - sec_monitor - ERROR - Error processing filing ETN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 12:52:46,722 - sec_monitor - INFO - Processing filing 3/5: SWK
+2026-01-26 12:52:47,213 - sec_monitor - ERROR - Error processing filing SWK: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 12:52:47,213 - sec_monitor - INFO - Processing filing 4/5: MKTX
+2026-01-26 12:52:47,698 - sec_monitor - ERROR - Error processing filing MKTX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 12:52:47,698 - sec_monitor - INFO - Processing filing 5/5: LDOS
+2026-01-26 12:52:58,727 - sec_monitor - ERROR - Error processing filing LDOS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 12:52:58,727 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-26 12:52:59,247 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-26 12:52:59,247 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-26 12:52:59,247 - sec_monitor - INFO - Market open: False
+2026-01-26 12:52:59,247 - sec_monitor - INFO - Number of filing times mapped: 5
+2026-01-26 12:52:59,317 - sec_monitor - INFO - Last trading day: 2026-01-26
+2026-01-26 12:52:59,317 - sec_monitor - INFO - Processing ticker: CBOE
+2026-01-26 12:52:59,994 - sec_monitor - INFO - Number of bars for CBOE: 3
+2026-01-26 12:52:59,994 - sec_monitor - INFO - Last bar close for CBOE: 276.33
+2026-01-26 12:52:59,994 - sec_monitor - INFO - Outside market hours price for CBOE: 276.33
+2026-01-26 12:52:59,994 - sec_monitor - INFO - Processing ticker: ETN
+2026-01-26 12:53:00,105 - sec_monitor - INFO - Number of bars for ETN: 3
+2026-01-26 12:53:00,105 - sec_monitor - INFO - Last bar close for ETN: 331.21
+2026-01-26 12:53:00,105 - sec_monitor - INFO - Outside market hours price for ETN: 331.21
+2026-01-26 12:53:00,106 - sec_monitor - INFO - Processing ticker: SWK
+2026-01-26 12:53:00,236 - sec_monitor - INFO - Number of bars for SWK: 3
+2026-01-26 12:53:00,236 - sec_monitor - INFO - Last bar close for SWK: 82.45
+2026-01-26 12:53:00,236 - sec_monitor - INFO - Outside market hours price for SWK: 82.45
+2026-01-26 12:53:00,236 - sec_monitor - INFO - Processing ticker: MKTX
+2026-01-26 12:53:00,310 - sec_monitor - INFO - Number of bars for MKTX: 3
+2026-01-26 12:53:00,310 - sec_monitor - INFO - Last bar close for MKTX: 171.43
+2026-01-26 12:53:00,310 - sec_monitor - INFO - Outside market hours price for MKTX: 171.43
+2026-01-26 12:53:00,310 - sec_monitor - INFO - Processing ticker: LDOS
+2026-01-26 12:53:00,380 - sec_monitor - INFO - Number of bars for LDOS: 3
+2026-01-26 12:53:00,380 - sec_monitor - INFO - Last bar close for LDOS: 191.16
+2026-01-26 12:53:00,380 - sec_monitor - INFO - Outside market hours price for LDOS: 191.16
+2026-01-26 12:53:01,946 - sec_monitor - INFO - Generating final output...
+2026-01-26 12:53:01,947 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-01-26 12:53:01,947 - sec_monitor - INFO - Cumulative stats - Input words: 173982, Output words: 0
+2026-01-26 12:53:01,947 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-26 12:53:01,947 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 155168, 'output_words': 0, 'filings_processed': 5}
