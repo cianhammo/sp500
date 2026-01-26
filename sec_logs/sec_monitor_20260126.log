@@ -107,3 +107,44 @@
 2026-01-26 13:49:15,742 - sec_monitor - INFO - Reached old filing, stopping. Found 8 total filings
 2026-01-26 13:49:15,743 - sec_monitor - INFO - Found 0 new interesting filings
 2026-01-26 13:49:15,743 - sec_monitor - INFO - No new filings to process
+2026-01-26 15:30:09,829 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-26 15:30:09,829 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-26 15:30:09,829 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-26 15:30:09,829 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-26 15:30:09,829 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-26 15:30:09,830 - sec_monitor - INFO - Initializing components...
+2026-01-26 15:30:09,830 - sec_monitor - INFO - Initializing components
+2026-01-26 15:30:09,830 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-26 15:30:09,830 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-26 15:30:09,830 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-26 15:30:09,830 - sec_monitor - INFO - All components initialized successfully
+2026-01-26 15:30:09,831 - sec_monitor - INFO - Found JSON file from today
+2026-01-26 15:30:09,831 - sec_monitor - INFO - Found 6 previously processed accessions and 6 filing URLs
+2026-01-26 15:30:09,831 - sec_monitor - INFO - Found 6 accession numbers and 6 URLs from previously processed filings
+2026-01-26 15:30:09,831 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-26 15:30:14,107 - sec_monitor - INFO - Reached old filing, stopping. Found 17 total filings
+2026-01-26 15:30:14,107 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-26 15:30:14,107 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-26 15:30:14,107 - sec_monitor - INFO - Processing filing 1/2: PAYX
+2026-01-26 15:30:19,025 - sec_monitor - ERROR - Error processing filing PAYX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 15:30:19,025 - sec_monitor - INFO - Processing filing 2/2: LKQ
+2026-01-26 15:30:19,419 - sec_monitor - ERROR - Error processing filing LKQ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-26 15:30:19,419 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-26 15:30:20,011 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-26 15:30:20,011 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-26 15:30:20,011 - sec_monitor - INFO - Market open: True
+2026-01-26 15:30:20,011 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-26 15:30:20,155 - sec_monitor - INFO - Last trading day: 2026-01-26
+2026-01-26 15:30:20,155 - sec_monitor - INFO - Processing ticker: PAYX
+2026-01-26 15:30:20,904 - sec_monitor - INFO - Number of bars for PAYX: 3
+2026-01-26 15:30:20,904 - sec_monitor - INFO - Last bar close for PAYX: 106.63
+2026-01-26 15:30:20,905 - sec_monitor - INFO - Market open price for PAYX: 106.63, change: -0.48994447295973653%
+2026-01-26 15:30:20,905 - sec_monitor - INFO - Processing ticker: LKQ
+2026-01-26 15:30:21,929 - sec_monitor - INFO - Number of bars for LKQ: 3
+2026-01-26 15:30:21,929 - sec_monitor - INFO - Last bar close for LKQ: 34.035
+2026-01-26 15:30:21,930 - sec_monitor - INFO - Market open price for LKQ: 34.035, change: -0.21987686895339445%
+2026-01-26 15:30:22,681 - sec_monitor - INFO - Generating final output...
+2026-01-26 15:30:22,681 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-26 15:30:22,682 - sec_monitor - INFO - Cumulative stats - Input words: 381090, Output words: 0
+2026-01-26 15:30:22,682 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-26 15:30:22,682 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 207108, 'output_words': 0, 'filings_processed': 2}
