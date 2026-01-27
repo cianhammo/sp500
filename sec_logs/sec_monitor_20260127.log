@@ -215,3 +215,44 @@
 2026-01-27 12:55:29,645 - sec_monitor - INFO - Cumulative stats - Input words: 4750299, Output words: 0
 2026-01-27 12:55:29,645 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-27 12:55:29,645 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 96429, 'output_words': 0, 'filings_processed': 8}
+2026-01-27 13:51:08,700 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-27 13:51:08,700 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-27 13:51:08,700 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-27 13:51:08,701 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-27 13:51:08,701 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-27 13:51:08,701 - sec_monitor - INFO - Initializing components...
+2026-01-27 13:51:08,701 - sec_monitor - INFO - Initializing components
+2026-01-27 13:51:08,701 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-27 13:51:08,701 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-27 13:51:08,702 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-27 13:51:08,702 - sec_monitor - INFO - All components initialized successfully
+2026-01-27 13:51:08,703 - sec_monitor - INFO - Found JSON file from today
+2026-01-27 13:51:08,703 - sec_monitor - INFO - Found 27 previously processed accessions and 27 filing URLs
+2026-01-27 13:51:08,703 - sec_monitor - INFO - Found 27 accession numbers and 27 URLs from previously processed filings
+2026-01-27 13:51:08,703 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-27 13:51:44,325 - sec_monitor - INFO - Reached old filing, stopping. Found 133 total filings
+2026-01-27 13:51:44,325 - sec_monitor - INFO - Found 2 new interesting filings
+2026-01-27 13:51:44,325 - sec_monitor - INFO - Found 2 new filings to process
+2026-01-27 13:51:44,325 - sec_monitor - INFO - Processing filing 1/2: PCAR
+2026-01-27 13:53:26,982 - sec_monitor - ERROR - Error processing filing PCAR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 13:53:26,982 - sec_monitor - INFO - Processing filing 2/2: SYY
+2026-01-27 13:53:34,432 - sec_monitor - ERROR - Error processing filing SYY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 13:53:34,432 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-27 13:53:35,009 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-27 13:53:35,009 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-27 13:53:35,009 - sec_monitor - INFO - Market open: False
+2026-01-27 13:53:35,010 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-01-27 13:53:35,083 - sec_monitor - INFO - Last trading day: 2026-01-27
+2026-01-27 13:53:35,083 - sec_monitor - INFO - Processing ticker: PCAR
+2026-01-27 13:53:35,447 - sec_monitor - INFO - Number of bars for PCAR: 3
+2026-01-27 13:53:35,447 - sec_monitor - INFO - Last bar close for PCAR: 122.06
+2026-01-27 13:53:35,447 - sec_monitor - INFO - Outside market hours price for PCAR: 122.06
+2026-01-27 13:53:35,447 - sec_monitor - INFO - Processing ticker: SYY
+2026-01-27 13:53:35,523 - sec_monitor - INFO - Number of bars for SYY: 3
+2026-01-27 13:53:35,523 - sec_monitor - INFO - Last bar close for SYY: 75.64
+2026-01-27 13:53:35,523 - sec_monitor - INFO - Outside market hours price for SYY: 75.64
+2026-01-27 13:53:36,165 - sec_monitor - INFO - Generating final output...
+2026-01-27 13:53:36,166 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-01-27 13:53:36,166 - sec_monitor - INFO - Cumulative stats - Input words: 5126708, Output words: 0
+2026-01-27 13:53:36,166 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-27 13:53:36,166 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 376409, 'output_words': 0, 'filings_processed': 2}
