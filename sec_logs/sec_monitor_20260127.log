@@ -338,3 +338,62 @@
 2026-01-27 18:36:08,579 - sec_monitor - INFO - Cumulative stats - Input words: 7181980, Output words: 0
 2026-01-27 18:36:08,580 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-27 18:36:08,580 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 38085, 'output_words': 0, 'filings_processed': 3}
+2026-01-27 21:11:59,208 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-27 21:11:59,208 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-27 21:11:59,208 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-27 21:11:59,209 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-27 21:11:59,209 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-27 21:11:59,209 - sec_monitor - INFO - Initializing components...
+2026-01-27 21:11:59,209 - sec_monitor - INFO - Initializing components
+2026-01-27 21:11:59,209 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-27 21:11:59,209 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-27 21:11:59,210 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-27 21:11:59,210 - sec_monitor - INFO - All components initialized successfully
+2026-01-27 21:11:59,211 - sec_monitor - INFO - Found JSON file from today
+2026-01-27 21:11:59,211 - sec_monitor - INFO - Found 33 previously processed accessions and 33 filing URLs
+2026-01-27 21:11:59,211 - sec_monitor - INFO - Found 33 accession numbers and 33 URLs from previously processed filings
+2026-01-27 21:11:59,211 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-27 21:12:43,644 - sec_monitor - INFO - Reached old filing, stopping. Found 82 total filings
+2026-01-27 21:12:43,644 - sec_monitor - INFO - Found 5 new interesting filings
+2026-01-27 21:12:43,644 - sec_monitor - INFO - Found 5 new filings to process
+2026-01-27 21:12:43,644 - sec_monitor - INFO - Processing filing 1/5: STX
+2026-01-27 21:12:44,629 - sec_monitor - ERROR - Error processing filing STX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 21:12:44,629 - sec_monitor - INFO - Processing filing 2/5: GM
+2026-01-27 21:14:45,513 - sec_monitor - ERROR - Error processing filing GM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 21:14:45,513 - sec_monitor - INFO - Processing filing 3/5: TXN
+2026-01-27 21:14:46,235 - sec_monitor - ERROR - Error processing filing TXN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 21:14:46,236 - sec_monitor - INFO - Processing filing 4/5: NOC
+2026-01-27 21:15:09,355 - sec_monitor - ERROR - Error processing filing NOC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 21:15:09,355 - sec_monitor - INFO - Processing filing 5/5: JBL
+2026-01-27 21:15:09,792 - sec_monitor - ERROR - Error processing filing JBL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-27 21:15:09,793 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-27 21:15:10,149 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-27 21:15:10,149 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-27 21:15:10,150 - sec_monitor - INFO - Market open: False
+2026-01-27 21:15:10,150 - sec_monitor - INFO - Number of filing times mapped: 5
+2026-01-27 21:15:10,216 - sec_monitor - INFO - Last trading day: 2026-01-27
+2026-01-27 21:15:10,216 - sec_monitor - INFO - Processing ticker: STX
+2026-01-27 21:15:10,636 - sec_monitor - INFO - Number of bars for STX: 3
+2026-01-27 21:15:10,637 - sec_monitor - INFO - Last bar close for STX: 358.38
+2026-01-27 21:15:10,637 - sec_monitor - INFO - Outside market hours price for STX: 358.38
+2026-01-27 21:15:10,637 - sec_monitor - INFO - Processing ticker: GM
+2026-01-27 21:15:10,705 - sec_monitor - INFO - Number of bars for GM: 3
+2026-01-27 21:15:10,705 - sec_monitor - INFO - Last bar close for GM: 79.41
+2026-01-27 21:15:10,705 - sec_monitor - INFO - Outside market hours price for GM: 79.41
+2026-01-27 21:15:10,705 - sec_monitor - INFO - Processing ticker: TXN
+2026-01-27 21:15:10,771 - sec_monitor - INFO - Number of bars for TXN: 3
+2026-01-27 21:15:10,771 - sec_monitor - INFO - Last bar close for TXN: 196.65
+2026-01-27 21:15:10,771 - sec_monitor - INFO - Outside market hours price for TXN: 196.65
+2026-01-27 21:15:10,771 - sec_monitor - INFO - Processing ticker: NOC
+2026-01-27 21:15:10,838 - sec_monitor - INFO - Number of bars for NOC: 3
+2026-01-27 21:15:10,838 - sec_monitor - INFO - Last bar close for NOC: 660.48
+2026-01-27 21:15:10,838 - sec_monitor - INFO - Outside market hours price for NOC: 660.48
+2026-01-27 21:15:10,839 - sec_monitor - INFO - Processing ticker: JBL
+2026-01-27 21:15:10,907 - sec_monitor - INFO - Number of bars for JBL: 3
+2026-01-27 21:15:10,907 - sec_monitor - INFO - Last bar close for JBL: 241.91
+2026-01-27 21:15:10,907 - sec_monitor - INFO - Outside market hours price for JBL: 241.91
+2026-01-27 21:15:12,800 - sec_monitor - INFO - Generating final output...
+2026-01-27 21:15:12,802 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-01-27 21:15:12,802 - sec_monitor - INFO - Cumulative stats - Input words: 8149602, Output words: 0
+2026-01-27 21:15:12,802 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-27 21:15:12,802 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 967622, 'output_words': 0, 'filings_processed': 5}
