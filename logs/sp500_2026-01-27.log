@@ -1,0 +1,74 @@
+2026-01-27 21:50:53 - INFO - __main__ - Starting SP500 analysis script
+2026-01-27 21:50:53 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-01-27 21:50:53 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 1, 27, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 1, 26, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-01-27 21:50:53 - INFO - __main__ - Runtime timezone: UTC
+2026-01-27 21:50:53 - INFO - __main__ - Original start: 2026-01-26 16:00:00-05:00 (America/New_York)
+2026-01-27 21:50:53 - INFO - __main__ - Original end: 2026-01-27 16:00:00-05:00 (America/New_York)
+2026-01-27 21:50:53 - INFO - __main__ - UTC start: 2026-01-26 05:00:00+00:00
+2026-01-27 21:50:53 - INFO - __main__ - UTC end: 2026-01-28 05:00:00+00:00
+2026-01-27 21:50:53 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-01-27 21:50:54 - INFO - __main__ - Received data for 493 symbols
+2026-01-27 21:50:54 - INFO - __main__ - Sample data structure for ALLE:
+2026-01-27 21:50:54 - INFO - __main__ - Number of bars: 2
+2026-01-27 21:50:54 - INFO - __main__ - Bar timestamp: 2026-01-26 05:00:00+00:00 (UTC)
+2026-01-27 21:50:54 - INFO - __main__ - Bar timestamp: 2026-01-27 05:00:00+00:00 (UTC)
+2026-01-27 21:50:54 - INFO - __main__ - ALLE timestamps - Today: 2026-01-27 05:00:00+00:00, Yesterday: 2026-01-26 05:00:00+00:00
+2026-01-27 21:50:54 - INFO - __main__ - HON timestamps - Today: 2026-01-27 05:00:00+00:00, Yesterday: 2026-01-26 05:00:00+00:00
+2026-01-27 21:50:54 - INFO - __main__ - MMM timestamps - Today: 2026-01-27 05:00:00+00:00, Yesterday: 2026-01-26 05:00:00+00:00
+2026-01-27 21:50:54 - INFO - __main__ - ORLY timestamps - Today: 2026-01-27 05:00:00+00:00, Yesterday: 2026-01-26 05:00:00+00:00
+2026-01-27 21:50:54 - INFO - __main__ - WM timestamps - Today: 2026-01-27 05:00:00+00:00, Yesterday: 2026-01-26 05:00:00+00:00
+2026-01-27 21:50:55 - INFO - __main__ - Successfully processed 493 stocks
+2026-01-27 21:50:55 - INFO - __main__ - Data issues encountered: 0
+2026-01-27 21:50:55 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-01-27 21:50:55 - INFO - __main__ - Analysis for market close on January 27, 2026
+2026-01-27 21:50:55 - INFO - __main__ - Found 493 stocks with price data
+2026-01-27 21:50:55 - INFO - __main__ - Found Wikipedia URL for GLW: https://en.wikipedia.org/wiki/Corning_Inc.
+2026-01-27 21:50:57 - INFO - __main__ - Found Wikipedia URL for HUM: https://en.wikipedia.org/wiki/Humana
+2026-01-27 21:50:59 - INFO - __main__ - Analyzing top performer...
+2026-01-27 21:50:59 - INFO - __main__ - Analyzing Corning Inc. (GLW)
+2026-01-27 21:50:59 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-27 21:51:00 - INFO - __main__ - Searching for articles about GLW
+2026-01-27 21:51:00 - INFO - __main__ - Searching for news about Corning Inc.
+2026-01-27 21:51:02 - INFO - __main__ - Found 6 recent search results for Corning Inc.
+2026-01-27 21:51:02 - INFO - __main__ - Found 6 URLs to try for GLW
+2026-01-27 21:51:02 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/37253050/broader-market-rallies-on-tech-strength-and-solid-earnings
+2026-01-27 21:51:03 - INFO - __main__ - Successfully extracted article content (9049 chars)
+2026-01-27 21:51:03 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2026-01-26/asian-stocks-to-drift-higher-yen-gains-on-dollar-markets-wrap
+2026-01-27 21:51:03 - INFO - __main__ - Successfully extracted article content (133 chars)
+2026-01-27 21:51:03 - INFO - __main__ - Fetching content from: https://www.rttnews.com/3613861/corning-stock-rises-15-over-deal-with-meta-to-build-advanced-data-centers-in-us.aspx
+2026-01-27 21:51:03 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-27 21:51:03 - INFO - __main__ - Successfully extracted article content (634 chars)
+2026-01-27 21:51:03 - INFO - __main__ - Found total of 2 valid articles for GLW
+2026-01-27 21:51:04 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-27 21:51:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-27 21:51:06 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-27 21:51:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-27 21:51:09 - INFO - __main__ - Top performer analysis complete
+2026-01-27 21:51:09 - INFO - __main__ - Analyzing bottom performer...
+2026-01-27 21:51:09 - INFO - __main__ - Analyzing Humana (HUM)
+2026-01-27 21:51:09 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-01-27 21:51:09 - INFO - __main__ - Searching for articles about HUM
+2026-01-27 21:51:09 - INFO - __main__ - Searching for news about Humana
+2026-01-27 21:51:13 - INFO - __main__ - Found 6 recent search results for Humana
+2026-01-27 21:51:13 - INFO - __main__ - Found 6 URLs to try for HUM
+2026-01-27 21:51:13 - INFO - __main__ - Fetching content from: https://www.investors.com/news/unitedhealth-unh-stock-humana-cvs-medicare-advantage-rates-2027/
+2026-01-27 21:51:13 - INFO - __main__ - Successfully extracted article content (474 chars)
+2026-01-27 21:51:13 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/humana-unitedhealth-cvs-stock-medicare-rates-6bc17017?gaa_at=eafs&gaa_n=AWEtsqcnIQa5QihQXPB5J1yWqKaAz0cg0VcQHgjNAFe127hi-AlekuJu4N4V&gaa_ts=697936d4&gaa_sig=2ANHorj-SSNBdJ0q6lFMGkN8X-DcwQrfg8Ax-a_rPJNKAAaX7lADUgbOuFqY3Xc0GnPNBUBs0XU2XYBM_zEbUQ%3D%3D
+2026-01-27 21:51:13 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-27 21:51:13 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/humana-sinks-cms-resets-medicare-183529949.html
+2026-01-27 21:51:15 - INFO - __main__ - Successfully extracted article content (1384 chars)
+2026-01-27 21:51:15 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/01/27/stocks-making-the-biggest-moves-premarket-hum-unh-gm.html
+2026-01-27 21:51:15 - INFO - readability.readability - ruthless removal did not work. 
+2026-01-27 21:51:15 - INFO - __main__ - Successfully extracted article content (2974 chars)
+2026-01-27 21:51:15 - INFO - __main__ - Fetching content from: https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-01-27-2026/card/health-insurer-stocks-slide-after-medicare-rate-proposal-NXgKfeSWheJ98HELgDPk?gaa_at=eafs&gaa_n=AWEtsqeCi1A1SZUZCqFJQ8hjiCMIXbE0OK_jOMADpooeRnUu_zHIX1_doAcI&gaa_ts=697936d4&gaa_sig=AIuQdL1TvMJfUs6edKWyOElnoqlOIWyppgXcNt-Aj5G9C6xvpnYhAHN6fRaORM_bXrLdsECwxBroRcagdbgHNw%3D%3D
+2026-01-27 21:51:15 - WARNING - __main__ - Article content too short (43 chars)
+2026-01-27 21:51:15 - INFO - __main__ - Fetching content from: https://humana.com/medicare/medicare-supplement-plans
+2026-01-27 21:51:15 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='humana.com', port=443): Max retries exceeded with url: /medicare/medicare-supplement-plans (Caused by NewConnectionError("HTTPSConnection(host='humana.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-01-27 21:51:15 - INFO - __main__ - Found total of 2 valid articles for HUM
+2026-01-27 21:51:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-27 21:51:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-27 21:51:17 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-01-27 21:51:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-01-27 21:51:20 - INFO - __main__ - Bottom performer analysis complete
+2026-01-27 21:51:20 - INFO - __main__ - Saving results to JSON...
+2026-01-27 21:51:20 - INFO - __main__ - Analysis complete and saved to market_analysis.json
