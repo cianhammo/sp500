@@ -307,3 +307,63 @@
 2026-01-30 13:02:13,991 - sec_monitor - INFO - Cumulative stats - Input words: 3870814, Output words: 0
 2026-01-30 13:02:13,991 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-01-30 13:02:13,991 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1037449, 'output_words': 0, 'filings_processed': 12}
+2026-01-30 13:57:38,531 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-01-30 13:57:38,531 - sec_monitor - INFO - Loading S&P 500 data...
+2026-01-30 13:57:38,531 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-01-30 13:57:38,532 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-30 13:57:38,532 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-01-30 13:57:38,532 - sec_monitor - INFO - Initializing components...
+2026-01-30 13:57:38,532 - sec_monitor - INFO - Initializing components
+2026-01-30 13:57:38,532 - sec_monitor - INFO - SEC fetcher initialized
+2026-01-30 13:57:38,532 - sec_monitor - INFO - Filing analyzer initialized
+2026-01-30 13:57:38,533 - sec_monitor - INFO - Alpaca clients initialized
+2026-01-30 13:57:38,533 - sec_monitor - INFO - All components initialized successfully
+2026-01-30 13:57:38,534 - sec_monitor - INFO - Found JSON file from today
+2026-01-30 13:57:38,534 - sec_monitor - INFO - Found 42 previously processed accessions and 42 filing URLs
+2026-01-30 13:57:38,534 - sec_monitor - INFO - Found 42 accession numbers and 42 URLs from previously processed filings
+2026-01-30 13:57:38,534 - sec_monitor - INFO - Fetching SEC filings...
+2026-01-30 13:58:13,798 - sec_monitor - INFO - No more entries found
+2026-01-30 13:58:13,798 - sec_monitor - INFO - Completed fetching. Found 149 total filings
+2026-01-30 13:58:13,798 - sec_monitor - INFO - Found 5 new interesting filings
+2026-01-30 13:58:13,799 - sec_monitor - INFO - Found 5 new filings to process
+2026-01-30 13:58:13,799 - sec_monitor - INFO - Processing filing 1/5: BEN
+2026-01-30 13:58:39,628 - sec_monitor - ERROR - Error processing filing BEN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-30 13:58:39,629 - sec_monitor - INFO - Processing filing 2/5: BEN
+2026-01-30 13:58:40,743 - sec_monitor - ERROR - Error processing filing BEN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-30 13:58:40,743 - sec_monitor - INFO - Processing filing 3/5: VZ
+2026-01-30 13:58:41,339 - sec_monitor - ERROR - Error processing filing VZ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-30 13:58:41,339 - sec_monitor - INFO - Processing filing 4/5: PH
+2026-01-30 13:59:04,969 - sec_monitor - ERROR - Error processing filing PH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-30 13:59:04,970 - sec_monitor - INFO - Processing filing 5/5: AMGN
+2026-01-30 13:59:05,355 - sec_monitor - ERROR - Error processing filing AMGN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-01-30 13:59:05,355 - sec_monitor - INFO - Fetching supplementary data...
+2026-01-30 13:59:05,380 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-01-30 13:59:05,380 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-01-30 13:59:05,380 - sec_monitor - INFO - Market open: False
+2026-01-30 13:59:05,380 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-01-30 13:59:05,389 - sec_monitor - INFO - Last trading day: 2026-01-30
+2026-01-30 13:59:05,389 - sec_monitor - INFO - Processing ticker: BEN
+2026-01-30 13:59:05,668 - sec_monitor - INFO - Number of bars for BEN: 4
+2026-01-30 13:59:05,668 - sec_monitor - INFO - Last bar close for BEN: 25.87
+2026-01-30 13:59:05,668 - sec_monitor - INFO - Outside market hours price for BEN: 25.87
+2026-01-30 13:59:05,668 - sec_monitor - INFO - Processing ticker: BEN
+2026-01-30 13:59:05,683 - sec_monitor - INFO - Number of bars for BEN: 4
+2026-01-30 13:59:05,683 - sec_monitor - INFO - Last bar close for BEN: 25.87
+2026-01-30 13:59:05,683 - sec_monitor - INFO - Outside market hours price for BEN: 25.87
+2026-01-30 13:59:05,683 - sec_monitor - INFO - Processing ticker: VZ
+2026-01-30 13:59:05,701 - sec_monitor - INFO - Number of bars for VZ: 4
+2026-01-30 13:59:05,701 - sec_monitor - INFO - Last bar close for VZ: 39.82
+2026-01-30 13:59:05,701 - sec_monitor - INFO - Outside market hours price for VZ: 39.82
+2026-01-30 13:59:05,701 - sec_monitor - INFO - Processing ticker: PH
+2026-01-30 13:59:05,726 - sec_monitor - INFO - Number of bars for PH: 4
+2026-01-30 13:59:05,726 - sec_monitor - INFO - Last bar close for PH: 949.18
+2026-01-30 13:59:05,726 - sec_monitor - INFO - Outside market hours price for PH: 949.18
+2026-01-30 13:59:05,726 - sec_monitor - INFO - Processing ticker: AMGN
+2026-01-30 13:59:05,745 - sec_monitor - INFO - Number of bars for AMGN: 4
+2026-01-30 13:59:05,745 - sec_monitor - INFO - Last bar close for AMGN: 342.82
+2026-01-30 13:59:05,745 - sec_monitor - INFO - Outside market hours price for AMGN: 342.82
+2026-01-30 13:59:06,977 - sec_monitor - INFO - Generating final output...
+2026-01-30 13:59:06,978 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-01-30 13:59:06,978 - sec_monitor - INFO - Cumulative stats - Input words: 4269571, Output words: 0
+2026-01-30 13:59:06,979 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-01-30 13:59:06,979 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 398757, 'output_words': 0, 'filings_processed': 5}
