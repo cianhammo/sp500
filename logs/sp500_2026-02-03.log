@@ -1,0 +1,75 @@
+2026-02-03 22:02:27 - INFO - __main__ - Starting SP500 analysis script
+2026-02-03 22:02:27 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-03 22:02:27 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 3, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 2, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-03 22:02:27 - INFO - __main__ - Runtime timezone: UTC
+2026-02-03 22:02:27 - INFO - __main__ - Original start: 2026-02-02 16:00:00-05:00 (America/New_York)
+2026-02-03 22:02:27 - INFO - __main__ - Original end: 2026-02-03 16:00:00-05:00 (America/New_York)
+2026-02-03 22:02:27 - INFO - __main__ - UTC start: 2026-02-02 05:00:00+00:00
+2026-02-03 22:02:27 - INFO - __main__ - UTC end: 2026-02-04 05:00:00+00:00
+2026-02-03 22:02:27 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-03 22:02:28 - INFO - __main__ - Received data for 493 symbols
+2026-02-03 22:02:28 - INFO - __main__ - Sample data structure for COP:
+2026-02-03 22:02:28 - INFO - __main__ - Number of bars: 2
+2026-02-03 22:02:28 - INFO - __main__ - Bar timestamp: 2026-02-02 05:00:00+00:00 (UTC)
+2026-02-03 22:02:28 - INFO - __main__ - Bar timestamp: 2026-02-03 05:00:00+00:00 (UTC)
+2026-02-03 22:02:28 - INFO - __main__ - COP timestamps - Today: 2026-02-03 05:00:00+00:00, Yesterday: 2026-02-02 05:00:00+00:00
+2026-02-03 22:02:28 - INFO - __main__ - EQT timestamps - Today: 2026-02-03 05:00:00+00:00, Yesterday: 2026-02-02 05:00:00+00:00
+2026-02-03 22:02:28 - INFO - __main__ - FIS timestamps - Today: 2026-02-03 05:00:00+00:00, Yesterday: 2026-02-02 05:00:00+00:00
+2026-02-03 22:02:28 - INFO - __main__ - NEE timestamps - Today: 2026-02-03 05:00:00+00:00, Yesterday: 2026-02-02 05:00:00+00:00
+2026-02-03 22:02:28 - INFO - __main__ - CCI timestamps - Today: 2026-02-03 05:00:00+00:00, Yesterday: 2026-02-02 05:00:00+00:00
+2026-02-03 22:02:28 - INFO - __main__ - Successfully processed 493 stocks
+2026-02-03 22:02:28 - INFO - __main__ - Data issues encountered: 0
+2026-02-03 22:02:28 - INFO - __main__ - Final dataframe contains 493 stocks
+2026-02-03 22:02:28 - INFO - __main__ - Analysis for market close on February 03, 2026
+2026-02-03 22:02:28 - INFO - __main__ - Found 493 stocks with price data
+2026-02-03 22:02:28 - INFO - __main__ - Found Wikipedia URL for DVA: https://en.wikipedia.org/wiki/DaVita
+2026-02-03 22:02:31 - INFO - __main__ - Found Wikipedia URL for IT: https://en.wikipedia.org/wiki/Gartner
+2026-02-03 22:02:33 - INFO - __main__ - Analyzing top performer...
+2026-02-03 22:02:33 - INFO - __main__ - Analyzing DaVita (DVA)
+2026-02-03 22:02:33 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-03 22:02:33 - INFO - __main__ - Searching for articles about DVA
+2026-02-03 22:02:33 - INFO - __main__ - Searching for news about DaVita
+2026-02-03 22:02:40 - INFO - __main__ - Found 6 recent search results for DaVita
+2026-02-03 22:02:40 - INFO - __main__ - Found 6 URLs to try for DVA
+2026-02-03 22:02:40 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/davita-stock-dva-soars-20-as-financial-results-beat-wall-street-estimates
+2026-02-03 22:02:40 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-03 22:02:40 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/02/02/stock-market-today-live-updates.html
+2026-02-03 22:02:41 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-03 22:02:41 - INFO - __main__ - Successfully extracted article content (3313 chars)
+2026-02-03 22:02:41 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/sent-davita-stock-soaring-tuesday-173800005.html
+2026-02-03 22:02:41 - INFO - __main__ - Successfully extracted article content (3437 chars)
+2026-02-03 22:02:41 - INFO - __main__ - Found total of 2 valid articles for DVA
+2026-02-03 22:02:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:02:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:02:44 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2026-02-03 22:02:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:02:49 - INFO - __main__ - Top performer analysis complete
+2026-02-03 22:02:49 - INFO - __main__ - Analyzing bottom performer...
+2026-02-03 22:02:49 - INFO - __main__ - Analyzing Gartner (IT)
+2026-02-03 22:02:49 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-03 22:02:49 - INFO - __main__ - Searching for articles about IT
+2026-02-03 22:02:49 - INFO - __main__ - Searching for news about Gartner
+2026-02-03 22:02:51 - INFO - __main__ - Found 6 recent search results for Gartner
+2026-02-03 22:02:51 - INFO - __main__ - Found 6 URLs to try for IT
+2026-02-03 22:02:51 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gartner-forecasts-downbeat-annual-results-131026235.html
+2026-02-03 22:02:52 - INFO - __main__ - Successfully extracted article content (1688 chars)
+2026-02-03 22:02:52 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/the-fly/baird-likes-accenture-amid-selloff-tied-to-anthropic-plug-ins-gartner-weakness-thefly
+2026-02-03 22:02:52 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-03 22:02:52 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-8b93e9b4?gaa_at=eafs&gaa_n=AWEtsqd69DaEo1q6zkeG_Y8rHyGNLaK3mq902VMqg8A9mS2Zg8RLSCk0FbdY&gaa_ts=6982740f&gaa_sig=JN9l5kmEpGw_G--gRnuXn1hnyxnnTXKb48uVSphN7TULnSwy7Tiy_jRC6cYXmk3ReKnDOsfQI8WjoPCOm7boFQ%3D%3D
+2026-02-03 22:02:52 - WARNING - __main__ - Article content too short (43 chars)
+2026-02-03 22:02:52 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4546429-gartner-outlines-6_455b-revenue-target-for-2026-as-transformation-accelerates-contract-value
+2026-02-03 22:02:52 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-03 22:02:52 - WARNING - __main__ - Article content too short (0 chars)
+2026-02-03 22:02:52 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/37384437/solid-tech-earnings-support-stocks
+2026-02-03 22:02:53 - INFO - __main__ - Successfully extracted article content (9020 chars)
+2026-02-03 22:02:53 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/gartner-shares-rise-q4-earnings-113528969.html
+2026-02-03 22:02:54 - INFO - __main__ - Successfully extracted article content (1381 chars)
+2026-02-03 22:02:54 - INFO - __main__ - Found total of 3 valid articles for IT
+2026-02-03 22:02:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:02:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:02:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:02:58 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2026-02-03 22:03:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-03 22:03:02 - INFO - __main__ - Bottom performer analysis complete
+2026-02-03 22:03:02 - INFO - __main__ - Saving results to JSON...
+2026-02-03 22:03:03 - INFO - __main__ - Analysis complete and saved to market_analysis.json
