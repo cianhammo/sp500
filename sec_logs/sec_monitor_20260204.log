@@ -427,3 +427,57 @@
 2026-02-04 13:06:52,359 - sec_monitor - INFO - Cumulative stats - Input words: 6264225, Output words: 0
 2026-02-04 13:06:52,359 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-04 13:06:52,359 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1295892, 'output_words': 0, 'filings_processed': 18}
+2026-02-04 14:04:00,106 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-04 14:04:00,106 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-04 14:04:00,106 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-04 14:04:00,107 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-04 14:04:00,107 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-04 14:04:00,107 - sec_monitor - INFO - Initializing components...
+2026-02-04 14:04:00,107 - sec_monitor - INFO - Initializing components
+2026-02-04 14:04:00,107 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-04 14:04:00,107 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-04 14:04:00,108 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-04 14:04:00,108 - sec_monitor - INFO - All components initialized successfully
+2026-02-04 14:04:00,109 - sec_monitor - INFO - Found JSON file from today
+2026-02-04 14:04:00,109 - sec_monitor - INFO - Found 62 previously processed accessions and 62 filing URLs
+2026-02-04 14:04:00,109 - sec_monitor - INFO - Found 62 accession numbers and 62 URLs from previously processed filings
+2026-02-04 14:04:00,109 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-04 14:04:34,905 - sec_monitor - INFO - No more entries found
+2026-02-04 14:04:34,905 - sec_monitor - INFO - Completed fetching. Found 395 total filings
+2026-02-04 14:04:34,906 - sec_monitor - INFO - Found 4 new interesting filings
+2026-02-04 14:04:34,906 - sec_monitor - INFO - Found 4 new filings to process
+2026-02-04 14:04:34,906 - sec_monitor - INFO - Processing filing 1/4: LW
+2026-02-04 14:04:35,561 - sec_monitor - ERROR - Error processing filing LW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-04 14:04:35,561 - sec_monitor - INFO - Processing filing 2/4: ODFL
+2026-02-04 14:04:36,448 - sec_monitor - ERROR - Error processing filing ODFL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-04 14:04:36,448 - sec_monitor - INFO - Processing filing 3/4: FOX
+2026-02-04 14:04:37,938 - sec_monitor - ERROR - Error processing filing FOX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-04 14:04:37,939 - sec_monitor - INFO - Processing filing 4/4: URI
+2026-02-04 14:04:39,006 - sec_monitor - ERROR - Error processing filing URI: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-04 14:04:39,006 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-04 14:04:39,454 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-04 14:04:39,454 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-04 14:04:39,455 - sec_monitor - INFO - Market open: False
+2026-02-04 14:04:39,455 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-02-04 14:04:39,462 - sec_monitor - INFO - Last trading day: 2026-02-04
+2026-02-04 14:04:39,462 - sec_monitor - INFO - Processing ticker: LW
+2026-02-04 14:04:39,926 - sec_monitor - INFO - Number of bars for LW: 3
+2026-02-04 14:04:39,926 - sec_monitor - INFO - Last bar close for LW: 46.3
+2026-02-04 14:04:39,926 - sec_monitor - INFO - Outside market hours price for LW: 46.3
+2026-02-04 14:04:39,926 - sec_monitor - INFO - Processing ticker: ODFL
+2026-02-04 14:04:39,946 - sec_monitor - INFO - Number of bars for ODFL: 3
+2026-02-04 14:04:39,946 - sec_monitor - INFO - Last bar close for ODFL: 189.5
+2026-02-04 14:04:39,946 - sec_monitor - INFO - Outside market hours price for ODFL: 189.5
+2026-02-04 14:04:39,946 - sec_monitor - INFO - Processing ticker: FOX
+2026-02-04 14:04:39,959 - sec_monitor - INFO - Number of bars for FOX: 3
+2026-02-04 14:04:39,960 - sec_monitor - INFO - Last bar close for FOX: 63.19
+2026-02-04 14:04:39,960 - sec_monitor - INFO - Outside market hours price for FOX: 63.19
+2026-02-04 14:04:39,960 - sec_monitor - INFO - Processing ticker: URI
+2026-02-04 14:04:39,974 - sec_monitor - INFO - Number of bars for URI: 3
+2026-02-04 14:04:39,974 - sec_monitor - INFO - Last bar close for URI: 793.07
+2026-02-04 14:04:39,975 - sec_monitor - INFO - Outside market hours price for URI: 793.07
+2026-02-04 14:04:41,327 - sec_monitor - INFO - Generating final output...
+2026-02-04 14:04:41,329 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2026-02-04 14:04:41,329 - sec_monitor - INFO - Cumulative stats - Input words: 6308316, Output words: 0
+2026-02-04 14:04:41,329 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-04 14:04:41,329 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 44091, 'output_words': 0, 'filings_processed': 4}
