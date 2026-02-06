@@ -380,3 +380,57 @@
 2026-02-06 15:42:03,447 - sec_monitor - INFO - Cumulative stats - Input words: 6820323, Output words: 0
 2026-02-06 15:42:03,447 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-06 15:42:03,447 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 347144, 'output_words': 0, 'filings_processed': 1}
+2026-02-06 18:44:49,674 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-06 18:44:49,675 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-06 18:44:49,675 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-06 18:44:49,675 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-06 18:44:49,675 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-06 18:44:49,675 - sec_monitor - INFO - Initializing components...
+2026-02-06 18:44:49,675 - sec_monitor - INFO - Initializing components
+2026-02-06 18:44:49,675 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-06 18:44:49,676 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-06 18:44:49,676 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-06 18:44:49,676 - sec_monitor - INFO - All components initialized successfully
+2026-02-06 18:44:49,677 - sec_monitor - INFO - Found JSON file from today
+2026-02-06 18:44:49,677 - sec_monitor - INFO - Found 46 previously processed accessions and 46 filing URLs
+2026-02-06 18:44:49,677 - sec_monitor - INFO - Found 46 accession numbers and 46 URLs from previously processed filings
+2026-02-06 18:44:49,677 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-06 18:45:29,944 - sec_monitor - INFO - No more entries found
+2026-02-06 18:45:29,944 - sec_monitor - INFO - Completed fetching. Found 317 total filings
+2026-02-06 18:45:29,944 - sec_monitor - INFO - Found 4 new interesting filings
+2026-02-06 18:45:29,944 - sec_monitor - INFO - Found 4 new filings to process
+2026-02-06 18:45:29,944 - sec_monitor - INFO - Processing filing 1/4: JKHY
+2026-02-06 18:45:37,934 - sec_monitor - ERROR - Error processing filing JKHY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-06 18:45:37,935 - sec_monitor - INFO - Processing filing 2/4: AXP
+2026-02-06 18:46:56,655 - sec_monitor - ERROR - Error processing filing AXP: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-06 18:46:56,655 - sec_monitor - INFO - Processing filing 3/4: MTD
+2026-02-06 18:47:36,592 - sec_monitor - ERROR - Error processing filing MTD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-06 18:47:36,592 - sec_monitor - INFO - Processing filing 4/4: TXN
+2026-02-06 18:47:57,176 - sec_monitor - ERROR - Error processing filing TXN: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-06 18:47:57,176 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-06 18:47:57,641 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-06 18:47:57,641 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-06 18:47:57,641 - sec_monitor - INFO - Market open: True
+2026-02-06 18:47:57,641 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-02-06 18:47:57,711 - sec_monitor - INFO - Last trading day: 2026-02-06
+2026-02-06 18:47:57,711 - sec_monitor - INFO - Processing ticker: JKHY
+2026-02-06 18:47:57,935 - sec_monitor - INFO - Number of bars for JKHY: 4
+2026-02-06 18:47:57,936 - sec_monitor - INFO - Last bar close for JKHY: 176.84
+2026-02-06 18:47:57,936 - sec_monitor - INFO - Market open price for JKHY: 176.84, change: 1.678932842686302%
+2026-02-06 18:47:57,936 - sec_monitor - INFO - Processing ticker: AXP
+2026-02-06 18:47:58,023 - sec_monitor - INFO - Number of bars for AXP: 4
+2026-02-06 18:47:58,023 - sec_monitor - INFO - Last bar close for AXP: 354.37
+2026-02-06 18:47:58,023 - sec_monitor - INFO - Market open price for AXP: 354.37, change: 0.20359112116500136%
+2026-02-06 18:47:58,023 - sec_monitor - INFO - Processing ticker: MTD
+2026-02-06 18:47:58,098 - sec_monitor - INFO - Number of bars for MTD: 4
+2026-02-06 18:47:58,099 - sec_monitor - INFO - Last bar close for MTD: 1382.71
+2026-02-06 18:47:58,099 - sec_monitor - INFO - Market open price for MTD: 1382.71, change: -0.47254863148045234%
+2026-02-06 18:47:58,099 - sec_monitor - INFO - Processing ticker: TXN
+2026-02-06 18:47:58,174 - sec_monitor - INFO - Number of bars for TXN: 4
+2026-02-06 18:47:58,174 - sec_monitor - INFO - Last bar close for TXN: 224.07
+2026-02-06 18:47:58,175 - sec_monitor - INFO - Market open price for TXN: 224.07, change: 0.5226441757699433%
+2026-02-06 18:48:00,056 - sec_monitor - INFO - Generating final output...
+2026-02-06 18:48:00,058 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2026-02-06 18:48:00,058 - sec_monitor - INFO - Cumulative stats - Input words: 8153251, Output words: 0
+2026-02-06 18:48:00,058 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-06 18:48:00,058 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1332928, 'output_words': 0, 'filings_processed': 4}
