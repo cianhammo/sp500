@@ -48,3 +48,62 @@
 2026-02-09 11:39:20,053 - sec_monitor - INFO - Generating final output...
 2026-02-09 11:39:20,054 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-09 11:39:20,054 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 32597, 'output_words': 0, 'filings_processed': 4}
+2026-02-09 13:12:47,112 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-09 13:12:47,112 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-09 13:12:47,112 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-09 13:12:47,112 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-09 13:12:47,113 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-09 13:12:47,113 - sec_monitor - INFO - Initializing components...
+2026-02-09 13:12:47,113 - sec_monitor - INFO - Initializing components
+2026-02-09 13:12:47,113 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-09 13:12:47,113 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-09 13:12:47,113 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-09 13:12:47,113 - sec_monitor - INFO - All components initialized successfully
+2026-02-09 13:12:47,114 - sec_monitor - INFO - Found JSON file from today
+2026-02-09 13:12:47,115 - sec_monitor - INFO - Found 4 previously processed accessions and 4 filing URLs
+2026-02-09 13:12:47,115 - sec_monitor - INFO - Found 4 accession numbers and 4 URLs from previously processed filings
+2026-02-09 13:12:47,115 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-09 13:13:02,561 - sec_monitor - INFO - Reached old filing, stopping. Found 23 total filings
+2026-02-09 13:13:02,562 - sec_monitor - INFO - Found 5 new interesting filings
+2026-02-09 13:13:02,562 - sec_monitor - INFO - Found 5 new filings to process
+2026-02-09 13:13:02,562 - sec_monitor - INFO - Processing filing 1/5: PHM
+2026-02-09 13:13:03,222 - sec_monitor - ERROR - Error processing filing PHM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 13:13:03,222 - sec_monitor - INFO - Processing filing 2/5: VZ
+2026-02-09 13:13:03,919 - sec_monitor - ERROR - Error processing filing VZ: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 13:13:03,920 - sec_monitor - INFO - Processing filing 3/5: UBER
+2026-02-09 13:13:04,354 - sec_monitor - ERROR - Error processing filing UBER: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 13:13:04,354 - sec_monitor - INFO - Processing filing 4/5: WAT
+2026-02-09 13:13:05,518 - sec_monitor - ERROR - Error processing filing WAT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 13:13:05,518 - sec_monitor - INFO - Processing filing 5/5: WDC
+2026-02-09 13:13:05,983 - sec_monitor - ERROR - Error processing filing WDC: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 13:13:05,983 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-09 13:13:06,563 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-09 13:13:06,563 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-09 13:13:06,563 - sec_monitor - INFO - Market open: False
+2026-02-09 13:13:06,563 - sec_monitor - INFO - Number of filing times mapped: 5
+2026-02-09 13:13:06,625 - sec_monitor - INFO - Last trading day: 2026-02-09
+2026-02-09 13:13:06,625 - sec_monitor - INFO - Processing ticker: PHM
+2026-02-09 13:13:07,376 - sec_monitor - INFO - Number of bars for PHM: 3
+2026-02-09 13:13:07,376 - sec_monitor - INFO - Last bar close for PHM: 135.13
+2026-02-09 13:13:07,376 - sec_monitor - INFO - Outside market hours price for PHM: 135.13
+2026-02-09 13:13:07,376 - sec_monitor - INFO - Processing ticker: VZ
+2026-02-09 13:13:07,444 - sec_monitor - INFO - Number of bars for VZ: 3
+2026-02-09 13:13:07,444 - sec_monitor - INFO - Last bar close for VZ: 46.28
+2026-02-09 13:13:07,445 - sec_monitor - INFO - Outside market hours price for VZ: 46.28
+2026-02-09 13:13:07,445 - sec_monitor - INFO - Processing ticker: UBER
+2026-02-09 13:13:07,514 - sec_monitor - INFO - Number of bars for UBER: 3
+2026-02-09 13:13:07,514 - sec_monitor - INFO - Last bar close for UBER: 74.78
+2026-02-09 13:13:07,514 - sec_monitor - INFO - Outside market hours price for UBER: 74.78
+2026-02-09 13:13:07,514 - sec_monitor - INFO - Processing ticker: WAT
+2026-02-09 13:13:07,593 - sec_monitor - INFO - Number of bars for WAT: 3
+2026-02-09 13:13:07,594 - sec_monitor - INFO - Last bar close for WAT: 381.39
+2026-02-09 13:13:07,594 - sec_monitor - INFO - Outside market hours price for WAT: 381.39
+2026-02-09 13:13:07,594 - sec_monitor - INFO - Processing ticker: WDC
+2026-02-09 13:13:07,692 - sec_monitor - INFO - Number of bars for WDC: 3
+2026-02-09 13:13:07,692 - sec_monitor - INFO - Last bar close for WDC: 282.64
+2026-02-09 13:13:07,692 - sec_monitor - INFO - Outside market hours price for WDC: 282.64
+2026-02-09 13:13:09,712 - sec_monitor - INFO - Generating final output...
+2026-02-09 13:13:09,713 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-02-09 13:13:09,713 - sec_monitor - INFO - Cumulative stats - Input words: 62380, Output words: 0
+2026-02-09 13:13:09,713 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-09 13:13:09,713 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 29783, 'output_words': 0, 'filings_processed': 5}
