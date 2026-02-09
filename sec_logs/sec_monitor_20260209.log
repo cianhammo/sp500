@@ -1,0 +1,50 @@
+2026-02-09 11:39:13,980 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-09 11:39:13,980 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-09 11:39:13,980 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-09 11:39:13,980 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-09 11:39:13,980 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-09 11:39:13,981 - sec_monitor - INFO - Initializing components...
+2026-02-09 11:39:13,981 - sec_monitor - INFO - Initializing components
+2026-02-09 11:39:13,981 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-09 11:39:13,981 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-09 11:39:13,981 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-09 11:39:13,981 - sec_monitor - INFO - All components initialized successfully
+2026-02-09 11:39:13,982 - sec_monitor - INFO - Found old JSON file, archiving
+2026-02-09 11:39:13,982 - sec_monitor - INFO - Starting new filing collection for today
+2026-02-09 11:39:13,983 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-09 11:39:14,903 - sec_monitor - INFO - Reached old filing, stopping. Found 11 total filings
+2026-02-09 11:39:14,903 - sec_monitor - INFO - Found 4 new interesting filings
+2026-02-09 11:39:14,903 - sec_monitor - INFO - Found 4 new filings to process
+2026-02-09 11:39:14,903 - sec_monitor - INFO - Processing filing 1/4: BDX
+2026-02-09 11:39:16,261 - sec_monitor - ERROR - Error processing filing BDX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 11:39:16,261 - sec_monitor - INFO - Processing filing 2/4: EQT
+2026-02-09 11:39:16,659 - sec_monitor - ERROR - Error processing filing EQT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 11:39:16,659 - sec_monitor - INFO - Processing filing 3/4: NXPI
+2026-02-09 11:39:17,067 - sec_monitor - ERROR - Error processing filing NXPI: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 11:39:17,067 - sec_monitor - INFO - Processing filing 4/4: L
+2026-02-09 11:39:17,904 - sec_monitor - ERROR - Error processing filing L: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 11:39:17,905 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-09 11:39:18,276 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-09 11:39:18,276 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-09 11:39:18,276 - sec_monitor - INFO - Market open: False
+2026-02-09 11:39:18,277 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-02-09 11:39:18,334 - sec_monitor - INFO - Last trading day: 2026-02-09
+2026-02-09 11:39:18,334 - sec_monitor - INFO - Processing ticker: BDX
+2026-02-09 11:39:18,503 - sec_monitor - INFO - Number of bars for BDX: 3
+2026-02-09 11:39:18,503 - sec_monitor - INFO - Last bar close for BDX: 210.085
+2026-02-09 11:39:18,504 - sec_monitor - INFO - Outside market hours price for BDX: 210.085
+2026-02-09 11:39:18,504 - sec_monitor - INFO - Processing ticker: EQT
+2026-02-09 11:39:18,562 - sec_monitor - INFO - Number of bars for EQT: 3
+2026-02-09 11:39:18,562 - sec_monitor - INFO - Last bar close for EQT: 56.8
+2026-02-09 11:39:18,562 - sec_monitor - INFO - Outside market hours price for EQT: 56.8
+2026-02-09 11:39:18,562 - sec_monitor - INFO - Processing ticker: NXPI
+2026-02-09 11:39:18,618 - sec_monitor - INFO - Number of bars for NXPI: 3
+2026-02-09 11:39:18,618 - sec_monitor - INFO - Last bar close for NXPI: 224.23
+2026-02-09 11:39:18,618 - sec_monitor - INFO - Outside market hours price for NXPI: 224.23
+2026-02-09 11:39:18,618 - sec_monitor - INFO - Processing ticker: L
+2026-02-09 11:39:18,676 - sec_monitor - INFO - Number of bars for L: 3
+2026-02-09 11:39:18,676 - sec_monitor - INFO - Last bar close for L: 111.36
+2026-02-09 11:39:18,677 - sec_monitor - INFO - Outside market hours price for L: 111.36
+2026-02-09 11:39:20,053 - sec_monitor - INFO - Generating final output...
+2026-02-09 11:39:20,054 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-09 11:39:20,054 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 32597, 'output_words': 0, 'filings_processed': 4}
