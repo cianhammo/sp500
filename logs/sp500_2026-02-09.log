@@ -1,0 +1,73 @@
+2026-02-09 22:06:52 - INFO - __main__ - Starting SP500 analysis script
+2026-02-09 22:06:52 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-09 22:06:52 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 6, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-09 22:06:52 - INFO - __main__ - Runtime timezone: UTC
+2026-02-09 22:06:52 - INFO - __main__ - Original start: 2026-02-06 16:00:00-05:00 (America/New_York)
+2026-02-09 22:06:52 - INFO - __main__ - Original end: 2026-02-09 16:00:00-05:00 (America/New_York)
+2026-02-09 22:06:52 - INFO - __main__ - UTC start: 2026-02-06 05:00:00+00:00
+2026-02-09 22:06:52 - INFO - __main__ - UTC end: 2026-02-10 05:00:00+00:00
+2026-02-09 22:06:52 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-09 22:06:54 - INFO - __main__ - Received data for 492 symbols
+2026-02-09 22:06:54 - INFO - __main__ - Sample data structure for HLT:
+2026-02-09 22:06:54 - INFO - __main__ - Number of bars: 2
+2026-02-09 22:06:54 - INFO - __main__ - Bar timestamp: 2026-02-06 05:00:00+00:00 (UTC)
+2026-02-09 22:06:54 - INFO - __main__ - Bar timestamp: 2026-02-09 05:00:00+00:00 (UTC)
+2026-02-09 22:06:54 - INFO - __main__ - HLT timestamps - Today: 2026-02-09 05:00:00+00:00, Yesterday: 2026-02-06 05:00:00+00:00
+2026-02-09 22:06:54 - INFO - __main__ - PYPL timestamps - Today: 2026-02-09 05:00:00+00:00, Yesterday: 2026-02-06 05:00:00+00:00
+2026-02-09 22:06:54 - INFO - __main__ - D timestamps - Today: 2026-02-09 05:00:00+00:00, Yesterday: 2026-02-06 05:00:00+00:00
+2026-02-09 22:06:54 - INFO - __main__ - ADP timestamps - Today: 2026-02-09 05:00:00+00:00, Yesterday: 2026-02-06 05:00:00+00:00
+2026-02-09 22:06:54 - INFO - __main__ - REGN timestamps - Today: 2026-02-09 05:00:00+00:00, Yesterday: 2026-02-06 05:00:00+00:00
+2026-02-09 22:06:54 - INFO - __main__ - Successfully processed 492 stocks
+2026-02-09 22:06:54 - INFO - __main__ - Data issues encountered: 0
+2026-02-09 22:06:54 - INFO - __main__ - Final dataframe contains 492 stocks
+2026-02-09 22:06:54 - INFO - __main__ - Analysis for market close on February 09, 2026
+2026-02-09 22:06:54 - INFO - __main__ - Found 492 stocks with price data
+2026-02-09 22:06:54 - INFO - __main__ - Found Wikipedia URL for ORCL: https://en.wikipedia.org/wiki/Oracle_Corporation
+2026-02-09 22:06:57 - INFO - __main__ - Found Wikipedia URL for WAT: https://en.wikipedia.org/wiki/Waters_Corporation
+2026-02-09 22:06:59 - INFO - __main__ - Analyzing top performer...
+2026-02-09 22:06:59 - INFO - __main__ - Analyzing Oracle Corporation (ORCL)
+2026-02-09 22:06:59 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-09 22:06:59 - INFO - __main__ - Searching for articles about ORCL
+2026-02-09 22:06:59 - INFO - __main__ - Searching for news about Oracle Corporation
+2026-02-09 22:07:01 - INFO - __main__ - Found 6 recent search results for Oracle Corporation
+2026-02-09 22:07:01 - INFO - __main__ - Found 6 URLs to try for ORCL
+2026-02-09 22:07:01 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4549030-oracle-surges-10-after-rating-upgrade-at-da-davidson
+2026-02-09 22:07:02 - INFO - __main__ - Successfully extracted article content (239 chars)
+2026-02-09 22:07:02 - INFO - __main__ - Fetching content from: https://www.forbes.com/sites/greatspeculations/2026/02/09/how-low-can-oracle-stock-go/
+2026-02-09 22:07:02 - WARNING - __main__ - Article content too short (43 chars)
+2026-02-09 22:07:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-now-buy-da-davidson-124105596.html
+2026-02-09 22:07:02 - INFO - __main__ - Successfully extracted article content (1863 chars)
+2026-02-09 22:07:02 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/oracle-shares-surge-big-tech-174947014.html
+2026-02-09 22:07:03 - INFO - __main__ - Successfully extracted article content (2513 chars)
+2026-02-09 22:07:03 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/citi-raises-price-target-ball-133748644.html
+2026-02-09 22:07:04 - INFO - __main__ - Successfully extracted article content (2539 chars)
+2026-02-09 22:07:04 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4549037-ai-related-names-mostly-rise-on-monday-following-super-bowls-tech-heavy-ads
+2026-02-09 22:07:04 - INFO - __main__ - Successfully extracted article content (140 chars)
+2026-02-09 22:07:04 - INFO - __main__ - Found total of 3 valid articles for ORCL
+2026-02-09 22:07:05 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:07 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:08 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:08 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2026-02-09 22:07:12 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:12 - INFO - __main__ - Top performer analysis complete
+2026-02-09 22:07:12 - INFO - __main__ - Analyzing bottom performer...
+2026-02-09 22:07:12 - INFO - __main__ - Analyzing Waters Corporation (WAT)
+2026-02-09 22:07:12 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-09 22:07:13 - INFO - __main__ - Searching for articles about WAT
+2026-02-09 22:07:13 - INFO - __main__ - Searching for news about Waters Corporation
+2026-02-09 22:07:14 - INFO - __main__ - Found 6 recent search results for Waters Corporation
+2026-02-09 22:07:14 - INFO - __main__ - Found 6 URLs to try for WAT
+2026-02-09 22:07:14 - INFO - __main__ - Fetching content from: https://investors.bd.com/news-events/press-releases/detail/937/bd-completes-combination-of-biosciences-diagnostic-solutions-business-with-waters-corporation
+2026-02-09 22:07:14 - INFO - __main__ - Successfully extracted article content (6557 chars)
+2026-02-09 22:07:14 - INFO - __main__ - Fetching content from: https://s205.q4cdn.com/962852172/files/doc_financials/2025/q4/Waters-Q4-2025-Earnings-Call-Presentation.pdf
+2026-02-09 22:07:24 - INFO - __main__ - Successfully extracted article content (8927 chars)
+2026-02-09 22:07:24 - INFO - __main__ - Fetching content from: https://ir.waters.com/News--Events/newsroom/news-details/2026/Waters-Completes-Combination-with-BDs-Biosciences--Diagnostic-Solutions-Businesses/default.aspx
+2026-02-09 22:07:24 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-09 22:07:24 - INFO - __main__ - Found total of 2 valid articles for WAT
+2026-02-09 22:07:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:27 - INFO - __main__ - Found 1 relevant articles out of 2 total
+2026-02-09 22:07:31 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-09 22:07:31 - INFO - __main__ - Bottom performer analysis complete
+2026-02-09 22:07:31 - INFO - __main__ - Saving results to JSON...
+2026-02-09 22:07:32 - INFO - __main__ - Analysis complete and saved to market_analysis.json
