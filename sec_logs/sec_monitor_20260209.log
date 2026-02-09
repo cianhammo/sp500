@@ -107,3 +107,50 @@
 2026-02-09 13:13:09,713 - sec_monitor - INFO - Cumulative stats - Input words: 62380, Output words: 0
 2026-02-09 13:13:09,713 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-09 13:13:09,713 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 29783, 'output_words': 0, 'filings_processed': 5}
+2026-02-09 14:15:20,453 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-09 14:15:20,453 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-09 14:15:20,453 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-09 14:15:20,454 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-09 14:15:20,454 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-09 14:15:20,454 - sec_monitor - INFO - Initializing components...
+2026-02-09 14:15:20,454 - sec_monitor - INFO - Initializing components
+2026-02-09 14:15:20,454 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-09 14:15:20,454 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-09 14:15:20,455 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-09 14:15:20,455 - sec_monitor - INFO - All components initialized successfully
+2026-02-09 14:15:20,456 - sec_monitor - INFO - Found JSON file from today
+2026-02-09 14:15:20,456 - sec_monitor - INFO - Found 9 previously processed accessions and 9 filing URLs
+2026-02-09 14:15:20,456 - sec_monitor - INFO - Found 9 accession numbers and 9 URLs from previously processed filings
+2026-02-09 14:15:20,456 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-09 14:15:24,709 - sec_monitor - INFO - Reached old filing, stopping. Found 28 total filings
+2026-02-09 14:15:24,709 - sec_monitor - INFO - Found 3 new interesting filings
+2026-02-09 14:15:24,709 - sec_monitor - INFO - Found 3 new filings to process
+2026-02-09 14:15:24,709 - sec_monitor - INFO - Processing filing 1/3: LH
+2026-02-09 14:15:25,235 - sec_monitor - ERROR - Error processing filing LH: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 14:15:25,235 - sec_monitor - INFO - Processing filing 2/3: VTR
+2026-02-09 14:15:25,891 - sec_monitor - ERROR - Error processing filing VTR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 14:15:25,891 - sec_monitor - INFO - Processing filing 3/3: WDAY
+2026-02-09 14:15:26,451 - sec_monitor - ERROR - Error processing filing WDAY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-09 14:15:26,451 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-09 14:15:26,652 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-09 14:15:26,652 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-09 14:15:26,652 - sec_monitor - INFO - Market open: False
+2026-02-09 14:15:26,652 - sec_monitor - INFO - Number of filing times mapped: 3
+2026-02-09 14:15:26,715 - sec_monitor - INFO - Last trading day: 2026-02-09
+2026-02-09 14:15:26,715 - sec_monitor - INFO - Processing ticker: LH
+2026-02-09 14:15:26,902 - sec_monitor - INFO - Number of bars for LH: 3
+2026-02-09 14:15:26,902 - sec_monitor - INFO - Last bar close for LH: 277.26
+2026-02-09 14:15:26,903 - sec_monitor - INFO - Outside market hours price for LH: 277.26
+2026-02-09 14:15:26,903 - sec_monitor - INFO - Processing ticker: VTR
+2026-02-09 14:15:26,971 - sec_monitor - INFO - Number of bars for VTR: 3
+2026-02-09 14:15:26,971 - sec_monitor - INFO - Last bar close for VTR: 82.695
+2026-02-09 14:15:26,971 - sec_monitor - INFO - Outside market hours price for VTR: 82.695
+2026-02-09 14:15:26,971 - sec_monitor - INFO - Processing ticker: WDAY
+2026-02-09 14:15:27,040 - sec_monitor - INFO - Number of bars for WDAY: 3
+2026-02-09 14:15:27,040 - sec_monitor - INFO - Last bar close for WDAY: 162.96
+2026-02-09 14:15:27,040 - sec_monitor - INFO - Outside market hours price for WDAY: 162.96
+2026-02-09 14:15:28,116 - sec_monitor - INFO - Generating final output...
+2026-02-09 14:15:28,117 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2026-02-09 14:15:28,117 - sec_monitor - INFO - Cumulative stats - Input words: 86208, Output words: 0
+2026-02-09 14:15:28,117 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-09 14:15:28,117 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 23828, 'output_words': 0, 'filings_processed': 3}
