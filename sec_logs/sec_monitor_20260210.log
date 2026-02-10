@@ -370,3 +370,44 @@
 2026-02-10 14:25:48,692 - sec_monitor - INFO - Cumulative stats - Input words: 4151802, Output words: 0
 2026-02-10 14:25:48,692 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-10 14:25:48,692 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 964528, 'output_words': 0, 'filings_processed': 4}
+2026-02-10 16:06:31,084 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-10 16:06:31,085 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-10 16:06:31,085 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-10 16:06:31,085 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-10 16:06:31,085 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-10 16:06:31,085 - sec_monitor - INFO - Initializing components...
+2026-02-10 16:06:31,085 - sec_monitor - INFO - Initializing components
+2026-02-10 16:06:31,086 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-10 16:06:31,086 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-10 16:06:31,086 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-10 16:06:31,086 - sec_monitor - INFO - All components initialized successfully
+2026-02-10 16:06:31,087 - sec_monitor - INFO - Found JSON file from today
+2026-02-10 16:06:31,087 - sec_monitor - INFO - Found 48 previously processed accessions and 48 filing URLs
+2026-02-10 16:06:31,087 - sec_monitor - INFO - Found 48 accession numbers and 48 URLs from previously processed filings
+2026-02-10 16:06:31,088 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-10 16:07:07,131 - sec_monitor - INFO - Reached old filing, stopping. Found 266 total filings
+2026-02-10 16:07:07,132 - sec_monitor - INFO - Found 2 new interesting filings
+2026-02-10 16:07:07,132 - sec_monitor - INFO - Found 2 new filings to process
+2026-02-10 16:07:07,132 - sec_monitor - INFO - Processing filing 1/2: AWK
+2026-02-10 16:07:07,716 - sec_monitor - ERROR - Error processing filing AWK: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-10 16:07:07,716 - sec_monitor - INFO - Processing filing 2/2: MCD
+2026-02-10 16:07:08,134 - sec_monitor - ERROR - Error processing filing MCD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-10 16:07:08,135 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-10 16:07:08,314 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-10 16:07:08,315 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-10 16:07:08,315 - sec_monitor - INFO - Market open: True
+2026-02-10 16:07:08,315 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-02-10 16:07:08,377 - sec_monitor - INFO - Last trading day: 2026-02-10
+2026-02-10 16:07:08,377 - sec_monitor - INFO - Processing ticker: AWK
+2026-02-10 16:07:08,573 - sec_monitor - INFO - Number of bars for AWK: 3
+2026-02-10 16:07:08,573 - sec_monitor - INFO - Last bar close for AWK: 123.0
+2026-02-10 16:07:08,574 - sec_monitor - INFO - Market open price for AWK: 123.0, change: -1.1015518211787445%
+2026-02-10 16:07:08,574 - sec_monitor - INFO - Processing ticker: MCD
+2026-02-10 16:07:08,641 - sec_monitor - INFO - Number of bars for MCD: 3
+2026-02-10 16:07:08,641 - sec_monitor - INFO - Last bar close for MCD: 325.59
+2026-02-10 16:07:08,641 - sec_monitor - INFO - Market open price for MCD: 325.59, change: -0.5011765424930609%
+2026-02-10 16:07:09,724 - sec_monitor - INFO - Generating final output...
+2026-02-10 16:07:09,726 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-02-10 16:07:09,726 - sec_monitor - INFO - Cumulative stats - Input words: 4159135, Output words: 0
+2026-02-10 16:07:09,726 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-10 16:07:09,726 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 7333, 'output_words': 0, 'filings_processed': 2}
