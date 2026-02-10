@@ -1,0 +1,83 @@
+2026-02-10 22:23:06 - INFO - __main__ - Starting SP500 analysis script
+2026-02-10 22:23:06 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-10 22:23:06 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 9, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-10 22:23:06 - INFO - __main__ - Runtime timezone: UTC
+2026-02-10 22:23:06 - INFO - __main__ - Original start: 2026-02-09 16:00:00-05:00 (America/New_York)
+2026-02-10 22:23:06 - INFO - __main__ - Original end: 2026-02-10 16:00:00-05:00 (America/New_York)
+2026-02-10 22:23:06 - INFO - __main__ - UTC start: 2026-02-09 05:00:00+00:00
+2026-02-10 22:23:06 - INFO - __main__ - UTC end: 2026-02-11 05:00:00+00:00
+2026-02-10 22:23:06 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-10 22:23:07 - INFO - __main__ - Received data for 492 symbols
+2026-02-10 22:23:07 - INFO - __main__ - Sample data structure for MCO:
+2026-02-10 22:23:07 - INFO - __main__ - Number of bars: 2
+2026-02-10 22:23:07 - INFO - __main__ - Bar timestamp: 2026-02-09 05:00:00+00:00 (UTC)
+2026-02-10 22:23:07 - INFO - __main__ - Bar timestamp: 2026-02-10 05:00:00+00:00 (UTC)
+2026-02-10 22:23:07 - INFO - __main__ - MCO timestamps - Today: 2026-02-10 05:00:00+00:00, Yesterday: 2026-02-09 05:00:00+00:00
+2026-02-10 22:23:07 - INFO - __main__ - MPWR timestamps - Today: 2026-02-10 05:00:00+00:00, Yesterday: 2026-02-09 05:00:00+00:00
+2026-02-10 22:23:07 - INFO - __main__ - OTIS timestamps - Today: 2026-02-10 05:00:00+00:00, Yesterday: 2026-02-09 05:00:00+00:00
+2026-02-10 22:23:07 - INFO - __main__ - T timestamps - Today: 2026-02-10 05:00:00+00:00, Yesterday: 2026-02-09 05:00:00+00:00
+2026-02-10 22:23:07 - INFO - __main__ - CBRE timestamps - Today: 2026-02-10 05:00:00+00:00, Yesterday: 2026-02-09 05:00:00+00:00
+2026-02-10 22:23:08 - INFO - __main__ - Successfully processed 492 stocks
+2026-02-10 22:23:08 - INFO - __main__ - Data issues encountered: 0
+2026-02-10 22:23:08 - INFO - __main__ - Final dataframe contains 492 stocks
+2026-02-10 22:23:08 - INFO - __main__ - Analysis for market close on February 10, 2026
+2026-02-10 22:23:08 - INFO - __main__ - Found 492 stocks with price data
+2026-02-10 22:23:08 - INFO - __main__ - Found Wikipedia URL for MAS: https://en.wikipedia.org/wiki/Masco
+2026-02-10 22:23:10 - INFO - __main__ - Found Wikipedia URL for SPGI: https://en.wikipedia.org/wiki/S%26P_Global
+2026-02-10 22:23:12 - INFO - __main__ - Analyzing top performer...
+2026-02-10 22:23:12 - INFO - __main__ - Analyzing Masco (MAS)
+2026-02-10 22:23:13 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-10 22:23:13 - INFO - __main__ - Searching for articles about MAS
+2026-02-10 22:23:13 - INFO - __main__ - Searching for news about Masco
+2026-02-10 22:23:21 - INFO - __main__ - Found 6 recent search results for Masco
+2026-02-10 22:23:21 - INFO - __main__ - Found 6 URLs to try for MAS
+2026-02-10 22:23:21 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-retail-sales-coca-cola-stock/
+2026-02-10 22:23:21 - INFO - __main__ - Successfully extracted article content (474 chars)
+2026-02-10 22:23:21 - INFO - __main__ - Fetching content from: https://www.ft.com/content/35a2e600-142c-4690-a720-df76178390d6
+2026-02-10 22:23:22 - INFO - __main__ - Successfully extracted article content (154 chars)
+2026-02-10 22:23:22 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/stocks-settle-higher-strength-tech
+2026-02-10 22:23:25 - INFO - __main__ - Successfully extracted article content (8604 chars)
+2026-02-10 22:23:25 - INFO - __main__ - Fetching content from: https://pix11.com/news/local-news/manhattan/pride-flag-removed-from-stonewall-national-monument-under-trump-admin-directive/
+2026-02-10 22:23:25 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-10 22:23:25 - WARNING - __main__ - Article content too short (0 chars)
+2026-02-10 22:23:25 - INFO - __main__ - Fetching content from: https://www.barchart.com/story/news/125554/stock-index-futures-steady-with-u-s-retail-sales-data-in-focus
+2026-02-10 22:23:26 - INFO - __main__ - Successfully extracted article content (10202 chars)
+2026-02-10 22:23:26 - INFO - __main__ - Fetching content from: https://uk.marketscreener.com/news/home-improvement-firm-masco-beats-quarterly-profit-estimates-on-price-hikes-ce7e5adcdb8df424
+2026-02-10 22:23:27 - INFO - __main__ - Successfully extracted article content (5800 chars)
+2026-02-10 22:23:27 - INFO - __main__ - Found total of 3 valid articles for MAS
+2026-02-10 22:23:28 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:30 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:30 - INFO - __main__ - Found 2 relevant articles out of 3 total
+2026-02-10 22:23:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:34 - INFO - __main__ - Top performer analysis complete
+2026-02-10 22:23:34 - INFO - __main__ - Analyzing bottom performer...
+2026-02-10 22:23:34 - INFO - __main__ - Analyzing S&P Global (SPGI)
+2026-02-10 22:23:34 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-10 22:23:35 - INFO - __main__ - Searching for articles about SPGI
+2026-02-10 22:23:35 - INFO - __main__ - Searching for news about S&P Global
+2026-02-10 22:23:38 - INFO - __main__ - Found 6 recent search results for S&P Global
+2026-02-10 22:23:38 - INFO - __main__ - Found 6 URLs to try for SPGI
+2026-02-10 22:23:38 - INFO - __main__ - Fetching content from: https://investor.spglobal.com/news-releases/news-details/2026/SP-Global-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+2026-02-10 22:23:38 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-10 22:23:38 - INFO - __main__ - Fetching content from: https://www.prnewswire.com/news-releases/sp-global-reports-fourth-quarter-and-full-year-2025-results-302683719.html
+2026-02-10 22:23:38 - INFO - __main__ - Successfully extracted article content (1863 chars)
+2026-02-10 22:23:38 - INFO - __main__ - Fetching content from: https://www.reuters.com/business/sp-global-forecasts-2026-profit-below-estimates-shares-plunge-2026-02-10/
+2026-02-10 22:23:38 - WARNING - __main__ - Article content too short (43 chars)
+2026-02-10 22:23:38 - INFO - __main__ - Fetching content from: https://seekingalpha.com/news/4549419-sp-global-stock-drops-after-q4-earnings-2026-guidance-disappoint
+2026-02-10 22:23:39 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-10 22:23:39 - WARNING - __main__ - Article content too short (0 chars)
+2026-02-10 22:23:39 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/jim-cramer-says-street-decided-155938588.html
+2026-02-10 22:23:40 - INFO - __main__ - Successfully extracted article content (1599 chars)
+2026-02-10 22:23:40 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/02/10/stocks-making-biggest-midday-moves-race-incy-spgi-ddog-bp.html
+2026-02-10 22:23:40 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-10 22:23:40 - INFO - __main__ - Successfully extracted article content (5694 chars)
+2026-02-10 22:23:40 - INFO - __main__ - Found total of 3 valid articles for SPGI
+2026-02-10 22:23:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:44 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:44 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2026-02-10 22:23:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-10 22:23:49 - INFO - __main__ - Bottom performer analysis complete
+2026-02-10 22:23:49 - INFO - __main__ - Saving results to JSON...
+2026-02-10 22:23:49 - INFO - __main__ - Analysis complete and saved to market_analysis.json
