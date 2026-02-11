@@ -1,0 +1,74 @@
+2026-02-11 22:01:54 - INFO - __main__ - Starting SP500 analysis script
+2026-02-11 22:01:54 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-11 22:01:54 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 10, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-11 22:01:54 - INFO - __main__ - Runtime timezone: UTC
+2026-02-11 22:01:54 - INFO - __main__ - Original start: 2026-02-10 16:00:00-05:00 (America/New_York)
+2026-02-11 22:01:54 - INFO - __main__ - Original end: 2026-02-11 16:00:00-05:00 (America/New_York)
+2026-02-11 22:01:54 - INFO - __main__ - UTC start: 2026-02-10 05:00:00+00:00
+2026-02-11 22:01:54 - INFO - __main__ - UTC end: 2026-02-12 05:00:00+00:00
+2026-02-11 22:01:54 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-11 22:01:56 - INFO - __main__ - Received data for 492 symbols
+2026-02-11 22:01:56 - INFO - __main__ - Sample data structure for CPT:
+2026-02-11 22:01:56 - INFO - __main__ - Number of bars: 2
+2026-02-11 22:01:56 - INFO - __main__ - Bar timestamp: 2026-02-10 05:00:00+00:00 (UTC)
+2026-02-11 22:01:56 - INFO - __main__ - Bar timestamp: 2026-02-11 05:00:00+00:00 (UTC)
+2026-02-11 22:01:56 - INFO - __main__ - CPT timestamps - Today: 2026-02-11 05:00:00+00:00, Yesterday: 2026-02-10 05:00:00+00:00
+2026-02-11 22:01:56 - INFO - __main__ - HPE timestamps - Today: 2026-02-11 05:00:00+00:00, Yesterday: 2026-02-10 05:00:00+00:00
+2026-02-11 22:01:56 - INFO - __main__ - PCG timestamps - Today: 2026-02-11 05:00:00+00:00, Yesterday: 2026-02-10 05:00:00+00:00
+2026-02-11 22:01:56 - INFO - __main__ - PFG timestamps - Today: 2026-02-11 05:00:00+00:00, Yesterday: 2026-02-10 05:00:00+00:00
+2026-02-11 22:01:56 - INFO - __main__ - URI timestamps - Today: 2026-02-11 05:00:00+00:00, Yesterday: 2026-02-10 05:00:00+00:00
+2026-02-11 22:01:56 - INFO - __main__ - Successfully processed 492 stocks
+2026-02-11 22:01:56 - INFO - __main__ - Data issues encountered: 0
+2026-02-11 22:01:56 - INFO - __main__ - Final dataframe contains 492 stocks
+2026-02-11 22:01:56 - INFO - __main__ - Analysis for market close on February 11, 2026
+2026-02-11 22:01:56 - INFO - __main__ - Found 492 stocks with price data
+2026-02-11 22:01:56 - INFO - __main__ - Found Wikipedia URL for BWA: https://en.wikipedia.org/wiki/BorgWarner
+2026-02-11 22:01:59 - INFO - __main__ - Found Wikipedia URL for CBRE: https://en.wikipedia.org/wiki/CBRE_Group
+2026-02-11 22:02:01 - INFO - __main__ - Analyzing top performer...
+2026-02-11 22:02:01 - INFO - __main__ - Analyzing BorgWarner (BWA)
+2026-02-11 22:02:01 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-11 22:02:01 - INFO - __main__ - Searching for articles about BWA
+2026-02-11 22:02:01 - INFO - __main__ - Searching for news about BorgWarner
+2026-02-11 22:02:03 - INFO - __main__ - Found 6 recent search results for BorgWarner
+2026-02-11 22:02:03 - INFO - __main__ - Found 6 URLs to try for BWA
+2026-02-11 22:02:03 - INFO - __main__ - Fetching content from: https://www.borgwarner.com/industrial-solutions/energy-generation
+2026-02-11 22:02:03 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-11 22:02:03 - INFO - __main__ - Successfully extracted article content (368 chars)
+2026-02-11 22:02:03 - INFO - __main__ - Fetching content from: https://www.borgwarner.com/newsroom/press-releases/2026/02/11/borgwarner-strategically-enters-data-center-market-with-power-generation-solution-award
+2026-02-11 22:02:04 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-11 22:02:04 - INFO - __main__ - Successfully extracted article content (3348 chars)
+2026-02-11 22:02:04 - INFO - __main__ - Fetching content from: https://www.wkyc.com/article/syndication/associatedpress/borgwarner-q4-earnings-snapshot/616-957e3e64-3fbc-4ec8-b118-cb405f62f32a
+2026-02-11 22:02:14 - ERROR - __main__ - Failed to fetch article: HTTPSConnectionPool(host='www.wkyc.com', port=443): Read timed out. (read timeout=10)
+2026-02-11 22:02:14 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/borgwarner-q4-earnings-call-highlights-185025210.html
+2026-02-11 22:02:15 - INFO - __main__ - Successfully extracted article content (9066 chars)
+2026-02-11 22:02:15 - INFO - __main__ - Fetching content from: https://uk.investing.com/news/stock-market-news/micron-tech-borgwarner-among-market-cap-stock-movers-on-wednesday-93CH-4503124
+2026-02-11 22:02:15 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-11 22:02:15 - INFO - __main__ - Fetching content from: https://www.investing.com/news/stock-market-news/micron-tech-borgwarner-among-market-cap-stock-movers-on-wednesday-93CH-4501018
+2026-02-11 22:02:15 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-11 22:02:15 - INFO - __main__ - Found total of 2 valid articles for BWA
+2026-02-11 22:02:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-11 22:02:18 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-11 22:02:18 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-02-11 22:02:21 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-11 22:02:21 - INFO - __main__ - Top performer analysis complete
+2026-02-11 22:02:21 - INFO - __main__ - Analyzing bottom performer...
+2026-02-11 22:02:21 - INFO - __main__ - Analyzing CBRE Group (CBRE)
+2026-02-11 22:02:22 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-11 22:02:22 - INFO - __main__ - Searching for articles about CBRE
+2026-02-11 22:02:22 - INFO - __main__ - Searching for news about CBRE Group
+2026-02-11 22:02:29 - INFO - __main__ - Found 6 recent search results for CBRE Group
+2026-02-11 22:02:29 - INFO - __main__ - Found 6 URLs to try for CBRE
+2026-02-11 22:02:29 - INFO - __main__ - Fetching content from: https://www.oklahoman.com/story/business/travel/2026/02/11/buc-ees-oklahoma-okc-what-we-know/88623317007/
+2026-02-11 22:02:30 - INFO - __main__ - Successfully extracted article content (4428 chars)
+2026-02-11 22:02:30 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/research/reports/ARGUS_3929_QuantitativeReport_1770768000000
+2026-02-11 22:02:30 - INFO - __main__ - Successfully extracted article content (197 chars)
+2026-02-11 22:02:30 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/investors-reacting-cbre-group-cbre-121448877.html
+2026-02-11 22:02:31 - INFO - __main__ - Successfully extracted article content (4078 chars)
+2026-02-11 22:02:31 - INFO - __main__ - Found total of 2 valid articles for CBRE
+2026-02-11 22:02:32 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-11 22:02:34 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-11 22:02:34 - INFO - __main__ - Found 0 relevant articles out of 2 total
+2026-02-11 22:02:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-11 22:02:37 - INFO - __main__ - Bottom performer analysis complete
+2026-02-11 22:02:37 - INFO - __main__ - Saving results to JSON...
+2026-02-11 22:02:37 - INFO - __main__ - Analysis complete and saved to market_analysis.json
