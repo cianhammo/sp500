@@ -252,3 +252,57 @@
 2026-02-11 13:19:19,158 - sec_monitor - INFO - Cumulative stats - Input words: 4606974, Output words: 0
 2026-02-11 13:19:19,158 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-11 13:19:19,158 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1218056, 'output_words': 0, 'filings_processed': 8}
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Initializing components...
+2026-02-11 14:16:34,821 - sec_monitor - INFO - Initializing components
+2026-02-11 14:16:34,821 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-11 14:16:34,822 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-11 14:16:34,822 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-11 14:16:34,822 - sec_monitor - INFO - All components initialized successfully
+2026-02-11 14:16:34,823 - sec_monitor - INFO - Found JSON file from today
+2026-02-11 14:16:34,823 - sec_monitor - INFO - Found 33 previously processed accessions and 33 filing URLs
+2026-02-11 14:16:34,823 - sec_monitor - INFO - Found 33 accession numbers and 33 URLs from previously processed filings
+2026-02-11 14:16:34,823 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-11 14:17:21,087 - sec_monitor - INFO - No more entries found
+2026-02-11 14:17:21,088 - sec_monitor - INFO - Completed fetching. Found 375 total filings
+2026-02-11 14:17:21,088 - sec_monitor - INFO - Found 4 new interesting filings
+2026-02-11 14:17:21,088 - sec_monitor - INFO - Found 4 new filings to process
+2026-02-11 14:17:21,088 - sec_monitor - INFO - Processing filing 1/4: NOW
+2026-02-11 14:17:21,547 - sec_monitor - ERROR - Error processing filing NOW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-11 14:17:21,547 - sec_monitor - INFO - Processing filing 2/4: TSCO
+2026-02-11 14:17:23,724 - sec_monitor - ERROR - Error processing filing TSCO: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-11 14:17:23,724 - sec_monitor - INFO - Processing filing 3/4: BWA
+2026-02-11 14:17:24,539 - sec_monitor - ERROR - Error processing filing BWA: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-11 14:17:24,539 - sec_monitor - INFO - Processing filing 4/4: PANW
+2026-02-11 14:17:26,841 - sec_monitor - ERROR - Error processing filing PANW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-11 14:17:26,841 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-11 14:17:27,241 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-11 14:17:27,242 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-11 14:17:27,242 - sec_monitor - INFO - Market open: False
+2026-02-11 14:17:27,242 - sec_monitor - INFO - Number of filing times mapped: 4
+2026-02-11 14:17:27,299 - sec_monitor - INFO - Last trading day: 2026-02-11
+2026-02-11 14:17:27,299 - sec_monitor - INFO - Processing ticker: NOW
+2026-02-11 14:17:27,750 - sec_monitor - INFO - Number of bars for NOW: 3
+2026-02-11 14:17:27,751 - sec_monitor - INFO - Last bar close for NOW: 106.475
+2026-02-11 14:17:27,751 - sec_monitor - INFO - Outside market hours price for NOW: 106.475
+2026-02-11 14:17:27,751 - sec_monitor - INFO - Processing ticker: TSCO
+2026-02-11 14:17:27,818 - sec_monitor - INFO - Number of bars for TSCO: 3
+2026-02-11 14:17:27,818 - sec_monitor - INFO - Last bar close for TSCO: 54.055
+2026-02-11 14:17:27,818 - sec_monitor - INFO - Outside market hours price for TSCO: 54.055
+2026-02-11 14:17:27,818 - sec_monitor - INFO - Processing ticker: BWA
+2026-02-11 14:17:27,886 - sec_monitor - INFO - Number of bars for BWA: 3
+2026-02-11 14:17:27,887 - sec_monitor - INFO - Last bar close for BWA: 54.075
+2026-02-11 14:17:27,887 - sec_monitor - INFO - Outside market hours price for BWA: 54.075
+2026-02-11 14:17:27,887 - sec_monitor - INFO - Processing ticker: PANW
+2026-02-11 14:17:27,953 - sec_monitor - INFO - Number of bars for PANW: 3
+2026-02-11 14:17:27,953 - sec_monitor - INFO - Last bar close for PANW: 165.57
+2026-02-11 14:17:27,953 - sec_monitor - INFO - Outside market hours price for PANW: 165.57
+2026-02-11 14:17:29,330 - sec_monitor - INFO - Generating final output...
+2026-02-11 14:17:29,332 - sec_monitor - INFO - Successfully merged 4 new filings with existing JSON
+2026-02-11 14:17:29,332 - sec_monitor - INFO - Cumulative stats - Input words: 4732915, Output words: 0
+2026-02-11 14:17:29,332 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-11 14:17:29,332 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 125941, 'output_words': 0, 'filings_processed': 4}
