@@ -1,0 +1,67 @@
+2026-02-12 22:01:12 - INFO - __main__ - Starting SP500 analysis script
+2026-02-12 22:01:12 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-12 22:01:12 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 11, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-12 22:01:12 - INFO - __main__ - Runtime timezone: UTC
+2026-02-12 22:01:12 - INFO - __main__ - Original start: 2026-02-11 16:00:00-05:00 (America/New_York)
+2026-02-12 22:01:12 - INFO - __main__ - Original end: 2026-02-12 16:00:00-05:00 (America/New_York)
+2026-02-12 22:01:12 - INFO - __main__ - UTC start: 2026-02-11 05:00:00+00:00
+2026-02-12 22:01:12 - INFO - __main__ - UTC end: 2026-02-13 05:00:00+00:00
+2026-02-12 22:01:12 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-12 22:01:13 - INFO - __main__ - Received data for 492 symbols
+2026-02-12 22:01:13 - INFO - __main__ - Sample data structure for PCAR:
+2026-02-12 22:01:13 - INFO - __main__ - Number of bars: 2
+2026-02-12 22:01:13 - INFO - __main__ - Bar timestamp: 2026-02-11 05:00:00+00:00 (UTC)
+2026-02-12 22:01:13 - INFO - __main__ - Bar timestamp: 2026-02-12 05:00:00+00:00 (UTC)
+2026-02-12 22:01:13 - INFO - __main__ - PCAR timestamps - Today: 2026-02-12 05:00:00+00:00, Yesterday: 2026-02-11 05:00:00+00:00
+2026-02-12 22:01:13 - INFO - __main__ - RJF timestamps - Today: 2026-02-12 05:00:00+00:00, Yesterday: 2026-02-11 05:00:00+00:00
+2026-02-12 22:01:13 - INFO - __main__ - UDR timestamps - Today: 2026-02-12 05:00:00+00:00, Yesterday: 2026-02-11 05:00:00+00:00
+2026-02-12 22:01:13 - INFO - __main__ - WDAY timestamps - Today: 2026-02-12 05:00:00+00:00, Yesterday: 2026-02-11 05:00:00+00:00
+2026-02-12 22:01:13 - INFO - __main__ - AMGN timestamps - Today: 2026-02-12 05:00:00+00:00, Yesterday: 2026-02-11 05:00:00+00:00
+2026-02-12 22:01:13 - INFO - __main__ - Successfully processed 492 stocks
+2026-02-12 22:01:13 - INFO - __main__ - Data issues encountered: 0
+2026-02-12 22:01:13 - INFO - __main__ - Final dataframe contains 492 stocks
+2026-02-12 22:01:13 - INFO - __main__ - Analysis for market close on February 12, 2026
+2026-02-12 22:01:13 - INFO - __main__ - Found 492 stocks with price data
+2026-02-12 22:01:13 - INFO - __main__ - Found Wikipedia URL for EQIX: https://en.wikipedia.org/wiki/Equinix
+2026-02-12 22:01:16 - INFO - __main__ - Found Wikipedia URL for BAX: https://en.wikipedia.org/wiki/Baxter_International
+2026-02-12 22:01:18 - INFO - __main__ - Analyzing top performer...
+2026-02-12 22:01:18 - INFO - __main__ - Analyzing Equinix (EQIX)
+2026-02-12 22:01:18 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-12 22:01:18 - INFO - __main__ - Searching for articles about EQIX
+2026-02-12 22:01:18 - INFO - __main__ - Searching for news about Equinix
+2026-02-12 22:01:20 - INFO - __main__ - Found 6 recent search results for Equinix
+2026-02-12 22:01:20 - INFO - __main__ - Found 6 URLs to try for EQIX
+2026-02-12 22:01:20 - INFO - __main__ - Fetching content from: https://www.bnnbloomberg.ca/markets/2026/02/12/wall-street-points-higher-as-earnings-roll-out-ahead-of-new-jobs-data/
+2026-02-12 22:01:20 - INFO - __main__ - Successfully extracted article content (5858 chars)
+2026-02-12 22:01:20 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-3d6392fe?gaa_at=eafs&gaa_n=AWEtsqdJHA0JKPM4C3YXWW-PozjvREvNeHNrF_9nkrEr6gT2exns6b9y0jp_&gaa_ts=698e5133&gaa_sig=PpdRrNTSvkWhWubxC-qILpFikmOzwOUhmS5BKYZnFmxrtT0X5uLaR32DZb89BJlf5LvebOcbRHkEycpoy2WX5Q%3D%3D
+2026-02-12 22:01:20 - WARNING - __main__ - Article content too short (43 chars)
+2026-02-12 22:01:20 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/02/12/stocks-making-the-biggest-moves-midday-crox-csco-lulu-app.html
+2026-02-12 22:01:21 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-12 22:01:21 - INFO - __main__ - Successfully extracted article content (6538 chars)
+2026-02-12 22:01:21 - INFO - __main__ - Found total of 2 valid articles for EQIX
+2026-02-12 22:01:23 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-12 22:01:24 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-12 22:01:24 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-02-12 22:01:29 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-12 22:01:29 - INFO - __main__ - Top performer analysis complete
+2026-02-12 22:01:29 - INFO - __main__ - Analyzing bottom performer...
+2026-02-12 22:01:29 - INFO - __main__ - Analyzing Baxter International (BAX)
+2026-02-12 22:01:29 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-12 22:01:29 - INFO - __main__ - Searching for articles about BAX
+2026-02-12 22:01:29 - INFO - __main__ - Searching for news about Baxter International
+2026-02-12 22:01:32 - INFO - __main__ - Found 6 recent search results for Baxter International
+2026-02-12 22:01:32 - INFO - __main__ - Found 6 URLs to try for BAX
+2026-02-12 22:01:32 - INFO - __main__ - Fetching content from: https://www.baxter.com/baxter-newsroom/baxter-reports-fourth-quarter-2025-results
+2026-02-12 22:01:32 - WARNING - __main__ - Article content too short (28 chars)
+2026-02-12 22:01:32 - INFO - __main__ - Fetching content from: https://www.nasdaq.com/articles/why-baxter-international-stock-was-tumbling-today
+2026-02-12 22:01:35 - INFO - __main__ - Successfully extracted article content (3313 chars)
+2026-02-12 22:01:35 - INFO - __main__ - Fetching content from: https://finance.yahoo.com/news/baxter-international-inc-bax-q4-210800934.html
+2026-02-12 22:01:36 - INFO - __main__ - Successfully extracted article content (5159 chars)
+2026-02-12 22:01:36 - INFO - __main__ - Found total of 2 valid articles for BAX
+2026-02-12 22:01:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-12 22:01:38 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-12 22:01:38 - INFO - __main__ - Found 2 relevant articles out of 2 total
+2026-02-12 22:01:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-12 22:01:43 - INFO - __main__ - Bottom performer analysis complete
+2026-02-12 22:01:43 - INFO - __main__ - Saving results to JSON...
+2026-02-12 22:01:43 - INFO - __main__ - Analysis complete and saved to market_analysis.json
