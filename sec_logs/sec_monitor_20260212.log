@@ -421,3 +421,63 @@
 2026-02-12 15:58:05,572 - sec_monitor - INFO - Cumulative stats - Input words: 10724829, Output words: 0
 2026-02-12 15:58:05,572 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-12 15:58:05,572 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 1542803, 'output_words': 0, 'filings_processed': 1}
+2026-02-12 18:59:14,544 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-12 18:59:14,544 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-12 18:59:14,544 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-12 18:59:14,545 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-12 18:59:14,545 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-12 18:59:14,545 - sec_monitor - INFO - Initializing components...
+2026-02-12 18:59:14,545 - sec_monitor - INFO - Initializing components
+2026-02-12 18:59:14,545 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-12 18:59:14,545 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-12 18:59:14,546 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-12 18:59:14,546 - sec_monitor - INFO - All components initialized successfully
+2026-02-12 18:59:14,547 - sec_monitor - INFO - Found JSON file from today
+2026-02-12 18:59:14,547 - sec_monitor - INFO - Found 51 previously processed accessions and 51 filing URLs
+2026-02-12 18:59:14,547 - sec_monitor - INFO - Found 51 accession numbers and 51 URLs from previously processed filings
+2026-02-12 18:59:14,547 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-12 18:59:50,913 - sec_monitor - INFO - No more entries found
+2026-02-12 18:59:50,913 - sec_monitor - INFO - Completed fetching. Found 256 total filings
+2026-02-12 18:59:50,914 - sec_monitor - INFO - Found 5 new interesting filings
+2026-02-12 18:59:50,914 - sec_monitor - INFO - Found 5 new filings to process
+2026-02-12 18:59:50,914 - sec_monitor - INFO - Processing filing 1/5: LLY
+2026-02-12 19:00:17,205 - sec_monitor - ERROR - Error processing filing LLY: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-12 19:00:17,205 - sec_monitor - INFO - Processing filing 2/5: KMB
+2026-02-12 19:00:44,419 - sec_monitor - ERROR - Error processing filing KMB: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-12 19:00:44,420 - sec_monitor - INFO - Processing filing 3/5: LHX
+2026-02-12 19:01:19,074 - sec_monitor - ERROR - Error processing filing LHX: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-12 19:01:19,074 - sec_monitor - INFO - Processing filing 4/5: CHD
+2026-02-12 19:02:01,310 - sec_monitor - ERROR - Error processing filing CHD: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-12 19:02:01,311 - sec_monitor - INFO - Processing filing 5/5: AIG
+2026-02-12 19:05:27,190 - sec_monitor - ERROR - Error processing filing AIG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-12 19:05:27,190 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-12 19:05:27,637 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-12 19:05:27,637 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-12 19:05:27,637 - sec_monitor - INFO - Market open: True
+2026-02-12 19:05:27,637 - sec_monitor - INFO - Number of filing times mapped: 5
+2026-02-12 19:05:27,666 - sec_monitor - INFO - Last trading day: 2026-02-12
+2026-02-12 19:05:27,666 - sec_monitor - INFO - Processing ticker: LLY
+2026-02-12 19:05:28,285 - sec_monitor - INFO - Number of bars for LLY: 3
+2026-02-12 19:05:28,285 - sec_monitor - INFO - Last bar close for LLY: 1015.01
+2026-02-12 19:05:28,285 - sec_monitor - INFO - Market open price for LLY: 1015.01, change: -0.9495091437828149%
+2026-02-12 19:05:28,285 - sec_monitor - INFO - Processing ticker: KMB
+2026-02-12 19:05:28,356 - sec_monitor - INFO - Number of bars for KMB: 3
+2026-02-12 19:05:28,357 - sec_monitor - INFO - Last bar close for KMB: 107.62
+2026-02-12 19:05:28,357 - sec_monitor - INFO - Market open price for KMB: 107.62, change: 1.6049848942598213%
+2026-02-12 19:05:28,357 - sec_monitor - INFO - Processing ticker: LHX
+2026-02-12 19:05:28,419 - sec_monitor - INFO - Number of bars for LHX: 3
+2026-02-12 19:05:28,419 - sec_monitor - INFO - Last bar close for LHX: 340.83
+2026-02-12 19:05:28,419 - sec_monitor - INFO - Market open price for LHX: 340.83, change: -1.2086956521739178%
+2026-02-12 19:05:28,419 - sec_monitor - INFO - Processing ticker: CHD
+2026-02-12 19:05:28,455 - sec_monitor - INFO - Number of bars for CHD: 3
+2026-02-12 19:05:28,455 - sec_monitor - INFO - Last bar close for CHD: 100.47
+2026-02-12 19:05:28,455 - sec_monitor - INFO - Market open price for CHD: 100.47, change: 1.510482445061889%
+2026-02-12 19:05:28,455 - sec_monitor - INFO - Processing ticker: AIG
+2026-02-12 19:05:28,491 - sec_monitor - INFO - Number of bars for AIG: 3
+2026-02-12 19:05:28,491 - sec_monitor - INFO - Last bar close for AIG: 78.43
+2026-02-12 19:05:28,491 - sec_monitor - INFO - Market open price for AIG: 78.43, change: 4.601226993865034%
+2026-02-12 19:05:30,466 - sec_monitor - INFO - Generating final output...
+2026-02-12 19:05:30,467 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-02-12 19:05:30,467 - sec_monitor - INFO - Cumulative stats - Input words: 13232222, Output words: 0
+2026-02-12 19:05:30,467 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-12 19:05:30,468 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 2507393, 'output_words': 0, 'filings_processed': 5}
