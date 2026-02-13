@@ -361,3 +361,51 @@
 2026-02-13 13:04:26,230 - sec_monitor - INFO - Cumulative stats - Input words: 14334801, Output words: 0
 2026-02-13 13:04:26,230 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-13 13:04:26,230 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 6203, 'output_words': 0, 'filings_processed': 1}
+2026-02-13 14:03:04,934 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-13 14:03:04,934 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-13 14:03:04,934 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-13 14:03:04,935 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-13 14:03:04,935 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-13 14:03:04,935 - sec_monitor - INFO - Initializing components...
+2026-02-13 14:03:04,935 - sec_monitor - INFO - Initializing components
+2026-02-13 14:03:04,935 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-13 14:03:04,935 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-13 14:03:04,936 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-13 14:03:04,936 - sec_monitor - INFO - All components initialized successfully
+2026-02-13 14:03:04,937 - sec_monitor - INFO - Found JSON file from today
+2026-02-13 14:03:04,937 - sec_monitor - INFO - Found 51 previously processed accessions and 51 filing URLs
+2026-02-13 14:03:04,937 - sec_monitor - INFO - Found 51 accession numbers and 51 URLs from previously processed filings
+2026-02-13 14:03:04,937 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-13 14:03:52,960 - sec_monitor - INFO - No more entries found
+2026-02-13 14:03:52,960 - sec_monitor - INFO - Completed fetching. Found 389 total filings
+2026-02-13 14:03:52,960 - sec_monitor - INFO - Found 3 new interesting filings
+2026-02-13 14:03:52,961 - sec_monitor - INFO - Found 3 new filings to process
+2026-02-13 14:03:52,961 - sec_monitor - INFO - Processing filing 1/3: V
+2026-02-13 14:04:02,863 - sec_monitor - ERROR - Error processing filing V: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-13 14:04:02,863 - sec_monitor - INFO - Processing filing 2/3: LVS
+2026-02-13 14:04:03,432 - sec_monitor - ERROR - Error processing filing LVS: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-13 14:04:03,433 - sec_monitor - INFO - Processing filing 3/3: RCL
+2026-02-13 14:04:04,032 - sec_monitor - ERROR - Error processing filing RCL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-13 14:04:04,033 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-13 14:04:04,305 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-13 14:04:04,305 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-13 14:04:04,305 - sec_monitor - INFO - Market open: False
+2026-02-13 14:04:04,305 - sec_monitor - INFO - Number of filing times mapped: 3
+2026-02-13 14:04:04,326 - sec_monitor - INFO - Last trading day: 2026-02-13
+2026-02-13 14:04:04,326 - sec_monitor - INFO - Processing ticker: V
+2026-02-13 14:04:04,772 - sec_monitor - INFO - Number of bars for V: 4
+2026-02-13 14:04:04,772 - sec_monitor - INFO - Last bar close for V: 324.125
+2026-02-13 14:04:04,772 - sec_monitor - INFO - Outside market hours price for V: 324.125
+2026-02-13 14:04:04,772 - sec_monitor - INFO - Processing ticker: LVS
+2026-02-13 14:04:04,800 - sec_monitor - INFO - Number of bars for LVS: 4
+2026-02-13 14:04:04,800 - sec_monitor - INFO - Last bar close for LVS: 56.83
+2026-02-13 14:04:04,800 - sec_monitor - INFO - Outside market hours price for LVS: 56.83
+2026-02-13 14:04:04,800 - sec_monitor - INFO - Processing ticker: RCL
+2026-02-13 14:04:04,824 - sec_monitor - INFO - Number of bars for RCL: 4
+2026-02-13 14:04:04,824 - sec_monitor - INFO - Last bar close for RCL: 332.8
+2026-02-13 14:04:04,824 - sec_monitor - INFO - Outside market hours price for RCL: 332.8
+2026-02-13 14:04:06,184 - sec_monitor - INFO - Generating final output...
+2026-02-13 14:04:06,185 - sec_monitor - INFO - Successfully merged 3 new filings with existing JSON
+2026-02-13 14:04:06,185 - sec_monitor - INFO - Cumulative stats - Input words: 14440638, Output words: 0
+2026-02-13 14:04:06,186 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-13 14:04:06,186 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 105837, 'output_words': 0, 'filings_processed': 3}
