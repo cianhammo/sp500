@@ -1,0 +1,103 @@
+2026-02-13 22:03:20 - INFO - __main__ - Starting SP500 analysis script
+2026-02-13 22:03:20 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-13 22:03:21 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 12, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-13 22:03:21 - INFO - __main__ - Runtime timezone: UTC
+2026-02-13 22:03:21 - INFO - __main__ - Original start: 2026-02-12 16:00:00-05:00 (America/New_York)
+2026-02-13 22:03:21 - INFO - __main__ - Original end: 2026-02-13 16:00:00-05:00 (America/New_York)
+2026-02-13 22:03:21 - INFO - __main__ - UTC start: 2026-02-12 05:00:00+00:00
+2026-02-13 22:03:21 - INFO - __main__ - UTC end: 2026-02-14 05:00:00+00:00
+2026-02-13 22:03:21 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-13 22:03:25 - INFO - __main__ - Received data for 492 symbols
+2026-02-13 22:03:25 - INFO - __main__ - Sample data structure for GWW:
+2026-02-13 22:03:25 - INFO - __main__ - Number of bars: 2
+2026-02-13 22:03:25 - INFO - __main__ - Bar timestamp: 2026-02-12 05:00:00+00:00 (UTC)
+2026-02-13 22:03:25 - INFO - __main__ - Bar timestamp: 2026-02-13 05:00:00+00:00 (UTC)
+2026-02-13 22:03:25 - INFO - __main__ - GWW timestamps - Today: 2026-02-13 05:00:00+00:00, Yesterday: 2026-02-12 05:00:00+00:00
+2026-02-13 22:03:25 - INFO - __main__ - MDLZ timestamps - Today: 2026-02-13 05:00:00+00:00, Yesterday: 2026-02-12 05:00:00+00:00
+2026-02-13 22:03:25 - INFO - __main__ - ATO timestamps - Today: 2026-02-13 05:00:00+00:00, Yesterday: 2026-02-12 05:00:00+00:00
+2026-02-13 22:03:25 - INFO - __main__ - CL timestamps - Today: 2026-02-13 05:00:00+00:00, Yesterday: 2026-02-12 05:00:00+00:00
+2026-02-13 22:03:25 - INFO - __main__ - MKC timestamps - Today: 2026-02-13 05:00:00+00:00, Yesterday: 2026-02-12 05:00:00+00:00
+2026-02-13 22:03:25 - INFO - __main__ - Successfully processed 492 stocks
+2026-02-13 22:03:25 - INFO - __main__ - Data issues encountered: 0
+2026-02-13 22:03:25 - INFO - __main__ - Final dataframe contains 492 stocks
+2026-02-13 22:03:25 - INFO - __main__ - Analysis for market close on February 13, 2026
+2026-02-13 22:03:25 - INFO - __main__ - Found 492 stocks with price data
+2026-02-13 22:03:26 - INFO - __main__ - Found Wikipedia URL for AMAT: https://en.wikipedia.org/wiki/Applied_Materials
+2026-02-13 22:03:28 - INFO - __main__ - Found Wikipedia URL for STZ: https://en.wikipedia.org/wiki/Constellation_Brands
+2026-02-13 22:03:30 - INFO - __main__ - Analyzing top performer...
+2026-02-13 22:03:30 - INFO - __main__ - Analyzing Applied Materials (AMAT)
+2026-02-13 22:03:30 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-13 22:03:30 - INFO - __main__ - Searching for articles about AMAT
+2026-02-13 22:03:30 - INFO - __main__ - Searching for news about Applied Materials
+2026-02-13 22:03:34 - INFO - __main__ - Found 6 recent search results for Applied Materials
+2026-02-13 22:03:34 - INFO - __main__ - Found 6 URLs to try for AMAT
+2026-02-13 22:03:34 - INFO - __main__ - Fetching content from: https://www.bloomberg.com/news/articles/2026-02-12/applied-materials-gives-rosy-forecast-as-ai-memory-boost-demand
+2026-02-13 22:03:34 - INFO - __main__ - Successfully extracted article content (133 chars)
+2026-02-13 22:03:34 - INFO - __main__ - Fetching content from: https://www.investing.com/news/earnings/applied-materials-stock-jumps-on-robust-ai-demand-and-upbeat-outlook-4503956
+2026-02-13 22:03:34 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-13 22:03:34 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/02/13/stocks-making-the-biggest-moves-premarket-draftkings-applied-materials-roku-rivian-automotive-and-more.html
+2026-02-13 22:03:35 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-13 22:03:35 - INFO - __main__ - Successfully extracted article content (4397 chars)
+2026-02-13 22:03:35 - INFO - __main__ - Fetching content from: https://www.tipranks.com/news/applied-materials-stock-amat-soars-as-ai-demand-poised-to-fuel-2026-growth
+2026-02-13 22:03:36 - WARNING - __main__ - Article content too short (41 chars)
+2026-02-13 22:03:36 - INFO - __main__ - Fetching content from: https://www.barrons.com/articles/stock-movers-9b7eaa16?gaa_at=eafs&gaa_n=AWEtsqfvlc7CeBTdAYa79gFa-YFpfK2OOCa0LBpQRRBg0GF92nYvVoQZA-Zj&gaa_ts=698fa338&gaa_sig=CFC5tkVHkGK0a_Aql-E4uVTUScRlbTfi7oOMJo2foVEoGf6Kj3NHK13AxJMdiTNQ0SaR2jMM_byzs9DGnSmp5A%3D%3D
+2026-02-13 22:03:36 - WARNING - __main__ - Article content too short (43 chars)
+2026-02-13 22:03:36 - INFO - __main__ - Fetching content from: https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-disruption-fears-cpi-inflation-arista-applied-materials/
+2026-02-13 22:03:36 - INFO - __main__ - Successfully extracted article content (474 chars)
+2026-02-13 22:03:36 - INFO - __main__ - Found total of 1 valid articles for AMAT
+2026-02-13 22:03:37 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:37 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.478692 seconds
+2026-02-13 22:03:39 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:39 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.788453 seconds
+2026-02-13 22:03:40 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:40 - ERROR - __main__ - Error getting relevance score for article: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CY6pmuJXTF8YgkhxnCZae'}
+2026-02-13 22:03:40 - INFO - __main__ - Found 0 relevant articles out of 1 total
+2026-02-13 22:03:41 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:41 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.429357 seconds
+2026-02-13 22:03:42 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:42 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.983089 seconds
+2026-02-13 22:03:43 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:43 - ERROR - __main__ - Analysis failed for AMAT: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CY6pnAsA6ehe1fYAZVBRC'}
+2026-02-13 22:03:43 - INFO - __main__ - Top performer analysis complete
+2026-02-13 22:03:43 - INFO - __main__ - Analyzing bottom performer...
+2026-02-13 22:03:43 - INFO - __main__ - Analyzing Constellation Brands (STZ)
+2026-02-13 22:03:44 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-13 22:03:44 - INFO - __main__ - Searching for articles about STZ
+2026-02-13 22:03:44 - INFO - __main__ - Searching for news about Constellation Brands
+2026-02-13 22:03:47 - INFO - __main__ - Found 6 recent search results for Constellation Brands
+2026-02-13 22:03:47 - INFO - __main__ - Found 6 URLs to try for STZ
+2026-02-13 22:03:47 - INFO - __main__ - Fetching content from: https://www.thespiritsbusiness.com/2026/02/ex-suntory-president-to-become-constellation-ceo/
+2026-02-13 22:03:47 - INFO - __main__ - Successfully extracted article content (3522 chars)
+2026-02-13 22:03:47 - INFO - __main__ - Fetching content from: https://www.benzinga.com/markets/equities/26/02/50609477/why-is-constellation-brands-stock-falling-today
+2026-02-13 22:03:48 - INFO - __main__ - Successfully extracted article content (3765 chars)
+2026-02-13 22:03:48 - INFO - __main__ - Fetching content from: https://247wallst.com/investing/2026/02/13/analysts-see-55-upside-for-netflix-despite-77-share-price/
+2026-02-13 22:03:48 - INFO - __main__ - Successfully extracted article content (2433 chars)
+2026-02-13 22:03:48 - INFO - __main__ - Found total of 3 valid articles for STZ
+2026-02-13 22:03:49 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:49 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.442674 seconds
+2026-02-13 22:03:50 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:50 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.962894 seconds
+2026-02-13 22:03:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:53 - ERROR - __main__ - Error getting relevance score for article: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CY6pnmevnBVFqcBo51Rqo'}
+2026-02-13 22:03:53 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:53 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.411566 seconds
+2026-02-13 22:03:55 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:55 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.950041 seconds
+2026-02-13 22:03:56 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:56 - ERROR - __main__ - Error getting relevance score for article: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CY6po8EvQYLFBUi273vNm'}
+2026-02-13 22:03:57 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:57 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.459017 seconds
+2026-02-13 22:03:58 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:03:58 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.978995 seconds
+2026-02-13 22:04:10 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:04:10 - ERROR - __main__ - Error getting relevance score for article: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CY6poNYeaYC9QdjXa5qFx'}
+2026-02-13 22:04:10 - INFO - __main__ - Found 0 relevant articles out of 3 total
+2026-02-13 22:04:20 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:04:20 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.417938 seconds
+2026-02-13 22:04:26 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:04:26 - INFO - anthropic._base_client - Retrying request to /v1/messages in 0.841342 seconds
+2026-02-13 22:04:27 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 529 <none>"
+2026-02-13 22:04:27 - ERROR - __main__ - Analysis failed for STZ: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'Overloaded'}, 'request_id': 'req_011CY6pqPgQzGwkD34qcRr2j'}
+2026-02-13 22:04:27 - INFO - __main__ - Bottom performer analysis complete
+2026-02-13 22:04:27 - INFO - __main__ - Saving results to JSON...
+2026-02-13 22:04:28 - INFO - __main__ - Analysis complete and saved to market_analysis.json
