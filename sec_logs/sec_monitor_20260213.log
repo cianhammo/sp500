@@ -409,3 +409,45 @@
 2026-02-13 14:04:06,185 - sec_monitor - INFO - Cumulative stats - Input words: 14440638, Output words: 0
 2026-02-13 14:04:06,186 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-13 14:04:06,186 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 105837, 'output_words': 0, 'filings_processed': 3}
+2026-02-13 15:42:38,283 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-13 15:42:38,284 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-13 15:42:38,284 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-13 15:42:38,284 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-13 15:42:38,284 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-13 15:42:38,285 - sec_monitor - INFO - Initializing components...
+2026-02-13 15:42:38,285 - sec_monitor - INFO - Initializing components
+2026-02-13 15:42:38,285 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-13 15:42:38,285 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-13 15:42:38,285 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-13 15:42:38,285 - sec_monitor - INFO - All components initialized successfully
+2026-02-13 15:42:38,286 - sec_monitor - INFO - Found JSON file from today
+2026-02-13 15:42:38,287 - sec_monitor - INFO - Found 54 previously processed accessions and 54 filing URLs
+2026-02-13 15:42:38,287 - sec_monitor - INFO - Found 54 accession numbers and 54 URLs from previously processed filings
+2026-02-13 15:42:38,287 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-13 15:43:15,769 - sec_monitor - INFO - No more entries found
+2026-02-13 15:43:15,769 - sec_monitor - INFO - Completed fetching. Found 375 total filings
+2026-02-13 15:43:15,769 - sec_monitor - INFO - Found 2 new interesting filings
+2026-02-13 15:43:15,769 - sec_monitor - INFO - Found 2 new filings to process
+2026-02-13 15:43:15,769 - sec_monitor - INFO - Processing filing 1/2: CAT
+2026-02-13 15:45:12,394 - sec_monitor - ERROR - Error processing filing CAT: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-13 15:45:12,394 - sec_monitor - INFO - Processing filing 2/2: ROK
+2026-02-13 15:45:12,712 - sec_monitor - ERROR - Error processing filing ROK: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-13 15:45:12,713 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-13 15:45:13,036 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-13 15:45:13,036 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-13 15:45:13,036 - sec_monitor - INFO - Market open: True
+2026-02-13 15:45:13,036 - sec_monitor - INFO - Number of filing times mapped: 2
+2026-02-13 15:45:13,047 - sec_monitor - INFO - Last trading day: 2026-02-13
+2026-02-13 15:45:13,047 - sec_monitor - INFO - Processing ticker: CAT
+2026-02-13 15:45:13,508 - sec_monitor - INFO - Number of bars for CAT: 4
+2026-02-13 15:45:13,509 - sec_monitor - INFO - Last bar close for CAT: 758.62
+2026-02-13 15:45:13,509 - sec_monitor - INFO - Market open price for CAT: 758.62, change: -2.1160744238858324%
+2026-02-13 15:45:13,509 - sec_monitor - INFO - Processing ticker: ROK
+2026-02-13 15:45:13,536 - sec_monitor - INFO - Number of bars for ROK: 4
+2026-02-13 15:45:13,536 - sec_monitor - INFO - Last bar close for ROK: 381.9
+2026-02-13 15:45:13,537 - sec_monitor - INFO - Market open price for ROK: 381.9, change: -6.123251640815129%
+2026-02-13 15:45:14,354 - sec_monitor - INFO - Generating final output...
+2026-02-13 15:45:14,357 - sec_monitor - INFO - Successfully merged 2 new filings with existing JSON
+2026-02-13 15:45:14,357 - sec_monitor - INFO - Cumulative stats - Input words: 15151046, Output words: 0
+2026-02-13 15:45:14,357 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-13 15:45:14,357 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 710408, 'output_words': 0, 'filings_processed': 2}
