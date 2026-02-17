@@ -131,3 +131,62 @@
 2026-02-17 13:09:19,632 - sec_monitor - INFO - Cumulative stats - Input words: 3062386, Output words: 0
 2026-02-17 13:09:19,632 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
 2026-02-17 13:09:19,632 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 870154, 'output_words': 0, 'filings_processed': 7}
+2026-02-17 14:07:42,635 - sec_monitor - INFO - Starting SEC filing monitor 
+2026-02-17 14:07:42,635 - sec_monitor - INFO - Loading S&P 500 data...
+2026-02-17 14:07:42,635 - sec_monitor - INFO - Starting S&P 500 data initialization
+2026-02-17 14:07:42,636 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-17 14:07:42,636 - sec_monitor - INFO - Successfully loaded 503 S&P 500 tickers
+2026-02-17 14:07:42,636 - sec_monitor - INFO - Initializing components...
+2026-02-17 14:07:42,636 - sec_monitor - INFO - Initializing components
+2026-02-17 14:07:42,636 - sec_monitor - INFO - SEC fetcher initialized
+2026-02-17 14:07:42,636 - sec_monitor - INFO - Filing analyzer initialized
+2026-02-17 14:07:42,636 - sec_monitor - INFO - Alpaca clients initialized
+2026-02-17 14:07:42,636 - sec_monitor - INFO - All components initialized successfully
+2026-02-17 14:07:42,637 - sec_monitor - INFO - Found JSON file from today
+2026-02-17 14:07:42,638 - sec_monitor - INFO - Found 13 previously processed accessions and 13 filing URLs
+2026-02-17 14:07:42,638 - sec_monitor - INFO - Found 13 accession numbers and 13 URLs from previously processed filings
+2026-02-17 14:07:42,638 - sec_monitor - INFO - Fetching SEC filings...
+2026-02-17 14:07:51,492 - sec_monitor - INFO - Reached old filing, stopping. Found 37 total filings
+2026-02-17 14:07:51,493 - sec_monitor - INFO - Found 5 new interesting filings
+2026-02-17 14:07:51,493 - sec_monitor - INFO - Found 5 new filings to process
+2026-02-17 14:07:51,493 - sec_monitor - INFO - Processing filing 1/5: NOW
+2026-02-17 14:07:51,910 - sec_monitor - ERROR - Error processing filing NOW: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-17 14:07:51,910 - sec_monitor - INFO - Processing filing 2/5: HWM
+2026-02-17 14:07:52,197 - sec_monitor - ERROR - Error processing filing HWM: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-17 14:07:52,197 - sec_monitor - INFO - Processing filing 3/5: RCL
+2026-02-17 14:07:52,505 - sec_monitor - ERROR - Error processing filing RCL: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-17 14:07:52,505 - sec_monitor - INFO - Processing filing 4/5: CAG
+2026-02-17 14:07:52,836 - sec_monitor - ERROR - Error processing filing CAG: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-17 14:07:52,836 - sec_monitor - INFO - Processing filing 5/5: DHR
+2026-02-17 14:07:53,336 - sec_monitor - ERROR - Error processing filing DHR: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for countTokens. Call ListModels to see the list of available models and their supported methods.
+2026-02-17 14:07:53,336 - sec_monitor - INFO - Fetching supplementary data...
+2026-02-17 14:07:53,478 - sec_monitor - INFO - filing_tickers type: <class 'list'>
+2026-02-17 14:07:53,478 - sec_monitor - INFO - filing_data type: <class 'list'>
+2026-02-17 14:07:53,478 - sec_monitor - INFO - Market open: False
+2026-02-17 14:07:53,478 - sec_monitor - INFO - Number of filing times mapped: 5
+2026-02-17 14:07:53,501 - sec_monitor - INFO - Last trading day: 2026-02-17
+2026-02-17 14:07:53,501 - sec_monitor - INFO - Processing ticker: NOW
+2026-02-17 14:07:53,924 - sec_monitor - INFO - Number of bars for NOW: 2
+2026-02-17 14:07:53,924 - sec_monitor - INFO - Last bar close for NOW: 107.02
+2026-02-17 14:07:53,924 - sec_monitor - INFO - Outside market hours price for NOW: 107.02
+2026-02-17 14:07:53,924 - sec_monitor - INFO - Processing ticker: HWM
+2026-02-17 14:07:53,953 - sec_monitor - INFO - Number of bars for HWM: 2
+2026-02-17 14:07:53,954 - sec_monitor - INFO - Last bar close for HWM: 250.21
+2026-02-17 14:07:53,954 - sec_monitor - INFO - Outside market hours price for HWM: 250.21
+2026-02-17 14:07:53,954 - sec_monitor - INFO - Processing ticker: RCL
+2026-02-17 14:07:53,984 - sec_monitor - INFO - Number of bars for RCL: 2
+2026-02-17 14:07:53,984 - sec_monitor - INFO - Last bar close for RCL: 319.65
+2026-02-17 14:07:53,984 - sec_monitor - INFO - Outside market hours price for RCL: 319.65
+2026-02-17 14:07:53,984 - sec_monitor - INFO - Processing ticker: CAG
+2026-02-17 14:07:54,017 - sec_monitor - INFO - Number of bars for CAG: 2
+2026-02-17 14:07:54,017 - sec_monitor - INFO - Last bar close for CAG: 19.77
+2026-02-17 14:07:54,017 - sec_monitor - INFO - Outside market hours price for CAG: 19.77
+2026-02-17 14:07:54,017 - sec_monitor - INFO - Processing ticker: DHR
+2026-02-17 14:07:54,046 - sec_monitor - INFO - Number of bars for DHR: 2
+2026-02-17 14:07:54,046 - sec_monitor - INFO - Last bar close for DHR: 212.58
+2026-02-17 14:07:54,046 - sec_monitor - INFO - Outside market hours price for DHR: 212.58
+2026-02-17 14:07:55,883 - sec_monitor - INFO - Generating final output...
+2026-02-17 14:07:55,884 - sec_monitor - INFO - Successfully merged 5 new filings with existing JSON
+2026-02-17 14:07:55,885 - sec_monitor - INFO - Cumulative stats - Input words: 3090381, Output words: 0
+2026-02-17 14:07:55,885 - sec_monitor - INFO - Successfully saved/merged output to output/sec_filings.json
+2026-02-17 14:07:55,885 - sec_monitor - INFO - Processing complete. Stats: {'input_words': 27995, 'output_words': 0, 'filings_processed': 5}
