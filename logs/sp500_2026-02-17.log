@@ -1,0 +1,71 @@
+2026-02-17 22:00:42 - INFO - __main__ - Starting SP500 analysis script
+2026-02-17 22:00:42 - INFO - __main__ - Retrieved 503 tickers from SP500 list
+2026-02-17 22:00:42 - INFO - __main__ - Found last two trading days: [datetime.datetime(2026, 2, 17, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York')), datetime.datetime(2026, 2, 13, 16, 0, tzinfo=zoneinfo.ZoneInfo(key='America/New_York'))]
+2026-02-17 22:00:42 - INFO - __main__ - Runtime timezone: UTC
+2026-02-17 22:00:42 - INFO - __main__ - Original start: 2026-02-13 16:00:00-05:00 (America/New_York)
+2026-02-17 22:00:42 - INFO - __main__ - Original end: 2026-02-17 16:00:00-05:00 (America/New_York)
+2026-02-17 22:00:42 - INFO - __main__ - UTC start: 2026-02-13 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - UTC end: 2026-02-18 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - Attempting to fetch data for 503 tickers
+2026-02-17 22:00:42 - INFO - __main__ - Received data for 492 symbols
+2026-02-17 22:00:42 - INFO - __main__ - Sample data structure for SYK:
+2026-02-17 22:00:42 - INFO - __main__ - Number of bars: 2
+2026-02-17 22:00:42 - INFO - __main__ - Bar timestamp: 2026-02-13 05:00:00+00:00 (UTC)
+2026-02-17 22:00:42 - INFO - __main__ - Bar timestamp: 2026-02-17 05:00:00+00:00 (UTC)
+2026-02-17 22:00:42 - INFO - __main__ - SYK timestamps - Today: 2026-02-17 05:00:00+00:00, Yesterday: 2026-02-13 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - ATO timestamps - Today: 2026-02-17 05:00:00+00:00, Yesterday: 2026-02-13 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - FRT timestamps - Today: 2026-02-17 05:00:00+00:00, Yesterday: 2026-02-13 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - MAA timestamps - Today: 2026-02-17 05:00:00+00:00, Yesterday: 2026-02-13 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - SNPS timestamps - Today: 2026-02-17 05:00:00+00:00, Yesterday: 2026-02-13 05:00:00+00:00
+2026-02-17 22:00:42 - INFO - __main__ - Successfully processed 492 stocks
+2026-02-17 22:00:42 - INFO - __main__ - Data issues encountered: 0
+2026-02-17 22:00:42 - INFO - __main__ - Final dataframe contains 492 stocks
+2026-02-17 22:00:42 - INFO - __main__ - Analysis for market close on February 17, 2026
+2026-02-17 22:00:42 - INFO - __main__ - Found 492 stocks with price data
+2026-02-17 22:00:43 - INFO - __main__ - Found Wikipedia URL for NCLH: https://en.wikipedia.org/wiki/Norwegian_Cruise_Line_Holdings
+2026-02-17 22:00:45 - INFO - __main__ - Found Wikipedia URL for GPC: https://en.wikipedia.org/wiki/Genuine_Parts_Company
+2026-02-17 22:00:47 - INFO - __main__ - Analyzing top performer...
+2026-02-17 22:00:47 - INFO - __main__ - Analyzing Norwegian Cruise Line Holdings (NCLH)
+2026-02-17 22:00:47 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-17 22:00:48 - INFO - __main__ - Searching for articles about NCLH
+2026-02-17 22:00:48 - INFO - __main__ - Searching for news about Norwegian Cruise Line Holdings
+2026-02-17 22:00:59 - INFO - __main__ - Found 6 recent search results for Norwegian Cruise Line Holdings
+2026-02-17 22:00:59 - INFO - __main__ - Found 6 URLs to try for NCLH
+2026-02-17 22:00:59 - INFO - __main__ - Fetching content from: https://www.cnbc.com/2026/02/17/elliott-builds-10percent-stake-in-norwegian-cruise-pushes-for-board-change.html
+2026-02-17 22:00:59 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-17 22:00:59 - INFO - __main__ - Successfully extracted article content (2279 chars)
+2026-02-17 22:00:59 - INFO - __main__ - Fetching content from: https://nypost.com/2026/02/17/business/norwegian-cruise-line-faces-turnaround-effort-as-activist-investor-reveals-10-stake/
+2026-02-17 22:01:00 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-17 22:01:00 - INFO - __main__ - Successfully extracted article content (3363 chars)
+2026-02-17 22:01:00 - INFO - __main__ - Fetching content from: https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-february-17-2026-11907579
+2026-02-17 22:01:01 - INFO - readability.readability - ruthless removal did not work. 
+2026-02-17 22:01:01 - INFO - __main__ - Successfully extracted article content (4725 chars)
+2026-02-17 22:01:01 - INFO - __main__ - Found total of 3 valid articles for NCLH
+2026-02-17 22:01:02 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:03 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:06 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:06 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2026-02-17 22:01:09 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:09 - INFO - __main__ - Top performer analysis complete
+2026-02-17 22:01:09 - INFO - __main__ - Analyzing bottom performer...
+2026-02-17 22:01:09 - INFO - __main__ - Analyzing Genuine Parts Company (GPC)
+2026-02-17 22:01:09 - INFO - __main__ - Calculating betas for 1 stocks against ['SPY']
+2026-02-17 22:01:09 - INFO - __main__ - Searching for articles about GPC
+2026-02-17 22:01:09 - INFO - __main__ - Searching for news about Genuine Parts Company
+2026-02-17 22:01:11 - INFO - __main__ - Found 6 recent search results for Genuine Parts Company
+2026-02-17 22:01:11 - INFO - __main__ - Found 6 URLs to try for GPC
+2026-02-17 22:01:11 - INFO - __main__ - Fetching content from: https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Announces-Plan-to-Separate-Automotive-and-Industrial-Businesses-Into-Two-Industry-Leading-Public-Companies
+2026-02-17 22:01:11 - INFO - __main__ - Successfully extracted article content (11952 chars)
+2026-02-17 22:01:11 - INFO - __main__ - Fetching content from: https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results
+2026-02-17 22:01:12 - INFO - __main__ - Successfully extracted article content (35262 chars)
+2026-02-17 22:01:12 - INFO - __main__ - Fetching content from: https://www.prnewswire.com/news-releases/genuine-parts-company-announces-plan-to-separate-automotive-and-industrial-businesses-into-two-industry-leading-public-companies-302689075.html
+2026-02-17 22:01:12 - INFO - __main__ - Successfully extracted article content (11742 chars)
+2026-02-17 22:01:12 - INFO - __main__ - Found total of 3 valid articles for GPC
+2026-02-17 22:01:14 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:16 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:17 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:17 - INFO - __main__ - Found 3 relevant articles out of 3 total
+2026-02-17 22:01:22 - INFO - httpx - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-02-17 22:01:22 - INFO - __main__ - Bottom performer analysis complete
+2026-02-17 22:01:22 - INFO - __main__ - Saving results to JSON...
+2026-02-17 22:01:22 - INFO - __main__ - Analysis complete and saved to market_analysis.json
